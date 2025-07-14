@@ -1,0 +1,1 @@
+//TODO: Define inline function relating to all the macros. copy from BRSD
