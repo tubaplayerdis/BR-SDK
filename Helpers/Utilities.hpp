@@ -12,20 +12,19 @@
 
 #pragma once
 
+#include "UtilitiesImplementation.hpp"
 #include "ActorUtilities.hpp"
 
 /*
-* This file is meant to define utility macros for the SDK.
+* This file is meant to define utility macros for the SDK. Also includes Actor Utilities
 */
-
-//TODO: Complete this macro:
 
 /// <summary>
 /// Gets the UClass from the sdk class. Will load bp classes as necessary
 /// </summary>
 /// <param name="cls">Class of the new object. Not the UClass. Ex: SDK::UBrickBorder </param>
 /// <returns>A pointer to the UClass</returns>
-#define GetUClass(cls)
+#define GetUClass(cls) GetClassInternal<cls>(#cls)
 
 /// <summary>
 /// Spawns a new UObject using internal UE systems. Use when creating UObjects

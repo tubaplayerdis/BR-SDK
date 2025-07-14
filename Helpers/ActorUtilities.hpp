@@ -12,6 +12,8 @@
 
 #pragma once
 
+#include "UtilitiesImplementation.hpp"
+
 
 /// <summary>
 /// Destroys an AActor using internal UE systems.
