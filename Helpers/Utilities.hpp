@@ -13,10 +13,9 @@
 #pragma once
 
 #include "UtilitiesImplementation.hpp"
-#include "ActorUtilities.hpp"
 
 /*
-* This file is meant to define utility macros for the SDK. Also includes Actor Utilities
+* This file is meant to define utility macros for the SDK.
 */
 
 /// <summary>

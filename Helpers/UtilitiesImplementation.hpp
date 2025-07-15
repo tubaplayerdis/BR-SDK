@@ -8,7 +8,6 @@
 #include "../SDK/Engine_structs.hpp"
 #include "../SDK/CoreUObject_classes.hpp"
 #include "../SDK/UMG_classes.hpp"
-#include "header"
 
 namespace __Utilities
 {
@@ -165,7 +164,7 @@ inline SDK::UClass* GetClassInternal(const char* clsobjname)
 {
 	SDK::UClass* objcls = T::StaticClass();
 	if (objcls == nullptr) {
-		__Utilities::AttemptLoadClass(clsobjname); //This should only be called on UBP classes.
+		__Utilities::AttemptLoadClass(clsobjname);
 		for (int i = 0; i < 5; i++) //The class should have loaded, but give it some time if not.
 		{
 			objcls = T::StaticClass();
