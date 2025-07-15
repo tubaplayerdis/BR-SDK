@@ -1,6 +1,8 @@
-# BR-SDK
+# JetBrains Rider Install
 
-Welcome to the BR-SDK. This SDK is meant to help people develop and publish **DLL based mods** for Brick Rigs. It is the most **comprehensive and complete** SDK of Brick Rigs and will be updates as Brick Rigs updates. This SDK **WILL NOT** help with the creation of weapons/map creation mods. Those  type of mods are created using the BRMK. To find  more information relating to BRMK, join the official Brick Rigs Discord server.
+To Install the BR-SDK, first create a new solution and project using the native c++ project template and the Dynamic Library project type.
+
+add the picture
 
 
 # Installation
