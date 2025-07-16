@@ -2,10 +2,10 @@
 
 To Install the BR-SDK, first create a new solution and project using the native c++ project template and the Dynamic Library project type.
 
-add the picture
+![Creating the project in rider](<images/CreatingProjectRider.png> "Creating the project in rider")
 
 
-# Installation
+## Installation
 
 To get started using the SDK, follow the following installation guided based on your IDE of choice. The guides posted are for JetBrains Rider and Microsoft Visual Studio. If using another IDE/Build System, the process should be relatively the same just adjusted for your IDE/Build System as needed.
 
