@@ -151,23 +151,23 @@ namespace __utilities
 
 	inline void* GetStreamableManager()
 	{
-		if ((void*)SDK::UBrickAssetManager::Get()->StreamableManager == nullptr) std::cout << "dude" << std::endl;
+		ASSERT(SDK::UBrickAssetManager::Get()->StreamableManager != nullptr, "Streamable manager was NULL! This is a Brick Rigs Error.");
 		return (void*)SDK::UBrickAssetManager::Get()->StreamableManager;
 	}
 
-	//Calls LoadSynchronous on the SoftClass pointer. do not directly call use the GetUClass() macro
+	//Calls LoadSynchronous on the SoftClass pointer. do not directly, call use the GetUClass() macro
 	inline void RequestSyncLoad(SDK::TSoftClassPtr<SDK::UClass>* sftptr)
 	{
 		CallGameFunction<SDK::UObject*, SDK::FSoftObjectPtr*>(F_LOADSYNCHRONOUS, sftptr);
 	}
 
-	//Attempts to load a Class async. Will fail if on the MainThread. do not call directly use the GetUClass macro.
+	//Attempts to load a Class async. Will fail if on the MainThread. do not call directly, use the GetUClass() macro.
 	inline void RequestAsyncLoad(SDK::FakeSoftObjectPtr::FSoftObjectPath* path)
 	{
 		ASSERT(!IsInGameThread(), "RequestAsyncLoad cannot be called on the Main Thread! Use ");
 		SDK::UGunBrick* BrickHandeler = static_cast<SDK::UGunBrick*>(SDK::UGameplayStatics::SpawnObject(SDK::UGunBrick::StaticClass(), SDK::UWorld::GetWorld()));
 		SDK::TDelegate<void(void)> dele = SDK::TDelegate<void(void)>();
-		uintptr_t fnAddress = F_MARKBRICKBURNT;//MarkBrickBurnt
+		uintptr_t fnAddress = F_MARKBRICKBURNT;//Set delegate address to the mark brick burnt function.
 		// Manually build the 16-byte function pointer representation
 		uint64_t funcBlob[2] = { fnAddress, 0 };
 		SDK::TDelegate<void(void)>* delenew = CallGameFunction<SDK::TDelegate<void(void)>*, SDK::TDelegate<void(void)>*, SDK::UGunBrick*, uint64_t*>(F_CREATEUOBJECT, &dele, BrickHandeler, funcBlob);
@@ -216,7 +216,7 @@ inline SDK::UClass* GetClassInternal(const char* clsobjname)
 	return objcls;
 }
 
-//Example parameter UBP_DamageType_FuelExplosion_C
+//Class safe version of SDK::UGameplayStatics::SpawnObject. Use the SpawnObject() macro instead of this function.
 template<typename T>
 inline T* SpawnObjectInternal(SDK::UObject* outerobj, const char* objclsname)
 {

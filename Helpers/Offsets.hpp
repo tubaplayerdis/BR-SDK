@@ -44,11 +44,12 @@
         } \
     } while (0) \
 
+//Version of Brick Rigs the SDK is mapped to.
 #define MAPPED_SDK_VERSION_RELEASE 1
 #define MAPPED_SDK_VERSION_MAJOR 8
 #define MAPPED_SDK_VERSION_MINOR 4
 
-#define BASE (unsigned long long )GetModuleHandle(NULL) //Add this to offsets. It is the base of BR: 0x140(IDA)
+#define BASE (unsigned long long )GetModuleHandle(NULL) //Add this to offsets. It is the module base of Brick Rigs and look like 0x14 in IDA
 
 //Global variable offsets
 #define G_GGAMETHREADID BASE + 0x436DDA8
