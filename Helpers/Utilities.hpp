@@ -14,12 +14,10 @@
 
 #include "UtilitiesImplementation.hpp"
 
-/*
-* This file is meant to define utility macros for the SDK.
-*/
+//BR-SDK utility macros.
 
 /// <summary>
-/// Gets the UClass from the sdk class. Will load bp classes as necessary
+/// Gets the UClass from the sdk class. Will load blueprint classes as necessary
 /// </summary>
 /// <param name="cls">Class of the new object. Not the UClass. Ex: SDK::UBrickBorder </param>
 /// <returns>A pointer to the UClass</returns>
