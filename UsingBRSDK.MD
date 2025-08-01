@@ -128,7 +128,7 @@ inline TRet CallGameFunction(unsigned long long addr, TArgs... args);
 ### Example
 
 ```cpp
-CallGameFunction<void, int>(0x12345, 5);
+double* foo = CallGameFunction<double*, int>((unsigned long long)GetModuleHandle(NULL) + 0x123456, 5);
 ```
 
 ---
