@@ -213,6 +213,7 @@ inline SDK::UClass* GetClassInternal(const char* clsobjname)
 	SDK::UClass* objcls = T::StaticClass();
 	if (!objcls) __utilities::AttemptLoadClass(clsobjname);
 	objcls = T::StaticClass();
+	ASSERT(objcls != nullptr, std::string("Class: ") + std::string(clsobjname) + std::string(" Could not be loaded!"));
 	return objcls;
 }
 

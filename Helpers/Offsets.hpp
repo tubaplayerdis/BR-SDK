@@ -42,7 +42,7 @@
             MessageBoxA(GetConsoleWindow(), buf, "BR-SDK Assertion FAILED", MB_OK); \
             std::abort(); \
         } \
-    } while (0) \
+    } while (0); \
 
 //Version of Brick Rigs the SDK is mapped to.
 #define MAPPED_SDK_VERSION_RELEASE 1
