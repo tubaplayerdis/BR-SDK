@@ -29,7 +29,7 @@ Include/
 
 **Repeat the following steps for the x64 Release and x64 Debug build options.** Do not try to compile in 32 Bit mode(Win32/x86).
 
-Open up your Rider project and **Right Click** the project and then open **properties**, from there open the **C/C++** tab and navigate to additional include directories.
+Open up your Rider project and **Right Click** the project and then open **properties**, from there open the **C/C++** tab and navigate to **Additional Include Directories**.
 
 **Add** the following text: ``;$(SolutionDir)Include`` to the end of the current configuration, being carefull not to delete the prexisting configuration. If there is **no prexisting configuration**, add this line instead: ``$(SolutionDir)Include``
 
@@ -43,7 +43,7 @@ Open up your Rider project and **Right Click** the project and then open **prope
 
 ### Using BR-SDK
 
-Thats all for the installation. Click the following link to learn how to use BR-SDK to create mods.
+Thats all for the installation specifics in relation to JetBrain Rider. Click the following link to learn how to use BR-SDK to create mods.
 
 [How to use BR-SDK](https://github.com/tubaplayerdis/BR-SDK/blob/main/UsingBRSDK.MD)
 
