@@ -16,5 +16,5 @@ To get started using the SDK, follow the following installation guided based on 
 
 Click the following link to learn how to use BR-SDK to create mods.
 
-[How to use BR-SDK](ttps://github.com/tubaplayerdis/BR-SDK/blob/main/UsingBRSDK.MD)
+[How to use BR-SDK](https://github.com/tubaplayerdis/BR-SDK/blob/main/UsingBRSDK.MD)
 
