@@ -12,6 +12,6 @@
 
 #pragma once
 
-#include "Helpers/Utilities.hpp"
-#include "Helpers/ActorUtilities.hpp"
-#include "Helpers/GameFunctions.hpp"
+#include "Utilities/Utilities.hpp"
+#include "Utilities/ActorUtilities.hpp"
+#include "Utilities/GameFunctions.hpp"
