@@ -125,6 +125,12 @@ inline TRet CallGameFunction(unsigned long long addr, TArgs... args);
 
 `TRet` — The return value of the called function.
 
+### Example
+
+```cpp
+CallGameFunction<void, int>(0x12345, 5);
+```
+
 ---
 
 ## `CallVTableFunction`
