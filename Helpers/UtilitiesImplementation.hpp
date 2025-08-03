@@ -230,7 +230,7 @@ inline T* CreateWidgetInternal(SDK::TSubclassOf<SDK::UUserWidget> UserWidgetClas
 {
 
 	if (UserWidgetClass == nullptr) UserWidgetClass = GetClassInternal<T>(WidgetClassName);
-	return static_cast<T*>(CallGameFunction<SDK::UUserWidget*, SDK::UWorld*, SDK::TSubclassOf<SDK::UUserWidget>, SDK::FName>(FCreateWidget, SDK::UWorld::GetWorld(), UserWidgetClass, SDK::FName()));
+	return static_cast<T*>(CallGameFunction<SDK::UUserWidget*, SDK::UWorld*, SDK::TSubclassOf<SDK::UUserWidget>, SDK::FName>(F_CREATEWIDGET, SDK::UWorld::GetWorld(), UserWidgetClass, SDK::FName()));
 }
 
 template<typename T>
@@ -267,7 +267,7 @@ inline T* SpawnActorInternal(SDK::FVector position, SDK::AActor* outeract, const
 	transform.Translation = position;
 	transform.Scale3D = SDK::FVector(1, 1, 1);
 	SDK::FQuat formed = SDK::FQuat();
-	SDK::FQuat* ptr = CallGameFunction<SDK::FQuat*, SDK::FRotator*, SDK::FQuat*>(FQuaternion, &rotator, &formed);
+	SDK::FQuat* ptr = CallGameFunction<SDK::FQuat*, SDK::FRotator*, SDK::FQuat*>(F_QUATERNION, &rotator, &formed);
 	formed = *ptr;
 	transform.Rotation = formed;
 	SDK::UClass* objcls = GetClassInternal<T>(objclsname);
@@ -284,7 +284,7 @@ inline T* SpawnActorInternal(SDK::FVector position, SDK::FRotator rotation, SDK:
 	transform.Translation = position;
 	transform.Scale3D = SDK::FVector(1, 1, 1);
 	SDK::FQuat formed = SDK::FQuat();
-	formed = &CallGameFunction<SDK::FQuat*, SDK::FRotator*, SDK::FQuat*>(FQuaternion, &rotation, &formed);
+	formed = &CallGameFunction<SDK::FQuat*, SDK::FRotator*, SDK::FQuat*>(F_QUATERNION, &rotation, &formed);
 	transform.Rotation = formed;
 	SDK::UClass* objcls = GetClassInternal<T>(objclsname);
 	SDK::ESpawnActorCollisionHandlingMethod method = SDK::ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
