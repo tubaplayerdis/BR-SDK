@@ -16,11 +16,12 @@ All of these things require the BRMK, a proprietary modding platform for Brick R
  - Modifying Gamemodes
  - Modifying character behavior
  - Creating UI Elements natively
- - Modifying game behavior
+ - **Modifying game behavior**
  - Managment systems
  - Low-level access to the game
 
-These abilities are what is in the domain of a regular "mod" for most games and works on the basics of game hacking and reverse engineering
+These abilities are what is in the domain of a regular "mod" for most games and works on the basics of game hacking and reverse engineering.
+BR-SDK provides a way to interact with Brick Rigs programmatically and for the **modification of game behavior**
 
 # Installation
 
