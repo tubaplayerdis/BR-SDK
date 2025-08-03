@@ -206,10 +206,6 @@ Destroys an `AActor` using internal Unreal Engine (UE) systems.
 
 Spawns a new `AActor` using internal UE systems. The actor is created with the specified parent and inherits its location and rotation. If no parent is specified, its location and rotation are set to `0,0,0`.
 
-### Template Parameters
-
-  - `cls`: The class of the new actor (e.g., `SDK::ABrickCharacter`).
-
 ### Declaration
 
 ```cpp
@@ -230,10 +226,6 @@ A pointer to the newly created actor.
 ## `SpawnActorAt`
 
 Spawns a new `AActor` using internal UE systems. The actor will be created with the specified parent and inherit the location and rotation of another specified actor.
-
-### Template Parameters
-
-  - `cls`: The class of the new actor (e.g., `SDK::ABrickCharacter`).
 
 ### Declaration
 
@@ -257,10 +249,6 @@ A pointer to the newly created actor.
 
 Spawns a new `AActor` using internal UE systems. The actor will be created with the specified parent and at a specified location.
 
-### Template Parameters
-
-  - `cls`: The class of the new actor (e.g., `SDK::ABrickCharacter`).
-
 ### Declaration
 
 ```cpp
@@ -282,10 +270,6 @@ A pointer to the newly created actor.
 ## `SpawnActorLoc`
 
 Spawns a new `AActor` using internal UE systems. The actor will be created with the specified parent and at a specified location and rotation.
-
-### Template Parameters
-
-  - `cls`: The class of the new actor (e.g., `SDK::ABrickCharacter`).
 
 ### Declaration
 
@@ -310,10 +294,6 @@ A pointer to the newly created actor.
 
 Spawns a new `AActor` using internal UE systems. The actor will be created with the specified parent and at a specified transform.
 
-### Template Parameters
-
-  - `cls`: The class of the new actor (e.g., `SDK::ABrickCharacter`).
-
 ### Declaration
 
 ```cpp
@@ -335,10 +315,6 @@ A pointer to the newly created actor.
 ## `DeferredSpawnActorTrans`
 
 Spawns a new `AActor` using internal UE systems, but its final creation is deferred until `FinishSpawningDeferredActor` is called. The actor will be created with the specified parent and at the specified transform.
-
-### Template Parameters
-
-  - `cls`: The class of the new actor (e.g., `SDK::ABrickCharacter`).
 
 ### Declaration
 
