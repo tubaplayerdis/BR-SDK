@@ -32,9 +32,18 @@ To get started using the SDK, follow the following installation guided based on 
 [Microsoft Visual Studio](https://github.com/tubaplayerdis/BR-SDK/blob/main/Install-VS.MD)
 [JetBrains Rider](https://github.com/tubaplayerdis/BR-SDK/blob/main/Install-Rider.MD)
 
-# Using BR-SDK
+## Using BR-SDK
 
 Click the following link to learn how to use BR-SDK to create mods.
 
 [How to use BR-SDK](https://github.com/tubaplayerdis/BR-SDK/blob/main/UsingBRSDK.MD)
+
+## Footnotes
+
+To use BR-SDK as best as possible, a good understanding in these topics is suggested
+
+- C/C++ - UE and general low level
+- IDA/Ghidra
+- Memory management
+
 
