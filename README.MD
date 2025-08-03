@@ -2,6 +2,25 @@
 
 Welcome to the BR-SDK. This SDK is meant to help people develop and publish **DLL based mods** for Brick Rigs. It is the most **comprehensive and complete** SDK of Brick Rigs and will be updates as Brick Rigs updates. This SDK **WILL NOT** help with the creation of weapons/map creation mods. Those  type of mods are created using the BRMK. To find  more information relating to BRMK, join the official Brick Rigs Discord server.
 
+## Limitations
+
+ - Creating custom maps
+ - Creating custom weapons
+ - Creating custom bricks
+ - Creating anything that is related to .pak mods and or **content** mod-derieved
+
+All of these things require the BRMK, a proprietary modding platform for Brick Rigs, which is not distributed by me or related to this project in any way.
+
+## Uses
+
+ - Modifying Gamemodes
+ - Modifying character behavior
+ - Creating UI Elements natively
+ - Modifying game behavior
+ - Managment systems
+ - Low-level access to the game
+
+These abilities are what is in the domain of a regular "mod" for most games and works on the basics of game hacking and reverse engineering
 
 # Installation
 
