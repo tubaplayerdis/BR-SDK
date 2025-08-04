@@ -1,5 +1,16 @@
-#pragma once
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/*    Copyright (c) Aaron Wilk 2025, All rights reserved.                     */
+/*                                                                            */
+/*    Module:     UtilitiesImplementation.hpp				      */
+/*    Author:     Aaron Wilk                                                  */
+/*    Created:    14 July 2025                                                */
+/*                                                                            */
+/*    Revisions:  V0.1                                                        */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
 
+#pragma once
 #include "GameFunctions.hpp"
 #include "Offsets.hpp"
 #include <windows.h>
