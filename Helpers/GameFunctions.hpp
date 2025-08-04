@@ -2,7 +2,7 @@
 /*                                                                            */
 /*    Copyright (c) Aaron Wilk 2025, All rights reserved.                     */
 /*                                                                            */
-/*    Module:     GameFunctions.hpp					                          */
+/*    Module:     GameFunctions.hpp					      */
 /*    Author:     Aaron Wilk                                                  */
 /*    Created:    14 July 2025                                                */
 /*                                                                            */
