@@ -1,3 +1,5 @@
+#pragma once
+
 #include "GameFunctions.hpp"
 #include "Offsets.hpp"
 #include <windows.h>
