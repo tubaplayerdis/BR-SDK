@@ -47,7 +47,7 @@ inline TRet CallVTableFunction(int index ,void* object, TArgs... args)
     using FunctionFn = TRet(__fastcall*)(void*, TArgs...);
     void** vtable = *(void***)object;
     FunctionFn FunctionFunc = reinterpret_cast<FunctionFn>(index/sizeof(void*));
-    return FunctionFunc(Object, std::forward<TArgs>(args)...);
+    return FunctionFunc(object, std::forward<TArgs>(args)...);
 }
 
 
