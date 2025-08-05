@@ -5,6 +5,11 @@ This guide will go over the specifics of BR-SDK and its special abilities and fu
 # Please Read:
 [Dumper-7 Tutorial](https://github.com/Encryqed/Dumper-7/blob/main/UsingTheSDK.md)
 
+## Note
+
+All of these function are included in: ```cpp
+Helpers/Utils.hpp```
+
 ## Classes
 
 One of the more important aspects of Brick Rigs is its use of Blueprints for the highest level interactions and gameplay logic. Due to Unreal Engine optimizations, the classes of Blueprints get unloaded/loaded as needed. Because of this, the traditional way of getting the UClass of a class from the SDK EX: (SDK::UBrick::StaticClass()) is not always safe and might return a nullptr, cauing a crash. **To fix this**, BR-SDK replicates the class loading system of UE when getting classes. For a safer way of getting the UClass of a class, use the `GetUClass` macro.
