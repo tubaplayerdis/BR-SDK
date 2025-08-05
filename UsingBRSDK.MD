@@ -7,7 +7,7 @@ This guide will go over the specifics of BR-SDK and its special abilities and fu
 
 ## Note
 
-All of these function are included using the file: ```Helpers/Utils.hpp```
+All of these function are included using the file: ```Utils.hpp```
 
 ## Classes
 
