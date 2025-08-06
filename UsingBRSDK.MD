@@ -9,6 +9,10 @@ This guide will go over the specifics of BR-SDK and its special abilities and fu
 
 All of these function are included using the file: ```Utils.hpp```
 
+## Linker Errors
+
+Due to the nature of the SDK, calling functions on classes causes linker errors. To fix this use the add existing item feature of Rider and VS to "add" the SDK's cpp files to your projet. For rider make sure to add file links instead of moving thr files. The SDK's cpp files are in the SDK directory. **READ** the dumper-7 readme for more info.
+
 ## Classes
 
 One of the more important aspects of Brick Rigs is its use of Blueprints for the highest level interactions and gameplay logic. Due to Unreal Engine optimizations, the classes of Blueprints get unloaded/loaded as needed. Because of this, the traditional way of getting the UClass of a class from the SDK EX: (SDK::UBrick::StaticClass()) is not always safe and might return a nullptr, cauing a crash. **To fix this**, BR-SDK replicates the class loading system of UE when getting classes. For a safer way of getting the UClass of a class, use the `GetUClass` macro.
