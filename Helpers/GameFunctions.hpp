@@ -19,9 +19,17 @@
 /// <summary>
 /// Call an internal game function using its address.
 /// </summary>
+/// <param name="addr">Address of the function.</param>
+/// <param name="sig">Signature of the function</param>
+/// <param name="...">Arguments to pass</param>
+#define CALL_GAME_FUNCTION(addr, sig, ...) ( (reinterpret_cast<sig>(addr))(__VA_ARGS__) )
+
+/// <summary>
+/// Call an internal game function using its address.
+/// </summary>
 ///<typeparam name="TRet">Return type of the function</typeparam>
 /// <typeparam name="...TArgs">Argument types of the function</typeparam>
-/// <param name="addr">Address of the function. Calculated as the offset from the base module</param>
+/// <param name="addr">Address of the function.</param>
 /// <param name="...args">Arguments to pass</param>
 /// <returns>TRet</returns>
 template<typename TRet, typename... TArgs>
