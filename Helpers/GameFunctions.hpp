@@ -15,6 +15,8 @@
 #include <libloaderapi.h>
 #include <processthreadsapi.h>
 #include <Psapi.h>
+#include <cstdlib>
+#include <utility>
 
 /// <summary>
 /// Call an internal game function using its address.
@@ -58,6 +60,17 @@ inline TRet CallVTableFunction(int index ,void* object, TArgs... args)
     return FunctionFunc(object, std::forward<TArgs>(args)...);
 }
 
+/// <summary>
+/// Gets the member of a object given an offset
+/// </summary>
+/// <typeparam name="T">member type</typeparam>
+/// <param name="base">Address of the object.</param>
+/// <param name="offset">offset of the member</param>
+/// <returns>T</returns>
+template<typename T>
+T& GetMember(void* base, std::size_t offset) {
+    return *reinterpret_cast<T*>(reinterpret_cast<std::uint8_t*>(base) + offset);
+}
 
 /// <summary>
 /// Find a function address.
