@@ -11,7 +11,7 @@ All of these function are included using the file: ```Utils.hpp```
 
 ## Linker Errors
 
-Due to the nature of the SDK, calling functions on classes causes linker errors. To fix this use the add existing item feature of Rider and VS to "add" the SDK's cpp files to your projet. For rider make sure to add file links instead of moving thr files. The SDK's cpp files are in the SDK directory. **READ** the dumper-7 readme for more info.
+Due to the nature of the SDK, calling functions on classes causes linker errors. To fix this use the add existing item feature of Rider and VS to "add" the SDK's cpp files to your project. For rider make sure to add file links instead of moving thr files. The SDK's cpp files are in the SDK directory. **READ** the dumper-7 UsingTheSDK.MD for more info.
 
 ## Classes
 
