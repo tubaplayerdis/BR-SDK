@@ -4,21 +4,21 @@ Welcome to the BR-SDK. This SDK is meant to help people develop and publish **DL
 
 ## Limitations
 
- - Creating custom maps
- - Creating custom weapons
- - Creating custom bricks
- - Creating anything that is related to .pak mods and or **content** mod-derieved
+- Creating custom maps
+- Creating custom weapons
+- Creating custom bricks
+- Creating anything that is related to .pak mods and or **content** mod-derieved
 
 All of these things require the BRMK, a proprietary modding platform for Brick Rigs, which is not distributed by me or related to this project in any way.
 
 ## Uses
 
- - Modifying Gamemodes
- - Modifying character behavior
- - Creating UI Elements natively
- - **Modifying game behavior**
- - Managment systems
- - Low-level access to the game
+- Modifying Gamemodes
+- Modifying character behavior
+- Creating UI Elements natively
+- **Modifying game behavior**
+- Managment systems
+- Low-level access to the game
 
 These abilities are what is in the domain of a regular "mod" for most games and works on the basics of game hacking and reverse engineering.
 BR-SDK provides a way to interact with Brick Rigs programmatically and for the **modification of game behavior**.
@@ -29,14 +29,14 @@ To get started using the SDK, follow the following installation guided based on 
 
 ### Guides
 
-[Microsoft Visual Studio](https://github.com/tubaplayerdis/BR-SDK/blob/main/Install-VS.MD)
-[JetBrains Rider](https://github.com/tubaplayerdis/BR-SDK/blob/main/Install-Rider.MD)
+[Microsoft Visual Studio](https://github.com/tubaplayerdis/BR-SDK/blob/master/Install-VS.MD)
+[JetBrains Rider](https://github.com/tubaplayerdis/BR-SDK/blob/master/Install-Rider.MD)
 
 ## Using BR-SDK
 
 Click the following link to learn how to use BR-SDK to create mods.
 
-[How to use BR-SDK](https://github.com/tubaplayerdis/BR-SDK/blob/main/UsingBRSDK.MD)
+[How to use BR-SDK](https://github.com/tubaplayerdis/BR-SDK/blob/master/UsingBRSDK.MD)
 
 ## Footnotes
 

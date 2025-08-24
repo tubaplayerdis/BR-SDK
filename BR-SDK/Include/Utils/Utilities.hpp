@@ -16,25 +16,19 @@
 
 //BR-SDK utility macros.
 
-/// <summary>
 /// Gets the UClass from the sdk class. Will load blueprint classes as necessary
-/// </summary>
-/// <param name="cls">Class of the new object. Not the UClass. Ex: SDK::UBrickBorder </param>
-/// <returns>A pointer to the UClass</returns>
+/// @param cls Class of the new object. Not the UClass. Ex: SDK::UBrickBorder
+/// @return A pointer to the UClass
 #define GetUClass(cls) GetClassInternal<cls>(#cls)
 
-/// <summary>
 /// Spawns a new UObject using internal UE systems. Use when creating UObjects
-/// </summary>
-/// <param name="cls">Class of the new object. Not the UClass. Ex: SDK::UBrickBorder </param>
-/// <param name="out">A pointer to the outer object the new object should be created with</param>
-/// <returns>A pointer to the new object</returns>
+/// @param cls Class of the new object. Not the UClass. Ex: SDK::UBrickBorder
+/// @param out A pointer to the outer object the new object should be created with
+/// @return A pointer to the new object
 #define SpawnObject(cls, out) SpawnObjectInternal<cls>(out, #cls)
 
-/// <summary>
 /// Creates a new UUserWidget derived object using internal UE systems.
-/// Use Spawn() for Non-UUserWidget derieved widgets
-/// </summary>
-/// <param name="cls">The class of the new widget. Not the UClass. Ex: SDK::UWPB_PropertyContainer_C</param>
-/// <returns>A pointer to the new widget</returns>
+/// @note Use Spawn() for Non-UUserWidget derived widgets
+/// @param cls The class of the new widget. Not the UClass. Ex: SDK::UWPB_PropertyContainer_C
+/// @return A pointer to the new widget
 #define CreateWidget(cls) CreateWidgetInternal<cls>(cls::StaticClass(), #cls)

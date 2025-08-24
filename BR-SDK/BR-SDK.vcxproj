@@ -1552,6 +1552,9 @@
     <ClCompile Include="Source\Utils\GameFunctions.cpp" />
     <ClCompile Include="Source\Utils\UtilitiesImplementation.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Doxyfile" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

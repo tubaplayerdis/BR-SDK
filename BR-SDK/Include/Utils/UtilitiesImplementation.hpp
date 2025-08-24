@@ -15,11 +15,11 @@
 #include "../SDK/BrickRigs_classes.hpp"
 #include "../SDK/UMG_classes.hpp"
 
-//Gets the UClass from the string and templates representation of the class. do not use. Use the GetUClass() macro.
+///Gets the UClass from the string and templates representation of the class. do not use. Use the GetUClass() macro.
 template<typename T>
 SDK::UClass* GetClassInternal(const char* clsobjname);
 
-//Class safe version of SDK::UGameplayStatics::SpawnObject. Use the SpawnObject() macro instead of this function.
+///Class safe version of SDK::UGameplayStatics::SpawnObject. Use the SpawnObject() macro instead of this function.
 template<typename T>
 T* SpawnObjectInternal(SDK::UObject* outerobj, const char* objclsname);
 

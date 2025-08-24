@@ -52,19 +52,19 @@ namespace structures
 
 bool IsInGameThread()
 {
-	return GetCurrentThreadId() == *reinterpret_cast<unsigned int*>(G_GGAMETHREADID);
+	return GetCurrentThreadId() == *reinterpret_cast<unsigned int*>(G_GAME_THREAD_ID);
 }
 
 //Gets the FPlatformFileManager
 void* GetPlatformFile()
 {
-	return CallGameFunction<void*, void*>(F_GETPLATFORMFILE, CallGameFunction<void*>(F_GETPLATFORMFILEMANAGER));
+	return CallGameFunction<void*, void*>(F_GET_PLATFORM_FILE, CallGameFunction<void*>(F_GET_PLATFORM_FILE_MANAGER));
 }
 
 //Sets the path of a FSoftObjectPath
 void SetPath(SDK::FakeSoftObjectPtr::FSoftObjectPath* This, SDK::FName pathname)
 {
-	return CallGameFunction<void, SDK::FakeSoftObjectPtr::FSoftObjectPath*, SDK::FName>(F_SETPATH, This, pathname);
+	return CallGameFunction<void, SDK::FakeSoftObjectPtr::FSoftObjectPath*, SDK::FName>(F_SET_PATH, This, pathname);
 }
 
 //Gets every asset file in the virtual file system
@@ -72,7 +72,7 @@ SDK::TArray<SDK::FString> GetVFSFiles()
 {
 	SDK::FString gamepath = SDK::UBlueprintPathsLibrary::ProjectContentDir();
 	SDK::TArray<SDK::FString> ret;
-	CallGameFunction<void, void*, SDK::TArray<SDK::FString>*, const wchar_t*, const wchar_t*>(F_FINDFILESRECURSIVELY, GetPlatformFile(), &ret, gamepath.CStr(), L".uasset");
+	CallGameFunction<void, void*, SDK::TArray<SDK::FString>*, const wchar_t*, const wchar_t*>(F_FIND_FILES_RECURSIVELY, GetPlatformFile(), &ret, gamepath.CStr(), L".uasset");
 	return ret;
 }
 
@@ -161,7 +161,7 @@ void* GetStreamableManager()
 //Calls LoadSynchronous on the SoftClass pointer. do not directly, call use the GetUClass() macro
 void RequestSyncLoad(SDK::TSoftClassPtr<SDK::UClass>* sftptr)
 {
-	CallGameFunction<SDK::UObject*, SDK::FSoftObjectPtr*>(F_LOADSYNCHRONOUS, sftptr);
+	CallGameFunction<SDK::UObject*, SDK::FSoftObjectPtr*>(F_LOAD_SYNCHRONOUS, sftptr);
 }
 
 //Attempts to load a Class async. Will fail if on the MainThread. do not call directly, use the GetUClass() macro.
@@ -179,14 +179,14 @@ void RequestAsyncLoad(SDK::FakeSoftObjectPtr::FSoftObjectPath* path)
 	}
 	SDK::UGunBrick* BrickHandeler = static_cast<SDK::UGunBrick*>(SDK::UGameplayStatics::SpawnObject(SDK::UGunBrick::StaticClass(), Comp));
 	SDK::TDelegate<void(void)> dele = SDK::TDelegate<void(void)>();
-	uintptr_t fnAddress = F_UNINITIALIZEEDITOROBJECT;//Un-init BrickEditorObject
+	uintptr_t fnAddress = F_UNINITIALIZE_EDITOR_OBJECT;//Un-init BrickEditorObject
 	// Manually build the 16-byte function pointer representation
 	uint64_t funcBlob[2] = { fnAddress, 0 };
-	SDK::TDelegate<void(void)>* delenew = CallGameFunction<SDK::TDelegate<void(void)>*, SDK::TDelegate<void(void)>*, SDK::UGunBrick*, uint64_t*>(F_CREATEUOBJECT, &dele, BrickHandeler, funcBlob);
+	SDK::TDelegate<void(void)>* delenew = CallGameFunction<SDK::TDelegate<void(void)>*, SDK::TDelegate<void(void)>*, SDK::UGunBrick*, uint64_t*>(F_CREATE_UOBJECT, &dele, BrickHandeler, funcBlob);
 	structures::data::SharedPtr ptr{};
 	ptr.ptr = nullptr;
 	UC::FString str = UC::FString(L"LoadAssetList");
-	structures::data::SharedPtr* ptrret = CallGameFunction<structures::data::SharedPtr*, void*, structures::data::SharedPtr*, const SDK::FakeSoftObjectPtr::FSoftObjectPath*, SDK::TDelegate<void __cdecl(void)>*, int, bool, bool, SDK::FString*>(F_REQUESTASYNCLOAD, GetStreamableManager(), &ptr, path, delenew, 0, true, false, &str);
+	structures::data::SharedPtr* ptrret = CallGameFunction<structures::data::SharedPtr*, void*, structures::data::SharedPtr*, const SDK::FakeSoftObjectPtr::FSoftObjectPath*, SDK::TDelegate<void __cdecl(void)>*, int, bool, bool, SDK::FString*>(F_REQUEST_ASYNC_LOAD, GetStreamableManager(), &ptr, path, delenew, 0, true, false, &str);
 	int max = 0;
 	while (max <= 10)
 	{
@@ -194,7 +194,7 @@ void RequestAsyncLoad(SDK::FakeSoftObjectPtr::FSoftObjectPath* path)
 		if (!BrickHandeler || !BrickHandeler->IsBrickEditorObjectInitialized()) break;
 		max++;
 	}
-	CallGameFunction<__int64, void*, float, bool>(F_WAITUNTILCOMPLETE, ptrret->ptr, 0.0, 0);//Safe to call and finalize the load.
+	CallGameFunction<__int64, void*, float, bool>(F_WAIT_UNTIL_COMPLETE, ptrret->ptr, 0.0, 0);//Safe to call and finalize the load.
 }
 
 /// <summary>
@@ -240,7 +240,7 @@ T* CreateWidgetInternal(SDK::TSubclassOf<SDK::UUserWidget> UserWidgetClass, cons
 {
 
 	if (UserWidgetClass == nullptr) UserWidgetClass = GetClassInternal<T>(WidgetClassName);
-	return static_cast<T*>(CallGameFunction<SDK::UUserWidget*, SDK::UWorld*, SDK::TSubclassOf<SDK::UUserWidget>, SDK::FName>(F_CREATEWIDGET, SDK::UWorld::GetWorld(), UserWidgetClass, SDK::FName()));
+	return static_cast<T*>(CallGameFunction<SDK::UUserWidget*, SDK::UWorld*, SDK::TSubclassOf<SDK::UUserWidget>, SDK::FName>(F_CREATE_WIDGET, SDK::UWorld::GetWorld(), UserWidgetClass, SDK::FName()));
 }
 
 template<typename T>
