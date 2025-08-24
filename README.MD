@@ -1,6 +1,6 @@
 # Notice
 
-This is the old branch of BR-SDK. The new branch is master and uses a static library for faster compilation.
+This is the old branch of BR-SDK. **It will NOT be updated. Only the master branch will continue to recieve updates**.
 
 # BR-SDK
 
