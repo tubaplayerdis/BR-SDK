@@ -1,3 +1,7 @@
+# Notice
+
+This is the old branch of BR-SDK. The new brnach is master and uses a static library for faster compilation.
+
 # BR-SDK
 
 Welcome to the BR-SDK. This SDK is meant to help people develop and publish **DLL based mods** for Brick Rigs. It is the most **comprehensive and complete** SDK of Brick Rigs and will be updates as Brick Rigs updates. This SDK **WILL NOT** help with the creation of weapons/map creation mods. Those  type of mods are created using the BRMK. To find  more information relating to BRMK, join the official Brick Rigs Discord server.

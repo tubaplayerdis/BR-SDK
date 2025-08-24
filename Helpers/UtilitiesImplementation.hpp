@@ -177,7 +177,7 @@ namespace __utilities
 	//Attempts to load a Class async. Will fail if on the MainThread. do not call directly, use the GetUClass() macro.
 	inline void RequestAsyncLoad(SDK::FakeSoftObjectPtr::FSoftObjectPath* path)
 	{
-		ASSERT(!IsInGameThread(), "RequestAsyncLoad cannot be called on the Main Thread! Use ");
+		ASSERT(!IsInGameThread(), "RequestAsyncLoad cannot be called on the Main Thread! Use the GetUClass() macro instead!");
 		SDK::UObject* Comp = nullptr;
 		if (SDK::UWorld::GetWorld()->OwningGameInstance || SDK::UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Num() >= 1 || SDK::UWorld::GetWorld()->OwningGameInstance->LocalPlayers[0]->PlayerController || SDK::UWorld::GetWorld()->OwningGameInstance->LocalPlayers[0]->PlayerController->IsA(SDK::ABrickPlayerController::StaticClass()) || static_cast<SDK::ABrickPlayerController*>(SDK::UWorld::GetWorld()->OwningGameInstance->LocalPlayers[0]->PlayerController)->AccessedInventory)
 		{
