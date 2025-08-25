@@ -70,6 +70,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)_RELEASE</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)_DEBUG</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -1345,7 +1351,6 @@
     <ClInclude Include="Include\Utils\UtilitiesImplementation.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Hooking\Hook.cpp" />
     <ClCompile Include="Source\Hooking\MinHook\buffer.c" />
     <ClCompile Include="Source\Hooking\MinHook\hde\hde32.c" />
     <ClCompile Include="Source\Hooking\MinHook\hde\hde64.c" />

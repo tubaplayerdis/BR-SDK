@@ -6,41 +6,6 @@
 #include <psapi.h>
 #include <processthreadsapi.h>
 
-template<typename TRet, typename... TArgs>
-TRet CallGameFunction(unsigned long long addr, TArgs... args)
-{
-	using FunctionFn = TRet(__fastcall*)(TArgs...);
-	FunctionFn OnFunction = reinterpret_cast<FunctionFn>(addr);
-	return OnFunction(std::forward<TArgs>(args)...);
-}
-
-template<typename TRet, typename... TArgs>
-TRet CallVTableFunction(int index ,void* object, TArgs... args)
-{
-    using FunctionFn = TRet(__fastcall*)(void*, TArgs...);
-    void** vtable = *reinterpret_cast<void***>(object);
-    FunctionFn FunctionFunc = reinterpret_cast<FunctionFn>(vtable[index]);
-    return FunctionFunc(object, std::forward<TArgs>(args)...);
-}
-
-template<typename T>
-T& GetMember(void* base, std::size_t offset)
-{
-    return *reinterpret_cast<T*>(reinterpret_cast<std::uint8_t*>(base) + offset);
-}
-
-template<typename T>
-void SetMember(void* base, std::size_t offset, const T& value)
-{
-    *reinterpret_cast<T*>(reinterpret_cast<std::uint8_t*>(base) + offset) = value;
-}
-
-template<typename T>
-T* Cast(void* obj)
-{
-    return static_cast<T*>(obj);
-}
-
 unsigned long long FindPatternF(const char* pattern, const char* mask)
 {
     unsigned long long base = (unsigned long long)GetModuleHandle(NULL);

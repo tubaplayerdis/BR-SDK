@@ -14,6 +14,8 @@
 #include <windows.h>
 #include <libloaderapi.h>
 #include <cstdlib>
+#include <utility>
+#include <psapi.h>
 
 /// Current module base address.
 #define BASE ((unsigned long long)GetModuleHandle(nullptr))
@@ -31,7 +33,12 @@
 /// @param args Arguments to pass
 /// @return TRet
 template<typename TRet, typename... TArgs>
-TRet CallGameFunction(unsigned long long addr, TArgs... args);
+TRet CallGameFunction(unsigned long long addr, TArgs... args)
+{
+    using FunctionFn = TRet(__fastcall*)(TArgs...);
+    FunctionFn OnFunction = reinterpret_cast<FunctionFn>(addr);
+    return OnFunction(std::forward<TArgs>(args)...);
+}
 
 /// Call an internal game function based on its index in a vtable. If calling inside a hook macro surround with parentheses.
 /// @tparam TRet Return type of the function
@@ -41,7 +48,13 @@ TRet CallGameFunction(unsigned long long addr, TArgs... args);
 /// @param args Arguments to pass
 /// @return TRet
 template<typename TRet, typename... TArgs>
-TRet CallVTableFunction(int index, void* object, TArgs... args);
+TRet CallVTableFunction(int index, void* object, TArgs... args)
+{
+    using FunctionFn = TRet(__fastcall*)(void*, TArgs...);
+    void** vtable = *reinterpret_cast<void***>(object);
+    FunctionFn FunctionFunc = reinterpret_cast<FunctionFn>(vtable[index]);
+    return FunctionFunc(object, std::forward<TArgs>(args)...);
+}
 
 /// Gets the member of an object given an offset
 /// @tparam T member type
@@ -49,7 +62,10 @@ TRet CallVTableFunction(int index, void* object, TArgs... args);
 /// @param offset offset of the member
 /// @return T
 template<typename T>
-T& GetMember(void* base, std::size_t offset);
+T& GetMember(void* base, std::size_t offset)
+{
+    return *reinterpret_cast<T*>(reinterpret_cast<std::uint8_t*>(base) + offset);
+}
 
 /// Sets the member of an object given an offset
 /// @tparam T member type
@@ -57,14 +73,20 @@ T& GetMember(void* base, std::size_t offset);
 /// @param offset offset of the member
 /// @param value value to set the member
 template<typename T>
-void SetMember(void* base, std::size_t offset, const T& value);
+void SetMember(void* base, std::size_t offset, const T& value)
+{
+    *reinterpret_cast<T*>(reinterpret_cast<std::uint8_t*>(base) + offset) = value;
+}
 
 /// Casts a pointer
 /// @tparam T pointer type
 /// @param obj pointer object to cast
 /// @return T*
 template<typename T>
-T* Cast(void* obj);
+T* Cast(void* obj)
+{
+    return static_cast<T*>(obj);
+}
 
 /// Find a function address.
 /// @param pattern Pattern of the function. Must adhere to format: \x00
