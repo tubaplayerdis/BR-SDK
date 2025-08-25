@@ -35,7 +35,7 @@ Hook<Ret(Args...)>::Hook(unsigned long long addr, Ret(__fastcall* hookFunc)(Args
 }
 
 template<typename Ret, typename ...Args>
-inline Hook<Ret(Args...)>::Hook(Ret(__fastcall* ptr)(Args...), Ret(__fastcall* hookFunc)(Args...))
+Hook<Ret(Args...)>::Hook(Ret(__fastcall* ptr)(Args...), Ret(__fastcall* hookFunc)(Args...))
 {
 	pattern = "None";
 	mask = "None";

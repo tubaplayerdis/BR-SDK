@@ -9,6 +9,11 @@
 // BrickRigs
 // 4.27.2-0+++UE4+Release-4.27
 
+//BR-SDK Specifics
+
+#include "Utils.hpp"
+#include "Hooking/Hook.hpp"
+
 // Includes the entire SDK. Include files directly for faster compilation!
 
 #include "SDK/Basic.hpp"

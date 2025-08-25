@@ -1343,7 +1343,6 @@
     <ClInclude Include="Include\Utils\UtfN.hpp" />
     <ClInclude Include="Include\Utils\Utilities.hpp" />
     <ClInclude Include="Include\Utils\UtilitiesImplementation.hpp" />
-    <ClInclude Include="SDK.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Hooking\Hook.cpp" />
@@ -1551,9 +1550,6 @@
     <ClCompile Include="Source\SDK\WBP_WindowManager_functions.cpp" />
     <ClCompile Include="Source\Utils\GameFunctions.cpp" />
     <ClCompile Include="Source\Utils\UtilitiesImplementation.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Doxyfile" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
