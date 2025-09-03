@@ -1,5 +1,7 @@
 # Visual Studio Install
 
+## THESE INSTRUCTIONS ARE OUTDATED. DO NOT USE. NEW INSTRUCTIONS COMING SOON.
+
 ### Creating the project
 
 To Install the BR-SDK, first create a new solution and project using the **Dynamic Link Library** project template.
