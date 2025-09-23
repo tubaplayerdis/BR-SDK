@@ -27,11 +27,13 @@
 #define CALL_GAME_FUNCTION(addr, sig, ...) ( (reinterpret_cast<sig>(addr))(__VA_ARGS__) )
 
 /// Resolve a signature to an address. Uses the format: "48 89 7C 24 ?? 41 56 48 83 EC ?? 48 8B FA 4C 8B F1 E8 ?? ?? ?? ??"
+/// @note THIS WILL NOT WORK IF A HOOK HAS BEEN REGISTERED FOR THIS FUNCTION BEFOREHAND. Use the CallOriginal() function on the hook.
 /// @param signature signature to resolve
 /// @return address of the function representing the signature. 0 if not found.
 unsigned long long ResolveSignature(const char* signature);
 
 /// Call an internal game function using its address.
+/// /// @note THIS WILL NOT WORK IF A HOOK HAS BEEN REGISTERED FOR THIS FUNCTION BEFOREHAND. Use the CallOriginal() function on the hook.
 /// @tparam TRet Return type of the function
 /// @tparam TArgs Argument types of the function
 /// @param signature Signature of the function.
