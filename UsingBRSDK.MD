@@ -11,7 +11,7 @@ All of these function are included using the file: ```Utils.hpp```
 
 ## Linker Errors
 
-Due to the nature of the SDK, calling functions on classes causes linker errors. To fix this use the add existing item feature of Rider and VS to "add" the SDK's cpp files to your project. For rider make sure to add file links instead of moving thr files. The SDK's cpp files are in the SDK directory. **READ** the dumper-7 UsingTheSDK.MD for more info.
+Linker errors may arise through that the binaries for BR-SDK are not linked properly. Please make sure they are linked correctly.
 
 ## Classes
 
@@ -137,6 +137,49 @@ inline TRet CallGameFunction(unsigned long long addr, TArgs... args);
 
 ```cpp
 double* foo = CallGameFunction<double*, int>((unsigned long long)GetModuleHandle(NULL) + 0x123456, 5);
+```
+
+## `CallGameFunction`
+
+Calls an internal game function using a provided signature
+
+### Signature Formatting
+
+ **BR-SDK signature guidelines**
+ - Single line
+ - 1 space between opcodes
+ - Uses ?? as wildcards
+
+##### IDA-Extension (SigGen)
+
+BR-SDK is compatible with my [personal signature generation plugin for IDA](https://github.com/tubaplayerdis/Sig-Gen). It creates these signatures automatically
+
+### Template Parameters
+
+- `TRet`: Return type of the function.
+- `TArgs...`: Argument types of the function.
+
+### Declaration
+
+```cpp
+template<typename TRet, typename... TArgs>
+inline TRet CallGameFunction(const char* signature, TArgs... args);
+```
+
+### Parameters
+
+- `signature`: Signature of the function. Will be resolved by the function and an assertion will fail if not found.
+- `args...`: Arguments to pass to the function.
+
+### Returns
+
+`TRet` — The return value of the called function.
+
+### Example
+
+```cpp
+#define F_CREATE_WIDGET "48 83 EC ?? 48 85 C9 74 ?? 48 89 5C 24 ?? E8 ?? ?? ?? ?? 48 8B D8 48 85 C0"
+double* foo = CallGameFunction<double*, int>(F_CREATE_WIDGET, 5);
 ```
 
 ---

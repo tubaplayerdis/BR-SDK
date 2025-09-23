@@ -179,7 +179,7 @@ void RequestAsyncLoad(SDK::FakeSoftObjectPtr::FSoftObjectPath* path)
 	}
 	SDK::UGunBrick* BrickHandeler = static_cast<SDK::UGunBrick*>(SDK::UGameplayStatics::SpawnObject(SDK::UGunBrick::StaticClass(), Comp));
 	SDK::TDelegate<void(void)> dele = SDK::TDelegate<void(void)>();
-	uintptr_t fnAddress = F_UNINITIALIZE_EDITOR_OBJECT;//Un-init BrickEditorObject
+	uintptr_t fnAddress = ResolveSignature(F_UNINITIALIZE_EDITOR_OBJECT);//Un-init BrickEditorObject
 	// Manually build the 16-byte function pointer representation
 	uint64_t funcBlob[2] = { fnAddress, 0 };
 	SDK::TDelegate<void(void)>* delenew = CallGameFunction<SDK::TDelegate<void(void)>*, SDK::TDelegate<void(void)>*, SDK::UGunBrick*, uint64_t*>(F_CREATE_UOBJECT, &dele, BrickHandeler, funcBlob);

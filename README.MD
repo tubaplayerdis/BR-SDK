@@ -7,7 +7,7 @@ Welcome to the BR-SDK. This SDK is meant to help people develop and publish **DL
 - Creating custom maps
 - Creating custom weapons
 - Creating custom bricks
-- Creating anything that is related to .pak mods and or **content** mod-derieved
+- Creating anything that is related to .pak mods and or **content** mod-derived
 
 All of these things require the BRMK, a proprietary modding platform for Brick Rigs, which is not distributed by me or related to this project in any way.
 
