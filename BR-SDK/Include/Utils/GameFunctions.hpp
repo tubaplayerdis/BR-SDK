@@ -33,20 +33,6 @@
 unsigned long long ResolveSignature(const char* signature);
 
 /// Call an internal game function using its address.
-/// /// @note THIS WILL NOT WORK IF A HOOK HAS BEEN REGISTERED FOR THIS FUNCTION BEFOREHAND. Use the CallOriginal() function on the hook.
-/// @tparam TRet Return type of the function
-/// @tparam TArgs Argument types of the function
-/// @param signature Signature of the function.
-/// @param args Arguments to pass
-/// @return TRet
-template<typename TRet, typename... TArgs>
-TRet CallGameFunction(const char* signature, TArgs... args)
-{
-    unsigned long long addr = ResolveSignature(signature);
-    return CallGameFunction<TRet, TArgs...>(addr, args...);
-}
-
-/// Call an internal game function using its address.
 /// @tparam TRet Return type of the function
 /// @tparam TArgs Argument types of the function
 /// @param addr Address of the function.
@@ -58,6 +44,20 @@ TRet CallGameFunction(unsigned long long addr, TArgs... args)
     using FunctionFn = TRet(__fastcall*)(TArgs...);
     FunctionFn OnFunction = reinterpret_cast<FunctionFn>(addr);
     return OnFunction(std::forward<TArgs>(args)...);
+}
+
+/// Call an internal game function using its address.
+/// @note THIS WILL NOT WORK IF A HOOK HAS BEEN REGISTERED FOR THIS FUNCTION BEFOREHAND. Use the CallOriginal() function on the hook.
+/// @tparam TRet Return type of the function
+/// @tparam TArgs Argument types of the function
+/// @param signature Signature of the function.
+/// @param args Arguments to pass
+/// @return TRet
+template<typename TRet, typename... TArgs>
+TRet CallGameFunction(const char* signature, TArgs... args)
+{
+    unsigned long long addr = ResolveSignature(signature);
+    return CallGameFunction<TRet, TArgs...>(addr, args...);
 }
 
 /// Call an internal game function based on its index in a vtable. If calling inside a hook macro surround with parentheses.

@@ -132,7 +132,7 @@ static std::pair<const char*, const char*> ConvertSignature(const char* signatur
 /// Resolve a signature to an address. Uses the format: "48 89 7C 24 ?? 41 56 48 83 EC ?? 48 8B FA 4C 8B F1 E8 ?? ?? ?? ??"
 /// @param signature signature to resolve
 /// @return address of the function representing the signature. 0 if not found.
-inline unsigned long long ResolveSignature(const char* signature)
+unsigned long long ResolveSignature(const char* signature)
 {
 	//Only Scan Current Module
 	unsigned long long base = 0;
