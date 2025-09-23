@@ -14,16 +14,16 @@ Next, go to the same folder where your **solution file** (.sln) is located for y
 
 add the picture
 
-Next, navigate into the Include folder and extract the BR-SDK.zip from earlier into the Include folder. Rename the BR-SDK-main to BR-SDK
+Next, navigate into the Include folder and extract the **Include** folder under BR-SDK/Include in BR-SDK.zip into the **Include folder in your solution**. Rename the BR-SDK-main to BR-SDK
 
 Your Include directory should look like this:
 
 ```
 Include/
     BR-SDK/
-        Helpers/
+        Hooking/
         SDK/
-        SDK.hpp
+        BR-SDK.hpp
         Utils.hpp
 ```
 
@@ -35,6 +35,11 @@ Open up your Rider project and **Right Click** the project and then open **prope
 
 **Add** the following text: ``;$(SolutionDir)Include`` to the end of the current configuration, being carefull not to delete the prexisting configuration. If there is **no prexisting configuration**, add this line instead: ``$(SolutionDir)Include``
 
+### Linking BR-SDK
+
+**Repeat the following steps for the x64 Release and x64 Debug build options with the appropriate suffixes on the .lib binaries**
+
+First, create a 
 
 ## Configuring the project
 

@@ -11,6 +11,7 @@
 /*----------------------------------------------------------------------------*/
 
 #pragma once
+#include <stdexcept>
 #include <windows.h>
 #include <libloaderapi.h>
 #include <cstdlib>
@@ -46,17 +47,19 @@ TRet CallGameFunction(unsigned long long addr, TArgs... args)
     return OnFunction(std::forward<TArgs>(args)...);
 }
 
-/// Call an internal game function using its address.
+/// Call an internal game function using its signature. WILL NOT WORK IF A HOOK IS HOOKING THE DESIRED FUNCTION.
 /// @note THIS WILL NOT WORK IF A HOOK HAS BEEN REGISTERED FOR THIS FUNCTION BEFOREHAND. Use the CallOriginal() function on the hook.
 /// @tparam TRet Return type of the function
 /// @tparam TArgs Argument types of the function
 /// @param signature Signature of the function.
 /// @param args Arguments to pass
 /// @return TRet
+/// @throws runtime_error The signature as a runtime error when the signature function is not found.
 template<typename TRet, typename... TArgs>
 TRet CallGameFunction(const char* signature, TArgs... args)
 {
     unsigned long long addr = ResolveSignature(signature);
+    if (addr == 0) throw std::runtime_error(signature);
     return CallGameFunction<TRet, TArgs...>(addr, args...);
 }
 
