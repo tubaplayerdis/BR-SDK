@@ -15,15 +15,15 @@
 #include <functional>
 #include <type_traits>
 
-#include "../PropertyFixup.hpp"
-#include "../UnrealContainers.hpp"
+#include "../Utils/PropertyFixup.hpp"
+#include "../Utils/UnrealContainers.hpp"
 
 namespace SDK
 {
 
 using namespace UC;
 
-#include "../NameCollisions.inl"
+#include "../Utils/NameCollisions.inl"
 
 /*
 * Disclaimer:
