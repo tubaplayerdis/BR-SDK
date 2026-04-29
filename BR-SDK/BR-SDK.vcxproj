@@ -136,6 +136,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(_ZVcpkgCurrentInstalledDir)include;$(ProjectDir)include/SDK</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -1344,7 +1345,6 @@
     <ClInclude Include="Include\Utils\GameFunctions.hpp" />
     <ClInclude Include="Include\Utils\NameCollisions.inl" />
     <ClInclude Include="Include\Utils\Offsets.hpp" />
-    <ClInclude Include="Include\Utils\PropertyFixup.hpp" />
     <ClInclude Include="Include\Utils\UnrealContainers.hpp" />
     <ClInclude Include="Include\Utils\UtfN.hpp" />
     <ClInclude Include="Include\Utils\Utilities.hpp" />
