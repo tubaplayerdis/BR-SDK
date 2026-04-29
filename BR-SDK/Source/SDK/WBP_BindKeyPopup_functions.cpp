@@ -8,10 +8,10 @@
 
 // Package: WBP_BindKeyPopup
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_BindKeyPopup_classes.hpp"
-#include "../../Include/SDK/WBP_BindKeyPopup_parameters.hpp"
+#include "WBP_BindKeyPopup_classes.hpp"
+#include "WBP_BindKeyPopup_parameters.hpp"
 
 
 namespace SDK

@@ -9,10 +9,10 @@
 // Basic file containing function-implementations from Basic.hpp
 
 #include <Windows.h>
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/CoreUObject_classes.hpp"
-#include "../../Include/SDK/CoreUObject_structs.hpp"
+#include "CoreUObject_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 namespace SDK
 {

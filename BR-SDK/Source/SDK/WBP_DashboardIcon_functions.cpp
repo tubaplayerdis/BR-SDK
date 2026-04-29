@@ -8,14 +8,34 @@
 
 // Package: WBP_DashboardIcon
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_DashboardIcon_classes.hpp"
-#include "../../Include/SDK/WBP_DashboardIcon_parameters.hpp"
+#include "WBP_DashboardIcon_classes.hpp"
+#include "WBP_DashboardIcon_parameters.hpp"
 
 
 namespace SDK
 {
+
+// Function WBP_DashboardIcon.WBP_DashboardIcon_C.ExecuteUbergraph_WBP_DashboardIcon
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DashboardIcon_C::ExecuteUbergraph_WBP_DashboardIcon(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DashboardIcon_C", "ExecuteUbergraph_WBP_DashboardIcon");
+
+	Params::WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function WBP_DashboardIcon.WBP_DashboardIcon_C.UpdateIconImage
 // (Event, Protected, BlueprintEvent)
@@ -36,26 +56,6 @@ void UWBP_DashboardIcon_C::UpdateIconImage(bool bInVisible, EBrickUIColorStyle I
 	Parms.bInVisible = bInVisible;
 	Parms.InColorStyle = InColorStyle;
 	Parms.InIconIndex = InIconIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DashboardIcon.WBP_DashboardIcon_C.ExecuteUbergraph_WBP_DashboardIcon
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DashboardIcon_C::ExecuteUbergraph_WBP_DashboardIcon(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DashboardIcon_C", "ExecuteUbergraph_WBP_DashboardIcon");
-
-	Params::WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

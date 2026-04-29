@@ -8,10 +8,10 @@
 
 // Package: WBP_ConnectorSpacingAxis
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_ConnectorSpacingAxis_classes.hpp"
-#include "../../Include/SDK/WBP_ConnectorSpacingAxis_parameters.hpp"
+#include "WBP_ConnectorSpacingAxis_classes.hpp"
+#include "WBP_ConnectorSpacingAxis_parameters.hpp"
 
 
 namespace SDK

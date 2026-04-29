@@ -8,10 +8,10 @@
 
 // Package: BP_DragStrip
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_DragStrip_classes.hpp"
-#include "../../Include/SDK/BP_DragStrip_parameters.hpp"
+#include "BP_DragStrip_classes.hpp"
+#include "BP_DragStrip_parameters.hpp"
 
 
 namespace SDK

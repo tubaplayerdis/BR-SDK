@@ -8,10 +8,10 @@
 
 // Package: EyeTracker
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/EyeTracker_classes.hpp"
-#include "../../Include/SDK/EyeTracker_parameters.hpp"
+#include "EyeTracker_classes.hpp"
+#include "EyeTracker_parameters.hpp"
 
 
 namespace SDK

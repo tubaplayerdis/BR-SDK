@@ -8,10 +8,10 @@
 
 // Package: BP_Blender
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_Blender_classes.hpp"
-#include "../../Include/SDK/BP_Blender_parameters.hpp"
+#include "BP_Blender_classes.hpp"
+#include "BP_Blender_parameters.hpp"
 
 
 namespace SDK

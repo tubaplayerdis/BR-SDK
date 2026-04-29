@@ -8,10 +8,10 @@
 
 // Package: BP_Kick_Sequence
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_Kick_Sequence_classes.hpp"
-#include "../../Include/SDK/BP_Kick_Sequence_parameters.hpp"
+#include "BP_Kick_Sequence_classes.hpp"
+#include "BP_Kick_Sequence_parameters.hpp"
 
 
 namespace SDK

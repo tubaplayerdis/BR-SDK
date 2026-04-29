@@ -8,10 +8,10 @@
 
 // Package: FluMoveSync
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/FluMoveSync_classes.hpp"
-#include "../../Include/SDK/FluMoveSync_parameters.hpp"
+#include "FluMoveSync_classes.hpp"
+#include "FluMoveSync_parameters.hpp"
 
 
 namespace SDK

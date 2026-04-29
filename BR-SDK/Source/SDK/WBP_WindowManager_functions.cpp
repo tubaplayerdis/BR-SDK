@@ -8,10 +8,10 @@
 
 // Package: WBP_WindowManager
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_WindowManager_classes.hpp"
-#include "../../Include/SDK/WBP_WindowManager_parameters.hpp"
+#include "WBP_WindowManager_classes.hpp"
+#include "WBP_WindowManager_parameters.hpp"
 
 
 namespace SDK

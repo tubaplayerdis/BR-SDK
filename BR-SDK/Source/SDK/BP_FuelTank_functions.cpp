@@ -8,10 +8,10 @@
 
 // Package: BP_FuelTank
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_FuelTank_classes.hpp"
-#include "../../Include/SDK/BP_FuelTank_parameters.hpp"
+#include "BP_FuelTank_classes.hpp"
+#include "BP_FuelTank_parameters.hpp"
 
 
 namespace SDK

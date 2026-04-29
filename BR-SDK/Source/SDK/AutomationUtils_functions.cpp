@@ -8,10 +8,10 @@
 
 // Package: AutomationUtils
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/AutomationUtils_classes.hpp"
-#include "../../Include/SDK/AutomationUtils_parameters.hpp"
+#include "AutomationUtils_classes.hpp"
+#include "AutomationUtils_parameters.hpp"
 
 
 namespace SDK

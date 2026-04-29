@@ -8,10 +8,10 @@
 
 // Package: BP_UIStyle_Default
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_UIStyle_Default_classes.hpp"
-#include "../../Include/SDK/BP_UIStyle_Default_parameters.hpp"
+#include "BP_UIStyle_Default_classes.hpp"
+#include "BP_UIStyle_Default_parameters.hpp"
 
 
 namespace SDK
@@ -156,9 +156,12 @@ void UBP_UIStyle_Default_C::BuildDefaultStyle(const struct FLinearColor& Default
 // float                                   Scale                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          Font_Material                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   OutlineSize                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bStrike                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bUnderline                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FLinearColor&              ColorMultiplier                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTextBlockStyle                  ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-struct FTextBlockStyle UBP_UIStyle_Default_C::MakeTextStyle(class FName Typeface, float Scale, class UObject* Font_Material, int32 OutlineSize) const
+struct FTextBlockStyle UBP_UIStyle_Default_C::MakeTextStyle(class FName Typeface, float Scale, class UObject* Font_Material, int32 OutlineSize, bool bStrike, bool bUnderline, const struct FLinearColor& ColorMultiplier) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -171,6 +174,9 @@ struct FTextBlockStyle UBP_UIStyle_Default_C::MakeTextStyle(class FName Typeface
 	Parms.Scale = Scale;
 	Parms.Font_Material = Font_Material;
 	Parms.OutlineSize = OutlineSize;
+	Parms.bStrike = bStrike;
+	Parms.bUnderline = bUnderline;
+	Parms.ColorMultiplier = std::move(ColorMultiplier);
 
 	UObject::ProcessEvent(Func, &Parms);
 

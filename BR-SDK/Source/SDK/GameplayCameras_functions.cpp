@@ -8,10 +8,10 @@
 
 // Package: GameplayCameras
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/GameplayCameras_classes.hpp"
-#include "../../Include/SDK/GameplayCameras_parameters.hpp"
+#include "GameplayCameras_classes.hpp"
+#include "GameplayCameras_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: WBP_InputKey
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_InputKey_classes.hpp"
-#include "../../Include/SDK/WBP_InputKey_parameters.hpp"
+#include "WBP_InputKey_classes.hpp"
+#include "WBP_InputKey_parameters.hpp"
 
 
 namespace SDK
@@ -37,20 +37,20 @@ void UWBP_InputKey_C::ExecuteUbergraph_WBP_InputKey(int32 EntryPoint)
 }
 
 
-// Function WBP_InputKey.WBP_InputKey_C.UpdateDisplayInfo
+// Function WBP_InputKey.WBP_InputKey_C.UpdateKey
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FKeyDisplayTableRow&       DisplayInfo                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    bIsGamepadKey                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              bIsGamepadKey                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_InputKey_C::UpdateDisplayInfo(const struct FKeyDisplayTableRow& DisplayInfo, bool bIsGamepadKey)
+void UWBP_InputKey_C::UpdateKey(const struct FKeyDisplayTableRow& DisplayInfo, const bool bIsGamepadKey)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputKey_C", "UpdateDisplayInfo");
+		Func = Class->GetFunction("WBP_InputKey_C", "UpdateKey");
 
-	Params::WBP_InputKey_C_UpdateDisplayInfo Parms{};
+	Params::WBP_InputKey_C_UpdateKey Parms{};
 
 	Parms.DisplayInfo = std::move(DisplayInfo);
 	Parms.bIsGamepadKey = bIsGamepadKey;

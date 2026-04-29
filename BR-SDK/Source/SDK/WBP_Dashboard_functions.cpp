@@ -8,52 +8,30 @@
 
 // Package: WBP_Dashboard
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_Dashboard_classes.hpp"
-#include "../../Include/SDK/WBP_Dashboard_parameters.hpp"
+#include "WBP_Dashboard_classes.hpp"
+#include "WBP_Dashboard_parameters.hpp"
 
 
 namespace SDK
 {
 
-// Function WBP_Dashboard.WBP_Dashboard_C.AddSliderWidget
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Dashboard.WBP_Dashboard_C.ExecuteUbergraph_WBP_Dashboard
+// (Final, UbergraphFunction)
 // Parameters:
-// class UDashboardSliderWidget*           Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Dashboard_C::AddSliderWidget(class UDashboardSliderWidget* Widget)
+void UWBP_Dashboard_C::ExecuteUbergraph_WBP_Dashboard(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Dashboard_C", "AddSliderWidget");
+		Func = Class->GetFunction("WBP_Dashboard_C", "ExecuteUbergraph_WBP_Dashboard");
 
-	Params::WBP_Dashboard_C_AddSliderWidget Parms{};
+	Params::WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard Parms{};
 
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Dashboard.WBP_Dashboard_C.AddIconWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UDashboardIconWidget*             Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Dashboard_C::AddIconWidget(class UDashboardIconWidget* Widget, int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Dashboard_C", "AddIconWidget");
-
-	Params::WBP_Dashboard_C_AddIconWidget Parms{};
-
-	Parms.Widget = Widget;
-	Parms.Index_0 = Index_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -83,21 +61,43 @@ void UWBP_Dashboard_C::UpdateSliderWidgetSlot(class UDashboardSliderWidget* Widg
 }
 
 
-// Function WBP_Dashboard.WBP_Dashboard_C.ExecuteUbergraph_WBP_Dashboard
-// (Final, UbergraphFunction)
+// Function WBP_Dashboard.WBP_Dashboard_C.AddIconWidget
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UDashboardIconWidget*             Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Dashboard_C::ExecuteUbergraph_WBP_Dashboard(int32 EntryPoint)
+void UWBP_Dashboard_C::AddIconWidget(class UDashboardIconWidget* Widget, int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Dashboard_C", "ExecuteUbergraph_WBP_Dashboard");
+		Func = Class->GetFunction("WBP_Dashboard_C", "AddIconWidget");
 
-	Params::WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard Parms{};
+	Params::WBP_Dashboard_C_AddIconWidget Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Widget = Widget;
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.AddSliderWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UDashboardSliderWidget*           Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Dashboard_C::AddSliderWidget(class UDashboardSliderWidget* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "AddSliderWidget");
+
+	Params::WBP_Dashboard_C_AddSliderWidget Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

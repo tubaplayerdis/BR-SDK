@@ -8,10 +8,10 @@
 
 // Package: BP_BrickCharacter
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_BrickCharacter_classes.hpp"
-#include "../../Include/SDK/BP_BrickCharacter_parameters.hpp"
+#include "BP_BrickCharacter_classes.hpp"
+#include "BP_BrickCharacter_parameters.hpp"
 
 
 namespace SDK

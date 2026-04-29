@@ -8,10 +8,10 @@
 
 // Package: WBP_Menu
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_Menu_classes.hpp"
-#include "../../Include/SDK/WBP_Menu_parameters.hpp"
+#include "WBP_Menu_classes.hpp"
+#include "WBP_Menu_parameters.hpp"
 
 
 namespace SDK
@@ -34,6 +34,20 @@ void UWBP_Menu_C::ExecuteUbergraph_WBP_Menu(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Menu.WBP_Menu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Menu_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

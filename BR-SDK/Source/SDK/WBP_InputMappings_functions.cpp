@@ -8,40 +8,32 @@
 
 // Package: WBP_InputMappings
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_InputMappings_classes.hpp"
-#include "../../Include/SDK/WBP_InputMappings_parameters.hpp"
+#include "WBP_InputMappings_classes.hpp"
+#include "WBP_InputMappings_parameters.hpp"
 
 
 namespace SDK
 {
 
-// Function WBP_InputMappings.WBP_InputMappings_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_InputMappings.WBP_InputMappings_C.ExecuteUbergraph_WBP_InputMappings
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InputMappings_C::Construct()
+void UWBP_InputMappings_C::ExecuteUbergraph_WBP_InputMappings(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputMappings_C", "Construct");
+		Func = Class->GetFunction("WBP_InputMappings_C", "ExecuteUbergraph_WBP_InputMappings");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings Parms{};
 
+	Parms.EntryPoint = EntryPoint;
 
-// Function WBP_InputMappings.WBP_InputMappings_C.OnClickedRevertInput
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_InputMappings_C::OnClickedRevertInput()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputMappings_C", "OnClickedRevertInput");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -65,23 +57,31 @@ void UWBP_InputMappings_C::OnRevertInputPopupClosed(EPopupResult Result)
 }
 
 
-// Function WBP_InputMappings.WBP_InputMappings_C.ExecuteUbergraph_WBP_InputMappings
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_InputMappings.WBP_InputMappings_C.OnClickedRevertInput
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_InputMappings_C::ExecuteUbergraph_WBP_InputMappings(int32 EntryPoint)
+void UWBP_InputMappings_C::OnClickedRevertInput()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputMappings_C", "ExecuteUbergraph_WBP_InputMappings");
+		Func = Class->GetFunction("WBP_InputMappings_C", "OnClickedRevertInput");
 
-	Params::WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_InputMappings.WBP_InputMappings_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_InputMappings_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputMappings_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

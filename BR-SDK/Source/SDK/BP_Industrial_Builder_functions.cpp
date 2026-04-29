@@ -8,10 +8,10 @@
 
 // Package: BP_Industrial_Builder
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_Industrial_Builder_classes.hpp"
-#include "../../Include/SDK/BP_Industrial_Builder_parameters.hpp"
+#include "BP_Industrial_Builder_classes.hpp"
+#include "BP_Industrial_Builder_parameters.hpp"
 
 
 namespace SDK

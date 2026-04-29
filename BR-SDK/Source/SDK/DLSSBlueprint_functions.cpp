@@ -8,10 +8,10 @@
 
 // Package: DLSSBlueprint
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/DLSSBlueprint_classes.hpp"
-#include "../../Include/SDK/DLSSBlueprint_parameters.hpp"
+#include "DLSSBlueprint_classes.hpp"
+#include "DLSSBlueprint_parameters.hpp"
 
 
 namespace SDK

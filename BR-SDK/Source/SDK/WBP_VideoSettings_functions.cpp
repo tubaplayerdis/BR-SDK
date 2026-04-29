@@ -8,10 +8,10 @@
 
 // Package: WBP_VideoSettings
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_VideoSettings_classes.hpp"
-#include "../../Include/SDK/WBP_VideoSettings_parameters.hpp"
+#include "WBP_VideoSettings_classes.hpp"
+#include "WBP_VideoSettings_parameters.hpp"
 
 
 namespace SDK

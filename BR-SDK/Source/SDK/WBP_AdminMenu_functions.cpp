@@ -8,10 +8,10 @@
 
 // Package: WBP_AdminMenu
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_AdminMenu_classes.hpp"
-#include "../../Include/SDK/WBP_AdminMenu_parameters.hpp"
+#include "WBP_AdminMenu_classes.hpp"
+#include "WBP_AdminMenu_parameters.hpp"
 
 
 namespace SDK

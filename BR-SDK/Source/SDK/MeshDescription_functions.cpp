@@ -8,10 +8,10 @@
 
 // Package: MeshDescription
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/MeshDescription_classes.hpp"
-#include "../../Include/SDK/MeshDescription_parameters.hpp"
+#include "MeshDescription_classes.hpp"
+#include "MeshDescription_parameters.hpp"
 
 
 namespace SDK

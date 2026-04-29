@@ -8,10 +8,10 @@
 
 // Package: WBP_UserIdProperty
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_UserIdProperty_classes.hpp"
-#include "../../Include/SDK/WBP_UserIdProperty_parameters.hpp"
+#include "WBP_UserIdProperty_classes.hpp"
+#include "WBP_UserIdProperty_parameters.hpp"
 
 
 namespace SDK

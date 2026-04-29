@@ -8,10 +8,10 @@
 
 // Package: MediaAssets
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/MediaAssets_classes.hpp"
-#include "../../Include/SDK/MediaAssets_parameters.hpp"
+#include "MediaAssets_classes.hpp"
+#include "MediaAssets_parameters.hpp"
 
 
 namespace SDK

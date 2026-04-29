@@ -8,10 +8,10 @@
 
 // Package: WBP_UGCProperty
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_UGCProperty_classes.hpp"
-#include "../../Include/SDK/WBP_UGCProperty_parameters.hpp"
+#include "WBP_UGCProperty_classes.hpp"
+#include "WBP_UGCProperty_parameters.hpp"
 
 
 namespace SDK

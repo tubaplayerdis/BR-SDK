@@ -8,10 +8,10 @@
 
 // Package: ClothingSystemRuntimeNv
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/ClothingSystemRuntimeNv_classes.hpp"
-#include "../../Include/SDK/ClothingSystemRuntimeNv_parameters.hpp"
+#include "ClothingSystemRuntimeNv_classes.hpp"
+#include "ClothingSystemRuntimeNv_parameters.hpp"
 
 
 namespace SDK

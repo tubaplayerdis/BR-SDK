@@ -8,10 +8,10 @@
 
 // Package: Niagara
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/Niagara_classes.hpp"
-#include "../../Include/SDK/Niagara_parameters.hpp"
+#include "Niagara_classes.hpp"
+#include "Niagara_parameters.hpp"
 
 
 namespace SDK

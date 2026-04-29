@@ -8,10 +8,10 @@
 
 // Package: CinematicCamera
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/CinematicCamera_classes.hpp"
-#include "../../Include/SDK/CinematicCamera_parameters.hpp"
+#include "CinematicCamera_classes.hpp"
+#include "CinematicCamera_parameters.hpp"
 
 
 namespace SDK

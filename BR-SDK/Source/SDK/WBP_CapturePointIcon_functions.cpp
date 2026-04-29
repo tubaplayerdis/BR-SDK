@@ -8,10 +8,10 @@
 
 // Package: WBP_CapturePointIcon
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_CapturePointIcon_classes.hpp"
-#include "../../Include/SDK/WBP_CapturePointIcon_parameters.hpp"
+#include "WBP_CapturePointIcon_classes.hpp"
+#include "WBP_CapturePointIcon_parameters.hpp"
 
 
 namespace SDK

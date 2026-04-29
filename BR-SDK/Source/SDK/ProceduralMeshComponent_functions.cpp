@@ -8,10 +8,10 @@
 
 // Package: ProceduralMeshComponent
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/ProceduralMeshComponent_classes.hpp"
-#include "../../Include/SDK/ProceduralMeshComponent_parameters.hpp"
+#include "ProceduralMeshComponent_classes.hpp"
+#include "ProceduralMeshComponent_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: WBP_ColorProperty
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_ColorProperty_classes.hpp"
-#include "../../Include/SDK/WBP_ColorProperty_parameters.hpp"
+#include "WBP_ColorProperty_classes.hpp"
+#include "WBP_ColorProperty_parameters.hpp"
 
 
 namespace SDK

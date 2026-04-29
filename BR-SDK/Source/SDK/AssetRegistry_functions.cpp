@@ -8,10 +8,10 @@
 
 // Package: AssetRegistry
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/AssetRegistry_classes.hpp"
-#include "../../Include/SDK/AssetRegistry_parameters.hpp"
+#include "AssetRegistry_classes.hpp"
+#include "AssetRegistry_parameters.hpp"
 
 
 namespace SDK

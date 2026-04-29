@@ -8,10 +8,10 @@
 
 // Package: ApexDestruction
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/ApexDestruction_classes.hpp"
-#include "../../Include/SDK/ApexDestruction_parameters.hpp"
+#include "ApexDestruction_classes.hpp"
+#include "ApexDestruction_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: WBP_RandomSpawnIcon
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_RandomSpawnIcon_classes.hpp"
-#include "../../Include/SDK/WBP_RandomSpawnIcon_parameters.hpp"
+#include "WBP_RandomSpawnIcon_classes.hpp"
+#include "WBP_RandomSpawnIcon_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: WBP_PopupContainer
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_PopupContainer_classes.hpp"
-#include "../../Include/SDK/WBP_PopupContainer_parameters.hpp"
+#include "WBP_PopupContainer_classes.hpp"
+#include "WBP_PopupContainer_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: WBP_PlacableObject
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_PlacableObject_classes.hpp"
-#include "../../Include/SDK/WBP_PlacableObject_parameters.hpp"
+#include "WBP_PlacableObject_classes.hpp"
+#include "WBP_PlacableObject_parameters.hpp"
 
 
 namespace SDK

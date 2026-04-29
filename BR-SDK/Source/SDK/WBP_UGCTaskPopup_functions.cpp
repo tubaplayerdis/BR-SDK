@@ -8,10 +8,10 @@
 
 // Package: WBP_UGCTaskPopup
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_UGCTaskPopup_classes.hpp"
-#include "../../Include/SDK/WBP_UGCTaskPopup_parameters.hpp"
+#include "WBP_UGCTaskPopup_classes.hpp"
+#include "WBP_UGCTaskPopup_parameters.hpp"
 
 
 namespace SDK

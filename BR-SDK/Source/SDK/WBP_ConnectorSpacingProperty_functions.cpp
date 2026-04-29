@@ -8,10 +8,10 @@
 
 // Package: WBP_ConnectorSpacingProperty
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_ConnectorSpacingProperty_classes.hpp"
-#include "../../Include/SDK/WBP_ConnectorSpacingProperty_parameters.hpp"
+#include "WBP_ConnectorSpacingProperty_classes.hpp"
+#include "WBP_ConnectorSpacingProperty_parameters.hpp"
 
 
 namespace SDK

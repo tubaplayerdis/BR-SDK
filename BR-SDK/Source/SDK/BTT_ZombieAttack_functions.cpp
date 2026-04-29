@@ -8,10 +8,10 @@
 
 // Package: BTT_ZombieAttack
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BTT_ZombieAttack_classes.hpp"
-#include "../../Include/SDK/BTT_ZombieAttack_parameters.hpp"
+#include "BTT_ZombieAttack_classes.hpp"
+#include "BTT_ZombieAttack_parameters.hpp"
 
 
 namespace SDK

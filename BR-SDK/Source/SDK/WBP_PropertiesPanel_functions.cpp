@@ -8,10 +8,10 @@
 
 // Package: WBP_PropertiesPanel
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_PropertiesPanel_classes.hpp"
-#include "../../Include/SDK/WBP_PropertiesPanel_parameters.hpp"
+#include "WBP_PropertiesPanel_classes.hpp"
+#include "WBP_PropertiesPanel_parameters.hpp"
 
 
 namespace SDK

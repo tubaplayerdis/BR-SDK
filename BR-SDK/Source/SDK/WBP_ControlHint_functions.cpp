@@ -8,17 +8,17 @@
 
 // Package: WBP_ControlHint
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_ControlHint_classes.hpp"
-#include "../../Include/SDK/WBP_ControlHint_parameters.hpp"
+#include "WBP_ControlHint_classes.hpp"
+#include "WBP_ControlHint_parameters.hpp"
 
 
 namespace SDK
 {
 
 // Function WBP_ControlHint.WBP_ControlHint_C.ExecuteUbergraph_WBP_ControlHint
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -32,6 +32,26 @@ void UWBP_ControlHint_C::ExecuteUbergraph_WBP_ControlHint(int32 EntryPoint)
 	Params::WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ControlHint.WBP_ControlHint_C.UpdateTextVisibility
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bNewVisible                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_ControlHint_C::UpdateTextVisibility(bool bNewVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ControlHint_C", "UpdateTextVisibility");
+
+	Params::WBP_ControlHint_C_UpdateTextVisibility Parms{};
+
+	Parms.bNewVisible = bNewVisible;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

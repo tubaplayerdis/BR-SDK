@@ -8,10 +8,10 @@
 
 // Package: BTS_ZombieFindTarget
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BTS_ZombieFindTarget_classes.hpp"
-#include "../../Include/SDK/BTS_ZombieFindTarget_parameters.hpp"
+#include "BTS_ZombieFindTarget_classes.hpp"
+#include "BTS_ZombieFindTarget_parameters.hpp"
 
 
 namespace SDK

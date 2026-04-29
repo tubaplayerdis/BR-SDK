@@ -8,10 +8,10 @@
 
 // Package: WBP_LoadingScreen
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_LoadingScreen_classes.hpp"
-#include "../../Include/SDK/WBP_LoadingScreen_parameters.hpp"
+#include "WBP_LoadingScreen_classes.hpp"
+#include "WBP_LoadingScreen_parameters.hpp"
 
 
 namespace SDK

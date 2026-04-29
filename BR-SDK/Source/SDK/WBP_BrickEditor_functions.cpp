@@ -8,10 +8,10 @@
 
 // Package: WBP_BrickEditor
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_BrickEditor_classes.hpp"
-#include "../../Include/SDK/WBP_BrickEditor_parameters.hpp"
+#include "WBP_BrickEditor_classes.hpp"
+#include "WBP_BrickEditor_parameters.hpp"
 
 
 namespace SDK

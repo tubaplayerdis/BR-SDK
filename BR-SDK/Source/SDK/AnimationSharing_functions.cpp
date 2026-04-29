@@ -8,10 +8,10 @@
 
 // Package: AnimationSharing
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/AnimationSharing_classes.hpp"
-#include "../../Include/SDK/AnimationSharing_parameters.hpp"
+#include "AnimationSharing_classes.hpp"
+#include "AnimationSharing_parameters.hpp"
 
 
 namespace SDK

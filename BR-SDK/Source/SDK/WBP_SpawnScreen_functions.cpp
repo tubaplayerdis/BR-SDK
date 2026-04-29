@@ -8,10 +8,10 @@
 
 // Package: WBP_SpawnScreen
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_SpawnScreen_classes.hpp"
-#include "../../Include/SDK/WBP_SpawnScreen_parameters.hpp"
+#include "WBP_SpawnScreen_classes.hpp"
+#include "WBP_SpawnScreen_parameters.hpp"
 
 
 namespace SDK

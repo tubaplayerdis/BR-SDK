@@ -8,10 +8,10 @@
 
 // Package: WBP_ServerBrowser
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_ServerBrowser_classes.hpp"
-#include "../../Include/SDK/WBP_ServerBrowser_parameters.hpp"
+#include "WBP_ServerBrowser_classes.hpp"
+#include "WBP_ServerBrowser_parameters.hpp"
 
 
 namespace SDK

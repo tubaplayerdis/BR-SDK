@@ -8,10 +8,10 @@
 
 // Package: InteractiveToolsFramework
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/InteractiveToolsFramework_classes.hpp"
-#include "../../Include/SDK/InteractiveToolsFramework_parameters.hpp"
+#include "InteractiveToolsFramework_classes.hpp"
+#include "InteractiveToolsFramework_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: BP_Shredder
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_Shredder_classes.hpp"
-#include "../../Include/SDK/BP_Shredder_parameters.hpp"
+#include "BP_Shredder_classes.hpp"
+#include "BP_Shredder_parameters.hpp"
 
 
 namespace SDK

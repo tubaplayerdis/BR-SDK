@@ -8,17 +8,17 @@
 
 // Package: WBP_ScoreboardPlayer
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_ScoreboardPlayer_classes.hpp"
-#include "../../Include/SDK/WBP_ScoreboardPlayer_parameters.hpp"
+#include "WBP_ScoreboardPlayer_classes.hpp"
+#include "WBP_ScoreboardPlayer_parameters.hpp"
 
 
 namespace SDK
 {
 
 // Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.ExecuteUbergraph_WBP_ScoreboardPlayer
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -32,6 +32,26 @@ void UWBP_ScoreboardPlayer_C::ExecuteUbergraph_WBP_ScoreboardPlayer(int32 EntryP
 	Params::WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.UpdateAdminRole
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const EAdminRole                        Role                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ScoreboardPlayer_C::UpdateAdminRole(const EAdminRole Role)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ScoreboardPlayer_C", "UpdateAdminRole");
+
+	Params::WBP_ScoreboardPlayer_C_UpdateAdminRole Parms{};
+
+	Parms.Role = Role;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -52,26 +72,6 @@ void UWBP_ScoreboardPlayer_C::UpdateIsAlive(bool bIsAlive)
 	Params::WBP_ScoreboardPlayer_C_UpdateIsAlive Parms{};
 
 	Parms.bIsAlive = bIsAlive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.UpdateIsAdmin
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsAdmin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ScoreboardPlayer_C::UpdateIsAdmin(bool bIsAdmin)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ScoreboardPlayer_C", "UpdateIsAdmin");
-
-	Params::WBP_ScoreboardPlayer_C_UpdateIsAdmin Parms{};
-
-	Parms.bIsAdmin = bIsAdmin;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

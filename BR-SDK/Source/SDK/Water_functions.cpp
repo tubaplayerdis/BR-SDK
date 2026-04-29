@@ -8,10 +8,10 @@
 
 // Package: Water
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/Water_classes.hpp"
-#include "../../Include/SDK/Water_parameters.hpp"
+#include "Water_classes.hpp"
+#include "Water_parameters.hpp"
 
 
 namespace SDK

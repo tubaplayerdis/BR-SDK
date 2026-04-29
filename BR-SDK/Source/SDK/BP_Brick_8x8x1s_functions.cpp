@@ -8,10 +8,10 @@
 
 // Package: BP_Brick_8x8x1s
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_Brick_8x8x1s_classes.hpp"
-#include "../../Include/SDK/BP_Brick_8x8x1s_parameters.hpp"
+#include "BP_Brick_8x8x1s_classes.hpp"
+#include "BP_Brick_8x8x1s_parameters.hpp"
 
 
 namespace SDK

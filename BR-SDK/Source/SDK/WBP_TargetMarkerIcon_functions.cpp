@@ -8,70 +8,30 @@
 
 // Package: WBP_TargetMarkerIcon
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_TargetMarkerIcon_classes.hpp"
-#include "../../Include/SDK/WBP_TargetMarkerIcon_parameters.hpp"
+#include "WBP_TargetMarkerIcon_classes.hpp"
+#include "WBP_TargetMarkerIcon_parameters.hpp"
 
 
 namespace SDK
 {
 
-// Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateAmmoType
-// (Event, Protected, BlueprintEvent)
+// Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.ExecuteUbergraph_WBP_TargetMarkerIcon
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// EAmmoType                               NewType                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TargetMarkerIcon_C::UpdateAmmoType(EAmmoType NewType)
+void UWBP_TargetMarkerIcon_C::ExecuteUbergraph_WBP_TargetMarkerIcon(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TargetMarkerIcon_C", "UpdateAmmoType");
+		Func = Class->GetFunction("WBP_TargetMarkerIcon_C", "ExecuteUbergraph_WBP_TargetMarkerIcon");
 
-	Params::WBP_TargetMarkerIcon_C_UpdateAmmoType Parms{};
+	Params::WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon Parms{};
 
-	Parms.NewType = NewType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateTargetDistance
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   NewDist                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TargetMarkerIcon_C::UpdateTargetDistance(float NewDist)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TargetMarkerIcon_C", "UpdateTargetDistance");
-
-	Params::WBP_TargetMarkerIcon_C_UpdateTargetDistance Parms{};
-
-	Parms.NewDist = NewDist;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateFireAction
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   NewActionIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TargetMarkerIcon_C::UpdateFireAction(int32 NewActionIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TargetMarkerIcon_C", "UpdateFireAction");
-
-	Params::WBP_TargetMarkerIcon_C_UpdateFireAction Parms{};
-
-	Parms.NewActionIndex = NewActionIndex;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -97,21 +57,61 @@ void UWBP_TargetMarkerIcon_C::UpdateHasValidTarget(bool bNewHasValidTarget)
 }
 
 
-// Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.ExecuteUbergraph_WBP_TargetMarkerIcon
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateFireAction
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewActionIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TargetMarkerIcon_C::ExecuteUbergraph_WBP_TargetMarkerIcon(int32 EntryPoint)
+void UWBP_TargetMarkerIcon_C::UpdateFireAction(int32 NewActionIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TargetMarkerIcon_C", "ExecuteUbergraph_WBP_TargetMarkerIcon");
+		Func = Class->GetFunction("WBP_TargetMarkerIcon_C", "UpdateFireAction");
 
-	Params::WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon Parms{};
+	Params::WBP_TargetMarkerIcon_C_UpdateFireAction Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewActionIndex = NewActionIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateTargetDistance
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   NewDist                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TargetMarkerIcon_C::UpdateTargetDistance(float NewDist)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TargetMarkerIcon_C", "UpdateTargetDistance");
+
+	Params::WBP_TargetMarkerIcon_C_UpdateTargetDistance Parms{};
+
+	Parms.NewDist = NewDist;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateAmmoType
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EAmmoType                               NewType                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TargetMarkerIcon_C::UpdateAmmoType(EAmmoType NewType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TargetMarkerIcon_C", "UpdateAmmoType");
+
+	Params::WBP_TargetMarkerIcon_C_UpdateAmmoType Parms{};
+
+	Parms.NewType = NewType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

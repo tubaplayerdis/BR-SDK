@@ -8,10 +8,10 @@
 
 // Package: BP_Construction_Building
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_Construction_Building_classes.hpp"
-#include "../../Include/SDK/BP_Construction_Building_parameters.hpp"
+#include "BP_Construction_Building_classes.hpp"
+#include "BP_Construction_Building_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: BP_CarElevator
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_CarElevator_classes.hpp"
-#include "../../Include/SDK/BP_CarElevator_parameters.hpp"
+#include "BP_CarElevator_classes.hpp"
+#include "BP_CarElevator_parameters.hpp"
 
 
 namespace SDK

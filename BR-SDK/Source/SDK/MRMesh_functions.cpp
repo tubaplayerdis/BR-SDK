@@ -8,10 +8,10 @@
 
 // Package: MRMesh
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/MRMesh_classes.hpp"
-#include "../../Include/SDK/MRMesh_parameters.hpp"
+#include "MRMesh_classes.hpp"
+#include "MRMesh_parameters.hpp"
 
 
 namespace SDK

@@ -8,14 +8,34 @@
 
 // Package: WBP_VehicleIcon
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_VehicleIcon_classes.hpp"
-#include "../../Include/SDK/WBP_VehicleIcon_parameters.hpp"
+#include "WBP_VehicleIcon_classes.hpp"
+#include "WBP_VehicleIcon_parameters.hpp"
 
 
 namespace SDK
 {
+
+// Function WBP_VehicleIcon.WBP_VehicleIcon_C.ExecuteUbergraph_WBP_VehicleIcon
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VehicleIcon_C::ExecuteUbergraph_WBP_VehicleIcon(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VehicleIcon_C", "ExecuteUbergraph_WBP_VehicleIcon");
+
+	Params::WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function WBP_VehicleIcon.WBP_VehicleIcon_C.UpdateVehicleIcon
 // (Event, Protected, BlueprintEvent)
@@ -36,26 +56,6 @@ void UWBP_VehicleIcon_C::UpdateVehicleIcon(bool bNewIsLocalPlayer, bool bNewCanB
 	Parms.bNewIsLocalPlayer = bNewIsLocalPlayer;
 	Parms.bNewCanBeDamaged = bNewCanBeDamaged;
 	Parms.NewPinMode = NewPinMode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VehicleIcon.WBP_VehicleIcon_C.ExecuteUbergraph_WBP_VehicleIcon
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VehicleIcon_C::ExecuteUbergraph_WBP_VehicleIcon(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VehicleIcon_C", "ExecuteUbergraph_WBP_VehicleIcon");
-
-	Params::WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

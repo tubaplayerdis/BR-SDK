@@ -8,10 +8,10 @@
 
 // Package: BP_UIStyle_White
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_UIStyle_White_classes.hpp"
-#include "../../Include/SDK/BP_UIStyle_White_parameters.hpp"
+#include "BP_UIStyle_White_classes.hpp"
+#include "BP_UIStyle_White_parameters.hpp"
 
 
 namespace SDK

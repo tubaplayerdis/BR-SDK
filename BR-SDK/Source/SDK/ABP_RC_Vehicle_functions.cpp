@@ -8,10 +8,10 @@
 
 // Package: ABP_RC_Vehicle
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/ABP_RC_Vehicle_classes.hpp"
-#include "../../Include/SDK/ABP_RC_Vehicle_parameters.hpp"
+#include "ABP_RC_Vehicle_classes.hpp"
+#include "ABP_RC_Vehicle_parameters.hpp"
 
 
 namespace SDK

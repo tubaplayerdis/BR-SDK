@@ -8,10 +8,10 @@
 
 // Package: WBP_InputChord
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_InputChord_classes.hpp"
-#include "../../Include/SDK/WBP_InputChord_parameters.hpp"
+#include "WBP_InputChord_classes.hpp"
+#include "WBP_InputChord_parameters.hpp"
 
 
 namespace SDK

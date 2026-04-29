@@ -8,10 +8,10 @@
 
 // Package: MovieSceneCapture
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/MovieSceneCapture_classes.hpp"
-#include "../../Include/SDK/MovieSceneCapture_parameters.hpp"
+#include "MovieSceneCapture_classes.hpp"
+#include "MovieSceneCapture_parameters.hpp"
 
 
 namespace SDK

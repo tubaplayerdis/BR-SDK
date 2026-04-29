@@ -8,10 +8,10 @@
 
 // Package: WBP_PropertyContainerButton
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_PropertyContainerButton_classes.hpp"
-#include "../../Include/SDK/WBP_PropertyContainerButton_parameters.hpp"
+#include "WBP_PropertyContainerButton_classes.hpp"
+#include "WBP_PropertyContainerButton_parameters.hpp"
 
 
 namespace SDK

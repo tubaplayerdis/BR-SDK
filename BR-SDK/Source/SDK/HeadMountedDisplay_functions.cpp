@@ -8,10 +8,10 @@
 
 // Package: HeadMountedDisplay
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/HeadMountedDisplay_classes.hpp"
-#include "../../Include/SDK/HeadMountedDisplay_parameters.hpp"
+#include "HeadMountedDisplay_classes.hpp"
+#include "HeadMountedDisplay_parameters.hpp"
 
 
 namespace SDK

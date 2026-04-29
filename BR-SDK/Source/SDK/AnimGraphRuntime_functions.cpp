@@ -8,10 +8,10 @@
 
 // Package: AnimGraphRuntime
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/AnimGraphRuntime_classes.hpp"
-#include "../../Include/SDK/AnimGraphRuntime_parameters.hpp"
+#include "AnimGraphRuntime_classes.hpp"
+#include "AnimGraphRuntime_parameters.hpp"
 
 
 namespace SDK

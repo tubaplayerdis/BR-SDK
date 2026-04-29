@@ -8,10 +8,10 @@
 
 // Package: ABP_Character_RC_Parent
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/ABP_Character_RC_Parent_classes.hpp"
-#include "../../Include/SDK/ABP_Character_RC_Parent_parameters.hpp"
+#include "ABP_Character_RC_Parent_classes.hpp"
+#include "ABP_Character_RC_Parent_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: WBP_PropertyContainer
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_PropertyContainer_classes.hpp"
-#include "../../Include/SDK/WBP_PropertyContainer_parameters.hpp"
+#include "WBP_PropertyContainer_classes.hpp"
+#include "WBP_PropertyContainer_parameters.hpp"
 
 
 namespace SDK

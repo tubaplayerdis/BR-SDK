@@ -8,10 +8,10 @@
 
 // Package: WBP_UGCMetaDataPopup
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_UGCMetaDataPopup_classes.hpp"
-#include "../../Include/SDK/WBP_UGCMetaDataPopup_parameters.hpp"
+#include "WBP_UGCMetaDataPopup_classes.hpp"
+#include "WBP_UGCMetaDataPopup_parameters.hpp"
 
 
 namespace SDK

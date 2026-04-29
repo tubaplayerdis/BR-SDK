@@ -8,10 +8,10 @@
 
 // Package: BP_LoadoutContainer
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_LoadoutContainer_classes.hpp"
-#include "../../Include/SDK/BP_LoadoutContainer_parameters.hpp"
+#include "BP_LoadoutContainer_classes.hpp"
+#include "BP_LoadoutContainer_parameters.hpp"
 
 
 namespace SDK

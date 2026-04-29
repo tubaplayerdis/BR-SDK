@@ -8,10 +8,10 @@
 
 // Package: BP_PowerPlant
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_PowerPlant_classes.hpp"
-#include "../../Include/SDK/BP_PowerPlant_parameters.hpp"
+#include "BP_PowerPlant_classes.hpp"
+#include "BP_PowerPlant_parameters.hpp"
 
 
 namespace SDK

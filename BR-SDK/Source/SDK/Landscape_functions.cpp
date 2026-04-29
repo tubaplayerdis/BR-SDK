@@ -8,10 +8,10 @@
 
 // Package: Landscape
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/Landscape_classes.hpp"
-#include "../../Include/SDK/Landscape_parameters.hpp"
+#include "Landscape_classes.hpp"
+#include "Landscape_parameters.hpp"
 
 
 namespace SDK

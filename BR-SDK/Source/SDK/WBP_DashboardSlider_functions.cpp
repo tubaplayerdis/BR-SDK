@@ -8,30 +8,30 @@
 
 // Package: WBP_DashboardSlider
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_DashboardSlider_classes.hpp"
-#include "../../Include/SDK/WBP_DashboardSlider_parameters.hpp"
+#include "WBP_DashboardSlider_classes.hpp"
+#include "WBP_DashboardSlider_parameters.hpp"
 
 
 namespace SDK
 {
 
-// Function WBP_DashboardSlider.WBP_DashboardSlider_C.UpdateIcon
-// (Event, Protected, BlueprintEvent)
+// Function WBP_DashboardSlider.WBP_DashboardSlider_C.ExecuteUbergraph_WBP_DashboardSlider
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   IconIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DashboardSlider_C::UpdateIcon(int32 IconIndex)
+void UWBP_DashboardSlider_C::ExecuteUbergraph_WBP_DashboardSlider(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DashboardSlider_C", "UpdateIcon");
+		Func = Class->GetFunction("WBP_DashboardSlider_C", "ExecuteUbergraph_WBP_DashboardSlider");
 
-	Params::WBP_DashboardSlider_C_UpdateIcon Parms{};
+	Params::WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider Parms{};
 
-	Parms.IconIndex = IconIndex;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_DashboardSlider_C::UpdateColorStyle(EBrickUIColorStyle NewStyle)
 }
 
 
-// Function WBP_DashboardSlider.WBP_DashboardSlider_C.ExecuteUbergraph_WBP_DashboardSlider
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_DashboardSlider.WBP_DashboardSlider_C.UpdateIcon
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   IconIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DashboardSlider_C::ExecuteUbergraph_WBP_DashboardSlider(int32 EntryPoint)
+void UWBP_DashboardSlider_C::UpdateIcon(int32 IconIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DashboardSlider_C", "ExecuteUbergraph_WBP_DashboardSlider");
+		Func = Class->GetFunction("WBP_DashboardSlider_C", "UpdateIcon");
 
-	Params::WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider Parms{};
+	Params::WBP_DashboardSlider_C_UpdateIcon Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IconIndex = IconIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

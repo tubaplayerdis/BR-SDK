@@ -8,10 +8,10 @@
 
 // Package: WBP_Server
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_Server_classes.hpp"
-#include "../../Include/SDK/WBP_Server_parameters.hpp"
+#include "WBP_Server_classes.hpp"
+#include "WBP_Server_parameters.hpp"
 
 
 namespace SDK

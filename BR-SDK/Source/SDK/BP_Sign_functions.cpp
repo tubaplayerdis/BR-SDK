@@ -8,9 +8,9 @@
 
 // Package: BP_Sign
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_Sign_classes.hpp"
+#include "BP_Sign_classes.hpp"
 
 
 namespace SDK

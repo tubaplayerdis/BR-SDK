@@ -8,10 +8,10 @@
 
 // Package: WBP_GameLogo
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_GameLogo_classes.hpp"
-#include "../../Include/SDK/WBP_GameLogo_parameters.hpp"
+#include "WBP_GameLogo_classes.hpp"
+#include "WBP_GameLogo_parameters.hpp"
 
 
 namespace SDK

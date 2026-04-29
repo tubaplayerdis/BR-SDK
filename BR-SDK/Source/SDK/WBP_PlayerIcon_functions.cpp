@@ -8,14 +8,34 @@
 
 // Package: WBP_PlayerIcon
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_PlayerIcon_classes.hpp"
-#include "../../Include/SDK/WBP_PlayerIcon_parameters.hpp"
+#include "WBP_PlayerIcon_classes.hpp"
+#include "WBP_PlayerIcon_parameters.hpp"
 
 
 namespace SDK
 {
+
+// Function WBP_PlayerIcon.WBP_PlayerIcon_C.ExecuteUbergraph_WBP_PlayerIcon
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerIcon_C::ExecuteUbergraph_WBP_PlayerIcon(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerIcon_C", "ExecuteUbergraph_WBP_PlayerIcon");
+
+	Params::WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function WBP_PlayerIcon.WBP_PlayerIcon_C.UpdatePlayerIcon
 // (Event, Protected, BlueprintEvent)
@@ -38,26 +58,6 @@ void UWBP_PlayerIcon_C::UpdatePlayerIcon(bool bNewIsLocalPlayer, bool bNewIsTeam
 	Parms.bNewIsTeamLeader = bNewIsTeamLeader;
 	Parms.NewStateOfHealth = NewStateOfHealth;
 	Parms.bNewCanBeDamaged = bNewCanBeDamaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerIcon.WBP_PlayerIcon_C.ExecuteUbergraph_WBP_PlayerIcon
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerIcon_C::ExecuteUbergraph_WBP_PlayerIcon(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerIcon_C", "ExecuteUbergraph_WBP_PlayerIcon");
-
-	Params::WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

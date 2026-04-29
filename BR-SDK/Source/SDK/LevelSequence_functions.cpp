@@ -8,10 +8,10 @@
 
 // Package: LevelSequence
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/LevelSequence_classes.hpp"
-#include "../../Include/SDK/LevelSequence_parameters.hpp"
+#include "LevelSequence_classes.hpp"
+#include "LevelSequence_parameters.hpp"
 
 
 namespace SDK

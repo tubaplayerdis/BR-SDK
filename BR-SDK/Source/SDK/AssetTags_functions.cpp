@@ -8,10 +8,10 @@
 
 // Package: AssetTags
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/AssetTags_classes.hpp"
-#include "../../Include/SDK/AssetTags_parameters.hpp"
+#include "AssetTags_classes.hpp"
+#include "AssetTags_parameters.hpp"
 
 
 namespace SDK

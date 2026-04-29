@@ -8,10 +8,10 @@
 
 // Package: WBP_IntroSequence
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_IntroSequence_classes.hpp"
-#include "../../Include/SDK/WBP_IntroSequence_parameters.hpp"
+#include "WBP_IntroSequence_classes.hpp"
+#include "WBP_IntroSequence_parameters.hpp"
 
 
 namespace SDK

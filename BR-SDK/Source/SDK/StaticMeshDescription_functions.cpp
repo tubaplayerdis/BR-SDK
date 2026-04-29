@@ -8,10 +8,10 @@
 
 // Package: StaticMeshDescription
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/StaticMeshDescription_classes.hpp"
-#include "../../Include/SDK/StaticMeshDescription_parameters.hpp"
+#include "StaticMeshDescription_classes.hpp"
+#include "StaticMeshDescription_parameters.hpp"
 
 
 namespace SDK

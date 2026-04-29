@@ -8,58 +8,44 @@
 
 // Package: WBP_NumericProperty
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_NumericProperty_classes.hpp"
-#include "../../Include/SDK/WBP_NumericProperty_parameters.hpp"
+#include "WBP_NumericProperty_classes.hpp"
+#include "WBP_NumericProperty_parameters.hpp"
 
 
 namespace SDK
 {
 
-// Function WBP_NumericProperty.WBP_NumericProperty_C.ExecuteUbergraph_WBP_NumericProperty
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_NumericProperty.WBP_NumericProperty_C.AddSliderWidget
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UBrickSliderWidget*               Slider                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NumericProperty_C::ExecuteUbergraph_WBP_NumericProperty(int32 EntryPoint)
+void UWBP_NumericProperty_C::AddSliderWidget(class UBrickSliderWidget* Slider)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NumericProperty_C", "ExecuteUbergraph_WBP_NumericProperty");
+		Func = Class->GetFunction("WBP_NumericProperty_C", "AddSliderWidget");
 
-	Params::WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty Parms{};
+	Params::WBP_NumericProperty_C_AddSliderWidget Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Slider = Slider;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_NumericProperty.WBP_NumericProperty_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_NumericProperty_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NumericProperty_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_NumericProperty.WBP_NumericProperty_C.OnLockButtonClicked
+// Function WBP_NumericProperty.WBP_NumericProperty_C.OnBrickUnitsButtonClicked
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_NumericProperty_C::OnLockButtonClicked()
+void UWBP_NumericProperty_C::OnBrickUnitsButtonClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NumericProperty_C", "OnLockButtonClicked");
+		Func = Class->GetFunction("WBP_NumericProperty_C", "OnBrickUnitsButtonClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,35 +73,49 @@ void UWBP_NumericProperty_C::UpdateNumericProperty(const ENumericValueType Value
 }
 
 
-// Function WBP_NumericProperty.WBP_NumericProperty_C.OnBrickUnitsButtonClicked
+// Function WBP_NumericProperty.WBP_NumericProperty_C.OnLockButtonClicked
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_NumericProperty_C::OnBrickUnitsButtonClicked()
+void UWBP_NumericProperty_C::OnLockButtonClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NumericProperty_C", "OnBrickUnitsButtonClicked");
+		Func = Class->GetFunction("WBP_NumericProperty_C", "OnLockButtonClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_NumericProperty.WBP_NumericProperty_C.AddSliderWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UBrickSliderWidget*               Slider                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_NumericProperty.WBP_NumericProperty_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_NumericProperty_C::AddSliderWidget(class UBrickSliderWidget* Slider)
+void UWBP_NumericProperty_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NumericProperty_C", "AddSliderWidget");
+		Func = Class->GetFunction("WBP_NumericProperty_C", "Destruct");
 
-	Params::WBP_NumericProperty_C_AddSliderWidget Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Slider = Slider;
+
+// Function WBP_NumericProperty.WBP_NumericProperty_C.ExecuteUbergraph_WBP_NumericProperty
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NumericProperty_C::ExecuteUbergraph_WBP_NumericProperty(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NumericProperty_C", "ExecuteUbergraph_WBP_NumericProperty");
+
+	Params::WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

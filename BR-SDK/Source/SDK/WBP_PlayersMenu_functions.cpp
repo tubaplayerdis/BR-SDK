@@ -8,10 +8,10 @@
 
 // Package: WBP_PlayersMenu
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_PlayersMenu_classes.hpp"
-#include "../../Include/SDK/WBP_PlayersMenu_parameters.hpp"
+#include "WBP_PlayersMenu_classes.hpp"
+#include "WBP_PlayersMenu_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: WBP_InputActionCategory
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_InputActionCategory_classes.hpp"
-#include "../../Include/SDK/WBP_InputActionCategory_parameters.hpp"
+#include "WBP_InputActionCategory_classes.hpp"
+#include "WBP_InputActionCategory_parameters.hpp"
 
 
 namespace SDK

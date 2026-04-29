@@ -8,10 +8,10 @@
 
 // Package: BP_RC_Sequence_2
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_RC_Sequence_2_classes.hpp"
-#include "../../Include/SDK/BP_RC_Sequence_2_parameters.hpp"
+#include "BP_RC_Sequence_2_classes.hpp"
+#include "BP_RC_Sequence_2_parameters.hpp"
 
 
 namespace SDK

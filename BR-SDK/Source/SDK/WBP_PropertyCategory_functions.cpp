@@ -8,10 +8,10 @@
 
 // Package: WBP_PropertyCategory
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_PropertyCategory_classes.hpp"
-#include "../../Include/SDK/WBP_PropertyCategory_parameters.hpp"
+#include "WBP_PropertyCategory_classes.hpp"
+#include "WBP_PropertyCategory_parameters.hpp"
 
 
 namespace SDK

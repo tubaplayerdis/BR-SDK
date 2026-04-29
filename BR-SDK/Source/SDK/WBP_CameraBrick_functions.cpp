@@ -8,14 +8,34 @@
 
 // Package: WBP_CameraBrick
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_CameraBrick_classes.hpp"
-#include "../../Include/SDK/WBP_CameraBrick_parameters.hpp"
+#include "WBP_CameraBrick_classes.hpp"
+#include "WBP_CameraBrick_parameters.hpp"
 
 
 namespace SDK
 {
+
+// Function WBP_CameraBrick.WBP_CameraBrick_C.ExecuteUbergraph_WBP_CameraBrick
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CameraBrick_C::ExecuteUbergraph_WBP_CameraBrick(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CameraBrick_C", "ExecuteUbergraph_WBP_CameraBrick");
+
+	Params::WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function WBP_CameraBrick.WBP_CameraBrick_C.UpdateTargetRange
 // (Event, Protected, BlueprintEvent)
@@ -34,26 +54,6 @@ void UWBP_CameraBrick_C::UpdateTargetRange(bool bHitSomething, float Distance)
 
 	Parms.bHitSomething = bHitSomething;
 	Parms.Distance = Distance;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CameraBrick.WBP_CameraBrick_C.ExecuteUbergraph_WBP_CameraBrick
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CameraBrick_C::ExecuteUbergraph_WBP_CameraBrick(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CameraBrick_C", "ExecuteUbergraph_WBP_CameraBrick");
-
-	Params::WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

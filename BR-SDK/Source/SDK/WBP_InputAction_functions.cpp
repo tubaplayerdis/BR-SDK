@@ -8,10 +8,10 @@
 
 // Package: WBP_InputAction
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_InputAction_classes.hpp"
-#include "../../Include/SDK/WBP_InputAction_parameters.hpp"
+#include "WBP_InputAction_classes.hpp"
+#include "WBP_InputAction_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: BP_ZombieAIController
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_ZombieAIController_classes.hpp"
-#include "../../Include/SDK/BP_ZombieAIController_parameters.hpp"
+#include "BP_ZombieAIController_classes.hpp"
+#include "BP_ZombieAIController_parameters.hpp"
 
 
 namespace SDK

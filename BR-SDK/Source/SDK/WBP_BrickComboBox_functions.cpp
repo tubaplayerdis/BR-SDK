@@ -8,72 +8,26 @@
 
 // Package: WBP_BrickComboBox
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_BrickComboBox_classes.hpp"
-#include "../../Include/SDK/WBP_BrickComboBox_parameters.hpp"
+#include "WBP_BrickComboBox_classes.hpp"
+#include "WBP_BrickComboBox_parameters.hpp"
 
 
 namespace SDK
 {
 
-// Function WBP_BrickComboBox.WBP_BrickComboBox_C.ExecuteUbergraph_WBP_BrickComboBox
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_BrickComboBox.WBP_BrickComboBox_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_BrickComboBox_C::ExecuteUbergraph_WBP_BrickComboBox(int32 EntryPoint)
+void UWBP_BrickComboBox_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickComboBox_C", "ExecuteUbergraph_WBP_BrickComboBox");
+		Func = Class->GetFunction("WBP_BrickComboBox_C", "BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
-	Params::WBP_BrickComboBox_C_ExecuteUbergraph_WBP_BrickComboBox Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BrickComboBox.WBP_BrickComboBox_C.UpdateUseItemList
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInUseItemList                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_BrickComboBox_C::UpdateUseItemList(bool bInUseItemList)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickComboBox_C", "UpdateUseItemList");
-
-	Params::WBP_BrickComboBox_C_UpdateUseItemList Parms{};
-
-	Parms.bInUseItemList = bInUseItemList;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BrickComboBox.WBP_BrickComboBox_C.AddSelectedItemWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UBrickComboBoxItemWidget*         Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BrickComboBox_C::AddSelectedItemWidget(class UBrickComboBoxItemWidget* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickComboBox_C", "AddSelectedItemWidget");
-
-	Params::WBP_BrickComboBox_C_AddSelectedItemWidget Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -99,17 +53,63 @@ void UWBP_BrickComboBox_C::BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateC
 }
 
 
-// Function WBP_BrickComboBox.WBP_BrickComboBox_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_BrickComboBox.WBP_BrickComboBox_C.AddSelectedItemWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UBrickComboBoxItemWidget*         Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BrickComboBox_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
+void UWBP_BrickComboBox_C::AddSelectedItemWidget(class UBrickComboBoxItemWidget* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickComboBox_C", "BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_BrickComboBox_C", "AddSelectedItemWidget");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_BrickComboBox_C_AddSelectedItemWidget Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickComboBox.WBP_BrickComboBox_C.UpdateUseItemList
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInUseItemList                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_BrickComboBox_C::UpdateUseItemList(bool bInUseItemList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickComboBox_C", "UpdateUseItemList");
+
+	Params::WBP_BrickComboBox_C_UpdateUseItemList Parms{};
+
+	Parms.bInUseItemList = bInUseItemList;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickComboBox.WBP_BrickComboBox_C.ExecuteUbergraph_WBP_BrickComboBox
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BrickComboBox_C::ExecuteUbergraph_WBP_BrickComboBox(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickComboBox_C", "ExecuteUbergraph_WBP_BrickComboBox");
+
+	Params::WBP_BrickComboBox_C_ExecuteUbergraph_WBP_BrickComboBox Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

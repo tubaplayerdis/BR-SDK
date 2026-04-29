@@ -8,10 +8,10 @@
 
 // Package: WBP_Map
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_Map_classes.hpp"
-#include "../../Include/SDK/WBP_Map_parameters.hpp"
+#include "WBP_Map_classes.hpp"
+#include "WBP_Map_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: ClothingSystemRuntimeInterface
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/ClothingSystemRuntimeInterface_classes.hpp"
-#include "../../Include/SDK/ClothingSystemRuntimeInterface_parameters.hpp"
+#include "ClothingSystemRuntimeInterface_classes.hpp"
+#include "ClothingSystemRuntimeInterface_parameters.hpp"
 
 
 namespace SDK

@@ -8,30 +8,30 @@
 
 // Package: WBP_MapCrosshair
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_MapCrosshair_classes.hpp"
-#include "../../Include/SDK/WBP_MapCrosshair_parameters.hpp"
+#include "WBP_MapCrosshair_classes.hpp"
+#include "WBP_MapCrosshair_parameters.hpp"
 
 
 namespace SDK
 {
 
-// Function WBP_MapCrosshair.WBP_MapCrosshair_C.SetColorStyle
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_MapCrosshair.WBP_MapCrosshair_C.ExecuteUbergraph_WBP_MapCrosshair
+// (Final, UbergraphFunction)
 // Parameters:
-// EBrickUIColorStyle                      NewStyle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapCrosshair_C::SetColorStyle(EBrickUIColorStyle NewStyle)
+void UWBP_MapCrosshair_C::ExecuteUbergraph_WBP_MapCrosshair(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapCrosshair_C", "SetColorStyle");
+		Func = Class->GetFunction("WBP_MapCrosshair_C", "ExecuteUbergraph_WBP_MapCrosshair");
 
-	Params::WBP_MapCrosshair_C_SetColorStyle Parms{};
+	Params::WBP_MapCrosshair_C_ExecuteUbergraph_WBP_MapCrosshair Parms{};
 
-	Parms.NewStyle = NewStyle;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_MapCrosshair_C::SetStyleState(EBrickUIStyleState NewState)
 }
 
 
-// Function WBP_MapCrosshair.WBP_MapCrosshair_C.ExecuteUbergraph_WBP_MapCrosshair
-// (Final, UbergraphFunction)
+// Function WBP_MapCrosshair.WBP_MapCrosshair_C.SetColorStyle
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBrickUIColorStyle                      NewStyle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapCrosshair_C::ExecuteUbergraph_WBP_MapCrosshair(int32 EntryPoint)
+void UWBP_MapCrosshair_C::SetColorStyle(EBrickUIColorStyle NewStyle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapCrosshair_C", "ExecuteUbergraph_WBP_MapCrosshair");
+		Func = Class->GetFunction("WBP_MapCrosshair_C", "SetColorStyle");
 
-	Params::WBP_MapCrosshair_C_ExecuteUbergraph_WBP_MapCrosshair Parms{};
+	Params::WBP_MapCrosshair_C_SetColorStyle Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewStyle = NewStyle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

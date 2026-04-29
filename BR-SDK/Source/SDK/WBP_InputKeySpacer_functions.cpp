@@ -8,10 +8,10 @@
 
 // Package: WBP_InputKeySpacer
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_InputKeySpacer_classes.hpp"
-#include "../../Include/SDK/WBP_InputKeySpacer_parameters.hpp"
+#include "WBP_InputKeySpacer_classes.hpp"
+#include "WBP_InputKeySpacer_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: BP_UIStyle_Blue
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_UIStyle_Blue_classes.hpp"
-#include "../../Include/SDK/BP_UIStyle_Blue_parameters.hpp"
+#include "BP_UIStyle_Blue_classes.hpp"
+#include "BP_UIStyle_Blue_parameters.hpp"
 
 
 namespace SDK

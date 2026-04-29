@@ -8,10 +8,10 @@
 
 // Package: EngineSettings
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/EngineSettings_classes.hpp"
-#include "../../Include/SDK/EngineSettings_parameters.hpp"
+#include "EngineSettings_classes.hpp"
+#include "EngineSettings_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: NavigationSystem
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/NavigationSystem_classes.hpp"
-#include "../../Include/SDK/NavigationSystem_parameters.hpp"
+#include "NavigationSystem_classes.hpp"
+#include "NavigationSystem_parameters.hpp"
 
 
 namespace SDK

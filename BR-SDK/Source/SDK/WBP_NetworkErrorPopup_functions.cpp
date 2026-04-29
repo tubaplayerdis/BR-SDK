@@ -8,10 +8,10 @@
 
 // Package: WBP_NetworkErrorPopup
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_NetworkErrorPopup_classes.hpp"
-#include "../../Include/SDK/WBP_NetworkErrorPopup_parameters.hpp"
+#include "WBP_NetworkErrorPopup_classes.hpp"
+#include "WBP_NetworkErrorPopup_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: GameplayTasks
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/GameplayTasks_classes.hpp"
-#include "../../Include/SDK/GameplayTasks_parameters.hpp"
+#include "GameplayTasks_classes.hpp"
+#include "GameplayTasks_parameters.hpp"
 
 
 namespace SDK

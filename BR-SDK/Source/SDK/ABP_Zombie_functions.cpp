@@ -8,10 +8,10 @@
 
 // Package: ABP_Zombie
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/ABP_Zombie_classes.hpp"
-#include "../../Include/SDK/ABP_Zombie_parameters.hpp"
+#include "ABP_Zombie_classes.hpp"
+#include "ABP_Zombie_parameters.hpp"
 
 
 namespace SDK

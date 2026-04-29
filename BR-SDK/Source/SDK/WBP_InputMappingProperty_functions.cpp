@@ -8,10 +8,10 @@
 
 // Package: WBP_InputMappingProperty
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_InputMappingProperty_classes.hpp"
-#include "../../Include/SDK/WBP_InputMappingProperty_parameters.hpp"
+#include "WBP_InputMappingProperty_classes.hpp"
+#include "WBP_InputMappingProperty_parameters.hpp"
 
 
 namespace SDK

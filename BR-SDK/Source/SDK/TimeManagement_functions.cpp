@@ -8,10 +8,10 @@
 
 // Package: TimeManagement
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/TimeManagement_classes.hpp"
-#include "../../Include/SDK/TimeManagement_parameters.hpp"
+#include "TimeManagement_classes.hpp"
+#include "TimeManagement_parameters.hpp"
 
 
 namespace SDK

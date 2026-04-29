@@ -8,10 +8,10 @@
 
 // Package: WBP_MatchEnd
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_MatchEnd_classes.hpp"
-#include "../../Include/SDK/WBP_MatchEnd_parameters.hpp"
+#include "WBP_MatchEnd_classes.hpp"
+#include "WBP_MatchEnd_parameters.hpp"
 
 
 namespace SDK
@@ -32,28 +32,6 @@ void UWBP_MatchEnd_C::ExecuteUbergraph_WBP_MatchEnd(int32 EntryPoint)
 	Params::WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MatchEnd.WBP_MatchEnd_C.UpdateMatchWinner
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UBrickTeam*                       WinnerTeam                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ETeamAttitude                           TeamAttitude                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MatchEnd_C::UpdateMatchWinner(class UBrickTeam* WinnerTeam, ETeamAttitude TeamAttitude)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MatchEnd_C", "UpdateMatchWinner");
-
-	Params::WBP_MatchEnd_C_UpdateMatchWinner Parms{};
-
-	Parms.WinnerTeam = WinnerTeam;
-	Parms.TeamAttitude = TeamAttitude;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

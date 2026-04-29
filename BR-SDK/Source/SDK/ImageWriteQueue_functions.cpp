@@ -8,10 +8,10 @@
 
 // Package: ImageWriteQueue
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/ImageWriteQueue_classes.hpp"
-#include "../../Include/SDK/ImageWriteQueue_parameters.hpp"
+#include "ImageWriteQueue_classes.hpp"
+#include "ImageWriteQueue_parameters.hpp"
 
 
 namespace SDK

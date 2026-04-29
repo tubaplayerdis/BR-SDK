@@ -135,6 +135,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(_ZVcpkgCurrentInstalledDir)include;$(ProjectDir)include/SDK</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -1340,7 +1341,6 @@
     <ClInclude Include="Include\SDK\WBP_WindowManager_parameters.hpp" />
     <ClInclude Include="Include\SDK\WmfMediaFactory_classes.hpp" />
     <ClInclude Include="Include\Utils.hpp" />
-    <ClInclude Include="Include\Utils\ActorUtilities.hpp" />
     <ClInclude Include="Include\Utils\GameFunctions.hpp" />
     <ClInclude Include="Include\Utils\NameCollisions.inl" />
     <ClInclude Include="Include\Utils\Offsets.hpp" />
@@ -1554,7 +1554,6 @@
     <ClCompile Include="Source\SDK\WBP_VideoSettings_functions.cpp" />
     <ClCompile Include="Source\SDK\WBP_WindowManager_functions.cpp" />
     <ClCompile Include="Source\Utils\GameFunctions.cpp" />
-    <ClCompile Include="Source\Utils\UtilitiesImplementation.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

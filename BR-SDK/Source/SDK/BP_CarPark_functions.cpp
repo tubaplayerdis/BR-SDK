@@ -8,10 +8,10 @@
 
 // Package: BP_CarPark
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_CarPark_classes.hpp"
-#include "../../Include/SDK/BP_CarPark_parameters.hpp"
+#include "BP_CarPark_classes.hpp"
+#include "BP_CarPark_parameters.hpp"
 
 
 namespace SDK

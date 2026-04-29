@@ -8,10 +8,10 @@
 
 // Package: WBP_SpawnPointContainer
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_SpawnPointContainer_classes.hpp"
-#include "../../Include/SDK/WBP_SpawnPointContainer_parameters.hpp"
+#include "WBP_SpawnPointContainer_classes.hpp"
+#include "WBP_SpawnPointContainer_parameters.hpp"
 
 
 namespace SDK

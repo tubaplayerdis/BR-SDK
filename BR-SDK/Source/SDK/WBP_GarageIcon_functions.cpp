@@ -8,10 +8,10 @@
 
 // Package: WBP_GarageIcon
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_GarageIcon_classes.hpp"
-#include "../../Include/SDK/WBP_GarageIcon_parameters.hpp"
+#include "WBP_GarageIcon_classes.hpp"
+#include "WBP_GarageIcon_parameters.hpp"
 
 
 namespace SDK

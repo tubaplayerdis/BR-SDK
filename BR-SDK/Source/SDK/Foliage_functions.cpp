@@ -8,10 +8,10 @@
 
 // Package: Foliage
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/Foliage_classes.hpp"
-#include "../../Include/SDK/Foliage_parameters.hpp"
+#include "Foliage_classes.hpp"
+#include "Foliage_parameters.hpp"
 
 
 namespace SDK

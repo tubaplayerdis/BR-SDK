@@ -8,10 +8,10 @@
 
 // Package: ABP_Character
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/ABP_Character_classes.hpp"
-#include "../../Include/SDK/ABP_Character_parameters.hpp"
+#include "ABP_Character_classes.hpp"
+#include "ABP_Character_parameters.hpp"
 
 
 namespace SDK

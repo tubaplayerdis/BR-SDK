@@ -8,10 +8,10 @@
 
 // Package: OnlineSubsystem
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/OnlineSubsystem_classes.hpp"
-#include "../../Include/SDK/OnlineSubsystem_parameters.hpp"
+#include "OnlineSubsystem_classes.hpp"
+#include "OnlineSubsystem_parameters.hpp"
 
 
 namespace SDK

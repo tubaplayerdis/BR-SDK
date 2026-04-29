@@ -8,10 +8,10 @@
 
 // Package: WBP_InventoryContainer
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_InventoryContainer_classes.hpp"
-#include "../../Include/SDK/WBP_InventoryContainer_parameters.hpp"
+#include "WBP_InventoryContainer_classes.hpp"
+#include "WBP_InventoryContainer_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: BP_MenuFunctionLibrary
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_MenuFunctionLibrary_classes.hpp"
-#include "../../Include/SDK/BP_MenuFunctionLibrary_parameters.hpp"
+#include "BP_MenuFunctionLibrary_classes.hpp"
+#include "BP_MenuFunctionLibrary_parameters.hpp"
 
 
 namespace SDK
@@ -386,6 +386,35 @@ class UMenuButtonWidget* UBP_MenuFunctionLibrary_C::CreateDisplayModeButton(clas
 	Params::BP_MenuFunctionLibrary_C_CreateDisplayModeButton Parms{};
 
 	Parms.Widget = Widget;
+	Parms.Delegate = Delegate;
+	Parms.__WorldContext = __WorldContext;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_MenuFunctionLibrary.BP_MenuFunctionLibrary_C.CreateLinkButton
+// (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UMenuButtonPanelWidget*           Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      DisplayText                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// const TDelegate<void()>&                Delegate                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMenuButtonWidget*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UMenuButtonWidget* UBP_MenuFunctionLibrary_C::CreateLinkButton(class UMenuButtonPanelWidget* Widget, const class FText& DisplayText, const TDelegate<void()>& Delegate, class UObject* __WorldContext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BP_MenuFunctionLibrary_C", "CreateLinkButton");
+
+	Params::BP_MenuFunctionLibrary_C_CreateLinkButton Parms{};
+
+	Parms.Widget = Widget;
+	Parms.DisplayText = std::move(DisplayText);
 	Parms.Delegate = Delegate;
 	Parms.__WorldContext = __WorldContext;
 

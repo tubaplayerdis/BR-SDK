@@ -8,10 +8,10 @@
 
 // Package: WBP_InventorySlot
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_InventorySlot_classes.hpp"
-#include "../../Include/SDK/WBP_InventorySlot_parameters.hpp"
+#include "WBP_InventorySlot_classes.hpp"
+#include "WBP_InventorySlot_parameters.hpp"
 
 
 namespace SDK

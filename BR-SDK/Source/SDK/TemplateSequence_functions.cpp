@@ -8,10 +8,10 @@
 
 // Package: TemplateSequence
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/TemplateSequence_classes.hpp"
-#include "../../Include/SDK/TemplateSequence_parameters.hpp"
+#include "TemplateSequence_classes.hpp"
+#include "TemplateSequence_parameters.hpp"
 
 
 namespace SDK

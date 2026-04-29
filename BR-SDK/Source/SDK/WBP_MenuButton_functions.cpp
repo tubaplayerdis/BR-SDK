@@ -8,10 +8,10 @@
 
 // Package: WBP_MenuButton
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_MenuButton_classes.hpp"
-#include "../../Include/SDK/WBP_MenuButton_parameters.hpp"
+#include "WBP_MenuButton_classes.hpp"
+#include "WBP_MenuButton_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: FluUGC
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/FluUGC_classes.hpp"
-#include "../../Include/SDK/FluUGC_parameters.hpp"
+#include "FluUGC_classes.hpp"
+#include "FluUGC_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: GameplayTags
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/GameplayTags_classes.hpp"
-#include "../../Include/SDK/GameplayTags_parameters.hpp"
+#include "GameplayTags_classes.hpp"
+#include "GameplayTags_parameters.hpp"
 
 
 namespace SDK

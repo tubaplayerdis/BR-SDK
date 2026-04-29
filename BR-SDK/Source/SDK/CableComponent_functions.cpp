@@ -8,10 +8,10 @@
 
 // Package: CableComponent
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/CableComponent_classes.hpp"
-#include "../../Include/SDK/CableComponent_parameters.hpp"
+#include "CableComponent_classes.hpp"
+#include "CableComponent_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: NiagaraAnimNotifies
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/NiagaraAnimNotifies_classes.hpp"
-#include "../../Include/SDK/NiagaraAnimNotifies_parameters.hpp"
+#include "NiagaraAnimNotifies_classes.hpp"
+#include "NiagaraAnimNotifies_parameters.hpp"
 
 
 namespace SDK

@@ -8,10 +8,10 @@
 
 // Package: WBP_KickPlayerPopup
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_KickPlayerPopup_classes.hpp"
-#include "../../Include/SDK/WBP_KickPlayerPopup_parameters.hpp"
+#include "WBP_KickPlayerPopup_classes.hpp"
+#include "WBP_KickPlayerPopup_parameters.hpp"
 
 
 namespace SDK

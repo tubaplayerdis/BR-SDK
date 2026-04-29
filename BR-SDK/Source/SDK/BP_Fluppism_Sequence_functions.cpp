@@ -8,10 +8,10 @@
 
 // Package: BP_Fluppism_Sequence
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_Fluppism_Sequence_classes.hpp"
-#include "../../Include/SDK/BP_Fluppism_Sequence_parameters.hpp"
+#include "BP_Fluppism_Sequence_classes.hpp"
+#include "BP_Fluppism_Sequence_parameters.hpp"
 
 
 namespace SDK

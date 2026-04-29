@@ -8,10 +8,10 @@
 
 // Package: WBP_ReuploadPopup
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_ReuploadPopup_classes.hpp"
-#include "../../Include/SDK/WBP_ReuploadPopup_parameters.hpp"
+#include "WBP_ReuploadPopup_classes.hpp"
+#include "WBP_ReuploadPopup_parameters.hpp"
 
 
 namespace SDK

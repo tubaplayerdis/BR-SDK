@@ -8,10 +8,10 @@
 
 // Package: WBP_LoadoutContainerIcon
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_LoadoutContainerIcon_classes.hpp"
-#include "../../Include/SDK/WBP_LoadoutContainerIcon_parameters.hpp"
+#include "WBP_LoadoutContainerIcon_classes.hpp"
+#include "WBP_LoadoutContainerIcon_parameters.hpp"
 
 
 namespace SDK

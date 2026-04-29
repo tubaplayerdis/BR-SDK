@@ -8,10 +8,10 @@
 
 // Package: WBP_FlashSequenceItemWidget
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/WBP_FlashSequenceItemWidget_classes.hpp"
-#include "../../Include/SDK/WBP_FlashSequenceItemWidget_parameters.hpp"
+#include "WBP_FlashSequenceItemWidget_classes.hpp"
+#include "WBP_FlashSequenceItemWidget_parameters.hpp"
 
 
 namespace SDK

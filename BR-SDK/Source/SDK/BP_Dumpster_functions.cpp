@@ -8,10 +8,10 @@
 
 // Package: BP_Dumpster
 
-#include "../../Include/SDK/Basic.hpp"
+#include "Basic.hpp"
 
-#include "../../Include/SDK/BP_Dumpster_classes.hpp"
-#include "../../Include/SDK/BP_Dumpster_parameters.hpp"
+#include "BP_Dumpster_classes.hpp"
+#include "BP_Dumpster_parameters.hpp"
 
 
 namespace SDK
