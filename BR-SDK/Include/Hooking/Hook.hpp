@@ -262,7 +262,7 @@ Hook<Ret(Args...)>::Hook(unsigned long long addr, Ret(__fastcall* hookFunc)(Args
 }
 
 template<typename Ret, typename ...Args>
-inline Hook<Ret(Args...)>::Hook(Ret(__fastcall* ptr)(Args...), Ret(__fastcall* hookFunc)(Args...))
+Hook<Ret(Args...)>::Hook(Ret(__fastcall* ptr)(Args...), Ret(__fastcall* hookFunc)(Args...))
 {
 	pattern = "None";
 	mask = "None";
@@ -312,14 +312,14 @@ bool Hook<Ret(Args...)>::Init() {
 }
 
 template<typename Ret, typename ...Args>
-inline void Hook<Ret(Args...)>::Create()
+void Hook<Ret(Args...)>::Create()
 {
 	if (initialized) return;
 	assert(Init());
 }
 
 template<typename Ret, typename ...Args>
-inline void Hook<Ret(Args...)>::Enable()
+void Hook<Ret(Args...)>::Enable()
 {
 	if (!initialized) Create();
 	if (!initialized || enabled) return;
@@ -329,7 +329,7 @@ inline void Hook<Ret(Args...)>::Enable()
 }
 
 template<typename Ret, typename ...Args>
-inline void Hook<Ret(Args...)>::Disable()
+void Hook<Ret(Args...)>::Disable()
 {
 	if (!initialized || !enabled) return;
 	MH_QueueDisableHook((LPVOID)FunctionPointer);
@@ -338,7 +338,7 @@ inline void Hook<Ret(Args...)>::Disable()
 }
 
 template<typename Ret, typename ...Args>
-inline void Hook<Ret(Args...)>::Destroy()
+void Hook<Ret(Args...)>::Destroy()
 {
 	if (!initialized) return;
 	if (!enabled) Disable();
@@ -348,13 +348,13 @@ inline void Hook<Ret(Args...)>::Destroy()
 }
 
 template<typename Ret, typename ...Args>
-inline Ret Hook<Ret(Args...)>::CallOriginalFunction(Args ...args)
+Ret Hook<Ret(Args...)>::CallOriginalFunction(Args ...args)
 {
 	return OriginalFunction(std::forward<Args>(args)...);
 }
 
 template<typename Ret, typename ...Args>
-inline unsigned long long Hook<Ret(Args...)>::FindPatternF(const char* pattern, const char* mask, unsigned long long base, unsigned __int64 size)
+unsigned long long Hook<Ret(Args...)>::FindPatternF(const char* pattern, const char* mask, unsigned long long base, unsigned __int64 size)
 {
 	const unsigned __int64 patternLen = strlen(mask);
 	if (patternLen == 0) {
@@ -395,7 +395,7 @@ inline unsigned long long Hook<Ret(Args...)>::FindPatternF(const char* pattern, 
 }
 
 template<typename Ret, typename ...Args>
-inline unsigned long long Hook<Ret(Args...)>::FindPatternS(const char* pattern, const char* mask, unsigned long long base, unsigned __int64 size)
+unsigned long long Hook<Ret(Args...)>::FindPatternS(const char* pattern, const char* mask, unsigned long long base, unsigned __int64 size)
 {
 	unsigned __int64 patternLen = strlen(mask);
 
@@ -417,7 +417,7 @@ inline unsigned long long Hook<Ret(Args...)>::FindPatternS(const char* pattern, 
 }
 
 template<typename Ret, typename ...Args>
-inline unsigned long long Hook<Ret(Args...)>::FindPatternAll(const char* pattern, const char* mask)
+unsigned long long Hook<Ret(Args...)>::FindPatternAll(const char* pattern, const char* mask)
 {
 	HMODULE hMods[1024];
 	DWORD cbNeeded;
@@ -452,19 +452,19 @@ inline unsigned long long Hook<Ret(Args...)>::FindPatternAll(const char* pattern
 			}
 
 		}
-
-		return 0;
 	}
+
+	return 0;
 }
 
 template<typename Ret, typename ...Args>
-inline unsigned long long Hook<Ret(Args...)>::GetModuleBase()
+unsigned long long Hook<Ret(Args...)>::GetModuleBase()
 {
 	return (unsigned long long)GetModuleHandle(NULL);
 }
 
 template<typename Ret, typename ...Args>
-inline unsigned long long Hook<Ret(Args...)>::GetModuleSize()
+unsigned long long Hook<Ret(Args...)>::GetModuleSize()
 {
 	MODULEINFO info = {};
 	GetModuleInformation(GetCurrentProcess(), GetModuleHandle(NULL), &info, sizeof(info));
@@ -472,7 +472,7 @@ inline unsigned long long Hook<Ret(Args...)>::GetModuleSize()
 }
 
 template<typename Ret, typename ...Args>
-inline bool Hook<Ret(Args...)>::GetTextSection(unsigned long long& textBase, unsigned __int64& textSize)
+bool Hook<Ret(Args...)>::GetTextSection(unsigned long long& textBase, unsigned __int64& textSize)
 {
 	uintptr_t moduleBase = GetModuleBase();
 	auto dos = (PIMAGE_DOS_HEADER)moduleBase;
@@ -493,13 +493,13 @@ inline bool Hook<Ret(Args...)>::GetTextSection(unsigned long long& textBase, uns
 }
 
 template<typename Ret, typename ...Args>
-inline bool Hook<Ret(Args...)>::IsInitialized() const
+bool Hook<Ret(Args...)>::IsInitialized() const
 {
 	return initialized;
 }
 
 template<typename Ret, typename ...Args>
-inline bool Hook<Ret(Args...)>::IsEnabled() const
+bool Hook<Ret(Args...)>::IsEnabled() const
 {
 	return enabled;
 }

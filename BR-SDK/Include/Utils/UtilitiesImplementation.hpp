@@ -41,7 +41,7 @@ T* SpawnObjectInternal(SDK::UObject* outerobj, const char* objclsname)
  * This was meant to be macro but didnt fit with the SDK design
  */
 template<typename T>
-T* SpawnActorInternal(SDK::FTransform transform, SDK::AActor* outeract, const char* objclsname, bool deferred)
+T* SpawnActorInternal(SDK::FTransform transform, SDK::AActor* outeract, const char* objclsname)
 {
 	SDK::UClass* objcls = GetClassInternal<T>(objclsname);
 	SDK::ESpawnActorCollisionHandlingMethod method = SDK::ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
