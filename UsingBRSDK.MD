@@ -21,18 +21,6 @@ One of the more important aspects of Brick Rigs is its use of Blueprints for the
 
 One of the unfortunate things regarding generated SDK's is that they are not complete. This is mostly due to that the only functions that get exposed in SDK's have to be accessible from the reflection system. To get around this, BR-SDK introduces the function: `CallGameFunction()`, which is a templated function that can internally call any function in the game. Its documentation is available below. There is also a VTable specific verion: `CallVTableFunction()`
 
-## UObjects
-
-Another important aspect of Unreal Engine are UObjects, which is the base class for almost everything in a UE game. To create them use the `SpawnObject()` macro. It is a class safe version of `SDK::UGameplayStatics::SpawnObject()` Its documentation is avialible below.
-
-## Widgets
-
-To create widgets properly in Unreal Engine using BR-SDK, use the `CreateWidget()` macro. It is a class safe version and can be used to properly create widgets.
-
-## Actors
-
-To spawn in actors properly use the `SpawnActor()` macro or any of its similars. This macro is class safe and works with internal Unreal Engine systems
-
 # BR-SDK Specific Documentation:
 
 ---
@@ -128,9 +116,9 @@ Calls an internal game function using a provided signature
  - 1 space between opcodes
  - Uses ?? as wildcards
 
-##### IDA-Extension (SigGen)
+##### IDA-Extension (SignatureGenerator)
 
-BR-SDK is compatible with my [personal signature generation plugin for IDA](https://github.com/tubaplayerdis/Sig-Gen). It creates these signatures automatically
+BR-SDK is compatible with my [personal signature generation plugin for IDA](https://github.com/tubaplayerdis/SignatureGenerator). It creates these signatures automatically
 
 ### Template Parameters
 
@@ -146,7 +134,7 @@ inline TRet CallGameFunction(const char* signature, TArgs... args);
 
 ### Parameters
 
-- `signature`: Signature of the function. Will be resolved by the function and an assertion will fail if not found.
+- `signature`: Signature of the function. Will be resolved by the function and an assertion will fail if not found. The signature will be cached automatically so it does not need to be found next time it is called
 - `args...`: Arguments to pass to the function.
 
 ### Returns
