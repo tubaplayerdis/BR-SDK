@@ -83,7 +83,7 @@ class Hook;
 /// @tparam Ret Return type of the function to Hook.
 /// @tparam Args Arguments of the function to Hook.
 template <typename Ret, typename... Args>
-class Hook<Ret(Args...)>
+class Hook<Ret(Args...)> final
 {
 public:
 
@@ -130,7 +130,7 @@ protected:
 public:
 
 	/// Registers the Hook with MinHook but does not enable it
-	void Create() const;
+	void Create();
 
 	/// Enables the Hook.
 	void Enable();
@@ -148,11 +148,11 @@ public:
 
 	/// Whether the Hook has been registered with MinHook
 	/// @return Initialization state of the Hook in respect to its MinHook registration.
-	bool IsInitialized() const;
+	bool IsInitialized();
 
 	/// Whether the Hook is enabled
 	/// @return Enabled state of the Hook.
-	bool IsEnabled() const;
+	bool IsEnabled();
 };
 
 template <typename Ret, typename ... Args>
@@ -209,7 +209,7 @@ bool Hook<Ret(Args...)>::Init() {
 }
 
 template<typename Ret, typename ...Args>
-void Hook<Ret(Args...)>::Create() const
+void Hook<Ret(Args...)>::Create()
 {
 	if (Initialized) return;
 	assert(Init());
@@ -252,13 +252,13 @@ Ret Hook<Ret(Args...)>::CallOriginalFunction(Args ...args)
 }
 
 template<typename Ret, typename ...Args>
-bool Hook<Ret(Args...)>::IsInitialized() const
+bool Hook<Ret(Args...)>::IsInitialized()
 {
 	return Initialized;
 }
 
 template<typename Ret, typename ...Args>
-bool Hook<Ret(Args...)>::IsEnabled() const
+bool Hook<Ret(Args...)>::IsEnabled()
 {
 	return Enabled;
 }
