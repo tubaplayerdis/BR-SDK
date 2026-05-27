@@ -12,7 +12,7 @@
 
 #pragma once
 #include <stdexcept>
-#include <../Hooking/Signature.hpp>
+#include "../Hooking/Signature.hpp"
 #include <windows.h>
 #include <libloaderapi.h>
 #include <cstdlib>

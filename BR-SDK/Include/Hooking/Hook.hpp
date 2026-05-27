@@ -162,7 +162,6 @@ Hook<Ret(Args...)>::Hook(const char* signature, Ret(* hookFunc)(Args...)) : Func
 	Initialized = false;
 	OriginalFunction = nullptr;
 	HookedFunction = hookFunc;
-	assert(FunctionPointer != 0);
 }
 
 template<typename Ret, typename ...Args>
