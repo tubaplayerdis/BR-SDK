@@ -1,7 +1,8 @@
-#include "../../Include/Utils/GameFunctions.hpp"
+#include "../../Include/Hooking/Signature.hpp"
 
+#include <windows.h>
+#include <chrono>
 #include <libloaderapi.h>
-#include <cstdlib>
 #include <map>
 #include <utility>
 #include <psapi.h>
@@ -206,6 +207,18 @@ Signature::Signature(const char* signature)
 {
 	Sig = std::string(signature);
 	ResolveSignature(signature);
+}
+
+Signature::Signature(std::uintptr_t address)
+{
+	if (!Cache)
+	{
+		Cache = std::make_unique<std::map<std::string, unsigned long long>>();
+	}
+
+	Sig = std::to_string(address);
+
+	Cache->insert(std::make_pair(Sig, address));
 }
 
 std::uintptr_t Signature::GetPtr() const

@@ -12,51 +12,18 @@
 
 #pragma once
 #include <stdexcept>
+#include <../Hooking/Signature.hpp>
 #include <windows.h>
 #include <libloaderapi.h>
 #include <cstdlib>
 #include <utility>
 #include <psapi.h>
 
-/// Current module base address.
-#define BASE ((unsigned long long)GetModuleHandle(nullptr))
-
 /// Call an internal game function using its address.
 /// @param addr Address of the function.
 /// @param sig Signature of the function
 /// @param ... Arguments to pass
 #define CALL_GAME_FUNCTION(addr, sig, ...) ( (reinterpret_cast<sig>(addr))(__VA_ARGS__) )
-
-/**
- * @brief Signature class with caching functionality.
- *
- * @code Signature UBRICK_GETFUELLEVEL("40 53 48 83 EC ?? 48 8B 01 48 8B D9 FF 90 ?? ?? ?? ?? 48 8B C8 48 85 C0 75 ??");
- */
-class Signature
-{
-    std::string Sig;
-    public:
-
-    /**
-     * @brief Create a signature
-     * @note THIS WILL NOT WORK IF A HOOK HAS BEEN REGISTERED FOR THIS FUNCTION BEFOREHAND. Use the CallOriginal() function on the hook.
-     * @param signature Signature of the function. Uses the format: "48 89 7C 24 ?? 41 56 48 83 EC ?? 48 8B FA 4C 8B F1 E8 ?? ?? ?? ??".
-     */
-    explicit Signature(const char* signature);
-
-    /**
-     * @brief Resolves the signature to a function pointer.
-     * @return Function pointer if successful.
-     * @returns 0 if no function was found.
-     */
-    std::uintptr_t GetPtr() const;
-
-    /**
-     * @brief This does what you think it does.
-     */
-    std::string GetSig() const;
-
-};
 
 /// Call an internal game function using its address.
 /// @tparam TRet Return type of the function
