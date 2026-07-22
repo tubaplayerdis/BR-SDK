@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ContextMenu.WBP_ContextMenu_C
 // 0x0020 (0x02C0 - 0x02A0)
@@ -35,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ContextMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ContextMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ContextMenu_C")
 	}
 	static class UWBP_ContextMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ContextMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_ContextMenu_C) == 0x000008, "Wrong alignment on UWBP_ContextMenu_C");
-static_assert(sizeof(UWBP_ContextMenu_C) == 0x0002C0, "Wrong size on UWBP_ContextMenu_C");
-static_assert(offsetof(UWBP_ContextMenu_C, UberGraphFrame) == 0x0002A0, "Member 'UWBP_ContextMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ContextMenu_C, SizeBox_0) == 0x0002A8, "Member 'UWBP_ContextMenu_C::SizeBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_ContextMenu_C, TitleBorder) == 0x0002B0, "Member 'UWBP_ContextMenu_C::TitleBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_ContextMenu_C, TitleTextBlock) == 0x0002B8, "Member 'UWBP_ContextMenu_C::TitleTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ContextMenu_C;
 
-}
-
+SDK_NAMESPACE_END

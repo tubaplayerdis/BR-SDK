@@ -14,8 +14,7 @@
 #include "WBP_InputKeySpacer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InputKeySpacer.WBP_InputKeySpacer_C.ExecuteUbergraph_WBP_InputKeySpacer
 // (Final, UbergraphFunction)
@@ -58,5 +57,5 @@ void UWBP_InputKeySpacer_C::UpdateStyleState(EBrickUIColorStyle NewStyle, EBrick
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

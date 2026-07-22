@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_MatchMenu.WBP_MatchMenu_C.ExecuteUbergraph_WBP_MatchMenu
 // 0x00C8 (0x00C8 - 0x0000)
@@ -51,30 +51,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x00A8(0x0018)()
 	int32                                         K2Node_Select_Default_1;                           // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu) == 0x000008, "Wrong alignment on WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu");
-static_assert(sizeof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu) == 0x0000C8, "Wrong size on WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, EntryPoint) == 0x000000, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, Temp_bool_Variable) == 0x000024, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, Temp_text_Variable) == 0x000028, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, Temp_text_Variable_1) == 0x000040, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, Temp_bool_Variable_1) == 0x000058, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, Temp_int_Variable) == 0x00005C, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, Temp_int_Variable_1) == 0x000060, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, CallFunc_GetMenuWidget_ReturnValue) == 0x000068, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::CallFunc_GetMenuWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_CustomEvent_Result) == 0x000070, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, CallFunc_CreateButton_ReturnValue) == 0x000078, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000080, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, CallFunc_GetGameInstance_ReturnValue) == 0x000088, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_Event_bCanApply) == 0x000090, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_Event_bCanApply' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_DynamicCast_AsBrick_Game_Instance) == 0x000098, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_DynamicCast_AsBrick_Game_Instance' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, CallFunc_OpenMessagePopup_ReturnValue) == 0x0000A1, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::CallFunc_OpenMessagePopup_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_Event_bCanRestart) == 0x0000A2, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_Event_bCanRestart' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_Event_bSameLevelAndMode) == 0x0000A3, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_Event_bSameLevelAndMode' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_Select_Default) == 0x0000A8, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu, K2Node_Select_Default_1) == 0x0000C0, "Member 'WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MatchMenu_C_ExecuteUbergraph_WBP_MatchMenu;
 
 // Function WBP_MatchMenu.WBP_MatchMenu_C.UpdateRestartMatchButton
 // 0x0002 (0x0002 - 0x0000)
@@ -84,10 +61,7 @@ public:
 	bool                                          bCanRestart;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bSameLevelAndMode;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_MatchMenu_C_UpdateRestartMatchButton) == 0x000001, "Wrong alignment on WBP_MatchMenu_C_UpdateRestartMatchButton");
-static_assert(sizeof(WBP_MatchMenu_C_UpdateRestartMatchButton) == 0x000002, "Wrong size on WBP_MatchMenu_C_UpdateRestartMatchButton");
-static_assert(offsetof(WBP_MatchMenu_C_UpdateRestartMatchButton, bCanRestart) == 0x000000, "Member 'WBP_MatchMenu_C_UpdateRestartMatchButton::bCanRestart' has a wrong offset!");
-static_assert(offsetof(WBP_MatchMenu_C_UpdateRestartMatchButton, bSameLevelAndMode) == 0x000001, "Member 'WBP_MatchMenu_C_UpdateRestartMatchButton::bSameLevelAndMode' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MatchMenu_C_UpdateRestartMatchButton;
 
 // Function WBP_MatchMenu.WBP_MatchMenu_C.UpdateCanApplyMatchSettings
 // 0x0001 (0x0001 - 0x0000)
@@ -96,9 +70,7 @@ struct WBP_MatchMenu_C_UpdateCanApplyMatchSettings final
 public:
 	bool                                          bCanApply;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_MatchMenu_C_UpdateCanApplyMatchSettings) == 0x000001, "Wrong alignment on WBP_MatchMenu_C_UpdateCanApplyMatchSettings");
-static_assert(sizeof(WBP_MatchMenu_C_UpdateCanApplyMatchSettings) == 0x000001, "Wrong size on WBP_MatchMenu_C_UpdateCanApplyMatchSettings");
-static_assert(offsetof(WBP_MatchMenu_C_UpdateCanApplyMatchSettings, bCanApply) == 0x000000, "Member 'WBP_MatchMenu_C_UpdateCanApplyMatchSettings::bCanApply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MatchMenu_C_UpdateCanApplyMatchSettings;
 
 // Function WBP_MatchMenu.WBP_MatchMenu_C.OnConfirmRestartPopupClosed
 // 0x0001 (0x0001 - 0x0000)
@@ -107,9 +79,7 @@ struct WBP_MatchMenu_C_OnConfirmRestartPopupClosed final
 public:
 	EPopupResult                                  Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MatchMenu_C_OnConfirmRestartPopupClosed) == 0x000001, "Wrong alignment on WBP_MatchMenu_C_OnConfirmRestartPopupClosed");
-static_assert(sizeof(WBP_MatchMenu_C_OnConfirmRestartPopupClosed) == 0x000001, "Wrong size on WBP_MatchMenu_C_OnConfirmRestartPopupClosed");
-static_assert(offsetof(WBP_MatchMenu_C_OnConfirmRestartPopupClosed, Result) == 0x000000, "Member 'WBP_MatchMenu_C_OnConfirmRestartPopupClosed::Result' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MatchMenu_C_OnConfirmRestartPopupClosed;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

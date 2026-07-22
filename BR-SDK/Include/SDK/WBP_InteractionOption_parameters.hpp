@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InteractionOption.WBP_InteractionOption_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -24,21 +24,16 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InteractionOption_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_InteractionOption_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_InteractionOption_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_InteractionOption_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_InteractionOption_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_InteractionOption_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InteractionOption_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_InteractionOption_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InteractionOption_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_InteractionOption.WBP_InteractionOption_C.UpdateColorStyle
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_InteractionOption_C_UpdateColorStyle final
 {
 public:
-	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EBrickUIColorStyle                            InColorStyle_UpdateColorStyle;                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InteractionOption_C_UpdateColorStyle) == 0x000001, "Wrong alignment on WBP_InteractionOption_C_UpdateColorStyle");
-static_assert(sizeof(WBP_InteractionOption_C_UpdateColorStyle) == 0x000001, "Wrong size on WBP_InteractionOption_C_UpdateColorStyle");
-static_assert(offsetof(WBP_InteractionOption_C_UpdateColorStyle, InColorStyle) == 0x000000, "Member 'WBP_InteractionOption_C_UpdateColorStyle::InColorStyle' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InteractionOption_C_UpdateColorStyle;
 
 // Function WBP_InteractionOption.WBP_InteractionOption_C.ExecuteUbergraph_WBP_InteractionOption
 // 0x0008 (0x0008 - 0x0000)
@@ -50,12 +45,7 @@ public:
 	EBrickUIStyleState                            K2Node_ComponentBoundEvent_InContentStyleState;    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIColorStyle                            K2Node_Event_InColorStyle;                         // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption) == 0x000004, "Wrong alignment on WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption");
-static_assert(sizeof(WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption) == 0x000008, "Wrong size on WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption");
-static_assert(offsetof(WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption, EntryPoint) == 0x000000, "Member 'WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption, K2Node_ComponentBoundEvent_InColorStyle) == 0x000004, "Member 'WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000005, "Member 'WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption, K2Node_Event_InColorStyle) == 0x000006, "Member 'WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption::K2Node_Event_InColorStyle' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InteractionOption_C_ExecuteUbergraph_WBP_InteractionOption;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_LoadingScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_LoadingScreen.WBP_LoadingScreen_C.ExecuteUbergraph_WBP_LoadingScreen
 // (Final, UbergraphFunction, HasDefaults)
@@ -76,5 +75,5 @@ void UWBP_LoadingScreen_C::SetBackgroundColor(const struct FLinearColor& InColor
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

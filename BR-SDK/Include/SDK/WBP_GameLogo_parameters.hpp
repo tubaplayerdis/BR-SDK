@@ -15,8 +15,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_GameLogo.WBP_GameLogo_C.ExecuteUbergraph_WBP_GameLogo
 // 0x0020 (0x0020 - 0x0000)
@@ -28,11 +28,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UBrickUIStyle*                    K2Node_CustomEvent_Style;                          // 0x0018(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo) == 0x000008, "Wrong alignment on WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo");
-static_assert(sizeof(WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo) == 0x000020, "Wrong size on WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo");
-static_assert(offsetof(WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo, EntryPoint) == 0x000000, "Member 'WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo, K2Node_CustomEvent_Style) == 0x000018, "Member 'WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo::K2Node_CustomEvent_Style' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameLogo_C_ExecuteUbergraph_WBP_GameLogo;
 
 // Function WBP_GameLogo.WBP_GameLogo_C.UpdateUIStyle
 // 0x0008 (0x0008 - 0x0000)
@@ -41,9 +37,7 @@ struct WBP_GameLogo_C_UpdateUIStyle final
 public:
 	const class UBrickUIStyle*                    Style;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameLogo_C_UpdateUIStyle) == 0x000008, "Wrong alignment on WBP_GameLogo_C_UpdateUIStyle");
-static_assert(sizeof(WBP_GameLogo_C_UpdateUIStyle) == 0x000008, "Wrong size on WBP_GameLogo_C_UpdateUIStyle");
-static_assert(offsetof(WBP_GameLogo_C_UpdateUIStyle, Style) == 0x000000, "Member 'WBP_GameLogo_C_UpdateUIStyle::Style' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameLogo_C_UpdateUIStyle;
 
 // Function WBP_GameLogo.WBP_GameLogo_C.UpdateLogo
 // 0x0060 (0x0060 - 0x0000)
@@ -65,20 +59,7 @@ public:
 	struct FLinearColor                           CallFunc_GetColor_ReturnValue_1;                   // 0x0048(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               K2Node_Select_Default_1;                           // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameLogo_C_UpdateLogo) == 0x000008, "Wrong alignment on WBP_GameLogo_C_UpdateLogo");
-static_assert(sizeof(WBP_GameLogo_C_UpdateLogo) == 0x000060, "Wrong size on WBP_GameLogo_C_UpdateLogo");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, Temp_byte_Variable) == 0x000000, "Member 'WBP_GameLogo_C_UpdateLogo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, Temp_byte_Variable_1) == 0x000001, "Member 'WBP_GameLogo_C_UpdateLogo::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, Temp_byte_Variable_2) == 0x000002, "Member 'WBP_GameLogo_C_UpdateLogo::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, Temp_byte_Variable_3) == 0x000003, "Member 'WBP_GameLogo_C_UpdateLogo::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, Temp_object_Variable) == 0x000008, "Member 'WBP_GameLogo_C_UpdateLogo::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, Temp_object_Variable_1) == 0x000010, "Member 'WBP_GameLogo_C_UpdateLogo::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, CallFunc_MakeColor_ReturnValue) == 0x000018, "Member 'WBP_GameLogo_C_UpdateLogo::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, K2Node_Select_Default) == 0x000028, "Member 'WBP_GameLogo_C_UpdateLogo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, CallFunc_InitMID_ReturnValue) == 0x000030, "Member 'WBP_GameLogo_C_UpdateLogo::CallFunc_InitMID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, CallFunc_GetColor_ReturnValue) == 0x000038, "Member 'WBP_GameLogo_C_UpdateLogo::CallFunc_GetColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, CallFunc_GetColor_ReturnValue_1) == 0x000048, "Member 'WBP_GameLogo_C_UpdateLogo::CallFunc_GetColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_UpdateLogo, K2Node_Select_Default_1) == 0x000058, "Member 'WBP_GameLogo_C_UpdateLogo::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameLogo_C_UpdateLogo;
 
 // Function WBP_GameLogo.WBP_GameLogo_C.SetLogo
 // 0x0002 (0x0002 - 0x0000)
@@ -88,10 +69,7 @@ public:
 	EGameLogoEnum                                 InLogo;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_GameLogo_C_SetLogo) == 0x000001, "Wrong alignment on WBP_GameLogo_C_SetLogo");
-static_assert(sizeof(WBP_GameLogo_C_SetLogo) == 0x000002, "Wrong size on WBP_GameLogo_C_SetLogo");
-static_assert(offsetof(WBP_GameLogo_C_SetLogo, InLogo) == 0x000000, "Member 'WBP_GameLogo_C_SetLogo::InLogo' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_SetLogo, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000001, "Member 'WBP_GameLogo_C_SetLogo::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameLogo_C_SetLogo;
 
 // Function WBP_GameLogo.WBP_GameLogo_C.InitMID
 // 0x0020 (0x0020 - 0x0000)
@@ -103,12 +81,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_GameLogo_C_InitMID) == 0x000008, "Wrong alignment on WBP_GameLogo_C_InitMID");
-static_assert(sizeof(WBP_GameLogo_C_InitMID) == 0x000020, "Wrong size on WBP_GameLogo_C_InitMID");
-static_assert(offsetof(WBP_GameLogo_C_InitMID, ReturnValue) == 0x000000, "Member 'WBP_GameLogo_C_InitMID::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_InitMID, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'WBP_GameLogo_C_InitMID::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_InitMID, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_GameLogo_C_InitMID::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_InitMID, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_GameLogo_C_InitMID::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameLogo_C_InitMID;
 
 // Function WBP_GameLogo.WBP_GameLogo_C.IsLogoReady
 // 0x0003 (0x0003 - 0x0000)
@@ -119,11 +92,7 @@ public:
 	bool                                          CallFunc_IsLoadingImage_ReturnValue;               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_GameLogo_C_IsLogoReady) == 0x000001, "Wrong alignment on WBP_GameLogo_C_IsLogoReady");
-static_assert(sizeof(WBP_GameLogo_C_IsLogoReady) == 0x000003, "Wrong size on WBP_GameLogo_C_IsLogoReady");
-static_assert(offsetof(WBP_GameLogo_C_IsLogoReady, ReturnValue) == 0x000000, "Member 'WBP_GameLogo_C_IsLogoReady::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_IsLogoReady, CallFunc_IsLoadingImage_ReturnValue) == 0x000001, "Member 'WBP_GameLogo_C_IsLogoReady::CallFunc_IsLoadingImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameLogo_C_IsLogoReady, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'WBP_GameLogo_C_IsLogoReady::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameLogo_C_IsLogoReady;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_LoadingScreen.WBP_LoadingScreen_C
 // 0x0028 (0x02A0 - 0x0278)
@@ -36,20 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_LoadingScreen_C">();
+		BP_STATIC_CLASS_IMPL("WBP_LoadingScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_LoadingScreen_C")
 	}
 	static class UWBP_LoadingScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_LoadingScreen_C>();
 	}
 };
-static_assert(alignof(UWBP_LoadingScreen_C) == 0x000008, "Wrong alignment on UWBP_LoadingScreen_C");
-static_assert(sizeof(UWBP_LoadingScreen_C) == 0x0002A0, "Wrong size on UWBP_LoadingScreen_C");
-static_assert(offsetof(UWBP_LoadingScreen_C, UberGraphFrame) == 0x000278, "Member 'UWBP_LoadingScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_LoadingScreen_C, BackgroundBorder) == 0x000280, "Member 'UWBP_LoadingScreen_C::BackgroundBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_LoadingScreen_C, BrickImage_123) == 0x000288, "Member 'UWBP_LoadingScreen_C::BrickImage_123' has a wrong offset!");
-static_assert(offsetof(UWBP_LoadingScreen_C, GameLogo) == 0x000290, "Member 'UWBP_LoadingScreen_C::GameLogo' has a wrong offset!");
-static_assert(offsetof(UWBP_LoadingScreen_C, LoadingTextBlock) == 0x000298, "Member 'UWBP_LoadingScreen_C::LoadingTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_LoadingScreen_C;
 
-}
-
+SDK_NAMESPACE_END

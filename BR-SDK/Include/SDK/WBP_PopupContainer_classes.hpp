@@ -17,8 +17,7 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PopupContainer.WBP_PopupContainer_C
 // 0x0050 (0x02F8 - 0x02A8)
@@ -48,25 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PopupContainer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PopupContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PopupContainer_C")
 	}
 	static class UWBP_PopupContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PopupContainer_C>();
 	}
 };
-static_assert(alignof(UWBP_PopupContainer_C) == 0x000008, "Wrong alignment on UWBP_PopupContainer_C");
-static_assert(sizeof(UWBP_PopupContainer_C) == 0x0002F8, "Wrong size on UWBP_PopupContainer_C");
-static_assert(offsetof(UWBP_PopupContainer_C, UberGraphFrame) == 0x0002A8, "Member 'UWBP_PopupContainer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PopupContainer_C, BackgroundBorder) == 0x0002B0, "Member 'UWBP_PopupContainer_C::BackgroundBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_PopupContainer_C, PopupBorder) == 0x0002B8, "Member 'UWBP_PopupContainer_C::PopupBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_PopupContainer_C, PopupBox) == 0x0002C0, "Member 'UWBP_PopupContainer_C::PopupBox' has a wrong offset!");
-static_assert(offsetof(UWBP_PopupContainer_C, PopupOverlay) == 0x0002C8, "Member 'UWBP_PopupContainer_C::PopupOverlay' has a wrong offset!");
-static_assert(offsetof(UWBP_PopupContainer_C, PopupSlot) == 0x0002D0, "Member 'UWBP_PopupContainer_C::PopupSlot' has a wrong offset!");
-static_assert(offsetof(UWBP_PopupContainer_C, ShadowBorder) == 0x0002D8, "Member 'UWBP_PopupContainer_C::ShadowBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_PopupContainer_C, TitleBorder) == 0x0002E0, "Member 'UWBP_PopupContainer_C::TitleBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_PopupContainer_C, TitleSizeBox) == 0x0002E8, "Member 'UWBP_PopupContainer_C::TitleSizeBox' has a wrong offset!");
-static_assert(offsetof(UWBP_PopupContainer_C, TitleTextBlock) == 0x0002F0, "Member 'UWBP_PopupContainer_C::TitleTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PopupContainer_C;
 
-}
-
+SDK_NAMESPACE_END

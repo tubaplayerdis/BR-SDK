@@ -14,8 +14,7 @@
 #include "BP_SkyScraper_Builder_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_SkyScraper_Builder.BP_SkyScraper_Builder_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
@@ -30,5 +29,5 @@ void ABP_SkyScraper_Builder_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

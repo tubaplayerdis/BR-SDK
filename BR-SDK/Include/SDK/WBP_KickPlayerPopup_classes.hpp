@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_KickPlayerPopup.WBP_KickPlayerPopup_C
 // 0x0018 (0x02C0 - 0x02A8)
@@ -36,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_KickPlayerPopup_C">();
+		BP_STATIC_CLASS_IMPL("WBP_KickPlayerPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_KickPlayerPopup_C")
 	}
 	static class UWBP_KickPlayerPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_KickPlayerPopup_C>();
 	}
 };
-static_assert(alignof(UWBP_KickPlayerPopup_C) == 0x000008, "Wrong alignment on UWBP_KickPlayerPopup_C");
-static_assert(sizeof(UWBP_KickPlayerPopup_C) == 0x0002C0, "Wrong size on UWBP_KickPlayerPopup_C");
-static_assert(offsetof(UWBP_KickPlayerPopup_C, UberGraphFrame) == 0x0002A8, "Member 'UWBP_KickPlayerPopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_KickPlayerPopup_C, RevokeButton) == 0x0002B0, "Member 'UWBP_KickPlayerPopup_C::RevokeButton' has a wrong offset!");
-static_assert(offsetof(UWBP_KickPlayerPopup_C, ConfirmButton) == 0x0002B8, "Member 'UWBP_KickPlayerPopup_C::ConfirmButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_KickPlayerPopup_C;
 
-}
-
+SDK_NAMESPACE_END

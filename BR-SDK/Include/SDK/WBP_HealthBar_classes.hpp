@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_HealthBar.WBP_HealthBar_C
 // 0x0020 (0x0298 - 0x0278)
@@ -30,27 +29,25 @@ public:
 	class UWBP_BrickSliderReadOnly_C*             HealthSlider;                                      // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateHealth(float NewHealth);
-	void UpdateCanBeDamaged(bool bNewCanBeDamaged);
-	void UpdateHealingState(ECharacterHealingState NewState);
 	void ExecuteUbergraph_WBP_HealthBar(int32 EntryPoint);
+	void UpdateHealingState(ECharacterHealingState NewState);
+	void UpdateCanBeDamaged(bool bNewCanBeDamaged);
+	void UpdateHealth(float NewHealth);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HealthBar_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HealthBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HealthBar_C")
 	}
 	static class UWBP_HealthBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HealthBar_C>();
 	}
 };
-static_assert(alignof(UWBP_HealthBar_C) == 0x000008, "Wrong alignment on UWBP_HealthBar_C");
-static_assert(sizeof(UWBP_HealthBar_C) == 0x000298, "Wrong size on UWBP_HealthBar_C");
-static_assert(offsetof(UWBP_HealthBar_C, UberGraphFrame) == 0x000278, "Member 'UWBP_HealthBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HealthBar_C, HealthBarBox) == 0x000280, "Member 'UWBP_HealthBar_C::HealthBarBox' has a wrong offset!");
-static_assert(offsetof(UWBP_HealthBar_C, HealthImage) == 0x000288, "Member 'UWBP_HealthBar_C::HealthImage' has a wrong offset!");
-static_assert(offsetof(UWBP_HealthBar_C, HealthSlider) == 0x000290, "Member 'UWBP_HealthBar_C::HealthSlider' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HealthBar_C;
 
-}
-
+SDK_NAMESPACE_END

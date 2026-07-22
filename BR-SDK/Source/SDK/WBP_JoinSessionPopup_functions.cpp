@@ -14,8 +14,7 @@
 #include "WBP_JoinSessionPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_JoinSessionPopup.WBP_JoinSessionPopup_C.ExecuteUbergraph_WBP_JoinSessionPopup
 // (Final, UbergraphFunction, HasDefaults)
@@ -94,5 +93,5 @@ void UWBP_JoinSessionPopup_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

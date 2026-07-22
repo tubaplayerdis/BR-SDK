@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Windmill.BP_Windmill_C
 // 0x0000 (0x0268 - 0x0268)
@@ -23,15 +22,17 @@ class ABP_Windmill_C final : public AWindmill
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Windmill_C">();
+		BP_STATIC_CLASS_IMPL("BP_Windmill_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Windmill_C")
 	}
 	static class ABP_Windmill_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Windmill_C>();
 	}
 };
-static_assert(alignof(ABP_Windmill_C) == 0x000008, "Wrong alignment on ABP_Windmill_C");
-static_assert(sizeof(ABP_Windmill_C) == 0x000268, "Wrong size on ABP_Windmill_C");
+DUMPER7_ASSERTS_ABP_Windmill_C;
 
-}
-
+SDK_NAMESPACE_END

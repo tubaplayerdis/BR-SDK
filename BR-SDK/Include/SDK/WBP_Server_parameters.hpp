@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_Server.WBP_Server_C.ExecuteUbergraph_WBP_Server
 // 0x01A8 (0x01A8 - 0x0000)
@@ -42,24 +42,7 @@ public:
 	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FBrickUIIconSlot                       K2Node_MakeStruct_BrickUIIconSlot_2;               // 0x01A0(0x0008)(NoDestructor)
 };
-static_assert(alignof(WBP_Server_C_ExecuteUbergraph_WBP_Server) == 0x000008, "Wrong alignment on WBP_Server_C_ExecuteUbergraph_WBP_Server");
-static_assert(sizeof(WBP_Server_C_ExecuteUbergraph_WBP_Server) == 0x0001A8, "Wrong size on WBP_Server_C_ExecuteUbergraph_WBP_Server");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, EntryPoint) == 0x000000, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, Temp_byte_Variable) == 0x000004, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, Temp_bool_Variable) == 0x000006, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, K2Node_ComponentBoundEvent_InColorStyle) == 0x000007, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000008, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, K2Node_Event_SessionInfo) == 0x000010, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::K2Node_Event_SessionInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, CallFunc_GetModIconSlot_ReturnValue) == 0x000178, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::CallFunc_GetModIconSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, CallFunc_BooleanOR_ReturnValue) == 0x00017C, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, K2Node_MakeStruct_BrickUIIconSlot) == 0x000180, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, CallFunc_BooleanAND_ReturnValue) == 0x000188, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, CallFunc_SelectInt_ReturnValue) == 0x00018C, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, K2Node_MakeStruct_BrickUIIconSlot_1) == 0x000190, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::K2Node_MakeStruct_BrickUIIconSlot_1' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, K2Node_Select_Default) == 0x000198, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, CallFunc_SelectInt_ReturnValue_1) == 0x00019C, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_ExecuteUbergraph_WBP_Server, K2Node_MakeStruct_BrickUIIconSlot_2) == 0x0001A0, "Member 'WBP_Server_C_ExecuteUbergraph_WBP_Server::K2Node_MakeStruct_BrickUIIconSlot_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Server_C_ExecuteUbergraph_WBP_Server;
 
 // Function WBP_Server.WBP_Server_C.UpdateServer
 // 0x0168 (0x0168 - 0x0000)
@@ -68,9 +51,7 @@ struct WBP_Server_C_UpdateServer final
 public:
 	struct FBrickOnlineSessionInfo                SessionInfo;                                       // 0x0000(0x0168)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Server_C_UpdateServer) == 0x000008, "Wrong alignment on WBP_Server_C_UpdateServer");
-static_assert(sizeof(WBP_Server_C_UpdateServer) == 0x000168, "Wrong size on WBP_Server_C_UpdateServer");
-static_assert(offsetof(WBP_Server_C_UpdateServer, SessionInfo) == 0x000000, "Member 'WBP_Server_C_UpdateServer::SessionInfo' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Server_C_UpdateServer;
 
 // Function WBP_Server.WBP_Server_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -80,10 +61,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Server_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Server_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_Server_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_Server_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_Server_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_Server_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_Server_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Server_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_Server.WBP_Server_C.GetModIconSlot
 // 0x0010 (0x0010 - 0x0000)
@@ -101,17 +79,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_Server_C_GetModIconSlot) == 0x000004, "Wrong alignment on WBP_Server_C_GetModIconSlot");
-static_assert(sizeof(WBP_Server_C_GetModIconSlot) == 0x000010, "Wrong size on WBP_Server_C_GetModIconSlot");
-static_assert(offsetof(WBP_Server_C_GetModIconSlot, bHasMods) == 0x000000, "Member 'WBP_Server_C_GetModIconSlot::bHasMods' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_GetModIconSlot, bHasSameMods) == 0x000001, "Member 'WBP_Server_C_GetModIconSlot::bHasSameMods' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_GetModIconSlot, bAllowDifferentMods) == 0x000002, "Member 'WBP_Server_C_GetModIconSlot::bAllowDifferentMods' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_GetModIconSlot, ReturnValue) == 0x000004, "Member 'WBP_Server_C_GetModIconSlot::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_GetModIconSlot, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'WBP_Server_C_GetModIconSlot::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_GetModIconSlot, CallFunc_Not_PreBool_ReturnValue_1) == 0x000009, "Member 'WBP_Server_C_GetModIconSlot::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_GetModIconSlot, CallFunc_BooleanAND_ReturnValue) == 0x00000A, "Member 'WBP_Server_C_GetModIconSlot::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_GetModIconSlot, CallFunc_BooleanAND_ReturnValue_1) == 0x00000B, "Member 'WBP_Server_C_GetModIconSlot::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Server_C_GetModIconSlot, CallFunc_BooleanAND_ReturnValue_2) == 0x00000C, "Member 'WBP_Server_C_GetModIconSlot::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Server_C_GetModIconSlot;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

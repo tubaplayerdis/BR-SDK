@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InputKey.WBP_InputKey_C
 // 0x0028 (0x02B0 - 0x0288)
@@ -37,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InputKey_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InputKey_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InputKey_C")
 	}
 	static class UWBP_InputKey_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InputKey_C>();
 	}
 };
-static_assert(alignof(UWBP_InputKey_C) == 0x000008, "Wrong alignment on UWBP_InputKey_C");
-static_assert(sizeof(UWBP_InputKey_C) == 0x0002B0, "Wrong size on UWBP_InputKey_C");
-static_assert(offsetof(UWBP_InputKey_C, UberGraphFrame) == 0x000288, "Member 'UWBP_InputKey_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InputKey_C, HoldImage) == 0x000290, "Member 'UWBP_InputKey_C::HoldImage' has a wrong offset!");
-static_assert(offsetof(UWBP_InputKey_C, KeyBorder) == 0x000298, "Member 'UWBP_InputKey_C::KeyBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_InputKey_C, KeyImage) == 0x0002A0, "Member 'UWBP_InputKey_C::KeyImage' has a wrong offset!");
-static_assert(offsetof(UWBP_InputKey_C, KeyTextBlock) == 0x0002A8, "Member 'UWBP_InputKey_C::KeyTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InputKey_C;
 
-}
-
+SDK_NAMESPACE_END

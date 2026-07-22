@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_LandingGear_2x2x2.BP_LandingGear_2x2x2_C
 // 0x0000 (0x0198 - 0x0198)
@@ -23,15 +22,17 @@ class UBP_LandingGear_2x2x2_C final : public UAxleBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_LandingGear_2x2x2_C">();
+		BP_STATIC_CLASS_IMPL("BP_LandingGear_2x2x2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_LandingGear_2x2x2_C")
 	}
 	static class UBP_LandingGear_2x2x2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_LandingGear_2x2x2_C>();
 	}
 };
-static_assert(alignof(UBP_LandingGear_2x2x2_C) == 0x000008, "Wrong alignment on UBP_LandingGear_2x2x2_C");
-static_assert(sizeof(UBP_LandingGear_2x2x2_C) == 0x000198, "Wrong size on UBP_LandingGear_2x2x2_C");
+DUMPER7_ASSERTS_UBP_LandingGear_2x2x2_C;
 
-}
-
+SDK_NAMESPACE_END

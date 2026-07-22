@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Hospital_Builder.BP_Hospital_Builder_C
 // 0x0000 (0x0310 - 0x0310)
@@ -26,15 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Hospital_Builder_C">();
+		BP_STATIC_CLASS_IMPL("BP_Hospital_Builder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Hospital_Builder_C")
 	}
 	static class ABP_Hospital_Builder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Hospital_Builder_C>();
 	}
 };
-static_assert(alignof(ABP_Hospital_Builder_C) == 0x000010, "Wrong alignment on ABP_Hospital_Builder_C");
-static_assert(sizeof(ABP_Hospital_Builder_C) == 0x000310, "Wrong size on ABP_Hospital_Builder_C");
+DUMPER7_ASSERTS_ABP_Hospital_Builder_C;
 
-}
-
+SDK_NAMESPACE_END

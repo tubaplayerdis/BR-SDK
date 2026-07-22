@@ -14,8 +14,7 @@
 #include "WBP_IntroSequence_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_IntroSequence.WBP_IntroSequence_C.ExecuteUbergraph_WBP_IntroSequence
 // (Final, UbergraphFunction, HasDefaults)
@@ -189,5 +188,5 @@ void UWBP_IntroSequence_C::NextSequence()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

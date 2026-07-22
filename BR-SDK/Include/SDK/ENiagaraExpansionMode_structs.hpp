@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagaraExpansionMode.ENiagaraExpansionMode
 // NumValues: 0x0004
@@ -24,5 +23,4 @@ enum class ENiagaraExpansionMode : uint8
 	ENiagaraExpansionMode_MAX                = 3,
 };
 
-}
-
+SDK_NAMESPACE_END

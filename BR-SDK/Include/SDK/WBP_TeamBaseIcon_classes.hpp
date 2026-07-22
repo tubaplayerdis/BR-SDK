@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_TeamBaseIcon.WBP_TeamBaseIcon_C
 // 0x0000 (0x0290 - 0x0290)
@@ -26,15 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TeamBaseIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TeamBaseIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TeamBaseIcon_C")
 	}
 	static class UWBP_TeamBaseIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TeamBaseIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_TeamBaseIcon_C) == 0x000008, "Wrong alignment on UWBP_TeamBaseIcon_C");
-static_assert(sizeof(UWBP_TeamBaseIcon_C) == 0x000290, "Wrong size on UWBP_TeamBaseIcon_C");
+DUMPER7_ASSERTS_UWBP_TeamBaseIcon_C;
 
-}
-
+SDK_NAMESPACE_END

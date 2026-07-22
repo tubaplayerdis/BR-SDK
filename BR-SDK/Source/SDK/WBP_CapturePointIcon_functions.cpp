@@ -14,8 +14,7 @@
 #include "WBP_CapturePointIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_CapturePointIcon.WBP_CapturePointIcon_C.GetIconDisplayName
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
@@ -36,5 +35,5 @@ class FText UWBP_CapturePointIcon_C::GetIconDisplayName() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

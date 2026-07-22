@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PlayersMenu.WBP_PlayersMenu_C
 // 0x0018 (0x0290 - 0x0278)
@@ -35,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PlayersMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PlayersMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PlayersMenu_C")
 	}
 	static class UWBP_PlayersMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PlayersMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_PlayersMenu_C) == 0x000008, "Wrong alignment on UWBP_PlayersMenu_C");
-static_assert(sizeof(UWBP_PlayersMenu_C) == 0x000290, "Wrong size on UWBP_PlayersMenu_C");
-static_assert(offsetof(UWBP_PlayersMenu_C, UberGraphFrame) == 0x000278, "Member 'UWBP_PlayersMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PlayersMenu_C, ShowProfileButton) == 0x000280, "Member 'UWBP_PlayersMenu_C::ShowProfileButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PlayersMenu_C, KickButton) == 0x000288, "Member 'UWBP_PlayersMenu_C::KickButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PlayersMenu_C;
 
-}
-
+SDK_NAMESPACE_END

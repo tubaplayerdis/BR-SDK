@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass P_Hexagon.P_Hexagon_C
 // 0x0000 (0x0050 - 0x0050)
@@ -23,15 +22,17 @@ class UP_Hexagon_C final : public UBrickPattern
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"P_Hexagon_C">();
+		BP_STATIC_CLASS_IMPL("P_Hexagon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"P_Hexagon_C")
 	}
 	static class UP_Hexagon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UP_Hexagon_C>();
 	}
 };
-static_assert(alignof(UP_Hexagon_C) == 0x000008, "Wrong alignment on UP_Hexagon_C");
-static_assert(sizeof(UP_Hexagon_C) == 0x000050, "Wrong size on UP_Hexagon_C");
+DUMPER7_ASSERTS_UP_Hexagon_C;
 
-}
-
+SDK_NAMESPACE_END

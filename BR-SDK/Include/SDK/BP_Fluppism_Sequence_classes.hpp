@@ -14,8 +14,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Fluppism_Sequence.BP_Fluppism_Sequence_C
 // 0x0050 (0x02A0 - 0x0250)
@@ -41,27 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Fluppism_Sequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_Fluppism_Sequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Fluppism_Sequence_C")
 	}
 	static class ABP_Fluppism_Sequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Fluppism_Sequence_C>();
 	}
 };
-static_assert(alignof(ABP_Fluppism_Sequence_C) == 0x000008, "Wrong alignment on ABP_Fluppism_Sequence_C");
-static_assert(sizeof(ABP_Fluppism_Sequence_C) == 0x0002A0, "Wrong size on ABP_Fluppism_Sequence_C");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, SpotLight1) == 0x000250, "Member 'ABP_Fluppism_Sequence_C::SpotLight1' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, SpotLight) == 0x000258, "Member 'ABP_Fluppism_Sequence_C::SpotLight' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, Camera) == 0x000260, "Member 'ABP_Fluppism_Sequence_C::Camera' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, ParticleSystem1) == 0x000268, "Member 'ABP_Fluppism_Sequence_C::ParticleSystem1' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, ParticleSystem) == 0x000270, "Member 'ABP_Fluppism_Sequence_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, SkeletalMesh) == 0x000278, "Member 'ABP_Fluppism_Sequence_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, DefaultSceneRoot) == 0x000280, "Member 'ABP_Fluppism_Sequence_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, PlacementRadius) == 0x000288, "Member 'ABP_Fluppism_Sequence_C::PlacementRadius' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, PlacementAngle) == 0x00028C, "Member 'ABP_Fluppism_Sequence_C::PlacementAngle' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, NumBobs) == 0x000290, "Member 'ABP_Fluppism_Sequence_C::NumBobs' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, RandStream) == 0x000294, "Member 'ABP_Fluppism_Sequence_C::RandStream' has a wrong offset!");
-static_assert(offsetof(ABP_Fluppism_Sequence_C, Jitter) == 0x00029C, "Member 'ABP_Fluppism_Sequence_C::Jitter' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Fluppism_Sequence_C;
 
-}
-
+SDK_NAMESPACE_END

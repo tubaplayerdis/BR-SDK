@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_DoubleFlash_Category.BP_DoubleFlash_Category_C
 // 0x0000 (0x0080 - 0x0080)
@@ -23,15 +22,17 @@ class UBP_DoubleFlash_Category_C : public USirenSequence
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DoubleFlash_Category_C">();
+		BP_STATIC_CLASS_IMPL("BP_DoubleFlash_Category_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DoubleFlash_Category_C")
 	}
 	static class UBP_DoubleFlash_Category_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_DoubleFlash_Category_C>();
 	}
 };
-static_assert(alignof(UBP_DoubleFlash_Category_C) == 0x000008, "Wrong alignment on UBP_DoubleFlash_Category_C");
-static_assert(sizeof(UBP_DoubleFlash_Category_C) == 0x000080, "Wrong size on UBP_DoubleFlash_Category_C");
+DUMPER7_ASSERTS_UBP_DoubleFlash_Category_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_OffroadWheel_5x2.BP_OffroadWheel_5x2_C
 // 0x0000 (0x01D0 - 0x01D0)
@@ -23,15 +22,17 @@ class UBP_OffroadWheel_5x2_C final : public UCarWheelBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_OffroadWheel_5x2_C">();
+		BP_STATIC_CLASS_IMPL("BP_OffroadWheel_5x2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_OffroadWheel_5x2_C")
 	}
 	static class UBP_OffroadWheel_5x2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_OffroadWheel_5x2_C>();
 	}
 };
-static_assert(alignof(UBP_OffroadWheel_5x2_C) == 0x000008, "Wrong alignment on UBP_OffroadWheel_5x2_C");
-static_assert(sizeof(UBP_OffroadWheel_5x2_C) == 0x0001D0, "Wrong size on UBP_OffroadWheel_5x2_C");
+DUMPER7_ASSERTS_UBP_OffroadWheel_5x2_C;
 
-}
-
+SDK_NAMESPACE_END

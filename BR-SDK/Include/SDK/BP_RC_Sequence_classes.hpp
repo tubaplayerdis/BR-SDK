@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_RC_Sequence.BP_RC_Sequence_C
 // 0x0048 (0x0298 - 0x0250)
@@ -45,25 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RC_Sequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_RC_Sequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RC_Sequence_C")
 	}
 	static class ABP_RC_Sequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RC_Sequence_C>();
 	}
 };
-static_assert(alignof(ABP_RC_Sequence_C) == 0x000008, "Wrong alignment on ABP_RC_Sequence_C");
-static_assert(sizeof(ABP_RC_Sequence_C) == 0x000298, "Wrong size on ABP_RC_Sequence_C");
-static_assert(offsetof(ABP_RC_Sequence_C, UberGraphFrame) == 0x000250, "Member 'ABP_RC_Sequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Sequence_C, Camera) == 0x000258, "Member 'ABP_RC_Sequence_C::Camera' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Sequence_C, Vehicle) == 0x000260, "Member 'ABP_RC_Sequence_C::Vehicle' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Sequence_C, TrackSpline) == 0x000268, "Member 'ABP_RC_Sequence_C::TrackSpline' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Sequence_C, Remote) == 0x000270, "Member 'ABP_RC_Sequence_C::Remote' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Sequence_C, Character) == 0x000278, "Member 'ABP_RC_Sequence_C::Character' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Sequence_C, DefaultSceneRoot) == 0x000280, "Member 'ABP_RC_Sequence_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Sequence_C, Speed) == 0x000288, "Member 'ABP_RC_Sequence_C::Speed' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Sequence_C, CurrentDist) == 0x00028C, "Member 'ABP_RC_Sequence_C::CurrentDist' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Sequence_C, TrailerOffset) == 0x000290, "Member 'ABP_RC_Sequence_C::TrailerOffset' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RC_Sequence_C;
 
-}
-
+SDK_NAMESPACE_END

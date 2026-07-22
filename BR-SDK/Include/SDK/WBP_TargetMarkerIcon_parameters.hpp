@@ -14,8 +14,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.ExecuteUbergraph_WBP_TargetMarkerIcon
 // 0x0058 (0x0058 - 0x0000)
@@ -46,28 +46,7 @@ public:
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon) == 0x000008, "Wrong alignment on WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon");
-static_assert(sizeof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon) == 0x000058, "Wrong size on WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, EntryPoint) == 0x000000, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, K2Node_Event_bNewHasValidTarget) == 0x000004, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::K2Node_Event_bNewHasValidTarget' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, Temp_bool_Variable) == 0x000005, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, Temp_byte_Variable) == 0x000006, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, Temp_byte_Variable_1) == 0x000007, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, Temp_bool_Variable_1) == 0x000008, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, Temp_byte_Variable_2) == 0x000009, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, Temp_byte_Variable_3) == 0x00000A, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, K2Node_Event_NewType) == 0x00000B, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::K2Node_Event_NewType' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, K2Node_Select_Default) == 0x00000C, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, CallFunc_Get_Ammo_Type_Display_Info_IconSlot) == 0x000010, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::CallFunc_Get_Ammo_Type_Display_Info_IconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, CallFunc_Get_Ammo_Type_Display_Info_ColorStyle) == 0x000014, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::CallFunc_Get_Ammo_Type_Display_Info_ColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, K2Node_MakeStruct_BrickUIIconSlot) == 0x000018, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, K2Node_Event_NewDist) == 0x000020, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::K2Node_Event_NewDist' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, CallFunc_NumberToText_ReturnValue) == 0x000028, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::CallFunc_NumberToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, K2Node_Event_NewActionIndex) == 0x000040, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::K2Node_Event_NewActionIndex' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, CallFunc_Add_IntInt_ReturnValue) == 0x000044, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, K2Node_MakeStruct_BrickUIIconSlot_1) == 0x000048, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::K2Node_MakeStruct_BrickUIIconSlot_1' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000050, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon, K2Node_Select_Default_1) == 0x000051, "Member 'WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TargetMarkerIcon_C_ExecuteUbergraph_WBP_TargetMarkerIcon;
 
 // Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateHasValidTarget
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +55,7 @@ struct WBP_TargetMarkerIcon_C_UpdateHasValidTarget final
 public:
 	bool                                          bNewHasValidTarget;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_TargetMarkerIcon_C_UpdateHasValidTarget) == 0x000001, "Wrong alignment on WBP_TargetMarkerIcon_C_UpdateHasValidTarget");
-static_assert(sizeof(WBP_TargetMarkerIcon_C_UpdateHasValidTarget) == 0x000001, "Wrong size on WBP_TargetMarkerIcon_C_UpdateHasValidTarget");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_UpdateHasValidTarget, bNewHasValidTarget) == 0x000000, "Member 'WBP_TargetMarkerIcon_C_UpdateHasValidTarget::bNewHasValidTarget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TargetMarkerIcon_C_UpdateHasValidTarget;
 
 // Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateFireAction
 // 0x0004 (0x0004 - 0x0000)
@@ -87,9 +64,7 @@ struct WBP_TargetMarkerIcon_C_UpdateFireAction final
 public:
 	int32                                         NewActionIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TargetMarkerIcon_C_UpdateFireAction) == 0x000004, "Wrong alignment on WBP_TargetMarkerIcon_C_UpdateFireAction");
-static_assert(sizeof(WBP_TargetMarkerIcon_C_UpdateFireAction) == 0x000004, "Wrong size on WBP_TargetMarkerIcon_C_UpdateFireAction");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_UpdateFireAction, NewActionIndex) == 0x000000, "Member 'WBP_TargetMarkerIcon_C_UpdateFireAction::NewActionIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TargetMarkerIcon_C_UpdateFireAction;
 
 // Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateTargetDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -98,9 +73,7 @@ struct WBP_TargetMarkerIcon_C_UpdateTargetDistance final
 public:
 	float                                         NewDist;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TargetMarkerIcon_C_UpdateTargetDistance) == 0x000004, "Wrong alignment on WBP_TargetMarkerIcon_C_UpdateTargetDistance");
-static_assert(sizeof(WBP_TargetMarkerIcon_C_UpdateTargetDistance) == 0x000004, "Wrong size on WBP_TargetMarkerIcon_C_UpdateTargetDistance");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_UpdateTargetDistance, NewDist) == 0x000000, "Member 'WBP_TargetMarkerIcon_C_UpdateTargetDistance::NewDist' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TargetMarkerIcon_C_UpdateTargetDistance;
 
 // Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.UpdateAmmoType
 // 0x0001 (0x0001 - 0x0000)
@@ -109,9 +82,7 @@ struct WBP_TargetMarkerIcon_C_UpdateAmmoType final
 public:
 	EAmmoType                                     NewType;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TargetMarkerIcon_C_UpdateAmmoType) == 0x000001, "Wrong alignment on WBP_TargetMarkerIcon_C_UpdateAmmoType");
-static_assert(sizeof(WBP_TargetMarkerIcon_C_UpdateAmmoType) == 0x000001, "Wrong size on WBP_TargetMarkerIcon_C_UpdateAmmoType");
-static_assert(offsetof(WBP_TargetMarkerIcon_C_UpdateAmmoType, NewType) == 0x000000, "Member 'WBP_TargetMarkerIcon_C_UpdateAmmoType::NewType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TargetMarkerIcon_C_UpdateAmmoType;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

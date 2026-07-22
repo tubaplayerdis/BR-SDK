@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_BrickComboBoxItem.WBP_BrickComboBoxItem_C.ExecuteUbergraph_WBP_BrickComboBoxItem
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,7 @@ struct WBP_BrickComboBoxItem_C_ExecuteUbergraph_WBP_BrickComboBoxItem final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_BrickComboBoxItem_C_ExecuteUbergraph_WBP_BrickComboBoxItem) == 0x000004, "Wrong alignment on WBP_BrickComboBoxItem_C_ExecuteUbergraph_WBP_BrickComboBoxItem");
-static_assert(sizeof(WBP_BrickComboBoxItem_C_ExecuteUbergraph_WBP_BrickComboBoxItem) == 0x000004, "Wrong size on WBP_BrickComboBoxItem_C_ExecuteUbergraph_WBP_BrickComboBoxItem");
-static_assert(offsetof(WBP_BrickComboBoxItem_C_ExecuteUbergraph_WBP_BrickComboBoxItem, EntryPoint) == 0x000000, "Member 'WBP_BrickComboBoxItem_C_ExecuteUbergraph_WBP_BrickComboBoxItem::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BrickComboBoxItem_C_ExecuteUbergraph_WBP_BrickComboBoxItem;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

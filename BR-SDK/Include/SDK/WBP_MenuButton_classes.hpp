@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MenuButton.WBP_MenuButton_C
 // 0x0008 (0x02A0 - 0x0298)
@@ -32,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MenuButton_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MenuButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MenuButton_C")
 	}
 	static class UWBP_MenuButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MenuButton_C>();
 	}
 };
-static_assert(alignof(UWBP_MenuButton_C) == 0x000008, "Wrong alignment on UWBP_MenuButton_C");
-static_assert(sizeof(UWBP_MenuButton_C) == 0x0002A0, "Wrong size on UWBP_MenuButton_C");
-static_assert(offsetof(UWBP_MenuButton_C, UberGraphFrame) == 0x000298, "Member 'UWBP_MenuButton_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MenuButton_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -16,8 +16,7 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PropertyContainer.WBP_PropertyContainer_C
 // 0x0018 (0x02E8 - 0x02D0)
@@ -29,29 +28,28 @@ public:
 	class UBrickGridPanel*                        GridPanel;                                         // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void AddPropertyWidget(class UPropertyWidget* Widget, EOrientation InOrientation);
-	void UpdateOrientation(EOrientation InOrientation);
-	void UpdateColorStyle(EBrickUIColorStyle InColorStyle);
-	void OnMenuButtonClicked();
-	void PostAddPropertyButtons();
 	void ExecuteUbergraph_WBP_PropertyContainer(int32 EntryPoint);
+	void PostAddPropertyButtons();
+	void OnMenuButtonClicked();
+	void UpdateColorStyle(EBrickUIColorStyle InColorStyle);
+	void UpdateOrientation(EOrientation InOrientation);
+	void AddPropertyWidget(class UPropertyWidget* Widget, EOrientation InOrientation);
+	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PropertyContainer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PropertyContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PropertyContainer_C")
 	}
 	static class UWBP_PropertyContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PropertyContainer_C>();
 	}
 };
-static_assert(alignof(UWBP_PropertyContainer_C) == 0x000008, "Wrong alignment on UWBP_PropertyContainer_C");
-static_assert(sizeof(UWBP_PropertyContainer_C) == 0x0002E8, "Wrong size on UWBP_PropertyContainer_C");
-static_assert(offsetof(UWBP_PropertyContainer_C, UberGraphFrame) == 0x0002D0, "Member 'UWBP_PropertyContainer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PropertyContainer_C, Border) == 0x0002D8, "Member 'UWBP_PropertyContainer_C::Border' has a wrong offset!");
-static_assert(offsetof(UWBP_PropertyContainer_C, GridPanel) == 0x0002E0, "Member 'UWBP_PropertyContainer_C::GridPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PropertyContainer_C;
 
-}
-
+SDK_NAMESPACE_END

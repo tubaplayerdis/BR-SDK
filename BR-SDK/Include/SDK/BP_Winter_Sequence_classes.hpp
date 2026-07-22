@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Winter_Sequence.BP_Winter_Sequence_C
 // 0x0038 (0x0288 - 0x0250)
@@ -32,22 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Winter_Sequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_Winter_Sequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Winter_Sequence_C")
 	}
 	static class ABP_Winter_Sequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Winter_Sequence_C>();
 	}
 };
-static_assert(alignof(ABP_Winter_Sequence_C) == 0x000008, "Wrong alignment on ABP_Winter_Sequence_C");
-static_assert(sizeof(ABP_Winter_Sequence_C) == 0x000288, "Wrong size on ABP_Winter_Sequence_C");
-static_assert(offsetof(ABP_Winter_Sequence_C, ChildActor2) == 0x000250, "Member 'ABP_Winter_Sequence_C::ChildActor2' has a wrong offset!");
-static_assert(offsetof(ABP_Winter_Sequence_C, ChildActor1) == 0x000258, "Member 'ABP_Winter_Sequence_C::ChildActor1' has a wrong offset!");
-static_assert(offsetof(ABP_Winter_Sequence_C, ChildActor) == 0x000260, "Member 'ABP_Winter_Sequence_C::ChildActor' has a wrong offset!");
-static_assert(offsetof(ABP_Winter_Sequence_C, Camera) == 0x000268, "Member 'ABP_Winter_Sequence_C::Camera' has a wrong offset!");
-static_assert(offsetof(ABP_Winter_Sequence_C, InstancedStaticMesh) == 0x000270, "Member 'ABP_Winter_Sequence_C::InstancedStaticMesh' has a wrong offset!");
-static_assert(offsetof(ABP_Winter_Sequence_C, Scene) == 0x000278, "Member 'ABP_Winter_Sequence_C::Scene' has a wrong offset!");
-static_assert(offsetof(ABP_Winter_Sequence_C, SkeletalMesh) == 0x000280, "Member 'ABP_Winter_Sequence_C::SkeletalMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Winter_Sequence_C;
 
-}
-
+SDK_NAMESPACE_END

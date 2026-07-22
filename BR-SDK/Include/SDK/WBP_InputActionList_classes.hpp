@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InputActionList.WBP_InputActionList_C
 // 0x0010 (0x0368 - 0x0358)
@@ -35,17 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InputActionList_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InputActionList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InputActionList_C")
 	}
 	static class UWBP_InputActionList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InputActionList_C>();
 	}
 };
-static_assert(alignof(UWBP_InputActionList_C) == 0x000008, "Wrong alignment on UWBP_InputActionList_C");
-static_assert(sizeof(UWBP_InputActionList_C) == 0x000368, "Wrong size on UWBP_InputActionList_C");
-static_assert(offsetof(UWBP_InputActionList_C, UberGraphFrame) == 0x000358, "Member 'UWBP_InputActionList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InputActionList_C, FadeAnimation) == 0x000360, "Member 'UWBP_InputActionList_C::FadeAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InputActionList_C;
 
-}
-
+SDK_NAMESPACE_END

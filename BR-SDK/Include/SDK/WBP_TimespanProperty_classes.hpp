@@ -17,8 +17,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_TimespanProperty.WBP_TimespanProperty_C
 // 0x0050 (0x02D0 - 0x0280)
@@ -37,38 +36,30 @@ public:
 	struct FTimespan                              MaxValue;                                          // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateTimespanProperty(const struct FTimespan& Timespan, const struct FTimespan& MinValue_0, const struct FTimespan& MaxValue_0, bool bAllowInfinite);
-	void BndEvt__WBP_TimespanProperty_InfiniteButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void BndEvt__WBP_TimespanProperty_InfiniteButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_TimespanProperty_SecondsSlider_K2Node_ComponentBoundEvent_2_OnSliderValueChanged__DelegateSignature(float Value, EValueChangedEventType EventType);
-	void BndEvt__WBP_TimespanProperty_MinutesSlider_K2Node_ComponentBoundEvent_3_OnSliderValueChanged__DelegateSignature(float Value, EValueChangedEventType EventType);
-	void BndEvt__WBP_TimespanProperty_HoursSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature(float Value, EValueChangedEventType EventType);
-	void BndEvt__WBP_TimespanProperty_DaysSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature(float Value, EValueChangedEventType EventType);
-	void PreConstruct(bool IsDesignTime);
 	void ExecuteUbergraph_WBP_TimespanProperty(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void BndEvt__WBP_TimespanProperty_DaysSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature(float Value, EValueChangedEventType EventType);
+	void BndEvt__WBP_TimespanProperty_HoursSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature(float Value, EValueChangedEventType EventType);
+	void BndEvt__WBP_TimespanProperty_MinutesSlider_K2Node_ComponentBoundEvent_3_OnSliderValueChanged__DelegateSignature(float Value, EValueChangedEventType EventType);
+	void BndEvt__WBP_TimespanProperty_SecondsSlider_K2Node_ComponentBoundEvent_2_OnSliderValueChanged__DelegateSignature(float Value, EValueChangedEventType EventType);
+	void BndEvt__WBP_TimespanProperty_InfiniteButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_TimespanProperty_InfiniteButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
+	void UpdateTimespanProperty(const struct FTimespan& Timespan, const struct FTimespan& MinValue_0, const struct FTimespan& MaxValue_0, bool bAllowInfinite);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimespanProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimespanProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimespanProperty_C")
 	}
 	static class UWBP_TimespanProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimespanProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_TimespanProperty_C) == 0x000008, "Wrong alignment on UWBP_TimespanProperty_C");
-static_assert(sizeof(UWBP_TimespanProperty_C) == 0x0002D0, "Wrong size on UWBP_TimespanProperty_C");
-static_assert(offsetof(UWBP_TimespanProperty_C, UberGraphFrame) == 0x000280, "Member 'UWBP_TimespanProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimespanProperty_C, DaysSlider) == 0x000288, "Member 'UWBP_TimespanProperty_C::DaysSlider' has a wrong offset!");
-static_assert(offsetof(UWBP_TimespanProperty_C, HoursSlider) == 0x000290, "Member 'UWBP_TimespanProperty_C::HoursSlider' has a wrong offset!");
-static_assert(offsetof(UWBP_TimespanProperty_C, InfiniteButton) == 0x000298, "Member 'UWBP_TimespanProperty_C::InfiniteButton' has a wrong offset!");
-static_assert(offsetof(UWBP_TimespanProperty_C, InfiniteTextBlock) == 0x0002A0, "Member 'UWBP_TimespanProperty_C::InfiniteTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_TimespanProperty_C, MinutesSlider) == 0x0002A8, "Member 'UWBP_TimespanProperty_C::MinutesSlider' has a wrong offset!");
-static_assert(offsetof(UWBP_TimespanProperty_C, SecondsSlider) == 0x0002B0, "Member 'UWBP_TimespanProperty_C::SecondsSlider' has a wrong offset!");
-static_assert(offsetof(UWBP_TimespanProperty_C, CurrentValue) == 0x0002B8, "Member 'UWBP_TimespanProperty_C::CurrentValue' has a wrong offset!");
-static_assert(offsetof(UWBP_TimespanProperty_C, MinValue) == 0x0002C0, "Member 'UWBP_TimespanProperty_C::MinValue' has a wrong offset!");
-static_assert(offsetof(UWBP_TimespanProperty_C, MaxValue) == 0x0002C8, "Member 'UWBP_TimespanProperty_C::MaxValue' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimespanProperty_C;
 
-}
-
+SDK_NAMESPACE_END

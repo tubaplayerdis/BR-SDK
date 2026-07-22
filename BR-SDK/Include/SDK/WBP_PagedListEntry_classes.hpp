@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PagedListEntry.WBP_PagedListEntry_C
 // 0x0000 (0x0288 - 0x0288)
@@ -23,15 +22,17 @@ class UWBP_PagedListEntry_C final : public UPagedListEntryWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PagedListEntry_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PagedListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PagedListEntry_C")
 	}
 	static class UWBP_PagedListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PagedListEntry_C>();
 	}
 };
-static_assert(alignof(UWBP_PagedListEntry_C) == 0x000008, "Wrong alignment on UWBP_PagedListEntry_C");
-static_assert(sizeof(UWBP_PagedListEntry_C) == 0x000288, "Wrong size on UWBP_PagedListEntry_C");
+DUMPER7_ASSERTS_UWBP_PagedListEntry_C;
 
-}
-
+SDK_NAMESPACE_END

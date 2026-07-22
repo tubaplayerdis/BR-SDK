@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InventorySlot.WBP_InventorySlot_C
 // 0x0010 (0x0318 - 0x0308)
@@ -35,17 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InventorySlot_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InventorySlot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InventorySlot_C")
 	}
 	static class UWBP_InventorySlot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InventorySlot_C>();
 	}
 };
-static_assert(alignof(UWBP_InventorySlot_C) == 0x000008, "Wrong alignment on UWBP_InventorySlot_C");
-static_assert(sizeof(UWBP_InventorySlot_C) == 0x000318, "Wrong size on UWBP_InventorySlot_C");
-static_assert(offsetof(UWBP_InventorySlot_C, UberGraphFrame) == 0x000308, "Member 'UWBP_InventorySlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InventorySlot_C, MainVerticalBox) == 0x000310, "Member 'UWBP_InventorySlot_C::MainVerticalBox' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InventorySlot_C;
 
-}
-
+SDK_NAMESPACE_END

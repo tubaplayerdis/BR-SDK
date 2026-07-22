@@ -14,15 +14,14 @@
 #include "WBP_ChatMessage_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ChatMessage.WBP_ChatMessage_C.UpdateColorStyle
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// EBrickUIColorStyle                      NewColorStyle                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBrickUIColorStyle                      NewColorStyle_UpdateColorStyle                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ChatMessage_C::UpdateColorStyle(EBrickUIColorStyle NewColorStyle)
+void UWBP_ChatMessage_C::UpdateColorStyle(EBrickUIColorStyle NewColorStyle_UpdateColorStyle)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +30,7 @@ void UWBP_ChatMessage_C::UpdateColorStyle(EBrickUIColorStyle NewColorStyle)
 
 	Params::WBP_ChatMessage_C_UpdateColorStyle Parms{};
 
-	Parms.NewColorStyle = NewColorStyle;
+	Parms.NewColorStyle_UpdateColorStyle = NewColorStyle_UpdateColorStyle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -40,9 +39,9 @@ void UWBP_ChatMessage_C::UpdateColorStyle(EBrickUIColorStyle NewColorStyle)
 // Function WBP_ChatMessage.WBP_ChatMessage_C.UpdateMessageText
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// const class FText&                      NewText                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class FText&                      NewText_UpdateMessageText                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_ChatMessage_C::UpdateMessageText(const class FText& NewText)
+void UWBP_ChatMessage_C::UpdateMessageText(const class FText& NewText_UpdateMessageText)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +50,7 @@ void UWBP_ChatMessage_C::UpdateMessageText(const class FText& NewText)
 
 	Params::WBP_ChatMessage_C_UpdateMessageText Parms{};
 
-	Parms.NewText = std::move(NewText);
+	Parms.NewText_UpdateMessageText = std::move(NewText_UpdateMessageText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -112,5 +111,5 @@ void UWBP_ChatMessage_C::ExecuteUbergraph_WBP_ChatMessage(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

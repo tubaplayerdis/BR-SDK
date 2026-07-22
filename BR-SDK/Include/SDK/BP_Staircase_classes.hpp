@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Staircase.BP_Staircase_C
 // 0x0010 (0x0230 - 0x0220)
@@ -30,17 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Staircase_C">();
+		BP_STATIC_CLASS_IMPL("BP_Staircase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Staircase_C")
 	}
 	static class ABP_Staircase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Staircase_C>();
 	}
 };
-static_assert(alignof(ABP_Staircase_C) == 0x000008, "Wrong alignment on ABP_Staircase_C");
-static_assert(sizeof(ABP_Staircase_C) == 0x000230, "Wrong size on ABP_Staircase_C");
-static_assert(offsetof(ABP_Staircase_C, HierarchicalInstancedStaticMesh) == 0x000220, "Member 'ABP_Staircase_C::HierarchicalInstancedStaticMesh' has a wrong offset!");
-static_assert(offsetof(ABP_Staircase_C, NumInstances) == 0x000228, "Member 'ABP_Staircase_C::NumInstances' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Staircase_C;
 
-}
-
+SDK_NAMESPACE_END

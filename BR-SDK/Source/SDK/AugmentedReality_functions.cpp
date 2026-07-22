@@ -14,8 +14,7 @@
 #include "AugmentedReality_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AugmentedReality.ARComponent.GetMRMesh
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
@@ -5709,5 +5708,5 @@ class FString UARCandidateObject::GetFriendlyName() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

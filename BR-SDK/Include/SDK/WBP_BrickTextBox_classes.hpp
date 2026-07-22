@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BrickTextBox.WBP_BrickTextBox_C
 // 0x0010 (0x02B8 - 0x02A8)
@@ -30,24 +29,24 @@ public:
 public:
 	void BndEvt__ShowPasswordButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
 	void BndEvt__ShowPasswordButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void UpdateIsPassword(bool bNewIsPassword);
-	void UpdatePasswordVisible(bool bNewVisible);
+	void UpdateIsPassword(bool bNewIsPassword_UpdateIsPassword);
+	void UpdatePasswordVisible(bool bNewVisible_UpdatePasswordVisible);
 	void ExecuteUbergraph_WBP_BrickTextBox(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BrickTextBox_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BrickTextBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BrickTextBox_C")
 	}
 	static class UWBP_BrickTextBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BrickTextBox_C>();
 	}
 };
-static_assert(alignof(UWBP_BrickTextBox_C) == 0x000008, "Wrong alignment on UWBP_BrickTextBox_C");
-static_assert(sizeof(UWBP_BrickTextBox_C) == 0x0002B8, "Wrong size on UWBP_BrickTextBox_C");
-static_assert(offsetof(UWBP_BrickTextBox_C, UberGraphFrame) == 0x0002A8, "Member 'UWBP_BrickTextBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickTextBox_C, PasswordButtonImage) == 0x0002B0, "Member 'UWBP_BrickTextBox_C::PasswordButtonImage' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BrickTextBox_C;
 
-}
-
+SDK_NAMESPACE_END

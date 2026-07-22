@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_HUDContainer.WBP_HUDContainer_C
 // 0x0010 (0x02B8 - 0x02A8)
@@ -26,24 +25,24 @@ public:
 	class UCanvasPanel*                           CanvasPanel_35;                                    // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AddGameOverlayWidget(class UGameOverlayWidget* Widget);
-	void AddHUDWidget(class UUserWidget* Widget);
+	void AddGameOverlayWidget(class UGameOverlayWidget* Widget_AddGameOverlayWidget);
+	void AddHUDWidget(class UUserWidget* Widget_AddHUDWidget);
 	void ExecuteUbergraph_WBP_HUDContainer(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HUDContainer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HUDContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HUDContainer_C")
 	}
 	static class UWBP_HUDContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HUDContainer_C>();
 	}
 };
-static_assert(alignof(UWBP_HUDContainer_C) == 0x000008, "Wrong alignment on UWBP_HUDContainer_C");
-static_assert(sizeof(UWBP_HUDContainer_C) == 0x0002B8, "Wrong size on UWBP_HUDContainer_C");
-static_assert(offsetof(UWBP_HUDContainer_C, UberGraphFrame) == 0x0002A8, "Member 'UWBP_HUDContainer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HUDContainer_C, CanvasPanel_35) == 0x0002B0, "Member 'UWBP_HUDContainer_C::CanvasPanel_35' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HUDContainer_C;
 
-}
-
+SDK_NAMESPACE_END

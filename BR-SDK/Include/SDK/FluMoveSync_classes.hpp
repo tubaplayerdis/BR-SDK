@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class FluMoveSync.FluMoveSyncActor
 // 0x0008 (0x0228 - 0x0220)
@@ -27,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FluMoveSyncActor">();
+		STATIC_CLASS_IMPL("FluMoveSyncActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FluMoveSyncActor")
 	}
 	static class AFluMoveSyncActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFluMoveSyncActor>();
 	}
 };
-static_assert(alignof(AFluMoveSyncActor) == 0x000008, "Wrong alignment on AFluMoveSyncActor");
-static_assert(sizeof(AFluMoveSyncActor) == 0x000228, "Wrong size on AFluMoveSyncActor");
-static_assert(offsetof(AFluMoveSyncActor, RepMovementTimestamp) == 0x000220, "Member 'AFluMoveSyncActor::RepMovementTimestamp' has a wrong offset!");
+DUMPER7_ASSERTS_AFluMoveSyncActor;
 
 // Class FluMoveSync.FluMoveSyncFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -45,15 +46,18 @@ class UFluMoveSyncFunctionLibrary final : public UBlueprintFunctionLibrary
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FluMoveSyncFunctionLibrary">();
+		STATIC_CLASS_IMPL("FluMoveSyncFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FluMoveSyncFunctionLibrary")
 	}
 	static class UFluMoveSyncFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFluMoveSyncFunctionLibrary>();
 	}
 };
-static_assert(alignof(UFluMoveSyncFunctionLibrary) == 0x000008, "Wrong alignment on UFluMoveSyncFunctionLibrary");
-static_assert(sizeof(UFluMoveSyncFunctionLibrary) == 0x000028, "Wrong size on UFluMoveSyncFunctionLibrary");
+DUMPER7_ASSERTS_UFluMoveSyncFunctionLibrary;
 
 // Class FluMoveSync.FluMoveSyncKinematicActor
 // 0x0088 (0x02B0 - 0x0228)
@@ -72,17 +76,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FluMoveSyncKinematicActor">();
+		STATIC_CLASS_IMPL("FluMoveSyncKinematicActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FluMoveSyncKinematicActor")
 	}
 	static class AFluMoveSyncKinematicActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFluMoveSyncKinematicActor>();
 	}
 };
-static_assert(alignof(AFluMoveSyncKinematicActor) == 0x000010, "Wrong alignment on AFluMoveSyncKinematicActor");
-static_assert(sizeof(AFluMoveSyncKinematicActor) == 0x0002B0, "Wrong size on AFluMoveSyncKinematicActor");
-static_assert(offsetof(AFluMoveSyncKinematicActor, MovementComponent) == 0x000298, "Member 'AFluMoveSyncKinematicActor::MovementComponent' has a wrong offset!");
-static_assert(offsetof(AFluMoveSyncKinematicActor, InterpolatedComponent) == 0x0002A0, "Member 'AFluMoveSyncKinematicActor::InterpolatedComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AFluMoveSyncKinematicActor;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AIModule_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AIModule.AIController.ClaimTaskResource
 // (Final, Native, Public, BlueprintCallable)
@@ -5766,5 +5765,5 @@ bool UPawnActionsComponent::K2_PushAction(class UPawnAction* NewAction, EAIReque
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

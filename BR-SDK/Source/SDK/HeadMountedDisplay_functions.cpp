@@ -14,8 +14,7 @@
 #include "HeadMountedDisplay_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.BreakKey
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
@@ -2425,5 +2424,5 @@ void UXRLoadingScreenFunctionLibrary::ShowLoadingScreen()
 	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

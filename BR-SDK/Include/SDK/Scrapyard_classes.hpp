@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Scrapyard.Scrapyard_C
 // 0x0000 (0x0228 - 0x0228)
@@ -23,15 +22,17 @@ class AScrapyard_C final : public ALevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Scrapyard_C">();
+		BP_STATIC_CLASS_IMPL("Scrapyard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Scrapyard_C")
 	}
 	static class AScrapyard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScrapyard_C>();
 	}
 };
-static_assert(alignof(AScrapyard_C) == 0x000008, "Wrong alignment on AScrapyard_C");
-static_assert(sizeof(AScrapyard_C) == 0x000228, "Wrong size on AScrapyard_C");
+DUMPER7_ASSERTS_AScrapyard_C;
 
-}
-
+SDK_NAMESPACE_END

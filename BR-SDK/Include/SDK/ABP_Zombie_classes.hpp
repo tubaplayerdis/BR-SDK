@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_Zombie.ABP_Zombie_C
 // 0x0590 (0x1090 - 0x0B00)
@@ -45,27 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Zombie_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Zombie_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Zombie_C")
 	}
 	static class UABP_Zombie_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Zombie_C>();
 	}
 };
-static_assert(alignof(UABP_Zombie_C) == 0x000010, "Wrong alignment on UABP_Zombie_C");
-static_assert(sizeof(UABP_Zombie_C) == 0x001090, "Wrong size on UABP_Zombie_C");
-static_assert(offsetof(UABP_Zombie_C, UberGraphFrame) == 0x000B00, "Member 'UABP_Zombie_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_Root) == 0x000B08, "Member 'UABP_Zombie_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_SequencePlayer_1) == 0x000B38, "Member 'UABP_Zombie_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_Slot_1) == 0x000BB8, "Member 'UABP_Zombie_C::AnimGraphNode_Slot_1' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_TwoWayBlend) == 0x000C00, "Member 'UABP_Zombie_C::AnimGraphNode_TwoWayBlend' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_SequencePlayer) == 0x000CC8, "Member 'UABP_Zombie_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_LayeredBoneBlend) == 0x000D48, "Member 'UABP_Zombie_C::AnimGraphNode_LayeredBoneBlend' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_SaveCachedPose) == 0x000E08, "Member 'UABP_Zombie_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_UseCachedPose_1) == 0x000F60, "Member 'UABP_Zombie_C::AnimGraphNode_UseCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_UseCachedPose) == 0x000F88, "Member 'UABP_Zombie_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_Slot) == 0x000FB0, "Member 'UABP_Zombie_C::AnimGraphNode_Slot' has a wrong offset!");
-static_assert(offsetof(UABP_Zombie_C, AnimGraphNode_ViewRotation) == 0x001000, "Member 'UABP_Zombie_C::AnimGraphNode_ViewRotation' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_Zombie_C;
 
-}
-
+SDK_NAMESPACE_END

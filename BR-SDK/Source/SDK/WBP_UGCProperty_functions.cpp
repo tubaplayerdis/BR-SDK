@@ -14,8 +14,7 @@
 #include "WBP_UGCProperty_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_UGCProperty.WBP_UGCProperty_C.ExecuteUbergraph_WBP_UGCProperty
 // (Final, UbergraphFunction, HasDefaults)
@@ -92,5 +91,5 @@ void UWBP_UGCProperty_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

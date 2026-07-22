@@ -15,8 +15,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class CableComponent.CableActor
 // 0x0008 (0x0228 - 0x0220)
@@ -28,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CableActor">();
+		STATIC_CLASS_IMPL("CableActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CableActor")
 	}
 	static class ACableActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACableActor>();
 	}
 };
-static_assert(alignof(ACableActor) == 0x000008, "Wrong alignment on ACableActor");
-static_assert(sizeof(ACableActor) == 0x000228, "Wrong size on ACableActor");
-static_assert(offsetof(ACableActor, CableComponent) == 0x000220, "Member 'ACableActor::CableComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ACableActor;
 
 // Class CableComponent.CableComponent
 // 0x0090 (0x0570 - 0x04E0)
@@ -79,35 +80,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CableComponent">();
+		STATIC_CLASS_IMPL("CableComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CableComponent")
 	}
 	static class UCableComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCableComponent>();
 	}
 };
-static_assert(alignof(UCableComponent) == 0x000010, "Wrong alignment on UCableComponent");
-static_assert(sizeof(UCableComponent) == 0x000570, "Wrong size on UCableComponent");
-static_assert(offsetof(UCableComponent, bAttachStart) == 0x0004D8, "Member 'UCableComponent::bAttachStart' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bAttachEnd) == 0x0004D9, "Member 'UCableComponent::bAttachEnd' has a wrong offset!");
-static_assert(offsetof(UCableComponent, AttachEndTo) == 0x0004E0, "Member 'UCableComponent::AttachEndTo' has a wrong offset!");
-static_assert(offsetof(UCableComponent, AttachEndToSocketName) == 0x000508, "Member 'UCableComponent::AttachEndToSocketName' has a wrong offset!");
-static_assert(offsetof(UCableComponent, EndLocation) == 0x000510, "Member 'UCableComponent::EndLocation' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableLength) == 0x00051C, "Member 'UCableComponent::CableLength' has a wrong offset!");
-static_assert(offsetof(UCableComponent, NumSegments) == 0x000520, "Member 'UCableComponent::NumSegments' has a wrong offset!");
-static_assert(offsetof(UCableComponent, SubstepTime) == 0x000524, "Member 'UCableComponent::SubstepTime' has a wrong offset!");
-static_assert(offsetof(UCableComponent, SolverIterations) == 0x000528, "Member 'UCableComponent::SolverIterations' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bEnableStiffness) == 0x00052C, "Member 'UCableComponent::bEnableStiffness' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bUseSubstepping) == 0x00052D, "Member 'UCableComponent::bUseSubstepping' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bSkipCableUpdateWhenNotVisible) == 0x00052E, "Member 'UCableComponent::bSkipCableUpdateWhenNotVisible' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bSkipCableUpdateWhenNotOwnerRecentlyRendered) == 0x00052F, "Member 'UCableComponent::bSkipCableUpdateWhenNotOwnerRecentlyRendered' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bEnableCollision) == 0x000530, "Member 'UCableComponent::bEnableCollision' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CollisionFriction) == 0x000534, "Member 'UCableComponent::CollisionFriction' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableForce) == 0x000538, "Member 'UCableComponent::CableForce' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableGravityScale) == 0x000544, "Member 'UCableComponent::CableGravityScale' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableWidth) == 0x000548, "Member 'UCableComponent::CableWidth' has a wrong offset!");
-static_assert(offsetof(UCableComponent, NumSides) == 0x00054C, "Member 'UCableComponent::NumSides' has a wrong offset!");
-static_assert(offsetof(UCableComponent, TileMaterial) == 0x000550, "Member 'UCableComponent::TileMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_UCableComponent;
 
-}
-
+SDK_NAMESPACE_END

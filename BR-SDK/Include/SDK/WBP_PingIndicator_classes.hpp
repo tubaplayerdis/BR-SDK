@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PingIndicator.WBP_PingIndicator_C
 // 0x0010 (0x0290 - 0x0280)
@@ -26,23 +25,23 @@ public:
 	class UBrickImage*                            ConnectionImage;                                   // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdatePing(int32 InPing);
 	void ExecuteUbergraph_WBP_PingIndicator(int32 EntryPoint);
+	void UpdatePing(int32 InPing);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PingIndicator_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PingIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PingIndicator_C")
 	}
 	static class UWBP_PingIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PingIndicator_C>();
 	}
 };
-static_assert(alignof(UWBP_PingIndicator_C) == 0x000008, "Wrong alignment on UWBP_PingIndicator_C");
-static_assert(sizeof(UWBP_PingIndicator_C) == 0x000290, "Wrong size on UWBP_PingIndicator_C");
-static_assert(offsetof(UWBP_PingIndicator_C, UberGraphFrame) == 0x000280, "Member 'UWBP_PingIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PingIndicator_C, ConnectionImage) == 0x000288, "Member 'UWBP_PingIndicator_C::ConnectionImage' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PingIndicator_C;
 
-}
-
+SDK_NAMESPACE_END

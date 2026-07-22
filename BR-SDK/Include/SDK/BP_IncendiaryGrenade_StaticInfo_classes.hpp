@@ -13,8 +13,7 @@
 #include "BP_Grenade_StaticInfo_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_IncendiaryGrenade_StaticInfo.BP_IncendiaryGrenade_StaticInfo_C
 // 0x0000 (0x0480 - 0x0480)
@@ -23,15 +22,17 @@ class UBP_IncendiaryGrenade_StaticInfo_C final : public UBP_Grenade_StaticInfo_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_IncendiaryGrenade_StaticInfo_C">();
+		BP_STATIC_CLASS_IMPL("BP_IncendiaryGrenade_StaticInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_IncendiaryGrenade_StaticInfo_C")
 	}
 	static class UBP_IncendiaryGrenade_StaticInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_IncendiaryGrenade_StaticInfo_C>();
 	}
 };
-static_assert(alignof(UBP_IncendiaryGrenade_StaticInfo_C) == 0x000010, "Wrong alignment on UBP_IncendiaryGrenade_StaticInfo_C");
-static_assert(sizeof(UBP_IncendiaryGrenade_StaticInfo_C) == 0x000480, "Wrong size on UBP_IncendiaryGrenade_StaticInfo_C");
+DUMPER7_ASSERTS_UBP_IncendiaryGrenade_StaticInfo_C;
 
-}
-
+SDK_NAMESPACE_END

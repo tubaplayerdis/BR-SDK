@@ -14,8 +14,7 @@
 #include "WBP_CameraBrick_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_CameraBrick.WBP_CameraBrick_C.ExecuteUbergraph_WBP_CameraBrick
 // (Final, UbergraphFunction, HasDefaults)
@@ -58,5 +57,5 @@ void UWBP_CameraBrick_C::UpdateTargetRange(bool bHitSomething, float Distance)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

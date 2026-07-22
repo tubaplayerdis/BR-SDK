@@ -14,8 +14,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_WindowManager.WBP_WindowManager_C.ExecuteUbergraph_WBP_WindowManager
 // 0x0038 (0x0038 - 0x0000)
@@ -29,14 +29,7 @@ public:
 	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x0020(0x0010)(NoDestructor)
 	class UCanvasPanelSlot*                       CallFunc_AddChildToCanvas_ReturnValue;             // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager) == 0x000008, "Wrong alignment on WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager");
-static_assert(sizeof(WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager) == 0x000038, "Wrong size on WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager");
-static_assert(offsetof(WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager, EntryPoint) == 0x000000, "Member 'WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000004, "Member 'WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager, K2Node_MakeStruct_Margin) == 0x000008, "Member 'WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager, K2Node_Event_Widget) == 0x000018, "Member 'WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager, K2Node_MakeStruct_Anchors) == 0x000020, "Member 'WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager::K2Node_MakeStruct_Anchors' has a wrong offset!");
-static_assert(offsetof(WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager, CallFunc_AddChildToCanvas_ReturnValue) == 0x000030, "Member 'WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager::CallFunc_AddChildToCanvas_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_WindowManager_C_ExecuteUbergraph_WBP_WindowManager;
 
 // Function WBP_WindowManager.WBP_WindowManager_C.AddActiveWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +38,7 @@ struct WBP_WindowManager_C_AddActiveWidget final
 public:
 	class UMainWidgetBase*                        Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_WindowManager_C_AddActiveWidget) == 0x000008, "Wrong alignment on WBP_WindowManager_C_AddActiveWidget");
-static_assert(sizeof(WBP_WindowManager_C_AddActiveWidget) == 0x000008, "Wrong size on WBP_WindowManager_C_AddActiveWidget");
-static_assert(offsetof(WBP_WindowManager_C_AddActiveWidget, Widget) == 0x000000, "Member 'WBP_WindowManager_C_AddActiveWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_WindowManager_C_AddActiveWidget;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

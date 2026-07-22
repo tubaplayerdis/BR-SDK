@@ -14,8 +14,7 @@
 #include "BTS_ZombieFindTarget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BTS_ZombieFindTarget.BTS_ZombieFindTarget_C.ExecuteUbergraph_BTS_ZombieFindTarget
 // (Final, UbergraphFunction)
@@ -81,5 +80,5 @@ class ABrickCharacter* UBTS_ZombieFindTarget_C::GetClosestCharacter(class AZombi
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

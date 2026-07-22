@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_Credits.WBP_Credits_C.ExecuteUbergraph_WBP_Credits
 // 0x00D0 (0x00D0 - 0x0000)
@@ -49,33 +49,7 @@ public:
 	class UWBP_CreditsEntry_C*                    CallFunc_Create_ReturnValue;                       // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits) == 0x000008, "Wrong alignment on WBP_Credits_C_ExecuteUbergraph_WBP_Credits");
-static_assert(sizeof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits) == 0x0000D0, "Wrong size on WBP_Credits_C_ExecuteUbergraph_WBP_Credits");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, EntryPoint) == 0x000000, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_GetLicenseFiles_ReturnValue) == 0x000008, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_GetLicenseFiles_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, K2Node_CreateDelegate_OutputDelegate_1) == 0x00002C, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, K2Node_CreateDelegate_OutputDelegate_2) == 0x00003C, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, Temp_int_Loop_Counter_Variable) == 0x00004C, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, Temp_int_Array_Index_Variable) == 0x000058, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, Temp_bool_Has_Been_Initd_Variable) == 0x00005C, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_Array_Get_Item) == 0x000060, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, Temp_bool_IsClosed_Variable) == 0x000070, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, K2Node_Event_IsDesignTime) == 0x000071, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_GetMenuWidget_ReturnValue) == 0x000078, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_GetMenuWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_GetButtonPanel_ReturnValue) == 0x000080, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_GetButtonPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_Get_ReturnValue) == 0x000088, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_Get_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_CreateLinkButton_ReturnValue) == 0x000090, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_CreateLinkButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_CreateLinkButton_ReturnValue_1) == 0x000098, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_CreateLinkButton_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_CreateLinkButton_ReturnValue_2) == 0x0000A0, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_CreateLinkButton_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_Get_ReturnValue_1) == 0x0000A8, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_Get_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_Get_ReturnValue_2) == 0x0000B0, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_Get_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000B8, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_Create_ReturnValue) == 0x0000C0, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Credits_C_ExecuteUbergraph_WBP_Credits, CallFunc_AddChild_ReturnValue) == 0x0000C8, "Member 'WBP_Credits_C_ExecuteUbergraph_WBP_Credits::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Credits_C_ExecuteUbergraph_WBP_Credits;
 
 // Function WBP_Credits.WBP_Credits_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -84,9 +58,7 @@ struct WBP_Credits_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_Credits_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Credits_C_PreConstruct");
-static_assert(sizeof(WBP_Credits_C_PreConstruct) == 0x000001, "Wrong size on WBP_Credits_C_PreConstruct");
-static_assert(offsetof(WBP_Credits_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Credits_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Credits_C_PreConstruct;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

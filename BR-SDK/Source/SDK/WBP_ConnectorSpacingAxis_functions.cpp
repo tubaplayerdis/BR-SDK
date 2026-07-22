@@ -14,8 +14,7 @@
 #include "WBP_ConnectorSpacingAxis_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ConnectorSpacingAxis.WBP_ConnectorSpacingAxis_C.ExecuteUbergraph_WBP_ConnectorSpacingAxis
 // (Final, UbergraphFunction, HasDefaults)
@@ -94,5 +93,5 @@ void UWBP_ConnectorSpacingAxis_C::BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButt
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

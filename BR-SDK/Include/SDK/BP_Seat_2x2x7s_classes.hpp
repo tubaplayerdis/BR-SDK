@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Seat_2x2x7s.BP_Seat_2x2x7s_C
 // 0x0000 (0x01E8 - 0x01E8)
@@ -23,15 +22,17 @@ class UBP_Seat_2x2x7s_C final : public USeatBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Seat_2x2x7s_C">();
+		BP_STATIC_CLASS_IMPL("BP_Seat_2x2x7s_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Seat_2x2x7s_C")
 	}
 	static class UBP_Seat_2x2x7s_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Seat_2x2x7s_C>();
 	}
 };
-static_assert(alignof(UBP_Seat_2x2x7s_C) == 0x000008, "Wrong alignment on UBP_Seat_2x2x7s_C");
-static_assert(sizeof(UBP_Seat_2x2x7s_C) == 0x0001E8, "Wrong size on UBP_Seat_2x2x7s_C");
+DUMPER7_ASSERTS_UBP_Seat_2x2x7s_C;
 
-}
-
+SDK_NAMESPACE_END

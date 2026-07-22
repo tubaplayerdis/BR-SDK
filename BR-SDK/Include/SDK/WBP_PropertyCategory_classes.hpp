@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PropertyCategory.WBP_PropertyCategory_C
 // 0x0020 (0x0298 - 0x0278)
@@ -29,27 +28,25 @@ public:
 	class UBrickGridPanel*                        PropertiesPanel;                                   // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateCategory(const class FText& DisplayName);
-	void UpdatePropertyContainerWidgetSlot(class UPropertyContainerWidget* Widget, int32 Index_0, int32 NumPerRow);
-	void AddPropertyContainerWidget(class UPropertyContainerWidget* Widget);
 	void ExecuteUbergraph_WBP_PropertyCategory(int32 EntryPoint);
+	void AddPropertyContainerWidget(class UPropertyContainerWidget* Widget);
+	void UpdatePropertyContainerWidgetSlot(class UPropertyContainerWidget* Widget, int32 Index_0, int32 NumPerRow);
+	void UpdateCategory(const class FText& DisplayName);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PropertyCategory_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PropertyCategory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PropertyCategory_C")
 	}
 	static class UWBP_PropertyCategory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PropertyCategory_C>();
 	}
 };
-static_assert(alignof(UWBP_PropertyCategory_C) == 0x000008, "Wrong alignment on UWBP_PropertyCategory_C");
-static_assert(sizeof(UWBP_PropertyCategory_C) == 0x000298, "Wrong size on UWBP_PropertyCategory_C");
-static_assert(offsetof(UWBP_PropertyCategory_C, UberGraphFrame) == 0x000278, "Member 'UWBP_PropertyCategory_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PropertyCategory_C, NameBorder) == 0x000280, "Member 'UWBP_PropertyCategory_C::NameBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_PropertyCategory_C, NameTextBlock) == 0x000288, "Member 'UWBP_PropertyCategory_C::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_PropertyCategory_C, PropertiesPanel) == 0x000290, "Member 'UWBP_PropertyCategory_C::PropertiesPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PropertyCategory_C;
 
-}
-
+SDK_NAMESPACE_END

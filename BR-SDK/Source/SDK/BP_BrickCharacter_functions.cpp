@@ -14,8 +14,7 @@
 #include "BP_BrickCharacter_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_BrickCharacter.BP_BrickCharacter_C.ExecuteUbergraph_BP_BrickCharacter
 // (Final, UbergraphFunction)
@@ -50,5 +49,5 @@ void ABP_BrickCharacter_C::GiveTestLoadout()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

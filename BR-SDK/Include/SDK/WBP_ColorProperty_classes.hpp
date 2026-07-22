@@ -17,8 +17,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ColorProperty.WBP_ColorProperty_C
 // 0x0088 (0x0308 - 0x0280)
@@ -66,31 +65,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ColorProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ColorProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ColorProperty_C")
 	}
 	static class UWBP_ColorProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ColorProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_ColorProperty_C) == 0x000008, "Wrong alignment on UWBP_ColorProperty_C");
-static_assert(sizeof(UWBP_ColorProperty_C) == 0x000308, "Wrong size on UWBP_ColorProperty_C");
-static_assert(offsetof(UWBP_ColorProperty_C, UberGraphFrame) == 0x000280, "Member 'UWBP_ColorProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, AlphaSlider) == 0x000288, "Member 'UWBP_ColorProperty_C::AlphaSlider' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, ColorBorder) == 0x000290, "Member 'UWBP_ColorProperty_C::ColorBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, ColorNameTextBlock) == 0x000298, "Member 'UWBP_ColorProperty_C::ColorNameTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, ColorPalette) == 0x0002A0, "Member 'UWBP_ColorProperty_C::ColorPalette' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, ColorWheel) == 0x0002A8, "Member 'UWBP_ColorProperty_C::ColorWheel' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, DisplayModeButton) == 0x0002B0, "Member 'UWBP_ColorProperty_C::DisplayModeButton' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, DisplayModeTextBlock) == 0x0002B8, "Member 'UWBP_ColorProperty_C::DisplayModeTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, HexTextBox) == 0x0002C0, "Member 'UWBP_ColorProperty_C::HexTextBox' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, HueSlider) == 0x0002C8, "Member 'UWBP_ColorProperty_C::HueSlider' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, SaturationSlider) == 0x0002D0, "Member 'UWBP_ColorProperty_C::SaturationSlider' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, ValueSlider) == 0x0002D8, "Member 'UWBP_ColorProperty_C::ValueSlider' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, CurrentColor) == 0x0002E0, "Member 'UWBP_ColorProperty_C::CurrentColor' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, CurrentColorHSV) == 0x0002F0, "Member 'UWBP_ColorProperty_C::CurrentColorHSV' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, LastUpdatedValue) == 0x000300, "Member 'UWBP_ColorProperty_C::LastUpdatedValue' has a wrong offset!");
-static_assert(offsetof(UWBP_ColorProperty_C, bInitializedColor) == 0x000304, "Member 'UWBP_ColorProperty_C::bInitializedColor' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ColorProperty_C;
 
-}
-
+SDK_NAMESPACE_END

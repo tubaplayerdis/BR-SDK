@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_UIFunctionLibrary.BP_UIFunctionLibrary_C.Get Ammo Type Display Info
 // 0x0040 (0x0040 - 0x0000)
@@ -46,30 +46,7 @@ public:
 	int32                                         Temp_int_Variable_6;                               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default_1;                           // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info) == 0x000008, "Wrong alignment on BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info");
-static_assert(sizeof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info) == 0x000040, "Wrong size on BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, AmmoType) == 0x000000, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::AmmoType' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, __WorldContext) == 0x000008, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, IconSlot) == 0x000010, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::IconSlot' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, ColorStyle) == 0x000014, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::ColorStyle' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_byte_Variable) == 0x000015, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_byte_Variable_1) == 0x000016, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_byte_Variable_2) == 0x000017, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_byte_Variable_3) == 0x000018, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_byte_Variable_4) == 0x000019, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_byte_Variable_5) == 0x00001A, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_byte_Variable_6) == 0x00001B, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_byte_Variable_7) == 0x00001C, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_byte_Variable_8) == 0x00001D, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, K2Node_Select_Default) == 0x00001E, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_int_Variable) == 0x000020, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_int_Variable_1) == 0x000024, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_int_Variable_2) == 0x000028, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_int_Variable_3) == 0x00002C, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_int_Variable_4) == 0x000030, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_int_Variable_5) == 0x000034, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, Temp_int_Variable_6) == 0x000038, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info, K2Node_Select_Default_1) == 0x00003C, "Member 'BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIFunctionLibrary_C_Get_Ammo_Type_Display_Info;
 
 // Function BP_UIFunctionLibrary.BP_UIFunctionLibrary_C.UpdateHUDWidgetOpacity
 // 0x0028 (0x0028 - 0x0000)
@@ -86,15 +63,7 @@ public:
 	float                                         Temp_float_Variable_1;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity) == 0x000008, "Wrong alignment on BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity");
-static_assert(sizeof(BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity) == 0x000028, "Wrong size on BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity");
-static_assert(offsetof(BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity, Widget) == 0x000000, "Member 'BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity::Widget' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity, bIsFocused) == 0x000008, "Member 'BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity::bIsFocused' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity, __WorldContext) == 0x000010, "Member 'BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity, Temp_bool_Variable) == 0x000018, "Member 'BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity, Temp_float_Variable) == 0x00001C, "Member 'BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity, Temp_float_Variable_1) == 0x000020, "Member 'BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity, K2Node_Select_Default) == 0x000024, "Member 'BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIFunctionLibrary_C_UpdateHUDWidgetOpacity;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

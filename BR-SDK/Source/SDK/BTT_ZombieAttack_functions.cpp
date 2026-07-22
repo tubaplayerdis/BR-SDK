@@ -14,8 +14,7 @@
 #include "BTT_ZombieAttack_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BTT_ZombieAttack.BTT_ZombieAttack_C.ExecuteUbergraph_BTT_ZombieAttack
 // (Final, UbergraphFunction)
@@ -98,5 +97,5 @@ void UBTT_ZombieAttack_C::ReceiveExecute(class AActor* OwnerActor)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

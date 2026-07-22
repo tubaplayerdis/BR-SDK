@@ -14,8 +14,7 @@
 #include "WBP_PopupContainer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_PopupContainer.WBP_PopupContainer_C.ExecuteUbergraph_WBP_PopupContainer
 // (Final, UbergraphFunction, HasDefaults)
@@ -158,5 +157,5 @@ class UMenuButtonWidget* UWBP_PopupContainer_C::CreateCancelButton()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

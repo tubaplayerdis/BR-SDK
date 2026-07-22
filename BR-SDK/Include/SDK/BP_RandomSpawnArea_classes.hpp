@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_RandomSpawnArea.BP_RandomSpawnArea_C
 // 0x0000 (0x0260 - 0x0260)
@@ -23,15 +22,17 @@ class ABP_RandomSpawnArea_C final : public ASpawnArea
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RandomSpawnArea_C">();
+		BP_STATIC_CLASS_IMPL("BP_RandomSpawnArea_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RandomSpawnArea_C")
 	}
 	static class ABP_RandomSpawnArea_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RandomSpawnArea_C>();
 	}
 };
-static_assert(alignof(ABP_RandomSpawnArea_C) == 0x000008, "Wrong alignment on ABP_RandomSpawnArea_C");
-static_assert(sizeof(ABP_RandomSpawnArea_C) == 0x000260, "Wrong size on ABP_RandomSpawnArea_C");
+DUMPER7_ASSERTS_ABP_RandomSpawnArea_C;
 
-}
-
+SDK_NAMESPACE_END

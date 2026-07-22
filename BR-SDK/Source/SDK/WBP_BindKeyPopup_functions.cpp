@@ -14,8 +14,7 @@
 #include "WBP_BindKeyPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_BindKeyPopup.WBP_BindKeyPopup_C.ExecuteUbergraph_WBP_BindKeyPopup
 // (Final, UbergraphFunction, HasDefaults)
@@ -140,5 +139,5 @@ class FText UWBP_BindKeyPopup_C::ConflictsArrayToText(class FText& InText, TArra
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

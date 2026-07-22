@@ -14,8 +14,7 @@
 #include "WBP_TargetMarkerIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C.ExecuteUbergraph_WBP_TargetMarkerIcon
 // (Final, UbergraphFunction, HasDefaults)
@@ -116,5 +115,5 @@ void UWBP_TargetMarkerIcon_C::UpdateAmmoType(EAmmoType NewType)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

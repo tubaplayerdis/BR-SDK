@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InventorySlot.WBP_InventorySlot_C.ExecuteUbergraph_WBP_InventorySlot
 // 0x0030 (0x0030 - 0x0000)
@@ -50,35 +50,7 @@ public:
 	bool                                          K2Node_Select_Default_2;                           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EBrickUIColorStyle                            K2Node_Select_Default_3;                           // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot) == 0x000008, "Wrong alignment on WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot");
-static_assert(sizeof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot) == 0x000030, "Wrong size on WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, EntryPoint) == 0x000000, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, Temp_bool_Variable) == 0x000004, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, Temp_byte_Variable) == 0x000005, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, Temp_bool_Variable_1) == 0x000006, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, Temp_byte_Variable_1) == 0x000007, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, Temp_byte_Variable_2) == 0x000008, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, Temp_bool_Variable_2) == 0x000009, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, Temp_byte_Variable_3) == 0x00000A, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, Temp_bool_Variable_3) == 0x00000B, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_ComponentBoundEvent_InColorStyle) == 0x00000C, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_ComponentBoundEvent_InContentStyleState) == 0x00000D, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Event_Widget) == 0x000010, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Event_bInIsDragWidget) == 0x000018, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Event_bInIsDragWidget' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Event_bInIsSpecialSlot) == 0x000019, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Event_bInIsSpecialSlot' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Event_bInIsValidSlot) == 0x00001A, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Event_bInIsValidSlot' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Event_bInCanDrag) == 0x00001B, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Event_bInCanDrag' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Event_bInIsDragging) == 0x00001C, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Event_bInIsDragging' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Event_bInCanDrop) == 0x00001D, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Event_bInCanDrop' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Event_bInDropReplace) == 0x00001E, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Event_bInDropReplace' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Event_bInIsDragOver) == 0x00001F, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Event_bInIsDragOver' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000020, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, CallFunc_BooleanAND_ReturnValue) == 0x000028, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, CallFunc_BooleanAND_ReturnValue_1) == 0x000029, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Select_Default) == 0x00002A, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Select_Default_1) == 0x00002B, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Select_Default_2) == 0x00002C, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot, K2Node_Select_Default_3) == 0x00002D, "Member 'WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot::K2Node_Select_Default_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InventorySlot_C_ExecuteUbergraph_WBP_InventorySlot;
 
 // Function WBP_InventorySlot.WBP_InventorySlot_C.UpdateSlotApperance
 // 0x0008 (0x0008 - 0x0000)
@@ -94,16 +66,7 @@ public:
 	bool                                          bInDropReplace;                                    // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bInIsDragOver;                                     // 0x0007(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InventorySlot_C_UpdateSlotApperance) == 0x000001, "Wrong alignment on WBP_InventorySlot_C_UpdateSlotApperance");
-static_assert(sizeof(WBP_InventorySlot_C_UpdateSlotApperance) == 0x000008, "Wrong size on WBP_InventorySlot_C_UpdateSlotApperance");
-static_assert(offsetof(WBP_InventorySlot_C_UpdateSlotApperance, bInIsDragWidget) == 0x000000, "Member 'WBP_InventorySlot_C_UpdateSlotApperance::bInIsDragWidget' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_UpdateSlotApperance, bInIsSpecialSlot) == 0x000001, "Member 'WBP_InventorySlot_C_UpdateSlotApperance::bInIsSpecialSlot' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_UpdateSlotApperance, bInIsValidSlot) == 0x000002, "Member 'WBP_InventorySlot_C_UpdateSlotApperance::bInIsValidSlot' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_UpdateSlotApperance, bInCanDrag) == 0x000003, "Member 'WBP_InventorySlot_C_UpdateSlotApperance::bInCanDrag' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_UpdateSlotApperance, bInIsDragging) == 0x000004, "Member 'WBP_InventorySlot_C_UpdateSlotApperance::bInIsDragging' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_UpdateSlotApperance, bInCanDrop) == 0x000005, "Member 'WBP_InventorySlot_C_UpdateSlotApperance::bInCanDrop' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_UpdateSlotApperance, bInDropReplace) == 0x000006, "Member 'WBP_InventorySlot_C_UpdateSlotApperance::bInDropReplace' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_UpdateSlotApperance, bInIsDragOver) == 0x000007, "Member 'WBP_InventorySlot_C_UpdateSlotApperance::bInIsDragOver' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InventorySlot_C_UpdateSlotApperance;
 
 // Function WBP_InventorySlot.WBP_InventorySlot_C.AddSubInventoryWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -112,9 +75,7 @@ struct WBP_InventorySlot_C_AddSubInventoryWidget final
 public:
 	class UInventoryContainerWidget*              Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InventorySlot_C_AddSubInventoryWidget) == 0x000008, "Wrong alignment on WBP_InventorySlot_C_AddSubInventoryWidget");
-static_assert(sizeof(WBP_InventorySlot_C_AddSubInventoryWidget) == 0x000008, "Wrong size on WBP_InventorySlot_C_AddSubInventoryWidget");
-static_assert(offsetof(WBP_InventorySlot_C_AddSubInventoryWidget, Widget) == 0x000000, "Member 'WBP_InventorySlot_C_AddSubInventoryWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InventorySlot_C_AddSubInventoryWidget;
 
 // Function WBP_InventorySlot.WBP_InventorySlot_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -124,10 +85,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InventorySlot_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_InventorySlot_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_InventorySlot_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_InventorySlot_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_InventorySlot_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_InventorySlot_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InventorySlot_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_InventorySlot_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InventorySlot_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

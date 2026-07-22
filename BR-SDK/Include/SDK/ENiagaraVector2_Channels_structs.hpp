@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagaraVector2_Channels.ENiagaraVector2_Channels
 // NumValues: 0x0003
@@ -23,5 +22,4 @@ enum class ENiagaraVector2_Channels : uint8
 	ENiagaraVector2_MAX                      = 2,
 };
 
-}
-
+SDK_NAMESPACE_END

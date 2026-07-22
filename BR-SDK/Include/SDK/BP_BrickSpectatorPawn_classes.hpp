@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BrickSpectatorPawn.BP_BrickSpectatorPawn_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,17 @@ class ABP_BrickSpectatorPawn_C final : public ABrickSpectatorPawn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BrickSpectatorPawn_C">();
+		BP_STATIC_CLASS_IMPL("BP_BrickSpectatorPawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BrickSpectatorPawn_C")
 	}
 	static class ABP_BrickSpectatorPawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BrickSpectatorPawn_C>();
 	}
 };
-static_assert(alignof(ABP_BrickSpectatorPawn_C) == 0x000010, "Wrong alignment on ABP_BrickSpectatorPawn_C");
-static_assert(sizeof(ABP_BrickSpectatorPawn_C) == 0x000530, "Wrong size on ABP_BrickSpectatorPawn_C");
+DUMPER7_ASSERTS_ABP_BrickSpectatorPawn_C;
 
-}
-
+SDK_NAMESPACE_END

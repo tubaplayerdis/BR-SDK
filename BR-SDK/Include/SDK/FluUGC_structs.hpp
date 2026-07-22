@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum FluUGC.EFluUGCItemVote
 // NumValues: 0x0004
@@ -42,8 +41,6 @@ struct alignas(0x08) FFluUGCItemIdWrapper final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFluUGCItemIdWrapper) == 0x000008, "Wrong alignment on FFluUGCItemIdWrapper");
-static_assert(sizeof(FFluUGCItemIdWrapper) == 0x000010, "Wrong size on FFluUGCItemIdWrapper");
+DUMPER7_ASSERTS_FFluUGCItemIdWrapper;
 
-}
-
+SDK_NAMESPACE_END

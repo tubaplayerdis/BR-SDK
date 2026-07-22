@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PizzaPalace.BP_PizzaPalace_C
 // 0x0000 (0x02C0 - 0x02C0)
@@ -23,15 +22,17 @@ class ABP_PizzaPalace_C final : public ABrickBuilding
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PizzaPalace_C">();
+		BP_STATIC_CLASS_IMPL("BP_PizzaPalace_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PizzaPalace_C")
 	}
 	static class ABP_PizzaPalace_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PizzaPalace_C>();
 	}
 };
-static_assert(alignof(ABP_PizzaPalace_C) == 0x000010, "Wrong alignment on ABP_PizzaPalace_C");
-static_assert(sizeof(ABP_PizzaPalace_C) == 0x0002C0, "Wrong size on ABP_PizzaPalace_C");
+DUMPER7_ASSERTS_ABP_PizzaPalace_C;
 
-}
-
+SDK_NAMESPACE_END

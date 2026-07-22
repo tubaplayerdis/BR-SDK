@@ -14,15 +14,14 @@
 #include "WBP_HUDContainer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_HUDContainer.WBP_HUDContainer_C.AddGameOverlayWidget
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UGameOverlayWidget*               Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UGameOverlayWidget*               Widget_AddGameOverlayWidget                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_HUDContainer_C::AddGameOverlayWidget(class UGameOverlayWidget* Widget)
+void UWBP_HUDContainer_C::AddGameOverlayWidget(class UGameOverlayWidget* Widget_AddGameOverlayWidget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +30,7 @@ void UWBP_HUDContainer_C::AddGameOverlayWidget(class UGameOverlayWidget* Widget)
 
 	Params::WBP_HUDContainer_C_AddGameOverlayWidget Parms{};
 
-	Parms.Widget = Widget;
+	Parms.Widget_AddGameOverlayWidget = Widget_AddGameOverlayWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -40,9 +39,9 @@ void UWBP_HUDContainer_C::AddGameOverlayWidget(class UGameOverlayWidget* Widget)
 // Function WBP_HUDContainer.WBP_HUDContainer_C.AddHUDWidget
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget*                      Widget_AddHUDWidget                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_HUDContainer_C::AddHUDWidget(class UUserWidget* Widget)
+void UWBP_HUDContainer_C::AddHUDWidget(class UUserWidget* Widget_AddHUDWidget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +50,7 @@ void UWBP_HUDContainer_C::AddHUDWidget(class UUserWidget* Widget)
 
 	Params::WBP_HUDContainer_C_AddHUDWidget Parms{};
 
-	Parms.Widget = Widget;
+	Parms.Widget_AddHUDWidget = Widget_AddHUDWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,5 +75,5 @@ void UWBP_HUDContainer_C::ExecuteUbergraph_WBP_HUDContainer(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

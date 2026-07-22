@@ -14,8 +14,7 @@
 #include "WBP_ReuploadPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ReuploadPopup.WBP_ReuploadPopup_C.ExecuteUbergraph_WBP_ReuploadPopup
 // (Final, UbergraphFunction)
@@ -70,5 +69,5 @@ class FText UWBP_ReuploadPopup_C::GetPopupTitle() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

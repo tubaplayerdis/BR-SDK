@@ -14,8 +14,7 @@
 #include "WBP_MenuButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_MenuButton.WBP_MenuButton_C.ExecuteUbergraph_WBP_MenuButton
 // (Final, UbergraphFunction)
@@ -58,5 +57,5 @@ void UWBP_MenuButton_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateCont
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

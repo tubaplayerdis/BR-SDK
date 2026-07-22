@@ -14,8 +14,7 @@
 #include "WBP_ColorProperty_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.ExecuteUbergraph_WBP_ColorProperty
 // (Final, UbergraphFunction, HasDefaults)
@@ -388,5 +387,5 @@ void UWBP_ColorProperty_C::UpdateCurrentColor(bool bUpdateHex)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

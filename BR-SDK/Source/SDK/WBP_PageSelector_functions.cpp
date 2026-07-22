@@ -14,76 +14,23 @@
 #include "WBP_PageSelector_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
-// Function WBP_PageSelector.WBP_PageSelector_C.BndEvt__PrevButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PageSelector_C::BndEvt__PrevButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageSelector_C", "BndEvt__PrevButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PageSelector.WBP_PageSelector_C.BndEvt__NextButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PageSelector_C::BndEvt__NextButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageSelector_C", "BndEvt__NextButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PageSelector.WBP_PageSelector_C.BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PageSelector.WBP_PageSelector_C.ExecuteUbergraph_WBP_PageSelector
+// (Final, UbergraphFunction)
 // Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PageSelector_C::BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
+void UWBP_PageSelector_C::ExecuteUbergraph_WBP_PageSelector(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageSelector_C", "BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature");
+		Func = Class->GetFunction("WBP_PageSelector_C", "ExecuteUbergraph_WBP_PageSelector");
 
-	Params::WBP_PageSelector_C_BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature Parms{};
+	Params::WBP_PageSelector_C_ExecuteUbergraph_WBP_PageSelector Parms{};
 
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PageSelector.WBP_PageSelector_C.BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PageSelector_C::BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageSelector_C", "BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature");
-
-	Params::WBP_PageSelector_C_BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature Parms{};
-
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -111,24 +58,76 @@ void UWBP_PageSelector_C::UpdateButtons(bool bCanGoBack, bool bCanGoForward)
 }
 
 
-// Function WBP_PageSelector.WBP_PageSelector_C.ExecuteUbergraph_WBP_PageSelector
-// (Final, UbergraphFunction)
+// Function WBP_PageSelector.WBP_PageSelector_C.BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PageSelector_C::ExecuteUbergraph_WBP_PageSelector(int32 EntryPoint)
+void UWBP_PageSelector_C::BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageSelector_C", "ExecuteUbergraph_WBP_PageSelector");
+		Func = Class->GetFunction("WBP_PageSelector_C", "BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature");
 
-	Params::WBP_PageSelector_C_ExecuteUbergraph_WBP_PageSelector Parms{};
+	Params::WBP_PageSelector_C_BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InColorStyle = InColorStyle;
+	Parms.InContentStyleState = InContentStyleState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_PageSelector.WBP_PageSelector_C.BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PageSelector_C::BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PageSelector_C", "BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature");
+
+	Params::WBP_PageSelector_C_BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature Parms{};
+
+	Parms.InColorStyle = InColorStyle;
+	Parms.InContentStyleState = InContentStyleState;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_PageSelector.WBP_PageSelector_C.BndEvt__NextButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_PageSelector_C::BndEvt__NextButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PageSelector_C", "BndEvt__NextButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PageSelector.WBP_PageSelector_C.BndEvt__PrevButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_PageSelector_C::BndEvt__PrevButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PageSelector_C", "BndEvt__PrevButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+SDK_NAMESPACE_END

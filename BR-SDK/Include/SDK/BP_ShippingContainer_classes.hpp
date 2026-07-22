@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ShippingContainer.BP_ShippingContainer_C
 // 0x0000 (0x0240 - 0x0240)
@@ -23,15 +22,17 @@ class ABP_ShippingContainer_C final : public AStaticMeshProp
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ShippingContainer_C">();
+		BP_STATIC_CLASS_IMPL("BP_ShippingContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ShippingContainer_C")
 	}
 	static class ABP_ShippingContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ShippingContainer_C>();
 	}
 };
-static_assert(alignof(ABP_ShippingContainer_C) == 0x000008, "Wrong alignment on ABP_ShippingContainer_C");
-static_assert(sizeof(ABP_ShippingContainer_C) == 0x000240, "Wrong size on ABP_ShippingContainer_C");
+DUMPER7_ASSERTS_ABP_ShippingContainer_C;
 
-}
-
+SDK_NAMESPACE_END

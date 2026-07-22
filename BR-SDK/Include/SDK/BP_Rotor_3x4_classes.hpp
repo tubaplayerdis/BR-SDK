@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Rotor_3x4.BP_Rotor_3x4_C
 // 0x0000 (0x0190 - 0x0190)
@@ -23,15 +22,17 @@ class UBP_Rotor_3x4_C final : public URotorBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Rotor_3x4_C">();
+		BP_STATIC_CLASS_IMPL("BP_Rotor_3x4_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Rotor_3x4_C")
 	}
 	static class UBP_Rotor_3x4_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Rotor_3x4_C>();
 	}
 };
-static_assert(alignof(UBP_Rotor_3x4_C) == 0x000008, "Wrong alignment on UBP_Rotor_3x4_C");
-static_assert(sizeof(UBP_Rotor_3x4_C) == 0x000190, "Wrong size on UBP_Rotor_3x4_C");
+DUMPER7_ASSERTS_UBP_Rotor_3x4_C;
 
-}
-
+SDK_NAMESPACE_END

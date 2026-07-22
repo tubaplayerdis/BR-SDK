@@ -14,8 +14,27 @@
 #include "WBP_PropertyContainerButton_parameters.hpp"
 
 
-namespace SDK
+SDK_NAMESPACE_START
+
+// Function WBP_PropertyContainerButton.WBP_PropertyContainerButton_C.ExecuteUbergraph_WBP_PropertyContainerButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PropertyContainerButton_C::ExecuteUbergraph_WBP_PropertyContainerButton(int32 EntryPoint)
 {
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PropertyContainerButton_C", "ExecuteUbergraph_WBP_PropertyContainerButton");
+
+	Params::WBP_PropertyContainerButton_C_ExecuteUbergraph_WBP_PropertyContainerButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function WBP_PropertyContainerButton.WBP_PropertyContainerButton_C.BndEvt__WBP_PropertyContainerButton_Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // (BlueprintEvent)
@@ -39,24 +58,4 @@ void UWBP_PropertyContainerButton_C::BndEvt__WBP_PropertyContainerButton_Button_
 }
 
 
-// Function WBP_PropertyContainerButton.WBP_PropertyContainerButton_C.ExecuteUbergraph_WBP_PropertyContainerButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PropertyContainerButton_C::ExecuteUbergraph_WBP_PropertyContainerButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PropertyContainerButton_C", "ExecuteUbergraph_WBP_PropertyContainerButton");
-
-	Params::WBP_PropertyContainerButton_C_ExecuteUbergraph_WBP_PropertyContainerButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-}
-
+SDK_NAMESPACE_END

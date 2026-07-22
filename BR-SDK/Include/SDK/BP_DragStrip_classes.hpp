@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_DragStrip.BP_DragStrip_C
 // 0x0008 (0x02B8 - 0x02B0)
@@ -31,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DragStrip_C">();
+		BP_STATIC_CLASS_IMPL("BP_DragStrip_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DragStrip_C")
 	}
 	static class ABP_DragStrip_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_DragStrip_C>();
 	}
 };
-static_assert(alignof(ABP_DragStrip_C) == 0x000008, "Wrong alignment on ABP_DragStrip_C");
-static_assert(sizeof(ABP_DragStrip_C) == 0x0002B8, "Wrong size on ABP_DragStrip_C");
-static_assert(offsetof(ABP_DragStrip_C, StartSignal) == 0x0002B0, "Member 'ABP_DragStrip_C::StartSignal' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_DragStrip_C;
 
-}
-
+SDK_NAMESPACE_END

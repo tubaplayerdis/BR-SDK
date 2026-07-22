@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Vehicle_Sequence.BP_Vehicle_Sequence_C
 // 0x0038 (0x0288 - 0x0250)
@@ -43,22 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Vehicle_Sequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_Vehicle_Sequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Vehicle_Sequence_C")
 	}
 	static class ABP_Vehicle_Sequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Vehicle_Sequence_C>();
 	}
 };
-static_assert(alignof(ABP_Vehicle_Sequence_C) == 0x000008, "Wrong alignment on ABP_Vehicle_Sequence_C");
-static_assert(sizeof(ABP_Vehicle_Sequence_C) == 0x000288, "Wrong size on ABP_Vehicle_Sequence_C");
-static_assert(offsetof(ABP_Vehicle_Sequence_C, UberGraphFrame) == 0x000250, "Member 'ABP_Vehicle_Sequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Vehicle_Sequence_C, ResetButton) == 0x000258, "Member 'ABP_Vehicle_Sequence_C::ResetButton' has a wrong offset!");
-static_assert(offsetof(ABP_Vehicle_Sequence_C, SpawnPoint) == 0x000260, "Member 'ABP_Vehicle_Sequence_C::SpawnPoint' has a wrong offset!");
-static_assert(offsetof(ABP_Vehicle_Sequence_C, Camera) == 0x000268, "Member 'ABP_Vehicle_Sequence_C::Camera' has a wrong offset!");
-static_assert(offsetof(ABP_Vehicle_Sequence_C, DefaultSceneRoot) == 0x000270, "Member 'ABP_Vehicle_Sequence_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_Vehicle_Sequence_C, Vehicle) == 0x000278, "Member 'ABP_Vehicle_Sequence_C::Vehicle' has a wrong offset!");
-static_assert(offsetof(ABP_Vehicle_Sequence_C, bVehicleReady) == 0x000280, "Member 'ABP_Vehicle_Sequence_C::bVehicleReady' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Vehicle_Sequence_C;
 
-}
-
+SDK_NAMESPACE_END

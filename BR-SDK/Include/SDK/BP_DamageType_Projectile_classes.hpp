@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_DamageType_Projectile.BP_DamageType_Projectile_C
 // 0x0000 (0x0040 - 0x0040)
@@ -23,15 +22,17 @@ class UBP_DamageType_Projectile_C final : public UDamageType
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DamageType_Projectile_C">();
+		BP_STATIC_CLASS_IMPL("BP_DamageType_Projectile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DamageType_Projectile_C")
 	}
 	static class UBP_DamageType_Projectile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_DamageType_Projectile_C>();
 	}
 };
-static_assert(alignof(UBP_DamageType_Projectile_C) == 0x000008, "Wrong alignment on UBP_DamageType_Projectile_C");
-static_assert(sizeof(UBP_DamageType_Projectile_C) == 0x000040, "Wrong size on UBP_DamageType_Projectile_C");
+DUMPER7_ASSERTS_UBP_DamageType_Projectile_C;
 
-}
-
+SDK_NAMESPACE_END

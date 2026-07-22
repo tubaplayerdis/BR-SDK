@@ -14,8 +14,7 @@
 #include "BP_CarElevator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_CarElevator.BP_CarElevator_C.ExecuteUbergraph_BP_CarElevator
 // (Final, UbergraphFunction, HasDefaults)
@@ -93,5 +92,5 @@ struct FVector ABP_CarElevator_C::GetInteractionLocation(int32 Index_0) const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

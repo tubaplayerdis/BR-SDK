@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BrickEditorObjectProperty.WBP_BrickEditorObjectProperty_C
 // 0x0038 (0x02B8 - 0x0280)
@@ -44,22 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BrickEditorObjectProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BrickEditorObjectProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BrickEditorObjectProperty_C")
 	}
 	static class UWBP_BrickEditorObjectProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BrickEditorObjectProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_BrickEditorObjectProperty_C) == 0x000008, "Wrong alignment on UWBP_BrickEditorObjectProperty_C");
-static_assert(sizeof(UWBP_BrickEditorObjectProperty_C) == 0x0002B8, "Wrong size on UWBP_BrickEditorObjectProperty_C");
-static_assert(offsetof(UWBP_BrickEditorObjectProperty_C, UberGraphFrame) == 0x000280, "Member 'UWBP_BrickEditorObjectProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditorObjectProperty_C, ClearButton) == 0x000288, "Member 'UWBP_BrickEditorObjectProperty_C::ClearButton' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditorObjectProperty_C, ClearImage) == 0x000290, "Member 'UWBP_BrickEditorObjectProperty_C::ClearImage' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditorObjectProperty_C, ObjectsTextBlock) == 0x000298, "Member 'UWBP_BrickEditorObjectProperty_C::ObjectsTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditorObjectProperty_C, PickObjectsButton) == 0x0002A0, "Member 'UWBP_BrickEditorObjectProperty_C::PickObjectsButton' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditorObjectProperty_C, SelectButton) == 0x0002A8, "Member 'UWBP_BrickEditorObjectProperty_C::SelectButton' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditorObjectProperty_C, SelectImage) == 0x0002B0, "Member 'UWBP_BrickEditorObjectProperty_C::SelectImage' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BrickEditorObjectProperty_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InteractionOption.WBP_InteractionOption_C
 // 0x0010 (0x02D0 - 0x02C0)
@@ -29,23 +28,23 @@ public:
 public:
 	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void UpdateColorStyle(EBrickUIColorStyle InColorStyle);
+	void UpdateColorStyle(EBrickUIColorStyle InColorStyle_UpdateColorStyle);
 	void ExecuteUbergraph_WBP_InteractionOption(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InteractionOption_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InteractionOption_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InteractionOption_C")
 	}
 	static class UWBP_InteractionOption_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InteractionOption_C>();
 	}
 };
-static_assert(alignof(UWBP_InteractionOption_C) == 0x000008, "Wrong alignment on UWBP_InteractionOption_C");
-static_assert(sizeof(UWBP_InteractionOption_C) == 0x0002D0, "Wrong size on UWBP_InteractionOption_C");
-static_assert(offsetof(UWBP_InteractionOption_C, UberGraphFrame) == 0x0002C0, "Member 'UWBP_InteractionOption_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InteractionOption_C, Button) == 0x0002C8, "Member 'UWBP_InteractionOption_C::Button' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InteractionOption_C;
 
-}
-
+SDK_NAMESPACE_END

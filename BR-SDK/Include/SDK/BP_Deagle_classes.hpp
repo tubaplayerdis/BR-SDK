@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Deagle.BP_Deagle_C
 // 0x0000 (0x02B0 - 0x02B0)
@@ -23,15 +22,17 @@ class ABP_Deagle_C final : public AFirearm
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Deagle_C">();
+		BP_STATIC_CLASS_IMPL("BP_Deagle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Deagle_C")
 	}
 	static class ABP_Deagle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Deagle_C>();
 	}
 };
-static_assert(alignof(ABP_Deagle_C) == 0x000008, "Wrong alignment on ABP_Deagle_C");
-static_assert(sizeof(ABP_Deagle_C) == 0x0002B0, "Wrong size on ABP_Deagle_C");
+DUMPER7_ASSERTS_ABP_Deagle_C;
 
-}
-
+SDK_NAMESPACE_END

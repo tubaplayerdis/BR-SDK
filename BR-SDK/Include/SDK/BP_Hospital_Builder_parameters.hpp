@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Hospital_Builder.BP_Hospital_Builder_C.UserConstructionScript
 // 0x0048 (0x0048 - 0x0000)
@@ -33,18 +33,7 @@ public:
 	class UBuildingPart*                          CallFunc_ConstructBuildingPart_ReturnValue_1;      // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBuildingPart*                          CallFunc_ConstructBuildingPart_ReturnValue_2;      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hospital_Builder_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_Hospital_Builder_C_UserConstructionScript");
-static_assert(sizeof(BP_Hospital_Builder_C_UserConstructionScript) == 0x000048, "Wrong size on BP_Hospital_Builder_C_UserConstructionScript");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000000, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x000004, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000008, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_Divide_IntInt_ReturnValue) == 0x00000C, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000010, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_ConstructBuildingPart_ReturnValue) == 0x000020, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_ConstructBuildingPart_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_1) == 0x000028, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_ConstructBuildingPart_ReturnValue_1) == 0x000038, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_ConstructBuildingPart_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Hospital_Builder_C_UserConstructionScript, CallFunc_ConstructBuildingPart_ReturnValue_2) == 0x000040, "Member 'BP_Hospital_Builder_C_UserConstructionScript::CallFunc_ConstructBuildingPart_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Hospital_Builder_C_UserConstructionScript;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

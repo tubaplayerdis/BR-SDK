@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FlareGun_1x1x1.BP_FlareGun_1x1x1_C
 // 0x0000 (0x02C0 - 0x02C0)
@@ -23,15 +22,17 @@ class UBP_FlareGun_1x1x1_C final : public UFlareBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FlareGun_1x1x1_C">();
+		BP_STATIC_CLASS_IMPL("BP_FlareGun_1x1x1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FlareGun_1x1x1_C")
 	}
 	static class UBP_FlareGun_1x1x1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FlareGun_1x1x1_C>();
 	}
 };
-static_assert(alignof(UBP_FlareGun_1x1x1_C) == 0x000010, "Wrong alignment on UBP_FlareGun_1x1x1_C");
-static_assert(sizeof(UBP_FlareGun_1x1x1_C) == 0x0002C0, "Wrong size on UBP_FlareGun_1x1x1_C");
+DUMPER7_ASSERTS_UBP_FlareGun_1x1x1_C;
 
-}
-
+SDK_NAMESPACE_END

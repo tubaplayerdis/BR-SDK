@@ -13,45 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
-
-// Function WBP_PropertyCategory.WBP_PropertyCategory_C.UpdateCategory
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PropertyCategory_C_UpdateCategory final
-{
-public:
-	class FText                                   DisplayName;                                       // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(WBP_PropertyCategory_C_UpdateCategory) == 0x000008, "Wrong alignment on WBP_PropertyCategory_C_UpdateCategory");
-static_assert(sizeof(WBP_PropertyCategory_C_UpdateCategory) == 0x000018, "Wrong size on WBP_PropertyCategory_C_UpdateCategory");
-static_assert(offsetof(WBP_PropertyCategory_C_UpdateCategory, DisplayName) == 0x000000, "Member 'WBP_PropertyCategory_C_UpdateCategory::DisplayName' has a wrong offset!");
-
-// Function WBP_PropertyCategory.WBP_PropertyCategory_C.UpdatePropertyContainerWidgetSlot
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot final
-{
-public:
-	class UPropertyContainerWidget*               Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NumPerRow;                                         // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot) == 0x000008, "Wrong alignment on WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot");
-static_assert(sizeof(WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot) == 0x000010, "Wrong size on WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot");
-static_assert(offsetof(WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot, Widget) == 0x000000, "Member 'WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot, Index_0) == 0x000008, "Member 'WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot, NumPerRow) == 0x00000C, "Member 'WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot::NumPerRow' has a wrong offset!");
-
-// Function WBP_PropertyCategory.WBP_PropertyCategory_C.AddPropertyContainerWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PropertyCategory_C_AddPropertyContainerWidget final
-{
-public:
-	class UPropertyContainerWidget*               Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PropertyCategory_C_AddPropertyContainerWidget) == 0x000008, "Wrong alignment on WBP_PropertyCategory_C_AddPropertyContainerWidget");
-static_assert(sizeof(WBP_PropertyCategory_C_AddPropertyContainerWidget) == 0x000008, "Wrong size on WBP_PropertyCategory_C_AddPropertyContainerWidget");
-static_assert(offsetof(WBP_PropertyCategory_C_AddPropertyContainerWidget, Widget) == 0x000000, "Member 'WBP_PropertyCategory_C_AddPropertyContainerWidget::Widget' has a wrong offset!");
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_PropertyCategory.WBP_PropertyCategory_C.ExecuteUbergraph_WBP_PropertyCategory
 // 0x0058 (0x0058 - 0x0000)
@@ -76,23 +39,36 @@ public:
 	class UPropertyContainerWidget*               K2Node_Event_Widget;                               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory) == 0x000008, "Wrong alignment on WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory");
-static_assert(sizeof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory) == 0x000058, "Wrong size on WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, EntryPoint) == 0x000000, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, Temp_bool_Variable) == 0x000004, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, Temp_byte_Variable) == 0x000005, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, K2Node_Event_DisplayName) == 0x000008, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::K2Node_Event_DisplayName' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, CallFunc_TextIsEmpty_ReturnValue) == 0x000020, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, K2Node_Select_Default) == 0x000021, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, K2Node_Event_Widget_1) == 0x000028, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::K2Node_Event_Widget_1' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, K2Node_Event_Index) == 0x000030, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, K2Node_Event_NumPerRow) == 0x000034, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::K2Node_Event_NumPerRow' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, CallFunc_Percent_IntInt_ReturnValue) == 0x000038, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, CallFunc_Divide_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000040, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, K2Node_Event_Widget) == 0x000048, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory, CallFunc_AddChild_ReturnValue) == 0x000050, "Member 'WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory;
 
-}
+// Function WBP_PropertyCategory.WBP_PropertyCategory_C.AddPropertyContainerWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PropertyCategory_C_AddPropertyContainerWidget final
+{
+public:
+	class UPropertyContainerWidget*               Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PropertyCategory_C_AddPropertyContainerWidget;
 
+// Function WBP_PropertyCategory.WBP_PropertyCategory_C.UpdatePropertyContainerWidgetSlot
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot final
+{
+public:
+	class UPropertyContainerWidget*               Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NumPerRow;                                         // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PropertyCategory_C_UpdatePropertyContainerWidgetSlot;
+
+// Function WBP_PropertyCategory.WBP_PropertyCategory_C.UpdateCategory
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PropertyCategory_C_UpdateCategory final
+{
+public:
+	class FText                                   DisplayName;                                       // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_PropertyCategory_C_UpdateCategory;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -17,8 +17,7 @@
 #include "Slate_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_GenericProperty.WBP_GenericProperty_C
 // 0x0020 (0x02A8 - 0x0288)
@@ -41,19 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GenericProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GenericProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GenericProperty_C")
 	}
 	static class UWBP_GenericProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GenericProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_GenericProperty_C) == 0x000008, "Wrong alignment on UWBP_GenericProperty_C");
-static_assert(sizeof(UWBP_GenericProperty_C) == 0x0002A8, "Wrong size on UWBP_GenericProperty_C");
-static_assert(offsetof(UWBP_GenericProperty_C, UberGraphFrame) == 0x000288, "Member 'UWBP_GenericProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GenericProperty_C, RichTextBlock) == 0x000290, "Member 'UWBP_GenericProperty_C::RichTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_GenericProperty_C, RichTextBorder) == 0x000298, "Member 'UWBP_GenericProperty_C::RichTextBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_GenericProperty_C, TextBox) == 0x0002A0, "Member 'UWBP_GenericProperty_C::TextBox' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GenericProperty_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_BrickEditorObjectProperty_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_BrickEditorObjectProperty.WBP_BrickEditorObjectProperty_C.ExecuteUbergraph_WBP_BrickEditorObjectProperty
 // (Final, UbergraphFunction, HasDefaults)
@@ -144,5 +143,5 @@ void UWBP_BrickEditorObjectProperty_C::UpdateSelectedObjects(const class FText& 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,34 +14,28 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_HUDNotification.WBP_HUDNotification_C.UpdateIsThumbnailNotification
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_HUDNotification_C_UpdateIsThumbnailNotification final
 {
 public:
-	bool                                          bNewIsThumbnail;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bNewIsThumbnail_UpdateIsThumbnailNotification;     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_HUDNotification_C_UpdateIsThumbnailNotification) == 0x000001, "Wrong alignment on WBP_HUDNotification_C_UpdateIsThumbnailNotification");
-static_assert(sizeof(WBP_HUDNotification_C_UpdateIsThumbnailNotification) == 0x000001, "Wrong size on WBP_HUDNotification_C_UpdateIsThumbnailNotification");
-static_assert(offsetof(WBP_HUDNotification_C_UpdateIsThumbnailNotification, bNewIsThumbnail) == 0x000000, "Member 'WBP_HUDNotification_C_UpdateIsThumbnailNotification::bNewIsThumbnail' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HUDNotification_C_UpdateIsThumbnailNotification;
 
 // Function WBP_HUDNotification.WBP_HUDNotification_C.InitializeNotification
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_HUDNotification_C_InitializeNotification final
 {
 public:
-	struct FBrickUIIconSlot                       InIconSlot;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	class FText                                   InText;                                            // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	EBrickUIColorStyle                            InColorStyle;                                      // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FBrickUIIconSlot                       InIconSlot_InitializeNotification;                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class FText                                   InText_InitializeNotification;                     // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	EBrickUIColorStyle                            InColorStyle_InitializeNotification;               // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HUDNotification_C_InitializeNotification) == 0x000008, "Wrong alignment on WBP_HUDNotification_C_InitializeNotification");
-static_assert(sizeof(WBP_HUDNotification_C_InitializeNotification) == 0x000028, "Wrong size on WBP_HUDNotification_C_InitializeNotification");
-static_assert(offsetof(WBP_HUDNotification_C_InitializeNotification, InIconSlot) == 0x000000, "Member 'WBP_HUDNotification_C_InitializeNotification::InIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_InitializeNotification, InText) == 0x000008, "Member 'WBP_HUDNotification_C_InitializeNotification::InText' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_InitializeNotification, InColorStyle) == 0x000020, "Member 'WBP_HUDNotification_C_InitializeNotification::InColorStyle' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HUDNotification_C_InitializeNotification;
 
 // Function WBP_HUDNotification.WBP_HUDNotification_C.ExecuteUbergraph_WBP_HUDNotification
 // 0x0058 (0x0058 - 0x0000)
@@ -68,24 +62,7 @@ public:
 	class FText                                   K2Node_Event_InText;                               // 0x0038(0x0018)(ConstParm)
 	EBrickUIColorStyle                            K2Node_Event_InColorStyle;                         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification) == 0x000008, "Wrong alignment on WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification");
-static_assert(sizeof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification) == 0x000058, "Wrong size on WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, EntryPoint) == 0x000000, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, Temp_bool_Variable) == 0x000004, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, Temp_byte_Variable) == 0x000005, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, Temp_bool_Variable_1) == 0x000007, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, Temp_byte_Variable_2) == 0x000008, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, Temp_byte_Variable_3) == 0x000009, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, CallFunc_MakeLiteralFloat_ReturnValue) == 0x00000C, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, K2Node_Event_bNewIsThumbnail) == 0x000010, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::K2Node_Event_bNewIsThumbnail' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, K2Node_Select_Default) == 0x000020, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, K2Node_Select_Default_1) == 0x000021, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, CallFunc_PlayAnimationTimeRange_ReturnValue) == 0x000028, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::CallFunc_PlayAnimationTimeRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, K2Node_Event_InIconSlot) == 0x000030, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::K2Node_Event_InIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, K2Node_Event_InText) == 0x000038, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::K2Node_Event_InText' has a wrong offset!");
-static_assert(offsetof(WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification, K2Node_Event_InColorStyle) == 0x000050, "Member 'WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification::K2Node_Event_InColorStyle' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HUDNotification_C_ExecuteUbergraph_WBP_HUDNotification;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

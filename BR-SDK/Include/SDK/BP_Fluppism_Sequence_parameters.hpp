@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Fluppism_Sequence.BP_Fluppism_Sequence_C.UserConstructionScript
 // 0x00A0 (0x00A0 - 0x0000)
@@ -42,26 +42,7 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0060(0x0030)(IsPlainOldData, NoDestructor)
 	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Fluppism_Sequence_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_Fluppism_Sequence_C_UserConstructionScript");
-static_assert(sizeof(BP_Fluppism_Sequence_C_UserConstructionScript) == 0x0000A0, "Wrong size on BP_Fluppism_Sequence_C_UserConstructionScript");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000000, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_RandomFloatInRangeFromStream_ReturnValue) == 0x000004, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_RandomFloatInRangeFromStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000008, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00000C, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000010, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue) == 0x000014, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, Temp_int_Variable) == 0x000018, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x00001C, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000028, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00002C, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000030, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000034, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000038, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x00003C, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_MakeRotator_ReturnValue) == 0x000040, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_GreaterGreater_VectorRotator_ReturnValue) == 0x00004C, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_GreaterGreater_VectorRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue) == 0x000060, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Fluppism_Sequence_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000090, "Member 'BP_Fluppism_Sequence_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Fluppism_Sequence_C_UserConstructionScript;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

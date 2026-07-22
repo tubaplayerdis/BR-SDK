@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BindKeyPopup.WBP_BindKeyPopup_C
 // 0x0020 (0x0348 - 0x0328)
@@ -41,19 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BindKeyPopup_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BindKeyPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BindKeyPopup_C")
 	}
 	static class UWBP_BindKeyPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BindKeyPopup_C>();
 	}
 };
-static_assert(alignof(UWBP_BindKeyPopup_C) == 0x000008, "Wrong alignment on UWBP_BindKeyPopup_C");
-static_assert(sizeof(UWBP_BindKeyPopup_C) == 0x000348, "Wrong size on UWBP_BindKeyPopup_C");
-static_assert(offsetof(UWBP_BindKeyPopup_C, UberGraphFrame) == 0x000328, "Member 'UWBP_BindKeyPopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_BindKeyPopup_C, ConflictsBorder) == 0x000330, "Member 'UWBP_BindKeyPopup_C::ConflictsBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_BindKeyPopup_C, ConflictsTextBlock) == 0x000338, "Member 'UWBP_BindKeyPopup_C::ConflictsTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_BindKeyPopup_C, ControlHintBorder) == 0x000340, "Member 'UWBP_BindKeyPopup_C::ControlHintBorder' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BindKeyPopup_C;
 
-}
-
+SDK_NAMESPACE_END

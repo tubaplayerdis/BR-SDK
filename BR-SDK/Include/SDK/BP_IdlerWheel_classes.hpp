@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_IdlerWheel.BP_IdlerWheel_C
 // 0x0000 (0x01B0 - 0x01B0)
@@ -23,15 +22,17 @@ class UBP_IdlerWheel_C final : public UIdlerWheelBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_IdlerWheel_C">();
+		BP_STATIC_CLASS_IMPL("BP_IdlerWheel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_IdlerWheel_C")
 	}
 	static class UBP_IdlerWheel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_IdlerWheel_C>();
 	}
 };
-static_assert(alignof(UBP_IdlerWheel_C) == 0x000008, "Wrong alignment on UBP_IdlerWheel_C");
-static_assert(sizeof(UBP_IdlerWheel_C) == 0x0001B0, "Wrong size on UBP_IdlerWheel_C");
+DUMPER7_ASSERTS_UBP_IdlerWheel_C;
 
-}
-
+SDK_NAMESPACE_END

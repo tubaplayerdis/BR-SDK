@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BTS_ZombieFindTarget.BTS_ZombieFindTarget_C.ExecuteUbergraph_BTS_ZombieFindTarget
 // 0x0058 (0x0058 - 0x0000)
@@ -36,19 +36,7 @@ public:
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABrickCharacter*                        CallFunc_GetClosestCharacter_ReturnValue;          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget) == 0x000008, "Wrong alignment on BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget");
-static_assert(sizeof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget) == 0x000058, "Wrong size on BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, EntryPoint) == 0x000000, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, K2Node_Event_OwnerActor) == 0x000008, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::K2Node_Event_OwnerActor' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, K2Node_Event_DeltaSeconds) == 0x000010, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, K2Node_DynamicCast_AsAIController) == 0x000018, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::K2Node_DynamicCast_AsAIController' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, CallFunc_MakeLiteralName_ReturnValue) == 0x000024, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, CallFunc_GetBlackboard_ReturnValue) == 0x000030, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::CallFunc_GetBlackboard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, CallFunc_K2_GetPawn_ReturnValue) == 0x000038, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, K2Node_DynamicCast_AsZombie) == 0x000040, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::K2Node_DynamicCast_AsZombie' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, K2Node_DynamicCast_bSuccess_1) == 0x000048, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget, CallFunc_GetClosestCharacter_ReturnValue) == 0x000050, "Member 'BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget::CallFunc_GetClosestCharacter_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_ZombieFindTarget_C_ExecuteUbergraph_BTS_ZombieFindTarget;
 
 // Function BTS_ZombieFindTarget.BTS_ZombieFindTarget_C.ReceiveTick
 // 0x0010 (0x0010 - 0x0000)
@@ -58,10 +46,7 @@ public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_ZombieFindTarget_C_ReceiveTick) == 0x000008, "Wrong alignment on BTS_ZombieFindTarget_C_ReceiveTick");
-static_assert(sizeof(BTS_ZombieFindTarget_C_ReceiveTick) == 0x000010, "Wrong size on BTS_ZombieFindTarget_C_ReceiveTick");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ReceiveTick, OwnerActor) == 0x000000, "Member 'BTS_ZombieFindTarget_C_ReceiveTick::OwnerActor' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_ReceiveTick, DeltaSeconds) == 0x000008, "Member 'BTS_ZombieFindTarget_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_ZombieFindTarget_C_ReceiveTick;
 
 // Function BTS_ZombieFindTarget.BTS_ZombieFindTarget_C.GetClosestCharacter
 // 0x0060 (0x0060 - 0x0000)
@@ -89,25 +74,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsConscious_ReturnValue;                  // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BTS_ZombieFindTarget_C_GetClosestCharacter) == 0x000008, "Wrong alignment on BTS_ZombieFindTarget_C_GetClosestCharacter");
-static_assert(sizeof(BTS_ZombieFindTarget_C_GetClosestCharacter) == 0x000060, "Wrong size on BTS_ZombieFindTarget_C_GetClosestCharacter");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, Zombie) == 0x000000, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::Zombie' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, ReturnValue) == 0x000008, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, ClosestChar) == 0x000010, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::ClosestChar' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, ClosestDist) == 0x000018, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::ClosestDist' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_Not_PreBool_ReturnValue) == 0x000029, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_GetAllActorsOfClass_OutActors) == 0x000030, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_Array_Get_Item) == 0x000048, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_GetSquaredDistanceTo_ReturnValue) == 0x000054, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_GetSquaredDistanceTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_Less_FloatFloat_ReturnValue) == 0x000058, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_BooleanOR_ReturnValue) == 0x000059, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTS_ZombieFindTarget_C_GetClosestCharacter, CallFunc_IsConscious_ReturnValue) == 0x00005A, "Member 'BTS_ZombieFindTarget_C_GetClosestCharacter::CallFunc_IsConscious_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_ZombieFindTarget_C_GetClosestCharacter;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_UnsavedChangesPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_UnsavedChangesPopup.WBP_UnsavedChangesPopup_C.ExecuteUbergraph_WBP_UnsavedChangesPopup
 // (Final, UbergraphFunction)
@@ -78,5 +77,5 @@ void UWBP_UnsavedChangesPopup_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

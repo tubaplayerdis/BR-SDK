@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PropertyContainerButton.WBP_PropertyContainerButton_C
 // 0x0008 (0x02A0 - 0x0298)
@@ -26,22 +25,23 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BndEvt__WBP_PropertyContainerButton_Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
 	void ExecuteUbergraph_WBP_PropertyContainerButton(int32 EntryPoint);
+	void BndEvt__WBP_PropertyContainerButton_Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PropertyContainerButton_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PropertyContainerButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PropertyContainerButton_C")
 	}
 	static class UWBP_PropertyContainerButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PropertyContainerButton_C>();
 	}
 };
-static_assert(alignof(UWBP_PropertyContainerButton_C) == 0x000008, "Wrong alignment on UWBP_PropertyContainerButton_C");
-static_assert(sizeof(UWBP_PropertyContainerButton_C) == 0x0002A0, "Wrong size on UWBP_PropertyContainerButton_C");
-static_assert(offsetof(UWBP_PropertyContainerButton_C, UberGraphFrame) == 0x000298, "Member 'UWBP_PropertyContainerButton_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PropertyContainerButton_C;
 
-}
-
+SDK_NAMESPACE_END

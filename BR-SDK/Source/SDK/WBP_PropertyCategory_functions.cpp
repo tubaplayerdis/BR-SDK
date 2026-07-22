@@ -14,24 +14,43 @@
 #include "WBP_PropertyCategory_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
-// Function WBP_PropertyCategory.WBP_PropertyCategory_C.UpdateCategory
-// (Event, Public, HasOutParams, BlueprintEvent)
+// Function WBP_PropertyCategory.WBP_PropertyCategory_C.ExecuteUbergraph_WBP_PropertyCategory
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class FText&                      DisplayName                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PropertyCategory_C::UpdateCategory(const class FText& DisplayName)
+void UWBP_PropertyCategory_C::ExecuteUbergraph_WBP_PropertyCategory(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PropertyCategory_C", "UpdateCategory");
+		Func = Class->GetFunction("WBP_PropertyCategory_C", "ExecuteUbergraph_WBP_PropertyCategory");
 
-	Params::WBP_PropertyCategory_C_UpdateCategory Parms{};
+	Params::WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory Parms{};
 
-	Parms.DisplayName = std::move(DisplayName);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PropertyCategory.WBP_PropertyCategory_C.AddPropertyContainerWidget
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UPropertyContainerWidget*         Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PropertyCategory_C::AddPropertyContainerWidget(class UPropertyContainerWidget* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PropertyCategory_C", "AddPropertyContainerWidget");
+
+	Params::WBP_PropertyCategory_C_AddPropertyContainerWidget Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -61,44 +80,24 @@ void UWBP_PropertyCategory_C::UpdatePropertyContainerWidgetSlot(class UPropertyC
 }
 
 
-// Function WBP_PropertyCategory.WBP_PropertyCategory_C.AddPropertyContainerWidget
-// (Event, Public, BlueprintEvent)
+// Function WBP_PropertyCategory.WBP_PropertyCategory_C.UpdateCategory
+// (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// class UPropertyContainerWidget*         Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      DisplayName                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_PropertyCategory_C::AddPropertyContainerWidget(class UPropertyContainerWidget* Widget)
+void UWBP_PropertyCategory_C::UpdateCategory(const class FText& DisplayName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PropertyCategory_C", "AddPropertyContainerWidget");
+		Func = Class->GetFunction("WBP_PropertyCategory_C", "UpdateCategory");
 
-	Params::WBP_PropertyCategory_C_AddPropertyContainerWidget Parms{};
+	Params::WBP_PropertyCategory_C_UpdateCategory Parms{};
 
-	Parms.Widget = Widget;
+	Parms.DisplayName = std::move(DisplayName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PropertyCategory.WBP_PropertyCategory_C.ExecuteUbergraph_WBP_PropertyCategory
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PropertyCategory_C::ExecuteUbergraph_WBP_PropertyCategory(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PropertyCategory_C", "ExecuteUbergraph_WBP_PropertyCategory");
-
-	Params::WBP_PropertyCategory_C_ExecuteUbergraph_WBP_PropertyCategory Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-}
-
+SDK_NAMESPACE_END

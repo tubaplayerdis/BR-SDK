@@ -14,8 +14,7 @@
 #include "BrickRigs_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BrickRigs.HUDIconComponent.MakeAxisInteractionOption
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
@@ -1935,9 +1934,9 @@ void UBrick::Interact_PickUp(class ABrickPlayerController* OtherPC)
 // (Final, Native, Protected, HasOutParams, BlueprintCallable)
 // Parameters:
 // const struct FVehicleInputChannel&      InputChannel                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// const TDelegate<void(const struct FInputChannelChangedParams& Params)>&Delegate                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const TDelegate<void(const struct FInputChannelChangedParams& Params_0)>&Delegate                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 
-void UBrick::K2_RegisterInputChannel(const struct FVehicleInputChannel& InputChannel, const TDelegate<void(const struct FInputChannelChangedParams& Params)>& Delegate)
+void UBrick::K2_RegisterInputChannel(const struct FVehicleInputChannel& InputChannel, const TDelegate<void(const struct FInputChannelChangedParams& Params_0)>& Delegate)
 {
 	static class UFunction* Func = nullptr;
 
@@ -37264,5 +37263,5 @@ class AWorldSetupActor* AWorldSetupActor::Get(const class UObject* WorldContextO
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

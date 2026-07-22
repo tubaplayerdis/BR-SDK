@@ -14,43 +14,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
-
-// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature final
-{
-public:
-	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
-
-// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.UpdateIsSelected
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BrickEditorMirrorAxis_C_UpdateIsSelected final
-{
-public:
-	bool                                          bNewSelected;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_BrickEditorMirrorAxis_C_UpdateIsSelected) == 0x000001, "Wrong alignment on WBP_BrickEditorMirrorAxis_C_UpdateIsSelected");
-static_assert(sizeof(WBP_BrickEditorMirrorAxis_C_UpdateIsSelected) == 0x000001, "Wrong size on WBP_BrickEditorMirrorAxis_C_UpdateIsSelected");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_UpdateIsSelected, bNewSelected) == 0x000000, "Member 'WBP_BrickEditorMirrorAxis_C_UpdateIsSelected::bNewSelected' has a wrong offset!");
-
-// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.UpdateMirrorAxis
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BrickEditorMirrorAxis_C_UpdateMirrorAxis final
-{
-public:
-	EAxis                                         InAxis;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_BrickEditorMirrorAxis_C_UpdateMirrorAxis) == 0x000001, "Wrong alignment on WBP_BrickEditorMirrorAxis_C_UpdateMirrorAxis");
-static_assert(sizeof(WBP_BrickEditorMirrorAxis_C_UpdateMirrorAxis) == 0x000001, "Wrong size on WBP_BrickEditorMirrorAxis_C_UpdateMirrorAxis");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_UpdateMirrorAxis, InAxis) == 0x000000, "Member 'WBP_BrickEditorMirrorAxis_C_UpdateMirrorAxis::InAxis' has a wrong offset!");
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.ExecuteUbergraph_WBP_BrickEditorMirrorAxis
 // 0x002C (0x002C - 0x0000)
@@ -72,20 +37,35 @@ public:
 	struct FBrickUIIconSlot                       K2Node_MakeStruct_BrickUIIconSlot;                 // 0x0020(0x0008)(NoDestructor)
 	bool                                          K2Node_Event_bNewSelected;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis) == 0x000004, "Wrong alignment on WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis");
-static_assert(sizeof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis) == 0x00002C, "Wrong size on WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, EntryPoint) == 0x000000, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, K2Node_Event_InAxis) == 0x000004, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::K2Node_Event_InAxis' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, Temp_byte_Variable) == 0x000005, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, Temp_int_Variable) == 0x000008, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, Temp_int_Variable_1) == 0x00000C, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, Temp_int_Variable_2) == 0x000010, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, Temp_int_Variable_3) == 0x000014, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, K2Node_Select_Default) == 0x000018, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, K2Node_ComponentBoundEvent_InColorStyle) == 0x00001C, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, K2Node_ComponentBoundEvent_InContentStyleState) == 0x00001D, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, K2Node_MakeStruct_BrickUIIconSlot) == 0x000020, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis, K2Node_Event_bNewSelected) == 0x000028, "Member 'WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis::K2Node_Event_bNewSelected' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis;
 
-}
+// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.UpdateMirrorAxis
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BrickEditorMirrorAxis_C_UpdateMirrorAxis final
+{
+public:
+	EAxis                                         InAxis;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BrickEditorMirrorAxis_C_UpdateMirrorAxis;
 
+// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.UpdateIsSelected
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BrickEditorMirrorAxis_C_UpdateIsSelected final
+{
+public:
+	bool                                          bNewSelected;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_BrickEditorMirrorAxis_C_UpdateIsSelected;
+
+// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature final
+{
+public:
+	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

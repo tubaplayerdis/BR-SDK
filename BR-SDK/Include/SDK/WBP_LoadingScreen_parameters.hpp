@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_LoadingScreen.WBP_LoadingScreen_C.ExecuteUbergraph_WBP_LoadingScreen
 // 0x0030 (0x0030 - 0x0000)
@@ -26,11 +26,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Event_Text;                                 // 0x0018(0x0018)(ConstParm)
 };
-static_assert(alignof(WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen) == 0x000008, "Wrong alignment on WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen");
-static_assert(sizeof(WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen) == 0x000030, "Wrong size on WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen");
-static_assert(offsetof(WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen, EntryPoint) == 0x000000, "Member 'WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen, K2Node_Event_InColor) == 0x000004, "Member 'WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen::K2Node_Event_InColor' has a wrong offset!");
-static_assert(offsetof(WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen, K2Node_Event_Text) == 0x000018, "Member 'WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen::K2Node_Event_Text' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_LoadingScreen_C_ExecuteUbergraph_WBP_LoadingScreen;
 
 // Function WBP_LoadingScreen.WBP_LoadingScreen_C.SetLoadingText
 // 0x0018 (0x0018 - 0x0000)
@@ -39,9 +35,7 @@ struct WBP_LoadingScreen_C_SetLoadingText final
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_LoadingScreen_C_SetLoadingText) == 0x000008, "Wrong alignment on WBP_LoadingScreen_C_SetLoadingText");
-static_assert(sizeof(WBP_LoadingScreen_C_SetLoadingText) == 0x000018, "Wrong size on WBP_LoadingScreen_C_SetLoadingText");
-static_assert(offsetof(WBP_LoadingScreen_C_SetLoadingText, Text) == 0x000000, "Member 'WBP_LoadingScreen_C_SetLoadingText::Text' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_LoadingScreen_C_SetLoadingText;
 
 // Function WBP_LoadingScreen.WBP_LoadingScreen_C.SetBackgroundColor
 // 0x0010 (0x0010 - 0x0000)
@@ -50,9 +44,7 @@ struct WBP_LoadingScreen_C_SetBackgroundColor final
 public:
 	struct FLinearColor                           InColor;                                           // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_LoadingScreen_C_SetBackgroundColor) == 0x000004, "Wrong alignment on WBP_LoadingScreen_C_SetBackgroundColor");
-static_assert(sizeof(WBP_LoadingScreen_C_SetBackgroundColor) == 0x000010, "Wrong size on WBP_LoadingScreen_C_SetBackgroundColor");
-static_assert(offsetof(WBP_LoadingScreen_C_SetBackgroundColor, InColor) == 0x000000, "Member 'WBP_LoadingScreen_C_SetBackgroundColor::InColor' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_LoadingScreen_C_SetBackgroundColor;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

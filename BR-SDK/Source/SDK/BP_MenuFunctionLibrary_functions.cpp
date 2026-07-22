@@ -14,8 +14,7 @@
 #include "BP_MenuFunctionLibrary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_MenuFunctionLibrary.BP_MenuFunctionLibrary_C.CreateBackButton
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -423,5 +422,5 @@ class UMenuButtonWidget* UBP_MenuFunctionLibrary_C::CreateLinkButton(class UMenu
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

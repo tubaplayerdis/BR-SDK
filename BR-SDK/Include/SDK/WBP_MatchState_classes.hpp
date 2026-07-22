@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MatchState.WBP_MatchState_C
 // 0x0020 (0x0298 - 0x0278)
@@ -29,26 +28,24 @@ public:
 	class UBrickTextBlock*                        TextBlock;                                         // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateMatchState(const class FText& NewDisplayText, EBrickUIColorStyle NewColorStyle, bool bFadeOut);
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
+	void UpdateMatchState(const class FText& NewDisplayText_UpdateMatchState, EBrickUIColorStyle NewColorStyle_UpdateMatchState, bool bFadeOut_UpdateMatchState);
+	void OnAnimationFinished(const class UWidgetAnimation* Animation_OnAnimationFinished);
 	void ExecuteUbergraph_WBP_MatchState(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MatchState_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MatchState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MatchState_C")
 	}
 	static class UWBP_MatchState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MatchState_C>();
 	}
 };
-static_assert(alignof(UWBP_MatchState_C) == 0x000008, "Wrong alignment on UWBP_MatchState_C");
-static_assert(sizeof(UWBP_MatchState_C) == 0x000298, "Wrong size on UWBP_MatchState_C");
-static_assert(offsetof(UWBP_MatchState_C, UberGraphFrame) == 0x000278, "Member 'UWBP_MatchState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MatchState_C, FadeAnimation) == 0x000280, "Member 'UWBP_MatchState_C::FadeAnimation' has a wrong offset!");
-static_assert(offsetof(UWBP_MatchState_C, Border) == 0x000288, "Member 'UWBP_MatchState_C::Border' has a wrong offset!");
-static_assert(offsetof(UWBP_MatchState_C, TextBlock) == 0x000290, "Member 'UWBP_MatchState_C::TextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MatchState_C;
 
-}
-
+SDK_NAMESPACE_END

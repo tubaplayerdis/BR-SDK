@@ -15,8 +15,7 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BrickSlider.WBP_BrickSlider_C
 // 0x0028 (0x0330 - 0x0308)
@@ -42,20 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BrickSlider_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BrickSlider_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BrickSlider_C")
 	}
 	static class UWBP_BrickSlider_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BrickSlider_C>();
 	}
 };
-static_assert(alignof(UWBP_BrickSlider_C) == 0x000008, "Wrong alignment on UWBP_BrickSlider_C");
-static_assert(sizeof(UWBP_BrickSlider_C) == 0x000330, "Wrong size on UWBP_BrickSlider_C");
-static_assert(offsetof(UWBP_BrickSlider_C, UberGraphFrame) == 0x000308, "Member 'UWBP_BrickSlider_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickSlider_C, Overlay_0) == 0x000310, "Member 'UWBP_BrickSlider_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickSlider_C, Spacer_225) == 0x000318, "Member 'UWBP_BrickSlider_C::Spacer_225' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickSlider_C, CtrlHintWidget) == 0x000320, "Member 'UWBP_BrickSlider_C::CtrlHintWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickSlider_C, ShiftHintWidget) == 0x000328, "Member 'UWBP_BrickSlider_C::ShiftHintWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BrickSlider_C;
 
-}
-
+SDK_NAMESPACE_END

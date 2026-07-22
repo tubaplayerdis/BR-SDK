@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_HostGame.WBP_HostGame_C
 // 0x0010 (0x02A8 - 0x0298)
@@ -33,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HostGame_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HostGame_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HostGame_C")
 	}
 	static class UWBP_HostGame_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HostGame_C>();
 	}
 };
-static_assert(alignof(UWBP_HostGame_C) == 0x000008, "Wrong alignment on UWBP_HostGame_C");
-static_assert(sizeof(UWBP_HostGame_C) == 0x0002A8, "Wrong size on UWBP_HostGame_C");
-static_assert(offsetof(UWBP_HostGame_C, UberGraphFrame) == 0x000298, "Member 'UWBP_HostGame_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HostGame_C, PlayButton) == 0x0002A0, "Member 'UWBP_HostGame_C::PlayButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HostGame_C;
 
-}
-
+SDK_NAMESPACE_END

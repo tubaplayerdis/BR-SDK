@@ -14,8 +14,7 @@
 #include "WBP_InputActionCategory_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InputActionCategory.WBP_InputActionCategory_C.ExecuteUbergraph_WBP_InputActionCategory
 // (Final, UbergraphFunction, HasDefaults)
@@ -152,5 +151,5 @@ class UWidget* UWBP_InputActionCategory_C::GetWidgetToFocus() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

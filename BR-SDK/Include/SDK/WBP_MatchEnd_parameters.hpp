@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_MatchEnd.WBP_MatchEnd_C.ExecuteUbergraph_WBP_MatchEnd
 // 0x0118 (0x0118 - 0x0000)
@@ -60,37 +60,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x00E8(0x0018)()
 	class FText                                   K2Node_Select_Default_1;                           // 0x0100(0x0018)()
 };
-static_assert(alignof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd) == 0x000008, "Wrong alignment on WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd");
-static_assert(sizeof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd) == 0x000118, "Wrong size on WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, EntryPoint) == 0x000000, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, Temp_text_Variable) == 0x000008, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, Temp_text_Variable_1) == 0x000020, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_CreateDelegate_OutputDelegate_1) == 0x000048, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, Temp_bool_Variable) == 0x000058, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, Temp_bool_Has_Been_Initd_Variable) == 0x000059, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, Temp_bool_IsClosed_Variable) == 0x00005A, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_CreateDelegate_OutputDelegate_2) == 0x00005C, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_CreateContinueButton_ReturnValue) == 0x000070, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_CreateContinueButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_CreateExitButton_ReturnValue) == 0x000078, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_CreateExitButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_Event_TimeRemaining) == 0x000080, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_Event_TimeRemaining' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_Event_bIsHost) == 0x000084, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_Event_bIsHost' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000085, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000088, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_NumberToText_ReturnValue) == 0x000090, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_NumberToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_BooleanAND_ReturnValue) == 0x0000A8, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_GetGameInstance_ReturnValue) == 0x0000B0, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_CustomEvent_Result) == 0x0000B8, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_DynamicCast_AsBrick_Game_Instance) == 0x0000C0, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_DynamicCast_AsBrick_Game_Instance' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C9, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_OpenMessagePopup_ReturnValue) == 0x0000CA, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_OpenMessagePopup_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, CallFunc_GetGameInstance_ReturnValue_1) == 0x0000D0, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::CallFunc_GetGameInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_DynamicCast_AsBrick_Game_Instance_1) == 0x0000D8, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_DynamicCast_AsBrick_Game_Instance_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_DynamicCast_bSuccess_1) == 0x0000E0, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, Temp_bool_Variable_1) == 0x0000E1, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_Select_Default) == 0x0000E8, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd, K2Node_Select_Default_1) == 0x000100, "Member 'WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MatchEnd_C_ExecuteUbergraph_WBP_MatchEnd;
 
 // Function WBP_MatchEnd.WBP_MatchEnd_C.OnClosedExitMatchPopup
 // 0x0001 (0x0001 - 0x0000)
@@ -99,9 +69,7 @@ struct WBP_MatchEnd_C_OnClosedExitMatchPopup final
 public:
 	EPopupResult                                  Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MatchEnd_C_OnClosedExitMatchPopup) == 0x000001, "Wrong alignment on WBP_MatchEnd_C_OnClosedExitMatchPopup");
-static_assert(sizeof(WBP_MatchEnd_C_OnClosedExitMatchPopup) == 0x000001, "Wrong size on WBP_MatchEnd_C_OnClosedExitMatchPopup");
-static_assert(offsetof(WBP_MatchEnd_C_OnClosedExitMatchPopup, Result) == 0x000000, "Member 'WBP_MatchEnd_C_OnClosedExitMatchPopup::Result' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MatchEnd_C_OnClosedExitMatchPopup;
 
 // Function WBP_MatchEnd.WBP_MatchEnd_C.UpdateContinueButton
 // 0x0008 (0x0008 - 0x0000)
@@ -111,10 +79,7 @@ public:
 	int32                                         TimeRemaining;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsHost;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_MatchEnd_C_UpdateContinueButton) == 0x000004, "Wrong alignment on WBP_MatchEnd_C_UpdateContinueButton");
-static_assert(sizeof(WBP_MatchEnd_C_UpdateContinueButton) == 0x000008, "Wrong size on WBP_MatchEnd_C_UpdateContinueButton");
-static_assert(offsetof(WBP_MatchEnd_C_UpdateContinueButton, TimeRemaining) == 0x000000, "Member 'WBP_MatchEnd_C_UpdateContinueButton::TimeRemaining' has a wrong offset!");
-static_assert(offsetof(WBP_MatchEnd_C_UpdateContinueButton, bIsHost) == 0x000004, "Member 'WBP_MatchEnd_C_UpdateContinueButton::bIsHost' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MatchEnd_C_UpdateContinueButton;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

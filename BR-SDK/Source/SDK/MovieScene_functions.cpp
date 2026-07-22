@@ -14,8 +14,7 @@
 #include "MovieScene_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MovieScene.MovieSceneSection.SetBlendType
 // (RequiredAPI, Native, Public, BlueprintCallable)
@@ -1671,5 +1670,5 @@ float IMovieSceneEasingFunction::OnEvaluate(float Interp) const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

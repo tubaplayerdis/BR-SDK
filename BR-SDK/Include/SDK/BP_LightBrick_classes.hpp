@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_LightBrick.BP_LightBrick_C
 // 0x0000 (0x01D8 - 0x01D8)
@@ -23,15 +22,17 @@ class UBP_LightBrick_C final : public ULightBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_LightBrick_C">();
+		BP_STATIC_CLASS_IMPL("BP_LightBrick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_LightBrick_C")
 	}
 	static class UBP_LightBrick_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_LightBrick_C>();
 	}
 };
-static_assert(alignof(UBP_LightBrick_C) == 0x000008, "Wrong alignment on UBP_LightBrick_C");
-static_assert(sizeof(UBP_LightBrick_C) == 0x0001D8, "Wrong size on UBP_LightBrick_C");
+DUMPER7_ASSERTS_UBP_LightBrick_C;
 
-}
-
+SDK_NAMESPACE_END

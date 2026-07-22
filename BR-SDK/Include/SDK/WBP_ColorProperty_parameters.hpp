@@ -16,8 +16,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.ExecuteUbergraph_WBP_ColorProperty
 // 0x06C0 (0x06C0 - 0x0000)
@@ -261,197 +261,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x06BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x06BF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty) == 0x000008, "Wrong alignment on WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty");
-static_assert(sizeof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty) == 0x0006C0, "Wrong size on WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, EntryPoint) == 0x000000, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable) == 0x000004, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_text_Variable) == 0x000008, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_text_Variable_1) == 0x000020, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_1) == 0x000038, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_float_Variable) == 0x00003C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_float_Variable_1) == 0x000040, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_2) == 0x000044, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralByte_ReturnValue) == 0x000045, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000046, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_3) == 0x000047, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_4) == 0x000048, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_5) == 0x000049, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_6) == 0x00004A, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_7) == 0x00004B, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_8) == 0x00004C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_9) == 0x00004D, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_bool_Variable) == 0x00004E, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_CreateDelegate_OutputDelegate) == 0x000050, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_10) == 0x000060, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_11) == 0x000061, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_RGBLinearToHSV_ReturnValue) == 0x000064, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_RGBLinearToHSV_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Conv_ColorToLinearColor_ReturnValue) == 0x000074, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Conv_ColorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_12) == 0x000084, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000085, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue) == 0x000088, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue) == 0x000090, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000091, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000092, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_1) == 0x000098, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_1) == 0x0000A0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralText_ReturnValue) == 0x0000A8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_2) == 0x0000C0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x0000C8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_2) == 0x0000C9, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000D0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_3) == 0x0000E8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_13) == 0x0000F0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_3) == 0x0000F1, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0000F8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_4) == 0x000110, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default) == 0x000118, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_4) == 0x000119, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_14) == 0x00011A, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_float_Variable_2) == 0x00011C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_1) == 0x000120, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000128, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_5) == 0x000140, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_float_Variable_3) == 0x000148, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_5) == 0x00014C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_2) == 0x000150, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_3) == 0x000168, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_MakeStruct_FormatArgumentData) == 0x000170, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_MakeArray_Array) == 0x0001B0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_4) == 0x0001C0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Format_ReturnValue) == 0x0001C8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_15) == 0x0001E0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_float_Variable_4) == 0x0001E4, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_float_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_5) == 0x0001E8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_6) == 0x0001F0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_float_Variable_5) == 0x0001F8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_float_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_6) == 0x0001FC, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_7) == 0x000200, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_6) == 0x000208, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_7) == 0x000209, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_8) == 0x000210, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000218, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_8) == 0x000228, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Conv_StringToText_ReturnValue) == 0x000230, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_16) == 0x000248, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_7) == 0x00024C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_text_Variable_2) == 0x000250, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_text_Variable_3) == 0x000268, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_17) == 0x000280, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_8) == 0x000288, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_8' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_9) == 0x0002A0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_9' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_MakeStruct_FormatArgumentData_1) == 0x0002B0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_R) == 0x0002F0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_G) == 0x0002F4, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_B) == 0x0002F8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_A) == 0x0002FC, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_MakeArray_Array_1) == 0x000300, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralByte_ReturnValue_6) == 0x000310, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Format_ReturnValue_1) == 0x000318, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeLiteralByte_ReturnValue_7) == 0x000330, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeLiteralByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_9) == 0x000338, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_10) == 0x000340, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_10' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_9) == 0x000350, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_R_1) == 0x000354, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_R_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_G_1) == 0x000358, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_G_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_B_1) == 0x00035C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_B_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_A_1) == 0x000360, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_A_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_18) == 0x000364, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_18' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_11) == 0x000368, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_11' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_R_2) == 0x000378, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_R_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_G_2) == 0x00037C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_G_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_B_2) == 0x000380, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_B_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_A_2) == 0x000384, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_A_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_12) == 0x000388, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_12' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_float_Variable_6) == 0x00038C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_float_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_13) == 0x000390, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_13' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_R_3) == 0x0003A0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_R_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_G_3) == 0x0003A4, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_G_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_B_3) == 0x0003A8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_B_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_A_3) == 0x0003AC, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_A_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_float_Variable_7) == 0x0003B0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_float_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_text_Variable_4) == 0x0003B8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_10) == 0x0003D0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetPropertyContainerWidget_ReturnValue) == 0x0003D8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetPropertyContainerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_10) == 0x0003E0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetMenuButtonPanelWidget_ReturnValue) == 0x0003E8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetMenuButtonPanelWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0003F0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_CreateDelegate_OutputDelegate_1) == 0x0003F4, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_CreateDisplayModeButton_ReturnValue) == 0x000408, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_CreateDisplayModeButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_InColorStyle) == 0x000410, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000411, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_11) == 0x000418, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_12) == 0x000420, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_19) == 0x000428, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_19' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_14) == 0x00042C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_14' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_13) == 0x000430, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_11) == 0x000438, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000439, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_NewColor_1) == 0x00043C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_NewColor_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_EventType_6) == 0x00044C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_EventType_6' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_NewColor) == 0x000450, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_NewColor' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_EventType_5) == 0x000460, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_EventType_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_R_4) == 0x000464, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_R_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_G_4) == 0x000468, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_G_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_B_4) == 0x00046C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_B_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_A_4) == 0x000470, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_A_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_Value_3) == 0x000474, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_Value_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_EventType_4) == 0x000478, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_EventType_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_Value_2) == 0x00047C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_Value_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_EventType_3) == 0x000480, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_EventType_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeColor_ReturnValue) == 0x000484, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeColor_ReturnValue_1) == 0x000494, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_Value_1) == 0x0004A4, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_EventType_2) == 0x0004A8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_EventType_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_Value) == 0x0004AC, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_EventType_1) == 0x0004B0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_EventType_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeColor_ReturnValue_2) == 0x0004B4, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeColor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeColor_ReturnValue_3) == 0x0004C4, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeColor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_NewText) == 0x0004D8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_NewText' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_ComponentBoundEvent_EventType) == 0x0004F0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_ComponentBoundEvent_EventType' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_CustomEvent_NewDisplayMode) == 0x0004F1, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_CustomEvent_NewDisplayMode' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0004F2, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Conv_TextToString_ReturnValue) == 0x0004F8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_HexToColor_ReturnValue) == 0x000508, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_HexToColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Event_IsDesignTime) == 0x000518, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Event_NewColor) == 0x00051C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Event_NewColor' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Event_bValueChanged) == 0x000520, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Event_bValueChanged' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Not_PreBool_ReturnValue) == 0x000521, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_HasAlphaChannel_ReturnValue) == 0x000522, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_HasAlphaChannel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_15) == 0x000523, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_15' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_text_Variable_5) == 0x000528, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_text_Variable_6) == 0x000540, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_text_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_16) == 0x000558, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_16' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_MakeStruct_FormatArgumentData_2) == 0x000570, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_text_Variable_7) == 0x0005B0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_text_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_MakeArray_Array_2) == 0x0005C8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Format_ReturnValue_2) == 0x0005D8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_14) == 0x0005F0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_12) == 0x0005F8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, Temp_byte_Variable_20) == 0x0005F9, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::Temp_byte_Variable_20' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x0005FA, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_Select_Default_17) == 0x000600, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_Select_Default_17' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_MakeStruct_FormatArgumentData_3) == 0x000618, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, K2Node_MakeArray_Array_3) == 0x000658, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Not_PreBool_ReturnValue_1) == 0x000668, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Format_ReturnValue_3) == 0x000670, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Format_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetUserSettings_ReturnValue_15) == 0x000688, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetUserSettings_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_GetColorDisplayMode_ReturnValue_13) == 0x000690, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_GetColorDisplayMode_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000691, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x000692, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x000693, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_EqualEqual_ByteByte_ReturnValue_6) == 0x000694, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_EqualEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_EqualEqual_ByteByte_ReturnValue_7) == 0x000695, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_EqualEqual_ByteByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BooleanAND_ReturnValue) == 0x000696, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_R_5) == 0x000698, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_R_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_G_5) == 0x00069C, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_G_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_B_5) == 0x0006A0, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_B_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BreakColor_A_5) == 0x0006A4, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BreakColor_A_5' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BooleanAND_ReturnValue_1) == 0x0006A8, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_MakeColor_ReturnValue_4) == 0x0006AC, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_MakeColor_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BooleanAND_ReturnValue_2) == 0x0006BC, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_Not_PreBool_ReturnValue_2) == 0x0006BD, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BooleanOR_ReturnValue) == 0x0006BE, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty, CallFunc_BooleanOR_ReturnValue_1) == 0x0006BF, "Member 'WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_ExecuteUbergraph_WBP_ColorProperty;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.UpdateColorPropertyValue
 // 0x0008 (0x0008 - 0x0000)
@@ -461,10 +271,7 @@ public:
 	struct FColor                                 NewColor;                                          // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bValueChanged;                                     // 0x0004(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ColorProperty_C_UpdateColorPropertyValue) == 0x000004, "Wrong alignment on WBP_ColorProperty_C_UpdateColorPropertyValue");
-static_assert(sizeof(WBP_ColorProperty_C_UpdateColorPropertyValue) == 0x000008, "Wrong size on WBP_ColorProperty_C_UpdateColorPropertyValue");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateColorPropertyValue, NewColor) == 0x000000, "Member 'WBP_ColorProperty_C_UpdateColorPropertyValue::NewColor' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateColorPropertyValue, bValueChanged) == 0x000004, "Member 'WBP_ColorProperty_C_UpdateColorPropertyValue::bValueChanged' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_UpdateColorPropertyValue;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -473,9 +280,7 @@ struct WBP_ColorProperty_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ColorProperty_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ColorProperty_C_PreConstruct");
-static_assert(sizeof(WBP_ColorProperty_C_PreConstruct) == 0x000001, "Wrong size on WBP_ColorProperty_C_PreConstruct");
-static_assert(offsetof(WBP_ColorProperty_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ColorProperty_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_PreConstruct;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.OnColorDisplayModeChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -484,9 +289,7 @@ struct WBP_ColorProperty_C_OnColorDisplayModeChanged final
 public:
 	EColorDisplayMode                             NewDisplayMode;                                    // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_OnColorDisplayModeChanged) == 0x000001, "Wrong alignment on WBP_ColorProperty_C_OnColorDisplayModeChanged");
-static_assert(sizeof(WBP_ColorProperty_C_OnColorDisplayModeChanged) == 0x000001, "Wrong size on WBP_ColorProperty_C_OnColorDisplayModeChanged");
-static_assert(offsetof(WBP_ColorProperty_C_OnColorDisplayModeChanged, NewDisplayMode) == 0x000000, "Member 'WBP_ColorProperty_C_OnColorDisplayModeChanged::NewDisplayMode' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_OnColorDisplayModeChanged;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -496,10 +299,7 @@ public:
 	class FText                                   NewText;                                           // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	EValueChangedEventType                        EventType;                                         // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature");
-static_assert(sizeof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature) == 0x000020, "Wrong size on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature, NewText) == 0x000000, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature::NewText' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature, EventType) == 0x000018, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HexTextBox_K2Node_ComponentBoundEvent_8_OnTextBoxChanged__DelegateSignature;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -509,10 +309,7 @@ public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EValueChangedEventType                        EventType;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature");
-static_assert(sizeof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature) == 0x000008, "Wrong size on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature, Value) == 0x000000, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature::Value' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature, EventType) == 0x000004, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_AlphaSlider_K2Node_ComponentBoundEvent_7_OnSliderValueChanged__DelegateSignature;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -522,10 +319,7 @@ public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EValueChangedEventType                        EventType;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature");
-static_assert(sizeof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature) == 0x000008, "Wrong size on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature, Value) == 0x000000, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature::Value' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature, EventType) == 0x000004, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ValueSlider_K2Node_ComponentBoundEvent_6_OnSliderValueChanged__DelegateSignature;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -535,10 +329,7 @@ public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EValueChangedEventType                        EventType;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature");
-static_assert(sizeof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature) == 0x000008, "Wrong size on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature, Value) == 0x000000, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature::Value' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature, EventType) == 0x000004, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_SaturationSlider_K2Node_ComponentBoundEvent_5_OnSliderValueChanged__DelegateSignature;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -548,10 +339,7 @@ public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EValueChangedEventType                        EventType;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature");
-static_assert(sizeof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature) == 0x000008, "Wrong size on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature, Value) == 0x000000, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature::Value' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature, EventType) == 0x000004, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_HueSlider_K2Node_ComponentBoundEvent_4_OnSliderValueChanged__DelegateSignature;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature
 // 0x0014 (0x0014 - 0x0000)
@@ -561,10 +349,7 @@ public:
 	struct FLinearColor                           NewColor;                                          // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EValueChangedEventType                        EventType;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature");
-static_assert(sizeof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature) == 0x000014, "Wrong size on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature, NewColor) == 0x000000, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature::NewColor' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature, EventType) == 0x000010, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorPalette_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature
 // 0x0014 (0x0014 - 0x0000)
@@ -574,10 +359,7 @@ public:
 	struct FLinearColor                           NewColor;                                          // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EValueChangedEventType                        EventType;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature");
-static_assert(sizeof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature) == 0x000014, "Wrong size on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature, NewColor) == 0x000000, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature::NewColor' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature, EventType) == 0x000010, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_ColorWheel_K2Node_ComponentBoundEvent_2_ColorChanged__DelegateSignature;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -587,10 +369,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_BndEvt__WBP_ColorProperty_DisplayModeButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.SetCurrentColor
 // 0x0038 (0x0038 - 0x0000)
@@ -606,15 +385,7 @@ public:
 	struct FColor                                 CallFunc_Conv_LinearColorToColor_ReturnValue;      // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_HSVToRGBLinear_ReturnValue;               // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ColorProperty_C_SetCurrentColor) == 0x000004, "Wrong alignment on WBP_ColorProperty_C_SetCurrentColor");
-static_assert(sizeof(WBP_ColorProperty_C_SetCurrentColor) == 0x000038, "Wrong size on WBP_ColorProperty_C_SetCurrentColor");
-static_assert(offsetof(WBP_ColorProperty_C_SetCurrentColor, NewColor) == 0x000000, "Member 'WBP_ColorProperty_C_SetCurrentColor::NewColor' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_SetCurrentColor, EventType) == 0x000010, "Member 'WBP_ColorProperty_C_SetCurrentColor::EventType' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_SetCurrentColor, bIsHSV) == 0x000011, "Member 'WBP_ColorProperty_C_SetCurrentColor::bIsHSV' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_SetCurrentColor, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000012, "Member 'WBP_ColorProperty_C_SetCurrentColor::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_SetCurrentColor, CallFunc_RGBLinearToHSV_ReturnValue) == 0x000014, "Member 'WBP_ColorProperty_C_SetCurrentColor::CallFunc_RGBLinearToHSV_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_SetCurrentColor, CallFunc_Conv_LinearColorToColor_ReturnValue) == 0x000024, "Member 'WBP_ColorProperty_C_SetCurrentColor::CallFunc_Conv_LinearColorToColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_SetCurrentColor, CallFunc_HSVToRGBLinear_ReturnValue) == 0x000028, "Member 'WBP_ColorProperty_C_SetCurrentColor::CallFunc_HSVToRGBLinear_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_SetCurrentColor;
 
 // Function WBP_ColorProperty.WBP_ColorProperty_C.UpdateCurrentColor
 // 0x0080 (0x0080 - 0x0000)
@@ -639,22 +410,7 @@ public:
 	class UBrickDataSingleton*                    CallFunc_Get_ReturnValue;                          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetColorDisplayName_ReturnValue;          // 0x0068(0x0018)()
 };
-static_assert(alignof(WBP_ColorProperty_C_UpdateCurrentColor) == 0x000008, "Wrong alignment on WBP_ColorProperty_C_UpdateCurrentColor");
-static_assert(sizeof(WBP_ColorProperty_C_UpdateCurrentColor) == 0x000080, "Wrong size on WBP_ColorProperty_C_UpdateCurrentColor");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, bUpdateHex) == 0x000000, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::bUpdateHex' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, Temp_byte_Variable) == 0x000001, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_GetUserSettings_ReturnValue) == 0x000008, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_GetUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_GetColorDisplayMode_ReturnValue) == 0x000010, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_GetColorDisplayMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, K2Node_Select_Default) == 0x000014, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_BreakColor_R) == 0x000024, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_BreakColor_G) == 0x000028, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_BreakColor_B) == 0x00002C, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_BreakColor_A) == 0x000030, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_HasAlphaChannel_ReturnValue) == 0x000034, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_HasAlphaChannel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_ColorToHex_ReturnValue) == 0x000038, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_ColorToHex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_Conv_StringToText_ReturnValue) == 0x000048, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_Get_ReturnValue) == 0x000060, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_Get_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ColorProperty_C_UpdateCurrentColor, CallFunc_GetColorDisplayName_ReturnValue) == 0x000068, "Member 'WBP_ColorProperty_C_UpdateCurrentColor::CallFunc_GetColorDisplayName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ColorProperty_C_UpdateCurrentColor;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

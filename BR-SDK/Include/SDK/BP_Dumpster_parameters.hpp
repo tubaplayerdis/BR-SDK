@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Dumpster.BP_Dumpster_C.UserConstructionScript
 // 0x0028 (0x0028 - 0x0000)
@@ -26,13 +26,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Dumpster_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_Dumpster_C_UserConstructionScript");
-static_assert(sizeof(BP_Dumpster_C_UserConstructionScript) == 0x000028, "Wrong size on BP_Dumpster_C_UserConstructionScript");
-static_assert(offsetof(BP_Dumpster_C_UserConstructionScript, K2Node_MakeArray_Array) == 0x000000, "Member 'BP_Dumpster_C_UserConstructionScript::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_Dumpster_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'BP_Dumpster_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Dumpster_C_UserConstructionScript, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'BP_Dumpster_C_UserConstructionScript::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Dumpster_C_UserConstructionScript, CallFunc_RandomIntegerInRangeFromStream_ReturnValue) == 0x000018, "Member 'BP_Dumpster_C_UserConstructionScript::CallFunc_RandomIntegerInRangeFromStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Dumpster_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000020, "Member 'BP_Dumpster_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Dumpster_C_UserConstructionScript;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

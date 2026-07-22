@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagaraBooleanLogicOps.ENiagaraBooleanLogicOps
 // NumValues: 0x0005
@@ -25,5 +24,4 @@ enum class ENiagaraBooleanLogicOps : uint8
 	ENiagaraBooleanLogicOps_MAX              = 4,
 };
 
-}
-
+SDK_NAMESPACE_END

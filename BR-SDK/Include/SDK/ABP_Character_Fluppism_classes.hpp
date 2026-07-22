@@ -15,8 +15,7 @@
 #include "AnimGraphRuntime_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_Character_Fluppism.ABP_Character_Fluppism_C
 // 0x0390 (0x0650 - 0x02C0)
@@ -48,27 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Character_Fluppism_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Character_Fluppism_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Character_Fluppism_C")
 	}
 	static class UABP_Character_Fluppism_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Character_Fluppism_C>();
 	}
 };
-static_assert(alignof(UABP_Character_Fluppism_C) == 0x000010, "Wrong alignment on UABP_Character_Fluppism_C");
-static_assert(sizeof(UABP_Character_Fluppism_C) == 0x000650, "Wrong size on UABP_Character_Fluppism_C");
-static_assert(offsetof(UABP_Character_Fluppism_C, UberGraphFrame) == 0x0002C0, "Member 'UABP_Character_Fluppism_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UABP_Character_Fluppism_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, AnimGraphNode_ComponentToLocalSpace) == 0x0002F8, "Member 'UABP_Character_Fluppism_C::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, AnimGraphNode_ModifyBone_2) == 0x000318, "Member 'UABP_Character_Fluppism_C::AnimGraphNode_ModifyBone_2' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, AnimGraphNode_ModifyBone_1) == 0x000420, "Member 'UABP_Character_Fluppism_C::AnimGraphNode_ModifyBone_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, AnimGraphNode_ModifyBone) == 0x000528, "Member 'UABP_Character_Fluppism_C::AnimGraphNode_ModifyBone' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, BowAngle) == 0x000630, "Member 'UABP_Character_Fluppism_C::BowAngle' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, bAnimateBowing) == 0x000634, "Member 'UABP_Character_Fluppism_C::bAnimateBowing' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, StartTime) == 0x000638, "Member 'UABP_Character_Fluppism_C::StartTime' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, NoiseAmplitude) == 0x00063C, "Member 'UABP_Character_Fluppism_C::NoiseAmplitude' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, PeriodLength) == 0x000640, "Member 'UABP_Character_Fluppism_C::PeriodLength' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Fluppism_C, NoiseFrequency) == 0x000644, "Member 'UABP_Character_Fluppism_C::NoiseFrequency' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_Character_Fluppism_C;
 
-}
-
+SDK_NAMESPACE_END

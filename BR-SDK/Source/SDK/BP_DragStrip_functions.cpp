@@ -14,13 +14,12 @@
 #include "BP_DragStrip_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_DragStrip.BP_DragStrip_C.CreateTreeMID
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMaterialInstanceDynamic*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic*         ReturnValue_CreateTreeMID                              (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UMaterialInstanceDynamic* ABP_DragStrip_C::CreateTreeMID()
 {
@@ -33,14 +32,14 @@ class UMaterialInstanceDynamic* ABP_DragStrip_C::CreateTreeMID()
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	return Parms.ReturnValue_CreateTreeMID;
 }
 
 
 // Function BP_DragStrip.BP_DragStrip_C.GetInteractionLocation
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          ReturnValue_GetInteractionLocation                     (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FVector ABP_DragStrip_C::GetInteractionLocation() const
 {
@@ -53,8 +52,8 @@ struct FVector ABP_DragStrip_C::GetInteractionLocation() const
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	return Parms.ReturnValue_GetInteractionLocation;
 }
 
-}
 
+SDK_NAMESPACE_END

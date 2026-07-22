@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_SpawnScreen.WBP_SpawnScreen_C
 // 0x0000 (0x0278 - 0x0278)
@@ -26,15 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SpawnScreen_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SpawnScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SpawnScreen_C")
 	}
 	static class UWBP_SpawnScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SpawnScreen_C>();
 	}
 };
-static_assert(alignof(UWBP_SpawnScreen_C) == 0x000008, "Wrong alignment on UWBP_SpawnScreen_C");
-static_assert(sizeof(UWBP_SpawnScreen_C) == 0x000278, "Wrong size on UWBP_SpawnScreen_C");
+DUMPER7_ASSERTS_UWBP_SpawnScreen_C;
 
-}
-
+SDK_NAMESPACE_END

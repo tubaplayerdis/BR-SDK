@@ -13,8 +13,7 @@
 #include "BP_RC_Sequence_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_RC_Sequence_2.BP_RC_Sequence_2_C
 // 0x0008 (0x02A0 - 0x0298)
@@ -29,16 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RC_Sequence_2_C">();
+		BP_STATIC_CLASS_IMPL("BP_RC_Sequence_2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RC_Sequence_2_C")
 	}
 	static class ABP_RC_Sequence_2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RC_Sequence_2_C>();
 	}
 };
-static_assert(alignof(ABP_RC_Sequence_2_C) == 0x000008, "Wrong alignment on ABP_RC_Sequence_2_C");
-static_assert(sizeof(ABP_RC_Sequence_2_C) == 0x0002A0, "Wrong size on ABP_RC_Sequence_2_C");
-static_assert(offsetof(ABP_RC_Sequence_2_C, Parent) == 0x000298, "Member 'ABP_RC_Sequence_2_C::Parent' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RC_Sequence_2_C;
 
-}
-
+SDK_NAMESPACE_END

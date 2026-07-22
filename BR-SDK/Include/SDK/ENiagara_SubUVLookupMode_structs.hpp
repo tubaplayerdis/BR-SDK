@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagara_SubUVLookupMode.ENiagara_SubUVLookupMode
 // NumValues: 0x0005
@@ -25,5 +24,4 @@ enum class ENiagara_SubUVLookupMode : uint8
 	ENiagara_MAX                             = 4,
 };
 
-}
-
+SDK_NAMESPACE_END

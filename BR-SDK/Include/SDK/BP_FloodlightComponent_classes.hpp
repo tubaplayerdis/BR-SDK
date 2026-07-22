@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FloodlightComponent.BP_FloodlightComponent_C
 // 0x0000 (0x0360 - 0x0360)
@@ -23,15 +22,17 @@ class UBP_FloodlightComponent_C final : public USpotLightComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FloodlightComponent_C">();
+		BP_STATIC_CLASS_IMPL("BP_FloodlightComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FloodlightComponent_C")
 	}
 	static class UBP_FloodlightComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FloodlightComponent_C>();
 	}
 };
-static_assert(alignof(UBP_FloodlightComponent_C) == 0x000010, "Wrong alignment on UBP_FloodlightComponent_C");
-static_assert(sizeof(UBP_FloodlightComponent_C) == 0x000360, "Wrong size on UBP_FloodlightComponent_C");
+DUMPER7_ASSERTS_UBP_FloodlightComponent_C;
 
-}
-
+SDK_NAMESPACE_END

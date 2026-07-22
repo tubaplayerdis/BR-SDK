@@ -13,28 +13,29 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FuelTank.BP_FuelTank_C
 // 0x0000 (0x0280 - 0x0280)
 class ABP_FuelTank_C final : public AFuelTank
 {
 public:
-	bool ShouldSpawnLeakOnHit(const struct FHitResult& Hit);
+	bool ShouldSpawnLeakOnHit(const struct FHitResult& Hit_ShouldSpawnLeakOnHit);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FuelTank_C">();
+		BP_STATIC_CLASS_IMPL("BP_FuelTank_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FuelTank_C")
 	}
 	static class ABP_FuelTank_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_FuelTank_C>();
 	}
 };
-static_assert(alignof(ABP_FuelTank_C) == 0x000008, "Wrong alignment on ABP_FuelTank_C");
-static_assert(sizeof(ABP_FuelTank_C) == 0x000280, "Wrong size on ABP_FuelTank_C");
+DUMPER7_ASSERTS_ABP_FuelTank_C;
 
-}
-
+SDK_NAMESPACE_END

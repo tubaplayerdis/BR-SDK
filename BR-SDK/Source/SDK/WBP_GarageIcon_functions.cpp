@@ -14,8 +14,7 @@
 #include "WBP_GarageIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_GarageIcon.WBP_GarageIcon_C.GetIconDisplayName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
@@ -36,5 +35,5 @@ class FText UWBP_GarageIcon_C::GetIconDisplayName() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

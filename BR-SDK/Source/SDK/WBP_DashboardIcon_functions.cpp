@@ -14,8 +14,7 @@
 #include "WBP_DashboardIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_DashboardIcon.WBP_DashboardIcon_C.ExecuteUbergraph_WBP_DashboardIcon
 // (Final, UbergraphFunction, HasDefaults)
@@ -60,5 +59,5 @@ void UWBP_DashboardIcon_C::UpdateIconImage(bool bInVisible, EBrickUIColorStyle I
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

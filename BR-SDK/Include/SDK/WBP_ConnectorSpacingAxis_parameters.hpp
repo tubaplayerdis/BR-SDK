@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ConnectorSpacingAxis.WBP_ConnectorSpacingAxis_C.ExecuteUbergraph_WBP_ConnectorSpacingAxis
 // 0x0140 (0x0140 - 0x0000)
@@ -51,32 +51,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0118(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0128(0x0018)()
 };
-static_assert(alignof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis) == 0x000008, "Wrong alignment on WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis");
-static_assert(sizeof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis) == 0x000140, "Wrong size on WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, EntryPoint) == 0x000000, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, Temp_bool_Variable) == 0x000004, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, Temp_text_Variable) == 0x000010, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_MakeStruct_BrickUIIconSlot) == 0x000028, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, Temp_text_Variable_1) == 0x000030, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, Temp_bool_Variable_1) == 0x000048, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, Temp_byte_Variable) == 0x000049, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, Temp_byte_Variable_1) == 0x00004A, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_Select_Default) == 0x00004B, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_ComponentBoundEvent_InColorStyle) == 0x00004C, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_ComponentBoundEvent_InContentStyleState) == 0x00004D, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, CallFunc_SplitAxisSigned_OutAxis) == 0x00004E, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::CallFunc_SplitAxisSigned_OutAxis' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, CallFunc_SplitAxisSigned_bOutPositiveAxis) == 0x00004F, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::CallFunc_SplitAxisSigned_bOutPositiveAxis' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_Select_Default_1) == 0x000050, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000068, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_MakeStruct_FormatArgumentData) == 0x000078, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, CallFunc_Conv_StringToText_ReturnValue) == 0x0000B8, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_CustomEvent_InSpacingAxis) == 0x0000D0, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_CustomEvent_InSpacingAxis' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_CustomEvent_InSpacing) == 0x0000D1, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_CustomEvent_InSpacing' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000D8, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, K2Node_MakeArray_Array) == 0x000118, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis, CallFunc_Format_ReturnValue) == 0x000128, "Member 'WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ConnectorSpacingAxis_C_ExecuteUbergraph_WBP_ConnectorSpacingAxis;
 
 // Function WBP_ConnectorSpacingAxis.WBP_ConnectorSpacingAxis_C.UpdateSpacingAxis
 // 0x0002 (0x0002 - 0x0000)
@@ -86,10 +61,7 @@ public:
 	EFluAxisSigned                                InSpacingAxis;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EConnectorSpacing                             InSpacing;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ConnectorSpacingAxis_C_UpdateSpacingAxis) == 0x000001, "Wrong alignment on WBP_ConnectorSpacingAxis_C_UpdateSpacingAxis");
-static_assert(sizeof(WBP_ConnectorSpacingAxis_C_UpdateSpacingAxis) == 0x000002, "Wrong size on WBP_ConnectorSpacingAxis_C_UpdateSpacingAxis");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_UpdateSpacingAxis, InSpacingAxis) == 0x000000, "Member 'WBP_ConnectorSpacingAxis_C_UpdateSpacingAxis::InSpacingAxis' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_UpdateSpacingAxis, InSpacing) == 0x000001, "Member 'WBP_ConnectorSpacingAxis_C_UpdateSpacingAxis::InSpacing' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ConnectorSpacingAxis_C_UpdateSpacingAxis;
 
 // Function WBP_ConnectorSpacingAxis.WBP_ConnectorSpacingAxis_C.BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -99,10 +71,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

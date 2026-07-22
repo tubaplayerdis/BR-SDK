@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum DLSS.EDLSSPreset
 // NumValues: 0x0009
@@ -39,5 +38,4 @@ enum class EDLSSSettingOverride : uint8
 	EDLSSSettingOverride_MAX                 = 3,
 };
 
-}
-
+SDK_NAMESPACE_END

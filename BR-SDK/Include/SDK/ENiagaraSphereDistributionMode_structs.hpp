@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagaraSphereDistributionMode.ENiagaraSphereDistributionMode
 // NumValues: 0x0004
@@ -24,5 +23,4 @@ enum class ENiagaraSphereDistributionMode : uint8
 	ENiagaraSphereDistributionMode_MAX       = 3,
 };
 
-}
-
+SDK_NAMESPACE_END

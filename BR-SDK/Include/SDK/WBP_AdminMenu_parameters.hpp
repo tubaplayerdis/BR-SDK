@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_AdminMenu.WBP_AdminMenu_C.ExecuteUbergraph_WBP_AdminMenu
 // 0x0088 (0x0088 - 0x0000)
@@ -43,25 +43,7 @@ public:
 	bool                                          K2Node_Event_bNewSelected;                         // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_bNewCanViewAndEdit;                   // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu) == 0x000008, "Wrong alignment on WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu");
-static_assert(sizeof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu) == 0x000088, "Wrong size on WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, EntryPoint) == 0x000000, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, CallFunc_IsStandalone_ReturnValue) == 0x000004, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::CallFunc_IsStandalone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, Temp_byte_Variable) == 0x000005, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, CallFunc_GetMenuWidget_ReturnValue) == 0x000008, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::CallFunc_GetMenuWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, Temp_byte_Variable_1) == 0x000020, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, CallFunc_CreateShowProfileButton_ReturnValue) == 0x000028, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::CallFunc_CreateShowProfileButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x000030, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, K2Node_CreateDelegate_OutputDelegate_2) == 0x000040, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, CallFunc_CreateButton_ReturnValue) == 0x000050, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, CallFunc_CreateRefreshButton_ReturnValue) == 0x000058, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::CallFunc_CreateRefreshButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, Temp_bool_Variable) == 0x000060, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, K2Node_CreateDelegate_OutputDelegate_3) == 0x000064, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, CallFunc_CreateButton_ReturnValue_1) == 0x000078, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::CallFunc_CreateButton_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, K2Node_Select_Default) == 0x000080, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, K2Node_Event_bNewSelected) == 0x000081, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::K2Node_Event_bNewSelected' has a wrong offset!");
-static_assert(offsetof(WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu, K2Node_Event_bNewCanViewAndEdit) == 0x000082, "Member 'WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu::K2Node_Event_bNewCanViewAndEdit' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_AdminMenu_C_ExecuteUbergraph_WBP_AdminMenu;
 
 // Function WBP_AdminMenu.WBP_AdminMenu_C.UpdateCanViewAndEditKicks
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +52,7 @@ struct WBP_AdminMenu_C_UpdateCanViewAndEditKicks final
 public:
 	bool                                          bNewCanViewAndEdit;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_AdminMenu_C_UpdateCanViewAndEditKicks) == 0x000001, "Wrong alignment on WBP_AdminMenu_C_UpdateCanViewAndEditKicks");
-static_assert(sizeof(WBP_AdminMenu_C_UpdateCanViewAndEditKicks) == 0x000001, "Wrong size on WBP_AdminMenu_C_UpdateCanViewAndEditKicks");
-static_assert(offsetof(WBP_AdminMenu_C_UpdateCanViewAndEditKicks, bNewCanViewAndEdit) == 0x000000, "Member 'WBP_AdminMenu_C_UpdateCanViewAndEditKicks::bNewCanViewAndEdit' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_AdminMenu_C_UpdateCanViewAndEditKicks;
 
 // Function WBP_AdminMenu.WBP_AdminMenu_C.UpdateHasSelectedKick
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +61,7 @@ struct WBP_AdminMenu_C_UpdateHasSelectedKick final
 public:
 	bool                                          bNewSelected;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_AdminMenu_C_UpdateHasSelectedKick) == 0x000001, "Wrong alignment on WBP_AdminMenu_C_UpdateHasSelectedKick");
-static_assert(sizeof(WBP_AdminMenu_C_UpdateHasSelectedKick) == 0x000001, "Wrong size on WBP_AdminMenu_C_UpdateHasSelectedKick");
-static_assert(offsetof(WBP_AdminMenu_C_UpdateHasSelectedKick, bNewSelected) == 0x000000, "Member 'WBP_AdminMenu_C_UpdateHasSelectedKick::bNewSelected' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_AdminMenu_C_UpdateHasSelectedKick;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

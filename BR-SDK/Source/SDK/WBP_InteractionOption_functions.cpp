@@ -14,8 +14,7 @@
 #include "WBP_InteractionOption_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InteractionOption.WBP_InteractionOption_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
 // (BlueprintEvent)
@@ -56,9 +55,9 @@ void UWBP_InteractionOption_C::BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpd
 // Function WBP_InteractionOption.WBP_InteractionOption_C.UpdateColorStyle
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBrickUIColorStyle                      InColorStyle_UpdateColorStyle                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InteractionOption_C::UpdateColorStyle(EBrickUIColorStyle InColorStyle)
+void UWBP_InteractionOption_C::UpdateColorStyle(EBrickUIColorStyle InColorStyle_UpdateColorStyle)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67,7 +66,7 @@ void UWBP_InteractionOption_C::UpdateColorStyle(EBrickUIColorStyle InColorStyle)
 
 	Params::WBP_InteractionOption_C_UpdateColorStyle Parms{};
 
-	Parms.InColorStyle = InColorStyle;
+	Parms.InColorStyle_UpdateColorStyle = InColorStyle_UpdateColorStyle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -92,5 +91,5 @@ void UWBP_InteractionOption_C::ExecuteUbergraph_WBP_InteractionOption(int32 Entr
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Server.WBP_Server_C
 // 0x0020 (0x0440 - 0x0420)
@@ -38,19 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Server_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Server_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Server_C")
 	}
 	static class UWBP_Server_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Server_C>();
 	}
 };
-static_assert(alignof(UWBP_Server_C) == 0x000008, "Wrong alignment on UWBP_Server_C");
-static_assert(sizeof(UWBP_Server_C) == 0x000440, "Wrong size on UWBP_Server_C");
-static_assert(offsetof(UWBP_Server_C, UberGraphFrame) == 0x000420, "Member 'UWBP_Server_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Server_C, DedicatedIcon) == 0x000428, "Member 'UWBP_Server_C::DedicatedIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Server_C, ModsIcon) == 0x000430, "Member 'UWBP_Server_C::ModsIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Server_C, PasswordIcon) == 0x000438, "Member 'UWBP_Server_C::PasswordIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Server_C;
 
-}
-
+SDK_NAMESPACE_END

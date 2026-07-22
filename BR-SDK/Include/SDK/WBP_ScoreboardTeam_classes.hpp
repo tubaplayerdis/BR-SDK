@@ -17,8 +17,7 @@
 #include "AIModule_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ScoreboardTeam.WBP_ScoreboardTeam_C
 // 0x0020 (0x02D0 - 0x02B0)
@@ -41,19 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ScoreboardTeam_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ScoreboardTeam_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ScoreboardTeam_C")
 	}
 	static class UWBP_ScoreboardTeam_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ScoreboardTeam_C>();
 	}
 };
-static_assert(alignof(UWBP_ScoreboardTeam_C) == 0x000008, "Wrong alignment on UWBP_ScoreboardTeam_C");
-static_assert(sizeof(UWBP_ScoreboardTeam_C) == 0x0002D0, "Wrong size on UWBP_ScoreboardTeam_C");
-static_assert(offsetof(UWBP_ScoreboardTeam_C, UberGraphFrame) == 0x0002B0, "Member 'UWBP_ScoreboardTeam_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreboardTeam_C, JoinButton) == 0x0002B8, "Member 'UWBP_ScoreboardTeam_C::JoinButton' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreboardTeam_C, JoinTextBlock) == 0x0002C0, "Member 'UWBP_ScoreboardTeam_C::JoinTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreboardTeam_C, TeamBorder) == 0x0002C8, "Member 'UWBP_ScoreboardTeam_C::TeamBorder' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ScoreboardTeam_C;
 
-}
-
+SDK_NAMESPACE_END

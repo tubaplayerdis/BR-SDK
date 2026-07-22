@@ -14,15 +14,14 @@
 #include "WBP_Chat_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_Chat.WBP_Chat_C.UpdateIsFocused
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bNewFocused                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bNewFocused_UpdateIsFocused                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_Chat_C::UpdateIsFocused(bool bNewFocused)
+void UWBP_Chat_C::UpdateIsFocused(bool bNewFocused_UpdateIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +30,7 @@ void UWBP_Chat_C::UpdateIsFocused(bool bNewFocused)
 
 	Params::WBP_Chat_C_UpdateIsFocused Parms{};
 
-	Parms.bNewFocused = bNewFocused;
+	Parms.bNewFocused_UpdateIsFocused = bNewFocused_UpdateIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -40,9 +39,9 @@ void UWBP_Chat_C::UpdateIsFocused(bool bNewFocused)
 // Function WBP_Chat.WBP_Chat_C.UpdateIsTyping
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bNewTyping                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bNewTyping_UpdateIsTyping                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_Chat_C::UpdateIsTyping(bool bNewTyping)
+void UWBP_Chat_C::UpdateIsTyping(bool bNewTyping_UpdateIsTyping)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +50,7 @@ void UWBP_Chat_C::UpdateIsTyping(bool bNewTyping)
 
 	Params::WBP_Chat_C_UpdateIsTyping Parms{};
 
-	Parms.bNewTyping = bNewTyping;
+	Parms.bNewTyping_UpdateIsTyping = bNewTyping_UpdateIsTyping;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,5 +75,5 @@ void UWBP_Chat_C::ExecuteUbergraph_WBP_Chat(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

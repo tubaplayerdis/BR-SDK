@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ScalableConeFlat.BP_ScalableConeFlat_C
 // 0x0000 (0x01D0 - 0x01D0)
@@ -23,15 +22,17 @@ class UBP_ScalableConeFlat_C final : public UScalableBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ScalableConeFlat_C">();
+		BP_STATIC_CLASS_IMPL("BP_ScalableConeFlat_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ScalableConeFlat_C")
 	}
 	static class UBP_ScalableConeFlat_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ScalableConeFlat_C>();
 	}
 };
-static_assert(alignof(UBP_ScalableConeFlat_C) == 0x000008, "Wrong alignment on UBP_ScalableConeFlat_C");
-static_assert(sizeof(UBP_ScalableConeFlat_C) == 0x0001D0, "Wrong size on UBP_ScalableConeFlat_C");
+DUMPER7_ASSERTS_UBP_ScalableConeFlat_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "BP_RC_Sequence_2_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_RC_Sequence_2.BP_RC_Sequence_2_C.GetHandTargetLocation
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
@@ -36,5 +35,5 @@ struct FVector ABP_RC_Sequence_2_C::GetHandTargetLocation() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

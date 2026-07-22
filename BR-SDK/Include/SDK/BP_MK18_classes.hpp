@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_MK18.BP_MK18_C
 // 0x0000 (0x02B0 - 0x02B0)
@@ -23,15 +22,17 @@ class ABP_MK18_C final : public AFirearm
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MK18_C">();
+		BP_STATIC_CLASS_IMPL("BP_MK18_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MK18_C")
 	}
 	static class ABP_MK18_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MK18_C>();
 	}
 };
-static_assert(alignof(ABP_MK18_C) == 0x000008, "Wrong alignment on ABP_MK18_C");
-static_assert(sizeof(ABP_MK18_C) == 0x0002B0, "Wrong size on ABP_MK18_C");
+DUMPER7_ASSERTS_ABP_MK18_C;
 
-}
-
+SDK_NAMESPACE_END

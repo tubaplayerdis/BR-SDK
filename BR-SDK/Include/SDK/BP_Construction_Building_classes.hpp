@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Construction_Building.BP_Construction_Building_C
 // 0x0010 (0x0320 - 0x0310)
@@ -31,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Construction_Building_C">();
+		BP_STATIC_CLASS_IMPL("BP_Construction_Building_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Construction_Building_C")
 	}
 	static class ABP_Construction_Building_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Construction_Building_C>();
 	}
 };
-static_assert(alignof(ABP_Construction_Building_C) == 0x000010, "Wrong alignment on ABP_Construction_Building_C");
-static_assert(sizeof(ABP_Construction_Building_C) == 0x000320, "Wrong size on ABP_Construction_Building_C");
-static_assert(offsetof(ABP_Construction_Building_C, Molds) == 0x000310, "Member 'ABP_Construction_Building_C::Molds' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Construction_Building_C;
 
-}
-
+SDK_NAMESPACE_END

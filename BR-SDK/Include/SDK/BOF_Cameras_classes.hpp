@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BOF_Cameras.BOF_Cameras_C
 // 0x0000 (0x00B0 - 0x00B0)
@@ -23,15 +22,17 @@ class UBOF_Cameras_C final : public UBrickEditorObjectFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BOF_Cameras_C">();
+		BP_STATIC_CLASS_IMPL("BOF_Cameras_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BOF_Cameras_C")
 	}
 	static class UBOF_Cameras_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBOF_Cameras_C>();
 	}
 };
-static_assert(alignof(UBOF_Cameras_C) == 0x000008, "Wrong alignment on UBOF_Cameras_C");
-static_assert(sizeof(UBOF_Cameras_C) == 0x0000B0, "Wrong size on UBOF_Cameras_C");
+DUMPER7_ASSERTS_UBOF_Cameras_C;
 
-}
-
+SDK_NAMESPACE_END

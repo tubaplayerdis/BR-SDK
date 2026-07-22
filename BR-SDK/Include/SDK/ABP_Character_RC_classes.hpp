@@ -17,8 +17,7 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_Character_RC.ABP_Character_RC_C
 // 0x04B0 (0x0770 - 0x02C0)
@@ -51,29 +50,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Character_RC_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Character_RC_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Character_RC_C")
 	}
 	static class UABP_Character_RC_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Character_RC_C>();
 	}
 };
-static_assert(alignof(UABP_Character_RC_C) == 0x000010, "Wrong alignment on UABP_Character_RC_C");
-static_assert(sizeof(UABP_Character_RC_C) == 0x000770, "Wrong size on UABP_Character_RC_C");
-static_assert(offsetof(UABP_Character_RC_C, UberGraphFrame) == 0x0002C0, "Member 'UABP_Character_RC_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UABP_Character_RC_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, AnimGraphNode_SequencePlayer_1) == 0x0002F8, "Member 'UABP_Character_RC_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, AnimGraphNode_LocalToComponentSpace) == 0x000378, "Member 'UABP_Character_RC_C::AnimGraphNode_LocalToComponentSpace' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, AnimGraphNode_ComponentToLocalSpace) == 0x000398, "Member 'UABP_Character_RC_C::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, AnimGraphNode_TwoBoneIK) == 0x0003C0, "Member 'UABP_Character_RC_C::AnimGraphNode_TwoBoneIK' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, AnimGraphNode_BlendListByBool) == 0x0005A0, "Member 'UABP_Character_RC_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, AnimGraphNode_SequencePlayer) == 0x000640, "Member 'UABP_Character_RC_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, AnimGraphNode_ViewRotation) == 0x0006C0, "Member 'UABP_Character_RC_C::AnimGraphNode_ViewRotation' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, ViewRotation) == 0x000750, "Member 'UABP_Character_RC_C::ViewRotation' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, LookRatio) == 0x00075C, "Member 'UABP_Character_RC_C::LookRatio' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, HandTargetLocation) == 0x000760, "Member 'UABP_Character_RC_C::HandTargetLocation' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, bUseHandIK) == 0x00076C, "Member 'UABP_Character_RC_C::bUseHandIK' has a wrong offset!");
-static_assert(offsetof(UABP_Character_RC_C, bVehicleGone) == 0x00076D, "Member 'UABP_Character_RC_C::bVehicleGone' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_Character_RC_C;
 
-}
-
+SDK_NAMESPACE_END

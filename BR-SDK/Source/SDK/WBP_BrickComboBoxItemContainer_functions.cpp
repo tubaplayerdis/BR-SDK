@@ -14,26 +14,39 @@
 #include "WBP_BrickComboBoxItemContainer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
-// Function WBP_BrickComboBoxItemContainer.WBP_BrickComboBoxItemContainer_C.AddItemWidget
-// (Event, Protected, BlueprintEvent)
+// Function WBP_BrickComboBoxItemContainer.WBP_BrickComboBoxItemContainer_C.ExecuteUbergraph_WBP_BrickComboBoxItemContainer
+// (Final, UbergraphFunction)
 // Parameters:
-// class UBrickComboBoxItemWidget*         Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BrickComboBoxItemContainer_C::AddItemWidget(class UBrickComboBoxItemWidget* Widget)
+void UWBP_BrickComboBoxItemContainer_C::ExecuteUbergraph_WBP_BrickComboBoxItemContainer(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickComboBoxItemContainer_C", "AddItemWidget");
+		Func = Class->GetFunction("WBP_BrickComboBoxItemContainer_C", "ExecuteUbergraph_WBP_BrickComboBoxItemContainer");
 
-	Params::WBP_BrickComboBoxItemContainer_C_AddItemWidget Parms{};
+	Params::WBP_BrickComboBoxItemContainer_C_ExecuteUbergraph_WBP_BrickComboBoxItemContainer Parms{};
 
-	Parms.Widget = Widget;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickComboBoxItemContainer.WBP_BrickComboBoxItemContainer_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_BrickComboBoxItemContainer_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickComboBoxItemContainer_C", "BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,38 +70,24 @@ void UWBP_BrickComboBoxItemContainer_C::UpdateIsSelected(bool bNewSelected)
 }
 
 
-// Function WBP_BrickComboBoxItemContainer.WBP_BrickComboBoxItemContainer_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_BrickComboBoxItemContainer_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickComboBoxItemContainer_C", "BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BrickComboBoxItemContainer.WBP_BrickComboBoxItemContainer_C.ExecuteUbergraph_WBP_BrickComboBoxItemContainer
-// (Final, UbergraphFunction)
+// Function WBP_BrickComboBoxItemContainer.WBP_BrickComboBoxItemContainer_C.AddItemWidget
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UBrickComboBoxItemWidget*         Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BrickComboBoxItemContainer_C::ExecuteUbergraph_WBP_BrickComboBoxItemContainer(int32 EntryPoint)
+void UWBP_BrickComboBoxItemContainer_C::AddItemWidget(class UBrickComboBoxItemWidget* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickComboBoxItemContainer_C", "ExecuteUbergraph_WBP_BrickComboBoxItemContainer");
+		Func = Class->GetFunction("WBP_BrickComboBoxItemContainer_C", "AddItemWidget");
 
-	Params::WBP_BrickComboBoxItemContainer_C_ExecuteUbergraph_WBP_BrickComboBoxItemContainer Parms{};
+	Params::WBP_BrickComboBoxItemContainer_C_AddItemWidget Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

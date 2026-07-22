@@ -13,8 +13,7 @@
 #include "BP_Gun_2x2x2_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Gun_2x2x2_Ballistic.BP_Gun_2x2x2_Ballistic_C
 // 0x0000 (0x02C0 - 0x02C0)
@@ -23,15 +22,17 @@ class UBP_Gun_2x2x2_Ballistic_C final : public UBP_Gun_2x2x2_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Gun_2x2x2_Ballistic_C">();
+		BP_STATIC_CLASS_IMPL("BP_Gun_2x2x2_Ballistic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Gun_2x2x2_Ballistic_C")
 	}
 	static class UBP_Gun_2x2x2_Ballistic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Gun_2x2x2_Ballistic_C>();
 	}
 };
-static_assert(alignof(UBP_Gun_2x2x2_Ballistic_C) == 0x000010, "Wrong alignment on UBP_Gun_2x2x2_Ballistic_C");
-static_assert(sizeof(UBP_Gun_2x2x2_Ballistic_C) == 0x0002C0, "Wrong size on UBP_Gun_2x2x2_Ballistic_C");
+DUMPER7_ASSERTS_UBP_Gun_2x2x2_Ballistic_C;
 
-}
-
+SDK_NAMESPACE_END

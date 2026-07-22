@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagaraMeshTransforms.ENiagaraMeshTransforms
 // NumValues: 0x0005
@@ -25,5 +24,4 @@ enum class ENiagaraMeshTransforms : uint8
 	ENiagaraMeshTransforms_MAX               = 4,
 };
 
-}
-
+SDK_NAMESPACE_END

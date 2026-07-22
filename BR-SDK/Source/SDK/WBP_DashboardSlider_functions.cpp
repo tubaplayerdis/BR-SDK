@@ -14,8 +14,7 @@
 #include "WBP_DashboardSlider_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_DashboardSlider.WBP_DashboardSlider_C.ExecuteUbergraph_WBP_DashboardSlider
 // (Final, UbergraphFunction, HasDefaults)
@@ -76,5 +75,5 @@ void UWBP_DashboardSlider_C::UpdateIcon(int32 IconIndex)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

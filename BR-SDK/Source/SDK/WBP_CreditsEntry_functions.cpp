@@ -14,8 +14,7 @@
 #include "WBP_CreditsEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_CreditsEntry.WBP_CreditsEntry_C.ExecuteUbergraph_WBP_CreditsEntry
 // (Final, UbergraphFunction, HasDefaults)
@@ -72,5 +71,5 @@ void UWBP_CreditsEntry_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

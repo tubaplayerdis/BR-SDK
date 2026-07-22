@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UGCItem.WBP_UGCItem_C
 // 0x0010 (0x03A0 - 0x0390)
@@ -28,24 +27,24 @@ public:
 	class UBrickImage*                            AutoSaveIcon;                                      // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void UpdateItemWidget(bool bInIsSelected, bool bInIsLegacyFile, bool bInHasAutoSave, bool bInIsDedicatedAutoSave);
 	void ExecuteUbergraph_WBP_UGCItem(int32 EntryPoint);
+	void UpdateItemWidget(bool bInIsSelected, bool bInIsLegacyFile, bool bInHasAutoSave, bool bInIsDedicatedAutoSave);
+	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_UGCItem_C">();
+		BP_STATIC_CLASS_IMPL("WBP_UGCItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_UGCItem_C")
 	}
 	static class UWBP_UGCItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_UGCItem_C>();
 	}
 };
-static_assert(alignof(UWBP_UGCItem_C) == 0x000008, "Wrong alignment on UWBP_UGCItem_C");
-static_assert(sizeof(UWBP_UGCItem_C) == 0x0003A0, "Wrong size on UWBP_UGCItem_C");
-static_assert(offsetof(UWBP_UGCItem_C, UberGraphFrame) == 0x000390, "Member 'UWBP_UGCItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCItem_C, AutoSaveIcon) == 0x000398, "Member 'UWBP_UGCItem_C::AutoSaveIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_UGCItem_C;
 
-}
-
+SDK_NAMESPACE_END

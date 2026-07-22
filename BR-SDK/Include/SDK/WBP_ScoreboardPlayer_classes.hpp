@@ -17,8 +17,7 @@
 #include "AIModule_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C
 // 0x0030 (0x0320 - 0x02F0)
@@ -43,21 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ScoreboardPlayer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ScoreboardPlayer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ScoreboardPlayer_C")
 	}
 	static class UWBP_ScoreboardPlayer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ScoreboardPlayer_C>();
 	}
 };
-static_assert(alignof(UWBP_ScoreboardPlayer_C) == 0x000008, "Wrong alignment on UWBP_ScoreboardPlayer_C");
-static_assert(sizeof(UWBP_ScoreboardPlayer_C) == 0x000320, "Wrong size on UWBP_ScoreboardPlayer_C");
-static_assert(offsetof(UWBP_ScoreboardPlayer_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_ScoreboardPlayer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreboardPlayer_C, AdminIconImage) == 0x0002F8, "Member 'UWBP_ScoreboardPlayer_C::AdminIconImage' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreboardPlayer_C, AliveIcon) == 0x000300, "Member 'UWBP_ScoreboardPlayer_C::AliveIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreboardPlayer_C, DeathsIcon) == 0x000308, "Member 'UWBP_ScoreboardPlayer_C::DeathsIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreboardPlayer_C, KillsIcon) == 0x000310, "Member 'UWBP_ScoreboardPlayer_C::KillsIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreboardPlayer_C, ScoreIcon) == 0x000318, "Member 'UWBP_ScoreboardPlayer_C::ScoreIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ScoreboardPlayer_C;
 
-}
-
+SDK_NAMESPACE_END

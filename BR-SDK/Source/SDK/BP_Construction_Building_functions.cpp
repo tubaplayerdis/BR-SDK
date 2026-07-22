@@ -14,8 +14,7 @@
 #include "BP_Construction_Building_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_Construction_Building.BP_Construction_Building_C.BuildSide
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -76,5 +75,5 @@ void ABP_Construction_Building_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

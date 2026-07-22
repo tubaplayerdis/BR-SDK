@@ -16,8 +16,7 @@
 #include "GameLogoEnum_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Menu.WBP_Menu_C
 // 0x0030 (0x0320 - 0x02F0)
@@ -61,21 +60,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Menu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Menu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Menu_C")
 	}
 	static class UWBP_Menu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Menu_C>();
 	}
 };
-static_assert(alignof(UWBP_Menu_C) == 0x000008, "Wrong alignment on UWBP_Menu_C");
-static_assert(sizeof(UWBP_Menu_C) == 0x000320, "Wrong size on UWBP_Menu_C");
-static_assert(offsetof(UWBP_Menu_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_Menu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Menu_C, Logo) == 0x0002F8, "Member 'UWBP_Menu_C::Logo' has a wrong offset!");
-static_assert(offsetof(UWBP_Menu_C, MenuPageBorder) == 0x000300, "Member 'UWBP_Menu_C::MenuPageBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_Menu_C, TopPropertiesPanel) == 0x000308, "Member 'UWBP_Menu_C::TopPropertiesPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_Menu_C, VersionTextBlock) == 0x000310, "Member 'UWBP_Menu_C::VersionTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_Menu_C, PopupHandle) == 0x000318, "Member 'UWBP_Menu_C::PopupHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Menu_C;
 
-}
-
+SDK_NAMESPACE_END

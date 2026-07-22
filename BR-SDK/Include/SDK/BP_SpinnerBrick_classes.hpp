@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SpinnerBrick.BP_SpinnerBrick_C
 // 0x0000 (0x0190 - 0x0190)
@@ -23,15 +22,17 @@ class UBP_SpinnerBrick_C final : public USpinnerBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SpinnerBrick_C">();
+		BP_STATIC_CLASS_IMPL("BP_SpinnerBrick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SpinnerBrick_C")
 	}
 	static class UBP_SpinnerBrick_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_SpinnerBrick_C>();
 	}
 };
-static_assert(alignof(UBP_SpinnerBrick_C) == 0x000008, "Wrong alignment on UBP_SpinnerBrick_C");
-static_assert(sizeof(UBP_SpinnerBrick_C) == 0x000190, "Wrong size on UBP_SpinnerBrick_C");
+DUMPER7_ASSERTS_UBP_SpinnerBrick_C;
 
-}
-
+SDK_NAMESPACE_END

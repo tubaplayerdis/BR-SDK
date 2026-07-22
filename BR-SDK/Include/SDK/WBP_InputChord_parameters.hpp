@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InputChord.WBP_InputChord_C.ExecuteUbergraph_WBP_InputChord
 // 0x0048 (0x0048 - 0x0000)
@@ -35,18 +35,7 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue_1;    // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord) == 0x000008, "Wrong alignment on WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord");
-static_assert(sizeof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord) == 0x000048, "Wrong size on WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, EntryPoint) == 0x000000, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, K2Node_Event_Widget_2) == 0x000008, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::K2Node_Event_Widget_2' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, K2Node_Event_Widget_1) == 0x000010, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::K2Node_Event_Widget_1' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000018, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, K2Node_Event_Widget) == 0x000020, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, K2Node_Event_NewColorStyle) == 0x000028, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::K2Node_Event_NewColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, K2Node_Event_NewStyleState) == 0x000029, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::K2Node_Event_NewStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, K2Node_DynamicCast_AsWBP_Input_Key_Spacer) == 0x000030, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::K2Node_DynamicCast_AsWBP_Input_Key_Spacer' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord, CallFunc_AddChildToHorizontalBox_ReturnValue_1) == 0x000040, "Member 'WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord::CallFunc_AddChildToHorizontalBox_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputChord_C_ExecuteUbergraph_WBP_InputChord;
 
 // Function WBP_InputChord.WBP_InputChord_C.UpdateSpacerColorStyleAndStyleState
 // 0x0010 (0x0010 - 0x0000)
@@ -57,11 +46,7 @@ public:
 	EBrickUIColorStyle                            NewColorStyle;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            NewStyleState;                                     // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState) == 0x000008, "Wrong alignment on WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState");
-static_assert(sizeof(WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState) == 0x000010, "Wrong size on WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState");
-static_assert(offsetof(WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState, Widget) == 0x000000, "Member 'WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState, NewColorStyle) == 0x000008, "Member 'WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState::NewColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState, NewStyleState) == 0x000009, "Member 'WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState::NewStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState;
 
 // Function WBP_InputChord.WBP_InputChord_C.AddSpacerWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -70,9 +55,7 @@ struct WBP_InputChord_C_AddSpacerWidget final
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputChord_C_AddSpacerWidget) == 0x000008, "Wrong alignment on WBP_InputChord_C_AddSpacerWidget");
-static_assert(sizeof(WBP_InputChord_C_AddSpacerWidget) == 0x000008, "Wrong size on WBP_InputChord_C_AddSpacerWidget");
-static_assert(offsetof(WBP_InputChord_C_AddSpacerWidget, Widget) == 0x000000, "Member 'WBP_InputChord_C_AddSpacerWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputChord_C_AddSpacerWidget;
 
 // Function WBP_InputChord.WBP_InputChord_C.AddKeyWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -81,9 +64,7 @@ struct WBP_InputChord_C_AddKeyWidget final
 public:
 	class UInputKeyWidget*                        Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputChord_C_AddKeyWidget) == 0x000008, "Wrong alignment on WBP_InputChord_C_AddKeyWidget");
-static_assert(sizeof(WBP_InputChord_C_AddKeyWidget) == 0x000008, "Wrong size on WBP_InputChord_C_AddKeyWidget");
-static_assert(offsetof(WBP_InputChord_C_AddKeyWidget, Widget) == 0x000000, "Member 'WBP_InputChord_C_AddKeyWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputChord_C_AddKeyWidget;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

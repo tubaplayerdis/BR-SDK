@@ -14,8 +14,7 @@
 #include "WBP_ContextMenu_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ContextMenu.WBP_ContextMenu_C.ExecuteUbergraph_WBP_ContextMenu
 // (Final, UbergraphFunction, HasDefaults)
@@ -56,5 +55,5 @@ void UWBP_ContextMenu_C::UpdateTitleText(const class FText& InText)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

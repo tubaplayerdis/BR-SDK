@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ReuploadPopup.WBP_ReuploadPopup_C.ExecuteUbergraph_WBP_ReuploadPopup
 // 0x0050 (0x0050 - 0x0000)
@@ -31,16 +31,7 @@ public:
 	class UMenuButtonWidget*                      CallFunc_CreateViewInBrowserButton_ReturnValue;    // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMenuButtonWidget*                      CallFunc_CreateCancelButton_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup) == 0x000008, "Wrong alignment on WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup");
-static_assert(sizeof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup) == 0x000050, "Wrong size on WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup");
-static_assert(offsetof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup, EntryPoint) == 0x000000, "Member 'WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup, CallFunc_GetPopupContainer_ReturnValue) == 0x000018, "Member 'WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup::CallFunc_GetPopupContainer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup, CallFunc_CreateConfirmButton_ReturnValue) == 0x000030, "Member 'WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup::CallFunc_CreateConfirmButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup, CallFunc_CreateShowProfileButton_ReturnValue) == 0x000038, "Member 'WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup::CallFunc_CreateShowProfileButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup, CallFunc_CreateViewInBrowserButton_ReturnValue) == 0x000040, "Member 'WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup::CallFunc_CreateViewInBrowserButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup, CallFunc_CreateCancelButton_ReturnValue) == 0x000048, "Member 'WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup::CallFunc_CreateCancelButton_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ReuploadPopup_C_ExecuteUbergraph_WBP_ReuploadPopup;
 
 // Function WBP_ReuploadPopup.WBP_ReuploadPopup_C.GetPopupTitle
 // 0x00D8 (0x00D8 - 0x0000)
@@ -59,17 +50,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00B0(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C0(0x0018)()
 };
-static_assert(alignof(WBP_ReuploadPopup_C_GetPopupTitle) == 0x000008, "Wrong alignment on WBP_ReuploadPopup_C_GetPopupTitle");
-static_assert(sizeof(WBP_ReuploadPopup_C_GetPopupTitle) == 0x0000D8, "Wrong size on WBP_ReuploadPopup_C_GetPopupTitle");
-static_assert(offsetof(WBP_ReuploadPopup_C_GetPopupTitle, ReturnValue) == 0x000000, "Member 'WBP_ReuploadPopup_C_GetPopupTitle::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_GetPopupTitle, Temp_bool_Variable) == 0x000018, "Member 'WBP_ReuploadPopup_C_GetPopupTitle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_GetPopupTitle, Temp_text_Variable) == 0x000020, "Member 'WBP_ReuploadPopup_C_GetPopupTitle::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_GetPopupTitle, CallFunc_GetOriginalAuthorName_OutName) == 0x000038, "Member 'WBP_ReuploadPopup_C_GetPopupTitle::CallFunc_GetOriginalAuthorName_OutName' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_GetPopupTitle, CallFunc_GetOriginalAuthorName_ReturnValue) == 0x000050, "Member 'WBP_ReuploadPopup_C_GetPopupTitle::CallFunc_GetOriginalAuthorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_GetPopupTitle, K2Node_Select_Default) == 0x000058, "Member 'WBP_ReuploadPopup_C_GetPopupTitle::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_GetPopupTitle, K2Node_MakeStruct_FormatArgumentData) == 0x000070, "Member 'WBP_ReuploadPopup_C_GetPopupTitle::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_GetPopupTitle, K2Node_MakeArray_Array) == 0x0000B0, "Member 'WBP_ReuploadPopup_C_GetPopupTitle::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_ReuploadPopup_C_GetPopupTitle, CallFunc_Format_ReturnValue) == 0x0000C0, "Member 'WBP_ReuploadPopup_C_GetPopupTitle::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ReuploadPopup_C_GetPopupTitle;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

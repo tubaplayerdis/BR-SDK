@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FlapBrick.BP_FlapBrick_C
 // 0x0000 (0x01D8 - 0x01D8)
@@ -23,15 +22,17 @@ class UBP_FlapBrick_C final : public UFlapBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FlapBrick_C">();
+		BP_STATIC_CLASS_IMPL("BP_FlapBrick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FlapBrick_C")
 	}
 	static class UBP_FlapBrick_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FlapBrick_C>();
 	}
 };
-static_assert(alignof(UBP_FlapBrick_C) == 0x000008, "Wrong alignment on UBP_FlapBrick_C");
-static_assert(sizeof(UBP_FlapBrick_C) == 0x0001D8, "Wrong size on UBP_FlapBrick_C");
+DUMPER7_ASSERTS_UBP_FlapBrick_C;
 
-}
-
+SDK_NAMESPACE_END

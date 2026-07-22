@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ABP_Character_Fluppism.ABP_Character_Fluppism_C.ExecuteUbergraph_ABP_Character_Fluppism
 // 0x0060 (0x0060 - 0x0000)
@@ -45,29 +45,7 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_2;             // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MapRangeUnclamped_ReturnValue;            // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism) == 0x000008, "Wrong alignment on ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism");
-static_assert(sizeof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism) == 0x000060, "Wrong size on ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, EntryPoint) == 0x000000, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000004, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_GetOwningComponent_ReturnValue) == 0x000008, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_GetOwningComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_MakeRotator_ReturnValue) == 0x000010, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_BreakVector_X) == 0x00001C, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_BreakVector_Y) == 0x000020, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_BreakVector_Z) == 0x000024, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, K2Node_Event_DeltaTimeX) == 0x000028, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::K2Node_Event_DeltaTimeX' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x00002C, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_GetTimeSeconds_ReturnValue) == 0x000030, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_GetTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_Add_FloatFloat_ReturnValue) == 0x000034, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_RandomFloatInRange_ReturnValue) == 0x000038, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00003C, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000040, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_MultiplyByPi_ReturnValue) == 0x000044, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_MultiplyByPi_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_PerlinNoise1D_ReturnValue) == 0x000048, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_PerlinNoise1D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x00004C, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000050, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_Sin_ReturnValue) == 0x000054, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_Sin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x000058, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism, CallFunc_MapRangeUnclamped_ReturnValue) == 0x00005C, "Member 'ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism::CallFunc_MapRangeUnclamped_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Character_Fluppism_C_ExecuteUbergraph_ABP_Character_Fluppism;
 
 // Function ABP_Character_Fluppism.ABP_Character_Fluppism_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -76,9 +54,7 @@ struct ABP_Character_Fluppism_C_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_Character_Fluppism_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on ABP_Character_Fluppism_C_BlueprintUpdateAnimation");
-static_assert(sizeof(ABP_Character_Fluppism_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on ABP_Character_Fluppism_C_BlueprintUpdateAnimation");
-static_assert(offsetof(ABP_Character_Fluppism_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'ABP_Character_Fluppism_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Character_Fluppism_C_BlueprintUpdateAnimation;
 
 // Function ABP_Character_Fluppism.ABP_Character_Fluppism_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
@@ -87,9 +63,7 @@ struct ABP_Character_Fluppism_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ABP_Character_Fluppism_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_Character_Fluppism_C_AnimGraph");
-static_assert(sizeof(ABP_Character_Fluppism_C_AnimGraph) == 0x000010, "Wrong size on ABP_Character_Fluppism_C_AnimGraph");
-static_assert(offsetof(ABP_Character_Fluppism_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABP_Character_Fluppism_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Character_Fluppism_C_AnimGraph;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

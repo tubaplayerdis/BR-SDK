@@ -15,8 +15,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_PopupContainer.WBP_PopupContainer_C.ExecuteUbergraph_WBP_PopupContainer
 // 0x0058 (0x0058 - 0x0000)
@@ -57,39 +57,7 @@ public:
 	EBrickUIColorStyle                            K2Node_Event_InColorStyle;                         // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer) == 0x000008, "Wrong alignment on WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer");
-static_assert(sizeof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer) == 0x000058, "Wrong size on WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, EntryPoint) == 0x000000, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_byte_Variable) == 0x000004, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000008, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_bool_Variable) == 0x000010, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_byte_Variable_1) == 0x000011, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_byte_Variable_2) == 0x000012, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_bool_Variable_1) == 0x000013, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_byte_Variable_3) == 0x000014, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_byte_Variable_4) == 0x000015, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_bool_Variable_2) == 0x000016, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_byte_Variable_5) == 0x000017, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_byte_Variable_6) == 0x000018, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, K2Node_Event_Widget) == 0x000020, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, K2Node_Event_NewTitle) == 0x000028, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::K2Node_Event_NewTitle' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, CallFunc_AddChild_ReturnValue) == 0x000040, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, CallFunc_TextIsEmpty_ReturnValue) == 0x000048, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, K2Node_Select_Default) == 0x000049, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, K2Node_Event_bShowContent) == 0x00004A, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::K2Node_Event_bShowContent' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, K2Node_Event_SizeRule) == 0x00004B, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::K2Node_Event_SizeRule' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00004C, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00004D, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00004E, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, CallFunc_BooleanOR_ReturnValue) == 0x00004F, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000050, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, CallFunc_BooleanOR_ReturnValue_1) == 0x000051, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, K2Node_Select_Default_1) == 0x000052, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, K2Node_Select_Default_2) == 0x000053, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_byte_Variable_7) == 0x000054, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, Temp_bool_Variable_3) == 0x000055, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, K2Node_Event_InColorStyle) == 0x000056, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::K2Node_Event_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer, K2Node_Select_Default_3) == 0x000057, "Member 'WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer::K2Node_Select_Default_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PopupContainer_C_ExecuteUbergraph_WBP_PopupContainer;
 
 // Function WBP_PopupContainer.WBP_PopupContainer_C.UpdateColorStyle
 // 0x0001 (0x0001 - 0x0000)
@@ -98,9 +66,7 @@ struct WBP_PopupContainer_C_UpdateColorStyle final
 public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PopupContainer_C_UpdateColorStyle) == 0x000001, "Wrong alignment on WBP_PopupContainer_C_UpdateColorStyle");
-static_assert(sizeof(WBP_PopupContainer_C_UpdateColorStyle) == 0x000001, "Wrong size on WBP_PopupContainer_C_UpdateColorStyle");
-static_assert(offsetof(WBP_PopupContainer_C_UpdateColorStyle, InColorStyle) == 0x000000, "Member 'WBP_PopupContainer_C_UpdateColorStyle::InColorStyle' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PopupContainer_C_UpdateColorStyle;
 
 // Function WBP_PopupContainer.WBP_PopupContainer_C.UpdateContentSlot
 // 0x0002 (0x0002 - 0x0000)
@@ -110,10 +76,7 @@ public:
 	bool                                          bShowContent;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EPopupSizeRule                                SizeRule;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PopupContainer_C_UpdateContentSlot) == 0x000001, "Wrong alignment on WBP_PopupContainer_C_UpdateContentSlot");
-static_assert(sizeof(WBP_PopupContainer_C_UpdateContentSlot) == 0x000002, "Wrong size on WBP_PopupContainer_C_UpdateContentSlot");
-static_assert(offsetof(WBP_PopupContainer_C_UpdateContentSlot, bShowContent) == 0x000000, "Member 'WBP_PopupContainer_C_UpdateContentSlot::bShowContent' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_UpdateContentSlot, SizeRule) == 0x000001, "Member 'WBP_PopupContainer_C_UpdateContentSlot::SizeRule' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PopupContainer_C_UpdateContentSlot;
 
 // Function WBP_PopupContainer.WBP_PopupContainer_C.UpdateTitleText
 // 0x0018 (0x0018 - 0x0000)
@@ -122,9 +85,7 @@ struct WBP_PopupContainer_C_UpdateTitleText final
 public:
 	class FText                                   NewTitle;                                          // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_PopupContainer_C_UpdateTitleText) == 0x000008, "Wrong alignment on WBP_PopupContainer_C_UpdateTitleText");
-static_assert(sizeof(WBP_PopupContainer_C_UpdateTitleText) == 0x000018, "Wrong size on WBP_PopupContainer_C_UpdateTitleText");
-static_assert(offsetof(WBP_PopupContainer_C_UpdateTitleText, NewTitle) == 0x000000, "Member 'WBP_PopupContainer_C_UpdateTitleText::NewTitle' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PopupContainer_C_UpdateTitleText;
 
 // Function WBP_PopupContainer.WBP_PopupContainer_C.AddPopupWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -133,9 +94,7 @@ struct WBP_PopupContainer_C_AddPopupWidget final
 public:
 	class UPopupWidget*                           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PopupContainer_C_AddPopupWidget) == 0x000008, "Wrong alignment on WBP_PopupContainer_C_AddPopupWidget");
-static_assert(sizeof(WBP_PopupContainer_C_AddPopupWidget) == 0x000008, "Wrong size on WBP_PopupContainer_C_AddPopupWidget");
-static_assert(offsetof(WBP_PopupContainer_C_AddPopupWidget, Widget) == 0x000000, "Member 'WBP_PopupContainer_C_AddPopupWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PopupContainer_C_AddPopupWidget;
 
 // Function WBP_PopupContainer.WBP_PopupContainer_C.CreateConfirmButton
 // 0x0020 (0x0020 - 0x0000)
@@ -146,11 +105,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UMenuButtonWidget*                      CallFunc_CreateConfirmButton_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PopupContainer_C_CreateConfirmButton) == 0x000008, "Wrong alignment on WBP_PopupContainer_C_CreateConfirmButton");
-static_assert(sizeof(WBP_PopupContainer_C_CreateConfirmButton) == 0x000020, "Wrong size on WBP_PopupContainer_C_CreateConfirmButton");
-static_assert(offsetof(WBP_PopupContainer_C_CreateConfirmButton, ReturnValue) == 0x000000, "Member 'WBP_PopupContainer_C_CreateConfirmButton::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_CreateConfirmButton, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_PopupContainer_C_CreateConfirmButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_CreateConfirmButton, CallFunc_CreateConfirmButton_ReturnValue) == 0x000018, "Member 'WBP_PopupContainer_C_CreateConfirmButton::CallFunc_CreateConfirmButton_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PopupContainer_C_CreateConfirmButton;
 
 // Function WBP_PopupContainer.WBP_PopupContainer_C.CreateCancelButton
 // 0x0020 (0x0020 - 0x0000)
@@ -161,11 +116,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UMenuButtonWidget*                      CallFunc_CreateCancelButton_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PopupContainer_C_CreateCancelButton) == 0x000008, "Wrong alignment on WBP_PopupContainer_C_CreateCancelButton");
-static_assert(sizeof(WBP_PopupContainer_C_CreateCancelButton) == 0x000020, "Wrong size on WBP_PopupContainer_C_CreateCancelButton");
-static_assert(offsetof(WBP_PopupContainer_C_CreateCancelButton, ReturnValue) == 0x000000, "Member 'WBP_PopupContainer_C_CreateCancelButton::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_CreateCancelButton, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_PopupContainer_C_CreateCancelButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PopupContainer_C_CreateCancelButton, CallFunc_CreateCancelButton_ReturnValue) == 0x000018, "Member 'WBP_PopupContainer_C_CreateCancelButton::CallFunc_CreateCancelButton_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PopupContainer_C_CreateCancelButton;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

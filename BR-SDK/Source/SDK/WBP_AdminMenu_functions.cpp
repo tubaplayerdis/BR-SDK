@@ -14,8 +14,7 @@
 #include "WBP_AdminMenu_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_AdminMenu.WBP_AdminMenu_C.ExecuteUbergraph_WBP_AdminMenu
 // (Final, UbergraphFunction)
@@ -90,5 +89,5 @@ void UWBP_AdminMenu_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Pants.BP_Pants_C
 // 0x0000 (0x02A8 - 0x02A8)
@@ -23,15 +22,17 @@ class ABP_Pants_C : public AWearable
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Pants_C">();
+		BP_STATIC_CLASS_IMPL("BP_Pants_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Pants_C")
 	}
 	static class ABP_Pants_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Pants_C>();
 	}
 };
-static_assert(alignof(ABP_Pants_C) == 0x000008, "Wrong alignment on ABP_Pants_C");
-static_assert(sizeof(ABP_Pants_C) == 0x0002A8, "Wrong size on ABP_Pants_C");
+DUMPER7_ASSERTS_ABP_Pants_C;
 
-}
-
+SDK_NAMESPACE_END

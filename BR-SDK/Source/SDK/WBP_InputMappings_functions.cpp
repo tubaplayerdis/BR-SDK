@@ -14,8 +14,7 @@
 #include "WBP_InputMappings_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InputMappings.WBP_InputMappings_C.ExecuteUbergraph_WBP_InputMappings
 // (Final, UbergraphFunction)
@@ -84,5 +83,5 @@ void UWBP_InputMappings_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

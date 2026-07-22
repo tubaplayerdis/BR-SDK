@@ -14,8 +14,7 @@
 #include "ABP_RC_Vehicle_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ABP_RC_Vehicle.ABP_RC_Vehicle_C.ExecuteUbergraph_ABP_RC_Vehicle
 // (Final, UbergraphFunction)
@@ -77,5 +76,5 @@ void UABP_RC_Vehicle_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
-}
 
+SDK_NAMESPACE_END

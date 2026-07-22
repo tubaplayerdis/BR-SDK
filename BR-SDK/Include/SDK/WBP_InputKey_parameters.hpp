@@ -14,8 +14,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InputKey.WBP_InputKey_C.ExecuteUbergraph_WBP_InputKey
 // 0x0048 (0x0048 - 0x0000)
@@ -39,22 +39,7 @@ public:
 	struct FBrickUIIconSlot                       K2Node_MakeStruct_BrickUIIconSlot;                 // 0x003C(0x0008)(NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey) == 0x000008, "Wrong alignment on WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey");
-static_assert(sizeof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey) == 0x000048, "Wrong size on WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, EntryPoint) == 0x000000, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, Temp_bool_Variable) == 0x000004, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, Temp_byte_Variable) == 0x000006, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, Temp_byte_Variable_1) == 0x000007, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, Temp_bool_Variable_1) == 0x000008, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, Temp_byte_Variable_2) == 0x000009, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, Temp_byte_Variable_3) == 0x00000A, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, K2Node_Select_Default) == 0x00000B, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, K2Node_Event_DisplayInfo) == 0x000010, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::K2Node_Event_DisplayInfo' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, K2Node_Event_bIsGamepadKey) == 0x000038, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::K2Node_Event_bIsGamepadKey' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, K2Node_Select_Default_1) == 0x000039, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, K2Node_MakeStruct_BrickUIIconSlot) == 0x00003C, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000044, "Member 'WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputKey_C_ExecuteUbergraph_WBP_InputKey;
 
 // Function WBP_InputKey.WBP_InputKey_C.UpdateKey
 // 0x0030 (0x0030 - 0x0000)
@@ -64,10 +49,7 @@ public:
 	struct FKeyDisplayTableRow                    DisplayInfo;                                       // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          bIsGamepadKey;                                     // 0x0028(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InputKey_C_UpdateKey) == 0x000008, "Wrong alignment on WBP_InputKey_C_UpdateKey");
-static_assert(sizeof(WBP_InputKey_C_UpdateKey) == 0x000030, "Wrong size on WBP_InputKey_C_UpdateKey");
-static_assert(offsetof(WBP_InputKey_C_UpdateKey, DisplayInfo) == 0x000000, "Member 'WBP_InputKey_C_UpdateKey::DisplayInfo' has a wrong offset!");
-static_assert(offsetof(WBP_InputKey_C_UpdateKey, bIsGamepadKey) == 0x000028, "Member 'WBP_InputKey_C_UpdateKey::bIsGamepadKey' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputKey_C_UpdateKey;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

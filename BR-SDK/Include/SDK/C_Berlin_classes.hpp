@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass C_Berlin.C_Berlin_C
 // 0x0000 (0x0050 - 0x0050)
@@ -23,15 +22,17 @@ class UC_Berlin_C final : public UBrickPattern
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"C_Berlin_C">();
+		BP_STATIC_CLASS_IMPL("C_Berlin_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"C_Berlin_C")
 	}
 	static class UC_Berlin_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UC_Berlin_C>();
 	}
 };
-static_assert(alignof(UC_Berlin_C) == 0x000008, "Wrong alignment on UC_Berlin_C");
-static_assert(sizeof(UC_Berlin_C) == 0x000050, "Wrong size on UC_Berlin_C");
+DUMPER7_ASSERTS_UC_Berlin_C;
 
-}
-
+SDK_NAMESPACE_END

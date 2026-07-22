@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ConnectorSpacingProperty.WBP_ConnectorSpacingProperty_C
 // 0x0028 (0x02A8 - 0x0280)
@@ -42,20 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ConnectorSpacingProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ConnectorSpacingProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ConnectorSpacingProperty_C")
 	}
 	static class UWBP_ConnectorSpacingProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ConnectorSpacingProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_ConnectorSpacingProperty_C) == 0x000008, "Wrong alignment on UWBP_ConnectorSpacingProperty_C");
-static_assert(sizeof(UWBP_ConnectorSpacingProperty_C) == 0x0002A8, "Wrong size on UWBP_ConnectorSpacingProperty_C");
-static_assert(offsetof(UWBP_ConnectorSpacingProperty_C, UberGraphFrame) == 0x000280, "Member 'UWBP_ConnectorSpacingProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ConnectorSpacingProperty_C, GridPanel) == 0x000288, "Member 'UWBP_ConnectorSpacingProperty_C::GridPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_ConnectorSpacingProperty_C, AxisWidgets) == 0x000290, "Member 'UWBP_ConnectorSpacingProperty_C::AxisWidgets' has a wrong offset!");
-static_assert(offsetof(UWBP_ConnectorSpacingProperty_C, ConnectorSpacing) == 0x0002A0, "Member 'UWBP_ConnectorSpacingProperty_C::ConnectorSpacing' has a wrong offset!");
-static_assert(offsetof(UWBP_ConnectorSpacingProperty_C, NumAxesUsed) == 0x0002A4, "Member 'UWBP_ConnectorSpacingProperty_C::NumAxesUsed' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ConnectorSpacingProperty_C;
 
-}
-
+SDK_NAMESPACE_END

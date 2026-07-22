@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_KickPlayerPopup.WBP_KickPlayerPopup_C.ExecuteUbergraph_WBP_KickPlayerPopup
 // 0x0048 (0x0048 - 0x0000)
@@ -32,18 +32,7 @@ public:
 	bool                                          K2Node_Event_bCanRevoke;                           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_bNewCanConfirm;                       // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup) == 0x000008, "Wrong alignment on WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup");
-static_assert(sizeof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup) == 0x000048, "Wrong size on WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, EntryPoint) == 0x000000, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, CallFunc_GetPopupContainer_ReturnValue) == 0x000008, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::CallFunc_GetPopupContainer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, K2Node_Event_bNewLoading) == 0x000010, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::K2Node_Event_bNewLoading' has a wrong offset!");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, CallFunc_CreateCancelButton_ReturnValue) == 0x000018, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::CallFunc_CreateCancelButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, CallFunc_CreateConfirmButton_ReturnValue) == 0x000020, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::CallFunc_CreateConfirmButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, CallFunc_CreateButton_ReturnValue) == 0x000038, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, K2Node_Event_bCanRevoke) == 0x000040, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::K2Node_Event_bCanRevoke' has a wrong offset!");
-static_assert(offsetof(WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup, K2Node_Event_bNewCanConfirm) == 0x000041, "Member 'WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup::K2Node_Event_bNewCanConfirm' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_KickPlayerPopup_C_ExecuteUbergraph_WBP_KickPlayerPopup;
 
 // Function WBP_KickPlayerPopup.WBP_KickPlayerPopup_C.UpdateCanConfirmKick
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +41,7 @@ struct WBP_KickPlayerPopup_C_UpdateCanConfirmKick final
 public:
 	bool                                          bNewCanConfirm;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_KickPlayerPopup_C_UpdateCanConfirmKick) == 0x000001, "Wrong alignment on WBP_KickPlayerPopup_C_UpdateCanConfirmKick");
-static_assert(sizeof(WBP_KickPlayerPopup_C_UpdateCanConfirmKick) == 0x000001, "Wrong size on WBP_KickPlayerPopup_C_UpdateCanConfirmKick");
-static_assert(offsetof(WBP_KickPlayerPopup_C_UpdateCanConfirmKick, bNewCanConfirm) == 0x000000, "Member 'WBP_KickPlayerPopup_C_UpdateCanConfirmKick::bNewCanConfirm' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_KickPlayerPopup_C_UpdateCanConfirmKick;
 
 // Function WBP_KickPlayerPopup.WBP_KickPlayerPopup_C.UpdateCanRevokeKick
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +50,7 @@ struct WBP_KickPlayerPopup_C_UpdateCanRevokeKick final
 public:
 	bool                                          bCanRevoke;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_KickPlayerPopup_C_UpdateCanRevokeKick) == 0x000001, "Wrong alignment on WBP_KickPlayerPopup_C_UpdateCanRevokeKick");
-static_assert(sizeof(WBP_KickPlayerPopup_C_UpdateCanRevokeKick) == 0x000001, "Wrong size on WBP_KickPlayerPopup_C_UpdateCanRevokeKick");
-static_assert(offsetof(WBP_KickPlayerPopup_C_UpdateCanRevokeKick, bCanRevoke) == 0x000000, "Member 'WBP_KickPlayerPopup_C_UpdateCanRevokeKick::bCanRevoke' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_KickPlayerPopup_C_UpdateCanRevokeKick;
 
 // Function WBP_KickPlayerPopup.WBP_KickPlayerPopup_C.UpdateIsLoadingKick
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +59,7 @@ struct WBP_KickPlayerPopup_C_UpdateIsLoadingKick final
 public:
 	bool                                          bNewLoading;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_KickPlayerPopup_C_UpdateIsLoadingKick) == 0x000001, "Wrong alignment on WBP_KickPlayerPopup_C_UpdateIsLoadingKick");
-static_assert(sizeof(WBP_KickPlayerPopup_C_UpdateIsLoadingKick) == 0x000001, "Wrong size on WBP_KickPlayerPopup_C_UpdateIsLoadingKick");
-static_assert(offsetof(WBP_KickPlayerPopup_C_UpdateIsLoadingKick, bNewLoading) == 0x000000, "Member 'WBP_KickPlayerPopup_C_UpdateIsLoadingKick::bNewLoading' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_KickPlayerPopup_C_UpdateIsLoadingKick;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

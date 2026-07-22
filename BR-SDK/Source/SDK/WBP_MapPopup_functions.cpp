@@ -14,8 +14,7 @@
 #include "WBP_MapPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_MapPopup.WBP_MapPopup_C.ExecuteUbergraph_WBP_MapPopup
 // (Final, UbergraphFunction)
@@ -78,5 +77,5 @@ void UWBP_MapPopup_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

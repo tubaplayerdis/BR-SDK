@@ -16,8 +16,7 @@
 #include "AIModule_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_GameOverlay.WBP_GameOverlay_C
 // 0x0038 (0x0350 - 0x0318)
@@ -33,49 +32,44 @@ public:
 	class UNamedSlot*                             MatchTimerSlot;                                    // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AddHUDNotification(class UHUDNotificationWidget* Widget, int32 Index_0);
-	void UpdateSlomoNotification(class UHUDNotificationWidget* Widget, float SlomoSpeed, bool bInvertSpeed, bool bSlomoEnabled, bool bIsPaused);
-	void UpdateMoneyNotification(class UHUDNotificationWidget* Widget, float NewAmount, float AmountAdded);
-	void UpdateFreeCamNotification(class UHUDNotificationWidget* Widget, bool bIsInFreeCam, EFreeCamMode InFreeCamMode, bool bIsFixedCam);
-	void UpdateThumbnailNotification(class UHUDNotificationWidget* Widget);
-	void AddMatchTimerWidget(class UMatchTimerWidget* Widget);
-	void UpdateVehicleCameraNotification(class UHUDNotificationWidget* Widget, const class FText& CameraDisplayName);
-	void UpdateVehicleDownloadNotification(class UHUDNotificationWidget* Widget, const class FText& VehicleDisplayName, float Progress);
-	void AddInputHelpWidget(class UInputHelpWidget* Widget);
-	void AddChatWidget(class UChatWidget* Widget);
-	void UpdateSaveNotification(class UHUDNotificationWidget* Widget, bool bSuccess, bool bIsAutoSave);
-	void UpdateCameraSpeedNotification(class UHUDNotificationWidget* Widget, float NewSpeedRatio, float NewMaxSpeed);
-	void UpdateCameraZoomNotification(class UHUDNotificationWidget* Widget, float NewZoomRatio);
-	void AddMatchStateWidget(class UMatchStateWidget* Widget);
-	void AddTeamScoreWidget(class UTeamScoreWidget* Widget, ETeamAttitude TeamAttitude);
-	void UpdateHUDVisibilityNotification(class UHUDNotificationWidget* Widget, EHUDVisibility NewVisibility);
-	void UpdateCameraModeNotification(class UHUDNotificationWidget* Widget, ECameraMode NewMode);
-	void UpdateProjectileCameraNotification(class UHUDNotificationWidget* Widget, bool bNewEnabled);
-	void UpdateRestartFailedNotification(class UHUDNotificationWidget* Widget, const class FText& Message);
-	void UpdateRespawnDelayNotification(class UHUDNotificationWidget* Widget, float Remaining);
-	void UpdateVehicleSeatNotification(class UHUDNotificationWidget* Widget, const class FText& SeatDisplayName);
-	void UpdateVehicleConstructionNotification(class UHUDNotificationWidget* Widget, const class FText& VehicleDisplayName, float Progress);
+	void AddHUDNotification(class UHUDNotificationWidget* Widget_AddHUDNotification, int32 Index_AddHUDNotification);
+	void UpdateSlomoNotification(class UHUDNotificationWidget* Widget_UpdateSlomoNotification, float SlomoSpeed_UpdateSlomoNotification, bool bInvertSpeed_UpdateSlomoNotification, bool bSlomoEnabled_UpdateSlomoNotification, bool bIsPaused_UpdateSlomoNotification);
+	void UpdateMoneyNotification(class UHUDNotificationWidget* Widget_UpdateMoneyNotification, float NewAmount_UpdateMoneyNotification, float AmountAdded_UpdateMoneyNotification);
+	void UpdateFreeCamNotification(class UHUDNotificationWidget* Widget_UpdateFreeCamNotification, bool bIsInFreeCam_UpdateFreeCamNotification, EFreeCamMode InFreeCamMode_UpdateFreeCamNotification, bool bIsFixedCam_UpdateFreeCamNotification);
+	void UpdateThumbnailNotification(class UHUDNotificationWidget* Widget_UpdateThumbnailNotification);
+	void AddMatchTimerWidget(class UMatchTimerWidget* Widget_AddMatchTimerWidget);
+	void UpdateVehicleCameraNotification(class UHUDNotificationWidget* Widget_UpdateVehicleCameraNotification, const class FText& CameraDisplayName_UpdateVehicleCameraNotification);
+	void UpdateVehicleDownloadNotification(class UHUDNotificationWidget* Widget_UpdateVehicleDownloadNotification, const class FText& VehicleDisplayName_UpdateVehicleDownloadNotification, float Progress_UpdateVehicleDownloadNotification);
+	void AddInputHelpWidget(class UInputHelpWidget* Widget_AddInputHelpWidget);
+	void AddChatWidget(class UChatWidget* Widget_AddChatWidget);
+	void UpdateSaveNotification(class UHUDNotificationWidget* Widget_UpdateSaveNotification, bool bSuccess_UpdateSaveNotification, bool bIsAutoSave_UpdateSaveNotification);
+	void UpdateCameraSpeedNotification(class UHUDNotificationWidget* Widget_UpdateCameraSpeedNotification, float NewSpeedRatio_UpdateCameraSpeedNotification, float NewMaxSpeed_UpdateCameraSpeedNotification);
+	void UpdateCameraZoomNotification(class UHUDNotificationWidget* Widget_UpdateCameraZoomNotification, float NewZoomRatio_UpdateCameraZoomNotification);
+	void AddMatchStateWidget(class UMatchStateWidget* Widget_AddMatchStateWidget);
+	void AddTeamScoreWidget(class UTeamScoreWidget* Widget_AddTeamScoreWidget, ETeamAttitude TeamAttitude_AddTeamScoreWidget);
+	void UpdateHUDVisibilityNotification(class UHUDNotificationWidget* Widget_UpdateHUDVisibilityNotification, EHUDVisibility NewVisibility_UpdateHUDVisibilityNotification);
+	void UpdateCameraModeNotification(class UHUDNotificationWidget* Widget_UpdateCameraModeNotification, ECameraMode NewMode_UpdateCameraModeNotification);
+	void UpdateProjectileCameraNotification(class UHUDNotificationWidget* Widget_UpdateProjectileCameraNotification, bool bNewEnabled_UpdateProjectileCameraNotification);
+	void UpdateRestartFailedNotification(class UHUDNotificationWidget* Widget_UpdateRestartFailedNotification, const class FText& Message_UpdateRestartFailedNotification);
+	void UpdateRespawnDelayNotification(class UHUDNotificationWidget* Widget_UpdateRespawnDelayNotification, float Remaining_UpdateRespawnDelayNotification);
+	void UpdateVehicleSeatNotification(class UHUDNotificationWidget* Widget_UpdateVehicleSeatNotification, const class FText& SeatDisplayName_UpdateVehicleSeatNotification);
+	void UpdateVehicleConstructionNotification(class UHUDNotificationWidget* Widget_UpdateVehicleConstructionNotification, const class FText& VehicleDisplayName_UpdateVehicleConstructionNotification, float Progress_UpdateVehicleConstructionNotification);
 	void ExecuteUbergraph_WBP_GameOverlay(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GameOverlay_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GameOverlay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GameOverlay_C")
 	}
 	static class UWBP_GameOverlay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GameOverlay_C>();
 	}
 };
-static_assert(alignof(UWBP_GameOverlay_C) == 0x000008, "Wrong alignment on UWBP_GameOverlay_C");
-static_assert(sizeof(UWBP_GameOverlay_C) == 0x000350, "Wrong size on UWBP_GameOverlay_C");
-static_assert(offsetof(UWBP_GameOverlay_C, UberGraphFrame) == 0x000318, "Member 'UWBP_GameOverlay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GameOverlay_C, FriendlyTeamsBox) == 0x000320, "Member 'UWBP_GameOverlay_C::FriendlyTeamsBox' has a wrong offset!");
-static_assert(offsetof(UWBP_GameOverlay_C, HostileTeamsBox) == 0x000328, "Member 'UWBP_GameOverlay_C::HostileTeamsBox' has a wrong offset!");
-static_assert(offsetof(UWBP_GameOverlay_C, HUDNotificationsBox) == 0x000330, "Member 'UWBP_GameOverlay_C::HUDNotificationsBox' has a wrong offset!");
-static_assert(offsetof(UWBP_GameOverlay_C, MainCanvasPanel) == 0x000338, "Member 'UWBP_GameOverlay_C::MainCanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_GameOverlay_C, MatchStateBox) == 0x000340, "Member 'UWBP_GameOverlay_C::MatchStateBox' has a wrong offset!");
-static_assert(offsetof(UWBP_GameOverlay_C, MatchTimerSlot) == 0x000348, "Member 'UWBP_GameOverlay_C::MatchTimerSlot' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GameOverlay_C;
 
-}
-
+SDK_NAMESPACE_END

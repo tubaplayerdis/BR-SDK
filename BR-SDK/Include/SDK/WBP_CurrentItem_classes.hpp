@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_CurrentItem.WBP_CurrentItem_C
 // 0x0040 (0x02A8 - 0x0268)
@@ -34,36 +33,30 @@ public:
 	class UBrickTextBlock*                        NameTextBlock;                                     // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateFireMode(const EFireMode NewMode, const bool bHasFirearm);
-	void UpdateAmmoType(EAmmoType NewType);
-	void UpdateAmmo(int32 Current, int32 Capacity, int32 Ammo);
-	void FadeIn();
-	void FadeOut(bool bImmediate);
-	void UpdateItemName(const class FText& NewName);
-	void BndEvt__WBP_CurrentItem_FadingPanel_K2Node_ComponentBoundEvent_0_OnFadedOut__DelegateSignature();
-	void PreConstruct(bool IsDesignTime);
 	void ExecuteUbergraph_WBP_CurrentItem(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void BndEvt__WBP_CurrentItem_FadingPanel_K2Node_ComponentBoundEvent_0_OnFadedOut__DelegateSignature();
+	void UpdateItemName(const class FText& NewName);
+	void FadeOut(bool bImmediate);
+	void FadeIn();
+	void UpdateAmmo(int32 Current, int32 Capacity, int32 Ammo);
+	void UpdateAmmoType(EAmmoType NewType);
+	void UpdateFireMode(const EFireMode NewMode, const bool bHasFirearm);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CurrentItem_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CurrentItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CurrentItem_C")
 	}
 	static class UWBP_CurrentItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CurrentItem_C>();
 	}
 };
-static_assert(alignof(UWBP_CurrentItem_C) == 0x000008, "Wrong alignment on UWBP_CurrentItem_C");
-static_assert(sizeof(UWBP_CurrentItem_C) == 0x0002A8, "Wrong size on UWBP_CurrentItem_C");
-static_assert(offsetof(UWBP_CurrentItem_C, UberGraphFrame) == 0x000268, "Member 'UWBP_CurrentItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CurrentItem_C, AmmoSlider) == 0x000270, "Member 'UWBP_CurrentItem_C::AmmoSlider' has a wrong offset!");
-static_assert(offsetof(UWBP_CurrentItem_C, AmmoTypeBorder) == 0x000278, "Member 'UWBP_CurrentItem_C::AmmoTypeBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_CurrentItem_C, AmmoTypeControlHint) == 0x000280, "Member 'UWBP_CurrentItem_C::AmmoTypeControlHint' has a wrong offset!");
-static_assert(offsetof(UWBP_CurrentItem_C, FadingPanel) == 0x000288, "Member 'UWBP_CurrentItem_C::FadingPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_CurrentItem_C, FireModeBorder) == 0x000290, "Member 'UWBP_CurrentItem_C::FireModeBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_CurrentItem_C, FireModeControlHint) == 0x000298, "Member 'UWBP_CurrentItem_C::FireModeControlHint' has a wrong offset!");
-static_assert(offsetof(UWBP_CurrentItem_C, NameTextBlock) == 0x0002A0, "Member 'UWBP_CurrentItem_C::NameTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CurrentItem_C;
 
-}
-
+SDK_NAMESPACE_END

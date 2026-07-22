@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BrickEditor.WBP_BrickEditor_C
 // 0x0068 (0x0390 - 0x0328)
@@ -38,42 +37,31 @@ public:
 	class UWBP_InputActionList_C*                 WBP_InputActionList;                               // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	struct FEventReply OnBorderMouseEvent(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	bool AddGameOverlayWidget(class UGameOverlayWidget* Widget);
-	void UpdateCanPlaceObjects(bool bNewCanPlace);
-	void UpdateSelection(const class FText& SelectionName, bool bAnythingSelected);
-	void BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void AddMirrorModeWidget(class UBrickEditorMirrorAxisWidget* Widget, int32 Index_0);
-	void UpdateCanClearPlacableFilter(bool bNewCanClear);
-	void UpdateEditorUIScale(float NewScale);
 	void ExecuteUbergraph_WBP_BrickEditor(int32 EntryPoint);
+	void UpdateEditorUIScale(float NewScale);
+	void UpdateCanClearPlacableFilter(bool bNewCanClear);
+	void AddMirrorModeWidget(class UBrickEditorMirrorAxisWidget* Widget, int32 Index_0);
+	void BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
+	void UpdateSelection(const class FText& SelectionName, bool bAnythingSelected);
+	void UpdateCanPlaceObjects(bool bNewCanPlace);
+	bool AddGameOverlayWidget(class UGameOverlayWidget* Widget);
+	struct FEventReply OnBorderMouseEvent(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BrickEditor_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BrickEditor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BrickEditor_C")
 	}
 	static class UWBP_BrickEditor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BrickEditor_C>();
 	}
 };
-static_assert(alignof(UWBP_BrickEditor_C) == 0x000008, "Wrong alignment on UWBP_BrickEditor_C");
-static_assert(sizeof(UWBP_BrickEditor_C) == 0x000390, "Wrong size on UWBP_BrickEditor_C");
-static_assert(offsetof(UWBP_BrickEditor_C, UberGraphFrame) == 0x000328, "Member 'UWBP_BrickEditor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, BrickScrollBox_0) == 0x000330, "Member 'UWBP_BrickEditor_C::BrickScrollBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, BrickScrollBox_1) == 0x000338, "Member 'UWBP_BrickEditor_C::BrickScrollBox_1' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, ClearFilterButton) == 0x000340, "Member 'UWBP_BrickEditor_C::ClearFilterButton' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, ClearFilterImage) == 0x000348, "Member 'UWBP_BrickEditor_C::ClearFilterImage' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, LeftBorder) == 0x000350, "Member 'UWBP_BrickEditor_C::LeftBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, RightBorder) == 0x000358, "Member 'UWBP_BrickEditor_C::RightBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, ScaleBox_0) == 0x000360, "Member 'UWBP_BrickEditor_C::ScaleBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, SelectionBorder) == 0x000368, "Member 'UWBP_BrickEditor_C::SelectionBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, SelectionTextBlock) == 0x000370, "Member 'UWBP_BrickEditor_C::SelectionTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, ViewportBottomBox) == 0x000378, "Member 'UWBP_BrickEditor_C::ViewportBottomBox' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, ViewportCanvasPanel) == 0x000380, "Member 'UWBP_BrickEditor_C::ViewportCanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditor_C, WBP_InputActionList) == 0x000388, "Member 'UWBP_BrickEditor_C::WBP_InputActionList' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BrickEditor_C;
 
-}
-
+SDK_NAMESPACE_END

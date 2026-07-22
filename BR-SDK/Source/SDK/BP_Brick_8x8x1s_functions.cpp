@@ -14,8 +14,7 @@
 #include "BP_Brick_8x8x1s_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_Brick_8x8x1s.BP_Brick_8x8x1s_C.ExecuteUbergraph_BP_Brick_8x8x1s
 // (Final, UbergraphFunction)
@@ -70,5 +69,5 @@ void UBP_Brick_8x8x1s_C::ReceiveBeginPlay_1()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

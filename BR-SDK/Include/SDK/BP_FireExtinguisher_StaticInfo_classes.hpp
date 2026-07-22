@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FireExtinguisher_StaticInfo.BP_FireExtinguisher_StaticInfo_C
 // 0x0000 (0x04E0 - 0x04E0)
@@ -23,15 +22,17 @@ class UBP_FireExtinguisher_StaticInfo_C final : public UFireExtinguisherStaticIn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FireExtinguisher_StaticInfo_C">();
+		BP_STATIC_CLASS_IMPL("BP_FireExtinguisher_StaticInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FireExtinguisher_StaticInfo_C")
 	}
 	static class UBP_FireExtinguisher_StaticInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FireExtinguisher_StaticInfo_C>();
 	}
 };
-static_assert(alignof(UBP_FireExtinguisher_StaticInfo_C) == 0x000010, "Wrong alignment on UBP_FireExtinguisher_StaticInfo_C");
-static_assert(sizeof(UBP_FireExtinguisher_StaticInfo_C) == 0x0004E0, "Wrong size on UBP_FireExtinguisher_StaticInfo_C");
+DUMPER7_ASSERTS_UBP_FireExtinguisher_StaticInfo_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_GenericProperty_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_GenericProperty.WBP_GenericProperty_C.ExecuteUbergraph_WBP_GenericProperty
 // (Final, UbergraphFunction, HasDefaults)
@@ -140,5 +139,5 @@ void UWBP_GenericProperty_C::UpdateText(const class FText& Text, const ETextJust
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

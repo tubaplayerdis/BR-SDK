@@ -14,8 +14,7 @@
 #include "WBP_InputActionList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InputActionList.WBP_InputActionList_C.ExecuteUbergraph_WBP_InputActionList
 // (Final, UbergraphFunction)
@@ -90,5 +89,5 @@ void UWBP_InputActionList_C::PreConstruct(bool IsDesignTime)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

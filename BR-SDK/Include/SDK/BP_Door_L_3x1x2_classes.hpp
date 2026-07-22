@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Door_L_3x1x2.BP_Door_L_3x1x2_C
 // 0x0000 (0x0190 - 0x0190)
@@ -23,15 +22,17 @@ class UBP_Door_L_3x1x2_C final : public UDoorBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Door_L_3x1x2_C">();
+		BP_STATIC_CLASS_IMPL("BP_Door_L_3x1x2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Door_L_3x1x2_C")
 	}
 	static class UBP_Door_L_3x1x2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Door_L_3x1x2_C>();
 	}
 };
-static_assert(alignof(UBP_Door_L_3x1x2_C) == 0x000008, "Wrong alignment on UBP_Door_L_3x1x2_C");
-static_assert(sizeof(UBP_Door_L_3x1x2_C) == 0x000190, "Wrong size on UBP_Door_L_3x1x2_C");
+DUMPER7_ASSERTS_UBP_Door_L_3x1x2_C;
 
-}
-
+SDK_NAMESPACE_END

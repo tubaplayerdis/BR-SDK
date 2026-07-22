@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_KickedPlayer.WBP_KickedPlayer_C.ExecuteUbergraph_WBP_KickedPlayer
 // 0x0008 (0x0008 - 0x0000)
@@ -25,11 +25,7 @@ public:
 	EBrickUIColorStyle                            K2Node_ComponentBoundEvent_InColorStyle;           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            K2Node_ComponentBoundEvent_InContentStyleState;    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer) == 0x000004, "Wrong alignment on WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer");
-static_assert(sizeof(WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer) == 0x000008, "Wrong size on WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer");
-static_assert(offsetof(WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer, EntryPoint) == 0x000000, "Member 'WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer, K2Node_ComponentBoundEvent_InColorStyle) == 0x000004, "Member 'WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000005, "Member 'WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_KickedPlayer_C_ExecuteUbergraph_WBP_KickedPlayer;
 
 // Function WBP_KickedPlayer.WBP_KickedPlayer_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -39,10 +35,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_KickedPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_KickedPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_KickedPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_KickedPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_KickedPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_KickedPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_KickedPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_KickedPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_KickedPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

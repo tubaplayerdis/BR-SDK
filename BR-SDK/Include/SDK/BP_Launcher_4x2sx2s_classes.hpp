@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Launcher_4x2sx2s.BP_Launcher_4x2sx2s_C
 // 0x0000 (0x02C0 - 0x02C0)
@@ -23,15 +22,17 @@ class UBP_Launcher_4x2sx2s_C final : public ULauncherBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Launcher_4x2sx2s_C">();
+		BP_STATIC_CLASS_IMPL("BP_Launcher_4x2sx2s_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Launcher_4x2sx2s_C")
 	}
 	static class UBP_Launcher_4x2sx2s_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Launcher_4x2sx2s_C>();
 	}
 };
-static_assert(alignof(UBP_Launcher_4x2sx2s_C) == 0x000010, "Wrong alignment on UBP_Launcher_4x2sx2s_C");
-static_assert(sizeof(UBP_Launcher_4x2sx2s_C) == 0x0002C0, "Wrong size on UBP_Launcher_4x2sx2s_C");
+DUMPER7_ASSERTS_UBP_Launcher_4x2sx2s_C;
 
-}
-
+SDK_NAMESPACE_END

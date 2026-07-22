@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InputKeySpacer.WBP_InputKeySpacer_C
 // 0x0010 (0x0270 - 0x0260)
@@ -33,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InputKeySpacer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InputKeySpacer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InputKeySpacer_C")
 	}
 	static class UWBP_InputKeySpacer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InputKeySpacer_C>();
 	}
 };
-static_assert(alignof(UWBP_InputKeySpacer_C) == 0x000008, "Wrong alignment on UWBP_InputKeySpacer_C");
-static_assert(sizeof(UWBP_InputKeySpacer_C) == 0x000270, "Wrong size on UWBP_InputKeySpacer_C");
-static_assert(offsetof(UWBP_InputKeySpacer_C, UberGraphFrame) == 0x000260, "Member 'UWBP_InputKeySpacer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InputKeySpacer_C, Image) == 0x000268, "Member 'UWBP_InputKeySpacer_C::Image' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InputKeySpacer_C;
 
-}
-
+SDK_NAMESPACE_END

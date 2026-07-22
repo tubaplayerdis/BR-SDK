@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_AdminLogin.WBP_AdminLogin_C
 // 0x0000 (0x0298 - 0x0298)
@@ -23,15 +22,17 @@ class UWBP_AdminLogin_C final : public UAdminLoginWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AdminLogin_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AdminLogin_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AdminLogin_C")
 	}
 	static class UWBP_AdminLogin_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AdminLogin_C>();
 	}
 };
-static_assert(alignof(UWBP_AdminLogin_C) == 0x000008, "Wrong alignment on UWBP_AdminLogin_C");
-static_assert(sizeof(UWBP_AdminLogin_C) == 0x000298, "Wrong size on UWBP_AdminLogin_C");
+DUMPER7_ASSERTS_UWBP_AdminLogin_C;
 
-}
-
+SDK_NAMESPACE_END

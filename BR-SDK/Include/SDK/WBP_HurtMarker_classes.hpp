@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_HurtMarker.WBP_HurtMarker_C
 // 0x0018 (0x0288 - 0x0270)
@@ -27,24 +26,23 @@ public:
 	class UBrickImage*                            BrickImage_77;                                     // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void PlayHurtMarkerAnimation();
 	void ExecuteUbergraph_WBP_HurtMarker(int32 EntryPoint);
+	void PlayHurtMarkerAnimation();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HurtMarker_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HurtMarker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HurtMarker_C")
 	}
 	static class UWBP_HurtMarker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HurtMarker_C>();
 	}
 };
-static_assert(alignof(UWBP_HurtMarker_C) == 0x000008, "Wrong alignment on UWBP_HurtMarker_C");
-static_assert(sizeof(UWBP_HurtMarker_C) == 0x000288, "Wrong size on UWBP_HurtMarker_C");
-static_assert(offsetof(UWBP_HurtMarker_C, UberGraphFrame) == 0x000270, "Member 'UWBP_HurtMarker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HurtMarker_C, HurtMarkerAnim) == 0x000278, "Member 'UWBP_HurtMarker_C::HurtMarkerAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_HurtMarker_C, BrickImage_77) == 0x000280, "Member 'UWBP_HurtMarker_C::BrickImage_77' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HurtMarker_C;
 
-}
-
+SDK_NAMESPACE_END

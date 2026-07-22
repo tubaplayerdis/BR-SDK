@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PowerPlant.PowerPlant_C
 // 0x0000 (0x0228 - 0x0228)
@@ -23,15 +22,17 @@ class APowerPlant_C final : public ALevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PowerPlant_C">();
+		BP_STATIC_CLASS_IMPL("PowerPlant_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PowerPlant_C")
 	}
 	static class APowerPlant_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APowerPlant_C>();
 	}
 };
-static_assert(alignof(APowerPlant_C) == 0x000008, "Wrong alignment on APowerPlant_C");
-static_assert(sizeof(APowerPlant_C) == 0x000228, "Wrong size on APowerPlant_C");
+DUMPER7_ASSERTS_APowerPlant_C;
 
-}
-
+SDK_NAMESPACE_END

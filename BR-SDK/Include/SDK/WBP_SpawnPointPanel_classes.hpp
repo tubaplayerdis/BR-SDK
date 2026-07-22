@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_SpawnPointPanel.WBP_SpawnPointPanel_C
 // 0x0000 (0x0308 - 0x0308)
@@ -23,15 +22,17 @@ class UWBP_SpawnPointPanel_C final : public USpawnPointPanelWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SpawnPointPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SpawnPointPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SpawnPointPanel_C")
 	}
 	static class UWBP_SpawnPointPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SpawnPointPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_SpawnPointPanel_C) == 0x000008, "Wrong alignment on UWBP_SpawnPointPanel_C");
-static_assert(sizeof(UWBP_SpawnPointPanel_C) == 0x000308, "Wrong size on UWBP_SpawnPointPanel_C");
+DUMPER7_ASSERTS_UWBP_SpawnPointPanel_C;
 
-}
-
+SDK_NAMESPACE_END

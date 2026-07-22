@@ -14,8 +14,7 @@
 #include "WBP_BrickSlider_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BrickSliderReadOnly.WBP_BrickSliderReadOnly_C
 // 0x0008 (0x0338 - 0x0330)
@@ -25,22 +24,23 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_BrickSliderReadOnly_C;          // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void PreConstruct(bool IsDesignTime);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_BrickSliderReadOnly(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BrickSliderReadOnly_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BrickSliderReadOnly_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BrickSliderReadOnly_C")
 	}
 	static class UWBP_BrickSliderReadOnly_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BrickSliderReadOnly_C>();
 	}
 };
-static_assert(alignof(UWBP_BrickSliderReadOnly_C) == 0x000008, "Wrong alignment on UWBP_BrickSliderReadOnly_C");
-static_assert(sizeof(UWBP_BrickSliderReadOnly_C) == 0x000338, "Wrong size on UWBP_BrickSliderReadOnly_C");
-static_assert(offsetof(UWBP_BrickSliderReadOnly_C, UberGraphFrame_WBP_BrickSliderReadOnly_C) == 0x000330, "Member 'UWBP_BrickSliderReadOnly_C::UberGraphFrame_WBP_BrickSliderReadOnly_C' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BrickSliderReadOnly_C;
 
-}
-
+SDK_NAMESPACE_END

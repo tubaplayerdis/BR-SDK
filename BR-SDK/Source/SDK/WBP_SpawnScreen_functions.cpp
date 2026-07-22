@@ -14,8 +14,7 @@
 #include "WBP_SpawnScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_SpawnScreen.WBP_SpawnScreen_C.AddGameOverlayWidget
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -39,5 +38,5 @@ bool UWBP_SpawnScreen_C::AddGameOverlayWidget(class UGameOverlayWidget* Widget)
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

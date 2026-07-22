@@ -16,8 +16,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PagedListHeaderField.WBP_PagedListHeaderField_C
 // 0x0018 (0x0278 - 0x0260)
@@ -29,24 +28,23 @@ public:
 	class UBrickTextBlock*                        TextBlock;                                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateItem(bool bNewVisible, const class FText& NewText, EBrickUIColorStyle NewColorStyle, EBrickUITextStyle NewTextStyle);
 	void ExecuteUbergraph_WBP_PagedListHeaderField(int32 EntryPoint);
+	void UpdateItem(bool bNewVisible, const class FText& NewText, EBrickUIColorStyle NewColorStyle, EBrickUITextStyle NewTextStyle);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PagedListHeaderField_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PagedListHeaderField_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PagedListHeaderField_C")
 	}
 	static class UWBP_PagedListHeaderField_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PagedListHeaderField_C>();
 	}
 };
-static_assert(alignof(UWBP_PagedListHeaderField_C) == 0x000008, "Wrong alignment on UWBP_PagedListHeaderField_C");
-static_assert(sizeof(UWBP_PagedListHeaderField_C) == 0x000278, "Wrong size on UWBP_PagedListHeaderField_C");
-static_assert(offsetof(UWBP_PagedListHeaderField_C, UberGraphFrame) == 0x000260, "Member 'UWBP_PagedListHeaderField_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeaderField_C, Border) == 0x000268, "Member 'UWBP_PagedListHeaderField_C::Border' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeaderField_C, TextBlock) == 0x000270, "Member 'UWBP_PagedListHeaderField_C::TextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PagedListHeaderField_C;
 
-}
-
+SDK_NAMESPACE_END

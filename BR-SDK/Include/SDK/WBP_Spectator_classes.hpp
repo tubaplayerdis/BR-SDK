@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Spectator.WBP_Spectator_C
 // 0x0030 (0x0298 - 0x0268)
@@ -43,21 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Spectator_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Spectator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Spectator_C")
 	}
 	static class UWBP_Spectator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Spectator_C>();
 	}
 };
-static_assert(alignof(UWBP_Spectator_C) == 0x000008, "Wrong alignment on UWBP_Spectator_C");
-static_assert(sizeof(UWBP_Spectator_C) == 0x000298, "Wrong size on UWBP_Spectator_C");
-static_assert(offsetof(UWBP_Spectator_C, UberGraphFrame) == 0x000268, "Member 'UWBP_Spectator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Spectator_C, NextPlayerButton) == 0x000270, "Member 'UWBP_Spectator_C::NextPlayerButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Spectator_C, NextPlayerImage) == 0x000278, "Member 'UWBP_Spectator_C::NextPlayerImage' has a wrong offset!");
-static_assert(offsetof(UWBP_Spectator_C, PlayerTextBlock) == 0x000280, "Member 'UWBP_Spectator_C::PlayerTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_Spectator_C, PrevPlayerButton) == 0x000288, "Member 'UWBP_Spectator_C::PrevPlayerButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Spectator_C, PrevPlayerImage) == 0x000290, "Member 'UWBP_Spectator_C::PrevPlayerImage' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Spectator_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Octagon_2x4x4.BP_Octagon_2x4x4_C
 // 0x0000 (0x0190 - 0x0190)
@@ -23,15 +22,17 @@ class UBP_Octagon_2x4x4_C final : public URedirectorBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Octagon_2x4x4_C">();
+		BP_STATIC_CLASS_IMPL("BP_Octagon_2x4x4_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Octagon_2x4x4_C")
 	}
 	static class UBP_Octagon_2x4x4_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Octagon_2x4x4_C>();
 	}
 };
-static_assert(alignof(UBP_Octagon_2x4x4_C) == 0x000008, "Wrong alignment on UBP_Octagon_2x4x4_C");
-static_assert(sizeof(UBP_Octagon_2x4x4_C) == 0x000190, "Wrong size on UBP_Octagon_2x4x4_C");
+DUMPER7_ASSERTS_UBP_Octagon_2x4x4_C;
 
-}
-
+SDK_NAMESPACE_END

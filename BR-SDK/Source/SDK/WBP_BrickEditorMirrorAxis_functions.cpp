@@ -14,60 +14,23 @@
 #include "WBP_BrickEditorMirrorAxis_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
-// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_BrickEditorMirrorAxis_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditorMirrorAxis_C", "BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.ExecuteUbergraph_WBP_BrickEditorMirrorAxis
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BrickEditorMirrorAxis_C::BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
+void UWBP_BrickEditorMirrorAxis_C::ExecuteUbergraph_WBP_BrickEditorMirrorAxis(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditorMirrorAxis_C", "BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
+		Func = Class->GetFunction("WBP_BrickEditorMirrorAxis_C", "ExecuteUbergraph_WBP_BrickEditorMirrorAxis");
 
-	Params::WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature Parms{};
+	Params::WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis Parms{};
 
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.UpdateIsSelected
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bNewSelected                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_BrickEditorMirrorAxis_C::UpdateIsSelected(bool bNewSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditorMirrorAxis_C", "UpdateIsSelected");
-
-	Params::WBP_BrickEditorMirrorAxis_C_UpdateIsSelected Parms{};
-
-	Parms.bNewSelected = bNewSelected;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -93,24 +56,60 @@ void UWBP_BrickEditorMirrorAxis_C::UpdateMirrorAxis(EAxis InAxis)
 }
 
 
-// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.ExecuteUbergraph_WBP_BrickEditorMirrorAxis
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.UpdateIsSelected
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bNewSelected                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_BrickEditorMirrorAxis_C::ExecuteUbergraph_WBP_BrickEditorMirrorAxis(int32 EntryPoint)
+void UWBP_BrickEditorMirrorAxis_C::UpdateIsSelected(bool bNewSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditorMirrorAxis_C", "ExecuteUbergraph_WBP_BrickEditorMirrorAxis");
+		Func = Class->GetFunction("WBP_BrickEditorMirrorAxis_C", "UpdateIsSelected");
 
-	Params::WBP_BrickEditorMirrorAxis_C_ExecuteUbergraph_WBP_BrickEditorMirrorAxis Parms{};
+	Params::WBP_BrickEditorMirrorAxis_C_UpdateIsSelected Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bNewSelected = bNewSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BrickEditorMirrorAxis_C::BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickEditorMirrorAxis_C", "BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
+
+	Params::WBP_BrickEditorMirrorAxis_C_BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature Parms{};
+
+	Parms.InColorStyle = InColorStyle;
+	Parms.InContentStyleState = InContentStyleState;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_BrickEditorMirrorAxis_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickEditorMirrorAxis_C", "BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+SDK_NAMESPACE_END

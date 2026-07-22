@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_ZombieAIController.BP_ZombieAIController_C.ExecuteUbergraph_BP_ZombieAIController
 // 0x0008 (0x0008 - 0x0000)
@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RunBehaviorTree_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_ZombieAIController_C_ExecuteUbergraph_BP_ZombieAIController) == 0x000004, "Wrong alignment on BP_ZombieAIController_C_ExecuteUbergraph_BP_ZombieAIController");
-static_assert(sizeof(BP_ZombieAIController_C_ExecuteUbergraph_BP_ZombieAIController) == 0x000008, "Wrong size on BP_ZombieAIController_C_ExecuteUbergraph_BP_ZombieAIController");
-static_assert(offsetof(BP_ZombieAIController_C_ExecuteUbergraph_BP_ZombieAIController, EntryPoint) == 0x000000, "Member 'BP_ZombieAIController_C_ExecuteUbergraph_BP_ZombieAIController::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ZombieAIController_C_ExecuteUbergraph_BP_ZombieAIController, CallFunc_RunBehaviorTree_ReturnValue) == 0x000004, "Member 'BP_ZombieAIController_C_ExecuteUbergraph_BP_ZombieAIController::CallFunc_RunBehaviorTree_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ZombieAIController_C_ExecuteUbergraph_BP_ZombieAIController;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SandboxGameMode.BP_SandboxGameMode_C
 // 0x0008 (0x0450 - 0x0448)
@@ -26,16 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SandboxGameMode_C">();
+		BP_STATIC_CLASS_IMPL("BP_SandboxGameMode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SandboxGameMode_C")
 	}
 	static class ABP_SandboxGameMode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_SandboxGameMode_C>();
 	}
 };
-static_assert(alignof(ABP_SandboxGameMode_C) == 0x000008, "Wrong alignment on ABP_SandboxGameMode_C");
-static_assert(sizeof(ABP_SandboxGameMode_C) == 0x000450, "Wrong size on ABP_SandboxGameMode_C");
-static_assert(offsetof(ABP_SandboxGameMode_C, DefaultSceneRoot) == 0x000448, "Member 'ABP_SandboxGameMode_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_SandboxGameMode_C;
 
-}
-
+SDK_NAMESPACE_END

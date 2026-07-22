@@ -13,19 +13,17 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_MatchTimer.WBP_MatchTimer_C.UpdateTimer
 // 0x0004 (0x0004 - 0x0000)
 struct WBP_MatchTimer_C_UpdateTimer final
 {
 public:
-	int32                                         NewTime;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewTime_UpdateTimer;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MatchTimer_C_UpdateTimer) == 0x000004, "Wrong alignment on WBP_MatchTimer_C_UpdateTimer");
-static_assert(sizeof(WBP_MatchTimer_C_UpdateTimer) == 0x000004, "Wrong size on WBP_MatchTimer_C_UpdateTimer");
-static_assert(offsetof(WBP_MatchTimer_C_UpdateTimer, NewTime) == 0x000000, "Member 'WBP_MatchTimer_C_UpdateTimer::NewTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MatchTimer_C_UpdateTimer;
 
 // Function WBP_MatchTimer.WBP_MatchTimer_C.ExecuteUbergraph_WBP_MatchTimer
 // 0x0040 (0x0040 - 0x0000)
@@ -48,20 +46,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EBrickUIColorStyle                            K2Node_Select_Default;                             // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer) == 0x000008, "Wrong alignment on WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer");
-static_assert(sizeof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer) == 0x000040, "Wrong size on WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, EntryPoint) == 0x000000, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, Temp_bool_Variable) == 0x000004, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, Temp_byte_Variable) == 0x000005, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, K2Node_Event_NewTime) == 0x000008, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::K2Node_Event_NewTime' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, CallFunc_Max_ReturnValue) == 0x000010, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000014, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000018, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, CallFunc_NumberToText_ReturnValue) == 0x000020, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::CallFunc_NumberToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, CallFunc_BooleanAND_ReturnValue) == 0x000038, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer, K2Node_Select_Default) == 0x000039, "Member 'WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MatchTimer_C_ExecuteUbergraph_WBP_MatchTimer;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

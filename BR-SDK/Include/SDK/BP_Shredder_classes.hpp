@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Shredder.BP_Shredder_C
 // 0x0028 (0x0248 - 0x0220)
@@ -32,28 +31,23 @@ public:
 
 public:
 	void UserConstructionScript();
-	void ReceiveTick(float DeltaSeconds);
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
 	void ExecuteUbergraph_BP_Shredder(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Shredder_C">();
+		BP_STATIC_CLASS_IMPL("BP_Shredder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Shredder_C")
 	}
 	static class ABP_Shredder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Shredder_C>();
 	}
 };
-static_assert(alignof(ABP_Shredder_C) == 0x000008, "Wrong alignment on ABP_Shredder_C");
-static_assert(sizeof(ABP_Shredder_C) == 0x000248, "Wrong size on ABP_Shredder_C");
-static_assert(offsetof(ABP_Shredder_C, UberGraphFrame) == 0x000220, "Member 'ABP_Shredder_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Shredder_C, Rotor2) == 0x000228, "Member 'ABP_Shredder_C::Rotor2' has a wrong offset!");
-static_assert(offsetof(ABP_Shredder_C, Rotor1) == 0x000230, "Member 'ABP_Shredder_C::Rotor1' has a wrong offset!");
-static_assert(offsetof(ABP_Shredder_C, Shredder) == 0x000238, "Member 'ABP_Shredder_C::Shredder' has a wrong offset!");
-static_assert(offsetof(ABP_Shredder_C, Speed) == 0x000240, "Member 'ABP_Shredder_C::Speed' has a wrong offset!");
-static_assert(offsetof(ABP_Shredder_C, bFunnel) == 0x000244, "Member 'ABP_Shredder_C::bFunnel' has a wrong offset!");
-static_assert(offsetof(ABP_Shredder_C, bRamp) == 0x000245, "Member 'ABP_Shredder_C::bRamp' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Shredder_C;
 
-}
-
+SDK_NAMESPACE_END

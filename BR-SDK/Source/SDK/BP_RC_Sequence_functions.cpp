@@ -14,8 +14,7 @@
 #include "BP_RC_Sequence_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_RC_Sequence.BP_RC_Sequence_C.ExecuteUbergraph_BP_RC_Sequence
 // (Final, UbergraphFunction, HasDefaults)
@@ -136,5 +135,5 @@ bool ABP_RC_Sequence_C::IsVehicleDestroyed() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

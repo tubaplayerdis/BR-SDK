@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Inventory.WBP_Inventory_C
 // 0x0000 (0x0298 - 0x0298)
@@ -23,15 +22,17 @@ class UWBP_Inventory_C final : public UInventoryWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Inventory_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Inventory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Inventory_C")
 	}
 	static class UWBP_Inventory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Inventory_C>();
 	}
 };
-static_assert(alignof(UWBP_Inventory_C) == 0x000008, "Wrong alignment on UWBP_Inventory_C");
-static_assert(sizeof(UWBP_Inventory_C) == 0x000298, "Wrong size on UWBP_Inventory_C");
+DUMPER7_ASSERTS_UWBP_Inventory_C;
 
-}
-
+SDK_NAMESPACE_END

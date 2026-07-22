@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_MapPopup.WBP_MapPopup_C.ExecuteUbergraph_WBP_MapPopup
 // 0x0040 (0x0040 - 0x0000)
@@ -27,14 +27,7 @@ public:
 	class UMenuButtonWidget*                      CallFunc_CreateButton_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMenuButtonWidget*                      CallFunc_CreateExitButton_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup) == 0x000008, "Wrong alignment on WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup");
-static_assert(sizeof(WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup) == 0x000040, "Wrong size on WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup");
-static_assert(offsetof(WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup, EntryPoint) == 0x000000, "Member 'WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup, CallFunc_GetButtonPanel_ReturnValue) == 0x000028, "Member 'WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup::CallFunc_GetButtonPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup, CallFunc_CreateButton_ReturnValue) == 0x000030, "Member 'WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup, CallFunc_CreateExitButton_ReturnValue) == 0x000038, "Member 'WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup::CallFunc_CreateExitButton_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MapPopup_C_ExecuteUbergraph_WBP_MapPopup;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

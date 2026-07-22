@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_CheatMenu.WBP_CheatMenu_C
 // 0x0000 (0x02A0 - 0x02A0)
@@ -23,15 +22,17 @@ class UWBP_CheatMenu_C final : public UCheatMenuWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CheatMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CheatMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CheatMenu_C")
 	}
 	static class UWBP_CheatMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CheatMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_CheatMenu_C) == 0x000008, "Wrong alignment on UWBP_CheatMenu_C");
-static_assert(sizeof(UWBP_CheatMenu_C) == 0x0002A0, "Wrong size on UWBP_CheatMenu_C");
+DUMPER7_ASSERTS_UWBP_CheatMenu_C;
 
-}
-
+SDK_NAMESPACE_END

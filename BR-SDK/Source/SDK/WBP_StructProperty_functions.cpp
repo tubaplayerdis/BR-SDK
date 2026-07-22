@@ -14,8 +14,7 @@
 #include "WBP_StructProperty_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_StructProperty.WBP_StructProperty_C.ExecuteUbergraph_WBP_StructProperty
 // (Final, UbergraphFunction)
@@ -80,5 +79,5 @@ void UWBP_StructProperty_C::UpdatePropertyContainerWidgetSlot(class UPropertyCon
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

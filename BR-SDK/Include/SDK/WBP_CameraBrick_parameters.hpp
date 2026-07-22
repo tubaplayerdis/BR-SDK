@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_CameraBrick.WBP_CameraBrick_C.ExecuteUbergraph_WBP_CameraBrick
 // 0x0060 (0x0060 - 0x0000)
@@ -34,19 +34,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x0040(0x0018)()
 	EBrickUIColorStyle                            K2Node_Select_Default_1;                           // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick) == 0x000008, "Wrong alignment on WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick");
-static_assert(sizeof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick) == 0x000060, "Wrong size on WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, EntryPoint) == 0x000000, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, Temp_bool_Variable) == 0x000004, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, Temp_byte_Variable) == 0x000005, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, Temp_bool_Variable_1) == 0x000007, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, Temp_text_Variable) == 0x000008, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, K2Node_Event_bHitSomething) == 0x000020, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::K2Node_Event_bHitSomething' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, K2Node_Event_Distance) == 0x000024, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::K2Node_Event_Distance' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, CallFunc_NumberToText_ReturnValue) == 0x000028, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::CallFunc_NumberToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, K2Node_Select_Default) == 0x000040, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick, K2Node_Select_Default_1) == 0x000058, "Member 'WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CameraBrick_C_ExecuteUbergraph_WBP_CameraBrick;
 
 // Function WBP_CameraBrick.WBP_CameraBrick_C.UpdateTargetRange
 // 0x0008 (0x0008 - 0x0000)
@@ -57,10 +45,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Distance;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CameraBrick_C_UpdateTargetRange) == 0x000004, "Wrong alignment on WBP_CameraBrick_C_UpdateTargetRange");
-static_assert(sizeof(WBP_CameraBrick_C_UpdateTargetRange) == 0x000008, "Wrong size on WBP_CameraBrick_C_UpdateTargetRange");
-static_assert(offsetof(WBP_CameraBrick_C_UpdateTargetRange, bHitSomething) == 0x000000, "Member 'WBP_CameraBrick_C_UpdateTargetRange::bHitSomething' has a wrong offset!");
-static_assert(offsetof(WBP_CameraBrick_C_UpdateTargetRange, Distance) == 0x000004, "Member 'WBP_CameraBrick_C_UpdateTargetRange::Distance' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CameraBrick_C_UpdateTargetRange;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

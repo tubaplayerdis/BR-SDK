@@ -16,8 +16,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Vehicle_Sequence.BP_Vehicle_Sequence_C.ExecuteUbergraph_BP_Vehicle_Sequence
 // 0x03E0 (0x03E0 - 0x0000)
@@ -80,54 +80,7 @@ public:
 	struct FVector                                CallFunc_FocusCameraOnBrickEditorObjects_ReturnValue; // 0x0344(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0350(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence) == 0x000010, "Wrong alignment on BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence");
-static_assert(sizeof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence) == 0x0003E0, "Wrong size on BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, EntryPoint) == 0x000000, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_MakeRotator_ReturnValue) == 0x000004, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_GetDriverSeat_ReturnValue) == 0x000010, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_GetDriverSeat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, K2Node_InputActionEvent_Key) == 0x000030, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::K2Node_InputActionEvent_Key' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_GetPlayerController_ReturnValue) == 0x000048, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000050, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000080, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_GetPlayerController_ReturnValue_1) == 0x000088, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_FinishSpawningActor_ReturnValue) == 0x000090, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_GetHitResultUnderCursorByChannel_HitResult) == 0x000098, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_GetHitResultUnderCursorByChannel_HitResult' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_GetHitResultUnderCursorByChannel_ReturnValue) == 0x000120, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_GetHitResultUnderCursorByChannel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_bBlockingHit) == 0x000121, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_bInitialOverlap) == 0x000122, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_Time) == 0x000124, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_Distance) == 0x000128, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_Location) == 0x00012C, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_ImpactPoint) == 0x000138, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_Normal) == 0x000144, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_ImpactNormal) == 0x000150, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_PhysMat) == 0x000160, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_HitActor) == 0x000168, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_HitComponent) == 0x000170, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_HitBoneName) == 0x000178, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_HitItem) == 0x000180, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_ElementIndex) == 0x000184, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_FaceIndex) == 0x000188, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_TraceStart) == 0x00018C, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_BreakHitResult_TraceEnd) == 0x000198, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, K2Node_MakeArray_Array) == 0x0001A8, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0001B8, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, K2Node_Event_FileInfos) == 0x0001C0, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::K2Node_Event_FileInfos' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_Array_Random_OutItem) == 0x0001D0, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_Array_Random_OutIndex) == 0x0002B8, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x0002BC, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0002C8, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_GetBricks_ReturnValue) == 0x0002D8, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_GetBricks_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_K2_GetComponentToWorld_ReturnValue_1) == 0x0002F0, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_K2_GetComponentToWorld_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_GetVehicleComponent_ReturnValue) == 0x000320, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_GetVehicleComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_GetPlayerController_ReturnValue_2) == 0x000328, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, K2Node_DynamicCast_AsBrick_Camera_Manager) == 0x000330, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::K2Node_DynamicCast_AsBrick_Camera_Manager' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, K2Node_DynamicCast_bSuccess) == 0x000338, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_GetEffectiveFOV_ReturnValue) == 0x00033C, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_GetEffectiveFOV_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_FocusCameraOnBrickEditorObjects_ReturnValue) == 0x000344, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_FocusCameraOnBrickEditorObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000350, "Member 'BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Vehicle_Sequence_C_ExecuteUbergraph_BP_Vehicle_Sequence;
 
 // Function BP_Vehicle_Sequence.BP_Vehicle_Sequence_C.OnDefaultVehiclesQueried
 // 0x0010 (0x0010 - 0x0000)
@@ -136,9 +89,7 @@ struct BP_Vehicle_Sequence_C_OnDefaultVehiclesQueried final
 public:
 	TArray<struct FUGCFileInfo>                   FileInfos;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BP_Vehicle_Sequence_C_OnDefaultVehiclesQueried) == 0x000008, "Wrong alignment on BP_Vehicle_Sequence_C_OnDefaultVehiclesQueried");
-static_assert(sizeof(BP_Vehicle_Sequence_C_OnDefaultVehiclesQueried) == 0x000010, "Wrong size on BP_Vehicle_Sequence_C_OnDefaultVehiclesQueried");
-static_assert(offsetof(BP_Vehicle_Sequence_C_OnDefaultVehiclesQueried, FileInfos) == 0x000000, "Member 'BP_Vehicle_Sequence_C_OnDefaultVehiclesQueried::FileInfos' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Vehicle_Sequence_C_OnDefaultVehiclesQueried;
 
 // Function BP_Vehicle_Sequence.BP_Vehicle_Sequence_C.InpActEvt_Fire_K2Node_InputActionEvent_0
 // 0x0018 (0x0018 - 0x0000)
@@ -147,9 +98,7 @@ struct BP_Vehicle_Sequence_C_InpActEvt_Fire_K2Node_InputActionEvent_0 final
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Vehicle_Sequence_C_InpActEvt_Fire_K2Node_InputActionEvent_0) == 0x000008, "Wrong alignment on BP_Vehicle_Sequence_C_InpActEvt_Fire_K2Node_InputActionEvent_0");
-static_assert(sizeof(BP_Vehicle_Sequence_C_InpActEvt_Fire_K2Node_InputActionEvent_0) == 0x000018, "Wrong size on BP_Vehicle_Sequence_C_InpActEvt_Fire_K2Node_InputActionEvent_0");
-static_assert(offsetof(BP_Vehicle_Sequence_C_InpActEvt_Fire_K2Node_InputActionEvent_0, Key) == 0x000000, "Member 'BP_Vehicle_Sequence_C_InpActEvt_Fire_K2Node_InputActionEvent_0::Key' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Vehicle_Sequence_C_InpActEvt_Fire_K2Node_InputActionEvent_0;
 
 // Function BP_Vehicle_Sequence.BP_Vehicle_Sequence_C.IsMenuSequenceReady
 // 0x0001 (0x0001 - 0x0000)
@@ -158,9 +107,7 @@ struct BP_Vehicle_Sequence_C_IsMenuSequenceReady final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Vehicle_Sequence_C_IsMenuSequenceReady) == 0x000001, "Wrong alignment on BP_Vehicle_Sequence_C_IsMenuSequenceReady");
-static_assert(sizeof(BP_Vehicle_Sequence_C_IsMenuSequenceReady) == 0x000001, "Wrong size on BP_Vehicle_Sequence_C_IsMenuSequenceReady");
-static_assert(offsetof(BP_Vehicle_Sequence_C_IsMenuSequenceReady, ReturnValue) == 0x000000, "Member 'BP_Vehicle_Sequence_C_IsMenuSequenceReady::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Vehicle_Sequence_C_IsMenuSequenceReady;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

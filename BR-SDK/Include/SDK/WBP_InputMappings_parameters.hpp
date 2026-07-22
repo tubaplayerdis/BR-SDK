@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InputMappings.WBP_InputMappings_C.ExecuteUbergraph_WBP_InputMappings
 // 0x0060 (0x0060 - 0x0000)
@@ -36,19 +36,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_OpenMessagePopup_ReturnValue;             // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings) == 0x000008, "Wrong alignment on WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings");
-static_assert(sizeof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings) == 0x000060, "Wrong size on WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, EntryPoint) == 0x000000, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, CallFunc_GetMenuWidget_ReturnValue) == 0x000028, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::CallFunc_GetMenuWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, K2Node_CustomEvent_Result) == 0x000030, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, CallFunc_CreateRevertButton_ReturnValue) == 0x000038, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::CallFunc_CreateRevertButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000040, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, CallFunc_GetGameInstance_ReturnValue) == 0x000048, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, K2Node_DynamicCast_AsBrick_Game_Instance) == 0x000050, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::K2Node_DynamicCast_AsBrick_Game_Instance' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings, CallFunc_OpenMessagePopup_ReturnValue) == 0x000059, "Member 'WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings::CallFunc_OpenMessagePopup_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputMappings_C_ExecuteUbergraph_WBP_InputMappings;
 
 // Function WBP_InputMappings.WBP_InputMappings_C.OnRevertInputPopupClosed
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +45,7 @@ struct WBP_InputMappings_C_OnRevertInputPopupClosed final
 public:
 	EPopupResult                                  Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputMappings_C_OnRevertInputPopupClosed) == 0x000001, "Wrong alignment on WBP_InputMappings_C_OnRevertInputPopupClosed");
-static_assert(sizeof(WBP_InputMappings_C_OnRevertInputPopupClosed) == 0x000001, "Wrong size on WBP_InputMappings_C_OnRevertInputPopupClosed");
-static_assert(offsetof(WBP_InputMappings_C_OnRevertInputPopupClosed, Result) == 0x000000, "Member 'WBP_InputMappings_C_OnRevertInputPopupClosed::Result' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputMappings_C_OnRevertInputPopupClosed;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

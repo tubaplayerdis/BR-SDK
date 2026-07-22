@@ -14,8 +14,7 @@
 #include "StreamlineBlueprint_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class StreamlineBlueprint.StreamlineLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -30,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StreamlineLibrary">();
+		STATIC_CLASS_IMPL("StreamlineLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StreamlineLibrary")
 	}
 	static class UStreamlineLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStreamlineLibrary>();
 	}
 };
-static_assert(alignof(UStreamlineLibrary) == 0x000008, "Wrong alignment on UStreamlineLibrary");
-static_assert(sizeof(UStreamlineLibrary) == 0x000028, "Wrong size on UStreamlineLibrary");
+DUMPER7_ASSERTS_UStreamlineLibrary;
 
 // Class StreamlineBlueprint.StreamlineLibraryDLSSG
 // 0x0000 (0x0028 - 0x0028)
@@ -57,15 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StreamlineLibraryDLSSG">();
+		STATIC_CLASS_IMPL("StreamlineLibraryDLSSG")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StreamlineLibraryDLSSG")
 	}
 	static class UStreamlineLibraryDLSSG* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStreamlineLibraryDLSSG>();
 	}
 };
-static_assert(alignof(UStreamlineLibraryDLSSG) == 0x000008, "Wrong alignment on UStreamlineLibraryDLSSG");
-static_assert(sizeof(UStreamlineLibraryDLSSG) == 0x000028, "Wrong size on UStreamlineLibraryDLSSG");
+DUMPER7_ASSERTS_UStreamlineLibraryDLSSG;
 
 // Class StreamlineBlueprint.StreamlineLibraryReflex
 // 0x0000 (0x0028 - 0x0028)
@@ -84,15 +89,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StreamlineLibraryReflex">();
+		STATIC_CLASS_IMPL("StreamlineLibraryReflex")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StreamlineLibraryReflex")
 	}
 	static class UStreamlineLibraryReflex* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStreamlineLibraryReflex>();
 	}
 };
-static_assert(alignof(UStreamlineLibraryReflex) == 0x000008, "Wrong alignment on UStreamlineLibraryReflex");
-static_assert(sizeof(UStreamlineLibraryReflex) == 0x000028, "Wrong size on UStreamlineLibraryReflex");
+DUMPER7_ASSERTS_UStreamlineLibraryReflex;
 
-}
-
+SDK_NAMESPACE_END

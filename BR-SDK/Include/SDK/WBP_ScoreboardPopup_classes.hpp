@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ScoreboardPopup.WBP_ScoreboardPopup_C
 // 0x0010 (0x02A8 - 0x0298)
@@ -27,17 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ScoreboardPopup_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ScoreboardPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ScoreboardPopup_C")
 	}
 	static class UWBP_ScoreboardPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ScoreboardPopup_C>();
 	}
 };
-static_assert(alignof(UWBP_ScoreboardPopup_C) == 0x000008, "Wrong alignment on UWBP_ScoreboardPopup_C");
-static_assert(sizeof(UWBP_ScoreboardPopup_C) == 0x0002A8, "Wrong size on UWBP_ScoreboardPopup_C");
-static_assert(offsetof(UWBP_ScoreboardPopup_C, WBP_MatchTimer) == 0x000298, "Member 'UWBP_ScoreboardPopup_C::WBP_MatchTimer' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreboardPopup_C, WBP_Scoreboard) == 0x0002A0, "Member 'UWBP_ScoreboardPopup_C::WBP_Scoreboard' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ScoreboardPopup_C;
 
-}
-
+SDK_NAMESPACE_END

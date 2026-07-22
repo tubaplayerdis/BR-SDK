@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PagedListHeader.WBP_PagedListHeader_C
 // 0x0060 (0x0320 - 0x02C0)
@@ -37,40 +36,31 @@ public:
 	TMulticastInlineDelegate<void()>              OnClickedClear;                                    // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void UpdateEntry(const class FText& InTitleText, bool bInHasEntry, bool bInHasUnsavedChanges);
-	void UpdateNumObjects(int32 InNumObjects, int32 InMaxNumObjects, int32 InNumHiddenObjects, int32 InNumObjectsWithAerodynamics);
-	void UpdateDimensions(const struct FVector& InDimensions, const struct FVector& InMaxDimensions);
-	void UpdatePrice(float InPrice, float InMoney);
-	void UpdateMass(float InMass, float InMaxMass);
-	void PreConstruct(bool IsDesignTime);
-	void BndEvt__WBP_PagedListHeader_ClearButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void UpdateClearButton(bool bInIsEnabled);
-	void BndEvt__WBP_PagedListHeader_ClearButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 	void ExecuteUbergraph_WBP_PagedListHeader(int32 EntryPoint);
+	void BndEvt__WBP_PagedListHeader_ClearButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void UpdateClearButton(bool bInIsEnabled);
+	void BndEvt__WBP_PagedListHeader_ClearButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
+	void PreConstruct(bool IsDesignTime);
+	void UpdateMass(float InMass, float InMaxMass);
+	void UpdatePrice(float InPrice, float InMoney);
+	void UpdateDimensions(const struct FVector& InDimensions, const struct FVector& InMaxDimensions);
+	void UpdateNumObjects(int32 InNumObjects, int32 InMaxNumObjects, int32 InNumHiddenObjects, int32 InNumObjectsWithAerodynamics);
+	void UpdateEntry(const class FText& InTitleText, bool bInHasEntry, bool bInHasUnsavedChanges);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PagedListHeader_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PagedListHeader_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PagedListHeader_C")
 	}
 	static class UWBP_PagedListHeader_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PagedListHeader_C>();
 	}
 };
-static_assert(alignof(UWBP_PagedListHeader_C) == 0x000008, "Wrong alignment on UWBP_PagedListHeader_C");
-static_assert(sizeof(UWBP_PagedListHeader_C) == 0x000320, "Wrong size on UWBP_PagedListHeader_C");
-static_assert(offsetof(UWBP_PagedListHeader_C, UberGraphFrame) == 0x0002C0, "Member 'UWBP_PagedListHeader_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, ClearButton) == 0x0002C8, "Member 'UWBP_PagedListHeader_C::ClearButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, ClearImage) == 0x0002D0, "Member 'UWBP_PagedListHeader_C::ClearImage' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, DimensionsWidget) == 0x0002D8, "Member 'UWBP_PagedListHeader_C::DimensionsWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, MassWidget) == 0x0002E0, "Member 'UWBP_PagedListHeader_C::MassWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, NameWidget) == 0x0002E8, "Member 'UWBP_PagedListHeader_C::NameWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, ObjectsWidget) == 0x0002F0, "Member 'UWBP_PagedListHeader_C::ObjectsWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, PriceWidget) == 0x0002F8, "Member 'UWBP_PagedListHeader_C::PriceWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, PropsBox) == 0x000300, "Member 'UWBP_PagedListHeader_C::PropsBox' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, bIsInEditor) == 0x000308, "Member 'UWBP_PagedListHeader_C::bIsInEditor' has a wrong offset!");
-static_assert(offsetof(UWBP_PagedListHeader_C, OnClickedClear) == 0x000310, "Member 'UWBP_PagedListHeader_C::OnClickedClear' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PagedListHeader_C;
 
-}
-
+SDK_NAMESPACE_END

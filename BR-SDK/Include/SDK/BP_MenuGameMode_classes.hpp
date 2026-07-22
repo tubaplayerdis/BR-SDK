@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_MenuGameMode.BP_MenuGameMode_C
 // 0x0008 (0x0338 - 0x0330)
@@ -26,16 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuGameMode_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuGameMode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuGameMode_C")
 	}
 	static class ABP_MenuGameMode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuGameMode_C>();
 	}
 };
-static_assert(alignof(ABP_MenuGameMode_C) == 0x000008, "Wrong alignment on ABP_MenuGameMode_C");
-static_assert(sizeof(ABP_MenuGameMode_C) == 0x000338, "Wrong size on ABP_MenuGameMode_C");
-static_assert(offsetof(ABP_MenuGameMode_C, DefaultSceneRoot) == 0x000330, "Member 'ABP_MenuGameMode_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_MenuGameMode_C;
 
-}
-
+SDK_NAMESPACE_END

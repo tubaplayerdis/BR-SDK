@@ -14,8 +14,7 @@
 #include "WBP_SpawnPointContainer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_SpawnPointContainer.WBP_SpawnPointContainer_C.ExecuteUbergraph_WBP_SpawnPointContainer
 // (Final, UbergraphFunction)
@@ -56,5 +55,5 @@ void UWBP_SpawnPointContainer_C::AddIconWidget(class UHUDIconWidget* Widget)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

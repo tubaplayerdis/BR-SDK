@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Billboard.BP_Billboard_C
 // 0x0000 (0x0258 - 0x0258)
@@ -23,15 +22,17 @@ class ABP_Billboard_C final : public ABillboard
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Billboard_C">();
+		BP_STATIC_CLASS_IMPL("BP_Billboard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Billboard_C")
 	}
 	static class ABP_Billboard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Billboard_C>();
 	}
 };
-static_assert(alignof(ABP_Billboard_C) == 0x000008, "Wrong alignment on ABP_Billboard_C");
-static_assert(sizeof(ABP_Billboard_C) == 0x000258, "Wrong size on ABP_Billboard_C");
+DUMPER7_ASSERTS_ABP_Billboard_C;
 
-}
-
+SDK_NAMESPACE_END

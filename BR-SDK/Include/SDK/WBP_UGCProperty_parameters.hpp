@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UGCProperty.WBP_UGCProperty_C.ExecuteUbergraph_WBP_UGCProperty
 // 0x0080 (0x0080 - 0x0000)
@@ -32,16 +32,7 @@ public:
 	EBrickUIColorStyle                            K2Node_ComponentBoundEvent_InColorStyle;           // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            K2Node_ComponentBoundEvent_InContentStyleState;    // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty) == 0x000008, "Wrong alignment on WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty");
-static_assert(sizeof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty) == 0x000080, "Wrong size on WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty");
-static_assert(offsetof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty, EntryPoint) == 0x000000, "Member 'WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty, K2Node_Event_NumSelected) == 0x000004, "Member 'WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty::K2Node_Event_NumSelected' has a wrong offset!");
-static_assert(offsetof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty, CallFunc_Greater_IntInt_ReturnValue) == 0x000048, "Member 'WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty, K2Node_MakeArray_Array) == 0x000050, "Member 'WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty, CallFunc_Format_ReturnValue) == 0x000060, "Member 'WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty, K2Node_ComponentBoundEvent_InColorStyle) == 0x000078, "Member 'WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000079, "Member 'WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UGCProperty_C_ExecuteUbergraph_WBP_UGCProperty;
 
 // Function WBP_UGCProperty.WBP_UGCProperty_C.BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -51,10 +42,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_UGCProperty.WBP_UGCProperty_C.UpdateItemsText
 // 0x0004 (0x0004 - 0x0000)
@@ -63,9 +51,7 @@ struct WBP_UGCProperty_C_UpdateItemsText final
 public:
 	int32                                         NumSelected;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UGCProperty_C_UpdateItemsText) == 0x000004, "Wrong alignment on WBP_UGCProperty_C_UpdateItemsText");
-static_assert(sizeof(WBP_UGCProperty_C_UpdateItemsText) == 0x000004, "Wrong size on WBP_UGCProperty_C_UpdateItemsText");
-static_assert(offsetof(WBP_UGCProperty_C_UpdateItemsText, NumSelected) == 0x000000, "Member 'WBP_UGCProperty_C_UpdateItemsText::NumSelected' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UGCProperty_C_UpdateItemsText;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

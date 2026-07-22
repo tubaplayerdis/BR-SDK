@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BrickEditorMirrorAxis.WBP_BrickEditorMirrorAxis_C
 // 0x0018 (0x0288 - 0x0270)
@@ -29,27 +28,26 @@ public:
 	class UBrickImage*                            Image;                                             // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void UpdateIsSelected(bool bNewSelected);
-	void UpdateMirrorAxis(EAxis InAxis);
 	void ExecuteUbergraph_WBP_BrickEditorMirrorAxis(int32 EntryPoint);
+	void UpdateMirrorAxis(EAxis InAxis);
+	void UpdateIsSelected(bool bNewSelected);
+	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
+	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BrickEditorMirrorAxis_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BrickEditorMirrorAxis_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BrickEditorMirrorAxis_C")
 	}
 	static class UWBP_BrickEditorMirrorAxis_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BrickEditorMirrorAxis_C>();
 	}
 };
-static_assert(alignof(UWBP_BrickEditorMirrorAxis_C) == 0x000008, "Wrong alignment on UWBP_BrickEditorMirrorAxis_C");
-static_assert(sizeof(UWBP_BrickEditorMirrorAxis_C) == 0x000288, "Wrong size on UWBP_BrickEditorMirrorAxis_C");
-static_assert(offsetof(UWBP_BrickEditorMirrorAxis_C, UberGraphFrame) == 0x000270, "Member 'UWBP_BrickEditorMirrorAxis_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditorMirrorAxis_C, Button) == 0x000278, "Member 'UWBP_BrickEditorMirrorAxis_C::Button' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickEditorMirrorAxis_C, Image) == 0x000280, "Member 'UWBP_BrickEditorMirrorAxis_C::Image' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BrickEditorMirrorAxis_C;
 
-}
-
+SDK_NAMESPACE_END

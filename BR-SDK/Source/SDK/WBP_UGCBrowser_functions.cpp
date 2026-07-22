@@ -14,126 +14,443 @@
 #include "WBP_UGCBrowser_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.GetSpawnButtonTooltipContent
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.ExecuteUbergraph_WBP_UGCBrowser
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// struct FTooltipContent*                 OutContent                                             (Parm, OutParm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UWBP_UGCBrowser_C::GetSpawnButtonTooltipContent(struct FTooltipContent* OutContent)
+void UWBP_UGCBrowser_C::ExecuteUbergraph_WBP_UGCBrowser(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "GetSpawnButtonTooltipContent");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "ExecuteUbergraph_WBP_UGCBrowser");
 
-	Params::WBP_UGCBrowser_C_GetSpawnButtonTooltipContent Parms{};
+	Params::WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutContent != nullptr)
-		*OutContent = std::move(Parms.OutContent);
-
-	return Parms.ReturnValue;
 }
 
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateClearItemsButton
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.VoteDown
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::VoteDown()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "VoteDown");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.RemoveItem
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::RemoveItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "RemoveItem");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.AddItem
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::AddItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "AddItem");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateAddOrRemoveItemButton
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // bool                                    bIsArrayProperty                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UGCBrowser_C::CreateClearItemsButton(bool bIsArrayProperty)
+void UWBP_UGCBrowser_C::CreateAddOrRemoveItemButton(bool bIsArrayProperty, bool bIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateClearItemsButton");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateAddOrRemoveItemButton");
 
-	Params::WBP_UGCBrowser_C_CreateClearItemsButton Parms{};
+	Params::WBP_UGCBrowser_C_CreateAddOrRemoveItemButton Parms{};
 
 	Parms.bIsArrayProperty = bIsArrayProperty;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateDeleteButton
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::CreateDeleteButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateDeleteButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateDuplicateButton
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::CreateDuplicateButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateDuplicateButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateEditButton
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::CreateEditButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateEditButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateFavoriteButton
-// (BlueprintEvent)
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSpawnInvincibilityButton
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFavorited                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const class FText&                      CurrentInvincibilityText                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_UGCBrowser_C::CreateFavoriteButton(bool bIsFavorited)
+void UWBP_UGCBrowser_C::CreateSpawnInvincibilityButton(const class FText& CurrentInvincibilityText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateFavoriteButton");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateSpawnInvincibilityButton");
 
-	Params::WBP_UGCBrowser_C_CreateFavoriteButton Parms{};
+	Params::WBP_UGCBrowser_C_CreateSpawnInvincibilityButton Parms{};
 
-	Parms.bIsFavorited = bIsFavorited;
+	Parms.CurrentInvincibilityText = std::move(CurrentInvincibilityText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateNewItemButton
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateOpenInExplorerButton
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UGCBrowser_C::CreateNewItemButton()
+void UWBP_UGCBrowser_C::CreateOpenInExplorerButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateNewItemButton");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateOpenInExplorerButton");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedSaveOverwrite
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedSaveOverwrite()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedSaveOverwrite");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedSaveNew
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedSaveNew()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedSaveNew");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSaveOverwriteButton
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::CreateSaveOverwriteButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateSaveOverwriteButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSaveNewButton
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::CreateSaveNewButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateSaveNewButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedUpdateExisting
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedUpdateExisting()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedUpdateExisting");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedUploadNew
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedUploadNew()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedUploadNew");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateUpdateExistingButton
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::CreateUpdateExistingButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateUpdateExistingButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateUploadNewButton
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::CreateUploadNewButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateUploadNewButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateRecoverAutoSaveButton
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::CreateRecoverAutoSaveButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateRecoverAutoSaveButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedReplaceCurrent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedReplaceCurrent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedReplaceCurrent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedSpawnNew
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedSpawnNew()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedSpawnNew");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateImportButton
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::CreateImportButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateImportButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedUnfavorite
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedUnfavorite()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedUnfavorite");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedFavorite
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedFavorite()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedFavorite");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedUnsubscribe
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedUnsubscribe()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedUnsubscribe");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedSubscribe
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedSubscribe()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedSubscribe");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedCancel
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::OnClickedCancel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedCancel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateCancelButton
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::CreateCancelButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateCancelButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.VoteUp
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::VoteUp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "VoteUp");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateVoteButtons
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const EFluUGCItemVote                   Vote                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UGCBrowser_C::CreateVoteButtons(const EFluUGCItemVote Vote)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateVoteButtons");
+
+	Params::WBP_UGCBrowser_C_CreateVoteButtons Parms{};
+
+	Parms.Vote = Vote;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateViewInBrowserButton
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UGCBrowser_C::CreateViewInBrowserButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateViewInBrowserButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSubscribeButton
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSubscribed                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_UGCBrowser_C::CreateSubscribeButton(bool bIsSubscribed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateSubscribeButton");
+
+	Params::WBP_UGCBrowser_C_CreateSubscribeButton Parms{};
+
+	Parms.bIsSubscribed = bIsSubscribed;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -161,442 +478,124 @@ void UWBP_UGCBrowser_C::CreateSpawnButton(bool bCanReplaceCurrent, bool bCanSpaw
 }
 
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSubscribeButton
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateNewItemButton
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSubscribed                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UGCBrowser_C::CreateSubscribeButton(bool bIsSubscribed)
+void UWBP_UGCBrowser_C::CreateNewItemButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateSubscribeButton");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateNewItemButton");
 
-	Params::WBP_UGCBrowser_C_CreateSubscribeButton Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsSubscribed = bIsSubscribed;
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateFavoriteButton
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsFavorited                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_UGCBrowser_C::CreateFavoriteButton(bool bIsFavorited)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateFavoriteButton");
+
+	Params::WBP_UGCBrowser_C_CreateFavoriteButton Parms{};
+
+	Parms.bIsFavorited = bIsFavorited;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateViewInBrowserButton
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateEditButton
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UGCBrowser_C::CreateViewInBrowserButton()
+void UWBP_UGCBrowser_C::CreateEditButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateViewInBrowserButton");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateEditButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateVoteButtons
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const EFluUGCItemVote                   Vote                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UGCBrowser_C::CreateVoteButtons(const EFluUGCItemVote Vote)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateVoteButtons");
-
-	Params::WBP_UGCBrowser_C_CreateVoteButtons Parms{};
-
-	Parms.Vote = Vote;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.VoteUp
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::VoteUp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "VoteUp");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateCancelButton
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateDuplicateButton
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UGCBrowser_C::CreateCancelButton()
+void UWBP_UGCBrowser_C::CreateDuplicateButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateCancelButton");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateDuplicateButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedCancel
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedCancel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedCancel");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedSubscribe
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedSubscribe()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedSubscribe");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedUnsubscribe
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedUnsubscribe()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedUnsubscribe");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedFavorite
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedFavorite()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedFavorite");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedUnfavorite
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedUnfavorite()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedUnfavorite");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateImportButton
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateDeleteButton
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UGCBrowser_C::CreateImportButton()
+void UWBP_UGCBrowser_C::CreateDeleteButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateImportButton");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateDeleteButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedSpawnNew
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedSpawnNew()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedSpawnNew");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedReplaceCurrent
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedReplaceCurrent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedReplaceCurrent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateRecoverAutoSaveButton
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::CreateRecoverAutoSaveButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateRecoverAutoSaveButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateUploadNewButton
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::CreateUploadNewButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateUploadNewButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateUpdateExistingButton
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::CreateUpdateExistingButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateUpdateExistingButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedUploadNew
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedUploadNew()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedUploadNew");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedUpdateExisting
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedUpdateExisting()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedUpdateExisting");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSaveNewButton
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::CreateSaveNewButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateSaveNewButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSaveOverwriteButton
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::CreateSaveOverwriteButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateSaveOverwriteButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedSaveNew
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedSaveNew()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedSaveNew");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.OnClickedSaveOverwrite
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::OnClickedSaveOverwrite()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "OnClickedSaveOverwrite");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateOpenInExplorerButton
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::CreateOpenInExplorerButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateOpenInExplorerButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSpawnInvincibilityButton
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      CurrentInvincibilityText                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UGCBrowser_C::CreateSpawnInvincibilityButton(const class FText& CurrentInvincibilityText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateSpawnInvincibilityButton");
-
-	Params::WBP_UGCBrowser_C_CreateSpawnInvincibilityButton Parms{};
-
-	Parms.CurrentInvincibilityText = std::move(CurrentInvincibilityText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateAddOrRemoveItemButton
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateClearItemsButton
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // bool                                    bIsArrayProperty                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UGCBrowser_C::CreateAddOrRemoveItemButton(bool bIsArrayProperty, bool bIsSelected)
+void UWBP_UGCBrowser_C::CreateClearItemsButton(bool bIsArrayProperty)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateAddOrRemoveItemButton");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "CreateClearItemsButton");
 
-	Params::WBP_UGCBrowser_C_CreateAddOrRemoveItemButton Parms{};
+	Params::WBP_UGCBrowser_C_CreateClearItemsButton Parms{};
 
 	Parms.bIsArrayProperty = bIsArrayProperty;
-	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.AddItem
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::AddItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "AddItem");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.RemoveItem
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::RemoveItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "RemoveItem");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.VoteDown
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UGCBrowser_C::VoteDown()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "VoteDown");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.ExecuteUbergraph_WBP_UGCBrowser
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.GetSpawnButtonTooltipContent
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTooltipContent*                 OutContent                                             (Parm, OutParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
-void UWBP_UGCBrowser_C::ExecuteUbergraph_WBP_UGCBrowser(int32 EntryPoint)
+bool UWBP_UGCBrowser_C::GetSpawnButtonTooltipContent(struct FTooltipContent* OutContent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCBrowser_C", "ExecuteUbergraph_WBP_UGCBrowser");
+		Func = Class->GetFunction("WBP_UGCBrowser_C", "GetSpawnButtonTooltipContent");
 
-	Params::WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::WBP_UGCBrowser_C_GetSpawnButtonTooltipContent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutContent != nullptr)
+		*OutContent = std::move(Parms.OutContent);
+
+	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

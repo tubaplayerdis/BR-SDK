@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UserInterfaceSettings.WBP_UserInterfaceSettings_C
 // 0x0000 (0x0298 - 0x0298)
@@ -23,15 +22,17 @@ class UWBP_UserInterfaceSettings_C final : public UMenuSettingsPageWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_UserInterfaceSettings_C">();
+		BP_STATIC_CLASS_IMPL("WBP_UserInterfaceSettings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_UserInterfaceSettings_C")
 	}
 	static class UWBP_UserInterfaceSettings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_UserInterfaceSettings_C>();
 	}
 };
-static_assert(alignof(UWBP_UserInterfaceSettings_C) == 0x000008, "Wrong alignment on UWBP_UserInterfaceSettings_C");
-static_assert(sizeof(UWBP_UserInterfaceSettings_C) == 0x000298, "Wrong size on UWBP_UserInterfaceSettings_C");
+DUMPER7_ASSERTS_UWBP_UserInterfaceSettings_C;
 
-}
-
+SDK_NAMESPACE_END

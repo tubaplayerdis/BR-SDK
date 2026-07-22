@@ -14,33 +14,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
-
-// Function WBP_NumericProperty.WBP_NumericProperty_C.AddSliderWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_NumericProperty_C_AddSliderWidget final
-{
-public:
-	class UBrickSliderWidget*                     Slider;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_NumericProperty_C_AddSliderWidget) == 0x000008, "Wrong alignment on WBP_NumericProperty_C_AddSliderWidget");
-static_assert(sizeof(WBP_NumericProperty_C_AddSliderWidget) == 0x000008, "Wrong size on WBP_NumericProperty_C_AddSliderWidget");
-static_assert(offsetof(WBP_NumericProperty_C_AddSliderWidget, Slider) == 0x000000, "Member 'WBP_NumericProperty_C_AddSliderWidget::Slider' has a wrong offset!");
-
-// Function WBP_NumericProperty.WBP_NumericProperty_C.UpdateNumericProperty
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_NumericProperty_C_UpdateNumericProperty final
-{
-public:
-	ENumericValueType                             ValueType;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NumAxes;                                           // 0x0004(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_NumericProperty_C_UpdateNumericProperty) == 0x000004, "Wrong alignment on WBP_NumericProperty_C_UpdateNumericProperty");
-static_assert(sizeof(WBP_NumericProperty_C_UpdateNumericProperty) == 0x000008, "Wrong size on WBP_NumericProperty_C_UpdateNumericProperty");
-static_assert(offsetof(WBP_NumericProperty_C_UpdateNumericProperty, ValueType) == 0x000000, "Member 'WBP_NumericProperty_C_UpdateNumericProperty::ValueType' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_UpdateNumericProperty, NumAxes) == 0x000004, "Member 'WBP_NumericProperty_C_UpdateNumericProperty::NumAxes' has a wrong offset!");
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_NumericProperty.WBP_NumericProperty_C.ExecuteUbergraph_WBP_NumericProperty
 // 0x00A8 (0x00A8 - 0x0000)
@@ -89,43 +64,27 @@ public:
 	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default_3;                           // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty) == 0x000008, "Wrong alignment on WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty");
-static_assert(sizeof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty) == 0x0000A8, "Wrong size on WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, EntryPoint) == 0x000000, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_int_Variable) == 0x000004, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_bool_Variable) == 0x000008, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_byte_Variable) == 0x000009, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_byte_Variable_1) == 0x00000A, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_bool_Variable_1) == 0x00000B, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_int_Variable_1) == 0x00000C, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_int_Variable_2) == 0x000010, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_bool_Variable_2) == 0x000014, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_byte_Variable_2) == 0x000015, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_byte_Variable_3) == 0x000016, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_CreateDelegate_OutputDelegate_1) == 0x000028, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_AreAxesLocked_ReturnValue) == 0x000038, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_AreAxesLocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_int_Variable_3) == 0x00003C, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_Select_Default) == 0x000040, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_AreAxesLocked_ReturnValue_1) == 0x000041, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_AreAxesLocked_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_Select_Default_1) == 0x000044, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_Select_Default_2) == 0x000048, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_Event_Slider) == 0x000050, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_Event_Slider' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_MakeStruct_SlateChildSize) == 0x000058, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_MakeStruct_SlateChildSize' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000060, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_GetPropertyContainerWidget_ReturnValue) == 0x000068, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_GetPropertyContainerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_GetMenuButtonPanelWidget_ReturnValue) == 0x000070, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_GetMenuButtonPanelWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_CreateButton_ReturnValue) == 0x000078, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_CreateDisplayModeButton_ReturnValue) == 0x000080, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_CreateDisplayModeButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_GetUserSettings_ReturnValue) == 0x000088, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_GetUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_Event_ValueType) == 0x000090, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_Event_ValueType' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_Event_NumAxes) == 0x000094, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_Event_NumAxes' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_Greater_IntInt_ReturnValue) == 0x000098, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000099, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_AreAxesLocked_ReturnValue_2) == 0x00009A, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_AreAxesLocked_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, CallFunc_Not_PreBool_ReturnValue) == 0x00009B, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, Temp_bool_Variable_3) == 0x00009C, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty, K2Node_Select_Default_3) == 0x0000A0, "Member 'WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty::K2Node_Select_Default_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_NumericProperty_C_ExecuteUbergraph_WBP_NumericProperty;
 
-}
+// Function WBP_NumericProperty.WBP_NumericProperty_C.UpdateNumericProperty
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_NumericProperty_C_UpdateNumericProperty final
+{
+public:
+	ENumericValueType                             ValueType;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NumAxes;                                           // 0x0004(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NumericProperty_C_UpdateNumericProperty;
 
+// Function WBP_NumericProperty.WBP_NumericProperty_C.AddSliderWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_NumericProperty_C_AddSliderWidget final
+{
+public:
+	class UBrickSliderWidget*                     Slider;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NumericProperty_C_AddSliderWidget;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

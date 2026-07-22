@@ -16,8 +16,7 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InputActionCategory.WBP_InputActionCategory_C
 // 0x0018 (0x0298 - 0x0280)
@@ -41,18 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InputActionCategory_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InputActionCategory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InputActionCategory_C")
 	}
 	static class UWBP_InputActionCategory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InputActionCategory_C>();
 	}
 };
-static_assert(alignof(UWBP_InputActionCategory_C) == 0x000008, "Wrong alignment on UWBP_InputActionCategory_C");
-static_assert(sizeof(UWBP_InputActionCategory_C) == 0x000298, "Wrong size on UWBP_InputActionCategory_C");
-static_assert(offsetof(UWBP_InputActionCategory_C, UberGraphFrame) == 0x000280, "Member 'UWBP_InputActionCategory_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InputActionCategory_C, Button) == 0x000288, "Member 'UWBP_InputActionCategory_C::Button' has a wrong offset!");
-static_assert(offsetof(UWBP_InputActionCategory_C, TextBlock) == 0x000290, "Member 'UWBP_InputActionCategory_C::TextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InputActionCategory_C;
 
-}
-
+SDK_NAMESPACE_END

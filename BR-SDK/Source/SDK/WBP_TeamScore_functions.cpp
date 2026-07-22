@@ -14,16 +14,15 @@
 #include "WBP_TeamScore_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_TeamScore.WBP_TeamScore_C.UpdateScore
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   NewScore                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewMaxScore                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewScore_UpdateScore                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewMaxScore_UpdateScore                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TeamScore_C::UpdateScore(int32 NewScore, int32 NewMaxScore)
+void UWBP_TeamScore_C::UpdateScore(int32 NewScore_UpdateScore, int32 NewMaxScore_UpdateScore)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32,8 +31,8 @@ void UWBP_TeamScore_C::UpdateScore(int32 NewScore, int32 NewMaxScore)
 
 	Params::WBP_TeamScore_C_UpdateScore Parms{};
 
-	Parms.NewScore = NewScore;
-	Parms.NewMaxScore = NewMaxScore;
+	Parms.NewScore_UpdateScore = NewScore_UpdateScore;
+	Parms.NewMaxScore_UpdateScore = NewMaxScore_UpdateScore;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -42,9 +41,9 @@ void UWBP_TeamScore_C::UpdateScore(int32 NewScore, int32 NewMaxScore)
 // Function WBP_TeamScore.WBP_TeamScore_C.UpdateTeamAttitude
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// ETeamAttitude                           NewTeamAttitude                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ETeamAttitude                           NewTeamAttitude_UpdateTeamAttitude                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TeamScore_C::UpdateTeamAttitude(ETeamAttitude NewTeamAttitude)
+void UWBP_TeamScore_C::UpdateTeamAttitude(ETeamAttitude NewTeamAttitude_UpdateTeamAttitude)
 {
 	static class UFunction* Func = nullptr;
 
@@ -53,7 +52,7 @@ void UWBP_TeamScore_C::UpdateTeamAttitude(ETeamAttitude NewTeamAttitude)
 
 	Params::WBP_TeamScore_C_UpdateTeamAttitude Parms{};
 
-	Parms.NewTeamAttitude = NewTeamAttitude;
+	Parms.NewTeamAttitude_UpdateTeamAttitude = NewTeamAttitude_UpdateTeamAttitude;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -62,9 +61,9 @@ void UWBP_TeamScore_C::UpdateTeamAttitude(ETeamAttitude NewTeamAttitude)
 // Function WBP_TeamScore.WBP_TeamScore_C.UpdateTeamIcon
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       NewIcon                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       NewIcon_UpdateTeamIcon                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TeamScore_C::UpdateTeamIcon(class UTexture2D* NewIcon)
+void UWBP_TeamScore_C::UpdateTeamIcon(class UTexture2D* NewIcon_UpdateTeamIcon)
 {
 	static class UFunction* Func = nullptr;
 
@@ -73,7 +72,7 @@ void UWBP_TeamScore_C::UpdateTeamIcon(class UTexture2D* NewIcon)
 
 	Params::WBP_TeamScore_C_UpdateTeamIcon Parms{};
 
-	Parms.NewIcon = NewIcon;
+	Parms.NewIcon_UpdateTeamIcon = NewIcon_UpdateTeamIcon;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -98,5 +97,5 @@ void UWBP_TeamScore_C::ExecuteUbergraph_WBP_TeamScore(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

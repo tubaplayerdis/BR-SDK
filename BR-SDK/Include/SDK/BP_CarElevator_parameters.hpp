@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_CarElevator.BP_CarElevator_C.ExecuteUbergraph_BP_CarElevator
 // 0x014C (0x014C - 0x0000)
@@ -35,19 +35,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x003C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x00C4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator) == 0x000004, "Wrong alignment on BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator");
-static_assert(sizeof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator) == 0x00014C, "Wrong size on BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, EntryPoint) == 0x000000, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, CallFunc_GetPI_ReturnValue) == 0x000004, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::CallFunc_GetPI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000008, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, K2Node_Event_NewState) == 0x00000C, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::K2Node_Event_NewState' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000018, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00001C, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000020, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, CallFunc_MakeRotator_ReturnValue) == 0x000024, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, CallFunc_MakeRotator_ReturnValue_1) == 0x000030, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x00003C, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator, CallFunc_K2_SetRelativeRotation_SweepHitResult_1) == 0x0000C4, "Member 'BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator::CallFunc_K2_SetRelativeRotation_SweepHitResult_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CarElevator_C_ExecuteUbergraph_BP_CarElevator;
 
 // Function BP_CarElevator.BP_CarElevator_C.OnElevatorStateChanged
 // 0x000C (0x000C - 0x0000)
@@ -56,9 +44,7 @@ struct BP_CarElevator_C_OnElevatorStateChanged final
 public:
 	struct FElevatorState                         NewState;                                          // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_CarElevator_C_OnElevatorStateChanged) == 0x000004, "Wrong alignment on BP_CarElevator_C_OnElevatorStateChanged");
-static_assert(sizeof(BP_CarElevator_C_OnElevatorStateChanged) == 0x00000C, "Wrong size on BP_CarElevator_C_OnElevatorStateChanged");
-static_assert(offsetof(BP_CarElevator_C_OnElevatorStateChanged, NewState) == 0x000000, "Member 'BP_CarElevator_C_OnElevatorStateChanged::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CarElevator_C_OnElevatorStateChanged;
 
 // Function BP_CarElevator.BP_CarElevator_C.UserConstructionScript
 // 0x0240 (0x0240 - 0x0000)
@@ -90,30 +76,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_2;  // 0x01AC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CarElevator_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_CarElevator_C_UserConstructionScript");
-static_assert(sizeof(BP_CarElevator_C_UserConstructionScript) == 0x000240, "Wrong size on BP_CarElevator_C_UserConstructionScript");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, Temp_int_Variable) == 0x000000, "Member 'BP_CarElevator_C_UserConstructionScript::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000004, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000008, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_BreakVector_X) == 0x000050, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_BreakVector_Y) == 0x000054, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_BreakVector_Z) == 0x000058, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_BreakVector_X_1) == 0x00005C, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_BreakVector_Y_1) == 0x000060, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_BreakVector_Z_1) == 0x000064, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_AddInstance_ReturnValue) == 0x000068, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_AddInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x00006C, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_Subtract_IntInt_ReturnValue) == 0x000070, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_1) == 0x000074, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000080, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000084, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_2) == 0x00010C, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_3) == 0x000118, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_K2_SetRelativeLocation_SweepHitResult_1) == 0x000124, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_K2_SetRelativeLocation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_K2_SetRelativeLocation_SweepHitResult_2) == 0x0001AC, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_K2_SetRelativeLocation_SweepHitResult_2' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_UserConstructionScript, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000234, "Member 'BP_CarElevator_C_UserConstructionScript::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CarElevator_C_UserConstructionScript;
 
 // Function BP_CarElevator.BP_CarElevator_C.GetInteractionLocation
 // 0x0038 (0x0038 - 0x0000)
@@ -126,13 +89,7 @@ public:
 	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CarElevator_C_GetInteractionLocation) == 0x000008, "Wrong alignment on BP_CarElevator_C_GetInteractionLocation");
-static_assert(sizeof(BP_CarElevator_C_GetInteractionLocation) == 0x000038, "Wrong size on BP_CarElevator_C_GetInteractionLocation");
-static_assert(offsetof(BP_CarElevator_C_GetInteractionLocation, Index_0) == 0x000000, "Member 'BP_CarElevator_C_GetInteractionLocation::Index_0' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_GetInteractionLocation, ReturnValue) == 0x000004, "Member 'BP_CarElevator_C_GetInteractionLocation::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_GetInteractionLocation, K2Node_MakeArray_Array) == 0x000010, "Member 'BP_CarElevator_C_GetInteractionLocation::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_GetInteractionLocation, CallFunc_Array_Get_Item) == 0x000020, "Member 'BP_CarElevator_C_GetInteractionLocation::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CarElevator_C_GetInteractionLocation, CallFunc_GetSocketLocation_ReturnValue) == 0x000028, "Member 'BP_CarElevator_C_GetInteractionLocation::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CarElevator_C_GetInteractionLocation;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

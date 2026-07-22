@@ -14,8 +14,7 @@
 #include "WBP_Spectator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_Spectator.WBP_Spectator_C.ExecuteUbergraph_WBP_Spectator
 // (Final, UbergraphFunction, HasDefaults)
@@ -150,5 +149,5 @@ class UWidget* UWBP_Spectator_C::GetWidgetToFocus() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

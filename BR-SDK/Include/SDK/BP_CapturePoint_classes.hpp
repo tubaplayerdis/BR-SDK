@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_CapturePoint.BP_CapturePoint_C
 // 0x0000 (0x0378 - 0x0378)
@@ -23,15 +22,17 @@ class ABP_CapturePoint_C final : public ACapturePoint
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CapturePoint_C">();
+		BP_STATIC_CLASS_IMPL("BP_CapturePoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CapturePoint_C")
 	}
 	static class ABP_CapturePoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CapturePoint_C>();
 	}
 };
-static_assert(alignof(ABP_CapturePoint_C) == 0x000008, "Wrong alignment on ABP_CapturePoint_C");
-static_assert(sizeof(ABP_CapturePoint_C) == 0x000378, "Wrong size on ABP_CapturePoint_C");
+DUMPER7_ASSERTS_ABP_CapturePoint_C;
 
-}
-
+SDK_NAMESPACE_END

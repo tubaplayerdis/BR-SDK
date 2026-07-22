@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_GasStation.BP_GasStation_C
 // 0x0000 (0x02C0 - 0x02C0)
@@ -23,15 +22,17 @@ class ABP_GasStation_C final : public ABrickBuilding
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GasStation_C">();
+		BP_STATIC_CLASS_IMPL("BP_GasStation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GasStation_C")
 	}
 	static class ABP_GasStation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_GasStation_C>();
 	}
 };
-static_assert(alignof(ABP_GasStation_C) == 0x000010, "Wrong alignment on ABP_GasStation_C");
-static_assert(sizeof(ABP_GasStation_C) == 0x0002C0, "Wrong size on ABP_GasStation_C");
+DUMPER7_ASSERTS_ABP_GasStation_C;
 
-}
-
+SDK_NAMESPACE_END

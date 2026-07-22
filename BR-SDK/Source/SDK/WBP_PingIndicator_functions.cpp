@@ -14,8 +14,27 @@
 #include "WBP_PingIndicator_parameters.hpp"
 
 
-namespace SDK
+SDK_NAMESPACE_START
+
+// Function WBP_PingIndicator.WBP_PingIndicator_C.ExecuteUbergraph_WBP_PingIndicator
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PingIndicator_C::ExecuteUbergraph_WBP_PingIndicator(int32 EntryPoint)
 {
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PingIndicator_C", "ExecuteUbergraph_WBP_PingIndicator");
+
+	Params::WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function WBP_PingIndicator.WBP_PingIndicator_C.UpdatePing
 // (Event, Protected, BlueprintEvent)
@@ -37,24 +56,4 @@ void UWBP_PingIndicator_C::UpdatePing(int32 InPing)
 }
 
 
-// Function WBP_PingIndicator.WBP_PingIndicator_C.ExecuteUbergraph_WBP_PingIndicator
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PingIndicator_C::ExecuteUbergraph_WBP_PingIndicator(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PingIndicator_C", "ExecuteUbergraph_WBP_PingIndicator");
-
-	Params::WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-}
-
+SDK_NAMESPACE_END

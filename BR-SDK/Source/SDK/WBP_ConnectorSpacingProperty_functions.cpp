@@ -14,8 +14,7 @@
 #include "WBP_ConnectorSpacingProperty_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ConnectorSpacingProperty.WBP_ConnectorSpacingProperty_C.ExecuteUbergraph_WBP_ConnectorSpacingProperty
 // (Final, UbergraphFunction, HasDefaults)
@@ -115,5 +114,5 @@ class FName UWBP_ConnectorSpacingProperty_C::GetFocusedSubProperty(const struct 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

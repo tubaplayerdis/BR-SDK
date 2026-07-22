@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InputKeySpacer.WBP_InputKeySpacer_C.ExecuteUbergraph_WBP_InputKeySpacer
 // 0x0008 (0x0008 - 0x0000)
@@ -25,11 +25,7 @@ public:
 	EBrickUIColorStyle                            K2Node_CustomEvent_NewStyle;                       // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            K2Node_CustomEvent_NewState;                       // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer) == 0x000004, "Wrong alignment on WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer");
-static_assert(sizeof(WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer) == 0x000008, "Wrong size on WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer");
-static_assert(offsetof(WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer, EntryPoint) == 0x000000, "Member 'WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer, K2Node_CustomEvent_NewStyle) == 0x000004, "Member 'WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer::K2Node_CustomEvent_NewStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer, K2Node_CustomEvent_NewState) == 0x000005, "Member 'WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer::K2Node_CustomEvent_NewState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputKeySpacer_C_ExecuteUbergraph_WBP_InputKeySpacer;
 
 // Function WBP_InputKeySpacer.WBP_InputKeySpacer_C.UpdateStyleState
 // 0x0002 (0x0002 - 0x0000)
@@ -39,10 +35,7 @@ public:
 	EBrickUIColorStyle                            NewStyle;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputKeySpacer_C_UpdateStyleState) == 0x000001, "Wrong alignment on WBP_InputKeySpacer_C_UpdateStyleState");
-static_assert(sizeof(WBP_InputKeySpacer_C_UpdateStyleState) == 0x000002, "Wrong size on WBP_InputKeySpacer_C_UpdateStyleState");
-static_assert(offsetof(WBP_InputKeySpacer_C_UpdateStyleState, NewStyle) == 0x000000, "Member 'WBP_InputKeySpacer_C_UpdateStyleState::NewStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputKeySpacer_C_UpdateStyleState, NewState) == 0x000001, "Member 'WBP_InputKeySpacer_C_UpdateStyleState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputKeySpacer_C_UpdateStyleState;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

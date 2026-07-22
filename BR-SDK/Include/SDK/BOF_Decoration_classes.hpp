@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BOF_Decoration.BOF_Decoration_C
 // 0x0000 (0x00B0 - 0x00B0)
@@ -23,15 +22,17 @@ class UBOF_Decoration_C final : public UBrickEditorObjectFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BOF_Decoration_C">();
+		BP_STATIC_CLASS_IMPL("BOF_Decoration_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BOF_Decoration_C")
 	}
 	static class UBOF_Decoration_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBOF_Decoration_C>();
 	}
 };
-static_assert(alignof(UBOF_Decoration_C) == 0x000008, "Wrong alignment on UBOF_Decoration_C");
-static_assert(sizeof(UBOF_Decoration_C) == 0x0000B0, "Wrong size on UBOF_Decoration_C");
+DUMPER7_ASSERTS_UBOF_Decoration_C;
 
-}
-
+SDK_NAMESPACE_END

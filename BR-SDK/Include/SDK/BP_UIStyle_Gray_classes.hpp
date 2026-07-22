@@ -10,12 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "BP_UIStyle_Default_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_UIStyle_Default_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_UIStyle_Gray.BP_UIStyle_Gray_C
 // 0x0008 (0x7100 - 0x70F8)
@@ -31,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_UIStyle_Gray_C">();
+		BP_STATIC_CLASS_IMPL("BP_UIStyle_Gray_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_UIStyle_Gray_C")
 	}
 	static class UBP_UIStyle_Gray_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_UIStyle_Gray_C>();
 	}
 };
-static_assert(alignof(UBP_UIStyle_Gray_C) == 0x000008, "Wrong alignment on UBP_UIStyle_Gray_C");
-static_assert(sizeof(UBP_UIStyle_Gray_C) == 0x007100, "Wrong size on UBP_UIStyle_Gray_C");
-static_assert(offsetof(UBP_UIStyle_Gray_C, UberGraphFrame_BP_UIStyle_Gray_C) == 0x0070F8, "Member 'UBP_UIStyle_Gray_C::UberGraphFrame_BP_UIStyle_Gray_C' has a wrong offset!");
+DUMPER7_ASSERTS_UBP_UIStyle_Gray_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ABP_Character_RC_Parent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ABP_Character_RC_Parent.ABP_Character_RC_Parent_C.ExecuteUbergraph_ABP_Character_RC_Parent
 // (Final, UbergraphFunction)
@@ -56,5 +55,5 @@ void UABP_Character_RC_Parent_C::BlueprintUpdateAnimation(float DeltaTimeX)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

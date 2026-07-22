@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Suppressor_StaticInfo.BP_Suppressor_StaticInfo_C
 // 0x0000 (0x03F0 - 0x03F0)
@@ -23,15 +22,17 @@ class UBP_Suppressor_StaticInfo_C final : public UBarrelStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Suppressor_StaticInfo_C">();
+		BP_STATIC_CLASS_IMPL("BP_Suppressor_StaticInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Suppressor_StaticInfo_C")
 	}
 	static class UBP_Suppressor_StaticInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Suppressor_StaticInfo_C>();
 	}
 };
-static_assert(alignof(UBP_Suppressor_StaticInfo_C) == 0x000010, "Wrong alignment on UBP_Suppressor_StaticInfo_C");
-static_assert(sizeof(UBP_Suppressor_StaticInfo_C) == 0x0003F0, "Wrong size on UBP_Suppressor_StaticInfo_C");
+DUMPER7_ASSERTS_UBP_Suppressor_StaticInfo_C;
 
-}
-
+SDK_NAMESPACE_END

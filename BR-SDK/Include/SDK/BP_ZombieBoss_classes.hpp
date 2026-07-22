@@ -13,8 +13,7 @@
 #include "BP_Zombie_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ZombieBoss.BP_ZombieBoss_C
 // 0x0000 (0x07C0 - 0x07C0)
@@ -23,15 +22,17 @@ class ABP_ZombieBoss_C final : public ABP_Zombie_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ZombieBoss_C">();
+		BP_STATIC_CLASS_IMPL("BP_ZombieBoss_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ZombieBoss_C")
 	}
 	static class ABP_ZombieBoss_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ZombieBoss_C>();
 	}
 };
-static_assert(alignof(ABP_ZombieBoss_C) == 0x000010, "Wrong alignment on ABP_ZombieBoss_C");
-static_assert(sizeof(ABP_ZombieBoss_C) == 0x0007C0, "Wrong size on ABP_ZombieBoss_C");
+DUMPER7_ASSERTS_ABP_ZombieBoss_C;
 
-}
-
+SDK_NAMESPACE_END

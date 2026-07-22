@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UGCTaskPopup.WBP_UGCTaskPopup_C
 // 0x0018 (0x02E0 - 0x02C8)
@@ -36,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_UGCTaskPopup_C">();
+		BP_STATIC_CLASS_IMPL("WBP_UGCTaskPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_UGCTaskPopup_C")
 	}
 	static class UWBP_UGCTaskPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_UGCTaskPopup_C>();
 	}
 };
-static_assert(alignof(UWBP_UGCTaskPopup_C) == 0x000008, "Wrong alignment on UWBP_UGCTaskPopup_C");
-static_assert(sizeof(UWBP_UGCTaskPopup_C) == 0x0002E0, "Wrong size on UWBP_UGCTaskPopup_C");
-static_assert(offsetof(UWBP_UGCTaskPopup_C, UberGraphFrame) == 0x0002C8, "Member 'UWBP_UGCTaskPopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCTaskPopup_C, Slider) == 0x0002D0, "Member 'UWBP_UGCTaskPopup_C::Slider' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCTaskPopup_C, ConfirmButton) == 0x0002D8, "Member 'UWBP_UGCTaskPopup_C::ConfirmButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_UGCTaskPopup_C;
 
-}
-
+SDK_NAMESPACE_END

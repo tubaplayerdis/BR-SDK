@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_CornerRounded_2x2x1_02.BP_CornerRounded_2x2x1_02_C
 // 0x0000 (0x0190 - 0x0190)
@@ -23,15 +22,17 @@ class UBP_CornerRounded_2x2x1_02_C final : public URampBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CornerRounded_2x2x1_02_C">();
+		BP_STATIC_CLASS_IMPL("BP_CornerRounded_2x2x1_02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CornerRounded_2x2x1_02_C")
 	}
 	static class UBP_CornerRounded_2x2x1_02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_CornerRounded_2x2x1_02_C>();
 	}
 };
-static_assert(alignof(UBP_CornerRounded_2x2x1_02_C) == 0x000008, "Wrong alignment on UBP_CornerRounded_2x2x1_02_C");
-static_assert(sizeof(UBP_CornerRounded_2x2x1_02_C) == 0x000190, "Wrong size on UBP_CornerRounded_2x2x1_02_C");
+DUMPER7_ASSERTS_UBP_CornerRounded_2x2x1_02_C;
 
-}
-
+SDK_NAMESPACE_END

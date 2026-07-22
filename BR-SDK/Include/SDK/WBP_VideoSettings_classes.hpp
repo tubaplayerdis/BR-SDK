@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_VideoSettings.WBP_VideoSettings_C
 // 0x0018 (0x02B0 - 0x0298)
@@ -38,18 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_VideoSettings_C">();
+		BP_STATIC_CLASS_IMPL("WBP_VideoSettings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_VideoSettings_C")
 	}
 	static class UWBP_VideoSettings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_VideoSettings_C>();
 	}
 };
-static_assert(alignof(UWBP_VideoSettings_C) == 0x000008, "Wrong alignment on UWBP_VideoSettings_C");
-static_assert(sizeof(UWBP_VideoSettings_C) == 0x0002B0, "Wrong size on UWBP_VideoSettings_C");
-static_assert(offsetof(UWBP_VideoSettings_C, UberGraphFrame) == 0x000298, "Member 'UWBP_VideoSettings_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_VideoSettings_C, ApplyButton) == 0x0002A0, "Member 'UWBP_VideoSettings_C::ApplyButton' has a wrong offset!");
-static_assert(offsetof(UWBP_VideoSettings_C, SaveSettingsPopupHandle) == 0x0002A8, "Member 'UWBP_VideoSettings_C::SaveSettingsPopupHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_VideoSettings_C;
 
-}
-
+SDK_NAMESPACE_END

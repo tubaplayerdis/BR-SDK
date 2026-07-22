@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InventoryContainer.WBP_InventoryContainer_C.ExecuteUbergraph_WBP_InventoryContainer
 // 0x0038 (0x0038 - 0x0000)
@@ -43,26 +43,7 @@ public:
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer) == 0x000008, "Wrong alignment on WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer");
-static_assert(sizeof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer) == 0x000038, "Wrong size on WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, EntryPoint) == 0x000000, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, Temp_bool_Variable) == 0x000004, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, Temp_byte_Variable) == 0x000005, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, Temp_bool_Variable_1) == 0x000007, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, Temp_byte_Variable_2) == 0x000008, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, Temp_byte_Variable_3) == 0x000009, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, Temp_bool_Variable_2) == 0x00000A, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, Temp_byte_Variable_4) == 0x00000B, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, Temp_byte_Variable_5) == 0x00000C, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, K2Node_Event_bHasInventory) == 0x00000D, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::K2Node_Event_bHasInventory' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, K2Node_Event_NewMoney) == 0x000010, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::K2Node_Event_NewMoney' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000014, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, K2Node_Select_Default) == 0x000015, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, K2Node_Select_Default_1) == 0x000016, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, CallFunc_NumberToText_ReturnValue) == 0x000018, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::CallFunc_NumberToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000030, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer, K2Node_Select_Default_2) == 0x000031, "Member 'WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer::K2Node_Select_Default_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InventoryContainer_C_ExecuteUbergraph_WBP_InventoryContainer;
 
 // Function WBP_InventoryContainer.WBP_InventoryContainer_C.UpdateOwnerMoney
 // 0x0004 (0x0004 - 0x0000)
@@ -71,9 +52,7 @@ struct WBP_InventoryContainer_C_UpdateOwnerMoney final
 public:
 	float                                         NewMoney;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InventoryContainer_C_UpdateOwnerMoney) == 0x000004, "Wrong alignment on WBP_InventoryContainer_C_UpdateOwnerMoney");
-static_assert(sizeof(WBP_InventoryContainer_C_UpdateOwnerMoney) == 0x000004, "Wrong size on WBP_InventoryContainer_C_UpdateOwnerMoney");
-static_assert(offsetof(WBP_InventoryContainer_C_UpdateOwnerMoney, NewMoney) == 0x000000, "Member 'WBP_InventoryContainer_C_UpdateOwnerMoney::NewMoney' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InventoryContainer_C_UpdateOwnerMoney;
 
 // Function WBP_InventoryContainer.WBP_InventoryContainer_C.UpdateHasInventory
 // 0x0001 (0x0001 - 0x0000)
@@ -82,9 +61,7 @@ struct WBP_InventoryContainer_C_UpdateHasInventory final
 public:
 	bool                                          bHasInventory;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InventoryContainer_C_UpdateHasInventory) == 0x000001, "Wrong alignment on WBP_InventoryContainer_C_UpdateHasInventory");
-static_assert(sizeof(WBP_InventoryContainer_C_UpdateHasInventory) == 0x000001, "Wrong size on WBP_InventoryContainer_C_UpdateHasInventory");
-static_assert(offsetof(WBP_InventoryContainer_C_UpdateHasInventory, bHasInventory) == 0x000000, "Member 'WBP_InventoryContainer_C_UpdateHasInventory::bHasInventory' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InventoryContainer_C_UpdateHasInventory;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

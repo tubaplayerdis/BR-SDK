@@ -13,19 +13,17 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_RestrictedArea.WBP_RestrictedArea_C.UpdateTimerRemaining
 // 0x0004 (0x0004 - 0x0000)
 struct WBP_RestrictedArea_C_UpdateTimerRemaining final
 {
 public:
-	float                                         TimeRemaining;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TimeRemaining_UpdateTimerRemaining;                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RestrictedArea_C_UpdateTimerRemaining) == 0x000004, "Wrong alignment on WBP_RestrictedArea_C_UpdateTimerRemaining");
-static_assert(sizeof(WBP_RestrictedArea_C_UpdateTimerRemaining) == 0x000004, "Wrong size on WBP_RestrictedArea_C_UpdateTimerRemaining");
-static_assert(offsetof(WBP_RestrictedArea_C_UpdateTimerRemaining, TimeRemaining) == 0x000000, "Member 'WBP_RestrictedArea_C_UpdateTimerRemaining::TimeRemaining' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RestrictedArea_C_UpdateTimerRemaining;
 
 // Function WBP_RestrictedArea.WBP_RestrictedArea_C.ExecuteUbergraph_WBP_RestrictedArea
 // 0x00F8 (0x00F8 - 0x0000)
@@ -45,19 +43,7 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D8(0x0018)()
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_1;     // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea) == 0x000008, "Wrong alignment on WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea");
-static_assert(sizeof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea) == 0x0000F8, "Wrong size on WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, EntryPoint) == 0x000000, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000004, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, K2Node_Event_TimeRemaining) == 0x000008, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::K2Node_Event_TimeRemaining' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, CallFunc_NumberToText_ReturnValue) == 0x000010, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::CallFunc_NumberToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, CallFunc_MakeLiteralText_ReturnValue) == 0x000028, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, K2Node_MakeStruct_FormatArgumentData) == 0x000040, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, K2Node_MakeStruct_FormatArgumentData_1) == 0x000080, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, K2Node_MakeArray_Array) == 0x0000C0, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, CallFunc_PlayAnimationTimeRange_ReturnValue) == 0x0000D0, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::CallFunc_PlayAnimationTimeRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, CallFunc_Format_ReturnValue) == 0x0000D8, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea, CallFunc_PlayAnimationTimeRange_ReturnValue_1) == 0x0000F0, "Member 'WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea::CallFunc_PlayAnimationTimeRange_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RestrictedArea_C_ExecuteUbergraph_WBP_RestrictedArea;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

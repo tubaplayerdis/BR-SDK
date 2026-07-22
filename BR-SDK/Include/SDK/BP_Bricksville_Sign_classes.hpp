@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Bricksville_Sign.BP_Bricksville_Sign_C
 // 0x0000 (0x0230 - 0x0230)
@@ -23,15 +22,17 @@ class ABP_Bricksville_Sign_C final : public AStaticMeshActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Bricksville_Sign_C">();
+		BP_STATIC_CLASS_IMPL("BP_Bricksville_Sign_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Bricksville_Sign_C")
 	}
 	static class ABP_Bricksville_Sign_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Bricksville_Sign_C>();
 	}
 };
-static_assert(alignof(ABP_Bricksville_Sign_C) == 0x000008, "Wrong alignment on ABP_Bricksville_Sign_C");
-static_assert(sizeof(ABP_Bricksville_Sign_C) == 0x000230, "Wrong size on ABP_Bricksville_Sign_C");
+DUMPER7_ASSERTS_ABP_Bricksville_Sign_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UGCProperty.WBP_UGCProperty_C
 // 0x0018 (0x02C8 - 0x02B0)
@@ -36,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_UGCProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_UGCProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_UGCProperty_C")
 	}
 	static class UWBP_UGCProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_UGCProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_UGCProperty_C) == 0x000008, "Wrong alignment on UWBP_UGCProperty_C");
-static_assert(sizeof(UWBP_UGCProperty_C) == 0x0002C8, "Wrong size on UWBP_UGCProperty_C");
-static_assert(offsetof(UWBP_UGCProperty_C, UberGraphFrame) == 0x0002B0, "Member 'UWBP_UGCProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCProperty_C, Button) == 0x0002B8, "Member 'UWBP_UGCProperty_C::Button' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCProperty_C, ItemsTextBlock) == 0x0002C0, "Member 'UWBP_UGCProperty_C::ItemsTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_UGCProperty_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_Server_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_Server.WBP_Server_C.ExecuteUbergraph_WBP_Server
 // (Final, UbergraphFunction, HasDefaults)
@@ -105,5 +104,5 @@ int32 UWBP_Server_C::GetModIconSlot(bool bHasMods, bool bHasSameMods, bool bAllo
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

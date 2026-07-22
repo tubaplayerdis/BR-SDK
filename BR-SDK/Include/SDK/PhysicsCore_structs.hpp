@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum PhysicsCore.EBodyCollisionResponse
 // NumValues: 0x0003
@@ -188,8 +187,7 @@ public:
 	uint8                                         bUpdateMassWhenScaleChanges : 1;                   // 0x0010(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBodyInstanceCore) == 0x000008, "Wrong alignment on FBodyInstanceCore");
-static_assert(sizeof(FBodyInstanceCore) == 0x000018, "Wrong size on FBodyInstanceCore");
+DUMPER7_ASSERTS_FBodyInstanceCore;
 
 // ScriptStruct PhysicsCore.CollisionDominancePair
 // 0x0010 (0x0010 - 0x0000)
@@ -203,12 +201,6 @@ public:
 	uint8                                         InvMassScale2;                                     // 0x000C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCollisionDominancePair) == 0x000004, "Wrong alignment on FCollisionDominancePair");
-static_assert(sizeof(FCollisionDominancePair) == 0x000010, "Wrong size on FCollisionDominancePair");
-static_assert(offsetof(FCollisionDominancePair, Group1) == 0x000000, "Member 'FCollisionDominancePair::Group1' has a wrong offset!");
-static_assert(offsetof(FCollisionDominancePair, InvMassScale1) == 0x000004, "Member 'FCollisionDominancePair::InvMassScale1' has a wrong offset!");
-static_assert(offsetof(FCollisionDominancePair, Group2) == 0x000008, "Member 'FCollisionDominancePair::Group2' has a wrong offset!");
-static_assert(offsetof(FCollisionDominancePair, InvMassScale2) == 0x00000C, "Member 'FCollisionDominancePair::InvMassScale2' has a wrong offset!");
+DUMPER7_ASSERTS_FCollisionDominancePair;
 
-}
-
+SDK_NAMESPACE_END

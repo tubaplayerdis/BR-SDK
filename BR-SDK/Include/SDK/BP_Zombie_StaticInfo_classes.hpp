@@ -13,8 +13,7 @@
 #include "BP_BrickCharacter_StaticInfo_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Zombie_StaticInfo.BP_Zombie_StaticInfo_C
 // 0x0000 (0x0300 - 0x0300)
@@ -23,15 +22,17 @@ class UBP_Zombie_StaticInfo_C : public UBP_BrickCharacter_StaticInfo_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Zombie_StaticInfo_C">();
+		BP_STATIC_CLASS_IMPL("BP_Zombie_StaticInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Zombie_StaticInfo_C")
 	}
 	static class UBP_Zombie_StaticInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Zombie_StaticInfo_C>();
 	}
 };
-static_assert(alignof(UBP_Zombie_StaticInfo_C) == 0x000008, "Wrong alignment on UBP_Zombie_StaticInfo_C");
-static_assert(sizeof(UBP_Zombie_StaticInfo_C) == 0x000300, "Wrong size on UBP_Zombie_StaticInfo_C");
+DUMPER7_ASSERTS_UBP_Zombie_StaticInfo_C;
 
-}
-
+SDK_NAMESPACE_END

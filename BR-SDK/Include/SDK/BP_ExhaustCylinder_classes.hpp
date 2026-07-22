@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ExhaustCylinder.BP_ExhaustCylinder_C
 // 0x0000 (0x01D8 - 0x01D8)
@@ -23,15 +22,17 @@ class UBP_ExhaustCylinder_C final : public UExhaustBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ExhaustCylinder_C">();
+		BP_STATIC_CLASS_IMPL("BP_ExhaustCylinder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ExhaustCylinder_C")
 	}
 	static class UBP_ExhaustCylinder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ExhaustCylinder_C>();
 	}
 };
-static_assert(alignof(UBP_ExhaustCylinder_C) == 0x000008, "Wrong alignment on UBP_ExhaustCylinder_C");
-static_assert(sizeof(UBP_ExhaustCylinder_C) == 0x0001D8, "Wrong size on UBP_ExhaustCylinder_C");
+DUMPER7_ASSERTS_UBP_ExhaustCylinder_C;
 
-}
-
+SDK_NAMESPACE_END

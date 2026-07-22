@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Sign.BP_Sign_C
 // 0x0010 (0x0230 - 0x0220)
@@ -30,17 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Sign_C">();
+		BP_STATIC_CLASS_IMPL("BP_Sign_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Sign_C")
 	}
 	static class ABP_Sign_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Sign_C>();
 	}
 };
-static_assert(alignof(ABP_Sign_C) == 0x000008, "Wrong alignment on ABP_Sign_C");
-static_assert(sizeof(ABP_Sign_C) == 0x000230, "Wrong size on ABP_Sign_C");
-static_assert(offsetof(ABP_Sign_C, TextRender) == 0x000220, "Member 'ABP_Sign_C::TextRender' has a wrong offset!");
-static_assert(offsetof(ABP_Sign_C, Mesh) == 0x000228, "Member 'ABP_Sign_C::Mesh' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Sign_C;
 
-}
-
+SDK_NAMESPACE_END

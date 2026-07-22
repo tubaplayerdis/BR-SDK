@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_StructProperty.WBP_StructProperty_C
 // 0x0010 (0x02A0 - 0x0290)
@@ -33,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StructProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StructProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StructProperty_C")
 	}
 	static class UWBP_StructProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StructProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_StructProperty_C) == 0x000008, "Wrong alignment on UWBP_StructProperty_C");
-static_assert(sizeof(UWBP_StructProperty_C) == 0x0002A0, "Wrong size on UWBP_StructProperty_C");
-static_assert(offsetof(UWBP_StructProperty_C, UberGraphFrame) == 0x000290, "Member 'UWBP_StructProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StructProperty_C, GridPanel) == 0x000298, "Member 'UWBP_StructProperty_C::GridPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StructProperty_C;
 
-}
-
+SDK_NAMESPACE_END

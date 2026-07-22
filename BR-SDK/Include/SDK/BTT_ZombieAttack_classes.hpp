@@ -14,8 +14,7 @@
 #include "AIModule_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BTT_ZombieAttack.BTT_ZombieAttack_C
 // 0x0008 (0x00B0 - 0x00A8)
@@ -33,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTT_ZombieAttack_C">();
+		BP_STATIC_CLASS_IMPL("BTT_ZombieAttack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_ZombieAttack_C")
 	}
 	static class UBTT_ZombieAttack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_ZombieAttack_C>();
 	}
 };
-static_assert(alignof(UBTT_ZombieAttack_C) == 0x000008, "Wrong alignment on UBTT_ZombieAttack_C");
-static_assert(sizeof(UBTT_ZombieAttack_C) == 0x0000B0, "Wrong size on UBTT_ZombieAttack_C");
-static_assert(offsetof(UBTT_ZombieAttack_C, UberGraphFrame) == 0x0000A8, "Member 'UBTT_ZombieAttack_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_ZombieAttack_C;
 
-}
-
+SDK_NAMESPACE_END

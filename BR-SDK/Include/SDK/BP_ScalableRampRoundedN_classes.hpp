@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ScalableRampRoundedN.BP_ScalableRampRoundedN_C
 // 0x0000 (0x01D0 - 0x01D0)
@@ -23,15 +22,17 @@ class UBP_ScalableRampRoundedN_C final : public UScalableBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ScalableRampRoundedN_C">();
+		BP_STATIC_CLASS_IMPL("BP_ScalableRampRoundedN_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ScalableRampRoundedN_C")
 	}
 	static class UBP_ScalableRampRoundedN_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ScalableRampRoundedN_C>();
 	}
 };
-static_assert(alignof(UBP_ScalableRampRoundedN_C) == 0x000008, "Wrong alignment on UBP_ScalableRampRoundedN_C");
-static_assert(sizeof(UBP_ScalableRampRoundedN_C) == 0x0001D0, "Wrong size on UBP_ScalableRampRoundedN_C");
+DUMPER7_ASSERTS_UBP_ScalableRampRoundedN_C;
 
-}
-
+SDK_NAMESPACE_END

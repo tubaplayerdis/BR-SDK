@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_MenuPlayerController.BP_MenuPlayerController_C
 // 0x0000 (0x0630 - 0x0630)
@@ -23,15 +22,17 @@ class ABP_MenuPlayerController_C final : public AMenuPlayerController
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuPlayerController_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuPlayerController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuPlayerController_C")
 	}
 	static class ABP_MenuPlayerController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuPlayerController_C>();
 	}
 };
-static_assert(alignof(ABP_MenuPlayerController_C) == 0x000008, "Wrong alignment on ABP_MenuPlayerController_C");
-static_assert(sizeof(ABP_MenuPlayerController_C) == 0x000630, "Wrong size on ABP_MenuPlayerController_C");
+DUMPER7_ASSERTS_ABP_MenuPlayerController_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class FluUGC.FluUGCSubsystem
 // 0x0030 (0x0060 - 0x0030)
@@ -29,15 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FluUGCSubsystem">();
+		STATIC_CLASS_IMPL("FluUGCSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FluUGCSubsystem")
 	}
 	static class UFluUGCSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFluUGCSubsystem>();
 	}
 };
-static_assert(alignof(UFluUGCSubsystem) == 0x000008, "Wrong alignment on UFluUGCSubsystem");
-static_assert(sizeof(UFluUGCSubsystem) == 0x000060, "Wrong size on UFluUGCSubsystem");
+DUMPER7_ASSERTS_UFluUGCSubsystem;
 
-}
-
+SDK_NAMESPACE_END

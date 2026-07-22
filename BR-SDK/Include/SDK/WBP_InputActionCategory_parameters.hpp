@@ -14,8 +14,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InputActionCategory.WBP_InputActionCategory_C.ExecuteUbergraph_WBP_InputActionCategory
 // 0x0030 (0x0030 - 0x0000)
@@ -39,23 +39,7 @@ public:
 	EHorizontalAlignment                          K2Node_Select_Default;                             // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUITextStyle                             K2Node_Select_Default_1;                           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory) == 0x000008, "Wrong alignment on WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory");
-static_assert(sizeof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory) == 0x000030, "Wrong size on WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, EntryPoint) == 0x000000, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, Temp_bool_Variable) == 0x000004, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, Temp_byte_Variable) == 0x000005, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, Temp_bool_Variable_1) == 0x000007, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, Temp_byte_Variable_2) == 0x000008, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, Temp_byte_Variable_3) == 0x000009, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, K2Node_ComponentBoundEvent_InColorStyle) == 0x00000A, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, K2Node_ComponentBoundEvent_InContentStyleState) == 0x00000B, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, K2Node_Event_InCategoryName) == 0x000010, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::K2Node_Event_InCategoryName' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, K2Node_Event_bNewSelected) == 0x000028, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::K2Node_Event_bNewSelected' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, K2Node_Event_NewMode) == 0x000029, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::K2Node_Event_NewMode' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00002A, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, K2Node_Select_Default) == 0x00002B, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory, K2Node_Select_Default_1) == 0x00002C, "Member 'WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputActionCategory_C_ExecuteUbergraph_WBP_InputActionCategory;
 
 // Function WBP_InputActionCategory.WBP_InputActionCategory_C.UpdateInputActionListMode
 // 0x0001 (0x0001 - 0x0000)
@@ -64,9 +48,7 @@ struct WBP_InputActionCategory_C_UpdateInputActionListMode final
 public:
 	EInputActionListMode                          NewMode;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputActionCategory_C_UpdateInputActionListMode) == 0x000001, "Wrong alignment on WBP_InputActionCategory_C_UpdateInputActionListMode");
-static_assert(sizeof(WBP_InputActionCategory_C_UpdateInputActionListMode) == 0x000001, "Wrong size on WBP_InputActionCategory_C_UpdateInputActionListMode");
-static_assert(offsetof(WBP_InputActionCategory_C_UpdateInputActionListMode, NewMode) == 0x000000, "Member 'WBP_InputActionCategory_C_UpdateInputActionListMode::NewMode' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputActionCategory_C_UpdateInputActionListMode;
 
 // Function WBP_InputActionCategory.WBP_InputActionCategory_C.UpdateIsSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -75,9 +57,7 @@ struct WBP_InputActionCategory_C_UpdateIsSelected final
 public:
 	bool                                          bNewSelected;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InputActionCategory_C_UpdateIsSelected) == 0x000001, "Wrong alignment on WBP_InputActionCategory_C_UpdateIsSelected");
-static_assert(sizeof(WBP_InputActionCategory_C_UpdateIsSelected) == 0x000001, "Wrong size on WBP_InputActionCategory_C_UpdateIsSelected");
-static_assert(offsetof(WBP_InputActionCategory_C_UpdateIsSelected, bNewSelected) == 0x000000, "Member 'WBP_InputActionCategory_C_UpdateIsSelected::bNewSelected' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputActionCategory_C_UpdateIsSelected;
 
 // Function WBP_InputActionCategory.WBP_InputActionCategory_C.InitializeCategory
 // 0x0018 (0x0018 - 0x0000)
@@ -86,9 +66,7 @@ struct WBP_InputActionCategory_C_InitializeCategory final
 public:
 	class FText                                   InCategoryName;                                    // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_InputActionCategory_C_InitializeCategory) == 0x000008, "Wrong alignment on WBP_InputActionCategory_C_InitializeCategory");
-static_assert(sizeof(WBP_InputActionCategory_C_InitializeCategory) == 0x000018, "Wrong size on WBP_InputActionCategory_C_InitializeCategory");
-static_assert(offsetof(WBP_InputActionCategory_C_InitializeCategory, InCategoryName) == 0x000000, "Member 'WBP_InputActionCategory_C_InitializeCategory::InCategoryName' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputActionCategory_C_InitializeCategory;
 
 // Function WBP_InputActionCategory.WBP_InputActionCategory_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -98,10 +76,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputActionCategory_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_InputActionCategory_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_InputActionCategory_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_InputActionCategory_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_InputActionCategory_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_InputActionCategory_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputActionCategory_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_InputActionCategory_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputActionCategory_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_InputActionCategory.WBP_InputActionCategory_C.GetWidgetToFocus
 // 0x0008 (0x0008 - 0x0000)
@@ -110,9 +85,7 @@ struct WBP_InputActionCategory_C_GetWidgetToFocus final
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputActionCategory_C_GetWidgetToFocus) == 0x000008, "Wrong alignment on WBP_InputActionCategory_C_GetWidgetToFocus");
-static_assert(sizeof(WBP_InputActionCategory_C_GetWidgetToFocus) == 0x000008, "Wrong size on WBP_InputActionCategory_C_GetWidgetToFocus");
-static_assert(offsetof(WBP_InputActionCategory_C_GetWidgetToFocus, ReturnValue) == 0x000000, "Member 'WBP_InputActionCategory_C_GetWidgetToFocus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputActionCategory_C_GetWidgetToFocus;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

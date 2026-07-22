@@ -15,8 +15,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_GenericProperty.WBP_GenericProperty_C.ExecuteUbergraph_WBP_GenericProperty
 // 0x00A0 (0x00A0 - 0x0000)
@@ -58,38 +58,7 @@ public:
 	EValueChangedEventType                        K2Node_ComponentBoundEvent_EventType;              // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsReadOnly_ReturnValue_1;                 // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty) == 0x000008, "Wrong alignment on WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty");
-static_assert(sizeof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty) == 0x0000A0, "Wrong size on WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, EntryPoint) == 0x000000, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, Temp_bool_Variable) == 0x000004, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, Temp_byte_Variable) == 0x000018, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, Temp_byte_Variable_1) == 0x000019, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, Temp_bool_Variable_1) == 0x00001A, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, Temp_byte_Variable_2) == 0x00001B, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, Temp_byte_Variable_3) == 0x00001C, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, CallFunc_GetPropertyContainerWidget_ReturnValue) == 0x000020, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::CallFunc_GetPropertyContainerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Event_Text) == 0x000028, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Event_Text' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Event_Justification) == 0x000040, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Event_Justification' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Event_MaxLength) == 0x000044, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Event_MaxLength' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Event_bAllowMultiline) == 0x000048, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Event_bAllowMultiline' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Event_bIsPassword) == 0x000049, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Event_bIsPassword' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Event_bValidateText) == 0x00004A, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Event_bValidateText' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Event_bAllowRichText) == 0x00004B, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Event_bAllowRichText' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Event_TextFormat) == 0x00004C, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Event_TextFormat' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, CallFunc_ConvertToRichText_ReturnValue) == 0x000058, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::CallFunc_ConvertToRichText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, CallFunc_CreateDisplayModeButton_ReturnValue) == 0x000070, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::CallFunc_CreateDisplayModeButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, CallFunc_GetDisplayRichText_ReturnValue) == 0x000078, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::CallFunc_GetDisplayRichText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, CallFunc_Not_PreBool_ReturnValue) == 0x000079, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, CallFunc_GetDisplayRichText_ReturnValue_1) == 0x00007A, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::CallFunc_GetDisplayRichText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, CallFunc_IsReadOnly_ReturnValue) == 0x00007B, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::CallFunc_IsReadOnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Event_bNewReadOnly) == 0x00007C, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Event_bNewReadOnly' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, CallFunc_BooleanAND_ReturnValue) == 0x00007D, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Select_Default) == 0x00007E, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_Select_Default_1) == 0x00007F, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_ComponentBoundEvent_NewText) == 0x000080, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_ComponentBoundEvent_NewText' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, K2Node_ComponentBoundEvent_EventType) == 0x000098, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::K2Node_ComponentBoundEvent_EventType' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty, CallFunc_IsReadOnly_ReturnValue_1) == 0x000099, "Member 'WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty::CallFunc_IsReadOnly_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GenericProperty_C_ExecuteUbergraph_WBP_GenericProperty;
 
 // Function WBP_GenericProperty.WBP_GenericProperty_C.BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -99,10 +68,7 @@ public:
 	class FText                                   NewText;                                           // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	EValueChangedEventType                        EventType;                                         // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GenericProperty_C_BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature) == 0x000008, "Wrong alignment on WBP_GenericProperty_C_BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature");
-static_assert(sizeof(WBP_GenericProperty_C_BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature) == 0x000020, "Wrong size on WBP_GenericProperty_C_BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature");
-static_assert(offsetof(WBP_GenericProperty_C_BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature, NewText) == 0x000000, "Member 'WBP_GenericProperty_C_BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature::NewText' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature, EventType) == 0x000018, "Member 'WBP_GenericProperty_C_BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GenericProperty_C_BndEvt__WBP_GenericProperty_TextBox_K2Node_ComponentBoundEvent_0_OnTextBoxChanged__DelegateSignature;
 
 // Function WBP_GenericProperty.WBP_GenericProperty_C.UpdateIsReadOnly
 // 0x0001 (0x0001 - 0x0000)
@@ -111,9 +77,7 @@ struct WBP_GenericProperty_C_UpdateIsReadOnly final
 public:
 	bool                                          bNewReadOnly;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_GenericProperty_C_UpdateIsReadOnly) == 0x000001, "Wrong alignment on WBP_GenericProperty_C_UpdateIsReadOnly");
-static_assert(sizeof(WBP_GenericProperty_C_UpdateIsReadOnly) == 0x000001, "Wrong size on WBP_GenericProperty_C_UpdateIsReadOnly");
-static_assert(offsetof(WBP_GenericProperty_C_UpdateIsReadOnly, bNewReadOnly) == 0x000000, "Member 'WBP_GenericProperty_C_UpdateIsReadOnly::bNewReadOnly' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GenericProperty_C_UpdateIsReadOnly;
 
 // Function WBP_GenericProperty.WBP_GenericProperty_C.UpdateText
 // 0x0030 (0x0030 - 0x0000)
@@ -130,16 +94,7 @@ public:
 	bool                                          bAllowRichText;                                    // 0x0023(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	class FName                                   TextFormat;                                        // 0x0024(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GenericProperty_C_UpdateText) == 0x000008, "Wrong alignment on WBP_GenericProperty_C_UpdateText");
-static_assert(sizeof(WBP_GenericProperty_C_UpdateText) == 0x000030, "Wrong size on WBP_GenericProperty_C_UpdateText");
-static_assert(offsetof(WBP_GenericProperty_C_UpdateText, Text) == 0x000000, "Member 'WBP_GenericProperty_C_UpdateText::Text' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_UpdateText, Justification) == 0x000018, "Member 'WBP_GenericProperty_C_UpdateText::Justification' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_UpdateText, MaxLength) == 0x00001C, "Member 'WBP_GenericProperty_C_UpdateText::MaxLength' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_UpdateText, bAllowMultiLine) == 0x000020, "Member 'WBP_GenericProperty_C_UpdateText::bAllowMultiLine' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_UpdateText, bIsPassword) == 0x000021, "Member 'WBP_GenericProperty_C_UpdateText::bIsPassword' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_UpdateText, bValidateText) == 0x000022, "Member 'WBP_GenericProperty_C_UpdateText::bValidateText' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_UpdateText, bAllowRichText) == 0x000023, "Member 'WBP_GenericProperty_C_UpdateText::bAllowRichText' has a wrong offset!");
-static_assert(offsetof(WBP_GenericProperty_C_UpdateText, TextFormat) == 0x000024, "Member 'WBP_GenericProperty_C_UpdateText::TextFormat' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GenericProperty_C_UpdateText;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

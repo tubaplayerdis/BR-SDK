@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ScalablePyramid.BP_ScalablePyramid_C
 // 0x0000 (0x01D0 - 0x01D0)
@@ -23,15 +22,17 @@ class UBP_ScalablePyramid_C final : public UScalableBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ScalablePyramid_C">();
+		BP_STATIC_CLASS_IMPL("BP_ScalablePyramid_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ScalablePyramid_C")
 	}
 	static class UBP_ScalablePyramid_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ScalablePyramid_C>();
 	}
 };
-static_assert(alignof(UBP_ScalablePyramid_C) == 0x000008, "Wrong alignment on UBP_ScalablePyramid_C");
-static_assert(sizeof(UBP_ScalablePyramid_C) == 0x0001D0, "Wrong size on UBP_ScalablePyramid_C");
+DUMPER7_ASSERTS_UBP_ScalablePyramid_C;
 
-}
-
+SDK_NAMESPACE_END

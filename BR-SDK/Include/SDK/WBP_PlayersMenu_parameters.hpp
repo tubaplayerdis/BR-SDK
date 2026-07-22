@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_PlayersMenu.WBP_PlayersMenu_C.ExecuteUbergraph_WBP_PlayersMenu
 // 0x0040 (0x0040 - 0x0000)
@@ -29,16 +29,7 @@ public:
 	class UMenuButtonWidget*                      CallFunc_CreateShowProfileButton_ReturnValue;      // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMenuButtonWidget*                      CallFunc_CreateButton_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu) == 0x000008, "Wrong alignment on WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu");
-static_assert(sizeof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu) == 0x000040, "Wrong size on WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu");
-static_assert(offsetof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu, EntryPoint) == 0x000000, "Member 'WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu, K2Node_Event_bCanShow) == 0x000004, "Member 'WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu::K2Node_Event_bCanShow' has a wrong offset!");
-static_assert(offsetof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu, K2Node_Event_bCanKick) == 0x000005, "Member 'WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu::K2Node_Event_bCanKick' has a wrong offset!");
-static_assert(offsetof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu, CallFunc_GetMenuWidget_ReturnValue) == 0x000008, "Member 'WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu::CallFunc_GetMenuWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu, CallFunc_CreateShowProfileButton_ReturnValue) == 0x000030, "Member 'WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu::CallFunc_CreateShowProfileButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu, CallFunc_CreateButton_ReturnValue) == 0x000038, "Member 'WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PlayersMenu_C_ExecuteUbergraph_WBP_PlayersMenu;
 
 // Function WBP_PlayersMenu.WBP_PlayersMenu_C.UpdateCanKickPlayer
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +38,7 @@ struct WBP_PlayersMenu_C_UpdateCanKickPlayer final
 public:
 	bool                                          bCanKick;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_PlayersMenu_C_UpdateCanKickPlayer) == 0x000001, "Wrong alignment on WBP_PlayersMenu_C_UpdateCanKickPlayer");
-static_assert(sizeof(WBP_PlayersMenu_C_UpdateCanKickPlayer) == 0x000001, "Wrong size on WBP_PlayersMenu_C_UpdateCanKickPlayer");
-static_assert(offsetof(WBP_PlayersMenu_C_UpdateCanKickPlayer, bCanKick) == 0x000000, "Member 'WBP_PlayersMenu_C_UpdateCanKickPlayer::bCanKick' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PlayersMenu_C_UpdateCanKickPlayer;
 
 // Function WBP_PlayersMenu.WBP_PlayersMenu_C.UpdateCanShowPlayerProfile
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +47,7 @@ struct WBP_PlayersMenu_C_UpdateCanShowPlayerProfile final
 public:
 	bool                                          bCanShow;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_PlayersMenu_C_UpdateCanShowPlayerProfile) == 0x000001, "Wrong alignment on WBP_PlayersMenu_C_UpdateCanShowPlayerProfile");
-static_assert(sizeof(WBP_PlayersMenu_C_UpdateCanShowPlayerProfile) == 0x000001, "Wrong size on WBP_PlayersMenu_C_UpdateCanShowPlayerProfile");
-static_assert(offsetof(WBP_PlayersMenu_C_UpdateCanShowPlayerProfile, bCanShow) == 0x000000, "Member 'WBP_PlayersMenu_C_UpdateCanShowPlayerProfile::bCanShow' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PlayersMenu_C_UpdateCanShowPlayerProfile;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_DashboardSlider.WBP_DashboardSlider_C
 // 0x0018 (0x0288 - 0x0270)
@@ -35,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DashboardSlider_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DashboardSlider_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DashboardSlider_C")
 	}
 	static class UWBP_DashboardSlider_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DashboardSlider_C>();
 	}
 };
-static_assert(alignof(UWBP_DashboardSlider_C) == 0x000008, "Wrong alignment on UWBP_DashboardSlider_C");
-static_assert(sizeof(UWBP_DashboardSlider_C) == 0x000288, "Wrong size on UWBP_DashboardSlider_C");
-static_assert(offsetof(UWBP_DashboardSlider_C, UberGraphFrame) == 0x000270, "Member 'UWBP_DashboardSlider_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_DashboardSlider_C, IconBorder) == 0x000278, "Member 'UWBP_DashboardSlider_C::IconBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_DashboardSlider_C, IconImage) == 0x000280, "Member 'UWBP_DashboardSlider_C::IconImage' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DashboardSlider_C;
 
-}
-
+SDK_NAMESPACE_END

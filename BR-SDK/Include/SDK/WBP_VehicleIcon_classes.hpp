@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_VehicleIcon.WBP_VehicleIcon_C
 // 0x0008 (0x02B0 - 0x02A8)
@@ -32,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_VehicleIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_VehicleIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_VehicleIcon_C")
 	}
 	static class UWBP_VehicleIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_VehicleIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_VehicleIcon_C) == 0x000008, "Wrong alignment on UWBP_VehicleIcon_C");
-static_assert(sizeof(UWBP_VehicleIcon_C) == 0x0002B0, "Wrong size on UWBP_VehicleIcon_C");
-static_assert(offsetof(UWBP_VehicleIcon_C, UberGraphFrame) == 0x0002A8, "Member 'UWBP_VehicleIcon_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_VehicleIcon_C;
 
-}
-
+SDK_NAMESPACE_END

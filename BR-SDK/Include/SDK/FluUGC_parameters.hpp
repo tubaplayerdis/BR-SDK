@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function FluUGC.FluUGCSubsystem.Get
 // 0x0010 (0x0010 - 0x0000)
@@ -22,10 +22,7 @@ public:
 	class FName                                   SubsystemName;                                     // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFluUGCSubsystem*                       ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FluUGCSubsystem_Get) == 0x000008, "Wrong alignment on FluUGCSubsystem_Get");
-static_assert(sizeof(FluUGCSubsystem_Get) == 0x000010, "Wrong size on FluUGCSubsystem_Get");
-static_assert(offsetof(FluUGCSubsystem_Get, SubsystemName) == 0x000000, "Member 'FluUGCSubsystem_Get::SubsystemName' has a wrong offset!");
-static_assert(offsetof(FluUGCSubsystem_Get, ReturnValue) == 0x000008, "Member 'FluUGCSubsystem_Get::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_FluUGCSubsystem_Get;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

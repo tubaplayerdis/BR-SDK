@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_CreditsEntry.WBP_CreditsEntry_C
 // 0x0030 (0x0290 - 0x0260)
@@ -36,20 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CreditsEntry_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CreditsEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CreditsEntry_C")
 	}
 	static class UWBP_CreditsEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CreditsEntry_C>();
 	}
 };
-static_assert(alignof(UWBP_CreditsEntry_C) == 0x000008, "Wrong alignment on UWBP_CreditsEntry_C");
-static_assert(sizeof(UWBP_CreditsEntry_C) == 0x000290, "Wrong size on UWBP_CreditsEntry_C");
-static_assert(offsetof(UWBP_CreditsEntry_C, UberGraphFrame) == 0x000260, "Member 'UWBP_CreditsEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CreditsEntry_C, BodyTextBlock) == 0x000268, "Member 'UWBP_CreditsEntry_C::BodyTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_CreditsEntry_C, ExpandableArea) == 0x000270, "Member 'UWBP_CreditsEntry_C::ExpandableArea' has a wrong offset!");
-static_assert(offsetof(UWBP_CreditsEntry_C, HeaderTextBlock) == 0x000278, "Member 'UWBP_CreditsEntry_C::HeaderTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_CreditsEntry_C, LicenseFilename) == 0x000280, "Member 'UWBP_CreditsEntry_C::LicenseFilename' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CreditsEntry_C;
 
-}
-
+SDK_NAMESPACE_END

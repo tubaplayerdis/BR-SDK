@@ -14,8 +14,7 @@
 #include "WBP_Credits_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_Credits.WBP_Credits_C.ExecuteUbergraph_WBP_Credits
 // (Final, UbergraphFunction, HasDefaults)
@@ -112,5 +111,5 @@ void UWBP_Credits_C::PreConstruct(bool IsDesignTime)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

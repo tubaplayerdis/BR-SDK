@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BrickComboBox.WBP_BrickComboBox_C
 // 0x0018 (0x0308 - 0x02F0)
@@ -29,27 +28,26 @@ public:
 	class UGridPanel*                             ButtonPanel;                                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void AddSelectedItemWidget(class UBrickComboBoxItemWidget* Widget);
-	void UpdateUseItemList(bool bInUseItemList);
 	void ExecuteUbergraph_WBP_BrickComboBox(int32 EntryPoint);
+	void UpdateUseItemList(bool bInUseItemList);
+	void AddSelectedItemWidget(class UBrickComboBoxItemWidget* Widget);
+	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
+	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BrickComboBox_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BrickComboBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BrickComboBox_C")
 	}
 	static class UWBP_BrickComboBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BrickComboBox_C>();
 	}
 };
-static_assert(alignof(UWBP_BrickComboBox_C) == 0x000008, "Wrong alignment on UWBP_BrickComboBox_C");
-static_assert(sizeof(UWBP_BrickComboBox_C) == 0x000308, "Wrong size on UWBP_BrickComboBox_C");
-static_assert(offsetof(UWBP_BrickComboBox_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_BrickComboBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickComboBox_C, ArrowImage) == 0x0002F8, "Member 'UWBP_BrickComboBox_C::ArrowImage' has a wrong offset!");
-static_assert(offsetof(UWBP_BrickComboBox_C, ButtonPanel) == 0x000300, "Member 'UWBP_BrickComboBox_C::ButtonPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BrickComboBox_C;
 
-}
-
+SDK_NAMESPACE_END

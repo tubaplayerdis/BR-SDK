@@ -14,72 +14,121 @@
 #include "WBP_BrickEditor_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
-// Function WBP_BrickEditor.WBP_BrickEditor_C.OnBorderMouseEvent
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_BrickEditor.WBP_BrickEditor_C.ExecuteUbergraph_WBP_BrickEditor
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FEventReply UWBP_BrickEditor_C::OnBorderMouseEvent(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+void UWBP_BrickEditor_C::ExecuteUbergraph_WBP_BrickEditor(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditor_C", "OnBorderMouseEvent");
+		Func = Class->GetFunction("WBP_BrickEditor_C", "ExecuteUbergraph_WBP_BrickEditor");
 
-	Params::WBP_BrickEditor_C_OnBorderMouseEvent Parms{};
+	Params::WBP_BrickEditor_C_ExecuteUbergraph_WBP_BrickEditor Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
-// Function WBP_BrickEditor.WBP_BrickEditor_C.AddGameOverlayWidget
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UGameOverlayWidget*               Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UWBP_BrickEditor_C::AddGameOverlayWidget(class UGameOverlayWidget* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditor_C", "AddGameOverlayWidget");
-
-	Params::WBP_BrickEditor_C_AddGameOverlayWidget Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_BrickEditor.WBP_BrickEditor_C.UpdateCanPlaceObjects
+// Function WBP_BrickEditor.WBP_BrickEditor_C.UpdateEditorUIScale
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bNewCanPlace                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                                   NewScale                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BrickEditor_C::UpdateCanPlaceObjects(bool bNewCanPlace)
+void UWBP_BrickEditor_C::UpdateEditorUIScale(float NewScale)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditor_C", "UpdateCanPlaceObjects");
+		Func = Class->GetFunction("WBP_BrickEditor_C", "UpdateEditorUIScale");
 
-	Params::WBP_BrickEditor_C_UpdateCanPlaceObjects Parms{};
+	Params::WBP_BrickEditor_C_UpdateEditorUIScale Parms{};
 
-	Parms.bNewCanPlace = bNewCanPlace;
+	Parms.NewScale = NewScale;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickEditor.WBP_BrickEditor_C.UpdateCanClearPlacableFilter
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bNewCanClear                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_BrickEditor_C::UpdateCanClearPlacableFilter(bool bNewCanClear)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickEditor_C", "UpdateCanClearPlacableFilter");
+
+	Params::WBP_BrickEditor_C_UpdateCanClearPlacableFilter Parms{};
+
+	Parms.bNewCanClear = bNewCanClear;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickEditor.WBP_BrickEditor_C.AddMirrorModeWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UBrickEditorMirrorAxisWidget*     Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BrickEditor_C::AddMirrorModeWidget(class UBrickEditorMirrorAxisWidget* Widget, int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickEditor_C", "AddMirrorModeWidget");
+
+	Params::WBP_BrickEditor_C_AddMirrorModeWidget Parms{};
+
+	Parms.Widget = Widget;
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickEditor.WBP_BrickEditor_C.BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_BrickEditor_C::BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickEditor_C", "BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BrickEditor.WBP_BrickEditor_C.BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BrickEditor_C::BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickEditor_C", "BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
+
+	Params::WBP_BrickEditor_C_BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature Parms{};
+
+	Parms.InColorStyle = InColorStyle;
+	Parms.InContentStyleState = InContentStyleState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -107,122 +156,72 @@ void UWBP_BrickEditor_C::UpdateSelection(const class FText& SelectionName, bool 
 }
 
 
-// Function WBP_BrickEditor.WBP_BrickEditor_C.BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_BrickEditor.WBP_BrickEditor_C.UpdateCanPlaceObjects
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bNewCanPlace                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_BrickEditor_C::BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
+void UWBP_BrickEditor_C::UpdateCanPlaceObjects(bool bNewCanPlace)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditor_C", "BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
+		Func = Class->GetFunction("WBP_BrickEditor_C", "UpdateCanPlaceObjects");
 
-	Params::WBP_BrickEditor_C_BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature Parms{};
+	Params::WBP_BrickEditor_C_UpdateCanPlaceObjects Parms{};
 
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
+	Parms.bNewCanPlace = bNewCanPlace;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_BrickEditor.WBP_BrickEditor_C.BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_BrickEditor_C::BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditor_C", "BndEvt__ResetFilterButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BrickEditor.WBP_BrickEditor_C.AddMirrorModeWidget
-// (Event, Protected, BlueprintEvent)
+// Function WBP_BrickEditor.WBP_BrickEditor_C.AddGameOverlayWidget
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UBrickEditorMirrorAxisWidget*     Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UGameOverlayWidget*               Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
-void UWBP_BrickEditor_C::AddMirrorModeWidget(class UBrickEditorMirrorAxisWidget* Widget, int32 Index_0)
+bool UWBP_BrickEditor_C::AddGameOverlayWidget(class UGameOverlayWidget* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditor_C", "AddMirrorModeWidget");
+		Func = Class->GetFunction("WBP_BrickEditor_C", "AddGameOverlayWidget");
 
-	Params::WBP_BrickEditor_C_AddMirrorModeWidget Parms{};
+	Params::WBP_BrickEditor_C_AddGameOverlayWidget Parms{};
 
 	Parms.Widget = Widget;
-	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_BrickEditor.WBP_BrickEditor_C.UpdateCanClearPlacableFilter
-// (Event, Protected, BlueprintEvent)
+// Function WBP_BrickEditor.WBP_BrickEditor_C.OnBorderMouseEvent
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bNewCanClear                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-void UWBP_BrickEditor_C::UpdateCanClearPlacableFilter(bool bNewCanClear)
+struct FEventReply UWBP_BrickEditor_C::OnBorderMouseEvent(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditor_C", "UpdateCanClearPlacableFilter");
+		Func = Class->GetFunction("WBP_BrickEditor_C", "OnBorderMouseEvent");
 
-	Params::WBP_BrickEditor_C_UpdateCanClearPlacableFilter Parms{};
+	Params::WBP_BrickEditor_C_OnBorderMouseEvent Parms{};
 
-	Parms.bNewCanClear = bNewCanClear;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BrickEditor.WBP_BrickEditor_C.UpdateEditorUIScale
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   NewScale                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BrickEditor_C::UpdateEditorUIScale(float NewScale)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditor_C", "UpdateEditorUIScale");
-
-	Params::WBP_BrickEditor_C_UpdateEditorUIScale Parms{};
-
-	Parms.NewScale = NewScale;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_BrickEditor.WBP_BrickEditor_C.ExecuteUbergraph_WBP_BrickEditor
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BrickEditor_C::ExecuteUbergraph_WBP_BrickEditor(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditor_C", "ExecuteUbergraph_WBP_BrickEditor");
-
-	Params::WBP_BrickEditor_C_ExecuteUbergraph_WBP_BrickEditor Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BP_RC_Sequence_2_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_RC_Sequence_CloseUp.BP_RC_Sequence_CloseUp_C
 // 0x0000 (0x02A0 - 0x02A0)
@@ -23,15 +22,17 @@ class ABP_RC_Sequence_CloseUp_C final : public ABP_RC_Sequence_2_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RC_Sequence_CloseUp_C">();
+		BP_STATIC_CLASS_IMPL("BP_RC_Sequence_CloseUp_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RC_Sequence_CloseUp_C")
 	}
 	static class ABP_RC_Sequence_CloseUp_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RC_Sequence_CloseUp_C>();
 	}
 };
-static_assert(alignof(ABP_RC_Sequence_CloseUp_C) == 0x000008, "Wrong alignment on ABP_RC_Sequence_CloseUp_C");
-static_assert(sizeof(ABP_RC_Sequence_CloseUp_C) == 0x0002A0, "Wrong size on ABP_RC_Sequence_CloseUp_C");
+DUMPER7_ASSERTS_ABP_RC_Sequence_CloseUp_C;
 
-}
-
+SDK_NAMESPACE_END

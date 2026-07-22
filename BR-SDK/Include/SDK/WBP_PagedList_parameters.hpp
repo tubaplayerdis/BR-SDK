@@ -13,30 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
-
-// Function WBP_PagedList.WBP_PagedList_C.UpdateIsLoading
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PagedList_C_UpdateIsLoading final
-{
-public:
-	bool                                          bNewLoading;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_PagedList_C_UpdateIsLoading) == 0x000001, "Wrong alignment on WBP_PagedList_C_UpdateIsLoading");
-static_assert(sizeof(WBP_PagedList_C_UpdateIsLoading) == 0x000001, "Wrong size on WBP_PagedList_C_UpdateIsLoading");
-static_assert(offsetof(WBP_PagedList_C_UpdateIsLoading, bNewLoading) == 0x000000, "Member 'WBP_PagedList_C_UpdateIsLoading::bNewLoading' has a wrong offset!");
-
-// Function WBP_PagedList.WBP_PagedList_C.UpdateIsEntrySelected
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PagedList_C_UpdateIsEntrySelected final
-{
-public:
-	bool                                          bIsEntrySelected;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_PagedList_C_UpdateIsEntrySelected) == 0x000001, "Wrong alignment on WBP_PagedList_C_UpdateIsEntrySelected");
-static_assert(sizeof(WBP_PagedList_C_UpdateIsEntrySelected) == 0x000001, "Wrong size on WBP_PagedList_C_UpdateIsEntrySelected");
-static_assert(offsetof(WBP_PagedList_C_UpdateIsEntrySelected, bIsEntrySelected) == 0x000000, "Member 'WBP_PagedList_C_UpdateIsEntrySelected::bIsEntrySelected' has a wrong offset!");
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_PagedList.WBP_PagedList_C.ExecuteUbergraph_WBP_PagedList
 // 0x0020 (0x0020 - 0x0000)
@@ -55,18 +33,25 @@ public:
 	class UWBP_PagedListHeader_C*                 K2Node_DynamicCast_AsWBP_Paged_List_Header;        // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList) == 0x000008, "Wrong alignment on WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList");
-static_assert(sizeof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList) == 0x000020, "Wrong size on WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, EntryPoint) == 0x000000, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, CallFunc_ClearSelectedEntryWidget_ReturnValue) == 0x000004, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::CallFunc_ClearSelectedEntryWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, Temp_bool_Variable) == 0x000005, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, Temp_byte_Variable) == 0x000006, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, Temp_byte_Variable_1) == 0x000007, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, K2Node_Event_bNewLoading) == 0x000008, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::K2Node_Event_bNewLoading' has a wrong offset!");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, K2Node_Event_bIsEntrySelected) == 0x000009, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::K2Node_Event_bIsEntrySelected' has a wrong offset!");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, K2Node_Select_Default) == 0x00000A, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, K2Node_DynamicCast_AsWBP_Paged_List_Header) == 0x000010, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::K2Node_DynamicCast_AsWBP_Paged_List_Header' has a wrong offset!");
-static_assert(offsetof(WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PagedList_C_ExecuteUbergraph_WBP_PagedList;
 
-}
+// Function WBP_PagedList.WBP_PagedList_C.UpdateIsEntrySelected
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PagedList_C_UpdateIsEntrySelected final
+{
+public:
+	bool                                          bIsEntrySelected;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_PagedList_C_UpdateIsEntrySelected;
 
+// Function WBP_PagedList.WBP_PagedList_C.UpdateIsLoading
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PagedList_C_UpdateIsLoading final
+{
+public:
+	bool                                          bNewLoading;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_PagedList_C_UpdateIsLoading;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

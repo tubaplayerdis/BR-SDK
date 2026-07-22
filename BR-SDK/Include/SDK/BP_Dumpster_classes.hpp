@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Dumpster.BP_Dumpster_C
 // 0x0008 (0x0238 - 0x0230)
@@ -30,16 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Dumpster_C">();
+		BP_STATIC_CLASS_IMPL("BP_Dumpster_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Dumpster_C")
 	}
 	static class ABP_Dumpster_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Dumpster_C>();
 	}
 };
-static_assert(alignof(ABP_Dumpster_C) == 0x000008, "Wrong alignment on ABP_Dumpster_C");
-static_assert(sizeof(ABP_Dumpster_C) == 0x000238, "Wrong size on ABP_Dumpster_C");
-static_assert(offsetof(ABP_Dumpster_C, RandomStream) == 0x000230, "Member 'ABP_Dumpster_C::RandomStream' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Dumpster_C;
 
-}
-
+SDK_NAMESPACE_END

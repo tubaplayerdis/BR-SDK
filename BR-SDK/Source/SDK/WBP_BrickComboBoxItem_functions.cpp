@@ -14,22 +14,7 @@
 #include "WBP_BrickComboBoxItem_parameters.hpp"
 
 
-namespace SDK
-{
-
-// Function WBP_BrickComboBoxItem.WBP_BrickComboBoxItem_C.SetNoItemBrush
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_BrickComboBoxItem_C::SetNoItemBrush()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickComboBoxItem_C", "SetNoItemBrush");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
+SDK_NAMESPACE_START
 
 // Function WBP_BrickComboBoxItem.WBP_BrickComboBoxItem_C.ExecuteUbergraph_WBP_BrickComboBoxItem
 // (Final, UbergraphFunction)
@@ -50,5 +35,19 @@ void UWBP_BrickComboBoxItem_C::ExecuteUbergraph_WBP_BrickComboBoxItem(int32 Entr
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_BrickComboBoxItem.WBP_BrickComboBoxItem_C.SetNoItemBrush
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_BrickComboBoxItem_C::SetNoItemBrush()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickComboBoxItem_C", "SetNoItemBrush");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+SDK_NAMESPACE_END

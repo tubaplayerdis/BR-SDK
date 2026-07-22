@@ -15,8 +15,7 @@
 #include "DeveloperSettings_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class FSR2TemporalUpscaling.FSR2Settings
 // 0x0058 (0x0090 - 0x0038)
@@ -60,44 +59,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FSR2Settings">();
+		STATIC_CLASS_IMPL("FSR2Settings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FSR2Settings")
 	}
 	static class UFSR2Settings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFSR2Settings>();
 	}
 };
-static_assert(alignof(UFSR2Settings) == 0x000008, "Wrong alignment on UFSR2Settings");
-static_assert(sizeof(UFSR2Settings) == 0x000090, "Wrong size on UFSR2Settings");
-static_assert(offsetof(UFSR2Settings, bEnabled) == 0x000038, "Member 'UFSR2Settings::bEnabled' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, AutoExposure) == 0x000039, "Member 'UFSR2Settings::AutoExposure' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, EnabledInEditorViewport) == 0x00003A, "Member 'UFSR2Settings::EnabledInEditorViewport' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, UseSSRExperimentalDenoiser) == 0x00003B, "Member 'UFSR2Settings::UseSSRExperimentalDenoiser' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, UseNativeDX12) == 0x00003C, "Member 'UFSR2Settings::UseNativeDX12' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, UseNativeVulkan) == 0x00003D, "Member 'UFSR2Settings::UseNativeVulkan' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, QualityMode) == 0x000040, "Member 'UFSR2Settings::QualityMode' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, HistoryFormat) == 0x000044, "Member 'UFSR2Settings::HistoryFormat' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, DeDither) == 0x000048, "Member 'UFSR2Settings::DeDither' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, Sharpness) == 0x00004C, "Member 'UFSR2Settings::Sharpness' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, AdjustMipBias) == 0x000050, "Member 'UFSR2Settings::AdjustMipBias' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ReactiveMask) == 0x000051, "Member 'UFSR2Settings::ReactiveMask' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ForceVertexDeformationOutputsVelocity) == 0x000052, "Member 'UFSR2Settings::ForceVertexDeformationOutputsVelocity' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ForceLandscapeHISMMobility) == 0x000054, "Member 'UFSR2Settings::ForceLandscapeHISMMobility' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ReflectionScale) == 0x000058, "Member 'UFSR2Settings::ReflectionScale' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ReflectionLuminanceBias) == 0x00005C, "Member 'UFSR2Settings::ReflectionLuminanceBias' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, RoughnessScale) == 0x000060, "Member 'UFSR2Settings::RoughnessScale' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, RoughnessBias) == 0x000064, "Member 'UFSR2Settings::RoughnessBias' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, RoughnessMaxDistance) == 0x000068, "Member 'UFSR2Settings::RoughnessMaxDistance' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ReactiveMaskRoughnessForceMaxDistance) == 0x00006C, "Member 'UFSR2Settings::ReactiveMaskRoughnessForceMaxDistance' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, TranslucencyBias) == 0x000070, "Member 'UFSR2Settings::TranslucencyBias' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, TranslucencyLuminanceBias) == 0x000074, "Member 'UFSR2Settings::TranslucencyLuminanceBias' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, TranslucencyMaxDistance) == 0x000078, "Member 'UFSR2Settings::TranslucencyMaxDistance' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, PreDOFTranslucencyScale) == 0x00007C, "Member 'UFSR2Settings::PreDOFTranslucencyScale' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, PreDOFTranslucencyMax) == 0x000080, "Member 'UFSR2Settings::PreDOFTranslucencyMax' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ReactiveShadingModelID) == 0x000081, "Member 'UFSR2Settings::ReactiveShadingModelID' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ForceReactiveMaterialValue) == 0x000084, "Member 'UFSR2Settings::ForceReactiveMaterialValue' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ReactiveHistoryTranslucencyBias) == 0x000088, "Member 'UFSR2Settings::ReactiveHistoryTranslucencyBias' has a wrong offset!");
-static_assert(offsetof(UFSR2Settings, ReactiveHistoryTranslucencyLumaBias) == 0x00008C, "Member 'UFSR2Settings::ReactiveHistoryTranslucencyLumaBias' has a wrong offset!");
+DUMPER7_ASSERTS_UFSR2Settings;
 
-}
-
+SDK_NAMESPACE_END

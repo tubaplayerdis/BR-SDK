@@ -14,8 +14,27 @@
 #include "WBP_PagedListHeaderField_parameters.hpp"
 
 
-namespace SDK
+SDK_NAMESPACE_START
+
+// Function WBP_PagedListHeaderField.WBP_PagedListHeaderField_C.ExecuteUbergraph_WBP_PagedListHeaderField
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PagedListHeaderField_C::ExecuteUbergraph_WBP_PagedListHeaderField(int32 EntryPoint)
 {
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PagedListHeaderField_C", "ExecuteUbergraph_WBP_PagedListHeaderField");
+
+	Params::WBP_PagedListHeaderField_C_ExecuteUbergraph_WBP_PagedListHeaderField Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function WBP_PagedListHeaderField.WBP_PagedListHeaderField_C.UpdateItem
 // (BlueprintCallable, BlueprintEvent)
@@ -43,24 +62,4 @@ void UWBP_PagedListHeaderField_C::UpdateItem(bool bNewVisible, const class FText
 }
 
 
-// Function WBP_PagedListHeaderField.WBP_PagedListHeaderField_C.ExecuteUbergraph_WBP_PagedListHeaderField
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PagedListHeaderField_C::ExecuteUbergraph_WBP_PagedListHeaderField(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PagedListHeaderField_C", "ExecuteUbergraph_WBP_PagedListHeaderField");
-
-	Params::WBP_PagedListHeaderField_C_ExecuteUbergraph_WBP_PagedListHeaderField Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-}
-
+SDK_NAMESPACE_END

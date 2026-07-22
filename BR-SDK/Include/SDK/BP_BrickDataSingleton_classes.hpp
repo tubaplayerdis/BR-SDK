@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BrickDataSingleton.BP_BrickDataSingleton_C
 // 0x0000 (0x1550 - 0x1550)
@@ -23,15 +22,17 @@ class UBP_BrickDataSingleton_C final : public UBrickDataSingleton
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BrickDataSingleton_C">();
+		BP_STATIC_CLASS_IMPL("BP_BrickDataSingleton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BrickDataSingleton_C")
 	}
 	static class UBP_BrickDataSingleton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_BrickDataSingleton_C>();
 	}
 };
-static_assert(alignof(UBP_BrickDataSingleton_C) == 0x000010, "Wrong alignment on UBP_BrickDataSingleton_C");
-static_assert(sizeof(UBP_BrickDataSingleton_C) == 0x001550, "Wrong size on UBP_BrickDataSingleton_C");
+DUMPER7_ASSERTS_UBP_BrickDataSingleton_C;
 
-}
-
+SDK_NAMESPACE_END

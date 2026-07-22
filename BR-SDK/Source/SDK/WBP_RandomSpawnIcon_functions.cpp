@@ -14,8 +14,7 @@
 #include "WBP_RandomSpawnIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_RandomSpawnIcon.WBP_RandomSpawnIcon_C.GetIconDisplayName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
@@ -36,5 +35,5 @@ class FText UWBP_RandomSpawnIcon_C::GetIconDisplayName() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

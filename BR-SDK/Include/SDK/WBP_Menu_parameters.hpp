@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_Menu.WBP_Menu_C.ExecuteUbergraph_WBP_Menu
 // 0x0318 (0x0318 - 0x0000)
@@ -111,80 +111,7 @@ public:
 	uint8                                         Pad_30A[0x6];                                      // 0x030A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBrickUserSettings*                     CallFunc_GetUserSettings_ReturnValue;              // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu) == 0x000008, "Wrong alignment on WBP_Menu_C_ExecuteUbergraph_WBP_Menu");
-static_assert(sizeof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu) == 0x000318, "Wrong size on WBP_Menu_C_ExecuteUbergraph_WBP_Menu");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, EntryPoint) == 0x000000, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_MakeStruct_BrickPropertyReflectionFilter) == 0x000008, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_MakeStruct_BrickPropertyReflectionFilter' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_1) == 0x000038, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_2) == 0x000048, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue) == 0x000058, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_3) == 0x000060, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_1) == 0x000070, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_4) == 0x000078, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_5) == 0x000088, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_2) == 0x000098, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateContinueButton_ReturnValue) == 0x0000A0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateContinueButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_6) == 0x0000A8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_3) == 0x0000B8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_4) == 0x0000C0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_7) == 0x0000C8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_8) == 0x0000D8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_5) == 0x0000E8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_6) == 0x0000F0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_IsStandalone_ReturnValue) == 0x0000F8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_IsStandalone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_9) == 0x0000FC, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_7) == 0x000110, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_10) == 0x000118, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_11) == 0x000128, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_12) == 0x000138, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_13) == 0x000148, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_14) == 0x000158, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_8) == 0x000168, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_9) == 0x000170, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_10) == 0x000178, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_11) == 0x000180, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_12) == 0x000188, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, Temp_byte_Variable) == 0x000190, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, Temp_byte_Variable_1) == 0x000191, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_15) == 0x000194, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, Temp_bool_Variable) == 0x0001A4, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_13) == 0x0001A8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_Event_NewContext) == 0x0001B0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_Event_NewContext' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_Event_Widget_1) == 0x0001B8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_Event_Widget_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0001C0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_SwitchName_CmpSuccess) == 0x0001C1, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_Select_Default) == 0x0001C2, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_16) == 0x0001C4, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_CreateButton_ReturnValue_14) == 0x0001D8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_CreateButton_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CreateDelegate_OutputDelegate_17) == 0x0001E0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CustomEvent_Result_1) == 0x0001F0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CustomEvent_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_GetGameInstance_ReturnValue) == 0x0001F8, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000200, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_DynamicCast_AsBrick_Game_Instance) == 0x000208, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_DynamicCast_AsBrick_Game_Instance' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_DynamicCast_bSuccess) == 0x000210, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_QuitGame_ReturnValue) == 0x000211, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_QuitGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_GetGameInstance_ReturnValue_1) == 0x000218, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_GetGameInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_DynamicCast_AsBrick_Game_Instance_1) == 0x000220, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_DynamicCast_AsBrick_Game_Instance_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_DynamicCast_bSuccess_1) == 0x000228, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_CustomEvent_Result) == 0x000229, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_GetGameInstance_ReturnValue_2) == 0x000230, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_GetGameInstance_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000238, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_DynamicCast_AsBrick_Game_Instance_2) == 0x000240, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_DynamicCast_AsBrick_Game_Instance_2' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_DynamicCast_bSuccess_2) == 0x000248, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_GetGameInstance_ReturnValue_3) == 0x000250, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_GetGameInstance_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_DynamicCast_AsBrick_Game_Instance_3) == 0x000258, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_DynamicCast_AsBrick_Game_Instance_3' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_DynamicCast_bSuccess_3) == 0x000260, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_Event_Widget) == 0x000268, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_AddChild_ReturnValue) == 0x000270, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_GetProjectVersion_ReturnValue) == 0x000278, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_GetProjectVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_Conv_StringToText_ReturnValue) == 0x000288, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_MakeStruct_FormatArgumentData) == 0x0002A0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, K2Node_MakeArray_Array) == 0x0002E0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_Format_ReturnValue) == 0x0002F0, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_OpenMessagePopup_ReturnValue) == 0x000308, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_OpenMessagePopup_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_OpenMessagePopup_ReturnValue_1) == 0x000309, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_OpenMessagePopup_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_ExecuteUbergraph_WBP_Menu, CallFunc_GetUserSettings_ReturnValue) == 0x000310, "Member 'WBP_Menu_C_ExecuteUbergraph_WBP_Menu::CallFunc_GetUserSettings_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Menu_C_ExecuteUbergraph_WBP_Menu;
 
 // Function WBP_Menu.WBP_Menu_C.RemoveMenuPage
 // 0x0008 (0x0008 - 0x0000)
@@ -193,9 +120,7 @@ struct WBP_Menu_C_RemoveMenuPage final
 public:
 	class UMenuPageWidget*                        Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Menu_C_RemoveMenuPage) == 0x000008, "Wrong alignment on WBP_Menu_C_RemoveMenuPage");
-static_assert(sizeof(WBP_Menu_C_RemoveMenuPage) == 0x000008, "Wrong size on WBP_Menu_C_RemoveMenuPage");
-static_assert(offsetof(WBP_Menu_C_RemoveMenuPage, Widget) == 0x000000, "Member 'WBP_Menu_C_RemoveMenuPage::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Menu_C_RemoveMenuPage;
 
 // Function WBP_Menu.WBP_Menu_C.OnClosedMainMenuPopup
 // 0x0001 (0x0001 - 0x0000)
@@ -204,9 +129,7 @@ struct WBP_Menu_C_OnClosedMainMenuPopup final
 public:
 	EPopupResult                                  Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Menu_C_OnClosedMainMenuPopup) == 0x000001, "Wrong alignment on WBP_Menu_C_OnClosedMainMenuPopup");
-static_assert(sizeof(WBP_Menu_C_OnClosedMainMenuPopup) == 0x000001, "Wrong size on WBP_Menu_C_OnClosedMainMenuPopup");
-static_assert(offsetof(WBP_Menu_C_OnClosedMainMenuPopup, Result) == 0x000000, "Member 'WBP_Menu_C_OnClosedMainMenuPopup::Result' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Menu_C_OnClosedMainMenuPopup;
 
 // Function WBP_Menu.WBP_Menu_C.OnClosedQuitGamePopup
 // 0x0001 (0x0001 - 0x0000)
@@ -215,9 +138,7 @@ struct WBP_Menu_C_OnClosedQuitGamePopup final
 public:
 	EPopupResult                                  Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Menu_C_OnClosedQuitGamePopup) == 0x000001, "Wrong alignment on WBP_Menu_C_OnClosedQuitGamePopup");
-static_assert(sizeof(WBP_Menu_C_OnClosedQuitGamePopup) == 0x000001, "Wrong size on WBP_Menu_C_OnClosedQuitGamePopup");
-static_assert(offsetof(WBP_Menu_C_OnClosedQuitGamePopup, Result) == 0x000000, "Member 'WBP_Menu_C_OnClosedQuitGamePopup::Result' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Menu_C_OnClosedQuitGamePopup;
 
 // Function WBP_Menu.WBP_Menu_C.AddMenuPage
 // 0x0008 (0x0008 - 0x0000)
@@ -226,9 +147,7 @@ struct WBP_Menu_C_AddMenuPage final
 public:
 	class UMenuPageWidget*                        Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Menu_C_AddMenuPage) == 0x000008, "Wrong alignment on WBP_Menu_C_AddMenuPage");
-static_assert(sizeof(WBP_Menu_C_AddMenuPage) == 0x000008, "Wrong size on WBP_Menu_C_AddMenuPage");
-static_assert(offsetof(WBP_Menu_C_AddMenuPage, Widget) == 0x000000, "Member 'WBP_Menu_C_AddMenuPage::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Menu_C_AddMenuPage;
 
 // Function WBP_Menu.WBP_Menu_C.OnMenuContextChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -237,9 +156,7 @@ struct WBP_Menu_C_OnMenuContextChanged final
 public:
 	class FName                                   NewContext;                                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Menu_C_OnMenuContextChanged) == 0x000004, "Wrong alignment on WBP_Menu_C_OnMenuContextChanged");
-static_assert(sizeof(WBP_Menu_C_OnMenuContextChanged) == 0x000008, "Wrong size on WBP_Menu_C_OnMenuContextChanged");
-static_assert(offsetof(WBP_Menu_C_OnMenuContextChanged, NewContext) == 0x000000, "Member 'WBP_Menu_C_OnMenuContextChanged::NewContext' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Menu_C_OnMenuContextChanged;
 
 // Function WBP_Menu.WBP_Menu_C.CreateBackButton
 // 0x0018 (0x0018 - 0x0000)
@@ -249,10 +166,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UMenuButtonWidget*                      CallFunc_CreateBackButton_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Menu_C_CreateBackButton) == 0x000008, "Wrong alignment on WBP_Menu_C_CreateBackButton");
-static_assert(sizeof(WBP_Menu_C_CreateBackButton) == 0x000018, "Wrong size on WBP_Menu_C_CreateBackButton");
-static_assert(offsetof(WBP_Menu_C_CreateBackButton, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_Menu_C_CreateBackButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_CreateBackButton, CallFunc_CreateBackButton_ReturnValue) == 0x000010, "Member 'WBP_Menu_C_CreateBackButton::CallFunc_CreateBackButton_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Menu_C_CreateBackButton;
 
 // Function WBP_Menu.WBP_Menu_C.CreateAdminMenuButton
 // 0x0018 (0x0018 - 0x0000)
@@ -262,10 +176,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UMenuButtonWidget*                      CallFunc_CreateButton_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Menu_C_CreateAdminMenuButton) == 0x000008, "Wrong alignment on WBP_Menu_C_CreateAdminMenuButton");
-static_assert(sizeof(WBP_Menu_C_CreateAdminMenuButton) == 0x000018, "Wrong size on WBP_Menu_C_CreateAdminMenuButton");
-static_assert(offsetof(WBP_Menu_C_CreateAdminMenuButton, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_Menu_C_CreateAdminMenuButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Menu_C_CreateAdminMenuButton, CallFunc_CreateButton_ReturnValue) == 0x000010, "Member 'WBP_Menu_C_CreateAdminMenuButton::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Menu_C_CreateAdminMenuButton;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

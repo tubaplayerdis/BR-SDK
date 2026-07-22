@@ -16,8 +16,7 @@
 #include "AudioMixer_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class AudioMixer.SubmixEffectReverbPreset
 // 0x00A8 (0x0110 - 0x0068)
@@ -34,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectReverbPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectReverbPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectReverbPreset")
 	}
 	static class USubmixEffectReverbPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectReverbPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectReverbPreset) == 0x000008, "Wrong alignment on USubmixEffectReverbPreset");
-static_assert(sizeof(USubmixEffectReverbPreset) == 0x000110, "Wrong size on USubmixEffectReverbPreset");
-static_assert(offsetof(USubmixEffectReverbPreset, Settings) == 0x0000D0, "Member 'USubmixEffectReverbPreset::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_USubmixEffectReverbPreset;
 
 // Class AudioMixer.SynthComponent
 // 0x04C0 (0x06C0 - 0x0200)
@@ -96,30 +97,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthComponent">();
+		STATIC_CLASS_IMPL("SynthComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthComponent")
 	}
 	static class USynthComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthComponent>();
 	}
 };
-static_assert(alignof(USynthComponent) == 0x000010, "Wrong alignment on USynthComponent");
-static_assert(sizeof(USynthComponent) == 0x0006C0, "Wrong size on USynthComponent");
-static_assert(offsetof(USynthComponent, AttenuationSettings) == 0x000200, "Member 'USynthComponent::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(USynthComponent, AttenuationOverrides) == 0x000208, "Member 'USynthComponent::AttenuationOverrides' has a wrong offset!");
-static_assert(offsetof(USynthComponent, ConcurrencySettings) == 0x0005A8, "Member 'USynthComponent::ConcurrencySettings' has a wrong offset!");
-static_assert(offsetof(USynthComponent, ConcurrencySet) == 0x0005B0, "Member 'USynthComponent::ConcurrencySet' has a wrong offset!");
-static_assert(offsetof(USynthComponent, SoundClass) == 0x000600, "Member 'USynthComponent::SoundClass' has a wrong offset!");
-static_assert(offsetof(USynthComponent, SourceEffectChain) == 0x000608, "Member 'USynthComponent::SourceEffectChain' has a wrong offset!");
-static_assert(offsetof(USynthComponent, SoundSubmix) == 0x000610, "Member 'USynthComponent::SoundSubmix' has a wrong offset!");
-static_assert(offsetof(USynthComponent, SoundSubmixSends) == 0x000618, "Member 'USynthComponent::SoundSubmixSends' has a wrong offset!");
-static_assert(offsetof(USynthComponent, BusSends) == 0x000628, "Member 'USynthComponent::BusSends' has a wrong offset!");
-static_assert(offsetof(USynthComponent, PreEffectBusSends) == 0x000638, "Member 'USynthComponent::PreEffectBusSends' has a wrong offset!");
-static_assert(offsetof(USynthComponent, EnvelopeFollowerAttackTime) == 0x00064C, "Member 'USynthComponent::EnvelopeFollowerAttackTime' has a wrong offset!");
-static_assert(offsetof(USynthComponent, EnvelopeFollowerReleaseTime) == 0x000650, "Member 'USynthComponent::EnvelopeFollowerReleaseTime' has a wrong offset!");
-static_assert(offsetof(USynthComponent, OnAudioEnvelopeValue) == 0x000658, "Member 'USynthComponent::OnAudioEnvelopeValue' has a wrong offset!");
-static_assert(offsetof(USynthComponent, Synth) == 0x000688, "Member 'USynthComponent::Synth' has a wrong offset!");
-static_assert(offsetof(USynthComponent, AudioComponent) == 0x000690, "Member 'USynthComponent::AudioComponent' has a wrong offset!");
+DUMPER7_ASSERTS_USynthComponent;
 
 // Class AudioMixer.QuartzSubsystem
 // 0x0110 (0x0150 - 0x0040)
@@ -152,15 +141,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QuartzSubsystem">();
+		STATIC_CLASS_IMPL("QuartzSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuartzSubsystem")
 	}
 	static class UQuartzSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuartzSubsystem>();
 	}
 };
-static_assert(alignof(UQuartzSubsystem) == 0x000008, "Wrong alignment on UQuartzSubsystem");
-static_assert(sizeof(UQuartzSubsystem) == 0x000150, "Wrong size on UQuartzSubsystem");
+DUMPER7_ASSERTS_UQuartzSubsystem;
 
 // Class AudioMixer.AudioGenerator
 // 0x0080 (0x00A8 - 0x0028)
@@ -172,15 +164,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioGenerator">();
+		STATIC_CLASS_IMPL("AudioGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioGenerator")
 	}
 	static class UAudioGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioGenerator>();
 	}
 };
-static_assert(alignof(UAudioGenerator) == 0x000008, "Wrong alignment on UAudioGenerator");
-static_assert(sizeof(UAudioGenerator) == 0x0000A8, "Wrong size on UAudioGenerator");
+DUMPER7_ASSERTS_UAudioGenerator;
 
 // Class AudioMixer.AudioMixerBlueprintLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -225,15 +220,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioMixerBlueprintLibrary">();
+		STATIC_CLASS_IMPL("AudioMixerBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioMixerBlueprintLibrary")
 	}
 	static class UAudioMixerBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioMixerBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UAudioMixerBlueprintLibrary) == 0x000008, "Wrong alignment on UAudioMixerBlueprintLibrary");
-static_assert(sizeof(UAudioMixerBlueprintLibrary) == 0x000028, "Wrong size on UAudioMixerBlueprintLibrary");
+DUMPER7_ASSERTS_UAudioMixerBlueprintLibrary;
 
 // Class AudioMixer.QuartzClockHandle
 // 0x0168 (0x0190 - 0x0028)
@@ -251,16 +249,16 @@ public:
 	float GetEstimatedRunTime(const class UObject* WorldContextObject);
 	bool IsClockRunning(const class UObject* WorldContextObject);
 	void PauseClock(const class UObject* WorldContextObject, class UQuartzClockHandle** ClockHandle);
-	void ResetTransport(const class UObject* WorldContextObject, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name)>& InDelegate);
-	void ResetTransportQuantized(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& InQuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name)>& InDelegate, class UQuartzClockHandle** ClockHandle);
+	void ResetTransport(const class UObject* WorldContextObject, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name_0)>& InDelegate);
+	void ResetTransportQuantized(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& InQuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name_0)>& InDelegate, class UQuartzClockHandle** ClockHandle);
 	void ResumeClock(const class UObject* WorldContextObject, class UQuartzClockHandle** ClockHandle);
-	void SetBeatsPerMinute(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name)>& Delegate, class UQuartzClockHandle** ClockHandle, float BeatsPerMinute);
-	void SetMillisecondsPerTick(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name)>& Delegate, class UQuartzClockHandle** ClockHandle, float MillisecondsPerTick);
-	void SetSecondsPerTick(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name)>& Delegate, class UQuartzClockHandle** ClockHandle, float SecondsPerTick);
-	void SetThirtySecondNotesPerMinute(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name)>& Delegate, class UQuartzClockHandle** ClockHandle, float ThirtySecondsNotesPerMinute);
-	void SetTicksPerSecond(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name)>& Delegate, class UQuartzClockHandle** ClockHandle, float TicksPerSecond);
+	void SetBeatsPerMinute(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name_0)>& Delegate, class UQuartzClockHandle** ClockHandle, float BeatsPerMinute);
+	void SetMillisecondsPerTick(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name_0)>& Delegate, class UQuartzClockHandle** ClockHandle, float MillisecondsPerTick);
+	void SetSecondsPerTick(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name_0)>& Delegate, class UQuartzClockHandle** ClockHandle, float SecondsPerTick);
+	void SetThirtySecondNotesPerMinute(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name_0)>& Delegate, class UQuartzClockHandle** ClockHandle, float ThirtySecondsNotesPerMinute);
+	void SetTicksPerSecond(const class UObject* WorldContextObject, const struct FQuartzQuantizationBoundary& QuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name_0)>& Delegate, class UQuartzClockHandle** ClockHandle, float TicksPerSecond);
 	void StartClock(const class UObject* WorldContextObject, class UQuartzClockHandle** ClockHandle);
-	void StartOtherClock(const class UObject* WorldContextObject, class FName OtherClockName, const struct FQuartzQuantizationBoundary& InQuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name)>& InDelegate);
+	void StartOtherClock(const class UObject* WorldContextObject, class FName OtherClockName, const struct FQuartzQuantizationBoundary& InQuantizationBoundary, const TDelegate<void(EQuartzCommandDelegateSubType EventType, class FName Name_0)>& InDelegate);
 	void StopClock(const class UObject* WorldContextObject, bool CancelPendingEvents, class UQuartzClockHandle** ClockHandle);
 	void SubscribeToAllQuantizationEvents(const class UObject* WorldContextObject, const TDelegate<void(class FName ClockName, EQuartzCommandQuantization QuantizationType, int32 NumBars, int32 Beat, float BeatFraction)>& OnQuantizationEvent, class UQuartzClockHandle** ClockHandle);
 	void SubscribeToQuantizationEvent(const class UObject* WorldContextObject, EQuartzCommandQuantization InQuantizationBoundary, const TDelegate<void(class FName ClockName, EQuartzCommandQuantization QuantizationType, int32 NumBars, int32 Beat, float BeatFraction)>& OnQuantizationEvent, class UQuartzClockHandle** ClockHandle);
@@ -276,17 +274,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QuartzClockHandle">();
+		STATIC_CLASS_IMPL("QuartzClockHandle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuartzClockHandle")
 	}
 	static class UQuartzClockHandle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuartzClockHandle>();
 	}
 };
-static_assert(alignof(UQuartzClockHandle) == 0x000008, "Wrong alignment on UQuartzClockHandle");
-static_assert(sizeof(UQuartzClockHandle) == 0x000190, "Wrong size on UQuartzClockHandle");
-static_assert(offsetof(UQuartzClockHandle, QuartzSubsystem) == 0x000168, "Member 'UQuartzClockHandle::QuartzSubsystem' has a wrong offset!");
-static_assert(offsetof(UQuartzClockHandle, WorldPtr) == 0x000188, "Member 'UQuartzClockHandle::WorldPtr' has a wrong offset!");
+DUMPER7_ASSERTS_UQuartzClockHandle;
 
 // Class AudioMixer.SubmixEffectDynamicsProcessorPreset
 // 0x00E8 (0x0150 - 0x0068)
@@ -305,16 +304,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectDynamicsProcessorPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectDynamicsProcessorPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectDynamicsProcessorPreset")
 	}
 	static class USubmixEffectDynamicsProcessorPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectDynamicsProcessorPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectDynamicsProcessorPreset) == 0x000008, "Wrong alignment on USubmixEffectDynamicsProcessorPreset");
-static_assert(sizeof(USubmixEffectDynamicsProcessorPreset) == 0x000150, "Wrong size on USubmixEffectDynamicsProcessorPreset");
-static_assert(offsetof(USubmixEffectDynamicsProcessorPreset, Settings) == 0x0000F0, "Member 'USubmixEffectDynamicsProcessorPreset::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_USubmixEffectDynamicsProcessorPreset;
 
 // Class AudioMixer.SubmixEffectSubmixEQPreset
 // 0x0048 (0x00B0 - 0x0068)
@@ -330,16 +331,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectSubmixEQPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectSubmixEQPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectSubmixEQPreset")
 	}
 	static class USubmixEffectSubmixEQPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectSubmixEQPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectSubmixEQPreset) == 0x000008, "Wrong alignment on USubmixEffectSubmixEQPreset");
-static_assert(sizeof(USubmixEffectSubmixEQPreset) == 0x0000B0, "Wrong size on USubmixEffectSubmixEQPreset");
-static_assert(offsetof(USubmixEffectSubmixEQPreset, Settings) == 0x0000A0, "Member 'USubmixEffectSubmixEQPreset::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_USubmixEffectSubmixEQPreset;
 
 // Class AudioMixer.SynthSound
 // 0x0020 (0x03E0 - 0x03C0)
@@ -352,16 +355,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthSound">();
+		STATIC_CLASS_IMPL("SynthSound")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthSound")
 	}
 	static class USynthSound* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthSound>();
 	}
 };
-static_assert(alignof(USynthSound) == 0x000010, "Wrong alignment on USynthSound");
-static_assert(sizeof(USynthSound) == 0x0003E0, "Wrong size on USynthSound");
-static_assert(offsetof(USynthSound, OwningSynthComponent) == 0x0003C0, "Member 'USynthSound::OwningSynthComponent' has a wrong offset!");
+DUMPER7_ASSERTS_USynthSound;
 
-}
-
+SDK_NAMESPACE_END

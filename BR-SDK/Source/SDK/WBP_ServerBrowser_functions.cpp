@@ -14,8 +14,7 @@
 #include "WBP_ServerBrowser_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ServerBrowser.WBP_ServerBrowser_C.ExecuteUbergraph_WBP_ServerBrowser
 // (Final, UbergraphFunction)
@@ -90,5 +89,5 @@ void UWBP_ServerBrowser_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

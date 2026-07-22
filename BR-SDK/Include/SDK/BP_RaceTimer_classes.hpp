@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_RaceTimer.BP_RaceTimer_C
 // 0x0000 (0x0230 - 0x0230)
@@ -23,15 +22,17 @@ class ABP_RaceTimer_C final : public ARaceTimer
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RaceTimer_C">();
+		BP_STATIC_CLASS_IMPL("BP_RaceTimer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RaceTimer_C")
 	}
 	static class ABP_RaceTimer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RaceTimer_C>();
 	}
 };
-static_assert(alignof(ABP_RaceTimer_C) == 0x000008, "Wrong alignment on ABP_RaceTimer_C");
-static_assert(sizeof(ABP_RaceTimer_C) == 0x000230, "Wrong size on ABP_RaceTimer_C");
+DUMPER7_ASSERTS_ABP_RaceTimer_C;
 
-}
-
+SDK_NAMESPACE_END

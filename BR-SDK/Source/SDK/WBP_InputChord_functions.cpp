@@ -14,8 +14,7 @@
 #include "WBP_InputChord_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InputChord.WBP_InputChord_C.ExecuteUbergraph_WBP_InputChord
 // (Final, UbergraphFunction)
@@ -100,5 +99,5 @@ void UWBP_InputChord_C::AddKeyWidget(class UInputKeyWidget* Widget)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

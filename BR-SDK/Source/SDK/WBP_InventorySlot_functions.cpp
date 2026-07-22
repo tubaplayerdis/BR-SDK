@@ -14,8 +14,7 @@
 #include "WBP_InventorySlot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InventorySlot.WBP_InventorySlot_C.ExecuteUbergraph_WBP_InventorySlot
 // (Final, UbergraphFunction)
@@ -112,5 +111,5 @@ void UWBP_InventorySlot_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateC
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

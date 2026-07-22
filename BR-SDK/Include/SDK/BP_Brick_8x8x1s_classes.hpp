@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Brick_8x8x1s.BP_Brick_8x8x1s_C
 // 0x0008 (0x0198 - 0x0190)
@@ -32,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Brick_8x8x1s_C">();
+		BP_STATIC_CLASS_IMPL("BP_Brick_8x8x1s_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Brick_8x8x1s_C")
 	}
 	static class UBP_Brick_8x8x1s_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Brick_8x8x1s_C>();
 	}
 };
-static_assert(alignof(UBP_Brick_8x8x1s_C) == 0x000008, "Wrong alignment on UBP_Brick_8x8x1s_C");
-static_assert(sizeof(UBP_Brick_8x8x1s_C) == 0x000198, "Wrong size on UBP_Brick_8x8x1s_C");
-static_assert(offsetof(UBP_Brick_8x8x1s_C, UberGraphFrame) == 0x000190, "Member 'UBP_Brick_8x8x1s_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UBP_Brick_8x8x1s_C;
 
-}
-
+SDK_NAMESPACE_END

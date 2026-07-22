@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BrickComboBoxItemContainer.WBP_BrickComboBoxItemContainer_C
 // 0x0008 (0x0298 - 0x0290)
@@ -25,24 +24,25 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void AddItemWidget(class UBrickComboBoxItemWidget* Widget);
-	void UpdateIsSelected(bool bNewSelected);
-	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 	void ExecuteUbergraph_WBP_BrickComboBoxItemContainer(int32 EntryPoint);
+	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void UpdateIsSelected(bool bNewSelected);
+	void AddItemWidget(class UBrickComboBoxItemWidget* Widget);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BrickComboBoxItemContainer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BrickComboBoxItemContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BrickComboBoxItemContainer_C")
 	}
 	static class UWBP_BrickComboBoxItemContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BrickComboBoxItemContainer_C>();
 	}
 };
-static_assert(alignof(UWBP_BrickComboBoxItemContainer_C) == 0x000008, "Wrong alignment on UWBP_BrickComboBoxItemContainer_C");
-static_assert(sizeof(UWBP_BrickComboBoxItemContainer_C) == 0x000298, "Wrong size on UWBP_BrickComboBoxItemContainer_C");
-static_assert(offsetof(UWBP_BrickComboBoxItemContainer_C, UberGraphFrame) == 0x000290, "Member 'UWBP_BrickComboBoxItemContainer_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BrickComboBoxItemContainer_C;
 
-}
-
+SDK_NAMESPACE_END

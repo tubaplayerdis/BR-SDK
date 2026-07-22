@@ -14,17 +14,16 @@
 #include "WBP_MatchState_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_MatchState.WBP_MatchState_C.UpdateMatchState
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// const class FText&                      NewDisplayText                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// EBrickUIColorStyle                      NewColorStyle                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFadeOut                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const class FText&                      NewDisplayText_UpdateMatchState                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// EBrickUIColorStyle                      NewColorStyle_UpdateMatchState                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFadeOut_UpdateMatchState                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_MatchState_C::UpdateMatchState(const class FText& NewDisplayText, EBrickUIColorStyle NewColorStyle, bool bFadeOut)
+void UWBP_MatchState_C::UpdateMatchState(const class FText& NewDisplayText_UpdateMatchState, EBrickUIColorStyle NewColorStyle_UpdateMatchState, bool bFadeOut_UpdateMatchState)
 {
 	static class UFunction* Func = nullptr;
 
@@ -33,9 +32,9 @@ void UWBP_MatchState_C::UpdateMatchState(const class FText& NewDisplayText, EBri
 
 	Params::WBP_MatchState_C_UpdateMatchState Parms{};
 
-	Parms.NewDisplayText = std::move(NewDisplayText);
-	Parms.NewColorStyle = NewColorStyle;
-	Parms.bFadeOut = bFadeOut;
+	Parms.NewDisplayText_UpdateMatchState = std::move(NewDisplayText_UpdateMatchState);
+	Parms.NewColorStyle_UpdateMatchState = NewColorStyle_UpdateMatchState;
+	Parms.bFadeOut_UpdateMatchState = bFadeOut_UpdateMatchState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -44,9 +43,9 @@ void UWBP_MatchState_C::UpdateMatchState(const class FText& NewDisplayText, EBri
 // Function WBP_MatchState.WBP_MatchState_C.OnAnimationFinished
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UWidgetAnimation*           Animation_OnAnimationFinished                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MatchState_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
+void UWBP_MatchState_C::OnAnimationFinished(const class UWidgetAnimation* Animation_OnAnimationFinished)
 {
 	static class UFunction* Func = nullptr;
 
@@ -55,7 +54,7 @@ void UWBP_MatchState_C::OnAnimationFinished(const class UWidgetAnimation* Animat
 
 	Params::WBP_MatchState_C_OnAnimationFinished Parms{};
 
-	Parms.Animation = Animation;
+	Parms.Animation_OnAnimationFinished = Animation_OnAnimationFinished;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -80,5 +79,5 @@ void UWBP_MatchState_C::ExecuteUbergraph_WBP_MatchState(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

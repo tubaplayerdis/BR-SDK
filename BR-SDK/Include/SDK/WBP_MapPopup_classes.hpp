@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MapPopup.WBP_MapPopup_C
 // 0x0008 (0x02A8 - 0x02A0)
@@ -33,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MapPopup_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MapPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MapPopup_C")
 	}
 	static class UWBP_MapPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MapPopup_C>();
 	}
 };
-static_assert(alignof(UWBP_MapPopup_C) == 0x000008, "Wrong alignment on UWBP_MapPopup_C");
-static_assert(sizeof(UWBP_MapPopup_C) == 0x0002A8, "Wrong size on UWBP_MapPopup_C");
-static_assert(offsetof(UWBP_MapPopup_C, UberGraphFrame) == 0x0002A0, "Member 'UWBP_MapPopup_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MapPopup_C;
 
-}
-
+SDK_NAMESPACE_END

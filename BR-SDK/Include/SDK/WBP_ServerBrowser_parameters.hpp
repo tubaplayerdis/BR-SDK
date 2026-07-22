@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ServerBrowser.WBP_ServerBrowser_C.ExecuteUbergraph_WBP_ServerBrowser
 // 0x0048 (0x0048 - 0x0000)
@@ -29,16 +29,7 @@ public:
 	bool                                          K2Node_Event_bCanRefresh;                          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_bCanJoin;                             // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser) == 0x000008, "Wrong alignment on WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser");
-static_assert(sizeof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser) == 0x000048, "Wrong size on WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser");
-static_assert(offsetof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser, EntryPoint) == 0x000000, "Member 'WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser, CallFunc_GetMenuWidget_ReturnValue) == 0x000008, "Member 'WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser::CallFunc_GetMenuWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser, CallFunc_CreateRefreshButton_ReturnValue) == 0x000030, "Member 'WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser::CallFunc_CreateRefreshButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser, CallFunc_CreateButton_ReturnValue) == 0x000038, "Member 'WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser, K2Node_Event_bCanRefresh) == 0x000040, "Member 'WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser::K2Node_Event_bCanRefresh' has a wrong offset!");
-static_assert(offsetof(WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser, K2Node_Event_bCanJoin) == 0x000041, "Member 'WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser::K2Node_Event_bCanJoin' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ServerBrowser_C_ExecuteUbergraph_WBP_ServerBrowser;
 
 // Function WBP_ServerBrowser.WBP_ServerBrowser_C.UpdateCanJoin
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +38,7 @@ struct WBP_ServerBrowser_C_UpdateCanJoin final
 public:
 	bool                                          bCanJoin;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ServerBrowser_C_UpdateCanJoin) == 0x000001, "Wrong alignment on WBP_ServerBrowser_C_UpdateCanJoin");
-static_assert(sizeof(WBP_ServerBrowser_C_UpdateCanJoin) == 0x000001, "Wrong size on WBP_ServerBrowser_C_UpdateCanJoin");
-static_assert(offsetof(WBP_ServerBrowser_C_UpdateCanJoin, bCanJoin) == 0x000000, "Member 'WBP_ServerBrowser_C_UpdateCanJoin::bCanJoin' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ServerBrowser_C_UpdateCanJoin;
 
 // Function WBP_ServerBrowser.WBP_ServerBrowser_C.UpdateCanRefresh
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +47,7 @@ struct WBP_ServerBrowser_C_UpdateCanRefresh final
 public:
 	bool                                          bCanRefresh;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ServerBrowser_C_UpdateCanRefresh) == 0x000001, "Wrong alignment on WBP_ServerBrowser_C_UpdateCanRefresh");
-static_assert(sizeof(WBP_ServerBrowser_C_UpdateCanRefresh) == 0x000001, "Wrong size on WBP_ServerBrowser_C_UpdateCanRefresh");
-static_assert(offsetof(WBP_ServerBrowser_C_UpdateCanRefresh, bCanRefresh) == 0x000000, "Member 'WBP_ServerBrowser_C_UpdateCanRefresh::bCanRefresh' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ServerBrowser_C_UpdateCanRefresh;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

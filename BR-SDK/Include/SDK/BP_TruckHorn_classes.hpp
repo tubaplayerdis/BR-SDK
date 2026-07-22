@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_TruckHorn.BP_TruckHorn_C
 // 0x0000 (0x0060 - 0x0060)
@@ -23,15 +22,17 @@ class UBP_TruckHorn_C final : public USirenType
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_TruckHorn_C">();
+		BP_STATIC_CLASS_IMPL("BP_TruckHorn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_TruckHorn_C")
 	}
 	static class UBP_TruckHorn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_TruckHorn_C>();
 	}
 };
-static_assert(alignof(UBP_TruckHorn_C) == 0x000008, "Wrong alignment on UBP_TruckHorn_C");
-static_assert(sizeof(UBP_TruckHorn_C) == 0x000060, "Wrong size on UBP_TruckHorn_C");
+DUMPER7_ASSERTS_UBP_TruckHorn_C;
 
-}
-
+SDK_NAMESPACE_END

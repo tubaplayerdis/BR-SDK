@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BrickVehicle.BP_BrickVehicle_C
 // 0x0000 (0x0AC0 - 0x0AC0)
@@ -23,15 +22,17 @@ class ABP_BrickVehicle_C final : public ABrickVehicle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BrickVehicle_C">();
+		BP_STATIC_CLASS_IMPL("BP_BrickVehicle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BrickVehicle_C")
 	}
 	static class ABP_BrickVehicle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BrickVehicle_C>();
 	}
 };
-static_assert(alignof(ABP_BrickVehicle_C) == 0x000010, "Wrong alignment on ABP_BrickVehicle_C");
-static_assert(sizeof(ABP_BrickVehicle_C) == 0x000AC0, "Wrong size on ABP_BrickVehicle_C");
+DUMPER7_ASSERTS_ABP_BrickVehicle_C;
 
-}
-
+SDK_NAMESPACE_END

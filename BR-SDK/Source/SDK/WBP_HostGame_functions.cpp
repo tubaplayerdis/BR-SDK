@@ -14,8 +14,7 @@
 #include "WBP_HostGame_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_HostGame.WBP_HostGame_C.ExecuteUbergraph_WBP_HostGame
 // (Final, UbergraphFunction, HasDefaults)
@@ -72,5 +71,5 @@ void UWBP_HostGame_C::UpdatePlayButton(bool bCanPlay, bool bIsOnline)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

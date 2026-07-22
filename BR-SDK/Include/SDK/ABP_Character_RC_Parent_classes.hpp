@@ -14,8 +14,7 @@
 #include "ABP_Character_RC_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_Character_RC_Parent.ABP_Character_RC_Parent_C
 // 0x0010 (0x0780 - 0x0770)
@@ -31,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Character_RC_Parent_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Character_RC_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Character_RC_Parent_C")
 	}
 	static class UABP_Character_RC_Parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Character_RC_Parent_C>();
 	}
 };
-static_assert(alignof(UABP_Character_RC_Parent_C) == 0x000010, "Wrong alignment on UABP_Character_RC_Parent_C");
-static_assert(sizeof(UABP_Character_RC_Parent_C) == 0x000780, "Wrong size on UABP_Character_RC_Parent_C");
-static_assert(offsetof(UABP_Character_RC_Parent_C, UberGraphFrame_ABP_Character_RC_Parent_C) == 0x000770, "Member 'UABP_Character_RC_Parent_C::UberGraphFrame_ABP_Character_RC_Parent_C' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_Character_RC_Parent_C;
 
-}
-
+SDK_NAMESPACE_END

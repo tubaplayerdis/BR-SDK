@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass IndustrialZone.IndustrialZone_C
 // 0x0000 (0x0228 - 0x0228)
@@ -23,15 +22,17 @@ class AIndustrialZone_C final : public ALevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"IndustrialZone_C">();
+		BP_STATIC_CLASS_IMPL("IndustrialZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IndustrialZone_C")
 	}
 	static class AIndustrialZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AIndustrialZone_C>();
 	}
 };
-static_assert(alignof(AIndustrialZone_C) == 0x000008, "Wrong alignment on AIndustrialZone_C");
-static_assert(sizeof(AIndustrialZone_C) == 0x000228, "Wrong size on AIndustrialZone_C");
+DUMPER7_ASSERTS_AIndustrialZone_C;
 
-}
-
+SDK_NAMESPACE_END

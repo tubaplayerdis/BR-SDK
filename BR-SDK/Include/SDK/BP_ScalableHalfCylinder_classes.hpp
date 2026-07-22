@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ScalableHalfCylinder.BP_ScalableHalfCylinder_C
 // 0x0000 (0x01D0 - 0x01D0)
@@ -23,15 +22,17 @@ class UBP_ScalableHalfCylinder_C final : public UScalableBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ScalableHalfCylinder_C">();
+		BP_STATIC_CLASS_IMPL("BP_ScalableHalfCylinder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ScalableHalfCylinder_C")
 	}
 	static class UBP_ScalableHalfCylinder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ScalableHalfCylinder_C>();
 	}
 };
-static_assert(alignof(UBP_ScalableHalfCylinder_C) == 0x000008, "Wrong alignment on UBP_ScalableHalfCylinder_C");
-static_assert(sizeof(UBP_ScalableHalfCylinder_C) == 0x0001D0, "Wrong size on UBP_ScalableHalfCylinder_C");
+DUMPER7_ASSERTS_UBP_ScalableHalfCylinder_C;
 
-}
-
+SDK_NAMESPACE_END

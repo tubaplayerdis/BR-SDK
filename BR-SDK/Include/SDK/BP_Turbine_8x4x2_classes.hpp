@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Turbine_8x4x2.BP_Turbine_8x4x2_C
 // 0x0000 (0x01F0 - 0x01F0)
@@ -23,15 +22,17 @@ class UBP_Turbine_8x4x2_C final : public UTurbineBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Turbine_8x4x2_C">();
+		BP_STATIC_CLASS_IMPL("BP_Turbine_8x4x2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Turbine_8x4x2_C")
 	}
 	static class UBP_Turbine_8x4x2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Turbine_8x4x2_C>();
 	}
 };
-static_assert(alignof(UBP_Turbine_8x4x2_C) == 0x000008, "Wrong alignment on UBP_Turbine_8x4x2_C");
-static_assert(sizeof(UBP_Turbine_8x4x2_C) == 0x0001F0, "Wrong size on UBP_Turbine_8x4x2_C");
+DUMPER7_ASSERTS_UBP_Turbine_8x4x2_C;
 
-}
-
+SDK_NAMESPACE_END

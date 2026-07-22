@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PageSelector.WBP_PageSelector_C
 // 0x0028 (0x02A8 - 0x0280)
@@ -30,30 +29,27 @@ public:
 	class UBrickImage*                            PrevImage;                                         // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__PrevButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__NextButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void UpdateButtons(bool bCanGoBack, bool bCanGoForward);
 	void ExecuteUbergraph_WBP_PageSelector(int32 EntryPoint);
+	void UpdateButtons(bool bCanGoBack, bool bCanGoForward);
+	void BndEvt__NextButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
+	void BndEvt__PrevButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
+	void BndEvt__NextButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__PrevButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PageSelector_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PageSelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PageSelector_C")
 	}
 	static class UWBP_PageSelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PageSelector_C>();
 	}
 };
-static_assert(alignof(UWBP_PageSelector_C) == 0x000008, "Wrong alignment on UWBP_PageSelector_C");
-static_assert(sizeof(UWBP_PageSelector_C) == 0x0002A8, "Wrong size on UWBP_PageSelector_C");
-static_assert(offsetof(UWBP_PageSelector_C, UberGraphFrame) == 0x000280, "Member 'UWBP_PageSelector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PageSelector_C, NextButton) == 0x000288, "Member 'UWBP_PageSelector_C::NextButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PageSelector_C, NextImage) == 0x000290, "Member 'UWBP_PageSelector_C::NextImage' has a wrong offset!");
-static_assert(offsetof(UWBP_PageSelector_C, PrevButton) == 0x000298, "Member 'UWBP_PageSelector_C::PrevButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PageSelector_C, PrevImage) == 0x0002A0, "Member 'UWBP_PageSelector_C::PrevImage' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PageSelector_C;
 
-}
-
+SDK_NAMESPACE_END

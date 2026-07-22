@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Credits.WBP_Credits_C
 // 0x0010 (0x0280 - 0x0270)
@@ -36,17 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Credits_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Credits_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Credits_C")
 	}
 	static class UWBP_Credits_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Credits_C>();
 	}
 };
-static_assert(alignof(UWBP_Credits_C) == 0x000008, "Wrong alignment on UWBP_Credits_C");
-static_assert(sizeof(UWBP_Credits_C) == 0x000280, "Wrong size on UWBP_Credits_C");
-static_assert(offsetof(UWBP_Credits_C, UberGraphFrame) == 0x000270, "Member 'UWBP_Credits_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Credits_C, LicensesScrollBox) == 0x000278, "Member 'UWBP_Credits_C::LicensesScrollBox' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Credits_C;
 
-}
-
+SDK_NAMESPACE_END

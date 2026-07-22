@@ -17,304 +17,233 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.AddHUDNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_AddHUDNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_AddHUDNotification;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_AddHUDNotification;                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_AddHUDNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_AddHUDNotification");
-static_assert(sizeof(WBP_GameOverlay_C_AddHUDNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_AddHUDNotification");
-static_assert(offsetof(WBP_GameOverlay_C_AddHUDNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_AddHUDNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_AddHUDNotification, Index_0) == 0x000008, "Member 'WBP_GameOverlay_C_AddHUDNotification::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_AddHUDNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateSlomoNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateSlomoNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SlomoSpeed;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInvertSpeed;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bSlomoEnabled;                                     // 0x000D(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bIsPaused;                                         // 0x000E(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHUDNotificationWidget*                 Widget_UpdateSlomoNotification;                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SlomoSpeed_UpdateSlomoNotification;                // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInvertSpeed_UpdateSlomoNotification;              // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bSlomoEnabled_UpdateSlomoNotification;             // 0x000D(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsPaused_UpdateSlomoNotification;                 // 0x000E(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateSlomoNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateSlomoNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateSlomoNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateSlomoNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateSlomoNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateSlomoNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateSlomoNotification, SlomoSpeed) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateSlomoNotification::SlomoSpeed' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateSlomoNotification, bInvertSpeed) == 0x00000C, "Member 'WBP_GameOverlay_C_UpdateSlomoNotification::bInvertSpeed' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateSlomoNotification, bSlomoEnabled) == 0x00000D, "Member 'WBP_GameOverlay_C_UpdateSlomoNotification::bSlomoEnabled' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateSlomoNotification, bIsPaused) == 0x00000E, "Member 'WBP_GameOverlay_C_UpdateSlomoNotification::bIsPaused' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateSlomoNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateMoneyNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateMoneyNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NewAmount;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AmountAdded;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_UpdateMoneyNotification;                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NewAmount_UpdateMoneyNotification;                 // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AmountAdded_UpdateMoneyNotification;               // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateMoneyNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateMoneyNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateMoneyNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateMoneyNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateMoneyNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateMoneyNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateMoneyNotification, NewAmount) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateMoneyNotification::NewAmount' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateMoneyNotification, AmountAdded) == 0x00000C, "Member 'WBP_GameOverlay_C_UpdateMoneyNotification::AmountAdded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateMoneyNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateFreeCamNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateFreeCamNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInFreeCam;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	EFreeCamMode                                  InFreeCamMode;                                     // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsFixedCam;                                       // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHUDNotificationWidget*                 Widget_UpdateFreeCamNotification;                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInFreeCam_UpdateFreeCamNotification;            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	EFreeCamMode                                  InFreeCamMode_UpdateFreeCamNotification;           // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFixedCam_UpdateFreeCamNotification;             // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateFreeCamNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateFreeCamNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateFreeCamNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateFreeCamNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateFreeCamNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateFreeCamNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateFreeCamNotification, bIsInFreeCam) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateFreeCamNotification::bIsInFreeCam' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateFreeCamNotification, InFreeCamMode) == 0x000009, "Member 'WBP_GameOverlay_C_UpdateFreeCamNotification::InFreeCamMode' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateFreeCamNotification, bIsFixedCam) == 0x00000A, "Member 'WBP_GameOverlay_C_UpdateFreeCamNotification::bIsFixedCam' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateFreeCamNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateThumbnailNotification
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_GameOverlay_C_UpdateThumbnailNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_UpdateThumbnailNotification;                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateThumbnailNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateThumbnailNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateThumbnailNotification) == 0x000008, "Wrong size on WBP_GameOverlay_C_UpdateThumbnailNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateThumbnailNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateThumbnailNotification::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateThumbnailNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.AddMatchTimerWidget
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_GameOverlay_C_AddMatchTimerWidget final
 {
 public:
-	class UMatchTimerWidget*                      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMatchTimerWidget*                      Widget_AddMatchTimerWidget;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_AddMatchTimerWidget) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_AddMatchTimerWidget");
-static_assert(sizeof(WBP_GameOverlay_C_AddMatchTimerWidget) == 0x000008, "Wrong size on WBP_GameOverlay_C_AddMatchTimerWidget");
-static_assert(offsetof(WBP_GameOverlay_C_AddMatchTimerWidget, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_AddMatchTimerWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_AddMatchTimerWidget;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateVehicleCameraNotification
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_GameOverlay_C_UpdateVehicleCameraNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CameraDisplayName;                                 // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UHUDNotificationWidget*                 Widget_UpdateVehicleCameraNotification;            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CameraDisplayName_UpdateVehicleCameraNotification; // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateVehicleCameraNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateVehicleCameraNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateVehicleCameraNotification) == 0x000020, "Wrong size on WBP_GameOverlay_C_UpdateVehicleCameraNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleCameraNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateVehicleCameraNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleCameraNotification, CameraDisplayName) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateVehicleCameraNotification::CameraDisplayName' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateVehicleCameraNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateVehicleDownloadNotification
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_GameOverlay_C_UpdateVehicleDownloadNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   VehicleDisplayName;                                // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	float                                         Progress;                                          // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_UpdateVehicleDownloadNotification;          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   VehicleDisplayName_UpdateVehicleDownloadNotification; // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	float                                         Progress_UpdateVehicleDownloadNotification;        // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateVehicleDownloadNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateVehicleDownloadNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateVehicleDownloadNotification) == 0x000028, "Wrong size on WBP_GameOverlay_C_UpdateVehicleDownloadNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleDownloadNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateVehicleDownloadNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleDownloadNotification, VehicleDisplayName) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateVehicleDownloadNotification::VehicleDisplayName' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleDownloadNotification, Progress) == 0x000020, "Member 'WBP_GameOverlay_C_UpdateVehicleDownloadNotification::Progress' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateVehicleDownloadNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.AddInputHelpWidget
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_GameOverlay_C_AddInputHelpWidget final
 {
 public:
-	class UInputHelpWidget*                       Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UInputHelpWidget*                       Widget_AddInputHelpWidget;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_AddInputHelpWidget) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_AddInputHelpWidget");
-static_assert(sizeof(WBP_GameOverlay_C_AddInputHelpWidget) == 0x000008, "Wrong size on WBP_GameOverlay_C_AddInputHelpWidget");
-static_assert(offsetof(WBP_GameOverlay_C_AddInputHelpWidget, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_AddInputHelpWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_AddInputHelpWidget;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.AddChatWidget
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_GameOverlay_C_AddChatWidget final
 {
 public:
-	class UChatWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UChatWidget*                            Widget_AddChatWidget;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_AddChatWidget) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_AddChatWidget");
-static_assert(sizeof(WBP_GameOverlay_C_AddChatWidget) == 0x000008, "Wrong size on WBP_GameOverlay_C_AddChatWidget");
-static_assert(offsetof(WBP_GameOverlay_C_AddChatWidget, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_AddChatWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_AddChatWidget;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateSaveNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateSaveNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bSuccess;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bIsAutoSave;                                       // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHUDNotificationWidget*                 Widget_UpdateSaveNotification;                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSuccess_UpdateSaveNotification;                   // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsAutoSave_UpdateSaveNotification;                // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateSaveNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateSaveNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateSaveNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateSaveNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateSaveNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateSaveNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateSaveNotification, bSuccess) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateSaveNotification::bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateSaveNotification, bIsAutoSave) == 0x000009, "Member 'WBP_GameOverlay_C_UpdateSaveNotification::bIsAutoSave' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateSaveNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateCameraSpeedNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateCameraSpeedNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NewSpeedRatio;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NewMaxSpeed;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_UpdateCameraSpeedNotification;              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NewSpeedRatio_UpdateCameraSpeedNotification;       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NewMaxSpeed_UpdateCameraSpeedNotification;         // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateCameraSpeedNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateCameraSpeedNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateCameraSpeedNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateCameraSpeedNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateCameraSpeedNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateCameraSpeedNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateCameraSpeedNotification, NewSpeedRatio) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateCameraSpeedNotification::NewSpeedRatio' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateCameraSpeedNotification, NewMaxSpeed) == 0x00000C, "Member 'WBP_GameOverlay_C_UpdateCameraSpeedNotification::NewMaxSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateCameraSpeedNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateCameraZoomNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateCameraZoomNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NewZoomRatio;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_UpdateCameraZoomNotification;               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NewZoomRatio_UpdateCameraZoomNotification;         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateCameraZoomNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateCameraZoomNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateCameraZoomNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateCameraZoomNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateCameraZoomNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateCameraZoomNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateCameraZoomNotification, NewZoomRatio) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateCameraZoomNotification::NewZoomRatio' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateCameraZoomNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.AddMatchStateWidget
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_GameOverlay_C_AddMatchStateWidget final
 {
 public:
-	class UMatchStateWidget*                      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMatchStateWidget*                      Widget_AddMatchStateWidget;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_AddMatchStateWidget) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_AddMatchStateWidget");
-static_assert(sizeof(WBP_GameOverlay_C_AddMatchStateWidget) == 0x000008, "Wrong size on WBP_GameOverlay_C_AddMatchStateWidget");
-static_assert(offsetof(WBP_GameOverlay_C_AddMatchStateWidget, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_AddMatchStateWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_AddMatchStateWidget;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.AddTeamScoreWidget
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_AddTeamScoreWidget final
 {
 public:
-	class UTeamScoreWidget*                       Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETeamAttitude                                 TeamAttitude;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTeamScoreWidget*                       Widget_AddTeamScoreWidget;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETeamAttitude                                 TeamAttitude_AddTeamScoreWidget;                   // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_AddTeamScoreWidget) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_AddTeamScoreWidget");
-static_assert(sizeof(WBP_GameOverlay_C_AddTeamScoreWidget) == 0x000010, "Wrong size on WBP_GameOverlay_C_AddTeamScoreWidget");
-static_assert(offsetof(WBP_GameOverlay_C_AddTeamScoreWidget, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_AddTeamScoreWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_AddTeamScoreWidget, TeamAttitude) == 0x000008, "Member 'WBP_GameOverlay_C_AddTeamScoreWidget::TeamAttitude' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_AddTeamScoreWidget;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateHUDVisibilityNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateHUDVisibilityNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EHUDVisibility                                NewVisibility;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_UpdateHUDVisibilityNotification;            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EHUDVisibility                                NewVisibility_UpdateHUDVisibilityNotification;     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateHUDVisibilityNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateHUDVisibilityNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateHUDVisibilityNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateHUDVisibilityNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateHUDVisibilityNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateHUDVisibilityNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateHUDVisibilityNotification, NewVisibility) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateHUDVisibilityNotification::NewVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateHUDVisibilityNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateCameraModeNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateCameraModeNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECameraMode                                   NewMode;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_UpdateCameraModeNotification;               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECameraMode                                   NewMode_UpdateCameraModeNotification;              // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateCameraModeNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateCameraModeNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateCameraModeNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateCameraModeNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateCameraModeNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateCameraModeNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateCameraModeNotification, NewMode) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateCameraModeNotification::NewMode' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateCameraModeNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateProjectileCameraNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateProjectileCameraNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bNewEnabled;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHUDNotificationWidget*                 Widget_UpdateProjectileCameraNotification;         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bNewEnabled_UpdateProjectileCameraNotification;    // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateProjectileCameraNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateProjectileCameraNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateProjectileCameraNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateProjectileCameraNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateProjectileCameraNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateProjectileCameraNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateProjectileCameraNotification, bNewEnabled) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateProjectileCameraNotification::bNewEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateProjectileCameraNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateRestartFailedNotification
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_GameOverlay_C_UpdateRestartFailedNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Message;                                           // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UHUDNotificationWidget*                 Widget_UpdateRestartFailedNotification;            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Message_UpdateRestartFailedNotification;           // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateRestartFailedNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateRestartFailedNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateRestartFailedNotification) == 0x000020, "Wrong size on WBP_GameOverlay_C_UpdateRestartFailedNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateRestartFailedNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateRestartFailedNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateRestartFailedNotification, Message) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateRestartFailedNotification::Message' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateRestartFailedNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateRespawnDelayNotification
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_GameOverlay_C_UpdateRespawnDelayNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Remaining;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_UpdateRespawnDelayNotification;             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Remaining_UpdateRespawnDelayNotification;          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateRespawnDelayNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateRespawnDelayNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateRespawnDelayNotification) == 0x000010, "Wrong size on WBP_GameOverlay_C_UpdateRespawnDelayNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateRespawnDelayNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateRespawnDelayNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateRespawnDelayNotification, Remaining) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateRespawnDelayNotification::Remaining' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateRespawnDelayNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateVehicleSeatNotification
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_GameOverlay_C_UpdateVehicleSeatNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   SeatDisplayName;                                   // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UHUDNotificationWidget*                 Widget_UpdateVehicleSeatNotification;              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   SeatDisplayName_UpdateVehicleSeatNotification;     // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateVehicleSeatNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateVehicleSeatNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateVehicleSeatNotification) == 0x000020, "Wrong size on WBP_GameOverlay_C_UpdateVehicleSeatNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleSeatNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateVehicleSeatNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleSeatNotification, SeatDisplayName) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateVehicleSeatNotification::SeatDisplayName' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateVehicleSeatNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateVehicleConstructionNotification
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_GameOverlay_C_UpdateVehicleConstructionNotification final
 {
 public:
-	class UHUDNotificationWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   VehicleDisplayName;                                // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	float                                         Progress;                                          // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHUDNotificationWidget*                 Widget_UpdateVehicleConstructionNotification;      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   VehicleDisplayName_UpdateVehicleConstructionNotification; // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	float                                         Progress_UpdateVehicleConstructionNotification;    // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GameOverlay_C_UpdateVehicleConstructionNotification) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_UpdateVehicleConstructionNotification");
-static_assert(sizeof(WBP_GameOverlay_C_UpdateVehicleConstructionNotification) == 0x000028, "Wrong size on WBP_GameOverlay_C_UpdateVehicleConstructionNotification");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleConstructionNotification, Widget) == 0x000000, "Member 'WBP_GameOverlay_C_UpdateVehicleConstructionNotification::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleConstructionNotification, VehicleDisplayName) == 0x000008, "Member 'WBP_GameOverlay_C_UpdateVehicleConstructionNotification::VehicleDisplayName' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_UpdateVehicleConstructionNotification, Progress) == 0x000020, "Member 'WBP_GameOverlay_C_UpdateVehicleConstructionNotification::Progress' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_UpdateVehicleConstructionNotification;
 
 // Function WBP_GameOverlay.WBP_GameOverlay_C.ExecuteUbergraph_WBP_GameOverlay
 // 0x0D88 (0x0D88 - 0x0000)
@@ -561,214 +490,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_9;                          // 0x0D60(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue_9;                     // 0x0D70(0x0018)()
 };
-static_assert(alignof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay) == 0x000008, "Wrong alignment on WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay");
-static_assert(sizeof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay) == 0x000D88, "Wrong size on WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, EntryPoint) == 0x000000, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable) == 0x000020, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData) == 0x000028, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable) == 0x000068, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_1) == 0x000080, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_byte_Variable) == 0x000098, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_2) == 0x0000A0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_3) == 0x0000B8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_4) == 0x0000D0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_5) == 0x0000E8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_6) == 0x000100, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_1) == 0x000118, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_byte_Variable_1) == 0x000119, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_2) == 0x00011A, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_7) == 0x000120, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_3) == 0x000138, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_8) == 0x000140, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_9) == 0x000158, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_4) == 0x000170, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_int_Variable) == 0x000174, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_5) == 0x000178, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_int_Variable_1) == 0x00017C, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_int_Variable_2) == 0x000180, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_6) == 0x000184, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_byte_Variable_2) == 0x000185, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_byte_Variable_3) == 0x000186, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_7) == 0x000187, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_10) == 0x000188, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_11) == 0x0001A0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_8) == 0x0001B8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_9) == 0x0001B9, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_10) == 0x0001BA, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_11) == 0x0001BB, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_byte_Variable_4) == 0x0001BC, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_byte_Variable_5) == 0x0001BD, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_12) == 0x0001BE, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_text_Variable_12) == 0x0001C0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_text_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_BreakVector2D_X) == 0x0001D8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_BreakVector2D_Y) == 0x0001DC, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_BreakVector2D_X_1) == 0x0001E0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_BreakVector2D_X_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_BreakVector2D_Y_1) == 0x0001E4, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_bool_Variable_13) == 0x0001E8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_bool_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_Margin) == 0x0001EC, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_BreakVector2D_X_2) == 0x0001FC, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_BreakVector2D_X_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_BreakVector2D_Y_2) == 0x000200, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_BreakVector2D_Y_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_BreakVector2D_X_3) == 0x000204, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_BreakVector2D_X_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_BreakVector2D_Y_3) == 0x000208, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_BreakVector2D_Y_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_Margin_1) == 0x00020C, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_Margin_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_21) == 0x000220, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_21' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Index) == 0x000228, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_20) == 0x000230, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_20' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_SlomoSpeed) == 0x000238, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_SlomoSpeed' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_bInvertSpeed) == 0x00023C, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_bInvertSpeed' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_bSlomoEnabled) == 0x00023D, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_bSlomoEnabled' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_bIsPaused) == 0x00023E, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_bIsPaused' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_19) == 0x000240, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_19' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_NewAmount) == 0x000248, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_NewAmount' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_AmountAdded) == 0x00024C, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_AmountAdded' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000250, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default) == 0x000258, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_1) == 0x000270, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_NumberToText_ReturnValue) == 0x0002B0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_NumberToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_NumberToText_ReturnValue_1) == 0x0002C8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_NumberToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_2) == 0x0002E0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_3) == 0x000320, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_SelectInt_ReturnValue) == 0x000360, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array) == 0x000368, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_SelectInt_ReturnValue_1) == 0x000378, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue) == 0x000380, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_SelectInt_ReturnValue_2) == 0x000398, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_SelectInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Conv_FloatToText_ReturnValue) == 0x0003A0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot) == 0x0003B8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_4) == 0x0003C0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_1) == 0x000400, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array_1) == 0x000408, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_18) == 0x000418, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_18' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_bIsInFreeCam) == 0x000420, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_bIsInFreeCam' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_InFreeCamMode) == 0x000421, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_InFreeCamMode' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_bIsFixedCam) == 0x000422, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_bIsFixedCam' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue_1) == 0x000428, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_1) == 0x000440, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000458, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_2) == 0x000460, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_BooleanAND_ReturnValue) == 0x000478, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_5) == 0x000480, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_2) == 0x0004C0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_3) == 0x0004C8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0004E0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_6) == 0x0004F8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_7) == 0x000538, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array_2) == 0x000578, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_17) == 0x000588, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_17' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue_2) == 0x000590, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_3) == 0x0005A8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_4) == 0x0005B0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0005C8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_8) == 0x0005E0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_8' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array_3) == 0x000620, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_16) == 0x000630, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_16' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue_3) == 0x000638, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_15) == 0x000650, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_15' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_CameraDisplayName) == 0x000658, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_CameraDisplayName' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_4) == 0x000670, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_14) == 0x000678, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_14' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_VehicleDisplayName_1) == 0x000680, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_VehicleDisplayName_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Progress_1) == 0x000698, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Progress_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_NumberToText_ReturnValue_2) == 0x0006A0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_NumberToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_5) == 0x0006B8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_9) == 0x0006C0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_9' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000700, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_13) == 0x000718, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_13' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_10) == 0x000720, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_10' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_AddChildToCanvas_ReturnValue) == 0x000760, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_AddChildToCanvas_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array_4) == 0x000768, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue_4) == 0x000778, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_12) == 0x000790, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_12' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_Anchors) == 0x000798, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_Anchors' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_AddChildToCanvas_ReturnValue_1) == 0x0007A8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_AddChildToCanvas_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_Anchors_1) == 0x0007B0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_Anchors_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_11) == 0x0007C0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_11' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_bSuccess) == 0x0007C8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_bIsAutoSave) == 0x0007C9, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_bIsAutoSave' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_10) == 0x0007D0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_10' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_NewSpeedRatio) == 0x0007D8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_NewSpeedRatio' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_NewMaxSpeed) == 0x0007DC, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_NewMaxSpeed' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_NumberToText_ReturnValue_3) == 0x0007E0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_NumberToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_5) == 0x0007F8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_6) == 0x000810, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_7) == 0x000814, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_8) == 0x000815, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_8' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_9) == 0x000818, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_9' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_9) == 0x000830, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_9' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_NewZoomRatio) == 0x000838, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_NewZoomRatio' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_10) == 0x00083C, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_10' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_NumberToText_ReturnValue_4) == 0x000840, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_NumberToText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_6) == 0x000858, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_7) == 0x000860, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_8) == 0x000868, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_8' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_8) == 0x000870, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_8' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_7) == 0x000878, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_TeamAttitude) == 0x000880, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_TeamAttitude' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000881, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_AddChild_ReturnValue) == 0x000888, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_6) == 0x000890, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_NewVisibility) == 0x000898, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_NewVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_5) == 0x0008A0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_NewMode) == 0x0008A8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_NewMode' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_GetHUDVisibilityDisplayText_ReturnValue) == 0x0008B0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_GetHUDVisibilityDisplayText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_GetCameraModeDisplayText_ReturnValue) == 0x0008C8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_GetCameraModeDisplayText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_11) == 0x0008E0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_11' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_12) == 0x000920, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_12' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_9) == 0x000960, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_9' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue_4) == 0x000968, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue_5) == 0x000980, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue_6) == 0x000998, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_13) == 0x0009B0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_13' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_14) == 0x0009F0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_14' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array_5) == 0x000A30, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array_6) == 0x000A40, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue_5) == 0x000A50, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue_6) == 0x000A68, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_10) == 0x000A80, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_10' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_4) == 0x000A88, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_4' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_bNewEnabled) == 0x000A90, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_bNewEnabled' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_11) == 0x000A94, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_11' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_byte_Variable_6) == 0x000A9C, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue_7) == 0x000AA0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_15) == 0x000AB8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_15' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue_8) == 0x000AF8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_MakeLiteralText_ReturnValue_9) == 0x000B10, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_MakeLiteralText_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_12) == 0x000B28, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_12' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_11) == 0x000B30, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_11' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_3) == 0x000B48, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_3' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Message) == 0x000B50, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Message' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_16) == 0x000B68, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_16' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array_7) == 0x000BA8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_2) == 0x000BB8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_2' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Remaining) == 0x000BC0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Remaining' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue_7) == 0x000BC8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_FCeil_ReturnValue) == 0x000BE0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000BE4, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000BE8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_NumberToText_ReturnValue_5) == 0x000BF0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_NumberToText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_17) == 0x000C08, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_17' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_12) == 0x000C48, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_12' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array_8) == 0x000C50, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array_8' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_13) == 0x000C60, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_13' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue_8) == 0x000C68, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000C80, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_AddChildToVerticalBox_ReturnValue_1) == 0x000C88, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_AddChildToVerticalBox_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, Temp_byte_Variable_7) == 0x000C90, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_13) == 0x000C98, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_13' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000CA0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Select_Default_14) == 0x000CA8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Select_Default_14' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget_1) == 0x000CB0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget_1' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_SeatDisplayName) == 0x000CB8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_SeatDisplayName' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_14) == 0x000CD0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_14' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Widget) == 0x000CD8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_VehicleDisplayName) == 0x000CE0, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_VehicleDisplayName' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_Event_Progress) == 0x000CF8, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_Event_Progress' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_NumberToText_ReturnValue_6) == 0x000D00, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_NumberToText_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_BrickUIIconSlot_15) == 0x000D18, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_BrickUIIconSlot_15' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeStruct_FormatArgumentData_18) == 0x000D20, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeStruct_FormatArgumentData_18' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, K2Node_MakeArray_Array_9) == 0x000D60, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::K2Node_MakeArray_Array_9' has a wrong offset!");
-static_assert(offsetof(WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay, CallFunc_Format_ReturnValue_9) == 0x000D70, "Member 'WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay::CallFunc_Format_ReturnValue_9' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GameOverlay_C_ExecuteUbergraph_WBP_GameOverlay;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

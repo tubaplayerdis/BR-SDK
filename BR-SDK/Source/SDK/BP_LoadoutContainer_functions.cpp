@@ -14,8 +14,7 @@
 #include "BP_LoadoutContainer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_LoadoutContainer.BP_LoadoutContainer_C.ExecuteUbergraph_BP_LoadoutContainer
 // (Final, UbergraphFunction)
@@ -56,5 +55,5 @@ void ABP_LoadoutContainer_C::UpdateAnimation(float InAnimRatio)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

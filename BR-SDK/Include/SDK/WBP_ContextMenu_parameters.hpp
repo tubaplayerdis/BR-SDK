@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ContextMenu.WBP_ContextMenu_C.ExecuteUbergraph_WBP_ContextMenu
 // 0x0028 (0x0028 - 0x0000)
@@ -30,15 +30,7 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu) == 0x000008, "Wrong alignment on WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu");
-static_assert(sizeof(WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu) == 0x000028, "Wrong size on WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu");
-static_assert(offsetof(WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu, EntryPoint) == 0x000000, "Member 'WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu, Temp_bool_Variable) == 0x000004, "Member 'WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu, Temp_byte_Variable) == 0x000005, "Member 'WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu, K2Node_Event_InText) == 0x000008, "Member 'WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu::K2Node_Event_InText' has a wrong offset!");
-static_assert(offsetof(WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu, CallFunc_TextIsEmpty_ReturnValue) == 0x000020, "Member 'WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu, K2Node_Select_Default) == 0x000021, "Member 'WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ContextMenu_C_ExecuteUbergraph_WBP_ContextMenu;
 
 // Function WBP_ContextMenu.WBP_ContextMenu_C.UpdateTitleText
 // 0x0018 (0x0018 - 0x0000)
@@ -47,9 +39,7 @@ struct WBP_ContextMenu_C_UpdateTitleText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_ContextMenu_C_UpdateTitleText) == 0x000008, "Wrong alignment on WBP_ContextMenu_C_UpdateTitleText");
-static_assert(sizeof(WBP_ContextMenu_C_UpdateTitleText) == 0x000018, "Wrong size on WBP_ContextMenu_C_UpdateTitleText");
-static_assert(offsetof(WBP_ContextMenu_C_UpdateTitleText, InText) == 0x000000, "Member 'WBP_ContextMenu_C_UpdateTitleText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ContextMenu_C_UpdateTitleText;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

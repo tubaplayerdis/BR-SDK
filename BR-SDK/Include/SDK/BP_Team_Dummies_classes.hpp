@@ -13,8 +13,7 @@
 #include "BP_Team_Default_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Team_Dummies.BP_Team_Dummies_C
 // 0x0000 (0x00C8 - 0x00C8)
@@ -23,15 +22,17 @@ class UBP_Team_Dummies_C final : public UBP_Team_Default_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Team_Dummies_C">();
+		BP_STATIC_CLASS_IMPL("BP_Team_Dummies_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Team_Dummies_C")
 	}
 	static class UBP_Team_Dummies_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Team_Dummies_C>();
 	}
 };
-static_assert(alignof(UBP_Team_Dummies_C) == 0x000008, "Wrong alignment on UBP_Team_Dummies_C");
-static_assert(sizeof(UBP_Team_Dummies_C) == 0x0000C8, "Wrong size on UBP_Team_Dummies_C");
+DUMPER7_ASSERTS_UBP_Team_Dummies_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BOF_Actuators.BOF_Actuators_C
 // 0x0000 (0x00B0 - 0x00B0)
@@ -23,15 +22,17 @@ class UBOF_Actuators_C final : public UBrickEditorObjectFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BOF_Actuators_C">();
+		BP_STATIC_CLASS_IMPL("BOF_Actuators_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BOF_Actuators_C")
 	}
 	static class UBOF_Actuators_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBOF_Actuators_C>();
 	}
 };
-static_assert(alignof(UBOF_Actuators_C) == 0x000008, "Wrong alignment on UBOF_Actuators_C");
-static_assert(sizeof(UBOF_Actuators_C) == 0x0000B0, "Wrong size on UBOF_Actuators_C");
+DUMPER7_ASSERTS_UBOF_Actuators_C;
 
-}
-
+SDK_NAMESPACE_END

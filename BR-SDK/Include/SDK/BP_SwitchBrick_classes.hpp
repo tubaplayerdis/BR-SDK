@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SwitchBrick.BP_SwitchBrick_C
 // 0x0000 (0x01D0 - 0x01D0)
@@ -23,15 +22,17 @@ class UBP_SwitchBrick_C final : public USwitchBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SwitchBrick_C">();
+		BP_STATIC_CLASS_IMPL("BP_SwitchBrick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SwitchBrick_C")
 	}
 	static class UBP_SwitchBrick_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_SwitchBrick_C>();
 	}
 };
-static_assert(alignof(UBP_SwitchBrick_C) == 0x000008, "Wrong alignment on UBP_SwitchBrick_C");
-static_assert(sizeof(UBP_SwitchBrick_C) == 0x0001D0, "Wrong size on UBP_SwitchBrick_C");
+DUMPER7_ASSERTS_UBP_SwitchBrick_C;
 
-}
-
+SDK_NAMESPACE_END

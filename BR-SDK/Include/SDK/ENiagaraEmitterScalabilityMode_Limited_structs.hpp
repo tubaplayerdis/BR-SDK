@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagaraEmitterScalabilityMode_Limited.ENiagaraEmitterScalabilityMode_Limited
 // NumValues: 0x0003
@@ -23,5 +22,4 @@ enum class ENiagaraEmitterScalabilityMode_Limited : uint8
 	ENiagaraEmitterScalabilityMode_MAX       = 2,
 };
 
-}
-
+SDK_NAMESPACE_END

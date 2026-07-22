@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InputMappingKey.WBP_InputMappingKey_C.ExecuteUbergraph_WBP_InputMappingKey
 // 0x000C (0x000C - 0x0000)
@@ -30,16 +30,7 @@ public:
 	EBrickUIStyleState                            K2Node_ComponentBoundEvent_InContentStyleState;    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIColorStyle                            K2Node_Select_Default;                             // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey) == 0x000004, "Wrong alignment on WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey");
-static_assert(sizeof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey) == 0x00000C, "Wrong size on WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey");
-static_assert(offsetof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey, EntryPoint) == 0x000000, "Member 'WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey, Temp_bool_Variable) == 0x000004, "Member 'WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey, Temp_byte_Variable) == 0x000005, "Member 'WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey, K2Node_Event_bNewConflicted) == 0x000007, "Member 'WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey::K2Node_Event_bNewConflicted' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey, K2Node_ComponentBoundEvent_InColorStyle) == 0x000008, "Member 'WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000009, "Member 'WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey, K2Node_Select_Default) == 0x00000A, "Member 'WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputMappingKey_C_ExecuteUbergraph_WBP_InputMappingKey;
 
 // Function WBP_InputMappingKey.WBP_InputMappingKey_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -49,10 +40,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputMappingKey_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_InputMappingKey_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_InputMappingKey_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_InputMappingKey_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_InputMappingKey_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_InputMappingKey_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingKey_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_InputMappingKey_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputMappingKey_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_InputMappingKey.WBP_InputMappingKey_C.UpdateConflictedState
 // 0x0001 (0x0001 - 0x0000)
@@ -61,9 +49,7 @@ struct WBP_InputMappingKey_C_UpdateConflictedState final
 public:
 	bool                                          bNewConflicted;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InputMappingKey_C_UpdateConflictedState) == 0x000001, "Wrong alignment on WBP_InputMappingKey_C_UpdateConflictedState");
-static_assert(sizeof(WBP_InputMappingKey_C_UpdateConflictedState) == 0x000001, "Wrong size on WBP_InputMappingKey_C_UpdateConflictedState");
-static_assert(offsetof(WBP_InputMappingKey_C_UpdateConflictedState, bNewConflicted) == 0x000000, "Member 'WBP_InputMappingKey_C_UpdateConflictedState::bNewConflicted' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputMappingKey_C_UpdateConflictedState;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Flag_3x1x2.BP_Flag_3x1x2_C
 // 0x0000 (0x01E0 - 0x01E0)
@@ -23,15 +22,17 @@ class UBP_Flag_3x1x2_C final : public UImageBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Flag_3x1x2_C">();
+		BP_STATIC_CLASS_IMPL("BP_Flag_3x1x2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Flag_3x1x2_C")
 	}
 	static class UBP_Flag_3x1x2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Flag_3x1x2_C>();
 	}
 };
-static_assert(alignof(UBP_Flag_3x1x2_C) == 0x000008, "Wrong alignment on UBP_Flag_3x1x2_C");
-static_assert(sizeof(UBP_Flag_3x1x2_C) == 0x0001E0, "Wrong size on UBP_Flag_3x1x2_C");
+DUMPER7_ASSERTS_UBP_Flag_3x1x2_C;
 
-}
-
+SDK_NAMESPACE_END

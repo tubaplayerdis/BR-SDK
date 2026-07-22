@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UserIdProperty.WBP_UserIdProperty_C.ExecuteUbergraph_WBP_UserIdProperty
 // 0x0080 (0x0080 - 0x0000)
@@ -40,23 +40,7 @@ public:
 	EBrickUIColorStyle                            K2Node_Select_Default_1;                           // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bNewReadOnly;                         // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty) == 0x000008, "Wrong alignment on WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty");
-static_assert(sizeof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty) == 0x000080, "Wrong size on WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, EntryPoint) == 0x000000, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, Temp_bool_Variable) == 0x000004, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, Temp_text_Variable) == 0x000008, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, Temp_bool_Variable_1) == 0x000020, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, Temp_byte_Variable) == 0x000021, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, Temp_byte_Variable_1) == 0x000022, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, K2Node_Event_InUsername) == 0x000028, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::K2Node_Event_InUsername' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, CallFunc_TextIsEmpty_ReturnValue) == 0x000040, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, K2Node_ComponentBoundEvent_InColorStyle) == 0x000041, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000042, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, K2Node_Select_Default) == 0x000048, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, K2Node_Event_InUserId) == 0x000060, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::K2Node_Event_InUserId' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, K2Node_Event_bIsValid) == 0x000078, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::K2Node_Event_bIsValid' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, K2Node_Select_Default_1) == 0x000079, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty, K2Node_Event_bNewReadOnly) == 0x00007A, "Member 'WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty::K2Node_Event_bNewReadOnly' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UserIdProperty_C_ExecuteUbergraph_WBP_UserIdProperty;
 
 // Function WBP_UserIdProperty.WBP_UserIdProperty_C.UpdateIsReadOnly
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +49,7 @@ struct WBP_UserIdProperty_C_UpdateIsReadOnly final
 public:
 	bool                                          bNewReadOnly;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_UserIdProperty_C_UpdateIsReadOnly) == 0x000001, "Wrong alignment on WBP_UserIdProperty_C_UpdateIsReadOnly");
-static_assert(sizeof(WBP_UserIdProperty_C_UpdateIsReadOnly) == 0x000001, "Wrong size on WBP_UserIdProperty_C_UpdateIsReadOnly");
-static_assert(offsetof(WBP_UserIdProperty_C_UpdateIsReadOnly, bNewReadOnly) == 0x000000, "Member 'WBP_UserIdProperty_C_UpdateIsReadOnly::bNewReadOnly' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UserIdProperty_C_UpdateIsReadOnly;
 
 // Function WBP_UserIdProperty.WBP_UserIdProperty_C.UpdateUserId
 // 0x0020 (0x0020 - 0x0000)
@@ -77,10 +59,7 @@ public:
 	class FText                                   InUserId;                                          // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          bIsValid;                                          // 0x0018(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_UserIdProperty_C_UpdateUserId) == 0x000008, "Wrong alignment on WBP_UserIdProperty_C_UpdateUserId");
-static_assert(sizeof(WBP_UserIdProperty_C_UpdateUserId) == 0x000020, "Wrong size on WBP_UserIdProperty_C_UpdateUserId");
-static_assert(offsetof(WBP_UserIdProperty_C_UpdateUserId, InUserId) == 0x000000, "Member 'WBP_UserIdProperty_C_UpdateUserId::InUserId' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_UpdateUserId, bIsValid) == 0x000018, "Member 'WBP_UserIdProperty_C_UpdateUserId::bIsValid' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UserIdProperty_C_UpdateUserId;
 
 // Function WBP_UserIdProperty.WBP_UserIdProperty_C.BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -90,10 +69,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_UserIdProperty.WBP_UserIdProperty_C.UpdateUsername
 // 0x0018 (0x0018 - 0x0000)
@@ -102,9 +78,7 @@ struct WBP_UserIdProperty_C_UpdateUsername final
 public:
 	class FText                                   InUsername;                                        // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_UserIdProperty_C_UpdateUsername) == 0x000008, "Wrong alignment on WBP_UserIdProperty_C_UpdateUsername");
-static_assert(sizeof(WBP_UserIdProperty_C_UpdateUsername) == 0x000018, "Wrong size on WBP_UserIdProperty_C_UpdateUsername");
-static_assert(offsetof(WBP_UserIdProperty_C_UpdateUsername, InUsername) == 0x000000, "Member 'WBP_UserIdProperty_C_UpdateUsername::InUsername' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UserIdProperty_C_UpdateUsername;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

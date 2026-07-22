@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_GameInstance.BP_GameInstance_C
 // 0x0000 (0x0608 - 0x0608)
@@ -23,15 +22,17 @@ class UBP_GameInstance_C final : public UBrickGameInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GameInstance_C">();
+		BP_STATIC_CLASS_IMPL("BP_GameInstance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GameInstance_C")
 	}
 	static class UBP_GameInstance_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_GameInstance_C>();
 	}
 };
-static_assert(alignof(UBP_GameInstance_C) == 0x000008, "Wrong alignment on UBP_GameInstance_C");
-static_assert(sizeof(UBP_GameInstance_C) == 0x000608, "Wrong size on UBP_GameInstance_C");
+DUMPER7_ASSERTS_UBP_GameInstance_C;
 
-}
-
+SDK_NAMESPACE_END

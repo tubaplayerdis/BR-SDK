@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BTT_ZombieAttack.BTT_ZombieAttack_C.ExecuteUbergraph_BTT_ZombieAttack
 // 0x0078 (0x0078 - 0x0000)
@@ -43,25 +43,7 @@ public:
 	uint8                                         Pad_6B[0x5];                                       // 0x006B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_OwnerActor;                           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack) == 0x000008, "Wrong alignment on BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack");
-static_assert(sizeof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack) == 0x000078, "Wrong size on BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, EntryPoint) == 0x000000, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_Event_OwnerActor_2) == 0x000008, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_Event_OwnerActor_2' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_Event_OwnerActor_1) == 0x000010, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_Event_OwnerActor_1' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_Event_DeltaSeconds) == 0x000018, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_DynamicCast_AsController) == 0x000020, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_DynamicCast_AsController' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_DynamicCast_AsController_1) == 0x000030, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_DynamicCast_AsController_1' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, CallFunc_K2_GetPawn_ReturnValue) == 0x000040, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, CallFunc_K2_GetPawn_ReturnValue_1) == 0x000048, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::CallFunc_K2_GetPawn_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_DynamicCast_AsZombie) == 0x000050, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_DynamicCast_AsZombie' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_DynamicCast_bSuccess_2) == 0x000058, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_DynamicCast_AsZombie_1) == 0x000060, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_DynamicCast_AsZombie_1' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_DynamicCast_bSuccess_3) == 0x000068, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, CallFunc_PerformMeleeAction_ReturnValue) == 0x000069, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::CallFunc_PerformMeleeAction_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, CallFunc_IsPerformingMeleeAction_ReturnValue) == 0x00006A, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::CallFunc_IsPerformingMeleeAction_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack, K2Node_Event_OwnerActor) == 0x000070, "Member 'BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack::K2Node_Event_OwnerActor' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_ZombieAttack_C_ExecuteUbergraph_BTT_ZombieAttack;
 
 // Function BTT_ZombieAttack.BTT_ZombieAttack_C.ReceiveAbort
 // 0x0008 (0x0008 - 0x0000)
@@ -70,9 +52,7 @@ struct BTT_ZombieAttack_C_ReceiveAbort final
 public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_ZombieAttack_C_ReceiveAbort) == 0x000008, "Wrong alignment on BTT_ZombieAttack_C_ReceiveAbort");
-static_assert(sizeof(BTT_ZombieAttack_C_ReceiveAbort) == 0x000008, "Wrong size on BTT_ZombieAttack_C_ReceiveAbort");
-static_assert(offsetof(BTT_ZombieAttack_C_ReceiveAbort, OwnerActor) == 0x000000, "Member 'BTT_ZombieAttack_C_ReceiveAbort::OwnerActor' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_ZombieAttack_C_ReceiveAbort;
 
 // Function BTT_ZombieAttack.BTT_ZombieAttack_C.ReceiveTick
 // 0x0010 (0x0010 - 0x0000)
@@ -82,10 +62,7 @@ public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_ZombieAttack_C_ReceiveTick) == 0x000008, "Wrong alignment on BTT_ZombieAttack_C_ReceiveTick");
-static_assert(sizeof(BTT_ZombieAttack_C_ReceiveTick) == 0x000010, "Wrong size on BTT_ZombieAttack_C_ReceiveTick");
-static_assert(offsetof(BTT_ZombieAttack_C_ReceiveTick, OwnerActor) == 0x000000, "Member 'BTT_ZombieAttack_C_ReceiveTick::OwnerActor' has a wrong offset!");
-static_assert(offsetof(BTT_ZombieAttack_C_ReceiveTick, DeltaSeconds) == 0x000008, "Member 'BTT_ZombieAttack_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_ZombieAttack_C_ReceiveTick;
 
 // Function BTT_ZombieAttack.BTT_ZombieAttack_C.ReceiveExecute
 // 0x0008 (0x0008 - 0x0000)
@@ -94,9 +71,7 @@ struct BTT_ZombieAttack_C_ReceiveExecute final
 public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_ZombieAttack_C_ReceiveExecute) == 0x000008, "Wrong alignment on BTT_ZombieAttack_C_ReceiveExecute");
-static_assert(sizeof(BTT_ZombieAttack_C_ReceiveExecute) == 0x000008, "Wrong size on BTT_ZombieAttack_C_ReceiveExecute");
-static_assert(offsetof(BTT_ZombieAttack_C_ReceiveExecute, OwnerActor) == 0x000000, "Member 'BTT_ZombieAttack_C_ReceiveExecute::OwnerActor' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_ZombieAttack_C_ReceiveExecute;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

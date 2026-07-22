@@ -14,8 +14,7 @@
 #include "ABP_Character_Fluppism_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ABP_Character_Fluppism.ABP_Character_Fluppism_C.ExecuteUbergraph_ABP_Character_Fluppism
 // (Final, UbergraphFunction)
@@ -105,5 +104,5 @@ void UABP_Character_Fluppism_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
-}
 
+SDK_NAMESPACE_END

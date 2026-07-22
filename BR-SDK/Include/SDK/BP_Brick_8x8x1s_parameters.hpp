@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Brick_8x8x1s.BP_Brick_8x8x1s_C.ExecuteUbergraph_BP_Brick_8x8x1s
 // 0x0008 (0x0008 - 0x0000)
@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Brick_8x8x1s_C_ExecuteUbergraph_BP_Brick_8x8x1s) == 0x000004, "Wrong alignment on BP_Brick_8x8x1s_C_ExecuteUbergraph_BP_Brick_8x8x1s");
-static_assert(sizeof(BP_Brick_8x8x1s_C_ExecuteUbergraph_BP_Brick_8x8x1s) == 0x000008, "Wrong size on BP_Brick_8x8x1s_C_ExecuteUbergraph_BP_Brick_8x8x1s");
-static_assert(offsetof(BP_Brick_8x8x1s_C_ExecuteUbergraph_BP_Brick_8x8x1s, EntryPoint) == 0x000000, "Member 'BP_Brick_8x8x1s_C_ExecuteUbergraph_BP_Brick_8x8x1s::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Brick_8x8x1s_C_ExecuteUbergraph_BP_Brick_8x8x1s, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_Brick_8x8x1s_C_ExecuteUbergraph_BP_Brick_8x8x1s::K2Node_Event_DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Brick_8x8x1s_C_ExecuteUbergraph_BP_Brick_8x8x1s;
 
 // Function BP_Brick_8x8x1s.BP_Brick_8x8x1s_C.ReceiveTick_1
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,7 @@ struct BP_Brick_8x8x1s_C_ReceiveTick_1 final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Brick_8x8x1s_C_ReceiveTick_1) == 0x000004, "Wrong alignment on BP_Brick_8x8x1s_C_ReceiveTick_1");
-static_assert(sizeof(BP_Brick_8x8x1s_C_ReceiveTick_1) == 0x000004, "Wrong size on BP_Brick_8x8x1s_C_ReceiveTick_1");
-static_assert(offsetof(BP_Brick_8x8x1s_C_ReceiveTick_1, DeltaSeconds) == 0x000000, "Member 'BP_Brick_8x8x1s_C_ReceiveTick_1::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Brick_8x8x1s_C_ReceiveTick_1;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

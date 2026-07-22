@@ -14,8 +14,7 @@
 #include "WBP_KickPlayerPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_KickPlayerPopup.WBP_KickPlayerPopup_C.ExecuteUbergraph_WBP_KickPlayerPopup
 // (Final, UbergraphFunction)
@@ -110,5 +109,5 @@ void UWBP_KickPlayerPopup_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_InputHelp_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InputHelp.WBP_InputHelp_C.UpdateIsAlwaysOpen
 // (BlueprintEvent)
@@ -76,9 +75,9 @@ void UWBP_InputHelp_C::BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1
 // Function WBP_InputHelp.WBP_InputHelp_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_InputHelp_C::PreConstruct(bool IsDesignTime)
+void UWBP_InputHelp_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class UFunction* Func = nullptr;
 
@@ -87,7 +86,7 @@ void UWBP_InputHelp_C::PreConstruct(bool IsDesignTime)
 
 	Params::WBP_InputHelp_C_PreConstruct Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -112,5 +111,5 @@ void UWBP_InputHelp_C::ExecuteUbergraph_WBP_InputHelp(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

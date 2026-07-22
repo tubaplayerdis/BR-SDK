@@ -15,8 +15,8 @@
 #include "AIModule_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.ExecuteUbergraph_WBP_ScoreboardPlayer
 // 0x0038 (0x0038 - 0x0000)
@@ -54,36 +54,7 @@ public:
 	bool                                          K2Node_Event_bIsAlive;                             // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer) == 0x000004, "Wrong alignment on WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer");
-static_assert(sizeof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer) == 0x000038, "Wrong size on WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, EntryPoint) == 0x000000, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Event_Role) == 0x000004, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Event_Role' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_bool_Variable) == 0x000005, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000006, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_byte_Variable) == 0x000007, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_byte_Variable_1) == 0x000008, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_bool_Variable_1) == 0x000009, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_byte_Variable_2) == 0x00000A, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_byte_Variable_3) == 0x00000B, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_bool_Variable_2) == 0x00000C, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_byte_Variable_4) == 0x00000D, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Select_Default) == 0x00000E, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_byte_Variable_5) == 0x00000F, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_byte_Variable_6) == 0x000010, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_int_Variable) == 0x000014, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_int_Variable_1) == 0x000018, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, Temp_int_Variable_2) == 0x00001C, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_ComponentBoundEvent_InColorStyle) == 0x000020, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000021, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Select_Default_1) == 0x000024, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_MakeStruct_BrickUIIconSlot) == 0x000028, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Event_bNewSelected) == 0x000030, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Event_bNewSelected' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Event_bIsLocalPlayer) == 0x000031, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Event_bIsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Event_TeamAttitude) == 0x000032, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Event_TeamAttitude' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Select_Default_2) == 0x000033, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Event_IsDesignTime) == 0x000034, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Event_bIsAlive) == 0x000035, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Event_bIsAlive' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer, K2Node_Select_Default_3) == 0x000036, "Member 'WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer::K2Node_Select_Default_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ScoreboardPlayer_C_ExecuteUbergraph_WBP_ScoreboardPlayer;
 
 // Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.UpdateAdminRole
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +63,7 @@ struct WBP_ScoreboardPlayer_C_UpdateAdminRole final
 public:
 	EAdminRole                                    Role;                                              // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ScoreboardPlayer_C_UpdateAdminRole) == 0x000001, "Wrong alignment on WBP_ScoreboardPlayer_C_UpdateAdminRole");
-static_assert(sizeof(WBP_ScoreboardPlayer_C_UpdateAdminRole) == 0x000001, "Wrong size on WBP_ScoreboardPlayer_C_UpdateAdminRole");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_UpdateAdminRole, Role) == 0x000000, "Member 'WBP_ScoreboardPlayer_C_UpdateAdminRole::Role' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ScoreboardPlayer_C_UpdateAdminRole;
 
 // Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.UpdateIsAlive
 // 0x0001 (0x0001 - 0x0000)
@@ -103,9 +72,7 @@ struct WBP_ScoreboardPlayer_C_UpdateIsAlive final
 public:
 	bool                                          bIsAlive;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ScoreboardPlayer_C_UpdateIsAlive) == 0x000001, "Wrong alignment on WBP_ScoreboardPlayer_C_UpdateIsAlive");
-static_assert(sizeof(WBP_ScoreboardPlayer_C_UpdateIsAlive) == 0x000001, "Wrong size on WBP_ScoreboardPlayer_C_UpdateIsAlive");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_UpdateIsAlive, bIsAlive) == 0x000000, "Member 'WBP_ScoreboardPlayer_C_UpdateIsAlive::bIsAlive' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ScoreboardPlayer_C_UpdateIsAlive;
 
 // Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -114,9 +81,7 @@ struct WBP_ScoreboardPlayer_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ScoreboardPlayer_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ScoreboardPlayer_C_PreConstruct");
-static_assert(sizeof(WBP_ScoreboardPlayer_C_PreConstruct) == 0x000001, "Wrong size on WBP_ScoreboardPlayer_C_PreConstruct");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ScoreboardPlayer_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ScoreboardPlayer_C_PreConstruct;
 
 // Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.UpdateButtonStyle
 // 0x0003 (0x0003 - 0x0000)
@@ -127,11 +92,7 @@ public:
 	bool                                          bIsLocalPlayer;                                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	ETeamAttitude                                 TeamAttitude;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ScoreboardPlayer_C_UpdateButtonStyle) == 0x000001, "Wrong alignment on WBP_ScoreboardPlayer_C_UpdateButtonStyle");
-static_assert(sizeof(WBP_ScoreboardPlayer_C_UpdateButtonStyle) == 0x000003, "Wrong size on WBP_ScoreboardPlayer_C_UpdateButtonStyle");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_UpdateButtonStyle, bNewSelected) == 0x000000, "Member 'WBP_ScoreboardPlayer_C_UpdateButtonStyle::bNewSelected' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_UpdateButtonStyle, bIsLocalPlayer) == 0x000001, "Member 'WBP_ScoreboardPlayer_C_UpdateButtonStyle::bIsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_UpdateButtonStyle, TeamAttitude) == 0x000002, "Member 'WBP_ScoreboardPlayer_C_UpdateButtonStyle::TeamAttitude' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ScoreboardPlayer_C_UpdateButtonStyle;
 
 // Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -141,10 +102,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ScoreboardPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_ScoreboardPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_ScoreboardPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_ScoreboardPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_ScoreboardPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_ScoreboardPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_ScoreboardPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ScoreboardPlayer_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

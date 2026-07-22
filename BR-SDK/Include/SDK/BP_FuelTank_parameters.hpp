@@ -14,16 +14,16 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_FuelTank.BP_FuelTank_C.ShouldSpawnLeakOnHit
 // 0x0140 (0x0140 - 0x0000)
 struct BP_FuelTank_C_ShouldSpawnLeakOnHit final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          ReturnValue;                                       // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FHitResult                             Hit_ShouldSpawnLeakOnHit;                          // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          ReturnValue_ShouldSpawnLeakOnHit;                  // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x008C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -50,32 +50,7 @@ public:
 	float                                         CallFunc_GetPointDistanceToLine_ReturnValue;       // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FuelTank_C_ShouldSpawnLeakOnHit) == 0x000008, "Wrong alignment on BP_FuelTank_C_ShouldSpawnLeakOnHit");
-static_assert(sizeof(BP_FuelTank_C_ShouldSpawnLeakOnHit) == 0x000140, "Wrong size on BP_FuelTank_C_ShouldSpawnLeakOnHit");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, Hit) == 0x000000, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::Hit' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, ReturnValue) == 0x000088, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_GetActorForwardVector_ReturnValue) == 0x00008C, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_bBlockingHit) == 0x000098, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_bInitialOverlap) == 0x000099, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_Time) == 0x00009C, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_Distance) == 0x0000A0, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_Location) == 0x0000A4, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_ImpactPoint) == 0x0000B0, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_Normal) == 0x0000BC, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_ImpactNormal) == 0x0000C8, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_PhysMat) == 0x0000D8, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_HitActor) == 0x0000E0, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_HitComponent) == 0x0000E8, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_HitBoneName) == 0x0000F0, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_HitItem) == 0x0000F8, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_ElementIndex) == 0x0000FC, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_FaceIndex) == 0x000100, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_TraceStart) == 0x000104, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_BreakHitResult_TraceEnd) == 0x000110, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00011C, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_Add_VectorVector_ReturnValue) == 0x000128, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_GetPointDistanceToLine_ReturnValue) == 0x000134, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_GetPointDistanceToLine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FuelTank_C_ShouldSpawnLeakOnHit, CallFunc_Less_FloatFloat_ReturnValue) == 0x000138, "Member 'BP_FuelTank_C_ShouldSpawnLeakOnHit::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_FuelTank_C_ShouldSpawnLeakOnHit;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

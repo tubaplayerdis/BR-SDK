@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Interaction.WBP_Interaction_C
 // 0x0010 (0x0298 - 0x0288)
@@ -26,23 +25,23 @@ public:
 	class UBrickVerticalBox*                      OptionsBox;                                        // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AddOptionWidget(class UInteractionOptionWidget* Widget, int32 OptionIndex);
+	void AddOptionWidget(class UInteractionOptionWidget* Widget_AddOptionWidget, int32 OptionIndex_AddOptionWidget);
 	void ExecuteUbergraph_WBP_Interaction(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Interaction_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Interaction_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Interaction_C")
 	}
 	static class UWBP_Interaction_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Interaction_C>();
 	}
 };
-static_assert(alignof(UWBP_Interaction_C) == 0x000008, "Wrong alignment on UWBP_Interaction_C");
-static_assert(sizeof(UWBP_Interaction_C) == 0x000298, "Wrong size on UWBP_Interaction_C");
-static_assert(offsetof(UWBP_Interaction_C, UberGraphFrame) == 0x000288, "Member 'UWBP_Interaction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Interaction_C, OptionsBox) == 0x000290, "Member 'UWBP_Interaction_C::OptionsBox' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Interaction_C;
 
-}
-
+SDK_NAMESPACE_END

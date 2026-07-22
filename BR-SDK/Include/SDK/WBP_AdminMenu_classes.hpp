@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_AdminMenu.WBP_AdminMenu_C
 // 0x0028 (0x02E0 - 0x02B8)
@@ -38,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AdminMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AdminMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AdminMenu_C")
 	}
 	static class UWBP_AdminMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AdminMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_AdminMenu_C) == 0x000008, "Wrong alignment on UWBP_AdminMenu_C");
-static_assert(sizeof(UWBP_AdminMenu_C) == 0x0002E0, "Wrong size on UWBP_AdminMenu_C");
-static_assert(offsetof(UWBP_AdminMenu_C, UberGraphFrame) == 0x0002B8, "Member 'UWBP_AdminMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_AdminMenu_C, AdminLoginWidget) == 0x0002C0, "Member 'UWBP_AdminMenu_C::AdminLoginWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_AdminMenu_C, ShowProfileButton) == 0x0002C8, "Member 'UWBP_AdminMenu_C::ShowProfileButton' has a wrong offset!");
-static_assert(offsetof(UWBP_AdminMenu_C, EditKickButton) == 0x0002D0, "Member 'UWBP_AdminMenu_C::EditKickButton' has a wrong offset!");
-static_assert(offsetof(UWBP_AdminMenu_C, KickPlayerByIDButton) == 0x0002D8, "Member 'UWBP_AdminMenu_C::KickPlayerByIDButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AdminMenu_C;
 
-}
-
+SDK_NAMESPACE_END

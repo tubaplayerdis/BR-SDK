@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_RandomSpawnIcon.WBP_RandomSpawnIcon_C
 // 0x0000 (0x0288 - 0x0288)
@@ -26,15 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RandomSpawnIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RandomSpawnIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RandomSpawnIcon_C")
 	}
 	static class UWBP_RandomSpawnIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RandomSpawnIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_RandomSpawnIcon_C) == 0x000008, "Wrong alignment on UWBP_RandomSpawnIcon_C");
-static_assert(sizeof(UWBP_RandomSpawnIcon_C) == 0x000288, "Wrong size on UWBP_RandomSpawnIcon_C");
+DUMPER7_ASSERTS_UWBP_RandomSpawnIcon_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_TeamBaseIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_TeamBaseIcon.WBP_TeamBaseIcon_C.GetIconDisplayName
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
@@ -36,5 +35,5 @@ class FText UWBP_TeamBaseIcon_C::GetIconDisplayName() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

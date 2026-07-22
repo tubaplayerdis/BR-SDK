@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_TargetMarkerIcon.WBP_TargetMarkerIcon_C
 // 0x0028 (0x02B8 - 0x0290)
@@ -40,20 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TargetMarkerIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TargetMarkerIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TargetMarkerIcon_C")
 	}
 	static class UWBP_TargetMarkerIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TargetMarkerIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_TargetMarkerIcon_C) == 0x000008, "Wrong alignment on UWBP_TargetMarkerIcon_C");
-static_assert(sizeof(UWBP_TargetMarkerIcon_C) == 0x0002B8, "Wrong size on UWBP_TargetMarkerIcon_C");
-static_assert(offsetof(UWBP_TargetMarkerIcon_C, UberGraphFrame) == 0x000290, "Member 'UWBP_TargetMarkerIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TargetMarkerIcon_C, AmmoTypeIcon) == 0x000298, "Member 'UWBP_TargetMarkerIcon_C::AmmoTypeIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_TargetMarkerIcon_C, BrickBorder_0) == 0x0002A0, "Member 'UWBP_TargetMarkerIcon_C::BrickBorder_0' has a wrong offset!");
-static_assert(offsetof(UWBP_TargetMarkerIcon_C, DistanceTextBlock) == 0x0002A8, "Member 'UWBP_TargetMarkerIcon_C::DistanceTextBlock' has a wrong offset!");
-static_assert(offsetof(UWBP_TargetMarkerIcon_C, FireActionIcon) == 0x0002B0, "Member 'UWBP_TargetMarkerIcon_C::FireActionIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TargetMarkerIcon_C;
 
-}
-
+SDK_NAMESPACE_END

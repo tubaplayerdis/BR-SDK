@@ -13,8 +13,7 @@
 #include "BP_AmmoBox_StaticInfo_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_AmmoBox_Heavy_StaticInfo.BP_AmmoBox_Heavy_StaticInfo_C
 // 0x0000 (0x03C0 - 0x03C0)
@@ -23,15 +22,17 @@ class UBP_AmmoBox_Heavy_StaticInfo_C final : public UBP_AmmoBox_StaticInfo_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_AmmoBox_Heavy_StaticInfo_C">();
+		BP_STATIC_CLASS_IMPL("BP_AmmoBox_Heavy_StaticInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_AmmoBox_Heavy_StaticInfo_C")
 	}
 	static class UBP_AmmoBox_Heavy_StaticInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_AmmoBox_Heavy_StaticInfo_C>();
 	}
 };
-static_assert(alignof(UBP_AmmoBox_Heavy_StaticInfo_C) == 0x000010, "Wrong alignment on UBP_AmmoBox_Heavy_StaticInfo_C");
-static_assert(sizeof(UBP_AmmoBox_Heavy_StaticInfo_C) == 0x0003C0, "Wrong size on UBP_AmmoBox_Heavy_StaticInfo_C");
+DUMPER7_ASSERTS_UBP_AmmoBox_Heavy_StaticInfo_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Sunrise_Sequence.BP_Sunrise_Sequence_C
 // 0x0010 (0x0260 - 0x0250)
@@ -27,17 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Sunrise_Sequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_Sunrise_Sequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Sunrise_Sequence_C")
 	}
 	static class ABP_Sunrise_Sequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Sunrise_Sequence_C>();
 	}
 };
-static_assert(alignof(ABP_Sunrise_Sequence_C) == 0x000008, "Wrong alignment on ABP_Sunrise_Sequence_C");
-static_assert(sizeof(ABP_Sunrise_Sequence_C) == 0x000260, "Wrong size on ABP_Sunrise_Sequence_C");
-static_assert(offsetof(ABP_Sunrise_Sequence_C, Camera) == 0x000250, "Member 'ABP_Sunrise_Sequence_C::Camera' has a wrong offset!");
-static_assert(offsetof(ABP_Sunrise_Sequence_C, DefaultSceneRoot) == 0x000258, "Member 'ABP_Sunrise_Sequence_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Sunrise_Sequence_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_ScoreboardTeam_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ScoreboardTeam.WBP_ScoreboardTeam_C.ExecuteUbergraph_WBP_ScoreboardTeam
 // (Final, UbergraphFunction)
@@ -134,5 +133,5 @@ void UWBP_ScoreboardTeam_C::UpdateTeamAttitude(bool bIsOwnTeam, ETeamAttitude Ne
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

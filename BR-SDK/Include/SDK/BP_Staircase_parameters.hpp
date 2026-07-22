@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Staircase.BP_Staircase_C.UserConstructionScript
 // 0x0060 (0x0060 - 0x0000)
@@ -32,17 +32,7 @@ public:
 	int32                                         CallFunc_AddInstance_ReturnValue;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Staircase_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_Staircase_C_UserConstructionScript");
-static_assert(sizeof(BP_Staircase_C_UserConstructionScript) == 0x000060, "Wrong size on BP_Staircase_C_UserConstructionScript");
-static_assert(offsetof(BP_Staircase_C_UserConstructionScript, Temp_int_Variable) == 0x000000, "Member 'BP_Staircase_C_UserConstructionScript::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Staircase_C_UserConstructionScript, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000004, "Member 'BP_Staircase_C_UserConstructionScript::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Staircase_C_UserConstructionScript, CallFunc_Subtract_IntInt_ReturnValue) == 0x000008, "Member 'BP_Staircase_C_UserConstructionScript::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Staircase_C_UserConstructionScript, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00000C, "Member 'BP_Staircase_C_UserConstructionScript::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Staircase_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000010, "Member 'BP_Staircase_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Staircase_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000014, "Member 'BP_Staircase_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Staircase_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'BP_Staircase_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Staircase_C_UserConstructionScript, CallFunc_AddInstance_ReturnValue) == 0x000050, "Member 'BP_Staircase_C_UserConstructionScript::CallFunc_AddInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Staircase_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'BP_Staircase_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Staircase_C_UserConstructionScript;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

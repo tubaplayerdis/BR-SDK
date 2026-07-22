@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Gun_4x2x2.BP_Gun_4x2x2_C
 // 0x0000 (0x02C0 - 0x02C0)
@@ -23,15 +22,17 @@ class UBP_Gun_4x2x2_C final : public UGunBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Gun_4x2x2_C">();
+		BP_STATIC_CLASS_IMPL("BP_Gun_4x2x2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Gun_4x2x2_C")
 	}
 	static class UBP_Gun_4x2x2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Gun_4x2x2_C>();
 	}
 };
-static_assert(alignof(UBP_Gun_4x2x2_C) == 0x000010, "Wrong alignment on UBP_Gun_4x2x2_C");
-static_assert(sizeof(UBP_Gun_4x2x2_C) == 0x0002C0, "Wrong size on UBP_Gun_4x2x2_C");
+DUMPER7_ASSERTS_UBP_Gun_4x2x2_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_WindowManager_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_WindowManager.WBP_WindowManager_C.ExecuteUbergraph_WBP_WindowManager
 // (Final, UbergraphFunction, HasDefaults)
@@ -56,5 +55,5 @@ void UWBP_WindowManager_C::AddActiveWidget(class UMainWidgetBase* Widget)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

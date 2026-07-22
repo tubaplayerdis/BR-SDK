@@ -14,8 +14,7 @@
 #include "WBP_KickedPlayer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_KickedPlayer.WBP_KickedPlayer_C.ExecuteUbergraph_WBP_KickedPlayer
 // (Final, UbergraphFunction)
@@ -58,5 +57,5 @@ void UWBP_KickedPlayer_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateCo
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

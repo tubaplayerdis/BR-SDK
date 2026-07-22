@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InventoryContainer.WBP_InventoryContainer_C
 // 0x0018 (0x0288 - 0x0270)
@@ -36,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InventoryContainer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InventoryContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InventoryContainer_C")
 	}
 	static class UWBP_InventoryContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InventoryContainer_C>();
 	}
 };
-static_assert(alignof(UWBP_InventoryContainer_C) == 0x000008, "Wrong alignment on UWBP_InventoryContainer_C");
-static_assert(sizeof(UWBP_InventoryContainer_C) == 0x000288, "Wrong size on UWBP_InventoryContainer_C");
-static_assert(offsetof(UWBP_InventoryContainer_C, UberGraphFrame) == 0x000270, "Member 'UWBP_InventoryContainer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InventoryContainer_C, MoneyBorder) == 0x000278, "Member 'UWBP_InventoryContainer_C::MoneyBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_InventoryContainer_C, MoneyTextBlock) == 0x000280, "Member 'UWBP_InventoryContainer_C::MoneyTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InventoryContainer_C;
 
-}
-
+SDK_NAMESPACE_END

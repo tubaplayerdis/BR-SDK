@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MatchMenu.WBP_MatchMenu_C
 // 0x0020 (0x0298 - 0x0278)
@@ -39,19 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MatchMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MatchMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MatchMenu_C")
 	}
 	static class UWBP_MatchMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MatchMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_MatchMenu_C) == 0x000008, "Wrong alignment on UWBP_MatchMenu_C");
-static_assert(sizeof(UWBP_MatchMenu_C) == 0x000298, "Wrong size on UWBP_MatchMenu_C");
-static_assert(offsetof(UWBP_MatchMenu_C, UberGraphFrame) == 0x000278, "Member 'UWBP_MatchMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MatchMenu_C, WBP_AdminLogin) == 0x000280, "Member 'UWBP_MatchMenu_C::WBP_AdminLogin' has a wrong offset!");
-static_assert(offsetof(UWBP_MatchMenu_C, RestartButton) == 0x000288, "Member 'UWBP_MatchMenu_C::RestartButton' has a wrong offset!");
-static_assert(offsetof(UWBP_MatchMenu_C, ExitPopupHandle) == 0x000290, "Member 'UWBP_MatchMenu_C::ExitPopupHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MatchMenu_C;
 
-}
-
+SDK_NAMESPACE_END

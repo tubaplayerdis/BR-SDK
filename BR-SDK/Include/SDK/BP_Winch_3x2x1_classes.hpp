@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Winch_3x2x1.BP_Winch_3x2x1_C
 // 0x0000 (0x01E0 - 0x01E0)
@@ -23,15 +22,17 @@ class UBP_Winch_3x2x1_C final : public UWinchBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Winch_3x2x1_C">();
+		BP_STATIC_CLASS_IMPL("BP_Winch_3x2x1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Winch_3x2x1_C")
 	}
 	static class UBP_Winch_3x2x1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Winch_3x2x1_C>();
 	}
 };
-static_assert(alignof(UBP_Winch_3x2x1_C) == 0x000010, "Wrong alignment on UBP_Winch_3x2x1_C");
-static_assert(sizeof(UBP_Winch_3x2x1_C) == 0x0001E0, "Wrong size on UBP_Winch_3x2x1_C");
+DUMPER7_ASSERTS_UBP_Winch_3x2x1_C;
 
-}
-
+SDK_NAMESPACE_END

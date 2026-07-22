@@ -14,8 +14,7 @@
 #include "WBP_Map_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_Map.WBP_Map_C.AddGameOverlayWidget
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -56,5 +55,5 @@ class UMaterialInstanceDynamic* UWBP_Map_C::CreateMapMID() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

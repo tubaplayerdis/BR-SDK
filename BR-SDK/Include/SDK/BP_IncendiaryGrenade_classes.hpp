@@ -13,8 +13,7 @@
 #include "BP_Grenade_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_IncendiaryGrenade.BP_IncendiaryGrenade_C
 // 0x0000 (0x0280 - 0x0280)
@@ -23,15 +22,17 @@ class ABP_IncendiaryGrenade_C final : public ABP_Grenade_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_IncendiaryGrenade_C">();
+		BP_STATIC_CLASS_IMPL("BP_IncendiaryGrenade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_IncendiaryGrenade_C")
 	}
 	static class ABP_IncendiaryGrenade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_IncendiaryGrenade_C>();
 	}
 };
-static_assert(alignof(ABP_IncendiaryGrenade_C) == 0x000008, "Wrong alignment on ABP_IncendiaryGrenade_C");
-static_assert(sizeof(ABP_IncendiaryGrenade_C) == 0x000280, "Wrong size on ABP_IncendiaryGrenade_C");
+DUMPER7_ASSERTS_ABP_IncendiaryGrenade_C;
 
-}
-
+SDK_NAMESPACE_END

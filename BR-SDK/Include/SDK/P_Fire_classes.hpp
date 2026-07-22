@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass P_Fire.P_Fire_C
 // 0x0000 (0x0050 - 0x0050)
@@ -23,15 +22,17 @@ class UP_Fire_C final : public UBrickPattern
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"P_Fire_C">();
+		BP_STATIC_CLASS_IMPL("P_Fire_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"P_Fire_C")
 	}
 	static class UP_Fire_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UP_Fire_C>();
 	}
 };
-static_assert(alignof(UP_Fire_C) == 0x000008, "Wrong alignment on UP_Fire_C");
-static_assert(sizeof(UP_Fire_C) == 0x000050, "Wrong size on UP_Fire_C");
+DUMPER7_ASSERTS_UP_Fire_C;
 
-}
-
+SDK_NAMESPACE_END

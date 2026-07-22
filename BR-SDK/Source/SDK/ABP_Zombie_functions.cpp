@@ -14,8 +14,7 @@
 #include "ABP_Zombie_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ABP_Zombie.ABP_Zombie_C.ExecuteUbergraph_ABP_Zombie
 // (Final, UbergraphFunction)
@@ -57,5 +56,5 @@ void UABP_Zombie_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
-}
 
+SDK_NAMESPACE_END

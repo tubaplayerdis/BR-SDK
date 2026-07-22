@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagara_SizeScaleMode.ENiagara_SizeScaleMode
 // NumValues: 0x0006
@@ -26,5 +25,4 @@ enum class ENiagara_SizeScaleMode : uint8
 	ENiagara_MAX                             = 5,
 };
 
-}
-
+SDK_NAMESPACE_END

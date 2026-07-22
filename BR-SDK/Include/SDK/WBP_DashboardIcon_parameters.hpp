@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_DashboardIcon.WBP_DashboardIcon_C.ExecuteUbergraph_WBP_DashboardIcon
 // 0x0028 (0x0028 - 0x0000)
@@ -35,20 +35,7 @@ public:
 	float                                         K2Node_Select_Default;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIColorStyle                            K2Node_Select_Default_1;                           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon) == 0x000004, "Wrong alignment on WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon");
-static_assert(sizeof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon) == 0x000028, "Wrong size on WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, EntryPoint) == 0x000000, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, Temp_bool_Variable) == 0x000004, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, Temp_float_Variable) == 0x000008, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, Temp_float_Variable_1) == 0x00000C, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, Temp_bool_Variable_1) == 0x000010, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, Temp_byte_Variable) == 0x000011, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, K2Node_Event_bInVisible) == 0x000012, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::K2Node_Event_bInVisible' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, K2Node_Event_InColorStyle) == 0x000013, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::K2Node_Event_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, K2Node_Event_InIconIndex) == 0x000014, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::K2Node_Event_InIconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, K2Node_MakeStruct_BrickUIIconSlot) == 0x000018, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, K2Node_Select_Default) == 0x000020, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon, K2Node_Select_Default_1) == 0x000024, "Member 'WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DashboardIcon_C_ExecuteUbergraph_WBP_DashboardIcon;
 
 // Function WBP_DashboardIcon.WBP_DashboardIcon_C.UpdateIconImage
 // 0x0008 (0x0008 - 0x0000)
@@ -60,11 +47,7 @@ public:
 	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InIconIndex;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DashboardIcon_C_UpdateIconImage) == 0x000004, "Wrong alignment on WBP_DashboardIcon_C_UpdateIconImage");
-static_assert(sizeof(WBP_DashboardIcon_C_UpdateIconImage) == 0x000008, "Wrong size on WBP_DashboardIcon_C_UpdateIconImage");
-static_assert(offsetof(WBP_DashboardIcon_C_UpdateIconImage, bInVisible) == 0x000000, "Member 'WBP_DashboardIcon_C_UpdateIconImage::bInVisible' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_UpdateIconImage, InColorStyle) == 0x000001, "Member 'WBP_DashboardIcon_C_UpdateIconImage::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardIcon_C_UpdateIconImage, InIconIndex) == 0x000004, "Member 'WBP_DashboardIcon_C_UpdateIconImage::InIconIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DashboardIcon_C_UpdateIconImage;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

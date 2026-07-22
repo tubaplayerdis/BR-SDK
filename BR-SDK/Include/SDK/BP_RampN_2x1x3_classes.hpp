@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_RampN_2x1x3.BP_RampN_2x1x3_C
 // 0x0000 (0x0190 - 0x0190)
@@ -23,15 +22,17 @@ class UBP_RampN_2x1x3_C final : public URampBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RampN_2x1x3_C">();
+		BP_STATIC_CLASS_IMPL("BP_RampN_2x1x3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RampN_2x1x3_C")
 	}
 	static class UBP_RampN_2x1x3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_RampN_2x1x3_C>();
 	}
 };
-static_assert(alignof(UBP_RampN_2x1x3_C) == 0x000008, "Wrong alignment on UBP_RampN_2x1x3_C");
-static_assert(sizeof(UBP_RampN_2x1x3_C) == 0x000190, "Wrong size on UBP_RampN_2x1x3_C");
+DUMPER7_ASSERTS_UBP_RampN_2x1x3_C;
 
-}
-
+SDK_NAMESPACE_END

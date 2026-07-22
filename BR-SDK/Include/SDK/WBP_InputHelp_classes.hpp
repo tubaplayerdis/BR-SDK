@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InputHelp.WBP_InputHelp_C
 // 0x0018 (0x0290 - 0x0278)
@@ -32,24 +31,23 @@ public:
 	void UpdateIsAlwaysOpen(bool bNewAlwaysOpen);
 	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 	void BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void PreConstruct(bool IsDesignTime);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_InputHelp(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InputHelp_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InputHelp_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InputHelp_C")
 	}
 	static class UWBP_InputHelp_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InputHelp_C>();
 	}
 };
-static_assert(alignof(UWBP_InputHelp_C) == 0x000008, "Wrong alignment on UWBP_InputHelp_C");
-static_assert(sizeof(UWBP_InputHelp_C) == 0x000290, "Wrong size on UWBP_InputHelp_C");
-static_assert(offsetof(UWBP_InputHelp_C, UberGraphFrame) == 0x000278, "Member 'UWBP_InputHelp_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InputHelp_C, Button) == 0x000280, "Member 'UWBP_InputHelp_C::Button' has a wrong offset!");
-static_assert(offsetof(UWBP_InputHelp_C, ControlHint) == 0x000288, "Member 'UWBP_InputHelp_C::ControlHint' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InputHelp_C;
 
-}
-
+SDK_NAMESPACE_END

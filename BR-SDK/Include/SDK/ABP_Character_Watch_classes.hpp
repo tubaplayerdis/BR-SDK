@@ -16,8 +16,7 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_Character_Watch.ABP_Character_Watch_C
 // 0x0180 (0x0440 - 0x02C0)
@@ -44,22 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Character_Watch_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Character_Watch_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Character_Watch_C")
 	}
 	static class UABP_Character_Watch_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Character_Watch_C>();
 	}
 };
-static_assert(alignof(UABP_Character_Watch_C) == 0x000010, "Wrong alignment on UABP_Character_Watch_C");
-static_assert(sizeof(UABP_Character_Watch_C) == 0x000440, "Wrong size on UABP_Character_Watch_C");
-static_assert(offsetof(UABP_Character_Watch_C, UberGraphFrame) == 0x0002C0, "Member 'UABP_Character_Watch_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Watch_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UABP_Character_Watch_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Watch_C, AnimGraphNode_ViewRotation) == 0x000300, "Member 'UABP_Character_Watch_C::AnimGraphNode_ViewRotation' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Watch_C, AnimGraphNode_SequencePlayer) == 0x000390, "Member 'UABP_Character_Watch_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Watch_C, ViewRotation) == 0x000410, "Member 'UABP_Character_Watch_C::ViewRotation' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Watch_C, TargetRotation) == 0x00041C, "Member 'UABP_Character_Watch_C::TargetRotation' has a wrong offset!");
-static_assert(offsetof(UABP_Character_Watch_C, CurrentRotation) == 0x000428, "Member 'UABP_Character_Watch_C::CurrentRotation' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_Character_Watch_C;
 
-}
-
+SDK_NAMESPACE_END

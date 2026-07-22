@@ -14,8 +14,7 @@
 #include "WBP_Tooltip_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_Tooltip.WBP_Tooltip_C.ExecuteUbergraph_WBP_Tooltip
 // (Final, UbergraphFunction, HasDefaults)
@@ -70,5 +69,5 @@ void UWBP_Tooltip_C::FadeIn()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

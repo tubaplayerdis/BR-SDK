@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PlacableObject.WBP_PlacableObject_C
 // 0x0008 (0x02B0 - 0x02A8)
@@ -26,24 +25,25 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
-	void UpdateIsFilterWidget(bool bNewIsFilter);
 	void ExecuteUbergraph_WBP_PlacableObject(int32 EntryPoint);
+	void UpdateIsFilterWidget(bool bNewIsFilter);
+	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
+	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PlacableObject_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PlacableObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PlacableObject_C")
 	}
 	static class UWBP_PlacableObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PlacableObject_C>();
 	}
 };
-static_assert(alignof(UWBP_PlacableObject_C) == 0x000008, "Wrong alignment on UWBP_PlacableObject_C");
-static_assert(sizeof(UWBP_PlacableObject_C) == 0x0002B0, "Wrong size on UWBP_PlacableObject_C");
-static_assert(offsetof(UWBP_PlacableObject_C, UberGraphFrame) == 0x0002A8, "Member 'UWBP_PlacableObject_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PlacableObject_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_Dashboard_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_Dashboard.WBP_Dashboard_C.ExecuteUbergraph_WBP_Dashboard
 // (Final, UbergraphFunction)
@@ -102,5 +101,5 @@ void UWBP_Dashboard_C::AddSliderWidget(class UDashboardSliderWidget* Widget)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

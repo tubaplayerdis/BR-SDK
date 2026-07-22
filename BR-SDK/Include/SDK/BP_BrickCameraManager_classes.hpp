@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BrickCameraManager.BP_BrickCameraManager_C
 // 0x0000 (0x2890 - 0x2890)
@@ -23,15 +22,17 @@ class ABP_BrickCameraManager_C final : public ABrickCameraManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BrickCameraManager_C">();
+		BP_STATIC_CLASS_IMPL("BP_BrickCameraManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BrickCameraManager_C")
 	}
 	static class ABP_BrickCameraManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BrickCameraManager_C>();
 	}
 };
-static_assert(alignof(ABP_BrickCameraManager_C) == 0x000010, "Wrong alignment on ABP_BrickCameraManager_C");
-static_assert(sizeof(ABP_BrickCameraManager_C) == 0x002890, "Wrong size on ABP_BrickCameraManager_C");
+DUMPER7_ASSERTS_ABP_BrickCameraManager_C;
 
-}
-
+SDK_NAMESPACE_END

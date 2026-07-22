@@ -16,8 +16,7 @@
 #include "AnimGraphRuntime_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_Character.ABP_Character_C
 // 0x1270 (0x1F70 - 0x0D00)
@@ -68,51 +67,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Character_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Character_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Character_C")
 	}
 	static class UABP_Character_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Character_C>();
 	}
 };
-static_assert(alignof(UABP_Character_C) == 0x000010, "Wrong alignment on UABP_Character_C");
-static_assert(sizeof(UABP_Character_C) == 0x001F70, "Wrong size on UABP_Character_C");
-static_assert(offsetof(UABP_Character_C, UberGraphFrame) == 0x000D00, "Member 'UABP_Character_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_Root) == 0x000D08, "Member 'UABP_Character_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_Slot_2) == 0x000D38, "Member 'UABP_Character_C::AnimGraphNode_Slot_2' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_UseCachedPose_1) == 0x000D80, "Member 'UABP_Character_C::AnimGraphNode_UseCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_TwoWayBlend_2) == 0x000DA8, "Member 'UABP_Character_C::AnimGraphNode_TwoWayBlend_2' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_UseCachedPose) == 0x000E70, "Member 'UABP_Character_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_TwoWayBlend_1) == 0x000E98, "Member 'UABP_Character_C::AnimGraphNode_TwoWayBlend_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_SequencePlayer_7) == 0x000F60, "Member 'UABP_Character_C::AnimGraphNode_SequencePlayer_7' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_SequencePlayer_6) == 0x000FE0, "Member 'UABP_Character_C::AnimGraphNode_SequencePlayer_6' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_SaveCachedPose) == 0x001060, "Member 'UABP_Character_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_Slot_1) == 0x0011B8, "Member 'UABP_Character_C::AnimGraphNode_Slot_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_TransitionResult_2) == 0x001200, "Member 'UABP_Character_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_TransitionResult_1) == 0x001228, "Member 'UABP_Character_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_TransitionResult) == 0x001250, "Member 'UABP_Character_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_SequencePlayer_5) == 0x001278, "Member 'UABP_Character_C::AnimGraphNode_SequencePlayer_5' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_StateResult_2) == 0x0012F8, "Member 'UABP_Character_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_SequencePlayer_4) == 0x001328, "Member 'UABP_Character_C::AnimGraphNode_SequencePlayer_4' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_StateResult_1) == 0x0013A8, "Member 'UABP_Character_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_SequencePlayer_3) == 0x0013D8, "Member 'UABP_Character_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_BlendListByBool_4) == 0x001458, "Member 'UABP_Character_C::AnimGraphNode_BlendListByBool_4' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_SequencePlayer_2) == 0x0014F8, "Member 'UABP_Character_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_BlendSpacePlayer_2) == 0x001578, "Member 'UABP_Character_C::AnimGraphNode_BlendSpacePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_BlendListByBool_3) == 0x001660, "Member 'UABP_Character_C::AnimGraphNode_BlendListByBool_3' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_BlendListByBool_2) == 0x001700, "Member 'UABP_Character_C::AnimGraphNode_BlendListByBool_2' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_TwoWayBlend) == 0x0017A0, "Member 'UABP_Character_C::AnimGraphNode_TwoWayBlend' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_BlendSpacePlayer_1) == 0x001868, "Member 'UABP_Character_C::AnimGraphNode_BlendSpacePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_BlendSpacePlayer) == 0x001950, "Member 'UABP_Character_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_StateResult) == 0x001A38, "Member 'UABP_Character_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_StateMachine) == 0x001A68, "Member 'UABP_Character_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_Slot) == 0x001B18, "Member 'UABP_Character_C::AnimGraphNode_Slot' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_ItemBlend) == 0x001B60, "Member 'UABP_Character_C::AnimGraphNode_ItemBlend' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_BlendListByBool_1) == 0x001CA0, "Member 'UABP_Character_C::AnimGraphNode_BlendListByBool_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_SequencePlayer_1) == 0x001D40, "Member 'UABP_Character_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_BlendListByBool) == 0x001DC0, "Member 'UABP_Character_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_SequencePlayer) == 0x001E60, "Member 'UABP_Character_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_Character_C, AnimGraphNode_ViewRotation) == 0x001EE0, "Member 'UABP_Character_C::AnimGraphNode_ViewRotation' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_Character_C;
 
-}
-
+SDK_NAMESPACE_END

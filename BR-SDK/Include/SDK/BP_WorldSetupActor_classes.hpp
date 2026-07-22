@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_WorldSetupActor.BP_WorldSetupActor_C
 // 0x0000 (0x0B70 - 0x0B70)
@@ -23,15 +22,17 @@ class ABP_WorldSetupActor_C final : public AWorldSetupActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_WorldSetupActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_WorldSetupActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_WorldSetupActor_C")
 	}
 	static class ABP_WorldSetupActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_WorldSetupActor_C>();
 	}
 };
-static_assert(alignof(ABP_WorldSetupActor_C) == 0x000010, "Wrong alignment on ABP_WorldSetupActor_C");
-static_assert(sizeof(ABP_WorldSetupActor_C) == 0x000B70, "Wrong size on ABP_WorldSetupActor_C");
+DUMPER7_ASSERTS_ABP_WorldSetupActor_C;
 
-}
-
+SDK_NAMESPACE_END

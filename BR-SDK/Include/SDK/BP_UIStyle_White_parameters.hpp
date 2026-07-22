@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_UIStyle_White.BP_UIStyle_White_C.ExecuteUbergraph_BP_UIStyle_White
 // 0x00B4 (0x00B4 - 0x0000)
@@ -34,20 +34,7 @@ public:
 	struct FLinearColor                           CallFunc_MakeDefaultColors_Fluppisoft;             // 0x0094(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_MakeDefaultColors_FluppisoftForeground;   // 0x00A4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White) == 0x000004, "Wrong alignment on BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White");
-static_assert(sizeof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White) == 0x0000B4, "Wrong size on BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, EntryPoint) == 0x000000, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_Dark) == 0x000004, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_Dark' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_Medium) == 0x000014, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_Medium' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_Bright) == 0x000024, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_Bright' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_Negative) == 0x000034, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_Negative' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_Positive) == 0x000044, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_Positive' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_Background) == 0x000054, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_Background' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_BrightBackground) == 0x000064, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_BrightBackground' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_Border) == 0x000074, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_Border' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_BrickRigs) == 0x000084, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_BrickRigs' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_Fluppisoft) == 0x000094, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_Fluppisoft' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White, CallFunc_MakeDefaultColors_FluppisoftForeground) == 0x0000A4, "Member 'BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White::CallFunc_MakeDefaultColors_FluppisoftForeground' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIStyle_White_C_ExecuteUbergraph_BP_UIStyle_White;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

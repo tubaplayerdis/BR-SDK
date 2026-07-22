@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_StructProperty.WBP_StructProperty_C.ExecuteUbergraph_WBP_StructProperty
 // 0x0030 (0x0030 - 0x0000)
@@ -28,15 +28,7 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty) == 0x000008, "Wrong alignment on WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty");
-static_assert(sizeof(WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty) == 0x000030, "Wrong size on WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty");
-static_assert(offsetof(WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty, EntryPoint) == 0x000000, "Member 'WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty, K2Node_Event_Widget) == 0x000008, "Member 'WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty, K2Node_Event_Widget_1) == 0x000010, "Member 'WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty::K2Node_Event_Widget_1' has a wrong offset!");
-static_assert(offsetof(WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty, K2Node_Event_Index) == 0x000018, "Member 'WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty, K2Node_Event_NumPerRow) == 0x00001C, "Member 'WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty::K2Node_Event_NumPerRow' has a wrong offset!");
-static_assert(offsetof(WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty, CallFunc_AddChild_ReturnValue) == 0x000020, "Member 'WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000028, "Member 'WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StructProperty_C_ExecuteUbergraph_WBP_StructProperty;
 
 // Function WBP_StructProperty.WBP_StructProperty_C.AddPropertyContainerWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +37,7 @@ struct WBP_StructProperty_C_AddPropertyContainerWidget final
 public:
 	class UPropertyContainerWidget*               Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StructProperty_C_AddPropertyContainerWidget) == 0x000008, "Wrong alignment on WBP_StructProperty_C_AddPropertyContainerWidget");
-static_assert(sizeof(WBP_StructProperty_C_AddPropertyContainerWidget) == 0x000008, "Wrong size on WBP_StructProperty_C_AddPropertyContainerWidget");
-static_assert(offsetof(WBP_StructProperty_C_AddPropertyContainerWidget, Widget) == 0x000000, "Member 'WBP_StructProperty_C_AddPropertyContainerWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StructProperty_C_AddPropertyContainerWidget;
 
 // Function WBP_StructProperty.WBP_StructProperty_C.UpdatePropertyContainerWidgetSlot
 // 0x0010 (0x0010 - 0x0000)
@@ -58,11 +48,7 @@ public:
 	int32                                         Index_0;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumPerRow;                                         // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot) == 0x000008, "Wrong alignment on WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot");
-static_assert(sizeof(WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot) == 0x000010, "Wrong size on WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot");
-static_assert(offsetof(WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot, Widget) == 0x000000, "Member 'WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot, Index_0) == 0x000008, "Member 'WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot, NumPerRow) == 0x00000C, "Member 'WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot::NumPerRow' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StructProperty_C_UpdatePropertyContainerWidgetSlot;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

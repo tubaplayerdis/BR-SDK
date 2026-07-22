@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Chat.WBP_Chat_C
 // 0x0010 (0x02C0 - 0x02B0)
@@ -27,24 +26,24 @@ public:
 	class UBrickBorder*                           WarningBorder;                                     // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateIsFocused(bool bNewFocused);
-	void UpdateIsTyping(bool bNewTyping);
+	void UpdateIsFocused(bool bNewFocused_UpdateIsFocused);
+	void UpdateIsTyping(bool bNewTyping_UpdateIsTyping);
 	void ExecuteUbergraph_WBP_Chat(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chat_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chat_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chat_C")
 	}
 	static class UWBP_Chat_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chat_C>();
 	}
 };
-static_assert(alignof(UWBP_Chat_C) == 0x000008, "Wrong alignment on UWBP_Chat_C");
-static_assert(sizeof(UWBP_Chat_C) == 0x0002C0, "Wrong size on UWBP_Chat_C");
-static_assert(offsetof(UWBP_Chat_C, UberGraphFrame) == 0x0002B0, "Member 'UWBP_Chat_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_C, WarningBorder) == 0x0002B8, "Member 'UWBP_Chat_C::WarningBorder' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chat_C;
 
-}
-
+SDK_NAMESPACE_END

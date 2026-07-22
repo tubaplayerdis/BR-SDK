@@ -16,8 +16,7 @@
 #include "AIModule_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_TeamScore.WBP_TeamScore_C
 // 0x0020 (0x0298 - 0x0278)
@@ -30,27 +29,25 @@ public:
 	class UBrickTextBlock*                        ScoreTextBlock;                                    // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateScore(int32 NewScore, int32 NewMaxScore);
-	void UpdateTeamAttitude(ETeamAttitude NewTeamAttitude);
-	void UpdateTeamIcon(class UTexture2D* NewIcon);
+	void UpdateScore(int32 NewScore_UpdateScore, int32 NewMaxScore_UpdateScore);
+	void UpdateTeamAttitude(ETeamAttitude NewTeamAttitude_UpdateTeamAttitude);
+	void UpdateTeamIcon(class UTexture2D* NewIcon_UpdateTeamIcon);
 	void ExecuteUbergraph_WBP_TeamScore(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TeamScore_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TeamScore_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TeamScore_C")
 	}
 	static class UWBP_TeamScore_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TeamScore_C>();
 	}
 };
-static_assert(alignof(UWBP_TeamScore_C) == 0x000008, "Wrong alignment on UWBP_TeamScore_C");
-static_assert(sizeof(UWBP_TeamScore_C) == 0x000298, "Wrong size on UWBP_TeamScore_C");
-static_assert(offsetof(UWBP_TeamScore_C, UberGraphFrame) == 0x000278, "Member 'UWBP_TeamScore_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TeamScore_C, Border) == 0x000280, "Member 'UWBP_TeamScore_C::Border' has a wrong offset!");
-static_assert(offsetof(UWBP_TeamScore_C, IconImage) == 0x000288, "Member 'UWBP_TeamScore_C::IconImage' has a wrong offset!");
-static_assert(offsetof(UWBP_TeamScore_C, ScoreTextBlock) == 0x000290, "Member 'UWBP_TeamScore_C::ScoreTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TeamScore_C;
 
-}
-
+SDK_NAMESPACE_END

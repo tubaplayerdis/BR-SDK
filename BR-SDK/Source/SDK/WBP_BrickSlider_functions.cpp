@@ -14,8 +14,7 @@
 #include "WBP_BrickSlider_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_BrickSlider.WBP_BrickSlider_C.PoolAllModifierHintWidgets
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -176,5 +175,5 @@ void UWBP_BrickSlider_C::ExecuteUbergraph_WBP_BrickSlider(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

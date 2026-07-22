@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MapCrosshair.WBP_MapCrosshair_C
 // 0x0018 (0x0278 - 0x0260)
@@ -35,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MapCrosshair_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MapCrosshair_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MapCrosshair_C")
 	}
 	static class UWBP_MapCrosshair_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MapCrosshair_C>();
 	}
 };
-static_assert(alignof(UWBP_MapCrosshair_C) == 0x000008, "Wrong alignment on UWBP_MapCrosshair_C");
-static_assert(sizeof(UWBP_MapCrosshair_C) == 0x000278, "Wrong size on UWBP_MapCrosshair_C");
-static_assert(offsetof(UWBP_MapCrosshair_C, UberGraphFrame) == 0x000260, "Member 'UWBP_MapCrosshair_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MapCrosshair_C, ArrowHeadImage) == 0x000268, "Member 'UWBP_MapCrosshair_C::ArrowHeadImage' has a wrong offset!");
-static_assert(offsetof(UWBP_MapCrosshair_C, LineImage) == 0x000270, "Member 'UWBP_MapCrosshair_C::LineImage' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MapCrosshair_C;
 
-}
-
+SDK_NAMESPACE_END

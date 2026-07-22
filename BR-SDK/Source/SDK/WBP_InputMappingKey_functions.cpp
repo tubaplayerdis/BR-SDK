@@ -14,8 +14,7 @@
 #include "WBP_InputMappingKey_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InputMappingKey.WBP_InputMappingKey_C.ExecuteUbergraph_WBP_InputMappingKey
 // (Final, UbergraphFunction)
@@ -78,5 +77,5 @@ void UWBP_InputMappingKey_C::UpdateConflictedState(bool bNewConflicted)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

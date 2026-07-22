@@ -14,8 +14,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InputMappingProperty.WBP_InputMappingProperty_C.ExecuteUbergraph_WBP_InputMappingProperty
 // 0x0028 (0x0028 - 0x0000)
@@ -33,16 +33,7 @@ public:
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x0020(0x0008)(NoDestructor)
 };
-static_assert(alignof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty) == 0x000008, "Wrong alignment on WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty");
-static_assert(sizeof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty) == 0x000028, "Wrong size on WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty");
-static_assert(offsetof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty, EntryPoint) == 0x000000, "Member 'WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty, K2Node_Event_bCanAdd) == 0x000004, "Member 'WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty::K2Node_Event_bCanAdd' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty, K2Node_ComponentBoundEvent_InColorStyle) == 0x000005, "Member 'WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000006, "Member 'WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty, K2Node_Event_Widget) == 0x000008, "Member 'WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty, K2Node_Event_Index) == 0x000010, "Member 'WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000018, "Member 'WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty, K2Node_MakeStruct_SlateChildSize) == 0x000020, "Member 'WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty::K2Node_MakeStruct_SlateChildSize' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputMappingProperty_C_ExecuteUbergraph_WBP_InputMappingProperty;
 
 // Function WBP_InputMappingProperty.WBP_InputMappingProperty_C.AddKeyWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -52,10 +43,7 @@ public:
 	class UInputMappingKeyWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Index_0;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputMappingProperty_C_AddKeyWidget) == 0x000008, "Wrong alignment on WBP_InputMappingProperty_C_AddKeyWidget");
-static_assert(sizeof(WBP_InputMappingProperty_C_AddKeyWidget) == 0x000010, "Wrong size on WBP_InputMappingProperty_C_AddKeyWidget");
-static_assert(offsetof(WBP_InputMappingProperty_C_AddKeyWidget, Widget) == 0x000000, "Member 'WBP_InputMappingProperty_C_AddKeyWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingProperty_C_AddKeyWidget, Index_0) == 0x000008, "Member 'WBP_InputMappingProperty_C_AddKeyWidget::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputMappingProperty_C_AddKeyWidget;
 
 // Function WBP_InputMappingProperty.WBP_InputMappingProperty_C.BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -65,10 +53,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputMappingProperty_C_BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_InputMappingProperty_C_BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_InputMappingProperty_C_BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_InputMappingProperty_C_BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_InputMappingProperty_C_BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_InputMappingProperty_C_BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputMappingProperty_C_BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_InputMappingProperty_C_BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputMappingProperty_C_BndEvt__AddButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_InputMappingProperty.WBP_InputMappingProperty_C.UpdateCanAddMapping
 // 0x0001 (0x0001 - 0x0000)
@@ -77,9 +62,7 @@ struct WBP_InputMappingProperty_C_UpdateCanAddMapping final
 public:
 	bool                                          bCanAdd;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InputMappingProperty_C_UpdateCanAddMapping) == 0x000001, "Wrong alignment on WBP_InputMappingProperty_C_UpdateCanAddMapping");
-static_assert(sizeof(WBP_InputMappingProperty_C_UpdateCanAddMapping) == 0x000001, "Wrong size on WBP_InputMappingProperty_C_UpdateCanAddMapping");
-static_assert(offsetof(WBP_InputMappingProperty_C_UpdateCanAddMapping, bCanAdd) == 0x000000, "Member 'WBP_InputMappingProperty_C_UpdateCanAddMapping::bCanAdd' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputMappingProperty_C_UpdateCanAddMapping;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_UGCMetaDataPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_UGCMetaDataPopup.WBP_UGCMetaDataPopup_C.ExecuteUbergraph_WBP_UGCMetaDataPopup
 // (Final, UbergraphFunction)
@@ -70,5 +69,5 @@ class FText UWBP_UGCMetaDataPopup_C::GetPopupTitle() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

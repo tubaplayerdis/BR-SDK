@@ -14,8 +14,7 @@
 #include "WBP_UserIdProperty_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_UserIdProperty.WBP_UserIdProperty_C.ExecuteUbergraph_WBP_UserIdProperty
 // (Final, UbergraphFunction, HasDefaults)
@@ -134,5 +133,5 @@ void UWBP_UserIdProperty_C::UpdateUsername(const class FText& InUsername)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

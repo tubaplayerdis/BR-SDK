@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_CarPark.BP_CarPark_C
 // 0x0020 (0x0330 - 0x0310)
@@ -31,18 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CarPark_C">();
+		BP_STATIC_CLASS_IMPL("BP_CarPark_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CarPark_C")
 	}
 	static class ABP_CarPark_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CarPark_C>();
 	}
 };
-static_assert(alignof(ABP_CarPark_C) == 0x000010, "Wrong alignment on ABP_CarPark_C");
-static_assert(sizeof(ABP_CarPark_C) == 0x000330, "Wrong size on ABP_CarPark_C");
-static_assert(offsetof(ABP_CarPark_C, Ramps) == 0x000310, "Member 'ABP_CarPark_C::Ramps' has a wrong offset!");
-static_assert(offsetof(ABP_CarPark_C, Ceilings) == 0x000318, "Member 'ABP_CarPark_C::Ceilings' has a wrong offset!");
-static_assert(offsetof(ABP_CarPark_C, Poles) == 0x000320, "Member 'ABP_CarPark_C::Poles' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_CarPark_C;
 
-}
-
+SDK_NAMESPACE_END

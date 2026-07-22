@@ -19,8 +19,7 @@
 #include "AIModule_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum BrickRigs.EBrickUITextStyle
 // NumValues: 0x0012
@@ -1350,10 +1349,7 @@ public:
 	EAmmoType                                     Type;                                              // 0x0008(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAmmoInfo) == 0x000004, "Wrong alignment on FAmmoInfo");
-static_assert(sizeof(FAmmoInfo) == 0x00000C, "Wrong size on FAmmoInfo");
-static_assert(offsetof(FAmmoInfo, Caliber) == 0x000000, "Member 'FAmmoInfo::Caliber' has a wrong offset!");
-static_assert(offsetof(FAmmoInfo, Type) == 0x000008, "Member 'FAmmoInfo::Type' has a wrong offset!");
+DUMPER7_ASSERTS_FAmmoInfo;
 
 // ScriptStruct BrickRigs.BrickUIBrushStyle
 // 0x0770 (0x0770 - 0x0000)
@@ -1362,9 +1358,7 @@ struct FBrickUIBrushStyle final
 public:
 	struct FSlateBrush                            Brushes[0xE];                                      // 0x0000(0x0088)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBrickUIBrushStyle) == 0x000008, "Wrong alignment on FBrickUIBrushStyle");
-static_assert(sizeof(FBrickUIBrushStyle) == 0x000770, "Wrong size on FBrickUIBrushStyle");
-static_assert(offsetof(FBrickUIBrushStyle, Brushes) == 0x000000, "Member 'FBrickUIBrushStyle::Brushes' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickUIBrushStyle;
 
 // ScriptStruct BrickRigs.BrickEditorObjectEditorParams
 // 0x0010 (0x0010 - 0x0000)
@@ -1373,8 +1367,7 @@ struct alignas(0x04) FBrickEditorObjectEditorParams
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickEditorObjectEditorParams) == 0x000004, "Wrong alignment on FBrickEditorObjectEditorParams");
-static_assert(sizeof(FBrickEditorObjectEditorParams) == 0x000010, "Wrong size on FBrickEditorObjectEditorParams");
+DUMPER7_ASSERTS_FBrickEditorObjectEditorParams;
 
 // ScriptStruct BrickRigs.BrickEditorParams
 // 0x0018 (0x0028 - 0x0010)
@@ -1383,8 +1376,7 @@ struct alignas(0x08) FBrickEditorParams : public FBrickEditorObjectEditorParams
 public:
 	uint8                                         Pad_10[0x18];                                      // 0x0010(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickEditorParams) == 0x000008, "Wrong alignment on FBrickEditorParams");
-static_assert(sizeof(FBrickEditorParams) == 0x000028, "Wrong size on FBrickEditorParams");
+DUMPER7_ASSERTS_FBrickEditorParams;
 
 // ScriptStruct BrickRigs.AxleBrickEditorParams
 // 0x0010 (0x0038 - 0x0028)
@@ -1393,8 +1385,7 @@ struct FAxleBrickEditorParams final : public FBrickEditorParams
 public:
 	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAxleBrickEditorParams) == 0x000008, "Wrong alignment on FAxleBrickEditorParams");
-static_assert(sizeof(FAxleBrickEditorParams) == 0x000038, "Wrong size on FAxleBrickEditorParams");
+DUMPER7_ASSERTS_FAxleBrickEditorParams;
 
 // ScriptStruct BrickRigs.BrickUIIconAtlas
 // 0x0010 (0x0010 - 0x0000)
@@ -1407,12 +1398,7 @@ public:
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         StartIndex;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBrickUIIconAtlas) == 0x000008, "Wrong alignment on FBrickUIIconAtlas");
-static_assert(sizeof(FBrickUIIconAtlas) == 0x000010, "Wrong size on FBrickUIIconAtlas");
-static_assert(offsetof(FBrickUIIconAtlas, Texture) == 0x000000, "Member 'FBrickUIIconAtlas::Texture' has a wrong offset!");
-static_assert(offsetof(FBrickUIIconAtlas, NumX) == 0x000008, "Member 'FBrickUIIconAtlas::NumX' has a wrong offset!");
-static_assert(offsetof(FBrickUIIconAtlas, NumY) == 0x000009, "Member 'FBrickUIIconAtlas::NumY' has a wrong offset!");
-static_assert(offsetof(FBrickUIIconAtlas, StartIndex) == 0x00000C, "Member 'FBrickUIIconAtlas::StartIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickUIIconAtlas;
 
 // ScriptStruct BrickRigs.WinchAttachTarget
 // 0x001C (0x001C - 0x0000)
@@ -1421,8 +1407,7 @@ struct alignas(0x04) FWinchAttachTarget final
 public:
 	uint8                                         Pad_0[0x1C];                                       // 0x0000(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWinchAttachTarget) == 0x000004, "Wrong alignment on FWinchAttachTarget");
-static_assert(sizeof(FWinchAttachTarget) == 0x00001C, "Wrong size on FWinchAttachTarget");
+DUMPER7_ASSERTS_FWinchAttachTarget;
 
 // ScriptStruct BrickRigs.ActuatorBrickEditorParams
 // 0x0010 (0x0038 - 0x0028)
@@ -1431,8 +1416,7 @@ struct FActuatorBrickEditorParams final : public FBrickEditorParams
 public:
 	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FActuatorBrickEditorParams) == 0x000008, "Wrong alignment on FActuatorBrickEditorParams");
-static_assert(sizeof(FActuatorBrickEditorParams) == 0x000038, "Wrong size on FActuatorBrickEditorParams");
+DUMPER7_ASSERTS_FActuatorBrickEditorParams;
 
 // ScriptStruct BrickRigs.InteractionOption
 // 0x0050 (0x0050 - 0x0000)
@@ -1446,13 +1430,7 @@ public:
 	bool                                          bIsEnabled;                                        // 0x0048(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInteractionOption) == 0x000008, "Wrong alignment on FInteractionOption");
-static_assert(sizeof(FInteractionOption) == 0x000050, "Wrong size on FInteractionOption");
-static_assert(offsetof(FInteractionOption, OnInteractionDelegate) == 0x000000, "Member 'FInteractionOption::OnInteractionDelegate' has a wrong offset!");
-static_assert(offsetof(FInteractionOption, OnReleasedDelegate) == 0x000010, "Member 'FInteractionOption::OnReleasedDelegate' has a wrong offset!");
-static_assert(offsetof(FInteractionOption, OnInteractionAxisDelegate) == 0x000020, "Member 'FInteractionOption::OnInteractionAxisDelegate' has a wrong offset!");
-static_assert(offsetof(FInteractionOption, DisplayText) == 0x000030, "Member 'FInteractionOption::DisplayText' has a wrong offset!");
-static_assert(offsetof(FInteractionOption, bIsEnabled) == 0x000048, "Member 'FInteractionOption::bIsEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_FInteractionOption;
 
 // ScriptStruct BrickRigs.InteractionOptions
 // 0x0068 (0x0068 - 0x0000)
@@ -1464,11 +1442,7 @@ public:
 	TMap<EInteractionOptionSlot, struct FInteractionOption> Options;                                 // 0x0008(0x0050)(Edit, BlueprintVisible, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FInteractionOption>             AdditionalOptions;                                 // 0x0058(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FInteractionOptions) == 0x000008, "Wrong alignment on FInteractionOptions");
-static_assert(sizeof(FInteractionOptions) == 0x000068, "Wrong size on FInteractionOptions");
-static_assert(offsetof(FInteractionOptions, Domain) == 0x000000, "Member 'FInteractionOptions::Domain' has a wrong offset!");
-static_assert(offsetof(FInteractionOptions, Options) == 0x000008, "Member 'FInteractionOptions::Options' has a wrong offset!");
-static_assert(offsetof(FInteractionOptions, AdditionalOptions) == 0x000058, "Member 'FInteractionOptions::AdditionalOptions' has a wrong offset!");
+DUMPER7_ASSERTS_FInteractionOptions;
 
 // ScriptStruct BrickRigs.BrickUIColorStyle
 // 0x00E0 (0x00E0 - 0x0000)
@@ -1477,9 +1451,7 @@ struct FBrickUIColorStyle final
 public:
 	struct FLinearColor                           Colors[0xE];                                       // 0x0000(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBrickUIColorStyle) == 0x000004, "Wrong alignment on FBrickUIColorStyle");
-static_assert(sizeof(FBrickUIColorStyle) == 0x0000E0, "Wrong size on FBrickUIColorStyle");
-static_assert(offsetof(FBrickUIColorStyle, Colors) == 0x000000, "Member 'FBrickUIColorStyle::Colors' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickUIColorStyle;
 
 // ScriptStruct BrickRigs.DestructibleInstance
 // 0x0040 (0x0040 - 0x0000)
@@ -1489,9 +1461,7 @@ public:
 	struct FTransform                             InstanceTransform;                                 // 0x0000(0x0030)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDestructibleInstance) == 0x000010, "Wrong alignment on FDestructibleInstance");
-static_assert(sizeof(FDestructibleInstance) == 0x000040, "Wrong size on FDestructibleInstance");
-static_assert(offsetof(FDestructibleInstance, InstanceTransform) == 0x000000, "Member 'FDestructibleInstance::InstanceTransform' has a wrong offset!");
+DUMPER7_ASSERTS_FDestructibleInstance;
 
 // ScriptStruct BrickRigs.DestructibleInstanceArray
 // 0x0038 (0x0038 - 0x0000)
@@ -1503,11 +1473,7 @@ public:
 	uint8                                         Pad_18[0x10];                                      // 0x0018(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDestructibleInstance>          Instances;                                         // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDestructibleInstanceArray) == 0x000008, "Wrong alignment on FDestructibleInstanceArray");
-static_assert(sizeof(FDestructibleInstanceArray) == 0x000038, "Wrong size on FDestructibleInstanceArray");
-static_assert(offsetof(FDestructibleInstanceArray, Template) == 0x000000, "Member 'FDestructibleInstanceArray::Template' has a wrong offset!");
-static_assert(offsetof(FDestructibleInstanceArray, MaterialOverrides) == 0x000008, "Member 'FDestructibleInstanceArray::MaterialOverrides' has a wrong offset!");
-static_assert(offsetof(FDestructibleInstanceArray, Instances) == 0x000028, "Member 'FDestructibleInstanceArray::Instances' has a wrong offset!");
+DUMPER7_ASSERTS_FDestructibleInstanceArray;
 
 // ScriptStruct BrickRigs.HUDIconContext
 // 0x0008 (0x0008 - 0x0000)
@@ -1520,12 +1486,7 @@ public:
 	uint8                                         Pad_3[0x1];                                        // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DrawDistanceScale;                                 // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FHUDIconContext) == 0x000004, "Wrong alignment on FHUDIconContext");
-static_assert(sizeof(FHUDIconContext) == 0x000008, "Wrong size on FHUDIconContext");
-static_assert(offsetof(FHUDIconContext, Domain) == 0x000000, "Member 'FHUDIconContext::Domain' has a wrong offset!");
-static_assert(offsetof(FHUDIconContext, hudvisibility) == 0x000001, "Member 'FHUDIconContext::hudvisibility' has a wrong offset!");
-static_assert(offsetof(FHUDIconContext, bShowInteraction) == 0x000002, "Member 'FHUDIconContext::bShowInteraction' has a wrong offset!");
-static_assert(offsetof(FHUDIconContext, DrawDistanceScale) == 0x000004, "Member 'FHUDIconContext::DrawDistanceScale' has a wrong offset!");
+DUMPER7_ASSERTS_FHUDIconContext;
 
 // ScriptStruct BrickRigs.LegacyBrickMaterialReplacement
 // 0x0020 (0x0020 - 0x0000)
@@ -1536,11 +1497,7 @@ public:
 	TSubclassOf<class UBrickPattern>              Pattern;                                           // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           Color;                                             // 0x0010(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLegacyBrickMaterialReplacement) == 0x000008, "Wrong alignment on FLegacyBrickMaterialReplacement");
-static_assert(sizeof(FLegacyBrickMaterialReplacement) == 0x000020, "Wrong size on FLegacyBrickMaterialReplacement");
-static_assert(offsetof(FLegacyBrickMaterialReplacement, BrickMaterial) == 0x000000, "Member 'FLegacyBrickMaterialReplacement::BrickMaterial' has a wrong offset!");
-static_assert(offsetof(FLegacyBrickMaterialReplacement, Pattern) == 0x000008, "Member 'FLegacyBrickMaterialReplacement::Pattern' has a wrong offset!");
-static_assert(offsetof(FLegacyBrickMaterialReplacement, Color) == 0x000010, "Member 'FLegacyBrickMaterialReplacement::Color' has a wrong offset!");
+DUMPER7_ASSERTS_FLegacyBrickMaterialReplacement;
 
 // ScriptStruct BrickRigs.TooltipContent
 // 0x0040 (0x0040 - 0x0000)
@@ -1554,13 +1511,7 @@ public:
 	EBrickUIColorStyle                            ColorStyle;                                        // 0x0039(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTooltipContent) == 0x000008, "Wrong alignment on FTooltipContent");
-static_assert(sizeof(FTooltipContent) == 0x000040, "Wrong size on FTooltipContent");
-static_assert(offsetof(FTooltipContent, TitleText) == 0x000000, "Member 'FTooltipContent::TitleText' has a wrong offset!");
-static_assert(offsetof(FTooltipContent, ContentText) == 0x000018, "Member 'FTooltipContent::ContentText' has a wrong offset!");
-static_assert(offsetof(FTooltipContent, ActionName) == 0x000030, "Member 'FTooltipContent::ActionName' has a wrong offset!");
-static_assert(offsetof(FTooltipContent, TriggerType) == 0x000038, "Member 'FTooltipContent::TriggerType' has a wrong offset!");
-static_assert(offsetof(FTooltipContent, ColorStyle) == 0x000039, "Member 'FTooltipContent::ColorStyle' has a wrong offset!");
+DUMPER7_ASSERTS_FTooltipContent;
 
 // ScriptStruct BrickRigs.HUDIconProperties
 // 0x0030 (0x0030 - 0x0000)
@@ -1573,12 +1524,7 @@ public:
 	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaxDrawDist;                                       // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FHUDIconProperties) == 0x000008, "Wrong alignment on FHUDIconProperties");
-static_assert(sizeof(FHUDIconProperties) == 0x000030, "Wrong size on FHUDIconProperties");
-static_assert(offsetof(FHUDIconProperties, IconWidgetClass) == 0x000000, "Member 'FHUDIconProperties::IconWidgetClass' has a wrong offset!");
-static_assert(offsetof(FHUDIconProperties, VisibilityFlags) == 0x000028, "Member 'FHUDIconProperties::VisibilityFlags' has a wrong offset!");
-static_assert(offsetof(FHUDIconProperties, MaxHUDVisibility) == 0x000029, "Member 'FHUDIconProperties::MaxHUDVisibility' has a wrong offset!");
-static_assert(offsetof(FHUDIconProperties, MaxDrawDist) == 0x00002C, "Member 'FHUDIconProperties::MaxDrawDist' has a wrong offset!");
+DUMPER7_ASSERTS_FHUDIconProperties;
 
 // ScriptStruct BrickRigs.LegacyBrickEditorObjectClass
 // 0x0010 (0x0010 - 0x0000)
@@ -1587,9 +1533,7 @@ struct FLegacyBrickEditorObjectClass final
 public:
 	class FString                                 Suffix;                                            // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLegacyBrickEditorObjectClass) == 0x000008, "Wrong alignment on FLegacyBrickEditorObjectClass");
-static_assert(sizeof(FLegacyBrickEditorObjectClass) == 0x000010, "Wrong size on FLegacyBrickEditorObjectClass");
-static_assert(offsetof(FLegacyBrickEditorObjectClass, Suffix) == 0x000000, "Member 'FLegacyBrickEditorObjectClass::Suffix' has a wrong offset!");
+DUMPER7_ASSERTS_FLegacyBrickEditorObjectClass;
 
 // ScriptStruct BrickRigs.LegacyBrickEditorObjectClassCategory
 // 0x0028 (0x0028 - 0x0000)
@@ -1600,11 +1544,7 @@ public:
 	TSubclassOf<class UBrickEditorObjectStaticInfo> ReplacementClass;                                // 0x0010(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FLegacyBrickEditorObjectClass>  LegacyClasses;                                     // 0x0018(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLegacyBrickEditorObjectClassCategory) == 0x000008, "Wrong alignment on FLegacyBrickEditorObjectClassCategory");
-static_assert(sizeof(FLegacyBrickEditorObjectClassCategory) == 0x000028, "Wrong size on FLegacyBrickEditorObjectClassCategory");
-static_assert(offsetof(FLegacyBrickEditorObjectClassCategory, Prefix) == 0x000000, "Member 'FLegacyBrickEditorObjectClassCategory::Prefix' has a wrong offset!");
-static_assert(offsetof(FLegacyBrickEditorObjectClassCategory, ReplacementClass) == 0x000010, "Member 'FLegacyBrickEditorObjectClassCategory::ReplacementClass' has a wrong offset!");
-static_assert(offsetof(FLegacyBrickEditorObjectClassCategory, LegacyClasses) == 0x000018, "Member 'FLegacyBrickEditorObjectClassCategory::LegacyClasses' has a wrong offset!");
+DUMPER7_ASSERTS_FLegacyBrickEditorObjectClassCategory;
 
 // ScriptStruct BrickRigs.InputChannelChangedParams
 // 0x0008 (0x0008 - 0x0000)
@@ -1615,10 +1555,7 @@ public:
 	bool                                          bIsRepairing;                                      // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInputChannelChangedParams) == 0x000004, "Wrong alignment on FInputChannelChangedParams");
-static_assert(sizeof(FInputChannelChangedParams) == 0x000008, "Wrong size on FInputChannelChangedParams");
-static_assert(offsetof(FInputChannelChangedParams, Value) == 0x000000, "Member 'FInputChannelChangedParams::Value' has a wrong offset!");
-static_assert(offsetof(FInputChannelChangedParams, bIsRepairing) == 0x000004, "Member 'FInputChannelChangedParams::bIsRepairing' has a wrong offset!");
+DUMPER7_ASSERTS_FInputChannelChangedParams;
 
 // ScriptStruct BrickRigs.BoneFlinchInfo
 // 0x000C (0x000C - 0x0000)
@@ -1628,10 +1565,7 @@ public:
 	class FName                                   BoneName;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxFlinchAngle;                                    // 0x0008(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBoneFlinchInfo) == 0x000004, "Wrong alignment on FBoneFlinchInfo");
-static_assert(sizeof(FBoneFlinchInfo) == 0x00000C, "Wrong size on FBoneFlinchInfo");
-static_assert(offsetof(FBoneFlinchInfo, BoneName) == 0x000000, "Member 'FBoneFlinchInfo::BoneName' has a wrong offset!");
-static_assert(offsetof(FBoneFlinchInfo, MaxFlinchAngle) == 0x000008, "Member 'FBoneFlinchInfo::MaxFlinchAngle' has a wrong offset!");
+DUMPER7_ASSERTS_FBoneFlinchInfo;
 
 // ScriptStruct BrickRigs.BrickStructPropertyInterface
 // 0x0008 (0x0008 - 0x0000)
@@ -1640,8 +1574,7 @@ struct alignas(0x08) FBrickStructPropertyInterface
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickStructPropertyInterface) == 0x000008, "Wrong alignment on FBrickStructPropertyInterface");
-static_assert(sizeof(FBrickStructPropertyInterface) == 0x000008, "Wrong size on FBrickStructPropertyInterface");
+DUMPER7_ASSERTS_FBrickStructPropertyInterface;
 
 // ScriptStruct BrickRigs.MuzzleEffect
 // 0x0050 (0x0050 - 0x0000)
@@ -1651,10 +1584,7 @@ public:
 	TSoftObjectPtr<class UParticleSystem>         Emitter;                                           // 0x0000(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class USoundBase>              Sound;                                             // 0x0028(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMuzzleEffect) == 0x000008, "Wrong alignment on FMuzzleEffect");
-static_assert(sizeof(FMuzzleEffect) == 0x000050, "Wrong size on FMuzzleEffect");
-static_assert(offsetof(FMuzzleEffect, Emitter) == 0x000000, "Member 'FMuzzleEffect::Emitter' has a wrong offset!");
-static_assert(offsetof(FMuzzleEffect, Sound) == 0x000028, "Member 'FMuzzleEffect::Sound' has a wrong offset!");
+DUMPER7_ASSERTS_FMuzzleEffect;
 
 // ScriptStruct BrickRigs.ProjectileParams
 // 0x0018 (0x0018 - 0x0000)
@@ -1668,14 +1598,7 @@ public:
 	float                                         DropoffEnd;                                        // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxRange;                                          // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FProjectileParams) == 0x000004, "Wrong alignment on FProjectileParams");
-static_assert(sizeof(FProjectileParams) == 0x000018, "Wrong size on FProjectileParams");
-static_assert(offsetof(FProjectileParams, InitialSpeed) == 0x000000, "Member 'FProjectileParams::InitialSpeed' has a wrong offset!");
-static_assert(offsetof(FProjectileParams, MaxDamage) == 0x000004, "Member 'FProjectileParams::MaxDamage' has a wrong offset!");
-static_assert(offsetof(FProjectileParams, MinDamage) == 0x000008, "Member 'FProjectileParams::MinDamage' has a wrong offset!");
-static_assert(offsetof(FProjectileParams, DropoffStart) == 0x00000C, "Member 'FProjectileParams::DropoffStart' has a wrong offset!");
-static_assert(offsetof(FProjectileParams, DropoffEnd) == 0x000010, "Member 'FProjectileParams::DropoffEnd' has a wrong offset!");
-static_assert(offsetof(FProjectileParams, MaxRange) == 0x000014, "Member 'FProjectileParams::MaxRange' has a wrong offset!");
+DUMPER7_ASSERTS_FProjectileParams;
 
 // ScriptStruct BrickRigs.FirearmProperties
 // 0x0090 (0x0090 - 0x0000)
@@ -1699,19 +1622,7 @@ public:
 	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMuzzleEffect                          MuzzleEffect;                                      // 0x0040(0x0050)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFirearmProperties) == 0x000008, "Wrong alignment on FFirearmProperties");
-static_assert(sizeof(FFirearmProperties) == 0x000090, "Wrong size on FFirearmProperties");
-static_assert(offsetof(FFirearmProperties, AmmoCapacity) == 0x000000, "Member 'FFirearmProperties::AmmoCapacity' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, Caliber) == 0x000004, "Member 'FFirearmProperties::Caliber' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, DefaultAmmoType) == 0x00000C, "Member 'FFirearmProperties::DefaultAmmoType' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, SupportedAmmoTypes) == 0x00000E, "Member 'FFirearmProperties::SupportedAmmoTypes' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, ProjectileClass) == 0x000010, "Member 'FFirearmProperties::ProjectileClass' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, ProjectileParams) == 0x000018, "Member 'FFirearmProperties::ProjectileParams' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, NumProjectilesPerShot) == 0x000030, "Member 'FFirearmProperties::NumProjectilesPerShot' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, SpreadRadius) == 0x000034, "Member 'FFirearmProperties::SpreadRadius' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, BoltCycleTime) == 0x000038, "Member 'FFirearmProperties::BoltCycleTime' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, BurstRounds) == 0x00003D, "Member 'FFirearmProperties::BurstRounds' has a wrong offset!");
-static_assert(offsetof(FFirearmProperties, MuzzleEffect) == 0x000040, "Member 'FFirearmProperties::MuzzleEffect' has a wrong offset!");
+DUMPER7_ASSERTS_FFirearmProperties;
 
 // ScriptStruct BrickRigs.BoneDamageGroup
 // 0x0018 (0x0018 - 0x0000)
@@ -1723,11 +1634,7 @@ public:
 	bool                                          bIncludeChildBones;                                // 0x0014(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBoneDamageGroup) == 0x000008, "Wrong alignment on FBoneDamageGroup");
-static_assert(sizeof(FBoneDamageGroup) == 0x000018, "Wrong size on FBoneDamageGroup");
-static_assert(offsetof(FBoneDamageGroup, BoneNames) == 0x000000, "Member 'FBoneDamageGroup::BoneNames' has a wrong offset!");
-static_assert(offsetof(FBoneDamageGroup, DamageScale) == 0x000010, "Member 'FBoneDamageGroup::DamageScale' has a wrong offset!");
-static_assert(offsetof(FBoneDamageGroup, bIncludeChildBones) == 0x000014, "Member 'FBoneDamageGroup::bIncludeChildBones' has a wrong offset!");
+DUMPER7_ASSERTS_FBoneDamageGroup;
 
 // ScriptStruct BrickRigs.RepBrickDamageItem
 // 0x0034 (0x0040 - 0x000C)
@@ -1736,8 +1643,7 @@ struct alignas(0x08) FRepBrickDamageItem final : public FFastArraySerializerItem
 public:
 	uint8                                         Pad_C[0x34];                                       // 0x000C(0x0034)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRepBrickDamageItem) == 0x000008, "Wrong alignment on FRepBrickDamageItem");
-static_assert(sizeof(FRepBrickDamageItem) == 0x000040, "Wrong size on FRepBrickDamageItem");
+DUMPER7_ASSERTS_FRepBrickDamageItem;
 
 // ScriptStruct BrickRigs.WorldSetupParams
 // 0x0028 (0x0030 - 0x0008)
@@ -1753,14 +1659,7 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWeatherCondition*                      Weather;                                           // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWorldSetupParams) == 0x000008, "Wrong alignment on FWorldSetupParams");
-static_assert(sizeof(FWorldSetupParams) == 0x000030, "Wrong size on FWorldSetupParams");
-static_assert(offsetof(FWorldSetupParams, SunAngle) == 0x000008, "Member 'FWorldSetupParams::SunAngle' has a wrong offset!");
-static_assert(offsetof(FWorldSetupParams, SunYaw) == 0x00000C, "Member 'FWorldSetupParams::SunYaw' has a wrong offset!");
-static_assert(offsetof(FWorldSetupParams, TimeOfDay) == 0x000010, "Member 'FWorldSetupParams::TimeOfDay' has a wrong offset!");
-static_assert(offsetof(FWorldSetupParams, DayLength) == 0x000018, "Member 'FWorldSetupParams::DayLength' has a wrong offset!");
-static_assert(offsetof(FWorldSetupParams, AtmosphereDensity) == 0x000020, "Member 'FWorldSetupParams::AtmosphereDensity' has a wrong offset!");
-static_assert(offsetof(FWorldSetupParams, Weather) == 0x000028, "Member 'FWorldSetupParams::Weather' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldSetupParams;
 
 // ScriptStruct BrickRigs.ItemAimParams
 // 0x0040 (0x0040 - 0x0000)
@@ -1773,11 +1672,7 @@ public:
 	float                                         Magnification;                                     // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FItemAimParams) == 0x000010, "Wrong alignment on FItemAimParams");
-static_assert(sizeof(FItemAimParams) == 0x000040, "Wrong size on FItemAimParams");
-static_assert(offsetof(FItemAimParams, EyeDistance) == 0x000030, "Member 'FItemAimParams::EyeDistance' has a wrong offset!");
-static_assert(offsetof(FItemAimParams, MinEyeDistance) == 0x000034, "Member 'FItemAimParams::MinEyeDistance' has a wrong offset!");
-static_assert(offsetof(FItemAimParams, Magnification) == 0x000038, "Member 'FItemAimParams::Magnification' has a wrong offset!");
+DUMPER7_ASSERTS_FItemAimParams;
 
 // ScriptStruct BrickRigs.CharacterAnimInstanceProxy
 // 0x00D0 (0x0840 - 0x0770)
@@ -1807,27 +1702,7 @@ public:
 	uint8                                         Pad_808[0x8];                                      // 0x0808(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             RootTransform;                                     // 0x0810(0x0030)(Edit, BlueprintVisible, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCharacterAnimInstanceProxy) == 0x000010, "Wrong alignment on FCharacterAnimInstanceProxy");
-static_assert(sizeof(FCharacterAnimInstanceProxy) == 0x000840, "Wrong size on FCharacterAnimInstanceProxy");
-static_assert(offsetof(FCharacterAnimInstanceProxy, ViewRotation) == 0x0007D4, "Member 'FCharacterAnimInstanceProxy::ViewRotation' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsViewTarget) == 0x0007E0, "Member 'FCharacterAnimInstanceProxy::bIsViewTarget' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsConscious) == 0x0007E1, "Member 'FCharacterAnimInstanceProxy::bIsConscious' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, MovementDirection) == 0x0007E4, "Member 'FCharacterAnimInstanceProxy::MovementDirection' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, Speed) == 0x0007E8, "Member 'FCharacterAnimInstanceProxy::Speed' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, MaxSpeed) == 0x0007EC, "Member 'FCharacterAnimInstanceProxy::MaxSpeed' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, WalkSpeedRatio) == 0x0007F0, "Member 'FCharacterAnimInstanceProxy::WalkSpeedRatio' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, CrouchSpeedRatio) == 0x0007F4, "Member 'FCharacterAnimInstanceProxy::CrouchSpeedRatio' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, SprintRatio) == 0x0007F8, "Member 'FCharacterAnimInstanceProxy::SprintRatio' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, BodyRotationOffset) == 0x0007FC, "Member 'FCharacterAnimInstanceProxy::BodyRotationOffset' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsMoving) == 0x000800, "Member 'FCharacterAnimInstanceProxy::bIsMoving' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsSprinting) == 0x000801, "Member 'FCharacterAnimInstanceProxy::bIsSprinting' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsCrouched) == 0x000802, "Member 'FCharacterAnimInstanceProxy::bIsCrouched' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsBodyRotating) == 0x000803, "Member 'FCharacterAnimInstanceProxy::bIsBodyRotating' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsMovingOrRotating) == 0x000804, "Member 'FCharacterAnimInstanceProxy::bIsMovingOrRotating' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsWalking) == 0x000805, "Member 'FCharacterAnimInstanceProxy::bIsWalking' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsFalling) == 0x000806, "Member 'FCharacterAnimInstanceProxy::bIsFalling' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, bIsSwimming) == 0x000807, "Member 'FCharacterAnimInstanceProxy::bIsSwimming' has a wrong offset!");
-static_assert(offsetof(FCharacterAnimInstanceProxy, RootTransform) == 0x000810, "Member 'FCharacterAnimInstanceProxy::RootTransform' has a wrong offset!");
+DUMPER7_ASSERTS_FCharacterAnimInstanceProxy;
 
 // ScriptStruct BrickRigs.BrickCharacterAnimInstanceProxy
 // 0x0200 (0x0A40 - 0x0840)
@@ -1863,30 +1738,7 @@ public:
 	class UAnimSequenceBase*                      ItemSprintSequence;                                // 0x0A30(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A38[0x8];                                      // 0x0A38(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickCharacterAnimInstanceProxy) == 0x000010, "Wrong alignment on FBrickCharacterAnimInstanceProxy");
-static_assert(sizeof(FBrickCharacterAnimInstanceProxy) == 0x000A40, "Wrong size on FBrickCharacterAnimInstanceProxy");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, AimRatio) == 0x000918, "Member 'FBrickCharacterAnimInstanceProxy::AimRatio' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, CameraDepthOffset) == 0x00091C, "Member 'FBrickCharacterAnimInstanceProxy::CameraDepthOffset' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, ArmsViewRotationAlpha) == 0x000920, "Member 'FBrickCharacterAnimInstanceProxy::ArmsViewRotationAlpha' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, ItemBlendRatio) == 0x000924, "Member 'FBrickCharacterAnimInstanceProxy::ItemBlendRatio' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, ItemAimParams) == 0x000930, "Member 'FBrickCharacterAnimInstanceProxy::ItemAimParams' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, ItemSwayRotation) == 0x000970, "Member 'FBrickCharacterAnimInstanceProxy::ItemSwayRotation' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, WalkSwayOffset) == 0x00097C, "Member 'FBrickCharacterAnimInstanceProxy::WalkSwayOffset' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, WalkSwayRotation) == 0x000988, "Member 'FBrickCharacterAnimInstanceProxy::WalkSwayRotation' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, WeaponSupportRatio) == 0x000994, "Member 'FBrickCharacterAnimInstanceProxy::WeaponSupportRatio' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, ItemIdlePoseOffset) == 0x0009A0, "Member 'FBrickCharacterAnimInstanceProxy::ItemIdlePoseOffset' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, ItemSprintRatio) == 0x0009D0, "Member 'FBrickCharacterAnimInstanceProxy::ItemSprintRatio' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, bIsWeaponBlocked) == 0x0009D4, "Member 'FBrickCharacterAnimInstanceProxy::bIsWeaponBlocked' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, bIsCarryingBrick) == 0x0009D5, "Member 'FBrickCharacterAnimInstanceProxy::bIsCarryingBrick' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, bIsInVehicle) == 0x0009D6, "Member 'FBrickCharacterAnimInstanceProxy::bIsInVehicle' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, VehicleIdleSequence) == 0x0009D8, "Member 'FBrickCharacterAnimInstanceProxy::VehicleIdleSequence' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, VehicleAnimInstance) == 0x0009E0, "Member 'FBrickCharacterAnimInstanceProxy::VehicleAnimInstance' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, HandsIKAlpha) == 0x000A00, "Member 'FBrickCharacterAnimInstanceProxy::HandsIKAlpha' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, LeftHandIKOffset) == 0x000A04, "Member 'FBrickCharacterAnimInstanceProxy::LeftHandIKOffset' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, RightHandIKOffset) == 0x000A10, "Member 'FBrickCharacterAnimInstanceProxy::RightHandIKOffset' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, HandsRotationOffset) == 0x000A1C, "Member 'FBrickCharacterAnimInstanceProxy::HandsRotationOffset' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, ItemIdleSequence) == 0x000A28, "Member 'FBrickCharacterAnimInstanceProxy::ItemIdleSequence' has a wrong offset!");
-static_assert(offsetof(FBrickCharacterAnimInstanceProxy, ItemSprintSequence) == 0x000A30, "Member 'FBrickCharacterAnimInstanceProxy::ItemSprintSequence' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickCharacterAnimInstanceProxy;
 
 // ScriptStruct BrickRigs.BrickPropertySettings
 // 0x0050 (0x0050 - 0x0000)
@@ -1895,9 +1747,7 @@ struct FBrickPropertySettings final
 public:
 	TMap<class FName, class FString>              Settings;                                          // 0x0000(0x0050)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBrickPropertySettings) == 0x000008, "Wrong alignment on FBrickPropertySettings");
-static_assert(sizeof(FBrickPropertySettings) == 0x000050, "Wrong size on FBrickPropertySettings");
-static_assert(offsetof(FBrickPropertySettings, Settings) == 0x000000, "Member 'FBrickPropertySettings::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickPropertySettings;
 
 // ScriptStruct BrickRigs.BrickUIIconSlot
 // 0x0008 (0x0008 - 0x0000)
@@ -1909,11 +1759,7 @@ public:
 	uint8                                         RowSpan;                                           // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickUIIconSlot) == 0x000004, "Wrong alignment on FBrickUIIconSlot");
-static_assert(sizeof(FBrickUIIconSlot) == 0x000008, "Wrong size on FBrickUIIconSlot");
-static_assert(offsetof(FBrickUIIconSlot, Index) == 0x000000, "Member 'FBrickUIIconSlot::Index' has a wrong offset!");
-static_assert(offsetof(FBrickUIIconSlot, ColumnSpan) == 0x000004, "Member 'FBrickUIIconSlot::ColumnSpan' has a wrong offset!");
-static_assert(offsetof(FBrickUIIconSlot, RowSpan) == 0x000005, "Member 'FBrickUIIconSlot::RowSpan' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickUIIconSlot;
 
 // ScriptStruct BrickRigs.DisplayInfo
 // 0x0028 (0x0028 - 0x0000)
@@ -1926,19 +1772,14 @@ public:
 	struct FBrickUIIconSlot                       IconSlot;                                          // 0x001C(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDisplayInfo) == 0x000008, "Wrong alignment on FDisplayInfo");
-static_assert(sizeof(FDisplayInfo) == 0x000028, "Wrong size on FDisplayInfo");
-static_assert(offsetof(FDisplayInfo, Name) == 0x000000, "Member 'FDisplayInfo::Name' has a wrong offset!");
-static_assert(offsetof(FDisplayInfo, IconAtlas) == 0x000018, "Member 'FDisplayInfo::IconAtlas' has a wrong offset!");
-static_assert(offsetof(FDisplayInfo, IconSlot) == 0x00001C, "Member 'FDisplayInfo::IconSlot' has a wrong offset!");
+DUMPER7_ASSERTS_FDisplayInfo;
 
 // ScriptStruct BrickRigs.PagedListEntry
 // 0x0000 (0x0008 - 0x0008)
 struct FPagedListEntry : public FBrickStructPropertyInterface
 {
 };
-static_assert(alignof(FPagedListEntry) == 0x000008, "Wrong alignment on FPagedListEntry");
-static_assert(sizeof(FPagedListEntry) == 0x000008, "Wrong size on FPagedListEntry");
+DUMPER7_ASSERTS_FPagedListEntry;
 
 // ScriptStruct BrickRigs.BrickOnlineSessionInfo
 // 0x0160 (0x0168 - 0x0008)
@@ -1961,22 +1802,7 @@ public:
 	bool                                          bAllowDifferentMods;                               // 0x004D(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4E[0x11A];                                     // 0x004E(0x011A)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickOnlineSessionInfo) == 0x000008, "Wrong alignment on FBrickOnlineSessionInfo");
-static_assert(sizeof(FBrickOnlineSessionInfo) == 0x000168, "Wrong size on FBrickOnlineSessionInfo");
-static_assert(offsetof(FBrickOnlineSessionInfo, SessionName) == 0x000008, "Member 'FBrickOnlineSessionInfo::SessionName' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, SessionDescription) == 0x000018, "Member 'FBrickOnlineSessionInfo::SessionDescription' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, Level) == 0x000028, "Member 'FBrickOnlineSessionInfo::Level' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, GameMode) == 0x000030, "Member 'FBrickOnlineSessionInfo::GameMode' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, CurrentPlayers) == 0x000038, "Member 'FBrickOnlineSessionInfo::CurrentPlayers' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, MaxPlayers) == 0x00003C, "Member 'FBrickOnlineSessionInfo::MaxPlayers' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, Ping) == 0x000040, "Member 'FBrickOnlineSessionInfo::Ping' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, AverageFrameRate) == 0x000044, "Member 'FBrickOnlineSessionInfo::AverageFrameRate' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, bIsDedicated) == 0x000048, "Member 'FBrickOnlineSessionInfo::bIsDedicated' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, bIsPasswordProtected) == 0x000049, "Member 'FBrickOnlineSessionInfo::bIsPasswordProtected' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, bIsCompatibleBuild) == 0x00004A, "Member 'FBrickOnlineSessionInfo::bIsCompatibleBuild' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, bHasMods) == 0x00004B, "Member 'FBrickOnlineSessionInfo::bHasMods' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, bHasSameMods) == 0x00004C, "Member 'FBrickOnlineSessionInfo::bHasSameMods' has a wrong offset!");
-static_assert(offsetof(FBrickOnlineSessionInfo, bAllowDifferentMods) == 0x00004D, "Member 'FBrickOnlineSessionInfo::bAllowDifferentMods' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickOnlineSessionInfo;
 
 // ScriptStruct BrickRigs.UGCTags
 // 0x0003 (0x0003 - 0x0000)
@@ -1987,11 +1813,7 @@ public:
 	EUGCEraTag                                    Era;                                               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EUGCDepartmentTag                             Department;                                        // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FUGCTags) == 0x000001, "Wrong alignment on FUGCTags");
-static_assert(sizeof(FUGCTags) == 0x000003, "Wrong size on FUGCTags");
-static_assert(offsetof(FUGCTags, Type) == 0x000000, "Member 'FUGCTags::Type' has a wrong offset!");
-static_assert(offsetof(FUGCTags, Era) == 0x000001, "Member 'FUGCTags::Era' has a wrong offset!");
-static_assert(offsetof(FUGCTags, Department) == 0x000002, "Member 'FUGCTags::Department' has a wrong offset!");
+DUMPER7_ASSERTS_FUGCTags;
 
 // ScriptStruct BrickRigs.UGCFileInfo
 // 0x00E0 (0x00E8 - 0x0008)
@@ -2025,29 +1847,7 @@ public:
 	EFluUGCVisibility                             Visibility;                                        // 0x00E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FUGCFileInfo) == 0x000008, "Wrong alignment on FUGCFileInfo");
-static_assert(sizeof(FUGCFileInfo) == 0x0000E8, "Wrong size on FUGCFileInfo");
-static_assert(offsetof(FUGCFileInfo, FileType) == 0x000008, "Member 'FUGCFileInfo::FileType' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, UGCType) == 0x000009, "Member 'FUGCFileInfo::UGCType' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, Version) == 0x00000A, "Member 'FUGCFileInfo::Version' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, ContentVersion) == 0x00000B, "Member 'FUGCFileInfo::ContentVersion' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, LocalItemId) == 0x000010, "Member 'FUGCFileInfo::LocalItemId' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, OnlineItemId) == 0x000020, "Member 'FUGCFileInfo::OnlineItemId' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, Title) == 0x000050, "Member 'FUGCFileInfo::Title' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, Description) == 0x000060, "Member 'FUGCFileInfo::Description' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, NumObjects) == 0x000070, "Member 'FUGCFileInfo::NumObjects' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, Dimensions) == 0x000074, "Member 'FUGCFileInfo::Dimensions' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, Mass) == 0x000080, "Member 'FUGCFileInfo::Mass' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, Price) == 0x000084, "Member 'FUGCFileInfo::Price' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, TimeCreated) == 0x000088, "Member 'FUGCFileInfo::TimeCreated' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, TimeUpdated) == 0x000090, "Member 'FUGCFileInfo::TimeUpdated' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, Tags) == 0x000098, "Member 'FUGCFileInfo::Tags' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, AuthorId) == 0x0000A0, "Member 'FUGCFileInfo::AuthorId' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, VotesUp) == 0x0000C8, "Member 'FUGCFileInfo::VotesUp' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, VotesDown) == 0x0000CC, "Member 'FUGCFileInfo::VotesDown' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, TimePlayedWeek) == 0x0000D0, "Member 'FUGCFileInfo::TimePlayedWeek' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, TimePlayedTotal) == 0x0000D8, "Member 'FUGCFileInfo::TimePlayedTotal' has a wrong offset!");
-static_assert(offsetof(FUGCFileInfo, Visibility) == 0x0000E0, "Member 'FUGCFileInfo::Visibility' has a wrong offset!");
+DUMPER7_ASSERTS_FUGCFileInfo;
 
 // ScriptStruct BrickRigs.MatchSettings
 // 0x00C0 (0x00C8 - 0x0008)
@@ -2092,39 +1892,7 @@ public:
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimespan                              VehicleRemovalDelay;                               // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMatchSettings) == 0x000008, "Wrong alignment on FMatchSettings");
-static_assert(sizeof(FMatchSettings) == 0x0000C8, "Wrong size on FMatchSettings");
-static_assert(offsetof(FMatchSettings, ServerName) == 0x000008, "Member 'FMatchSettings::ServerName' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, ServerDescription) == 0x000018, "Member 'FMatchSettings::ServerDescription' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, NumPlayerSlots) == 0x000028, "Member 'FMatchSettings::NumPlayerSlots' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, Level) == 0x000030, "Member 'FMatchSettings::Level' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, GameMode) == 0x000038, "Member 'FMatchSettings::GameMode' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, WorldSetupParams) == 0x000040, "Member 'FMatchSettings::WorldSetupParams' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, RoundDuration) == 0x000070, "Member 'FMatchSettings::RoundDuration' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAutoBalanceTeams) == 0x000078, "Member 'FMatchSettings::bAutoBalanceTeams' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bEnableAITrains) == 0x000079, "Member 'FMatchSettings::bEnableAITrains' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bFadeIn) == 0x00007A, "Member 'FMatchSettings::bFadeIn' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, RestartDelay) == 0x000080, "Member 'FMatchSettings::RestartDelay' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bExemptAdminsFromRestrictions) == 0x000088, "Member 'FMatchSettings::bExemptAdminsFromRestrictions' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowInvincibility) == 0x000089, "Member 'FMatchSettings::bAllowInvincibility' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowSpawnAnywhere) == 0x00008A, "Member 'FMatchSettings::bAllowSpawnAnywhere' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowWeapons) == 0x00008B, "Member 'FMatchSettings::bAllowWeapons' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowExplosions) == 0x00008C, "Member 'FMatchSettings::bAllowExplosions' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowBuildingDamage) == 0x00008D, "Member 'FMatchSettings::bAllowBuildingDamage' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowEnterVehicleWithoutSeat) == 0x00008E, "Member 'FMatchSettings::bAllowEnterVehicleWithoutSeat' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowRemoveVehicleFromOtherPlayer) == 0x00008F, "Member 'FMatchSettings::bAllowRemoveVehicleFromOtherPlayer' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowFreeCam) == 0x000090, "Member 'FMatchSettings::bAllowFreeCam' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowInfiniteAmmo) == 0x000091, "Member 'FMatchSettings::bAllowInfiniteAmmo' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, bAllowInfiniteFuel) == 0x000092, "Member 'FMatchSettings::bAllowInfiniteFuel' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, MaxDummies) == 0x000093, "Member 'FMatchSettings::MaxDummies' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, VehicleFilter) == 0x000094, "Member 'FMatchSettings::VehicleFilter' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, VehicleWhitelist) == 0x000098, "Member 'FMatchSettings::VehicleWhitelist' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, MaxBricksPerVehicle) == 0x0000A8, "Member 'FMatchSettings::MaxBricksPerVehicle' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, MaxVehicleMass) == 0x0000AC, "Member 'FMatchSettings::MaxVehicleMass' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, MaxVehicleSize) == 0x0000B0, "Member 'FMatchSettings::MaxVehicleSize' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, MaxVehiclesPerPlayer) == 0x0000B4, "Member 'FMatchSettings::MaxVehiclesPerPlayer' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, VehiclePriceFactor) == 0x0000B8, "Member 'FMatchSettings::VehiclePriceFactor' has a wrong offset!");
-static_assert(offsetof(FMatchSettings, VehicleRemovalDelay) == 0x0000C0, "Member 'FMatchSettings::VehicleRemovalDelay' has a wrong offset!");
+DUMPER7_ASSERTS_FMatchSettings;
 
 // ScriptStruct BrickRigs.BrickEditorObjectPtr
 // 0x000C (0x000C - 0x0000)
@@ -2133,8 +1901,7 @@ struct alignas(0x04) FBrickEditorObjectPtr final
 public:
 	uint8                                         Pad_0[0xC];                                        // 0x0000(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickEditorObjectPtr) == 0x000004, "Wrong alignment on FBrickEditorObjectPtr");
-static_assert(sizeof(FBrickEditorObjectPtr) == 0x00000C, "Wrong size on FBrickEditorObjectPtr");
+DUMPER7_ASSERTS_FBrickEditorObjectPtr;
 
 // ScriptStruct BrickRigs.SeatBrickEditorParams
 // 0x0018 (0x0040 - 0x0028)
@@ -2143,8 +1910,7 @@ struct FSeatBrickEditorParams final : public FBrickEditorParams
 public:
 	uint8                                         Pad_28[0x18];                                      // 0x0028(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSeatBrickEditorParams) == 0x000008, "Wrong alignment on FSeatBrickEditorParams");
-static_assert(sizeof(FSeatBrickEditorParams) == 0x000040, "Wrong size on FSeatBrickEditorParams");
+DUMPER7_ASSERTS_FSeatBrickEditorParams;
 
 // ScriptStruct BrickRigs.WalkSwayParams
 // 0x0080 (0x0080 - 0x0000)
@@ -2164,20 +1930,7 @@ public:
 	struct FVector                                AimOffsetScale;                                    // 0x0068(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               AimRotationScale;                                  // 0x0074(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWalkSwayParams) == 0x000004, "Wrong alignment on FWalkSwayParams");
-static_assert(sizeof(FWalkSwayParams) == 0x000080, "Wrong size on FWalkSwayParams");
-static_assert(offsetof(FWalkSwayParams, OffsetDelay) == 0x000000, "Member 'FWalkSwayParams::OffsetDelay' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, OffsetAmplitude) == 0x00000C, "Member 'FWalkSwayParams::OffsetAmplitude' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, RotationDelay) == 0x000018, "Member 'FWalkSwayParams::RotationDelay' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, RotationAmplitude) == 0x000024, "Member 'FWalkSwayParams::RotationAmplitude' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, ForwardOffset) == 0x000030, "Member 'FWalkSwayParams::ForwardOffset' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, StrafeOffset) == 0x00003C, "Member 'FWalkSwayParams::StrafeOffset' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, ForwardRotation) == 0x000048, "Member 'FWalkSwayParams::ForwardRotation' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, StrafeRotation) == 0x000054, "Member 'FWalkSwayParams::StrafeRotation' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, OffsetInterpSpeed) == 0x000060, "Member 'FWalkSwayParams::OffsetInterpSpeed' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, RotationInterpSpeed) == 0x000064, "Member 'FWalkSwayParams::RotationInterpSpeed' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, AimOffsetScale) == 0x000068, "Member 'FWalkSwayParams::AimOffsetScale' has a wrong offset!");
-static_assert(offsetof(FWalkSwayParams, AimRotationScale) == 0x000074, "Member 'FWalkSwayParams::AimRotationScale' has a wrong offset!");
+DUMPER7_ASSERTS_FWalkSwayParams;
 
 // ScriptStruct BrickRigs.ItemAnimation
 // 0x00C8 (0x00C8 - 0x0000)
@@ -2196,18 +1949,7 @@ public:
 	float                                         BlendInTime;                                       // 0x00C0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         BlendOutTime;                                      // 0x00C4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FItemAnimation) == 0x000008, "Wrong alignment on FItemAnimation");
-static_assert(sizeof(FItemAnimation) == 0x0000C8, "Wrong size on FItemAnimation");
-static_assert(offsetof(FItemAnimation, CharacterMontage) == 0x000028, "Member 'FItemAnimation::CharacterMontage' has a wrong offset!");
-static_assert(offsetof(FItemAnimation, ItemMontage) == 0x000030, "Member 'FItemAnimation::ItemMontage' has a wrong offset!");
-static_assert(offsetof(FItemAnimation, FoleySoundPtr) == 0x000038, "Member 'FItemAnimation::FoleySoundPtr' has a wrong offset!");
-static_assert(offsetof(FItemAnimation, CharacterSequence) == 0x000040, "Member 'FItemAnimation::CharacterSequence' has a wrong offset!");
-static_assert(offsetof(FItemAnimation, ItemSequence) == 0x000068, "Member 'FItemAnimation::ItemSequence' has a wrong offset!");
-static_assert(offsetof(FItemAnimation, FoleySound) == 0x000090, "Member 'FItemAnimation::FoleySound' has a wrong offset!");
-static_assert(offsetof(FItemAnimation, Length) == 0x0000B8, "Member 'FItemAnimation::Length' has a wrong offset!");
-static_assert(offsetof(FItemAnimation, PlayRate) == 0x0000BC, "Member 'FItemAnimation::PlayRate' has a wrong offset!");
-static_assert(offsetof(FItemAnimation, BlendInTime) == 0x0000C0, "Member 'FItemAnimation::BlendInTime' has a wrong offset!");
-static_assert(offsetof(FItemAnimation, BlendOutTime) == 0x0000C4, "Member 'FItemAnimation::BlendOutTime' has a wrong offset!");
+DUMPER7_ASSERTS_FItemAnimation;
 
 // ScriptStruct BrickRigs.ExtinguishAnimation
 // 0x0010 (0x00D8 - 0x00C8)
@@ -2218,10 +1960,7 @@ public:
 	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             StopExtinguishSound;                               // 0x00D0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FExtinguishAnimation) == 0x000008, "Wrong alignment on FExtinguishAnimation");
-static_assert(sizeof(FExtinguishAnimation) == 0x0000D8, "Wrong size on FExtinguishAnimation");
-static_assert(offsetof(FExtinguishAnimation, StartExtinguishTime) == 0x0000C8, "Member 'FExtinguishAnimation::StartExtinguishTime' has a wrong offset!");
-static_assert(offsetof(FExtinguishAnimation, StopExtinguishSound) == 0x0000D0, "Member 'FExtinguishAnimation::StopExtinguishSound' has a wrong offset!");
+DUMPER7_ASSERTS_FExtinguishAnimation;
 
 // ScriptStruct BrickRigs.ChatMessagePlayerInfo
 // 0x0038 (0x0038 - 0x0000)
@@ -2231,10 +1970,7 @@ public:
 	struct FUniqueNetIdRepl                       PlayerId;                                          // 0x0000(0x0028)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 PlayerName;                                        // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChatMessagePlayerInfo) == 0x000008, "Wrong alignment on FChatMessagePlayerInfo");
-static_assert(sizeof(FChatMessagePlayerInfo) == 0x000038, "Wrong size on FChatMessagePlayerInfo");
-static_assert(offsetof(FChatMessagePlayerInfo, PlayerId) == 0x000000, "Member 'FChatMessagePlayerInfo::PlayerId' has a wrong offset!");
-static_assert(offsetof(FChatMessagePlayerInfo, PlayerName) == 0x000028, "Member 'FChatMessagePlayerInfo::PlayerName' has a wrong offset!");
+DUMPER7_ASSERTS_FChatMessagePlayerInfo;
 
 // ScriptStruct BrickRigs.BrickChatMessage
 // 0x00A8 (0x00A8 - 0x0000)
@@ -2251,15 +1987,7 @@ public:
 	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFluUGCItemIdWrapper                   OnlineUGCItemIdOption;                             // 0x0098(0x0010)(HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FBrickChatMessage) == 0x000008, "Wrong alignment on FBrickChatMessage");
-static_assert(sizeof(FBrickChatMessage) == 0x0000A8, "Wrong size on FBrickChatMessage");
-static_assert(offsetof(FBrickChatMessage, Type) == 0x000000, "Member 'FBrickChatMessage::Type' has a wrong offset!");
-static_assert(offsetof(FBrickChatMessage, Player) == 0x000008, "Member 'FBrickChatMessage::Player' has a wrong offset!");
-static_assert(offsetof(FBrickChatMessage, OtherPlayer) == 0x000040, "Member 'FBrickChatMessage::OtherPlayer' has a wrong offset!");
-static_assert(offsetof(FBrickChatMessage, TextOption) == 0x000078, "Member 'FBrickChatMessage::TextOption' has a wrong offset!");
-static_assert(offsetof(FBrickChatMessage, IntOption) == 0x000090, "Member 'FBrickChatMessage::IntOption' has a wrong offset!");
-static_assert(offsetof(FBrickChatMessage, TeamOption) == 0x000094, "Member 'FBrickChatMessage::TeamOption' has a wrong offset!");
-static_assert(offsetof(FBrickChatMessage, OnlineUGCItemIdOption) == 0x000098, "Member 'FBrickChatMessage::OnlineUGCItemIdOption' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickChatMessage;
 
 // ScriptStruct BrickRigs.DistanceConstraint
 // 0x00B0 (0x00B0 - 0x0000)
@@ -2276,15 +2004,7 @@ public:
 	float                                         InvMassScale1;                                     // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x8C];                                      // 0x0024(0x008C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDistanceConstraint) == 0x000010, "Wrong alignment on FDistanceConstraint");
-static_assert(sizeof(FDistanceConstraint) == 0x0000B0, "Wrong size on FDistanceConstraint");
-static_assert(offsetof(FDistanceConstraint, MinDistance) == 0x000008, "Member 'FDistanceConstraint::MinDistance' has a wrong offset!");
-static_assert(offsetof(FDistanceConstraint, MaxDistance) == 0x00000C, "Member 'FDistanceConstraint::MaxDistance' has a wrong offset!");
-static_assert(offsetof(FDistanceConstraint, SpringStiffness) == 0x000010, "Member 'FDistanceConstraint::SpringStiffness' has a wrong offset!");
-static_assert(offsetof(FDistanceConstraint, SpringDampening) == 0x000014, "Member 'FDistanceConstraint::SpringDampening' has a wrong offset!");
-static_assert(offsetof(FDistanceConstraint, BreakingForce) == 0x000018, "Member 'FDistanceConstraint::BreakingForce' has a wrong offset!");
-static_assert(offsetof(FDistanceConstraint, InvMassScale0) == 0x00001C, "Member 'FDistanceConstraint::InvMassScale0' has a wrong offset!");
-static_assert(offsetof(FDistanceConstraint, InvMassScale1) == 0x000020, "Member 'FDistanceConstraint::InvMassScale1' has a wrong offset!");
+DUMPER7_ASSERTS_FDistanceConstraint;
 
 // ScriptStruct BrickRigs.ClientDamageInfo
 // 0x000C (0x000C - 0x0000)
@@ -2298,12 +2018,7 @@ public:
 	bool                                          bIsKillshot;                                       // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FClientDamageInfo) == 0x000004, "Wrong alignment on FClientDamageInfo");
-static_assert(sizeof(FClientDamageInfo) == 0x00000C, "Wrong size on FClientDamageInfo");
-static_assert(offsetof(FClientDamageInfo, TeamAttitude) == 0x000000, "Member 'FClientDamageInfo::TeamAttitude' has a wrong offset!");
-static_assert(offsetof(FClientDamageInfo, Damage) == 0x000004, "Member 'FClientDamageInfo::Damage' has a wrong offset!");
-static_assert(offsetof(FClientDamageInfo, bIsHeadshot) == 0x000008, "Member 'FClientDamageInfo::bIsHeadshot' has a wrong offset!");
-static_assert(offsetof(FClientDamageInfo, bIsKillshot) == 0x000009, "Member 'FClientDamageInfo::bIsKillshot' has a wrong offset!");
+DUMPER7_ASSERTS_FClientDamageInfo;
 
 // ScriptStruct BrickRigs.BrickComboBoxItemParams
 // 0x0140 (0x0140 - 0x0000)
@@ -2322,16 +2037,7 @@ public:
 	uint8                                         Pad_FA[0x6];                                       // 0x00FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTooltipContent                        TooltipContent;                                    // 0x0100(0x0040)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBrickComboBoxItemParams) == 0x000008, "Wrong alignment on FBrickComboBoxItemParams");
-static_assert(sizeof(FBrickComboBoxItemParams) == 0x000140, "Wrong size on FBrickComboBoxItemParams");
-static_assert(offsetof(FBrickComboBoxItemParams, bIsListItem) == 0x000000, "Member 'FBrickComboBoxItemParams::bIsListItem' has a wrong offset!");
-static_assert(offsetof(FBrickComboBoxItemParams, DisplayInfo) == 0x000008, "Member 'FBrickComboBoxItemParams::DisplayInfo' has a wrong offset!");
-static_assert(offsetof(FBrickComboBoxItemParams, IconTexture) == 0x000030, "Member 'FBrickComboBoxItemParams::IconTexture' has a wrong offset!");
-static_assert(offsetof(FBrickComboBoxItemParams, IconSizeX) == 0x0000F0, "Member 'FBrickComboBoxItemParams::IconSizeX' has a wrong offset!");
-static_assert(offsetof(FBrickComboBoxItemParams, IconSizeY) == 0x0000F4, "Member 'FBrickComboBoxItemParams::IconSizeY' has a wrong offset!");
-static_assert(offsetof(FBrickComboBoxItemParams, bShowEmptyIcon) == 0x0000F8, "Member 'FBrickComboBoxItemParams::bShowEmptyIcon' has a wrong offset!");
-static_assert(offsetof(FBrickComboBoxItemParams, bIsEnabled) == 0x0000F9, "Member 'FBrickComboBoxItemParams::bIsEnabled' has a wrong offset!");
-static_assert(offsetof(FBrickComboBoxItemParams, TooltipContent) == 0x000100, "Member 'FBrickComboBoxItemParams::TooltipContent' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickComboBoxItemParams;
 
 // ScriptStruct BrickRigs.TrainTrackSplineMeshInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -2342,10 +2048,7 @@ public:
 	struct FVector                                RailOffset;                                        // 0x0008(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTrainTrackSplineMeshInfo) == 0x000008, "Wrong alignment on FTrainTrackSplineMeshInfo");
-static_assert(sizeof(FTrainTrackSplineMeshInfo) == 0x000018, "Wrong size on FTrainTrackSplineMeshInfo");
-static_assert(offsetof(FTrainTrackSplineMeshInfo, StaticMesh) == 0x000000, "Member 'FTrainTrackSplineMeshInfo::StaticMesh' has a wrong offset!");
-static_assert(offsetof(FTrainTrackSplineMeshInfo, RailOffset) == 0x000008, "Member 'FTrainTrackSplineMeshInfo::RailOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FTrainTrackSplineMeshInfo;
 
 // ScriptStruct BrickRigs.RepBrickConnectionDamageItem
 // 0x0034 (0x0040 - 0x000C)
@@ -2354,8 +2057,7 @@ struct alignas(0x08) FRepBrickConnectionDamageItem final : public FFastArraySeri
 public:
 	uint8                                         Pad_C[0x34];                                       // 0x000C(0x0034)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRepBrickConnectionDamageItem) == 0x000008, "Wrong alignment on FRepBrickConnectionDamageItem");
-static_assert(sizeof(FRepBrickConnectionDamageItem) == 0x000040, "Wrong size on FRepBrickConnectionDamageItem");
+DUMPER7_ASSERTS_FRepBrickConnectionDamageItem;
 
 // ScriptStruct BrickRigs.RepActuatorState
 // 0x0018 (0x0018 - 0x0000)
@@ -2364,8 +2066,7 @@ struct alignas(0x04) FRepActuatorState final
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRepActuatorState) == 0x000004, "Wrong alignment on FRepActuatorState");
-static_assert(sizeof(FRepActuatorState) == 0x000018, "Wrong size on FRepActuatorState");
+DUMPER7_ASSERTS_FRepActuatorState;
 
 // ScriptStruct BrickRigs.VehicleOutputChannel
 // 0x0020 (0x0028 - 0x0008)
@@ -2375,9 +2076,7 @@ public:
 	float                                         CurrentValue;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_C[0x1C];                                       // 0x000C(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FVehicleOutputChannel) == 0x000008, "Wrong alignment on FVehicleOutputChannel");
-static_assert(sizeof(FVehicleOutputChannel) == 0x000028, "Wrong size on FVehicleOutputChannel");
-static_assert(offsetof(FVehicleOutputChannel, CurrentValue) == 0x000008, "Member 'FVehicleOutputChannel::CurrentValue' has a wrong offset!");
+DUMPER7_ASSERTS_FVehicleOutputChannel;
 
 // ScriptStruct BrickRigs.SensorOutputChannel
 // 0x0010 (0x0038 - 0x0028)
@@ -2389,12 +2088,7 @@ public:
 	float                                         MinOut;                                            // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxOut;                                            // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSensorOutputChannel) == 0x000008, "Wrong alignment on FSensorOutputChannel");
-static_assert(sizeof(FSensorOutputChannel) == 0x000038, "Wrong size on FSensorOutputChannel");
-static_assert(offsetof(FSensorOutputChannel, MinIn) == 0x000028, "Member 'FSensorOutputChannel::MinIn' has a wrong offset!");
-static_assert(offsetof(FSensorOutputChannel, MaxIn) == 0x00002C, "Member 'FSensorOutputChannel::MaxIn' has a wrong offset!");
-static_assert(offsetof(FSensorOutputChannel, MinOut) == 0x000030, "Member 'FSensorOutputChannel::MinOut' has a wrong offset!");
-static_assert(offsetof(FSensorOutputChannel, MaxOut) == 0x000034, "Member 'FSensorOutputChannel::MaxOut' has a wrong offset!");
+DUMPER7_ASSERTS_FSensorOutputChannel;
 
 // ScriptStruct BrickRigs.ActuatorState
 // 0x0010 (0x0010 - 0x0000)
@@ -2403,8 +2097,7 @@ struct alignas(0x04) FActuatorState final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FActuatorState) == 0x000004, "Wrong alignment on FActuatorState");
-static_assert(sizeof(FActuatorState) == 0x000010, "Wrong size on FActuatorState");
+DUMPER7_ASSERTS_FActuatorState;
 
 // ScriptStruct BrickRigs.ViewTargetSharedParams
 // 0x0010 (0x0010 - 0x0000)
@@ -2416,12 +2109,7 @@ public:
 	float                                         Exponent;                                          // 0x0008(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InterpSpeed;                                       // 0x000C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FViewTargetSharedParams) == 0x000004, "Wrong alignment on FViewTargetSharedParams");
-static_assert(sizeof(FViewTargetSharedParams) == 0x000010, "Wrong size on FViewTargetSharedParams");
-static_assert(offsetof(FViewTargetSharedParams, InputRate) == 0x000000, "Member 'FViewTargetSharedParams::InputRate' has a wrong offset!");
-static_assert(offsetof(FViewTargetSharedParams, Step) == 0x000004, "Member 'FViewTargetSharedParams::Step' has a wrong offset!");
-static_assert(offsetof(FViewTargetSharedParams, Exponent) == 0x000008, "Member 'FViewTargetSharedParams::Exponent' has a wrong offset!");
-static_assert(offsetof(FViewTargetSharedParams, InterpSpeed) == 0x00000C, "Member 'FViewTargetSharedParams::InterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_FViewTargetSharedParams;
 
 // ScriptStruct BrickRigs.ViewTargetCameraSpeedParams
 // 0x0008 (0x0018 - 0x0010)
@@ -2430,9 +2118,7 @@ struct FViewTargetCameraSpeedParams final : public FViewTargetSharedParams
 public:
 	struct FFloatInterval                         SpeedRange;                                        // 0x0010(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FViewTargetCameraSpeedParams) == 0x000004, "Wrong alignment on FViewTargetCameraSpeedParams");
-static_assert(sizeof(FViewTargetCameraSpeedParams) == 0x000018, "Wrong size on FViewTargetCameraSpeedParams");
-static_assert(offsetof(FViewTargetCameraSpeedParams, SpeedRange) == 0x000010, "Member 'FViewTargetCameraSpeedParams::SpeedRange' has a wrong offset!");
+DUMPER7_ASSERTS_FViewTargetCameraSpeedParams;
 
 // ScriptStruct BrickRigs.AnimNode_ItemBlend
 // 0x0130 (0x0140 - 0x0010)
@@ -2455,21 +2141,7 @@ public:
 	struct FRotator                               AimTransitionRotationOffset;                       // 0x0130(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ItemBlend) == 0x000010, "Wrong alignment on FAnimNode_ItemBlend");
-static_assert(sizeof(FAnimNode_ItemBlend) == 0x000140, "Wrong size on FAnimNode_ItemBlend");
-static_assert(offsetof(FAnimNode_ItemBlend, BasePose) == 0x000080, "Member 'FAnimNode_ItemBlend::BasePose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, ItemPose) == 0x000090, "Member 'FAnimNode_ItemBlend::ItemPose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, LeftHandBone) == 0x0000A0, "Member 'FAnimNode_ItemBlend::LeftHandBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, LeftElbowBone) == 0x0000B0, "Member 'FAnimNode_ItemBlend::LeftElbowBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, RightHandBone) == 0x0000C0, "Member 'FAnimNode_ItemBlend::RightHandBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, RightElbowBone) == 0x0000D0, "Member 'FAnimNode_ItemBlend::RightElbowBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, HeadBone) == 0x0000E0, "Member 'FAnimNode_ItemBlend::HeadBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, ItemBone) == 0x0000F0, "Member 'FAnimNode_ItemBlend::ItemBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, LeftClavicleBone) == 0x000100, "Member 'FAnimNode_ItemBlend::LeftClavicleBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, RightClavicleBone) == 0x000110, "Member 'FAnimNode_ItemBlend::RightClavicleBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, AimCurveExponent) == 0x000120, "Member 'FAnimNode_ItemBlend::AimCurveExponent' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, AimTransitionLocationOffset) == 0x000124, "Member 'FAnimNode_ItemBlend::AimTransitionLocationOffset' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ItemBlend, AimTransitionRotationOffset) == 0x000130, "Member 'FAnimNode_ItemBlend::AimTransitionRotationOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_ItemBlend;
 
 // ScriptStruct BrickRigs.AnimNode_ViewRotation
 // 0x0080 (0x0090 - 0x0010)
@@ -2489,17 +2161,7 @@ public:
 	TArray<struct FBoneReference>                 ArmBones;                                          // 0x0078(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x8];                                       // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_ViewRotation) == 0x000010, "Wrong alignment on FAnimNode_ViewRotation");
-static_assert(sizeof(FAnimNode_ViewRotation) == 0x000090, "Wrong size on FAnimNode_ViewRotation");
-static_assert(offsetof(FAnimNode_ViewRotation, InPose) == 0x000020, "Member 'FAnimNode_ViewRotation::InPose' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ViewRotation, ViewRotation) == 0x000030, "Member 'FAnimNode_ViewRotation::ViewRotation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ViewRotation, ArmsAlpha) == 0x00003C, "Member 'FAnimNode_ViewRotation::ArmsAlpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ViewRotation, bUseRootPitchAdjustement) == 0x000040, "Member 'FAnimNode_ViewRotation::bUseRootPitchAdjustement' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ViewRotation, RootPitchAdjustmentRate) == 0x000044, "Member 'FAnimNode_ViewRotation::RootPitchAdjustmentRate' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ViewRotation, RootBone) == 0x000048, "Member 'FAnimNode_ViewRotation::RootBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ViewRotation, HeadBone) == 0x000058, "Member 'FAnimNode_ViewRotation::HeadBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ViewRotation, NeckBoneChain) == 0x000068, "Member 'FAnimNode_ViewRotation::NeckBoneChain' has a wrong offset!");
-static_assert(offsetof(FAnimNode_ViewRotation, ArmBones) == 0x000078, "Member 'FAnimNode_ViewRotation::ArmBones' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_ViewRotation;
 
 // ScriptStruct BrickRigs.CameraFadeParams
 // 0x001C (0x001C - 0x0000)
@@ -2512,12 +2174,7 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           FadeColor;                                         // 0x000C(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCameraFadeParams) == 0x000004, "Wrong alignment on FCameraFadeParams");
-static_assert(sizeof(FCameraFadeParams) == 0x00001C, "Wrong size on FCameraFadeParams");
-static_assert(offsetof(FCameraFadeParams, FadeInTime) == 0x000000, "Member 'FCameraFadeParams::FadeInTime' has a wrong offset!");
-static_assert(offsetof(FCameraFadeParams, FadeOutTime) == 0x000004, "Member 'FCameraFadeParams::FadeOutTime' has a wrong offset!");
-static_assert(offsetof(FCameraFadeParams, bFadeHUD) == 0x000008, "Member 'FCameraFadeParams::bFadeHUD' has a wrong offset!");
-static_assert(offsetof(FCameraFadeParams, FadeColor) == 0x00000C, "Member 'FCameraFadeParams::FadeColor' has a wrong offset!");
+DUMPER7_ASSERTS_FCameraFadeParams;
 
 // ScriptStruct BrickRigs.BrickCarryInfo
 // 0x0030 (0x0030 - 0x0000)
@@ -2526,8 +2183,7 @@ struct alignas(0x04) FBrickCarryInfo final
 public:
 	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickCarryInfo) == 0x000004, "Wrong alignment on FBrickCarryInfo");
-static_assert(sizeof(FBrickCarryInfo) == 0x000030, "Wrong size on FBrickCarryInfo");
+DUMPER7_ASSERTS_FBrickCarryInfo;
 
 // ScriptStruct BrickRigs.InventorySlotID
 // 0x0004 (0x0004 - 0x0000)
@@ -2536,9 +2192,7 @@ struct FInventorySlotID final
 public:
 	int32                                         ID;                                                // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FInventorySlotID) == 0x000004, "Wrong alignment on FInventorySlotID");
-static_assert(sizeof(FInventorySlotID) == 0x000004, "Wrong size on FInventorySlotID");
-static_assert(offsetof(FInventorySlotID, ID) == 0x000000, "Member 'FInventorySlotID::ID' has a wrong offset!");
+DUMPER7_ASSERTS_FInventorySlotID;
 
 // ScriptStruct BrickRigs.MoveInventoryItemParams
 // 0x0024 (0x0024 - 0x0000)
@@ -2552,14 +2206,7 @@ public:
 	int32                                         Amount;                                            // 0x0018(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TWeakObjectPtr<class AInventoryItem>          PickedUpItem;                                      // 0x001C(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMoveInventoryItemParams) == 0x000004, "Wrong alignment on FMoveInventoryItemParams");
-static_assert(sizeof(FMoveInventoryItemParams) == 0x000024, "Wrong size on FMoveInventoryItemParams");
-static_assert(offsetof(FMoveInventoryItemParams, FromInventory) == 0x000000, "Member 'FMoveInventoryItemParams::FromInventory' has a wrong offset!");
-static_assert(offsetof(FMoveInventoryItemParams, FromSlotID) == 0x000008, "Member 'FMoveInventoryItemParams::FromSlotID' has a wrong offset!");
-static_assert(offsetof(FMoveInventoryItemParams, ToInventory) == 0x00000C, "Member 'FMoveInventoryItemParams::ToInventory' has a wrong offset!");
-static_assert(offsetof(FMoveInventoryItemParams, ToSlotID) == 0x000014, "Member 'FMoveInventoryItemParams::ToSlotID' has a wrong offset!");
-static_assert(offsetof(FMoveInventoryItemParams, Amount) == 0x000018, "Member 'FMoveInventoryItemParams::Amount' has a wrong offset!");
-static_assert(offsetof(FMoveInventoryItemParams, PickedUpItem) == 0x00001C, "Member 'FMoveInventoryItemParams::PickedUpItem' has a wrong offset!");
+DUMPER7_ASSERTS_FMoveInventoryItemParams;
 
 // ScriptStruct BrickRigs.BrickConnectionParams
 // 0x0008 (0x0008 - 0x0000)
@@ -2568,8 +2215,7 @@ struct alignas(0x02) FBrickConnectionParams final
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickConnectionParams) == 0x000002, "Wrong alignment on FBrickConnectionParams");
-static_assert(sizeof(FBrickConnectionParams) == 0x000008, "Wrong size on FBrickConnectionParams");
+DUMPER7_ASSERTS_FBrickConnectionParams;
 
 // ScriptStruct BrickRigs.ConnectorField
 // 0x0030 (0x0030 - 0x0000)
@@ -2589,18 +2235,7 @@ public:
 	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              ShapeRelativeSize;                                 // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FConnectorField) == 0x000004, "Wrong alignment on FConnectorField");
-static_assert(sizeof(FConnectorField) == 0x000030, "Wrong size on FConnectorField");
-static_assert(offsetof(FConnectorField, Type) == 0x000000, "Member 'FConnectorField::Type' has a wrong offset!");
-static_assert(offsetof(FConnectorField, Gender) == 0x000001, "Member 'FConnectorField::Gender' has a wrong offset!");
-static_assert(offsetof(FConnectorField, Direction) == 0x000002, "Member 'FConnectorField::Direction' has a wrong offset!");
-static_assert(offsetof(FConnectorField, Origin) == 0x000004, "Member 'FConnectorField::Origin' has a wrong offset!");
-static_assert(offsetof(FConnectorField, Rotation) == 0x000010, "Member 'FConnectorField::Rotation' has a wrong offset!");
-static_assert(offsetof(FConnectorField, NumX) == 0x00001C, "Member 'FConnectorField::NumX' has a wrong offset!");
-static_assert(offsetof(FConnectorField, NumY) == 0x000020, "Member 'FConnectorField::NumY' has a wrong offset!");
-static_assert(offsetof(FConnectorField, Spacing) == 0x000024, "Member 'FConnectorField::Spacing' has a wrong offset!");
-static_assert(offsetof(FConnectorField, Shape) == 0x000025, "Member 'FConnectorField::Shape' has a wrong offset!");
-static_assert(offsetof(FConnectorField, ShapeRelativeSize) == 0x000028, "Member 'FConnectorField::ShapeRelativeSize' has a wrong offset!");
+DUMPER7_ASSERTS_FConnectorField;
 
 // ScriptStruct BrickRigs.BrickEditorObjectFilterParams
 // 0x0070 (0x0070 - 0x0000)
@@ -2613,12 +2248,7 @@ public:
 	struct FGameplayTagContainer                  FilterTags;                                        // 0x0040(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        BrickSizes;                                        // 0x0060(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBrickEditorObjectFilterParams) == 0x000008, "Wrong alignment on FBrickEditorObjectFilterParams");
-static_assert(sizeof(FBrickEditorObjectFilterParams) == 0x000070, "Wrong size on FBrickEditorObjectFilterParams");
-static_assert(offsetof(FBrickEditorObjectFilterParams, DisplayName) == 0x000010, "Member 'FBrickEditorObjectFilterParams::DisplayName' has a wrong offset!");
-static_assert(offsetof(FBrickEditorObjectFilterParams, ThumbnailOverrideClass) == 0x000028, "Member 'FBrickEditorObjectFilterParams::ThumbnailOverrideClass' has a wrong offset!");
-static_assert(offsetof(FBrickEditorObjectFilterParams, FilterTags) == 0x000040, "Member 'FBrickEditorObjectFilterParams::FilterTags' has a wrong offset!");
-static_assert(offsetof(FBrickEditorObjectFilterParams, BrickSizes) == 0x000060, "Member 'FBrickEditorObjectFilterParams::BrickSizes' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickEditorObjectFilterParams;
 
 // ScriptStruct BrickRigs.BrickEditorObjectID
 // 0x0002 (0x0002 - 0x0000)
@@ -2627,8 +2257,7 @@ struct alignas(0x02) FBrickEditorObjectID final
 public:
 	uint8                                         Pad_0[0x2];                                        // 0x0000(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickEditorObjectID) == 0x000002, "Wrong alignment on FBrickEditorObjectID");
-static_assert(sizeof(FBrickEditorObjectID) == 0x000002, "Wrong size on FBrickEditorObjectID");
+DUMPER7_ASSERTS_FBrickEditorObjectID;
 
 // ScriptStruct BrickRigs.BrickPropertyReflectionFilter
 // 0x0020 (0x0020 - 0x0000)
@@ -2637,9 +2266,7 @@ struct FBrickPropertyReflectionFilter final
 public:
 	struct FGameplayTagContainer                  Tags;                                              // 0x0000(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBrickPropertyReflectionFilter) == 0x000008, "Wrong alignment on FBrickPropertyReflectionFilter");
-static_assert(sizeof(FBrickPropertyReflectionFilter) == 0x000020, "Wrong size on FBrickPropertyReflectionFilter");
-static_assert(offsetof(FBrickPropertyReflectionFilter, Tags) == 0x000000, "Member 'FBrickPropertyReflectionFilter::Tags' has a wrong offset!");
+DUMPER7_ASSERTS_FBrickPropertyReflectionFilter;
 
 // ScriptStruct BrickRigs.TrainSpawnInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -2650,10 +2277,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ATrain>                     TrainClass;                                        // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTrainSpawnInfo) == 0x000008, "Wrong alignment on FTrainSpawnInfo");
-static_assert(sizeof(FTrainSpawnInfo) == 0x000010, "Wrong size on FTrainSpawnInfo");
-static_assert(offsetof(FTrainSpawnInfo, TrackIndex) == 0x000000, "Member 'FTrainSpawnInfo::TrackIndex' has a wrong offset!");
-static_assert(offsetof(FTrainSpawnInfo, TrainClass) == 0x000008, "Member 'FTrainSpawnInfo::TrainClass' has a wrong offset!");
+DUMPER7_ASSERTS_FTrainSpawnInfo;
 
 // ScriptStruct BrickRigs.CharacterDamageInfo
 // 0x000C (0x000C - 0x0000)
@@ -2662,8 +2286,7 @@ struct alignas(0x04) FCharacterDamageInfo final
 public:
 	uint8                                         Pad_0[0xC];                                        // 0x0000(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCharacterDamageInfo) == 0x000004, "Wrong alignment on FCharacterDamageInfo");
-static_assert(sizeof(FCharacterDamageInfo) == 0x00000C, "Wrong size on FCharacterDamageInfo");
+DUMPER7_ASSERTS_FCharacterDamageInfo;
 
 // ScriptStruct BrickRigs.ItemAnimInstanceProxy
 // 0x0020 (0x0790 - 0x0770)
@@ -2672,8 +2295,7 @@ struct FItemAnimInstanceProxy : public FAnimInstanceProxy
 public:
 	uint8                                         Pad_770[0x20];                                     // 0x0770(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FItemAnimInstanceProxy) == 0x000010, "Wrong alignment on FItemAnimInstanceProxy");
-static_assert(sizeof(FItemAnimInstanceProxy) == 0x000790, "Wrong size on FItemAnimInstanceProxy");
+DUMPER7_ASSERTS_FItemAnimInstanceProxy;
 
 // ScriptStruct BrickRigs.DestructibleInstanceDamageItem
 // 0x0010 (0x001C - 0x000C)
@@ -2682,8 +2304,7 @@ struct FDestructibleInstanceDamageItem final : public FFastArraySerializerItem
 public:
 	uint8                                         Pad_C[0x10];                                       // 0x000C(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDestructibleInstanceDamageItem) == 0x000004, "Wrong alignment on FDestructibleInstanceDamageItem");
-static_assert(sizeof(FDestructibleInstanceDamageItem) == 0x00001C, "Wrong size on FDestructibleInstanceDamageItem");
+DUMPER7_ASSERTS_FDestructibleInstanceDamageItem;
 
 // ScriptStruct BrickRigs.DestructibleInstanceDamageArray
 // 0x0018 (0x0120 - 0x0108)
@@ -2693,9 +2314,7 @@ public:
 	uint8                                         Pad_108[0x8];                                      // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDestructibleInstanceDamageItem> Items;                                            // 0x0110(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDestructibleInstanceDamageArray) == 0x000008, "Wrong alignment on FDestructibleInstanceDamageArray");
-static_assert(sizeof(FDestructibleInstanceDamageArray) == 0x000120, "Wrong size on FDestructibleInstanceDamageArray");
-static_assert(offsetof(FDestructibleInstanceDamageArray, Items) == 0x000110, "Member 'FDestructibleInstanceDamageArray::Items' has a wrong offset!");
+DUMPER7_ASSERTS_FDestructibleInstanceDamageArray;
 
 // ScriptStruct BrickRigs.DragRaceLane
 // 0x0018 (0x0018 - 0x0000)
@@ -2704,8 +2323,7 @@ struct alignas(0x08) FDragRaceLane final
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDragRaceLane) == 0x000008, "Wrong alignment on FDragRaceLane");
-static_assert(sizeof(FDragRaceLane) == 0x000018, "Wrong size on FDragRaceLane");
+DUMPER7_ASSERTS_FDragRaceLane;
 
 // ScriptStruct BrickRigs.DragRaceTime
 // 0x0008 (0x0008 - 0x0000)
@@ -2714,8 +2332,7 @@ struct alignas(0x04) FDragRaceTime final
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDragRaceTime) == 0x000004, "Wrong alignment on FDragRaceTime");
-static_assert(sizeof(FDragRaceTime) == 0x000008, "Wrong size on FDragRaceTime");
+DUMPER7_ASSERTS_FDragRaceTime;
 
 // ScriptStruct BrickRigs.ElevatorState
 // 0x000C (0x000C - 0x0000)
@@ -2727,11 +2344,7 @@ public:
 	float                                         Height;                                            // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Speed;                                             // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FElevatorState) == 0x000004, "Wrong alignment on FElevatorState");
-static_assert(sizeof(FElevatorState) == 0x00000C, "Wrong size on FElevatorState");
-static_assert(offsetof(FElevatorState, Direction) == 0x000000, "Member 'FElevatorState::Direction' has a wrong offset!");
-static_assert(offsetof(FElevatorState, Height) == 0x000004, "Member 'FElevatorState::Height' has a wrong offset!");
-static_assert(offsetof(FElevatorState, Speed) == 0x000008, "Member 'FElevatorState::Speed' has a wrong offset!");
+DUMPER7_ASSERTS_FElevatorState;
 
 // ScriptStruct BrickRigs.FirearmAnimInstanceProxy
 // 0x0080 (0x0810 - 0x0790)
@@ -2740,8 +2353,7 @@ struct FFirearmAnimInstanceProxy final : public FItemAnimInstanceProxy
 public:
 	uint8                                         Pad_790[0x80];                                     // 0x0790(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFirearmAnimInstanceProxy) == 0x000010, "Wrong alignment on FFirearmAnimInstanceProxy");
-static_assert(sizeof(FFirearmAnimInstanceProxy) == 0x000810, "Wrong size on FFirearmAnimInstanceProxy");
+DUMPER7_ASSERTS_FFirearmAnimInstanceProxy;
 
 // ScriptStruct BrickRigs.FirearmState
 // 0x0006 (0x0006 - 0x0000)
@@ -2750,8 +2362,7 @@ struct alignas(0x02) FFirearmState final
 public:
 	uint8                                         Pad_0[0x6];                                        // 0x0000(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFirearmState) == 0x000002, "Wrong alignment on FFirearmState");
-static_assert(sizeof(FFirearmState) == 0x000006, "Wrong size on FFirearmState");
+DUMPER7_ASSERTS_FFirearmState;
 
 // ScriptStruct BrickRigs.FireExtinguisherProperties
 // 0x0068 (0x0068 - 0x0000)
@@ -2766,14 +2377,7 @@ public:
 	float                                         ExtinguishProbability;                             // 0x0060(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFireExtinguisherProperties) == 0x000008, "Wrong alignment on FFireExtinguisherProperties");
-static_assert(sizeof(FFireExtinguisherProperties) == 0x000068, "Wrong size on FFireExtinguisherProperties");
-static_assert(offsetof(FFireExtinguisherProperties, Emitter) == 0x000000, "Member 'FFireExtinguisherProperties::Emitter' has a wrong offset!");
-static_assert(offsetof(FFireExtinguisherProperties, Sound) == 0x000028, "Member 'FFireExtinguisherProperties::Sound' has a wrong offset!");
-static_assert(offsetof(FFireExtinguisherProperties, ExtinguishSound) == 0x000050, "Member 'FFireExtinguisherProperties::ExtinguishSound' has a wrong offset!");
-static_assert(offsetof(FFireExtinguisherProperties, ExtinguishRadius) == 0x000058, "Member 'FFireExtinguisherProperties::ExtinguishRadius' has a wrong offset!");
-static_assert(offsetof(FFireExtinguisherProperties, ExtinguishDistance) == 0x00005C, "Member 'FFireExtinguisherProperties::ExtinguishDistance' has a wrong offset!");
-static_assert(offsetof(FFireExtinguisherProperties, ExtinguishProbability) == 0x000060, "Member 'FFireExtinguisherProperties::ExtinguishProbability' has a wrong offset!");
+DUMPER7_ASSERTS_FFireExtinguisherProperties;
 
 // ScriptStruct BrickRigs.ScalableBrickBaseEditorParams
 // 0x0008 (0x0030 - 0x0028)
@@ -2782,8 +2386,7 @@ struct FScalableBrickBaseEditorParams : public FBrickEditorParams
 public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FScalableBrickBaseEditorParams) == 0x000008, "Wrong alignment on FScalableBrickBaseEditorParams");
-static_assert(sizeof(FScalableBrickBaseEditorParams) == 0x000030, "Wrong size on FScalableBrickBaseEditorParams");
+DUMPER7_ASSERTS_FScalableBrickBaseEditorParams;
 
 // ScriptStruct BrickRigs.ScalableBrickEditorParams
 // 0x0008 (0x0038 - 0x0030)
@@ -2792,8 +2395,7 @@ struct FScalableBrickEditorParams : public FScalableBrickBaseEditorParams
 public:
 	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FScalableBrickEditorParams) == 0x000008, "Wrong alignment on FScalableBrickEditorParams");
-static_assert(sizeof(FScalableBrickEditorParams) == 0x000038, "Wrong size on FScalableBrickEditorParams");
+DUMPER7_ASSERTS_FScalableBrickEditorParams;
 
 // ScriptStruct BrickRigs.FlapBrickEditorParams
 // 0x0008 (0x0040 - 0x0038)
@@ -2802,8 +2404,7 @@ struct FFlapBrickEditorParams final : public FScalableBrickEditorParams
 public:
 	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFlapBrickEditorParams) == 0x000008, "Wrong alignment on FFlapBrickEditorParams");
-static_assert(sizeof(FFlapBrickEditorParams) == 0x000040, "Wrong size on FFlapBrickEditorParams");
+DUMPER7_ASSERTS_FFlapBrickEditorParams;
 
 // ScriptStruct BrickRigs.FluTeamIdStatics
 // 0x0001 (0x0001 - 0x0000)
@@ -2812,8 +2413,7 @@ struct FFluTeamIdStatics final
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFluTeamIdStatics) == 0x000001, "Wrong alignment on FFluTeamIdStatics");
-static_assert(sizeof(FFluTeamIdStatics) == 0x000001, "Wrong size on FFluTeamIdStatics");
+DUMPER7_ASSERTS_FFluTeamIdStatics;
 
 // ScriptStruct BrickRigs.FuelTankParams
 // 0x0010 (0x0010 - 0x0000)
@@ -2824,10 +2424,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UExplosiveMaterial>         FuelType;                                          // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFuelTankParams) == 0x000008, "Wrong alignment on FFuelTankParams");
-static_assert(sizeof(FFuelTankParams) == 0x000010, "Wrong size on FFuelTankParams");
-static_assert(offsetof(FFuelTankParams, FuelCapacity) == 0x000000, "Member 'FFuelTankParams::FuelCapacity' has a wrong offset!");
-static_assert(offsetof(FFuelTankParams, FuelType) == 0x000008, "Member 'FFuelTankParams::FuelType' has a wrong offset!");
+DUMPER7_ASSERTS_FFuelTankParams;
 
 // ScriptStruct BrickRigs.GrenadeAnimInstanceProxy
 // 0x0050 (0x07E0 - 0x0790)
@@ -2836,8 +2433,7 @@ struct FGrenadeAnimInstanceProxy final : public FItemAnimInstanceProxy
 public:
 	uint8                                         Pad_790[0x50];                                     // 0x0790(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGrenadeAnimInstanceProxy) == 0x000010, "Wrong alignment on FGrenadeAnimInstanceProxy");
-static_assert(sizeof(FGrenadeAnimInstanceProxy) == 0x0007E0, "Wrong size on FGrenadeAnimInstanceProxy");
+DUMPER7_ASSERTS_FGrenadeAnimInstanceProxy;
 
 // ScriptStruct BrickRigs.DefaultInputMapping
 // 0x0028 (0x0028 - 0x0000)
@@ -2853,10 +2449,7 @@ public:
 	float                                         Scale;                                             // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDefaultInputMapping) == 0x000008, "Wrong alignment on FDefaultInputMapping");
-static_assert(sizeof(FDefaultInputMapping) == 0x000028, "Wrong size on FDefaultInputMapping");
-static_assert(offsetof(FDefaultInputMapping, Key) == 0x000008, "Member 'FDefaultInputMapping::Key' has a wrong offset!");
-static_assert(offsetof(FDefaultInputMapping, Scale) == 0x000020, "Member 'FDefaultInputMapping::Scale' has a wrong offset!");
+DUMPER7_ASSERTS_FDefaultInputMapping;
 
 // ScriptStruct BrickRigs.InputTableRow
 // 0x00D8 (0x00E0 - 0x0008)
@@ -2881,23 +2474,7 @@ public:
 	uint8                                         Pad_CB[0x5];                                       // 0x00CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDefaultInputMapping>           DefaultMappings;                                   // 0x00D0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInputTableRow) == 0x000008, "Wrong alignment on FInputTableRow");
-static_assert(sizeof(FInputTableRow) == 0x0000E0, "Wrong size on FInputTableRow");
-static_assert(offsetof(FInputTableRow, DisplayInfo) == 0x000008, "Member 'FInputTableRow::DisplayInfo' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, PrimaryActionName) == 0x000030, "Member 'FInputTableRow::PrimaryActionName' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, SecondaryActionName) == 0x000048, "Member 'FInputTableRow::SecondaryActionName' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, PrimaryActionDescription) == 0x000060, "Member 'FInputTableRow::PrimaryActionDescription' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, SecondaryActionDescription) == 0x000078, "Member 'FInputTableRow::SecondaryActionDescription' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, ActionIndex) == 0x000090, "Member 'FInputTableRow::ActionIndex' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, bDisplayActionIndex) == 0x000091, "Member 'FInputTableRow::bDisplayActionIndex' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, Type) == 0x000092, "Member 'FInputTableRow::Type' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, ContextTags) == 0x000098, "Member 'FInputTableRow::ContextTags' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, InputMenuCategory) == 0x0000B8, "Member 'FInputTableRow::InputMenuCategory' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, InputContextCategory) == 0x0000C0, "Member 'FInputTableRow::InputContextCategory' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, bShowInQuickAccess) == 0x0000C8, "Member 'FInputTableRow::bShowInQuickAccess' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, bShowInEditorTopBar) == 0x0000C9, "Member 'FInputTableRow::bShowInEditorTopBar' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, bConsumeInput) == 0x0000CA, "Member 'FInputTableRow::bConsumeInput' has a wrong offset!");
-static_assert(offsetof(FInputTableRow, DefaultMappings) == 0x0000D0, "Member 'FInputTableRow::DefaultMappings' has a wrong offset!");
+DUMPER7_ASSERTS_FInputTableRow;
 
 // ScriptStruct BrickRigs.InventoryItemRef
 // 0x0010 (0x0010 - 0x0000)
@@ -2907,10 +2484,7 @@ public:
 	TWeakObjectPtr<class AInventoryItem>          Item;                                              // 0x0000(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UClass*                                 ItemClass;                                         // 0x0008(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FInventoryItemRef) == 0x000008, "Wrong alignment on FInventoryItemRef");
-static_assert(sizeof(FInventoryItemRef) == 0x000010, "Wrong size on FInventoryItemRef");
-static_assert(offsetof(FInventoryItemRef, Item) == 0x000000, "Member 'FInventoryItemRef::Item' has a wrong offset!");
-static_assert(offsetof(FInventoryItemRef, ItemClass) == 0x000008, "Member 'FInventoryItemRef::ItemClass' has a wrong offset!");
+DUMPER7_ASSERTS_FInventoryItemRef;
 
 // ScriptStruct BrickRigs.InventorySlot
 // 0x0024 (0x0030 - 0x000C)
@@ -2923,12 +2497,7 @@ public:
 	int32                                         Amount;                                            // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInventorySlot) == 0x000008, "Wrong alignment on FInventorySlot");
-static_assert(sizeof(FInventorySlot) == 0x000030, "Wrong size on FInventorySlot");
-static_assert(offsetof(FInventorySlot, SlotID) == 0x00000C, "Member 'FInventorySlot::SlotID' has a wrong offset!");
-static_assert(offsetof(FInventorySlot, ItemRef) == 0x000010, "Member 'FInventorySlot::ItemRef' has a wrong offset!");
-static_assert(offsetof(FInventorySlot, LocalItem) == 0x000020, "Member 'FInventorySlot::LocalItem' has a wrong offset!");
-static_assert(offsetof(FInventorySlot, Amount) == 0x000028, "Member 'FInventorySlot::Amount' has a wrong offset!");
+DUMPER7_ASSERTS_FInventorySlot;
 
 // ScriptStruct BrickRigs.Inventory
 // 0x0018 (0x0120 - 0x0108)
@@ -2938,9 +2507,7 @@ public:
 	uint8                                         Pad_108[0x8];                                      // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FInventorySlot>                 Items;                                             // 0x0110(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInventory) == 0x000008, "Wrong alignment on FInventory");
-static_assert(sizeof(FInventory) == 0x000120, "Wrong size on FInventory");
-static_assert(offsetof(FInventory, Items) == 0x000110, "Member 'FInventory::Items' has a wrong offset!");
+DUMPER7_ASSERTS_FInventory;
 
 // ScriptStruct BrickRigs.InventorySpecialSlot
 // 0x0040 (0x0040 - 0x0000)
@@ -2951,11 +2518,7 @@ public:
 	struct FGameplayTagContainer                  ItemTags;                                          // 0x0018(0x0020)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
 	class FName                                   SocketName;                                        // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FInventorySpecialSlot) == 0x000008, "Wrong alignment on FInventorySpecialSlot");
-static_assert(sizeof(FInventorySpecialSlot) == 0x000040, "Wrong size on FInventorySpecialSlot");
-static_assert(offsetof(FInventorySpecialSlot, DisplayName) == 0x000000, "Member 'FInventorySpecialSlot::DisplayName' has a wrong offset!");
-static_assert(offsetof(FInventorySpecialSlot, ItemTags) == 0x000018, "Member 'FInventorySpecialSlot::ItemTags' has a wrong offset!");
-static_assert(offsetof(FInventorySpecialSlot, SocketName) == 0x000038, "Member 'FInventorySpecialSlot::SocketName' has a wrong offset!");
+DUMPER7_ASSERTS_FInventorySpecialSlot;
 
 // ScriptStruct BrickRigs.InventoryProperties
 // 0x0060 (0x0060 - 0x0000)
@@ -2970,13 +2533,7 @@ public:
 	int32                                         MaxAmountPerSlot;                                  // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInventoryProperties) == 0x000008, "Wrong alignment on FInventoryProperties");
-static_assert(sizeof(FInventoryProperties) == 0x000060, "Wrong size on FInventoryProperties");
-static_assert(offsetof(FInventoryProperties, DisplayName) == 0x000000, "Member 'FInventoryProperties::DisplayName' has a wrong offset!");
-static_assert(offsetof(FInventoryProperties, ItemAddedSound) == 0x000018, "Member 'FInventoryProperties::ItemAddedSound' has a wrong offset!");
-static_assert(offsetof(FInventoryProperties, NumWildcardSlots) == 0x000040, "Member 'FInventoryProperties::NumWildcardSlots' has a wrong offset!");
-static_assert(offsetof(FInventoryProperties, SpecialSlots) == 0x000048, "Member 'FInventoryProperties::SpecialSlots' has a wrong offset!");
-static_assert(offsetof(FInventoryProperties, MaxAmountPerSlot) == 0x000058, "Member 'FInventoryProperties::MaxAmountPerSlot' has a wrong offset!");
+DUMPER7_ASSERTS_FInventoryProperties;
 
 // ScriptStruct BrickRigs.InventoryLoadoutSlot
 // 0x0020 (0x0020 - 0x0000)
@@ -2988,11 +2545,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         Attachments;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInventoryLoadoutSlot) == 0x000008, "Wrong alignment on FInventoryLoadoutSlot");
-static_assert(sizeof(FInventoryLoadoutSlot) == 0x000020, "Wrong size on FInventoryLoadoutSlot");
-static_assert(offsetof(FInventoryLoadoutSlot, ItemClass) == 0x000000, "Member 'FInventoryLoadoutSlot::ItemClass' has a wrong offset!");
-static_assert(offsetof(FInventoryLoadoutSlot, Amount) == 0x000008, "Member 'FInventoryLoadoutSlot::Amount' has a wrong offset!");
-static_assert(offsetof(FInventoryLoadoutSlot, Attachments) == 0x000010, "Member 'FInventoryLoadoutSlot::Attachments' has a wrong offset!");
+DUMPER7_ASSERTS_FInventoryLoadoutSlot;
 
 // ScriptStruct BrickRigs.InventoryLoadout
 // 0x0010 (0x0010 - 0x0000)
@@ -3001,9 +2554,7 @@ struct FInventoryLoadout final
 public:
 	TArray<struct FInventoryLoadoutSlot>          Slots;                                             // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInventoryLoadout) == 0x000008, "Wrong alignment on FInventoryLoadout");
-static_assert(sizeof(FInventoryLoadout) == 0x000010, "Wrong size on FInventoryLoadout");
-static_assert(offsetof(FInventoryLoadout, Slots) == 0x000000, "Member 'FInventoryLoadout::Slots' has a wrong offset!");
+DUMPER7_ASSERTS_FInventoryLoadout;
 
 // ScriptStruct BrickRigs.SprayAnimation
 // 0x0008 (0x00D0 - 0x00C8)
@@ -3013,9 +2564,7 @@ public:
 	float                                         SprayTime;                                         // 0x00C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSprayAnimation) == 0x000008, "Wrong alignment on FSprayAnimation");
-static_assert(sizeof(FSprayAnimation) == 0x0000D0, "Wrong size on FSprayAnimation");
-static_assert(offsetof(FSprayAnimation, SprayTime) == 0x0000C8, "Member 'FSprayAnimation::SprayTime' has a wrong offset!");
+DUMPER7_ASSERTS_FSprayAnimation;
 
 // ScriptStruct BrickRigs.ThrowAnimation
 // 0x0008 (0x00D0 - 0x00C8)
@@ -3025,17 +2574,14 @@ public:
 	float                                         ThrowTime;                                         // 0x00C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FThrowAnimation) == 0x000008, "Wrong alignment on FThrowAnimation");
-static_assert(sizeof(FThrowAnimation) == 0x0000D0, "Wrong size on FThrowAnimation");
-static_assert(offsetof(FThrowAnimation, ThrowTime) == 0x0000C8, "Member 'FThrowAnimation::ThrowTime' has a wrong offset!");
+DUMPER7_ASSERTS_FThrowAnimation;
 
 // ScriptStruct BrickRigs.HealAnimation
 // 0x0000 (0x00C8 - 0x00C8)
 struct FHealAnimation final : public FItemAnimation
 {
 };
-static_assert(alignof(FHealAnimation) == 0x000008, "Wrong alignment on FHealAnimation");
-static_assert(sizeof(FHealAnimation) == 0x0000C8, "Wrong size on FHealAnimation");
+DUMPER7_ASSERTS_FHealAnimation;
 
 // ScriptStruct BrickRigs.ReloadAnimation
 // 0x0008 (0x00D0 - 0x00C8)
@@ -3045,10 +2591,7 @@ public:
 	float                                         GrabMagTime;                                       // 0x00C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InsertedTime;                                      // 0x00CC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FReloadAnimation) == 0x000008, "Wrong alignment on FReloadAnimation");
-static_assert(sizeof(FReloadAnimation) == 0x0000D0, "Wrong size on FReloadAnimation");
-static_assert(offsetof(FReloadAnimation, GrabMagTime) == 0x0000C8, "Member 'FReloadAnimation::GrabMagTime' has a wrong offset!");
-static_assert(offsetof(FReloadAnimation, InsertedTime) == 0x0000CC, "Member 'FReloadAnimation::InsertedTime' has a wrong offset!");
+DUMPER7_ASSERTS_FReloadAnimation;
 
 // ScriptStruct BrickRigs.CockAnimation
 // 0x0008 (0x00D0 - 0x00C8)
@@ -3058,10 +2601,7 @@ public:
 	float                                         PulledTime;                                        // 0x00C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReleasedTime;                                      // 0x00CC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCockAnimation) == 0x000008, "Wrong alignment on FCockAnimation");
-static_assert(sizeof(FCockAnimation) == 0x0000D0, "Wrong size on FCockAnimation");
-static_assert(offsetof(FCockAnimation, PulledTime) == 0x0000C8, "Member 'FCockAnimation::PulledTime' has a wrong offset!");
-static_assert(offsetof(FCockAnimation, ReleasedTime) == 0x0000CC, "Member 'FCockAnimation::ReleasedTime' has a wrong offset!");
+DUMPER7_ASSERTS_FCockAnimation;
 
 // ScriptStruct BrickRigs.FireAnimation
 // 0x0030 (0x00F8 - 0x00C8)
@@ -3071,26 +2611,21 @@ public:
 	class UAnimMontage*                           FireEmptyMontage;                                  // 0x00C8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UAnimSequenceBase>       FireEmptySequence;                                 // 0x00D0(0x0028)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFireAnimation) == 0x000008, "Wrong alignment on FFireAnimation");
-static_assert(sizeof(FFireAnimation) == 0x0000F8, "Wrong size on FFireAnimation");
-static_assert(offsetof(FFireAnimation, FireEmptyMontage) == 0x0000C8, "Member 'FFireAnimation::FireEmptyMontage' has a wrong offset!");
-static_assert(offsetof(FFireAnimation, FireEmptySequence) == 0x0000D0, "Member 'FFireAnimation::FireEmptySequence' has a wrong offset!");
+DUMPER7_ASSERTS_FFireAnimation;
 
 // ScriptStruct BrickRigs.UnequipAnimation
 // 0x0000 (0x00C8 - 0x00C8)
 struct FUnequipAnimation final : public FItemAnimation
 {
 };
-static_assert(alignof(FUnequipAnimation) == 0x000008, "Wrong alignment on FUnequipAnimation");
-static_assert(sizeof(FUnequipAnimation) == 0x0000C8, "Wrong size on FUnequipAnimation");
+DUMPER7_ASSERTS_FUnequipAnimation;
 
 // ScriptStruct BrickRigs.EquipAnimation
 // 0x0000 (0x00C8 - 0x00C8)
 struct FEquipAnimation final : public FItemAnimation
 {
 };
-static_assert(alignof(FEquipAnimation) == 0x000008, "Wrong alignment on FEquipAnimation");
-static_assert(sizeof(FEquipAnimation) == 0x0000C8, "Wrong size on FEquipAnimation");
+DUMPER7_ASSERTS_FEquipAnimation;
 
 // ScriptStruct BrickRigs.ItemRefPoseOverride
 // 0x0040 (0x0040 - 0x0000)
@@ -3101,10 +2636,7 @@ public:
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             RelativeTransform;                                 // 0x0010(0x0030)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FItemRefPoseOverride) == 0x000010, "Wrong alignment on FItemRefPoseOverride");
-static_assert(sizeof(FItemRefPoseOverride) == 0x000040, "Wrong size on FItemRefPoseOverride");
-static_assert(offsetof(FItemRefPoseOverride, BoneName) == 0x000000, "Member 'FItemRefPoseOverride::BoneName' has a wrong offset!");
-static_assert(offsetof(FItemRefPoseOverride, RelativeTransform) == 0x000010, "Member 'FItemRefPoseOverride::RelativeTransform' has a wrong offset!");
+DUMPER7_ASSERTS_FItemRefPoseOverride;
 
 // ScriptStruct BrickRigs.KeyDisplayTableRow
 // 0x0020 (0x0028 - 0x0008)
@@ -3115,10 +2647,7 @@ public:
 	int32                                         IconIndex;                                         // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FKeyDisplayTableRow) == 0x000008, "Wrong alignment on FKeyDisplayTableRow");
-static_assert(sizeof(FKeyDisplayTableRow) == 0x000028, "Wrong size on FKeyDisplayTableRow");
-static_assert(offsetof(FKeyDisplayTableRow, DisplayName) == 0x000008, "Member 'FKeyDisplayTableRow::DisplayName' has a wrong offset!");
-static_assert(offsetof(FKeyDisplayTableRow, IconIndex) == 0x000020, "Member 'FKeyDisplayTableRow::IconIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FKeyDisplayTableRow;
 
 // ScriptStruct BrickRigs.KickedPlayerListRequest
 // 0x0030 (0x0030 - 0x0000)
@@ -3127,8 +2656,7 @@ struct alignas(0x08) FKickedPlayerListRequest final
 public:
 	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FKickedPlayerListRequest) == 0x000008, "Wrong alignment on FKickedPlayerListRequest");
-static_assert(sizeof(FKickedPlayerListRequest) == 0x000030, "Wrong size on FKickedPlayerListRequest");
+DUMPER7_ASSERTS_FKickedPlayerListRequest;
 
 // ScriptStruct BrickRigs.KickedPlayerList
 // 0x0018 (0x0018 - 0x0000)
@@ -3137,8 +2665,7 @@ struct alignas(0x08) FKickedPlayerList final
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FKickedPlayerList) == 0x000008, "Wrong alignment on FKickedPlayerList");
-static_assert(sizeof(FKickedPlayerList) == 0x000018, "Wrong size on FKickedPlayerList");
+DUMPER7_ASSERTS_FKickedPlayerList;
 
 // ScriptStruct BrickRigs.KickedPlayer
 // 0x0058 (0x0060 - 0x0008)
@@ -3151,13 +2678,7 @@ public:
 	struct FTimespan                              KickDuration;                                      // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 KickReason;                                        // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FKickedPlayer) == 0x000008, "Wrong alignment on FKickedPlayer");
-static_assert(sizeof(FKickedPlayer) == 0x000060, "Wrong size on FKickedPlayer");
-static_assert(offsetof(FKickedPlayer, PlayerId) == 0x000008, "Member 'FKickedPlayer::PlayerId' has a wrong offset!");
-static_assert(offsetof(FKickedPlayer, PlayerName) == 0x000030, "Member 'FKickedPlayer::PlayerName' has a wrong offset!");
-static_assert(offsetof(FKickedPlayer, KickTime) == 0x000040, "Member 'FKickedPlayer::KickTime' has a wrong offset!");
-static_assert(offsetof(FKickedPlayer, KickDuration) == 0x000048, "Member 'FKickedPlayer::KickDuration' has a wrong offset!");
-static_assert(offsetof(FKickedPlayer, KickReason) == 0x000050, "Member 'FKickedPlayer::KickReason' has a wrong offset!");
+DUMPER7_ASSERTS_FKickedPlayer;
 
 // ScriptStruct BrickRigs.BuildingMaterialOverride
 // 0x0010 (0x0010 - 0x0000)
@@ -3167,10 +2688,7 @@ public:
 	class UMaterialInterface*                     FromMaterial;                                      // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMaterialInterface*                     ToMaterial;                                        // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBuildingMaterialOverride) == 0x000008, "Wrong alignment on FBuildingMaterialOverride");
-static_assert(sizeof(FBuildingMaterialOverride) == 0x000010, "Wrong size on FBuildingMaterialOverride");
-static_assert(offsetof(FBuildingMaterialOverride, FromMaterial) == 0x000000, "Member 'FBuildingMaterialOverride::FromMaterial' has a wrong offset!");
-static_assert(offsetof(FBuildingMaterialOverride, ToMaterial) == 0x000008, "Member 'FBuildingMaterialOverride::ToMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_FBuildingMaterialOverride;
 
 // ScriptStruct BrickRigs.BuildingMesh
 // 0x0008 (0x0008 - 0x0000)
@@ -3179,9 +2697,7 @@ struct FBuildingMesh final
 public:
 	class UDestructibleInstanceTemplate*          Template;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBuildingMesh) == 0x000008, "Wrong alignment on FBuildingMesh");
-static_assert(sizeof(FBuildingMesh) == 0x000008, "Wrong size on FBuildingMesh");
-static_assert(offsetof(FBuildingMesh, Template) == 0x000000, "Member 'FBuildingMesh::Template' has a wrong offset!");
+DUMPER7_ASSERTS_FBuildingMesh;
 
 // ScriptStruct BrickRigs.LightBrickEditorParams
 // 0x0010 (0x0048 - 0x0038)
@@ -3190,8 +2706,7 @@ struct FLightBrickEditorParams final : public FScalableBrickEditorParams
 public:
 	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FLightBrickEditorParams) == 0x000008, "Wrong alignment on FLightBrickEditorParams");
-static_assert(sizeof(FLightBrickEditorParams) == 0x000048, "Wrong size on FLightBrickEditorParams");
+DUMPER7_ASSERTS_FLightBrickEditorParams;
 
 // ScriptStruct BrickRigs.MatchWinner
 // 0x0001 (0x0001 - 0x0000)
@@ -3200,9 +2715,7 @@ struct FMatchWinner final
 public:
 	struct FGenericTeamId                         WinnerTeamId;                                      // 0x0000(0x0001)(Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMatchWinner) == 0x000001, "Wrong alignment on FMatchWinner");
-static_assert(sizeof(FMatchWinner) == 0x000001, "Wrong size on FMatchWinner");
-static_assert(offsetof(FMatchWinner, WinnerTeamId) == 0x000000, "Member 'FMatchWinner::WinnerTeamId' has a wrong offset!");
+DUMPER7_ASSERTS_FMatchWinner;
 
 // ScriptStruct BrickRigs.MenuSequenceProperties
 // 0x0020 (0x0020 - 0x0000)
@@ -3215,13 +2728,7 @@ public:
 	int32                                         PlayOnDayOfWeek;                                   // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FWorldSetupParams>              WorldSetupParamsOverrides;                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMenuSequenceProperties) == 0x000008, "Wrong alignment on FMenuSequenceProperties");
-static_assert(sizeof(FMenuSequenceProperties) == 0x000020, "Wrong size on FMenuSequenceProperties");
-static_assert(offsetof(FMenuSequenceProperties, ProbabilityWeight) == 0x000000, "Member 'FMenuSequenceProperties::ProbabilityWeight' has a wrong offset!");
-static_assert(offsetof(FMenuSequenceProperties, PlayOnDayOfMonth) == 0x000004, "Member 'FMenuSequenceProperties::PlayOnDayOfMonth' has a wrong offset!");
-static_assert(offsetof(FMenuSequenceProperties, PlayDuringMonth) == 0x000008, "Member 'FMenuSequenceProperties::PlayDuringMonth' has a wrong offset!");
-static_assert(offsetof(FMenuSequenceProperties, PlayOnDayOfWeek) == 0x00000C, "Member 'FMenuSequenceProperties::PlayOnDayOfWeek' has a wrong offset!");
-static_assert(offsetof(FMenuSequenceProperties, WorldSetupParamsOverrides) == 0x000010, "Member 'FMenuSequenceProperties::WorldSetupParamsOverrides' has a wrong offset!");
+DUMPER7_ASSERTS_FMenuSequenceProperties;
 
 // ScriptStruct BrickRigs.RestartTransformVersion
 // 0x0001 (0x0001 - 0x0000)
@@ -3230,8 +2737,7 @@ struct FRestartTransformVersion final
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRestartTransformVersion) == 0x000001, "Wrong alignment on FRestartTransformVersion");
-static_assert(sizeof(FRestartTransformVersion) == 0x000001, "Wrong size on FRestartTransformVersion");
+DUMPER7_ASSERTS_FRestartTransformVersion;
 
 // ScriptStruct BrickRigs.PawnRestartTransform
 // 0x001C (0x001C - 0x0000)
@@ -3243,11 +2749,7 @@ public:
 	struct FVector_NetQuantize100                 Location;                                          // 0x0004(0x000C)(Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FRotator                               Rotation;                                          // 0x0010(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FPawnRestartTransform) == 0x000004, "Wrong alignment on FPawnRestartTransform");
-static_assert(sizeof(FPawnRestartTransform) == 0x00001C, "Wrong size on FPawnRestartTransform");
-static_assert(offsetof(FPawnRestartTransform, ComparisonIndex) == 0x000000, "Member 'FPawnRestartTransform::ComparisonIndex' has a wrong offset!");
-static_assert(offsetof(FPawnRestartTransform, Location) == 0x000004, "Member 'FPawnRestartTransform::Location' has a wrong offset!");
-static_assert(offsetof(FPawnRestartTransform, Rotation) == 0x000010, "Member 'FPawnRestartTransform::Rotation' has a wrong offset!");
+DUMPER7_ASSERTS_FPawnRestartTransform;
 
 // ScriptStruct BrickRigs.PlayerSpawnRequest
 // 0x0118 (0x0118 - 0x0000)
@@ -3263,14 +2765,7 @@ public:
 	EPlayerVehicleSpawnInvincibility              VehicleInvincibility;                              // 0x0111(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_112[0x6];                                      // 0x0112(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPlayerSpawnRequest) == 0x000008, "Wrong alignment on FPlayerSpawnRequest");
-static_assert(sizeof(FPlayerSpawnRequest) == 0x000118, "Wrong size on FPlayerSpawnRequest");
-static_assert(offsetof(FPlayerSpawnRequest, Type) == 0x000000, "Member 'FPlayerSpawnRequest::Type' has a wrong offset!");
-static_assert(offsetof(FPlayerSpawnRequest, SpawnTransform) == 0x000004, "Member 'FPlayerSpawnRequest::SpawnTransform' has a wrong offset!");
-static_assert(offsetof(FPlayerSpawnRequest, SpawnPoint) == 0x000020, "Member 'FPlayerSpawnRequest::SpawnPoint' has a wrong offset!");
-static_assert(offsetof(FPlayerSpawnRequest, VehicleFileInfo) == 0x000028, "Member 'FPlayerSpawnRequest::VehicleFileInfo' has a wrong offset!");
-static_assert(offsetof(FPlayerSpawnRequest, VehicleSpawnType) == 0x000110, "Member 'FPlayerSpawnRequest::VehicleSpawnType' has a wrong offset!");
-static_assert(offsetof(FPlayerSpawnRequest, VehicleInvincibility) == 0x000111, "Member 'FPlayerSpawnRequest::VehicleInvincibility' has a wrong offset!");
+DUMPER7_ASSERTS_FPlayerSpawnRequest;
 
 // ScriptStruct BrickRigs.VehicleSpawnProperties
 // 0x0018 (0x0018 - 0x0000)
@@ -3283,12 +2778,7 @@ public:
 	float                                         Mass;                                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Price;                                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FVehicleSpawnProperties) == 0x000004, "Wrong alignment on FVehicleSpawnProperties");
-static_assert(sizeof(FVehicleSpawnProperties) == 0x000018, "Wrong size on FVehicleSpawnProperties");
-static_assert(offsetof(FVehicleSpawnProperties, NumBricks) == 0x000000, "Member 'FVehicleSpawnProperties::NumBricks' has a wrong offset!");
-static_assert(offsetof(FVehicleSpawnProperties, Dimensions) == 0x000004, "Member 'FVehicleSpawnProperties::Dimensions' has a wrong offset!");
-static_assert(offsetof(FVehicleSpawnProperties, Mass) == 0x000010, "Member 'FVehicleSpawnProperties::Mass' has a wrong offset!");
-static_assert(offsetof(FVehicleSpawnProperties, Price) == 0x000014, "Member 'FVehicleSpawnProperties::Price' has a wrong offset!");
+DUMPER7_ASSERTS_FVehicleSpawnProperties;
 
 // ScriptStruct BrickRigs.PlayerViewPoint
 // 0x0018 (0x0018 - 0x0000)
@@ -3297,8 +2787,7 @@ struct alignas(0x04) FPlayerViewPoint final
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPlayerViewPoint) == 0x000004, "Wrong alignment on FPlayerViewPoint");
-static_assert(sizeof(FPlayerViewPoint) == 0x000018, "Wrong size on FPlayerViewPoint");
+DUMPER7_ASSERTS_FPlayerViewPoint;
 
 // ScriptStruct BrickRigs.PopupHandle
 // 0x0004 (0x0004 - 0x0000)
@@ -3307,8 +2796,7 @@ struct alignas(0x04) FPopupHandle final
 public:
 	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPopupHandle) == 0x000004, "Wrong alignment on FPopupHandle");
-static_assert(sizeof(FPopupHandle) == 0x000004, "Wrong size on FPopupHandle");
+DUMPER7_ASSERTS_FPopupHandle;
 
 // ScriptStruct BrickRigs.RepHitInfo
 // 0x0038 (0x0038 - 0x0000)
@@ -3317,8 +2805,7 @@ struct alignas(0x04) FRepHitInfo
 public:
 	uint8                                         Pad_0[0x38];                                       // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRepHitInfo) == 0x000004, "Wrong alignment on FRepHitInfo");
-static_assert(sizeof(FRepHitInfo) == 0x000038, "Wrong size on FRepHitInfo");
+DUMPER7_ASSERTS_FRepHitInfo;
 
 // ScriptStruct BrickRigs.ProjectileHitInfo
 // 0x0010 (0x0048 - 0x0038)
@@ -3327,8 +2814,7 @@ struct FProjectileHitInfo final : public FRepHitInfo
 public:
 	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FProjectileHitInfo) == 0x000004, "Wrong alignment on FProjectileHitInfo");
-static_assert(sizeof(FProjectileHitInfo) == 0x000048, "Wrong size on FProjectileHitInfo");
+DUMPER7_ASSERTS_FProjectileHitInfo;
 
 // ScriptStruct BrickRigs.RepBrickMovement
 // 0x0054 (0x0060 - 0x000C)
@@ -3337,8 +2823,7 @@ struct alignas(0x10) FRepBrickMovement final : public FFastArraySerializerItem
 public:
 	uint8                                         Pad_C[0x54];                                       // 0x000C(0x0054)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRepBrickMovement) == 0x000010, "Wrong alignment on FRepBrickMovement");
-static_assert(sizeof(FRepBrickMovement) == 0x000060, "Wrong size on FRepBrickMovement");
+DUMPER7_ASSERTS_FRepBrickMovement;
 
 // ScriptStruct BrickRigs.RepVehicleMovement
 // 0x0018 (0x0120 - 0x0108)
@@ -3348,9 +2833,7 @@ public:
 	uint8                                         Pad_108[0x8];                                      // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRepBrickMovement>              Items;                                             // 0x0110(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRepVehicleMovement) == 0x000008, "Wrong alignment on FRepVehicleMovement");
-static_assert(sizeof(FRepVehicleMovement) == 0x000120, "Wrong size on FRepVehicleMovement");
-static_assert(offsetof(FRepVehicleMovement, Items) == 0x000110, "Member 'FRepVehicleMovement::Items' has a wrong offset!");
+DUMPER7_ASSERTS_FRepVehicleMovement;
 
 // ScriptStruct BrickRigs.RepBrickMovementState
 // 0x0040 (0x0040 - 0x0000)
@@ -3359,8 +2842,7 @@ struct alignas(0x10) FRepBrickMovementState final
 public:
 	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRepBrickMovementState) == 0x000010, "Wrong alignment on FRepBrickMovementState");
-static_assert(sizeof(FRepBrickMovementState) == 0x000040, "Wrong size on FRepBrickMovementState");
+DUMPER7_ASSERTS_FRepBrickMovementState;
 
 // ScriptStruct BrickRigs.ScalableBrickReplacementMesh
 // 0x0018 (0x0018 - 0x0000)
@@ -3371,10 +2853,7 @@ public:
 	struct FVector                                MinSize;                                           // 0x0008(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FScalableBrickReplacementMesh) == 0x000008, "Wrong alignment on FScalableBrickReplacementMesh");
-static_assert(sizeof(FScalableBrickReplacementMesh) == 0x000018, "Wrong size on FScalableBrickReplacementMesh");
-static_assert(offsetof(FScalableBrickReplacementMesh, Mesh) == 0x000000, "Member 'FScalableBrickReplacementMesh::Mesh' has a wrong offset!");
-static_assert(offsetof(FScalableBrickReplacementMesh, MinSize) == 0x000008, "Member 'FScalableBrickReplacementMesh::MinSize' has a wrong offset!");
+DUMPER7_ASSERTS_FScalableBrickReplacementMesh;
 
 // ScriptStruct BrickRigs.ScalableBrickConnectorSpacing
 // 0x0002 (0x0002 - 0x0000)
@@ -3383,8 +2862,7 @@ struct alignas(0x02) FScalableBrickConnectorSpacing final
 public:
 	uint8                                         Pad_0[0x2];                                        // 0x0000(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FScalableBrickConnectorSpacing) == 0x000002, "Wrong alignment on FScalableBrickConnectorSpacing");
-static_assert(sizeof(FScalableBrickConnectorSpacing) == 0x000002, "Wrong size on FScalableBrickConnectorSpacing");
+DUMPER7_ASSERTS_FScalableBrickConnectorSpacing;
 
 // ScriptStruct BrickRigs.SensorBrickEditorParams
 // 0x0020 (0x0058 - 0x0038)
@@ -3393,8 +2871,7 @@ struct FSensorBrickEditorParams final : public FScalableBrickEditorParams
 public:
 	uint8                                         Pad_38[0x20];                                      // 0x0038(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSensorBrickEditorParams) == 0x000008, "Wrong alignment on FSensorBrickEditorParams");
-static_assert(sizeof(FSensorBrickEditorParams) == 0x000058, "Wrong size on FSensorBrickEditorParams");
+DUMPER7_ASSERTS_FSensorBrickEditorParams;
 
 // ScriptStruct BrickRigs.SirenSequenceChannel
 // 0x0018 (0x0018 - 0x0000)
@@ -3405,10 +2882,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 Timings;                                           // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSirenSequenceChannel) == 0x000008, "Wrong alignment on FSirenSequenceChannel");
-static_assert(sizeof(FSirenSequenceChannel) == 0x000018, "Wrong size on FSirenSequenceChannel");
-static_assert(offsetof(FSirenSequenceChannel, bStartActivated) == 0x000000, "Member 'FSirenSequenceChannel::bStartActivated' has a wrong offset!");
-static_assert(offsetof(FSirenSequenceChannel, Timings) == 0x000008, "Member 'FSirenSequenceChannel::Timings' has a wrong offset!");
+DUMPER7_ASSERTS_FSirenSequenceChannel;
 
 // ScriptStruct BrickRigs.SurfaceTypeEffects
 // 0x0038 (0x0038 - 0x0000)
@@ -3423,15 +2897,7 @@ public:
 	class UMaterialInterface*                     ImpactDecalMaterial;                               // 0x0028(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFloatInterval                         ImpactDecalSizeRange;                              // 0x0030(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSurfaceTypeEffects) == 0x000008, "Wrong alignment on FSurfaceTypeEffects");
-static_assert(sizeof(FSurfaceTypeEffects) == 0x000038, "Wrong size on FSurfaceTypeEffects");
-static_assert(offsetof(FSurfaceTypeEffects, FootstepSound) == 0x000000, "Member 'FSurfaceTypeEffects::FootstepSound' has a wrong offset!");
-static_assert(offsetof(FSurfaceTypeEffects, ImpactEmitter) == 0x000008, "Member 'FSurfaceTypeEffects::ImpactEmitter' has a wrong offset!");
-static_assert(offsetof(FSurfaceTypeEffects, ImpactSound) == 0x000010, "Member 'FSurfaceTypeEffects::ImpactSound' has a wrong offset!");
-static_assert(offsetof(FSurfaceTypeEffects, SlidingEmitter) == 0x000018, "Member 'FSurfaceTypeEffects::SlidingEmitter' has a wrong offset!");
-static_assert(offsetof(FSurfaceTypeEffects, SlidingSound) == 0x000020, "Member 'FSurfaceTypeEffects::SlidingSound' has a wrong offset!");
-static_assert(offsetof(FSurfaceTypeEffects, ImpactDecalMaterial) == 0x000028, "Member 'FSurfaceTypeEffects::ImpactDecalMaterial' has a wrong offset!");
-static_assert(offsetof(FSurfaceTypeEffects, ImpactDecalSizeRange) == 0x000030, "Member 'FSurfaceTypeEffects::ImpactDecalSizeRange' has a wrong offset!");
+DUMPER7_ASSERTS_FSurfaceTypeEffects;
 
 // ScriptStruct BrickRigs.TrainSegment
 // 0x0018 (0x0018 - 0x0000)
@@ -3443,12 +2909,7 @@ public:
 	float                                         FrontCouplingOffset;                               // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         BackCouplingOffset;                                // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTrainSegment) == 0x000008, "Wrong alignment on FTrainSegment");
-static_assert(sizeof(FTrainSegment) == 0x000018, "Wrong size on FTrainSegment");
-static_assert(offsetof(FTrainSegment, Mesh) == 0x000000, "Member 'FTrainSegment::Mesh' has a wrong offset!");
-static_assert(offsetof(FTrainSegment, MaterialOverride) == 0x000008, "Member 'FTrainSegment::MaterialOverride' has a wrong offset!");
-static_assert(offsetof(FTrainSegment, FrontCouplingOffset) == 0x000010, "Member 'FTrainSegment::FrontCouplingOffset' has a wrong offset!");
-static_assert(offsetof(FTrainSegment, BackCouplingOffset) == 0x000014, "Member 'FTrainSegment::BackCouplingOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FTrainSegment;
 
 // ScriptStruct BrickRigs.TrainTrack
 // 0x0040 (0x0040 - 0x0000)
@@ -3459,11 +2920,7 @@ public:
 	TArray<float>                                 RollCurve;                                         // 0x0018(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FInterpCurveFloat                      TimeCurve;                                         // 0x0028(0x0018)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTrainTrack) == 0x000008, "Wrong alignment on FTrainTrack");
-static_assert(sizeof(FTrainTrack) == 0x000040, "Wrong size on FTrainTrack");
-static_assert(offsetof(FTrainTrack, PositionCurve) == 0x000000, "Member 'FTrainTrack::PositionCurve' has a wrong offset!");
-static_assert(offsetof(FTrainTrack, RollCurve) == 0x000018, "Member 'FTrainTrack::RollCurve' has a wrong offset!");
-static_assert(offsetof(FTrainTrack, TimeCurve) == 0x000028, "Member 'FTrainTrack::TimeCurve' has a wrong offset!");
+DUMPER7_ASSERTS_FTrainTrack;
 
 // ScriptStruct BrickRigs.WidgetPathWrapper
 // 0x0008 (0x0008 - 0x0000)
@@ -3472,8 +2929,7 @@ struct alignas(0x08) FWidgetPathWrapper final
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWidgetPathWrapper) == 0x000008, "Wrong alignment on FWidgetPathWrapper");
-static_assert(sizeof(FWidgetPathWrapper) == 0x000008, "Wrong size on FWidgetPathWrapper");
+DUMPER7_ASSERTS_FWidgetPathWrapper;
 
 // ScriptStruct BrickRigs.RepBrickDamage
 // 0x0018 (0x0120 - 0x0108)
@@ -3483,9 +2939,7 @@ public:
 	uint8                                         Pad_108[0x8];                                      // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRepBrickDamageItem>            Items;                                             // 0x0110(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRepBrickDamage) == 0x000008, "Wrong alignment on FRepBrickDamage");
-static_assert(sizeof(FRepBrickDamage) == 0x000120, "Wrong size on FRepBrickDamage");
-static_assert(offsetof(FRepBrickDamage, Items) == 0x000110, "Member 'FRepBrickDamage::Items' has a wrong offset!");
+DUMPER7_ASSERTS_FRepBrickDamage;
 
 // ScriptStruct BrickRigs.BrickConnectionDamageBitfield
 // 0x0010 (0x0010 - 0x0000)
@@ -3494,8 +2948,7 @@ struct alignas(0x08) FBrickConnectionDamageBitfield final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrickConnectionDamageBitfield) == 0x000008, "Wrong alignment on FBrickConnectionDamageBitfield");
-static_assert(sizeof(FBrickConnectionDamageBitfield) == 0x000010, "Wrong size on FBrickConnectionDamageBitfield");
+DUMPER7_ASSERTS_FBrickConnectionDamageBitfield;
 
 // ScriptStruct BrickRigs.RepBrickConnectionDamage
 // 0x0018 (0x0120 - 0x0108)
@@ -3505,9 +2958,7 @@ public:
 	uint8                                         Pad_108[0x8];                                      // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRepBrickConnectionDamageItem>  Items;                                             // 0x0110(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRepBrickConnectionDamage) == 0x000008, "Wrong alignment on FRepBrickConnectionDamage");
-static_assert(sizeof(FRepBrickConnectionDamage) == 0x000120, "Wrong size on FRepBrickConnectionDamage");
-static_assert(offsetof(FRepBrickConnectionDamage, Items) == 0x000110, "Member 'FRepBrickConnectionDamage::Items' has a wrong offset!");
+DUMPER7_ASSERTS_FRepBrickConnectionDamage;
 
 // ScriptStruct BrickRigs.VehicleDataRepl
 // 0x0018 (0x0018 - 0x0000)
@@ -3516,8 +2967,7 @@ struct alignas(0x08) FVehicleDataRepl final
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FVehicleDataRepl) == 0x000008, "Wrong alignment on FVehicleDataRepl");
-static_assert(sizeof(FVehicleDataRepl) == 0x000018, "Wrong size on FVehicleDataRepl");
+DUMPER7_ASSERTS_FVehicleDataRepl;
 
 // ScriptStruct BrickRigs.VehicleInput
 // 0x0020 (0x0020 - 0x0000)
@@ -3526,8 +2976,7 @@ struct alignas(0x04) FVehicleInput final
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FVehicleInput) == 0x000004, "Wrong alignment on FVehicleInput");
-static_assert(sizeof(FVehicleInput) == 0x000020, "Wrong size on FVehicleInput");
+DUMPER7_ASSERTS_FVehicleInput;
 
 // ScriptStruct BrickRigs.VehicleInputChannel
 // 0x0020 (0x0028 - 0x0008)
@@ -3540,11 +2989,7 @@ public:
 	float                                         Value;                                             // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FVehicleInputChannel) == 0x000008, "Wrong alignment on FVehicleInputChannel");
-static_assert(sizeof(FVehicleInputChannel) == 0x000028, "Wrong size on FVehicleInputChannel");
-static_assert(offsetof(FVehicleInputChannel, InputAxis) == 0x000008, "Member 'FVehicleInputChannel::InputAxis' has a wrong offset!");
-static_assert(offsetof(FVehicleInputChannel, SourceBricks) == 0x000010, "Member 'FVehicleInputChannel::SourceBricks' has a wrong offset!");
-static_assert(offsetof(FVehicleInputChannel, Value) == 0x000020, "Member 'FVehicleInputChannel::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FVehicleInputChannel;
 
 // ScriptStruct BrickRigs.ViewTargetZoomParams
 // 0x0008 (0x0018 - 0x0010)
@@ -3553,9 +2998,7 @@ struct FViewTargetZoomParams final : public FViewTargetSharedParams
 public:
 	struct FFloatInterval                         ZoomRange;                                         // 0x0010(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FViewTargetZoomParams) == 0x000004, "Wrong alignment on FViewTargetZoomParams");
-static_assert(sizeof(FViewTargetZoomParams) == 0x000018, "Wrong size on FViewTargetZoomParams");
-static_assert(offsetof(FViewTargetZoomParams, ZoomRange) == 0x000010, "Member 'FViewTargetZoomParams::ZoomRange' has a wrong offset!");
+DUMPER7_ASSERTS_FViewTargetZoomParams;
 
 // ScriptStruct BrickRigs.WeatherConditionParams
 // 0x0060 (0x0060 - 0x0000)
@@ -3579,31 +3022,13 @@ public:
 	float                                         LightningFrequency;                                // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinLightningDelay;                                 // 0x005C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWeatherConditionParams) == 0x000008, "Wrong alignment on FWeatherConditionParams");
-static_assert(sizeof(FWeatherConditionParams) == 0x000060, "Wrong size on FWeatherConditionParams");
-static_assert(offsetof(FWeatherConditionParams, AmbientSound) == 0x000000, "Member 'FWeatherConditionParams::AmbientSound' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, Temperature) == 0x000028, "Member 'FWeatherConditionParams::Temperature' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, WindSpeed) == 0x00002C, "Member 'FWeatherConditionParams::WindSpeed' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, WindSpeedVariance) == 0x000030, "Member 'FWeatherConditionParams::WindSpeedVariance' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, WindDirectionVariance) == 0x000034, "Member 'FWeatherConditionParams::WindDirectionVariance' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, WindPeriod) == 0x000038, "Member 'FWeatherConditionParams::WindPeriod' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, CloudDensity) == 0x00003C, "Member 'FWeatherConditionParams::CloudDensity' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, CloudHeight) == 0x000040, "Member 'FWeatherConditionParams::CloudHeight' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, MaxFogOpacity) == 0x000044, "Member 'FWeatherConditionParams::MaxFogOpacity' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, PrecipitationType) == 0x000048, "Member 'FWeatherConditionParams::PrecipitationType' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, PrecipitationIntensity) == 0x00004C, "Member 'FWeatherConditionParams::PrecipitationIntensity' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, SnowCoverage) == 0x000050, "Member 'FWeatherConditionParams::SnowCoverage' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, RainCoverage) == 0x000054, "Member 'FWeatherConditionParams::RainCoverage' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, LightningFrequency) == 0x000058, "Member 'FWeatherConditionParams::LightningFrequency' has a wrong offset!");
-static_assert(offsetof(FWeatherConditionParams, MinLightningDelay) == 0x00005C, "Member 'FWeatherConditionParams::MinLightningDelay' has a wrong offset!");
+DUMPER7_ASSERTS_FWeatherConditionParams;
 
 // ScriptStruct BrickRigs.ZombieAnimInstanceProxy
 // 0x0000 (0x0840 - 0x0840)
 struct FZombieAnimInstanceProxy final : public FCharacterAnimInstanceProxy
 {
 };
-static_assert(alignof(FZombieAnimInstanceProxy) == 0x000010, "Wrong alignment on FZombieAnimInstanceProxy");
-static_assert(sizeof(FZombieAnimInstanceProxy) == 0x000840, "Wrong size on FZombieAnimInstanceProxy");
+DUMPER7_ASSERTS_FZombieAnimInstanceProxy;
 
-}
-
+SDK_NAMESPACE_END

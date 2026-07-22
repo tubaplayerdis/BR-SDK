@@ -14,8 +14,7 @@
 #include "FluMoveSync_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FluMoveSync.FluMoveSyncKinematicActor.SetInterpolatedComponent
 // (Final, Native, Public, BlueprintCallable)
@@ -66,5 +65,5 @@ void AFluMoveSyncKinematicActor::SetMovementComponent(class UMovementComponent* 
 	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

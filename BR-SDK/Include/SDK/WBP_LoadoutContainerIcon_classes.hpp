@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_LoadoutContainerIcon.WBP_LoadoutContainerIcon_C
 // 0x0000 (0x0288 - 0x0288)
@@ -26,15 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_LoadoutContainerIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_LoadoutContainerIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_LoadoutContainerIcon_C")
 	}
 	static class UWBP_LoadoutContainerIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_LoadoutContainerIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_LoadoutContainerIcon_C) == 0x000008, "Wrong alignment on UWBP_LoadoutContainerIcon_C");
-static_assert(sizeof(UWBP_LoadoutContainerIcon_C) == 0x000288, "Wrong size on UWBP_LoadoutContainerIcon_C");
+DUMPER7_ASSERTS_UWBP_LoadoutContainerIcon_C;
 
-}
-
+SDK_NAMESPACE_END

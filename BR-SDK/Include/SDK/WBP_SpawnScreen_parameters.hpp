@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_SpawnScreen.WBP_SpawnScreen_C.AddGameOverlayWidget
 // 0x0020 (0x0020 - 0x0000)
@@ -25,12 +25,7 @@ public:
 	class UWBP_Map_C*                             K2Node_DynamicCast_AsWBP_Map;                      // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_SpawnScreen_C_AddGameOverlayWidget) == 0x000008, "Wrong alignment on WBP_SpawnScreen_C_AddGameOverlayWidget");
-static_assert(sizeof(WBP_SpawnScreen_C_AddGameOverlayWidget) == 0x000020, "Wrong size on WBP_SpawnScreen_C_AddGameOverlayWidget");
-static_assert(offsetof(WBP_SpawnScreen_C_AddGameOverlayWidget, Widget) == 0x000000, "Member 'WBP_SpawnScreen_C_AddGameOverlayWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_SpawnScreen_C_AddGameOverlayWidget, ReturnValue) == 0x000008, "Member 'WBP_SpawnScreen_C_AddGameOverlayWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SpawnScreen_C_AddGameOverlayWidget, K2Node_DynamicCast_AsWBP_Map) == 0x000010, "Member 'WBP_SpawnScreen_C_AddGameOverlayWidget::K2Node_DynamicCast_AsWBP_Map' has a wrong offset!");
-static_assert(offsetof(WBP_SpawnScreen_C_AddGameOverlayWidget, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_SpawnScreen_C_AddGameOverlayWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_SpawnScreen_C_AddGameOverlayWidget;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

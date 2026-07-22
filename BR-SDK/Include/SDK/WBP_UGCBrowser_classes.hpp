@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UGCBrowser.WBP_UGCBrowser_C
 // 0x0048 (0x03B0 - 0x0368)
@@ -34,62 +33,58 @@ public:
 	class FText                                   Spawn_Failure_Text;                                // 0x0398(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	bool GetSpawnButtonTooltipContent(struct FTooltipContent* OutContent);
-	void CreateClearItemsButton(bool bIsArrayProperty);
-	void CreateDeleteButton();
-	void CreateDuplicateButton();
-	void CreateEditButton();
-	void CreateFavoriteButton(bool bIsFavorited);
-	void CreateNewItemButton();
-	void CreateSpawnButton(bool bCanReplaceCurrent, bool bCanSpawn, const class FText& SpawnFailureText);
-	void CreateSubscribeButton(bool bIsSubscribed);
-	void CreateViewInBrowserButton();
-	void CreateVoteButtons(const EFluUGCItemVote Vote);
-	void VoteUp();
-	void CreateCancelButton();
-	void OnClickedCancel();
-	void OnClickedSubscribe();
-	void OnClickedUnsubscribe();
-	void OnClickedFavorite();
-	void OnClickedUnfavorite();
-	void CreateImportButton();
-	void OnClickedSpawnNew();
-	void OnClickedReplaceCurrent();
-	void CreateRecoverAutoSaveButton();
-	void CreateUploadNewButton();
-	void CreateUpdateExistingButton();
-	void OnClickedUploadNew();
-	void OnClickedUpdateExisting();
-	void CreateSaveNewButton();
-	void CreateSaveOverwriteButton();
-	void OnClickedSaveNew();
-	void OnClickedSaveOverwrite();
-	void CreateOpenInExplorerButton();
-	void CreateSpawnInvincibilityButton(const class FText& CurrentInvincibilityText);
-	void CreateAddOrRemoveItemButton(bool bIsArrayProperty, bool bIsSelected);
-	void AddItem();
-	void RemoveItem();
-	void VoteDown();
 	void ExecuteUbergraph_WBP_UGCBrowser(int32 EntryPoint);
+	void VoteDown();
+	void RemoveItem();
+	void AddItem();
+	void CreateAddOrRemoveItemButton(bool bIsArrayProperty, bool bIsSelected);
+	void CreateSpawnInvincibilityButton(const class FText& CurrentInvincibilityText);
+	void CreateOpenInExplorerButton();
+	void OnClickedSaveOverwrite();
+	void OnClickedSaveNew();
+	void CreateSaveOverwriteButton();
+	void CreateSaveNewButton();
+	void OnClickedUpdateExisting();
+	void OnClickedUploadNew();
+	void CreateUpdateExistingButton();
+	void CreateUploadNewButton();
+	void CreateRecoverAutoSaveButton();
+	void OnClickedReplaceCurrent();
+	void OnClickedSpawnNew();
+	void CreateImportButton();
+	void OnClickedUnfavorite();
+	void OnClickedFavorite();
+	void OnClickedUnsubscribe();
+	void OnClickedSubscribe();
+	void OnClickedCancel();
+	void CreateCancelButton();
+	void VoteUp();
+	void CreateVoteButtons(const EFluUGCItemVote Vote);
+	void CreateViewInBrowserButton();
+	void CreateSubscribeButton(bool bIsSubscribed);
+	void CreateSpawnButton(bool bCanReplaceCurrent, bool bCanSpawn, const class FText& SpawnFailureText);
+	void CreateNewItemButton();
+	void CreateFavoriteButton(bool bIsFavorited);
+	void CreateEditButton();
+	void CreateDuplicateButton();
+	void CreateDeleteButton();
+	void CreateClearItemsButton(bool bIsArrayProperty);
+	bool GetSpawnButtonTooltipContent(struct FTooltipContent* OutContent);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_UGCBrowser_C">();
+		BP_STATIC_CLASS_IMPL("WBP_UGCBrowser_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_UGCBrowser_C")
 	}
 	static class UWBP_UGCBrowser_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_UGCBrowser_C>();
 	}
 };
-static_assert(alignof(UWBP_UGCBrowser_C) == 0x000008, "Wrong alignment on UWBP_UGCBrowser_C");
-static_assert(sizeof(UWBP_UGCBrowser_C) == 0x0003B0, "Wrong size on UWBP_UGCBrowser_C");
-static_assert(offsetof(UWBP_UGCBrowser_C, UberGraphFrame) == 0x000368, "Member 'UWBP_UGCBrowser_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCBrowser_C, Can_Spawn_Result) == 0x000370, "Member 'UWBP_UGCBrowser_C::Can_Spawn_Result' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCBrowser_C, Num_Bricks) == 0x000374, "Member 'UWBP_UGCBrowser_C::Num_Bricks' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCBrowser_C, SpawnProps) == 0x000378, "Member 'UWBP_UGCBrowser_C::SpawnProps' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCBrowser_C, Can_Spawn) == 0x000390, "Member 'UWBP_UGCBrowser_C::Can_Spawn' has a wrong offset!");
-static_assert(offsetof(UWBP_UGCBrowser_C, Spawn_Failure_Text) == 0x000398, "Member 'UWBP_UGCBrowser_C::Spawn_Failure_Text' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_UGCBrowser_C;
 
-}
-
+SDK_NAMESPACE_END

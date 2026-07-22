@@ -14,8 +14,7 @@
 #include "WBP_VideoSettings_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_VideoSettings.WBP_VideoSettings_C.ExecuteUbergraph_WBP_VideoSettings
 // (Final, UbergraphFunction, HasDefaults)
@@ -124,5 +123,5 @@ bool UWBP_VideoSettings_C::StepBack()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

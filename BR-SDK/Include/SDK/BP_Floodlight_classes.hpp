@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Floodlight.BP_Floodlight_C
 // 0x0000 (0x0260 - 0x0260)
@@ -23,15 +22,17 @@ class ABP_Floodlight_C final : public ALampProp
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Floodlight_C">();
+		BP_STATIC_CLASS_IMPL("BP_Floodlight_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Floodlight_C")
 	}
 	static class ABP_Floodlight_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Floodlight_C>();
 	}
 };
-static_assert(alignof(ABP_Floodlight_C) == 0x000008, "Wrong alignment on ABP_Floodlight_C");
-static_assert(sizeof(ABP_Floodlight_C) == 0x000260, "Wrong size on ABP_Floodlight_C");
+DUMPER7_ASSERTS_ABP_Floodlight_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_LoadoutContainer.BP_LoadoutContainer_C
 // 0x0008 (0x0290 - 0x0288)
@@ -31,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_LoadoutContainer_C">();
+		BP_STATIC_CLASS_IMPL("BP_LoadoutContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_LoadoutContainer_C")
 	}
 	static class ABP_LoadoutContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_LoadoutContainer_C>();
 	}
 };
-static_assert(alignof(ABP_LoadoutContainer_C) == 0x000008, "Wrong alignment on ABP_LoadoutContainer_C");
-static_assert(sizeof(ABP_LoadoutContainer_C) == 0x000290, "Wrong size on ABP_LoadoutContainer_C");
-static_assert(offsetof(ABP_LoadoutContainer_C, UberGraphFrame) == 0x000288, "Member 'ABP_LoadoutContainer_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_LoadoutContainer_C;
 
-}
-
+SDK_NAMESPACE_END

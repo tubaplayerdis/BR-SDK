@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MenuButtonPanel.WBP_MenuButtonPanel_C
 // 0x0000 (0x0290 - 0x0290)
@@ -23,15 +22,17 @@ class UWBP_MenuButtonPanel_C final : public UMenuButtonPanelWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MenuButtonPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MenuButtonPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MenuButtonPanel_C")
 	}
 	static class UWBP_MenuButtonPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MenuButtonPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_MenuButtonPanel_C) == 0x000008, "Wrong alignment on UWBP_MenuButtonPanel_C");
-static_assert(sizeof(UWBP_MenuButtonPanel_C) == 0x000290, "Wrong size on UWBP_MenuButtonPanel_C");
+DUMPER7_ASSERTS_UWBP_MenuButtonPanel_C;
 
-}
-
+SDK_NAMESPACE_END

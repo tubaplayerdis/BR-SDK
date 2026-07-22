@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ControlHint.WBP_ControlHint_C.ExecuteUbergraph_WBP_ControlHint
 // 0x0028 (0x0028 - 0x0000)
@@ -38,21 +38,7 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x001C(0x0008)(NoDestructor)
 };
-static_assert(alignof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint) == 0x000008, "Wrong alignment on WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint");
-static_assert(sizeof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint) == 0x000028, "Wrong size on WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, EntryPoint) == 0x000000, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, Temp_bool_Variable) == 0x000004, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000008, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, Temp_byte_Variable) == 0x000010, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, Temp_byte_Variable_1) == 0x000011, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, Temp_bool_Variable_1) == 0x000012, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, Temp_byte_Variable_2) == 0x000013, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, Temp_byte_Variable_3) == 0x000014, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, K2Node_Event_bNewVisible_1) == 0x000015, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::K2Node_Event_bNewVisible_1' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, K2Node_Event_bNewVisible) == 0x000016, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::K2Node_Event_bNewVisible' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, K2Node_Select_Default) == 0x000017, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, K2Node_Select_Default_1) == 0x000018, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint, K2Node_MakeStruct_SlateChildSize) == 0x00001C, "Member 'WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint::K2Node_MakeStruct_SlateChildSize' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ControlHint_C_ExecuteUbergraph_WBP_ControlHint;
 
 // Function WBP_ControlHint.WBP_ControlHint_C.UpdateTextVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -61,9 +47,7 @@ struct WBP_ControlHint_C_UpdateTextVisibility final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ControlHint_C_UpdateTextVisibility) == 0x000001, "Wrong alignment on WBP_ControlHint_C_UpdateTextVisibility");
-static_assert(sizeof(WBP_ControlHint_C_UpdateTextVisibility) == 0x000001, "Wrong size on WBP_ControlHint_C_UpdateTextVisibility");
-static_assert(offsetof(WBP_ControlHint_C_UpdateTextVisibility, bNewVisible) == 0x000000, "Member 'WBP_ControlHint_C_UpdateTextVisibility::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ControlHint_C_UpdateTextVisibility;
 
 // Function WBP_ControlHint.WBP_ControlHint_C.UpdateInputChordVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -72,9 +56,7 @@ struct WBP_ControlHint_C_UpdateInputChordVisibility final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ControlHint_C_UpdateInputChordVisibility) == 0x000001, "Wrong alignment on WBP_ControlHint_C_UpdateInputChordVisibility");
-static_assert(sizeof(WBP_ControlHint_C_UpdateInputChordVisibility) == 0x000001, "Wrong size on WBP_ControlHint_C_UpdateInputChordVisibility");
-static_assert(offsetof(WBP_ControlHint_C_UpdateInputChordVisibility, bNewVisible) == 0x000000, "Member 'WBP_ControlHint_C_UpdateInputChordVisibility::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ControlHint_C_UpdateInputChordVisibility;
 
 // Function WBP_ControlHint.WBP_ControlHint_C.SetIconSize
 // 0x000C (0x000C - 0x0000)
@@ -84,10 +66,7 @@ public:
 	float                                         NewSize;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ControlHint_C_SetIconSize) == 0x000004, "Wrong alignment on WBP_ControlHint_C_SetIconSize");
-static_assert(sizeof(WBP_ControlHint_C_SetIconSize) == 0x00000C, "Wrong size on WBP_ControlHint_C_SetIconSize");
-static_assert(offsetof(WBP_ControlHint_C_SetIconSize, NewSize) == 0x000000, "Member 'WBP_ControlHint_C_SetIconSize::NewSize' has a wrong offset!");
-static_assert(offsetof(WBP_ControlHint_C_SetIconSize, CallFunc_MakeVector2D_ReturnValue) == 0x000004, "Member 'WBP_ControlHint_C_SetIconSize::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ControlHint_C_SetIconSize;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_InputKey_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InputKey.WBP_InputKey_C.ExecuteUbergraph_WBP_InputKey
 // (Final, UbergraphFunction, HasDefaults)
@@ -58,5 +57,5 @@ void UWBP_InputKey_C::UpdateKey(const struct FKeyDisplayTableRow& DisplayInfo, c
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

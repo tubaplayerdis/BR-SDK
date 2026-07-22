@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_BrickEditorObjectProperty.WBP_BrickEditorObjectProperty_C.ExecuteUbergraph_WBP_BrickEditorObjectProperty
 // 0x0108 (0x0108 - 0x0000)
@@ -58,39 +58,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0105(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EBrickUIBrushStyle                            K2Node_Select_Default_3;                           // 0x0106(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty) == 0x000008, "Wrong alignment on WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty");
-static_assert(sizeof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty) == 0x000108, "Wrong size on WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, EntryPoint) == 0x000000, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_bool_Variable) == 0x000004, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_byte_Variable) == 0x000005, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_bool_Variable_1) == 0x000007, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_byte_Variable_2) == 0x000008, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_byte_Variable_3) == 0x000009, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_bool_Variable_2) == 0x00000A, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_byte_Variable_4) == 0x00000B, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_byte_Variable_5) == 0x00000C, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_Event_FirstObjectName) == 0x000010, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_Event_FirstObjectName' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_Event_NumSelectedObjects) == 0x000028, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_Event_NumSelectedObjects' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_Event_bDefaultObjects) == 0x00002C, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_Event_bDefaultObjects' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, CallFunc_Not_PreBool_ReturnValue) == 0x00002D, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, CallFunc_Greater_IntInt_ReturnValue) == 0x00002E, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00002F, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, CallFunc_BooleanAND_ReturnValue) == 0x000030, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, CallFunc_Subtract_IntInt_ReturnValue) == 0x000034, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_MakeStruct_FormatArgumentData) == 0x000038, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_MakeStruct_FormatArgumentData_1) == 0x000078, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_MakeArray_Array) == 0x0000B8, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, Temp_bool_Variable_3) == 0x0000C8, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, CallFunc_Format_ReturnValue) == 0x0000D0, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_Select_Default) == 0x0000E8, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_ComponentBoundEvent_InColorStyle) == 0x000100, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000101, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_Event_bNewReadOnly) == 0x000102, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_Event_bNewReadOnly' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_Select_Default_1) == 0x000103, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_Select_Default_2) == 0x000104, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, CallFunc_Not_PreBool_ReturnValue_1) == 0x000105, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty, K2Node_Select_Default_3) == 0x000106, "Member 'WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty::K2Node_Select_Default_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BrickEditorObjectProperty_C_ExecuteUbergraph_WBP_BrickEditorObjectProperty;
 
 // Function WBP_BrickEditorObjectProperty.WBP_BrickEditorObjectProperty_C.UpdateIsReadOnly
 // 0x0001 (0x0001 - 0x0000)
@@ -99,9 +67,7 @@ struct WBP_BrickEditorObjectProperty_C_UpdateIsReadOnly final
 public:
 	bool                                          bNewReadOnly;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_BrickEditorObjectProperty_C_UpdateIsReadOnly) == 0x000001, "Wrong alignment on WBP_BrickEditorObjectProperty_C_UpdateIsReadOnly");
-static_assert(sizeof(WBP_BrickEditorObjectProperty_C_UpdateIsReadOnly) == 0x000001, "Wrong size on WBP_BrickEditorObjectProperty_C_UpdateIsReadOnly");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_UpdateIsReadOnly, bNewReadOnly) == 0x000000, "Member 'WBP_BrickEditorObjectProperty_C_UpdateIsReadOnly::bNewReadOnly' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BrickEditorObjectProperty_C_UpdateIsReadOnly;
 
 // Function WBP_BrickEditorObjectProperty.WBP_BrickEditorObjectProperty_C.BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -111,10 +77,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_BrickEditorObjectProperty.WBP_BrickEditorObjectProperty_C.UpdateSelectedObjects
 // 0x0020 (0x0020 - 0x0000)
@@ -125,11 +88,7 @@ public:
 	int32                                         NumSelectedObjects;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDefaultObjects;                                   // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects) == 0x000008, "Wrong alignment on WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects");
-static_assert(sizeof(WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects) == 0x000020, "Wrong size on WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects, FirstObjectName) == 0x000000, "Member 'WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects::FirstObjectName' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects, NumSelectedObjects) == 0x000018, "Member 'WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects::NumSelectedObjects' has a wrong offset!");
-static_assert(offsetof(WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects, bDefaultObjects) == 0x00001C, "Member 'WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects::bDefaultObjects' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BrickEditorObjectProperty_C_UpdateSelectedObjects;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

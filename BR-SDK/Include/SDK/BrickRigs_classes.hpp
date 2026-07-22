@@ -30,8 +30,7 @@
 #include "InputCore_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class BrickRigs.BrickEditorObjectStaticInfo
 // 0x0068 (0x0090 - 0x0028)
@@ -51,22 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorObjectStaticInfo">();
+		STATIC_CLASS_IMPL("BrickEditorObjectStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorObjectStaticInfo")
 	}
 	static class UBrickEditorObjectStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorObjectStaticInfo>();
 	}
 };
-static_assert(alignof(UBrickEditorObjectStaticInfo) == 0x000008, "Wrong alignment on UBrickEditorObjectStaticInfo");
-static_assert(sizeof(UBrickEditorObjectStaticInfo) == 0x000090, "Wrong size on UBrickEditorObjectStaticInfo");
-static_assert(offsetof(UBrickEditorObjectStaticInfo, ObjectClass) == 0x000028, "Member 'UBrickEditorObjectStaticInfo::ObjectClass' has a wrong offset!");
-static_assert(offsetof(UBrickEditorObjectStaticInfo, ObjectTypeDisplayName) == 0x000030, "Member 'UBrickEditorObjectStaticInfo::ObjectTypeDisplayName' has a wrong offset!");
-static_assert(offsetof(UBrickEditorObjectStaticInfo, Description) == 0x000048, "Member 'UBrickEditorObjectStaticInfo::Description' has a wrong offset!");
-static_assert(offsetof(UBrickEditorObjectStaticInfo, Price) == 0x000060, "Member 'UBrickEditorObjectStaticInfo::Price' has a wrong offset!");
-static_assert(offsetof(UBrickEditorObjectStaticInfo, MirrorMode) == 0x000064, "Member 'UBrickEditorObjectStaticInfo::MirrorMode' has a wrong offset!");
-static_assert(offsetof(UBrickEditorObjectStaticInfo, MirrorClassOverride) == 0x000068, "Member 'UBrickEditorObjectStaticInfo::MirrorClassOverride' has a wrong offset!");
-static_assert(offsetof(UBrickEditorObjectStaticInfo, MirrorRotationOrigin) == 0x000080, "Member 'UBrickEditorObjectStaticInfo::MirrorRotationOrigin' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickEditorObjectStaticInfo;
 
 // Class BrickRigs.HUDIconComponent
 // 0x0088 (0x0138 - 0x00B0)
@@ -93,17 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HUDIconComponent">();
+		STATIC_CLASS_IMPL("HUDIconComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDIconComponent")
 	}
 	static class UHUDIconComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUDIconComponent>();
 	}
 };
-static_assert(alignof(UHUDIconComponent) == 0x000008, "Wrong alignment on UHUDIconComponent");
-static_assert(sizeof(UHUDIconComponent) == 0x000138, "Wrong size on UHUDIconComponent");
-static_assert(offsetof(UHUDIconComponent, HUDIconProperties) == 0x0000B0, "Member 'UHUDIconComponent::HUDIconProperties' has a wrong offset!");
-static_assert(offsetof(UHUDIconComponent, bTestLineOfSight) == 0x000100, "Member 'UHUDIconComponent::bTestLineOfSight' has a wrong offset!");
+DUMPER7_ASSERTS_UHUDIconComponent;
 
 // Class BrickRigs.InteractionComponent
 // 0x0008 (0x0140 - 0x0138)
@@ -116,16 +112,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InteractionComponent">();
+		STATIC_CLASS_IMPL("InteractionComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InteractionComponent")
 	}
 	static class UInteractionComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInteractionComponent>();
 	}
 };
-static_assert(alignof(UInteractionComponent) == 0x000008, "Wrong alignment on UInteractionComponent");
-static_assert(sizeof(UInteractionComponent) == 0x000140, "Wrong size on UInteractionComponent");
-static_assert(offsetof(UInteractionComponent, ColorStyle) == 0x000138, "Member 'UInteractionComponent::ColorStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UInteractionComponent;
 
 // Class BrickRigs.BrickBorder
 // 0x0010 (0x0280 - 0x0270)
@@ -148,19 +146,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickBorder">();
+		STATIC_CLASS_IMPL("BrickBorder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickBorder")
 	}
 	static class UBrickBorder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickBorder>();
 	}
 };
-static_assert(alignof(UBrickBorder) == 0x000008, "Wrong alignment on UBrickBorder");
-static_assert(sizeof(UBrickBorder) == 0x000280, "Wrong size on UBrickBorder");
-static_assert(offsetof(UBrickBorder, BrushStyle) == 0x000278, "Member 'UBrickBorder::BrushStyle' has a wrong offset!");
-static_assert(offsetof(UBrickBorder, ColorStyle) == 0x000279, "Member 'UBrickBorder::ColorStyle' has a wrong offset!");
-static_assert(offsetof(UBrickBorder, StyleState) == 0x00027A, "Member 'UBrickBorder::StyleState' has a wrong offset!");
-static_assert(offsetof(UBrickBorder, PaddingStyle) == 0x00027B, "Member 'UBrickBorder::PaddingStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickBorder;
 
 // Class BrickRigs.FireInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -169,7 +166,11 @@ class IFireInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FireInterface">();
+		STATIC_CLASS_IMPL("FireInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FireInterface")
 	}
 	static class IFireInterface* GetDefaultObj()
 	{
@@ -185,8 +186,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IFireInterface) == 0x000001, "Wrong alignment on IFireInterface");
-static_assert(sizeof(IFireInterface) == 0x000001, "Wrong size on IFireInterface");
+DUMPER7_ASSERTS_IFireInterface;
 
 // Class BrickRigs.BrickStaticInfo
 // 0x0100 (0x0190 - 0x0090)
@@ -235,41 +235,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickStaticInfo">();
+		STATIC_CLASS_IMPL("BrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickStaticInfo")
 	}
 	static class UBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UBrickStaticInfo) == 0x000008, "Wrong alignment on UBrickStaticInfo");
-static_assert(sizeof(UBrickStaticInfo) == 0x000190, "Wrong size on UBrickStaticInfo");
-static_assert(offsetof(UBrickStaticInfo, LiftSurfaceRadius) == 0x0000AC, "Member 'UBrickStaticInfo::LiftSurfaceRadius' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, LiftSurfaceCrossSectionArea) == 0x0000B0, "Member 'UBrickStaticInfo::LiftSurfaceCrossSectionArea' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, LiftSurfaceLocation) == 0x0000B4, "Member 'UBrickStaticInfo::LiftSurfaceLocation' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, LiftSurfaceNormal) == 0x0000C0, "Member 'UBrickStaticInfo::LiftSurfaceNormal' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, StaticMesh) == 0x0000D0, "Member 'UBrickStaticInfo::StaticMesh' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, DefaultBrickMaterial) == 0x0000D8, "Member 'UBrickStaticInfo::DefaultBrickMaterial' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, DefaultMaterial) == 0x0000E0, "Member 'UBrickStaticInfo::DefaultMaterial' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, TranslucentMaterial) == 0x0000E8, "Member 'UBrickStaticInfo::TranslucentMaterial' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, HiddenMaterial) == 0x0000F0, "Member 'UBrickStaticInfo::HiddenMaterial' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, PhysicsVisualizationMaterial) == 0x0000F8, "Member 'UBrickStaticInfo::PhysicsVisualizationMaterial' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, ColorVisualizationMaterial) == 0x000100, "Member 'UBrickStaticInfo::ColorVisualizationMaterial' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, ThumbnailBrickColor) == 0x000108, "Member 'UBrickStaticInfo::ThumbnailBrickColor' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, BrickSize) == 0x00010C, "Member 'UBrickStaticInfo::BrickSize' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, bAppendBrickSizeToDisplayName) == 0x000118, "Member 'UBrickStaticInfo::bAppendBrickSizeToDisplayName' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, PricePerSize) == 0x00011C, "Member 'UBrickStaticInfo::PricePerSize' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, Connectors) == 0x000120, "Member 'UBrickStaticInfo::Connectors' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, MassScale) == 0x000130, "Member 'UBrickStaticInfo::MassScale' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, DisplayMassScale) == 0x000134, "Member 'UBrickStaticInfo::DisplayMassScale' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, InertiaTensorScale) == 0x000138, "Member 'UBrickStaticInfo::InertiaTensorScale' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, PhysicalMaterialOverride) == 0x000148, "Member 'UBrickStaticInfo::PhysicalMaterialOverride' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, Volume) == 0x000154, "Member 'UBrickStaticInfo::Volume' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, CenterOfMass) == 0x000158, "Member 'UBrickStaticInfo::CenterOfMass' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, InertiaTensor0) == 0x000164, "Member 'UBrickStaticInfo::InertiaTensor0' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, InertiaTensor1) == 0x000170, "Member 'UBrickStaticInfo::InertiaTensor1' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, InertiaTensor2) == 0x00017C, "Member 'UBrickStaticInfo::InertiaTensor2' has a wrong offset!");
-static_assert(offsetof(UBrickStaticInfo, MovementReplicationPriority) == 0x000188, "Member 'UBrickStaticInfo::MovementReplicationPriority' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickStaticInfo;
 
 // Class BrickRigs.BrickVerticalBox
 // 0x0010 (0x0148 - 0x0138)
@@ -286,16 +263,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickVerticalBox">();
+		STATIC_CLASS_IMPL("BrickVerticalBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickVerticalBox")
 	}
 	static class UBrickVerticalBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickVerticalBox>();
 	}
 };
-static_assert(alignof(UBrickVerticalBox) == 0x000008, "Wrong alignment on UBrickVerticalBox");
-static_assert(sizeof(UBrickVerticalBox) == 0x000148, "Wrong size on UBrickVerticalBox");
-static_assert(offsetof(UBrickVerticalBox, SlotSpacingStyle) == 0x000140, "Member 'UBrickVerticalBox::SlotSpacingStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickVerticalBox;
 
 // Class BrickRigs.BrickBuildingDebris
 // 0x0050 (0x0270 - 0x0220)
@@ -317,24 +296,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickBuildingDebris">();
+		STATIC_CLASS_IMPL("BrickBuildingDebris")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickBuildingDebris")
 	}
 	static class ABrickBuildingDebris* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickBuildingDebris>();
 	}
 };
-static_assert(alignof(ABrickBuildingDebris) == 0x000008, "Wrong alignment on ABrickBuildingDebris");
-static_assert(sizeof(ABrickBuildingDebris) == 0x000270, "Wrong size on ABrickBuildingDebris");
-static_assert(offsetof(ABrickBuildingDebris, DebrisMeshComponent) == 0x000228, "Member 'ABrickBuildingDebris::DebrisMeshComponent' has a wrong offset!");
-static_assert(offsetof(ABrickBuildingDebris, CollapseNC) == 0x000230, "Member 'ABrickBuildingDebris::CollapseNC' has a wrong offset!");
-static_assert(offsetof(ABrickBuildingDebris, CollapseAC) == 0x000238, "Member 'ABrickBuildingDebris::CollapseAC' has a wrong offset!");
-static_assert(offsetof(ABrickBuildingDebris, DebrisMesh) == 0x000240, "Member 'ABrickBuildingDebris::DebrisMesh' has a wrong offset!");
-static_assert(offsetof(ABrickBuildingDebris, DebrisSpacing) == 0x000248, "Member 'ABrickBuildingDebris::DebrisSpacing' has a wrong offset!");
-static_assert(offsetof(ABrickBuildingDebris, DebrisLocationJitter) == 0x00024C, "Member 'ABrickBuildingDebris::DebrisLocationJitter' has a wrong offset!");
-static_assert(offsetof(ABrickBuildingDebris, DebrisRotationJitter) == 0x000258, "Member 'ABrickBuildingDebris::DebrisRotationJitter' has a wrong offset!");
-static_assert(offsetof(ABrickBuildingDebris, CollapseSound) == 0x000260, "Member 'ABrickBuildingDebris::CollapseSound' has a wrong offset!");
-static_assert(offsetof(ABrickBuildingDebris, CollapseSystem) == 0x000268, "Member 'ABrickBuildingDebris::CollapseSystem' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickBuildingDebris;
 
 // Class BrickRigs.ActuatorBrickBaseStaticInfo
 // 0x0010 (0x01A0 - 0x0190)
@@ -350,18 +323,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActuatorBrickBaseStaticInfo">();
+		STATIC_CLASS_IMPL("ActuatorBrickBaseStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActuatorBrickBaseStaticInfo")
 	}
 	static class UActuatorBrickBaseStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActuatorBrickBaseStaticInfo>();
 	}
 };
-static_assert(alignof(UActuatorBrickBaseStaticInfo) == 0x000008, "Wrong alignment on UActuatorBrickBaseStaticInfo");
-static_assert(sizeof(UActuatorBrickBaseStaticInfo) == 0x0001A0, "Wrong size on UActuatorBrickBaseStaticInfo");
-static_assert(offsetof(UActuatorBrickBaseStaticInfo, ActuationAxis) == 0x000190, "Member 'UActuatorBrickBaseStaticInfo::ActuationAxis' has a wrong offset!");
-static_assert(offsetof(UActuatorBrickBaseStaticInfo, LinearActuationOffset) == 0x000194, "Member 'UActuatorBrickBaseStaticInfo::LinearActuationOffset' has a wrong offset!");
-static_assert(offsetof(UActuatorBrickBaseStaticInfo, LinearActuationRange) == 0x000198, "Member 'UActuatorBrickBaseStaticInfo::LinearActuationRange' has a wrong offset!");
+DUMPER7_ASSERTS_UActuatorBrickBaseStaticInfo;
 
 // Class BrickRigs.BaseCharacterMovementComponent
 // 0x0010 (0x0B00 - 0x0AF0)
@@ -374,16 +347,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BaseCharacterMovementComponent">();
+		STATIC_CLASS_IMPL("BaseCharacterMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BaseCharacterMovementComponent")
 	}
 	static class UBaseCharacterMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBaseCharacterMovementComponent>();
 	}
 };
-static_assert(alignof(UBaseCharacterMovementComponent) == 0x000010, "Wrong alignment on UBaseCharacterMovementComponent");
-static_assert(sizeof(UBaseCharacterMovementComponent) == 0x000B00, "Wrong size on UBaseCharacterMovementComponent");
-static_assert(offsetof(UBaseCharacterMovementComponent, MaxSprintSpeed) == 0x000AFC, "Member 'UBaseCharacterMovementComponent::MaxSprintSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UBaseCharacterMovementComponent;
 
 // Class BrickRigs.BrickCharacterMovementComponent
 // 0x0000 (0x0B00 - 0x0B00)
@@ -392,15 +367,18 @@ class UBrickCharacterMovementComponent final : public UBaseCharacterMovementComp
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickCharacterMovementComponent">();
+		STATIC_CLASS_IMPL("BrickCharacterMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickCharacterMovementComponent")
 	}
 	static class UBrickCharacterMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickCharacterMovementComponent>();
 	}
 };
-static_assert(alignof(UBrickCharacterMovementComponent) == 0x000010, "Wrong alignment on UBrickCharacterMovementComponent");
-static_assert(sizeof(UBrickCharacterMovementComponent) == 0x000B00, "Wrong size on UBrickCharacterMovementComponent");
+DUMPER7_ASSERTS_UBrickCharacterMovementComponent;
 
 // Class BrickRigs.BasePlayerController
 // 0x0088 (0x05F8 - 0x0570)
@@ -432,16 +410,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BasePlayerController">();
+		STATIC_CLASS_IMPL("BasePlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BasePlayerController")
 	}
 	static class ABasePlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABasePlayerController>();
 	}
 };
-static_assert(alignof(ABasePlayerController) == 0x000008, "Wrong alignment on ABasePlayerController");
-static_assert(sizeof(ABasePlayerController) == 0x0005F8, "Wrong size on ABasePlayerController");
-static_assert(offsetof(ABasePlayerController, StaticInfoClass) == 0x0005C0, "Member 'ABasePlayerController::StaticInfoClass' has a wrong offset!");
+DUMPER7_ASSERTS_ABasePlayerController;
 
 // Class BrickRigs.MenuPlayerController
 // 0x0038 (0x0630 - 0x05F8)
@@ -458,20 +438,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuPlayerController">();
+		STATIC_CLASS_IMPL("MenuPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuPlayerController")
 	}
 	static class AMenuPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuPlayerController>();
 	}
 };
-static_assert(alignof(AMenuPlayerController) == 0x000008, "Wrong alignment on AMenuPlayerController");
-static_assert(sizeof(AMenuPlayerController) == 0x000630, "Wrong size on AMenuPlayerController");
-static_assert(offsetof(AMenuPlayerController, MenuSequence) == 0x0005F8, "Member 'AMenuPlayerController::MenuSequence' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerController, CameraLocation) == 0x000600, "Member 'AMenuPlayerController::CameraLocation' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerController, CameraRotation) == 0x00060C, "Member 'AMenuPlayerController::CameraRotation' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerController, CameraFOV) == 0x000618, "Member 'AMenuPlayerController::CameraFOV' has a wrong offset!");
-static_assert(offsetof(AMenuPlayerController, ViewTargetTransitionParams) == 0x00061C, "Member 'AMenuPlayerController::ViewTargetTransitionParams' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuPlayerController;
 
 // Class BrickRigs.AdminLoginWidget
 // 0x0038 (0x0298 - 0x0260)
@@ -490,18 +468,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdminLoginWidget">();
+		STATIC_CLASS_IMPL("AdminLoginWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdminLoginWidget")
 	}
 	static class UAdminLoginWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdminLoginWidget>();
 	}
 };
-static_assert(alignof(UAdminLoginWidget) == 0x000008, "Wrong alignment on UAdminLoginWidget");
-static_assert(sizeof(UAdminLoginWidget) == 0x000298, "Wrong size on UAdminLoginWidget");
-static_assert(offsetof(UAdminLoginWidget, TextBox) == 0x000260, "Member 'UAdminLoginWidget::TextBox' has a wrong offset!");
-static_assert(offsetof(UAdminLoginWidget, EnterPasswordText) == 0x000268, "Member 'UAdminLoginWidget::EnterPasswordText' has a wrong offset!");
-static_assert(offsetof(UAdminLoginWidget, LoggedInText) == 0x000280, "Member 'UAdminLoginWidget::LoggedInText' has a wrong offset!");
+DUMPER7_ASSERTS_UAdminLoginWidget;
 
 // Class BrickRigs.BrickBuilding
 // 0x00A0 (0x02C0 - 0x0220)
@@ -530,25 +508,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickBuilding">();
+		STATIC_CLASS_IMPL("BrickBuilding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickBuilding")
 	}
 	static class ABrickBuilding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickBuilding>();
 	}
 };
-static_assert(alignof(ABrickBuilding) == 0x000010, "Wrong alignment on ABrickBuilding");
-static_assert(sizeof(ABrickBuilding) == 0x0002C0, "Wrong size on ABrickBuilding");
-static_assert(offsetof(ABrickBuilding, BuildingBoundsOrigin) == 0x000250, "Member 'ABrickBuilding::BuildingBoundsOrigin' has a wrong offset!");
-static_assert(offsetof(ABrickBuilding, BuildingBoundsExtent) == 0x00025C, "Member 'ABrickBuilding::BuildingBoundsExtent' has a wrong offset!");
-static_assert(offsetof(ABrickBuilding, CollapseAxisCompressed) == 0x000275, "Member 'ABrickBuilding::CollapseAxisCompressed' has a wrong offset!");
-static_assert(offsetof(ABrickBuilding, DebrisActor) == 0x000280, "Member 'ABrickBuilding::DebrisActor' has a wrong offset!");
-static_assert(offsetof(ABrickBuilding, StaticMeshComponent) == 0x000288, "Member 'ABrickBuilding::StaticMeshComponent' has a wrong offset!");
-static_assert(offsetof(ABrickBuilding, StaticMesh) == 0x000290, "Member 'ABrickBuilding::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ABrickBuilding, RandomMaterials) == 0x000298, "Member 'ABrickBuilding::RandomMaterials' has a wrong offset!");
-static_assert(offsetof(ABrickBuilding, RandomStream) == 0x0002A8, "Member 'ABrickBuilding::RandomStream' has a wrong offset!");
-static_assert(offsetof(ABrickBuilding, MaxDamage) == 0x0002B0, "Member 'ABrickBuilding::MaxDamage' has a wrong offset!");
-static_assert(offsetof(ABrickBuilding, DebrisClass) == 0x0002B8, "Member 'ABrickBuilding::DebrisClass' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickBuilding;
 
 // Class BrickRigs.MatchTimerWidget
 // 0x0000 (0x0260 - 0x0260)
@@ -560,15 +531,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MatchTimerWidget">();
+		STATIC_CLASS_IMPL("MatchTimerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchTimerWidget")
 	}
 	static class UMatchTimerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchTimerWidget>();
 	}
 };
-static_assert(alignof(UMatchTimerWidget) == 0x000008, "Wrong alignment on UMatchTimerWidget");
-static_assert(sizeof(UMatchTimerWidget) == 0x000260, "Wrong size on UMatchTimerWidget");
+DUMPER7_ASSERTS_UMatchTimerWidget;
 
 // Class BrickRigs.ActuatorBrickStaticInfo
 // 0x0020 (0x01C0 - 0x01A0)
@@ -587,20 +561,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActuatorBrickStaticInfo">();
+		STATIC_CLASS_IMPL("ActuatorBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActuatorBrickStaticInfo")
 	}
 	static class UActuatorBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActuatorBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UActuatorBrickStaticInfo) == 0x000008, "Wrong alignment on UActuatorBrickStaticInfo");
-static_assert(sizeof(UActuatorBrickStaticInfo) == 0x0001C0, "Wrong size on UActuatorBrickStaticInfo");
-static_assert(offsetof(UActuatorBrickStaticInfo, bIsAngularActuator) == 0x0001A0, "Member 'UActuatorBrickStaticInfo::bIsAngularActuator' has a wrong offset!");
-static_assert(offsetof(UActuatorBrickStaticInfo, ActuationSpeed) == 0x0001A4, "Member 'UActuatorBrickStaticInfo::ActuationSpeed' has a wrong offset!");
-static_assert(offsetof(UActuatorBrickStaticInfo, bIsLegacyLinearSlider) == 0x0001A8, "Member 'UActuatorBrickStaticInfo::bIsLegacyLinearSlider' has a wrong offset!");
-static_assert(offsetof(UActuatorBrickStaticInfo, ActuatorSound) == 0x0001B0, "Member 'UActuatorBrickStaticInfo::ActuatorSound' has a wrong offset!");
-static_assert(offsetof(UActuatorBrickStaticInfo, ReplicationErrorSmoothTime) == 0x0001B8, "Member 'UActuatorBrickStaticInfo::ReplicationErrorSmoothTime' has a wrong offset!");
+DUMPER7_ASSERTS_UActuatorBrickStaticInfo;
 
 // Class BrickRigs.WheelBrickStaticInfo
 // 0x0020 (0x01B0 - 0x0190)
@@ -618,22 +590,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WheelBrickStaticInfo">();
+		STATIC_CLASS_IMPL("WheelBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WheelBrickStaticInfo")
 	}
 	static class UWheelBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWheelBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UWheelBrickStaticInfo) == 0x000008, "Wrong alignment on UWheelBrickStaticInfo");
-static_assert(sizeof(UWheelBrickStaticInfo) == 0x0001B0, "Wrong size on UWheelBrickStaticInfo");
-static_assert(offsetof(UWheelBrickStaticInfo, WheelRadius) == 0x000190, "Member 'UWheelBrickStaticInfo::WheelRadius' has a wrong offset!");
-static_assert(offsetof(UWheelBrickStaticInfo, WheelWidthRange) == 0x000194, "Member 'UWheelBrickStaticInfo::WheelWidthRange' has a wrong offset!");
-static_assert(offsetof(UWheelBrickStaticInfo, ColliderRadius) == 0x00019C, "Member 'UWheelBrickStaticInfo::ColliderRadius' has a wrong offset!");
-static_assert(offsetof(UWheelBrickStaticInfo, MinWheelRadius) == 0x0001A0, "Member 'UWheelBrickStaticInfo::MinWheelRadius' has a wrong offset!");
-static_assert(offsetof(UWheelBrickStaticInfo, MaxWheelRadiusScale) == 0x0001A4, "Member 'UWheelBrickStaticInfo::MaxWheelRadiusScale' has a wrong offset!");
-static_assert(offsetof(UWheelBrickStaticInfo, MinWheelWidth) == 0x0001A8, "Member 'UWheelBrickStaticInfo::MinWheelWidth' has a wrong offset!");
-static_assert(offsetof(UWheelBrickStaticInfo, MaxWheelWidthScale) == 0x0001AC, "Member 'UWheelBrickStaticInfo::MaxWheelWidthScale' has a wrong offset!");
+DUMPER7_ASSERTS_UWheelBrickStaticInfo;
 
 // Class BrickRigs.ButtonWidgetBase
 // 0x0020 (0x0280 - 0x0260)
@@ -663,20 +631,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ButtonWidgetBase">();
+		STATIC_CLASS_IMPL("ButtonWidgetBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonWidgetBase")
 	}
 	static class UButtonWidgetBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonWidgetBase>();
 	}
 };
-static_assert(alignof(UButtonWidgetBase) == 0x000008, "Wrong alignment on UButtonWidgetBase");
-static_assert(sizeof(UButtonWidgetBase) == 0x000280, "Wrong size on UButtonWidgetBase");
-static_assert(offsetof(UButtonWidgetBase, Border) == 0x000270, "Member 'UButtonWidgetBase::Border' has a wrong offset!");
-static_assert(offsetof(UButtonWidgetBase, ColorStyle) == 0x000278, "Member 'UButtonWidgetBase::ColorStyle' has a wrong offset!");
-static_assert(offsetof(UButtonWidgetBase, BrushStyle) == 0x000279, "Member 'UButtonWidgetBase::BrushStyle' has a wrong offset!");
-static_assert(offsetof(UButtonWidgetBase, bHiddenWhileUnfocused) == 0x00027A, "Member 'UButtonWidgetBase::bHiddenWhileUnfocused' has a wrong offset!");
-static_assert(offsetof(UButtonWidgetBase, bIsSelected) == 0x00027B, "Member 'UButtonWidgetBase::bIsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_UButtonWidgetBase;
 
 // Class BrickRigs.BrickEditorObject
 // 0x0060 (0x0088 - 0x0028)
@@ -714,16 +680,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorObject">();
+		STATIC_CLASS_IMPL("BrickEditorObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorObject")
 	}
 	static class UBrickEditorObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorObject>();
 	}
 };
-static_assert(alignof(UBrickEditorObject) == 0x000008, "Wrong alignment on UBrickEditorObject");
-static_assert(sizeof(UBrickEditorObject) == 0x000088, "Wrong size on UBrickEditorObject");
-static_assert(offsetof(UBrickEditorObject, StaticInfoClass) == 0x000030, "Member 'UBrickEditorObject::StaticInfoClass' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickEditorObject;
 
 // Class BrickRigs.InventoryContainerWidget
 // 0x0010 (0x0270 - 0x0260)
@@ -740,17 +708,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InventoryContainerWidget">();
+		STATIC_CLASS_IMPL("InventoryContainerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InventoryContainerWidget")
 	}
 	static class UInventoryContainerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInventoryContainerWidget>();
 	}
 };
-static_assert(alignof(UInventoryContainerWidget) == 0x000008, "Wrong alignment on UInventoryContainerWidget");
-static_assert(sizeof(UInventoryContainerWidget) == 0x000270, "Wrong size on UInventoryContainerWidget");
-static_assert(offsetof(UInventoryContainerWidget, InventoryWidget) == 0x000260, "Member 'UInventoryContainerWidget::InventoryWidget' has a wrong offset!");
-static_assert(offsetof(UInventoryContainerWidget, NameTextBlock) == 0x000268, "Member 'UInventoryContainerWidget::NameTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UInventoryContainerWidget;
 
 // Class BrickRigs.BrickButtonWidget
 // 0x0090 (0x0310 - 0x0280)
@@ -781,27 +750,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickButtonWidget">();
+		STATIC_CLASS_IMPL("BrickButtonWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickButtonWidget")
 	}
 	static class UBrickButtonWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickButtonWidget>();
 	}
 };
-static_assert(alignof(UBrickButtonWidget) == 0x000008, "Wrong alignment on UBrickButtonWidget");
-static_assert(sizeof(UBrickButtonWidget) == 0x000310, "Wrong size on UBrickButtonWidget");
-static_assert(offsetof(UBrickButtonWidget, ContentPadding) == 0x000280, "Member 'UBrickButtonWidget::ContentPadding' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, ContentPaddingStyle) == 0x000290, "Member 'UBrickButtonWidget::ContentPaddingStyle' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, ContentHorizontalAlignment) == 0x000291, "Member 'UBrickButtonWidget::ContentHorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, ContentVerticalAlignment) == 0x000292, "Member 'UBrickButtonWidget::ContentVerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, ContentSlot) == 0x000298, "Member 'UBrickButtonWidget::ContentSlot' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, OnClickedDelegate) == 0x0002A0, "Member 'UBrickButtonWidget::OnClickedDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, OnPressedDelegate) == 0x0002B0, "Member 'UBrickButtonWidget::OnPressedDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, OnReleasedDelegate) == 0x0002C0, "Member 'UBrickButtonWidget::OnReleasedDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, OnDoubleClickedDelegate) == 0x0002D0, "Member 'UBrickButtonWidget::OnDoubleClickedDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, OnDraggedDelegate) == 0x0002E0, "Member 'UBrickButtonWidget::OnDraggedDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, OnIsFocusedChangedDelegate) == 0x0002F0, "Member 'UBrickButtonWidget::OnIsFocusedChangedDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickButtonWidget, OnUpdateContentStyleDelegate) == 0x000300, "Member 'UBrickButtonWidget::OnUpdateContentStyleDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickButtonWidget;
 
 // Class BrickRigs.FuelConsumerBrickStaticInfo
 // 0x0018 (0x01A8 - 0x0190)
@@ -815,17 +775,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FuelConsumerBrickStaticInfo">();
+		STATIC_CLASS_IMPL("FuelConsumerBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FuelConsumerBrickStaticInfo")
 	}
 	static class UFuelConsumerBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFuelConsumerBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UFuelConsumerBrickStaticInfo) == 0x000008, "Wrong alignment on UFuelConsumerBrickStaticInfo");
-static_assert(sizeof(UFuelConsumerBrickStaticInfo) == 0x0001A8, "Wrong size on UFuelConsumerBrickStaticInfo");
-static_assert(offsetof(UFuelConsumerBrickStaticInfo, FuelTankParams) == 0x000190, "Member 'UFuelConsumerBrickStaticInfo::FuelTankParams' has a wrong offset!");
-static_assert(offsetof(UFuelConsumerBrickStaticInfo, FuelConsumption) == 0x0001A0, "Member 'UFuelConsumerBrickStaticInfo::FuelConsumption' has a wrong offset!");
+DUMPER7_ASSERTS_UFuelConsumerBrickStaticInfo;
 
 // Class BrickRigs.FlamethrowerBrickStaticInfo
 // 0x0020 (0x01C8 - 0x01A8)
@@ -842,21 +803,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FlamethrowerBrickStaticInfo">();
+		STATIC_CLASS_IMPL("FlamethrowerBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlamethrowerBrickStaticInfo")
 	}
 	static class UFlamethrowerBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlamethrowerBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UFlamethrowerBrickStaticInfo) == 0x000008, "Wrong alignment on UFlamethrowerBrickStaticInfo");
-static_assert(sizeof(UFlamethrowerBrickStaticInfo) == 0x0001C8, "Wrong size on UFlamethrowerBrickStaticInfo");
-static_assert(offsetof(UFlamethrowerBrickStaticInfo, FireEmitter) == 0x0001A8, "Member 'UFlamethrowerBrickStaticInfo::FireEmitter' has a wrong offset!");
-static_assert(offsetof(UFlamethrowerBrickStaticInfo, FireSound) == 0x0001B0, "Member 'UFlamethrowerBrickStaticInfo::FireSound' has a wrong offset!");
-static_assert(offsetof(UFlamethrowerBrickStaticInfo, FlameLength) == 0x0001B8, "Member 'UFlamethrowerBrickStaticInfo::FlameLength' has a wrong offset!");
-static_assert(offsetof(UFlamethrowerBrickStaticInfo, FlameRadius) == 0x0001BC, "Member 'UFlamethrowerBrickStaticInfo::FlameRadius' has a wrong offset!");
-static_assert(offsetof(UFlamethrowerBrickStaticInfo, FlameDamage) == 0x0001C0, "Member 'UFlamethrowerBrickStaticInfo::FlameDamage' has a wrong offset!");
-static_assert(offsetof(UFlamethrowerBrickStaticInfo, DamageInterval) == 0x0001C4, "Member 'UFlamethrowerBrickStaticInfo::DamageInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UFlamethrowerBrickStaticInfo;
 
 // Class BrickRigs.Brick
 // 0x0060 (0x00E8 - 0x0088)
@@ -887,7 +845,7 @@ public:
 	void EndPlay();
 	bool ExtinguishFire();
 	void Interact_PickUp(class ABrickPlayerController* OtherPC);
-	void K2_RegisterInputChannel(const struct FVehicleInputChannel& InputChannel, const TDelegate<void(const struct FInputChannelChangedParams& Params)>& Delegate);
+	void K2_RegisterInputChannel(const struct FVehicleInputChannel& InputChannel, const TDelegate<void(const struct FInputChannelChangedParams& Params_0)>& Delegate);
 	void MarkBrickBurnt();
 	void Repair();
 	void SetIsBrickBurnt(bool bNewBurnt);
@@ -919,25 +877,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Brick">();
+		STATIC_CLASS_IMPL("Brick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Brick")
 	}
 	static class UBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrick>();
 	}
 };
-static_assert(alignof(UBrick) == 0x000008, "Wrong alignment on UBrick");
-static_assert(sizeof(UBrick) == 0x0000E8, "Wrong size on UBrick");
-static_assert(offsetof(UBrick, BrickConnections) == 0x000088, "Member 'UBrick::BrickConnections' has a wrong offset!");
-static_assert(offsetof(UBrick, PatternOffset) == 0x000098, "Member 'UBrick::PatternOffset' has a wrong offset!");
-static_assert(offsetof(UBrick, PatternScale) == 0x0000A0, "Member 'UBrick::PatternScale' has a wrong offset!");
-static_assert(offsetof(UBrick, BrickMaterial) == 0x0000A8, "Member 'UBrick::BrickMaterial' has a wrong offset!");
-static_assert(offsetof(UBrick, BrickPattern) == 0x0000B0, "Member 'UBrick::BrickPattern' has a wrong offset!");
-static_assert(offsetof(UBrick, BrickPartRoot) == 0x0000B8, "Member 'UBrick::BrickPartRoot' has a wrong offset!");
-static_assert(offsetof(UBrick, BrickClusterRoot) == 0x0000C0, "Member 'UBrick::BrickClusterRoot' has a wrong offset!");
-static_assert(offsetof(UBrick, BrickColor) == 0x0000D0, "Member 'UBrick::BrickColor' has a wrong offset!");
-static_assert(offsetof(UBrick, PatternRotation) == 0x0000D8, "Member 'UBrick::PatternRotation' has a wrong offset!");
-static_assert(offsetof(UBrick, bGenerateLift) == 0x0000E0, "Member 'UBrick::bGenerateLift' has a wrong offset!");
+DUMPER7_ASSERTS_UBrick;
 
 // Class BrickRigs.ActuatorBrick
 // 0x00E8 (0x01D0 - 0x00E8)
@@ -964,22 +915,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActuatorBrick">();
+		STATIC_CLASS_IMPL("ActuatorBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActuatorBrick")
 	}
 	static class UActuatorBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActuatorBrick>();
 	}
 };
-static_assert(alignof(UActuatorBrick) == 0x000008, "Wrong alignment on UActuatorBrick");
-static_assert(sizeof(UActuatorBrick) == 0x0001D0, "Wrong size on UActuatorBrick");
-static_assert(offsetof(UActuatorBrick, RepActuatorState) == 0x0000F8, "Member 'UActuatorBrick::RepActuatorState' has a wrong offset!");
-static_assert(offsetof(UActuatorBrick, InteractingPC) == 0x000178, "Member 'UActuatorBrick::InteractingPC' has a wrong offset!");
-static_assert(offsetof(UActuatorBrick, ActuatorMode) == 0x000195, "Member 'UActuatorBrick::ActuatorMode' has a wrong offset!");
-static_assert(offsetof(UActuatorBrick, InputChannel) == 0x000198, "Member 'UActuatorBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(UActuatorBrick, SpeedFactor) == 0x0001C0, "Member 'UActuatorBrick::SpeedFactor' has a wrong offset!");
-static_assert(offsetof(UActuatorBrick, MaxLimit) == 0x0001C4, "Member 'UActuatorBrick::MaxLimit' has a wrong offset!");
-static_assert(offsetof(UActuatorBrick, MinLimit) == 0x0001C8, "Member 'UActuatorBrick::MinLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UActuatorBrick;
 
 // Class BrickRigs.MenuPageWidget
 // 0x0010 (0x0270 - 0x0260)
@@ -999,16 +946,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuPageWidget">();
+		STATIC_CLASS_IMPL("MenuPageWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuPageWidget")
 	}
 	static class UMenuPageWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuPageWidget>();
 	}
 };
-static_assert(alignof(UMenuPageWidget) == 0x000008, "Wrong alignment on UMenuPageWidget");
-static_assert(sizeof(UMenuPageWidget) == 0x000270, "Wrong size on UMenuPageWidget");
-static_assert(offsetof(UMenuPageWidget, MenuPageSize) == 0x000268, "Member 'UMenuPageWidget::MenuPageSize' has a wrong offset!");
+DUMPER7_ASSERTS_UMenuPageWidget;
 
 // Class BrickRigs.PopupParams
 // 0x0040 (0x0068 - 0x0028)
@@ -1029,17 +978,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupParams">();
+		STATIC_CLASS_IMPL("PopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupParams")
 	}
 	static class UPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupParams>();
 	}
 };
-static_assert(alignof(UPopupParams) == 0x000008, "Wrong alignment on UPopupParams");
-static_assert(sizeof(UPopupParams) == 0x000068, "Wrong size on UPopupParams");
-static_assert(offsetof(UPopupParams, OwningPC) == 0x000028, "Member 'UPopupParams::OwningPC' has a wrong offset!");
-static_assert(offsetof(UPopupParams, PopupClass) == 0x000040, "Member 'UPopupParams::PopupClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupParams;
 
 // Class BrickRigs.KickPlayerPopupParams
 // 0x00A0 (0x0108 - 0x0068)
@@ -1055,19 +1005,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KickPlayerPopupParams">();
+		STATIC_CLASS_IMPL("KickPlayerPopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KickPlayerPopupParams")
 	}
 	static class UKickPlayerPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKickPlayerPopupParams>();
 	}
 };
-static_assert(alignof(UKickPlayerPopupParams) == 0x000008, "Wrong alignment on UKickPlayerPopupParams");
-static_assert(sizeof(UKickPlayerPopupParams) == 0x000108, "Wrong size on UKickPlayerPopupParams");
-static_assert(offsetof(UKickPlayerPopupParams, PlayerId) == 0x0000B8, "Member 'UKickPlayerPopupParams::PlayerId' has a wrong offset!");
-static_assert(offsetof(UKickPlayerPopupParams, PlayerName) == 0x0000E0, "Member 'UKickPlayerPopupParams::PlayerName' has a wrong offset!");
-static_assert(offsetof(UKickPlayerPopupParams, KickReason) == 0x0000F0, "Member 'UKickPlayerPopupParams::KickReason' has a wrong offset!");
-static_assert(offsetof(UKickPlayerPopupParams, KickDuration) == 0x000100, "Member 'UKickPlayerPopupParams::KickDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UKickPlayerPopupParams;
 
 // Class BrickRigs.BrickCheatManager
 // 0x00F8 (0x0180 - 0x0088)
@@ -1089,18 +1038,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickCheatManager">();
+		STATIC_CLASS_IMPL("BrickCheatManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickCheatManager")
 	}
 	static class UBrickCheatManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickCheatManager>();
 	}
 };
-static_assert(alignof(UBrickCheatManager) == 0x000008, "Wrong alignment on UBrickCheatManager");
-static_assert(sizeof(UBrickCheatManager) == 0x000180, "Wrong size on UBrickCheatManager");
-static_assert(offsetof(UBrickCheatManager, bShowStatUnit) == 0x000091, "Member 'UBrickCheatManager::bShowStatUnit' has a wrong offset!");
-static_assert(offsetof(UBrickCheatManager, bEnableGodMode) == 0x000092, "Member 'UBrickCheatManager::bEnableGodMode' has a wrong offset!");
-static_assert(offsetof(UBrickCheatManager, VehicleToSpawn) == 0x000098, "Member 'UBrickCheatManager::VehicleToSpawn' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickCheatManager;
 
 // Class BrickRigs.PropertyWidget
 // 0x0020 (0x0280 - 0x0260)
@@ -1122,17 +1071,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyWidget">();
+		STATIC_CLASS_IMPL("PropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyWidget")
 	}
 	static class UPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyWidget>();
 	}
 };
-static_assert(alignof(UPropertyWidget) == 0x000008, "Wrong alignment on UPropertyWidget");
-static_assert(sizeof(UPropertyWidget) == 0x000280, "Wrong size on UPropertyWidget");
-static_assert(offsetof(UPropertyWidget, bSupportsReadOnly) == 0x00027A, "Member 'UPropertyWidget::bSupportsReadOnly' has a wrong offset!");
-static_assert(offsetof(UPropertyWidget, bSupportsWritable) == 0x00027B, "Member 'UPropertyWidget::bSupportsWritable' has a wrong offset!");
+DUMPER7_ASSERTS_UPropertyWidget;
 
 // Class BrickRigs.ObjectPropertyWidget
 // 0x0018 (0x0298 - 0x0280)
@@ -1151,17 +1101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ObjectPropertyWidget">();
+		STATIC_CLASS_IMPL("ObjectPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ObjectPropertyWidget")
 	}
 	static class UObjectPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UObjectPropertyWidget>();
 	}
 };
-static_assert(alignof(UObjectPropertyWidget) == 0x000008, "Wrong alignment on UObjectPropertyWidget");
-static_assert(sizeof(UObjectPropertyWidget) == 0x000298, "Wrong size on UObjectPropertyWidget");
-static_assert(offsetof(UObjectPropertyWidget, BrickComboBox) == 0x000288, "Member 'UObjectPropertyWidget::BrickComboBox' has a wrong offset!");
-static_assert(offsetof(UObjectPropertyWidget, IconSize) == 0x000290, "Member 'UObjectPropertyWidget::IconSize' has a wrong offset!");
+DUMPER7_ASSERTS_UObjectPropertyWidget;
 
 // Class BrickRigs.AdminMenuWidget
 // 0x0048 (0x02B8 - 0x0270)
@@ -1187,18 +1138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdminMenuWidget">();
+		STATIC_CLASS_IMPL("AdminMenuWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdminMenuWidget")
 	}
 	static class UAdminMenuWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdminMenuWidget>();
 	}
 };
-static_assert(alignof(UAdminMenuWidget) == 0x000008, "Wrong alignment on UAdminMenuWidget");
-static_assert(sizeof(UAdminMenuWidget) == 0x0002B8, "Wrong size on UAdminMenuWidget");
-static_assert(offsetof(UAdminMenuWidget, PagedList) == 0x000298, "Member 'UAdminMenuWidget::PagedList' has a wrong offset!");
-static_assert(offsetof(UAdminMenuWidget, KickedPlayerSortMethod) == 0x0002A0, "Member 'UAdminMenuWidget::KickedPlayerSortMethod' has a wrong offset!");
-static_assert(offsetof(UAdminMenuWidget, KickedPlayerSearchText) == 0x0002A8, "Member 'UAdminMenuWidget::KickedPlayerSearchText' has a wrong offset!");
+DUMPER7_ASSERTS_UAdminMenuWidget;
 
 // Class BrickRigs.BrickEditorInterfaceComponent
 // 0x0080 (0x0280 - 0x0200)
@@ -1214,16 +1165,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorInterfaceComponent">();
+		STATIC_CLASS_IMPL("BrickEditorInterfaceComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorInterfaceComponent")
 	}
 	static class UBrickEditorInterfaceComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorInterfaceComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorInterfaceComponent) == 0x000010, "Wrong alignment on UBrickEditorInterfaceComponent");
-static_assert(sizeof(UBrickEditorInterfaceComponent) == 0x000280, "Wrong size on UBrickEditorInterfaceComponent");
-static_assert(offsetof(UBrickEditorInterfaceComponent, BrickEditorObjects) == 0x0001F8, "Member 'UBrickEditorInterfaceComponent::BrickEditorObjects' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickEditorInterfaceComponent;
 
 // Class BrickRigs.BrickVehicleComponent
 // 0x00B0 (0x0330 - 0x0280)
@@ -1235,15 +1188,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickVehicleComponent">();
+		STATIC_CLASS_IMPL("BrickVehicleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickVehicleComponent")
 	}
 	static class UBrickVehicleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickVehicleComponent>();
 	}
 };
-static_assert(alignof(UBrickVehicleComponent) == 0x000010, "Wrong alignment on UBrickVehicleComponent");
-static_assert(sizeof(UBrickVehicleComponent) == 0x000330, "Wrong size on UBrickVehicleComponent");
+DUMPER7_ASSERTS_UBrickVehicleComponent;
 
 // Class BrickRigs.BrickUserWidget
 // 0x0010 (0x0270 - 0x0260)
@@ -1261,16 +1217,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickUserWidget">();
+		STATIC_CLASS_IMPL("BrickUserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickUserWidget")
 	}
 	static class UBrickUserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickUserWidget>();
 	}
 };
-static_assert(alignof(UBrickUserWidget) == 0x000008, "Wrong alignment on UBrickUserWidget");
-static_assert(sizeof(UBrickUserWidget) == 0x000270, "Wrong size on UBrickUserWidget");
-static_assert(offsetof(UBrickUserWidget, GetTooltipContentDelegate) == 0x000260, "Member 'UBrickUserWidget::GetTooltipContentDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickUserWidget;
 
 // Class BrickRigs.InventoryItem
 // 0x0048 (0x0270 - 0x0228)
@@ -1315,22 +1273,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InventoryItem">();
+		STATIC_CLASS_IMPL("InventoryItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InventoryItem")
 	}
 	static class AInventoryItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AInventoryItem>();
 	}
 };
-static_assert(alignof(AInventoryItem) == 0x000008, "Wrong alignment on AInventoryItem");
-static_assert(sizeof(AInventoryItem) == 0x000270, "Wrong size on AInventoryItem");
-static_assert(offsetof(AInventoryItem, Mid) == 0x000238, "Member 'AInventoryItem::Mid' has a wrong offset!");
-static_assert(offsetof(AInventoryItem, StaticMeshComponent) == 0x000240, "Member 'AInventoryItem::StaticMeshComponent' has a wrong offset!");
-static_assert(offsetof(AInventoryItem, SkeletalMeshComponent) == 0x000248, "Member 'AInventoryItem::SkeletalMeshComponent' has a wrong offset!");
-static_assert(offsetof(AInventoryItem, InteractionComponent) == 0x000250, "Member 'AInventoryItem::InteractionComponent' has a wrong offset!");
-static_assert(offsetof(AInventoryItem, InventoryComponent) == 0x000258, "Member 'AInventoryItem::InventoryComponent' has a wrong offset!");
-static_assert(offsetof(AInventoryItem, CollisionAudioComponent) == 0x000260, "Member 'AInventoryItem::CollisionAudioComponent' has a wrong offset!");
-static_assert(offsetof(AInventoryItem, StaticInfoClass) == 0x000268, "Member 'AInventoryItem::StaticInfoClass' has a wrong offset!");
+DUMPER7_ASSERTS_AInventoryItem;
 
 // Class BrickRigs.BrickComboBoxItemContainerWidget
 // 0x0020 (0x0290 - 0x0270)
@@ -1353,17 +1307,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickComboBoxItemContainerWidget">();
+		STATIC_CLASS_IMPL("BrickComboBoxItemContainerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickComboBoxItemContainerWidget")
 	}
 	static class UBrickComboBoxItemContainerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickComboBoxItemContainerWidget>();
 	}
 };
-static_assert(alignof(UBrickComboBoxItemContainerWidget) == 0x000008, "Wrong alignment on UBrickComboBoxItemContainerWidget");
-static_assert(sizeof(UBrickComboBoxItemContainerWidget) == 0x000290, "Wrong size on UBrickComboBoxItemContainerWidget");
-static_assert(offsetof(UBrickComboBoxItemContainerWidget, ItemWidget) == 0x000278, "Member 'UBrickComboBoxItemContainerWidget::ItemWidget' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxItemContainerWidget, Button) == 0x000288, "Member 'UBrickComboBoxItemContainerWidget::Button' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickComboBoxItemContainerWidget;
 
 // Class BrickRigs.HUDIconPanelWidget
 // 0x0098 (0x02F8 - 0x0260)
@@ -1379,18 +1334,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HUDIconPanelWidget">();
+		STATIC_CLASS_IMPL("HUDIconPanelWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDIconPanelWidget")
 	}
 	static class UHUDIconPanelWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUDIconPanelWidget>();
 	}
 };
-static_assert(alignof(UHUDIconPanelWidget) == 0x000008, "Wrong alignment on UHUDIconPanelWidget");
-static_assert(sizeof(UHUDIconPanelWidget) == 0x0002F8, "Wrong size on UHUDIconPanelWidget");
-static_assert(offsetof(UHUDIconPanelWidget, IconContainerWidgetClass) == 0x0002C8, "Member 'UHUDIconPanelWidget::IconContainerWidgetClass' has a wrong offset!");
-static_assert(offsetof(UHUDIconPanelWidget, InteractionWidgetClass) == 0x0002D0, "Member 'UHUDIconPanelWidget::InteractionWidgetClass' has a wrong offset!");
-static_assert(offsetof(UHUDIconPanelWidget, IconDomain) == 0x0002D8, "Member 'UHUDIconPanelWidget::IconDomain' has a wrong offset!");
+DUMPER7_ASSERTS_UHUDIconPanelWidget;
 
 // Class BrickRigs.HUDIconCanvasWidget
 // 0x0018 (0x0310 - 0x02F8)
@@ -1404,18 +1359,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HUDIconCanvasWidget">();
+		STATIC_CLASS_IMPL("HUDIconCanvasWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDIconCanvasWidget")
 	}
 	static class UHUDIconCanvasWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUDIconCanvasWidget>();
 	}
 };
-static_assert(alignof(UHUDIconCanvasWidget) == 0x000008, "Wrong alignment on UHUDIconCanvasWidget");
-static_assert(sizeof(UHUDIconCanvasWidget) == 0x000310, "Wrong size on UHUDIconCanvasWidget");
-static_assert(offsetof(UHUDIconCanvasWidget, InteractionWidget) == 0x0002F8, "Member 'UHUDIconCanvasWidget::InteractionWidget' has a wrong offset!");
-static_assert(offsetof(UHUDIconCanvasWidget, MainCanvasPanel) == 0x000300, "Member 'UHUDIconCanvasWidget::MainCanvasPanel' has a wrong offset!");
-static_assert(offsetof(UHUDIconCanvasWidget, IconScaleRange) == 0x000308, "Member 'UHUDIconCanvasWidget::IconScaleRange' has a wrong offset!");
+DUMPER7_ASSERTS_UHUDIconCanvasWidget;
 
 // Class BrickRigs.MapWidget
 // 0x0170 (0x0480 - 0x0310)
@@ -1454,31 +1409,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MapWidget">();
+		STATIC_CLASS_IMPL("MapWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MapWidget")
 	}
 	static class UMapWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMapWidget>();
 	}
 };
-static_assert(alignof(UMapWidget) == 0x000008, "Wrong alignment on UMapWidget");
-static_assert(sizeof(UMapWidget) == 0x000480, "Wrong size on UMapWidget");
-static_assert(offsetof(UMapWidget, CursorIconComponent) == 0x0003D8, "Member 'UMapWidget::CursorIconComponent' has a wrong offset!");
-static_assert(offsetof(UMapWidget, MapMID) == 0x0003F0, "Member 'UMapWidget::MapMID' has a wrong offset!");
-static_assert(offsetof(UMapWidget, ButtonPanel) == 0x000408, "Member 'UMapWidget::ButtonPanel' has a wrong offset!");
-static_assert(offsetof(UMapWidget, ScaleTextBlock) == 0x000410, "Member 'UMapWidget::ScaleTextBlock' has a wrong offset!");
-static_assert(offsetof(UMapWidget, MinViewportSize) == 0x000418, "Member 'UMapWidget::MinViewportSize' has a wrong offset!");
-static_assert(offsetof(UMapWidget, PanSpeed) == 0x00041C, "Member 'UMapWidget::PanSpeed' has a wrong offset!");
-static_assert(offsetof(UMapWidget, ZoomSpeed) == 0x000420, "Member 'UMapWidget::ZoomSpeed' has a wrong offset!");
-static_assert(offsetof(UMapWidget, ZoomStep) == 0x000424, "Member 'UMapWidget::ZoomStep' has a wrong offset!");
-static_assert(offsetof(UMapWidget, ViewportInterpSpeed) == 0x000428, "Member 'UMapWidget::ViewportInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UMapWidget, MapResolutionScale) == 0x00042C, "Member 'UMapWidget::MapResolutionScale' has a wrong offset!");
-static_assert(offsetof(UMapWidget, MapRenderInterval) == 0x000430, "Member 'UMapWidget::MapRenderInterval' has a wrong offset!");
-static_assert(offsetof(UMapWidget, MapMovedRenderDelay) == 0x000434, "Member 'UMapWidget::MapMovedRenderDelay' has a wrong offset!");
-static_assert(offsetof(UMapWidget, GridSize) == 0x000438, "Member 'UMapWidget::GridSize' has a wrong offset!");
-static_assert(offsetof(UMapWidget, ViewportSizeIconScaleRange) == 0x00043C, "Member 'UMapWidget::ViewportSizeIconScaleRange' has a wrong offset!");
-static_assert(offsetof(UMapWidget, CursorIconProperties) == 0x000448, "Member 'UMapWidget::CursorIconProperties' has a wrong offset!");
-static_assert(offsetof(UMapWidget, CrosshairWidgetClass) == 0x000478, "Member 'UMapWidget::CrosshairWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UMapWidget;
 
 // Class BrickRigs.AmmoBox
 // 0x0008 (0x0278 - 0x0270)
@@ -1490,15 +1432,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AmmoBox">();
+		STATIC_CLASS_IMPL("AmmoBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AmmoBox")
 	}
 	static class AAmmoBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAmmoBox>();
 	}
 };
-static_assert(alignof(AAmmoBox) == 0x000008, "Wrong alignment on AAmmoBox");
-static_assert(sizeof(AAmmoBox) == 0x000278, "Wrong size on AAmmoBox");
+DUMPER7_ASSERTS_AAmmoBox;
 
 // Class BrickRigs.BrickComboBoxItemWidget
 // 0x0058 (0x02C8 - 0x0270)
@@ -1519,17 +1464,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickComboBoxItemWidget">();
+		STATIC_CLASS_IMPL("BrickComboBoxItemWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickComboBoxItemWidget")
 	}
 	static class UBrickComboBoxItemWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickComboBoxItemWidget>();
 	}
 };
-static_assert(alignof(UBrickComboBoxItemWidget) == 0x000008, "Wrong alignment on UBrickComboBoxItemWidget");
-static_assert(sizeof(UBrickComboBoxItemWidget) == 0x0002C8, "Wrong size on UBrickComboBoxItemWidget");
-static_assert(offsetof(UBrickComboBoxItemWidget, TextBlock) == 0x0002B8, "Member 'UBrickComboBoxItemWidget::TextBlock' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxItemWidget, IconImage) == 0x0002C0, "Member 'UBrickComboBoxItemWidget::IconImage' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickComboBoxItemWidget;
 
 // Class BrickRigs.ItemStaticInfo
 // 0x0368 (0x0390 - 0x0028)
@@ -1569,39 +1515,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ItemStaticInfo">();
+		STATIC_CLASS_IMPL("ItemStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemStaticInfo")
 	}
 	static class UItemStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemStaticInfo>();
 	}
 };
-static_assert(alignof(UItemStaticInfo) == 0x000010, "Wrong alignment on UItemStaticInfo");
-static_assert(sizeof(UItemStaticInfo) == 0x000390, "Wrong size on UItemStaticInfo");
-static_assert(offsetof(UItemStaticInfo, ItemIdleTransform) == 0x000030, "Member 'UItemStaticInfo::ItemIdleTransform' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, StaticMesh) == 0x000060, "Member 'UItemStaticInfo::StaticMesh' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, SkeletalMesh) == 0x000068, "Member 'UItemStaticInfo::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, MaterialOverride) == 0x000090, "Member 'UItemStaticInfo::MaterialOverride' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, ThumbnailStaticMesh) == 0x000098, "Member 'UItemStaticInfo::ThumbnailStaticMesh' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, MaxDrawDistance) == 0x0000A0, "Member 'UItemStaticInfo::MaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, AnimInstanceClass) == 0x0000A8, "Member 'UItemStaticInfo::AnimInstanceClass' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, PhysicalMaterial) == 0x0000B0, "Member 'UItemStaticInfo::PhysicalMaterial' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, DisplayName) == 0x0000B8, "Member 'UItemStaticInfo::DisplayName' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, bCanBeEquipped) == 0x0000D0, "Member 'UItemStaticInfo::bCanBeEquipped' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, SortOrder) == 0x0000D8, "Member 'UItemStaticInfo::SortOrder' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, ItemTags) == 0x0000E0, "Member 'UItemStaticInfo::ItemTags' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, SlotTags) == 0x000100, "Member 'UItemStaticInfo::SlotTags' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, Price) == 0x000120, "Member 'UItemStaticInfo::Price' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, AimParams) == 0x000130, "Member 'UItemStaticInfo::AimParams' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, CharacterSocketRelativeLoc) == 0x000170, "Member 'UItemStaticInfo::CharacterSocketRelativeLoc' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, CharacterSocketRelativeRot) == 0x00017C, "Member 'UItemStaticInfo::CharacterSocketRelativeRot' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, CollisionSound) == 0x000188, "Member 'UItemStaticInfo::CollisionSound' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, IdleSequence) == 0x000190, "Member 'UItemStaticInfo::IdleSequence' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, SprintSequence) == 0x000198, "Member 'UItemStaticInfo::SprintSequence' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, EquipAnimation) == 0x0001A0, "Member 'UItemStaticInfo::EquipAnimation' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, UnequipAnimation) == 0x000268, "Member 'UItemStaticInfo::UnequipAnimation' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, IdlePoseOffsetFP) == 0x000330, "Member 'UItemStaticInfo::IdlePoseOffsetFP' has a wrong offset!");
-static_assert(offsetof(UItemStaticInfo, IdlePoseOffsetTP) == 0x000360, "Member 'UItemStaticInfo::IdlePoseOffsetTP' has a wrong offset!");
+DUMPER7_ASSERTS_UItemStaticInfo;
 
 // Class BrickRigs.MenuAnchorWidget
 // 0x0008 (0x0268 - 0x0260)
@@ -1618,15 +1543,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuAnchorWidget">();
+		STATIC_CLASS_IMPL("MenuAnchorWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuAnchorWidget")
 	}
 	static class UMenuAnchorWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuAnchorWidget>();
 	}
 };
-static_assert(alignof(UMenuAnchorWidget) == 0x000008, "Wrong alignment on UMenuAnchorWidget");
-static_assert(sizeof(UMenuAnchorWidget) == 0x000268, "Wrong size on UMenuAnchorWidget");
+DUMPER7_ASSERTS_UMenuAnchorWidget;
 
 // Class BrickRigs.BuildingPart
 // 0x0028 (0x0050 - 0x0028)
@@ -1645,15 +1573,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuildingPart">();
+		STATIC_CLASS_IMPL("BuildingPart")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuildingPart")
 	}
 	static class UBuildingPart* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuildingPart>();
 	}
 };
-static_assert(alignof(UBuildingPart) == 0x000008, "Wrong alignment on UBuildingPart");
-static_assert(sizeof(UBuildingPart) == 0x000050, "Wrong size on UBuildingPart");
+DUMPER7_ASSERTS_UBuildingPart;
 
 // Class BrickRigs.AmmoBoxStaticInfo
 // 0x0030 (0x03C0 - 0x0390)
@@ -1668,17 +1599,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AmmoBoxStaticInfo">();
+		STATIC_CLASS_IMPL("AmmoBoxStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AmmoBoxStaticInfo")
 	}
 	static class UAmmoBoxStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAmmoBoxStaticInfo>();
 	}
 };
-static_assert(alignof(UAmmoBoxStaticInfo) == 0x000010, "Wrong alignment on UAmmoBoxStaticInfo");
-static_assert(sizeof(UAmmoBoxStaticInfo) == 0x0003C0, "Wrong size on UAmmoBoxStaticInfo");
-static_assert(offsetof(UAmmoBoxStaticInfo, AmmoCapacity) == 0x000390, "Member 'UAmmoBoxStaticInfo::AmmoCapacity' has a wrong offset!");
-static_assert(offsetof(UAmmoBoxStaticInfo, CompatibleCalibers) == 0x000398, "Member 'UAmmoBoxStaticInfo::CompatibleCalibers' has a wrong offset!");
+DUMPER7_ASSERTS_UAmmoBoxStaticInfo;
 
 // Class BrickRigs.WheelBrick
 // 0x0020 (0x0108 - 0x00E8)
@@ -1695,19 +1627,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WheelBrick">();
+		STATIC_CLASS_IMPL("WheelBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WheelBrick")
 	}
 	static class UWheelBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWheelBrick>();
 	}
 };
-static_assert(alignof(UWheelBrick) == 0x000008, "Wrong alignment on UWheelBrick");
-static_assert(sizeof(UWheelBrick) == 0x000108, "Wrong size on UWheelBrick");
-static_assert(offsetof(UWheelBrick, WheelConnections) == 0x0000E8, "Member 'UWheelBrick::WheelConnections' has a wrong offset!");
-static_assert(offsetof(UWheelBrick, bInvertTankSteering) == 0x0000F8, "Member 'UWheelBrick::bInvertTankSteering' has a wrong offset!");
-static_assert(offsetof(UWheelBrick, WheelDiameter) == 0x0000FC, "Member 'UWheelBrick::WheelDiameter' has a wrong offset!");
-static_assert(offsetof(UWheelBrick, WheelWidth) == 0x000100, "Member 'UWheelBrick::WheelWidth' has a wrong offset!");
+DUMPER7_ASSERTS_UWheelBrick;
 
 // Class BrickRigs.BrickComboBoxMenuWidget
 // 0x0010 (0x0278 - 0x0268)
@@ -1720,16 +1651,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickComboBoxMenuWidget">();
+		STATIC_CLASS_IMPL("BrickComboBoxMenuWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickComboBoxMenuWidget")
 	}
 	static class UBrickComboBoxMenuWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickComboBoxMenuWidget>();
 	}
 };
-static_assert(alignof(UBrickComboBoxMenuWidget) == 0x000008, "Wrong alignment on UBrickComboBoxMenuWidget");
-static_assert(sizeof(UBrickComboBoxMenuWidget) == 0x000278, "Wrong size on UBrickComboBoxMenuWidget");
-static_assert(offsetof(UBrickComboBoxMenuWidget, ComboBox) == 0x000270, "Member 'UBrickComboBoxMenuWidget::ComboBox' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickComboBoxMenuWidget;
 
 // Class BrickRigs.AntennaBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -1738,15 +1671,18 @@ class UAntennaBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AntennaBrickStaticInfo">();
+		STATIC_CLASS_IMPL("AntennaBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AntennaBrickStaticInfo")
 	}
 	static class UAntennaBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAntennaBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UAntennaBrickStaticInfo) == 0x000008, "Wrong alignment on UAntennaBrickStaticInfo");
-static_assert(sizeof(UAntennaBrickStaticInfo) == 0x000190, "Wrong size on UAntennaBrickStaticInfo");
+DUMPER7_ASSERTS_UAntennaBrickStaticInfo;
 
 // Class BrickRigs.BrickComboBoxWidget
 // 0x0090 (0x02F0 - 0x0260)
@@ -1789,27 +1725,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickComboBoxWidget">();
+		STATIC_CLASS_IMPL("BrickComboBoxWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickComboBoxWidget")
 	}
 	static class UBrickComboBoxWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickComboBoxWidget>();
 	}
 };
-static_assert(alignof(UBrickComboBoxWidget) == 0x000008, "Wrong alignment on UBrickComboBoxWidget");
-static_assert(sizeof(UBrickComboBoxWidget) == 0x0002F0, "Wrong size on UBrickComboBoxWidget");
-static_assert(offsetof(UBrickComboBoxWidget, SelectedItemWidget) == 0x000280, "Member 'UBrickComboBoxWidget::SelectedItemWidget' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, ItemContainerWidgets) == 0x000288, "Member 'UBrickComboBoxWidget::ItemContainerWidgets' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, MenuWidget) == 0x000298, "Member 'UBrickComboBoxWidget::MenuWidget' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, Button) == 0x0002A0, "Member 'UBrickComboBoxWidget::Button' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, ItemsPanel) == 0x0002A8, "Member 'UBrickComboBoxWidget::ItemsPanel' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, ItemWidgetClass) == 0x0002B0, "Member 'UBrickComboBoxWidget::ItemWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, ItemContainerWidgetClass) == 0x0002B8, "Member 'UBrickComboBoxWidget::ItemContainerWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, MenuWidgetClass) == 0x0002C0, "Member 'UBrickComboBoxWidget::MenuWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, MaxListItems) == 0x0002C8, "Member 'UBrickComboBoxWidget::MaxListItems' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, MaxItemsPerRow) == 0x0002CC, "Member 'UBrickComboBoxWidget::MaxItemsPerRow' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, OnInitializeItemDelegate) == 0x0002D0, "Member 'UBrickComboBoxWidget::OnInitializeItemDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickComboBoxWidget, OnItemSelectedDelegate) == 0x0002E0, "Member 'UBrickComboBoxWidget::OnItemSelectedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickComboBoxWidget;
 
 // Class BrickRigs.NetworkErrorPopupParams
 // 0x0000 (0x0068 - 0x0068)
@@ -1818,15 +1745,18 @@ class UNetworkErrorPopupParams final : public UPopupParams
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetworkErrorPopupParams">();
+		STATIC_CLASS_IMPL("NetworkErrorPopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetworkErrorPopupParams")
 	}
 	static class UNetworkErrorPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetworkErrorPopupParams>();
 	}
 };
-static_assert(alignof(UNetworkErrorPopupParams) == 0x000008, "Wrong alignment on UNetworkErrorPopupParams");
-static_assert(sizeof(UNetworkErrorPopupParams) == 0x000068, "Wrong size on UNetworkErrorPopupParams");
+DUMPER7_ASSERTS_UNetworkErrorPopupParams;
 
 // Class BrickRigs.ArchBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -1835,15 +1765,18 @@ class UArchBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ArchBrickStaticInfo">();
+		STATIC_CLASS_IMPL("ArchBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ArchBrickStaticInfo")
 	}
 	static class UArchBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UArchBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UArchBrickStaticInfo) == 0x000008, "Wrong alignment on UArchBrickStaticInfo");
-static_assert(sizeof(UArchBrickStaticInfo) == 0x000190, "Wrong size on UArchBrickStaticInfo");
+DUMPER7_ASSERTS_UArchBrickStaticInfo;
 
 // Class BrickRigs.BrickPlayerInput
 // 0x00C8 (0x0470 - 0x03A8)
@@ -1858,17 +1791,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickPlayerInput">();
+		STATIC_CLASS_IMPL("BrickPlayerInput")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickPlayerInput")
 	}
 	static class UBrickPlayerInput* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickPlayerInput>();
 	}
 };
-static_assert(alignof(UBrickPlayerInput) == 0x000008, "Wrong alignment on UBrickPlayerInput");
-static_assert(sizeof(UBrickPlayerInput) == 0x000470, "Wrong size on UBrickPlayerInput");
-static_assert(offsetof(UBrickPlayerInput, LastInputStack) == 0x000400, "Member 'UBrickPlayerInput::LastInputStack' has a wrong offset!");
-static_assert(offsetof(UBrickPlayerInput, OnInputMethodChangedDelegate) == 0x000460, "Member 'UBrickPlayerInput::OnInputMethodChangedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickPlayerInput;
 
 // Class BrickRigs.BrickVehicle
 // 0x0840 (0x0AC0 - 0x0280)
@@ -1964,38 +1898,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickVehicle">();
+		STATIC_CLASS_IMPL("BrickVehicle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickVehicle")
 	}
 	static class ABrickVehicle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickVehicle>();
 	}
 };
-static_assert(alignof(ABrickVehicle) == 0x000010, "Wrong alignment on ABrickVehicle");
-static_assert(sizeof(ABrickVehicle) == 0x000AC0, "Wrong size on ABrickVehicle");
-static_assert(offsetof(ABrickVehicle, VehicleFileInfo) == 0x000380, "Member 'ABrickVehicle::VehicleFileInfo' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, RestartTransform) == 0x000468, "Member 'ABrickVehicle::RestartTransform' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, RepVehicleMovement) == 0x000488, "Member 'ABrickVehicle::RepVehicleMovement' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, SpawningPlayerState) == 0x0005D8, "Member 'ABrickVehicle::SpawningPlayerState' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, OriginalSpawnPoint) == 0x0005E0, "Member 'ABrickVehicle::OriginalSpawnPoint' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, BrickConnections) == 0x0005E8, "Member 'ABrickVehicle::BrickConnections' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, DynamicBrickConnections) == 0x0005F8, "Member 'ABrickVehicle::DynamicBrickConnections' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, ExternalBrickConnections) == 0x000608, "Member 'ABrickVehicle::ExternalBrickConnections' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, BrickConnectionsToBreak) == 0x000618, "Member 'ABrickVehicle::BrickConnectionsToBreak' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, RepBrickConnectionDamage) == 0x000628, "Member 'ABrickVehicle::RepBrickConnectionDamage' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, RepBrickDamage) == 0x000758, "Member 'ABrickVehicle::RepBrickDamage' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, RepFuelLevelRatio) == 0x00087C, "Member 'ABrickVehicle::RepFuelLevelRatio' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, PinMode) == 0x000884, "Member 'ABrickVehicle::PinMode' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, PassengerTeamIds) == 0x000888, "Member 'ABrickVehicle::PassengerTeamIds' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, RootBrick) == 0x0008A8, "Member 'ABrickVehicle::RootBrick' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, DriverSeat) == 0x0008B0, "Member 'ABrickVehicle::DriverSeat' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, VehicleComponent) == 0x000A00, "Member 'ABrickVehicle::VehicleComponent' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, HandlingAudioComponent) == 0x000A08, "Member 'ABrickVehicle::HandlingAudioComponent' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, HUDIconComponent) == 0x000A10, "Member 'ABrickVehicle::HUDIconComponent' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, FirearmComponents) == 0x000A18, "Member 'ABrickVehicle::FirearmComponents' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, InventoryComponent) == 0x000A28, "Member 'ABrickVehicle::InventoryComponent' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, SpawnCollisionBox) == 0x000A30, "Member 'ABrickVehicle::SpawnCollisionBox' has a wrong offset!");
-static_assert(offsetof(ABrickVehicle, StaticInfoClass) == 0x000AB0, "Member 'ABrickVehicle::StaticInfoClass' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickVehicle;
 
 // Class BrickRigs.Attachment
 // 0x0000 (0x0270 - 0x0270)
@@ -2007,15 +1921,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Attachment">();
+		STATIC_CLASS_IMPL("Attachment")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Attachment")
 	}
 	static class AAttachment* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAttachment>();
 	}
 };
-static_assert(alignof(AAttachment) == 0x000008, "Wrong alignment on AAttachment");
-static_assert(sizeof(AAttachment) == 0x000270, "Wrong size on AAttachment");
+DUMPER7_ASSERTS_AAttachment;
 
 // Class BrickRigs.BrickConnection
 // 0x0038 (0x0060 - 0x0028)
@@ -2035,21 +1952,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickConnection">();
+		STATIC_CLASS_IMPL("BrickConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickConnection")
 	}
 	static class UBrickConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickConnection>();
 	}
 };
-static_assert(alignof(UBrickConnection) == 0x000008, "Wrong alignment on UBrickConnection");
-static_assert(sizeof(UBrickConnection) == 0x000060, "Wrong size on UBrickConnection");
-static_assert(offsetof(UBrickConnection, Brick0) == 0x000030, "Member 'UBrickConnection::Brick0' has a wrong offset!");
-static_assert(offsetof(UBrickConnection, Brick1) == 0x000038, "Member 'UBrickConnection::Brick1' has a wrong offset!");
-static_assert(offsetof(UBrickConnection, BrickID0) == 0x000040, "Member 'UBrickConnection::BrickID0' has a wrong offset!");
-static_assert(offsetof(UBrickConnection, BrickID1) == 0x000042, "Member 'UBrickConnection::BrickID1' has a wrong offset!");
-static_assert(offsetof(UBrickConnection, OtherVehicle) == 0x000048, "Member 'UBrickConnection::OtherVehicle' has a wrong offset!");
-static_assert(offsetof(UBrickConnection, Params_0) == 0x000050, "Member 'UBrickConnection::Params_0' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickConnection;
 
 // Class BrickRigs.ScalableBrickBase
 // 0x0018 (0x0100 - 0x00E8)
@@ -2063,16 +1977,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScalableBrickBase">();
+		STATIC_CLASS_IMPL("ScalableBrickBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScalableBrickBase")
 	}
 	static class UScalableBrickBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScalableBrickBase>();
 	}
 };
-static_assert(alignof(UScalableBrickBase) == 0x000008, "Wrong alignment on UScalableBrickBase");
-static_assert(sizeof(UScalableBrickBase) == 0x000100, "Wrong size on UScalableBrickBase");
-static_assert(offsetof(UScalableBrickBase, ConnectorSpacing) == 0x0000F8, "Member 'UScalableBrickBase::ConnectorSpacing' has a wrong offset!");
+DUMPER7_ASSERTS_UScalableBrickBase;
 
 // Class BrickRigs.ScalableBrick
 // 0x0010 (0x0110 - 0x0100)
@@ -2085,16 +2001,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScalableBrick">();
+		STATIC_CLASS_IMPL("ScalableBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScalableBrick")
 	}
 	static class UScalableBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScalableBrick>();
 	}
 };
-static_assert(alignof(UScalableBrick) == 0x000008, "Wrong alignment on UScalableBrick");
-static_assert(sizeof(UScalableBrick) == 0x000110, "Wrong size on UScalableBrick");
-static_assert(offsetof(UScalableBrick, BrickSize) == 0x000100, "Member 'UScalableBrick::BrickSize' has a wrong offset!");
+DUMPER7_ASSERTS_UScalableBrick;
 
 // Class BrickRigs.LightBrick
 // 0x0060 (0x0170 - 0x0110)
@@ -2113,20 +2031,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LightBrick">();
+		STATIC_CLASS_IMPL("LightBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LightBrick")
 	}
 	static class ULightBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULightBrick>();
 	}
 };
-static_assert(alignof(ULightBrick) == 0x000008, "Wrong alignment on ULightBrick");
-static_assert(sizeof(ULightBrick) == 0x000170, "Wrong size on ULightBrick");
-static_assert(offsetof(ULightBrick, Brightness) == 0x000130, "Member 'ULightBrick::Brightness' has a wrong offset!");
-static_assert(offsetof(ULightBrick, FlashSequence) == 0x000138, "Member 'ULightBrick::FlashSequence' has a wrong offset!");
-static_assert(offsetof(ULightBrick, InputChannel) == 0x000140, "Member 'ULightBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(ULightBrick, LightDirection) == 0x000168, "Member 'ULightBrick::LightDirection' has a wrong offset!");
-static_assert(offsetof(ULightBrick, LightConeAngle) == 0x00016C, "Member 'ULightBrick::LightConeAngle' has a wrong offset!");
+DUMPER7_ASSERTS_ULightBrick;
 
 // Class BrickRigs.AttachmentStaticInfo
 // 0x0000 (0x0390 - 0x0390)
@@ -2135,15 +2051,18 @@ class UAttachmentStaticInfo : public UItemStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AttachmentStaticInfo">();
+		STATIC_CLASS_IMPL("AttachmentStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AttachmentStaticInfo")
 	}
 	static class UAttachmentStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAttachmentStaticInfo>();
 	}
 };
-static_assert(alignof(UAttachmentStaticInfo) == 0x000010, "Wrong alignment on UAttachmentStaticInfo");
-static_assert(sizeof(UAttachmentStaticInfo) == 0x000390, "Wrong size on UAttachmentStaticInfo");
+DUMPER7_ASSERTS_UAttachmentStaticInfo;
 
 // Class BrickRigs.PhysicsConstraintConnection
 // 0x0070 (0x00D0 - 0x0060)
@@ -2158,15 +2077,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PhysicsConstraintConnection">();
+		STATIC_CLASS_IMPL("PhysicsConstraintConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PhysicsConstraintConnection")
 	}
 	static class UPhysicsConstraintConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhysicsConstraintConnection>();
 	}
 };
-static_assert(alignof(UPhysicsConstraintConnection) == 0x000008, "Wrong alignment on UPhysicsConstraintConnection");
-static_assert(sizeof(UPhysicsConstraintConnection) == 0x0000D0, "Wrong size on UPhysicsConstraintConnection");
+DUMPER7_ASSERTS_UPhysicsConstraintConnection;
 
 // Class BrickRigs.AxleBrickStaticInfo
 // 0x0008 (0x0198 - 0x0190)
@@ -2179,17 +2101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AxleBrickStaticInfo">();
+		STATIC_CLASS_IMPL("AxleBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AxleBrickStaticInfo")
 	}
 	static class UAxleBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAxleBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UAxleBrickStaticInfo) == 0x000008, "Wrong alignment on UAxleBrickStaticInfo");
-static_assert(sizeof(UAxleBrickStaticInfo) == 0x000198, "Wrong size on UAxleBrickStaticInfo");
-static_assert(offsetof(UAxleBrickStaticInfo, SuspensionStiffness) == 0x000190, "Member 'UAxleBrickStaticInfo::SuspensionStiffness' has a wrong offset!");
-static_assert(offsetof(UAxleBrickStaticInfo, SuspensionDamping) == 0x000194, "Member 'UAxleBrickStaticInfo::SuspensionDamping' has a wrong offset!");
+DUMPER7_ASSERTS_UAxleBrickStaticInfo;
 
 // Class BrickRigs.WheelConnection
 // 0x0020 (0x00F0 - 0x00D0)
@@ -2201,15 +2124,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WheelConnection">();
+		STATIC_CLASS_IMPL("WheelConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WheelConnection")
 	}
 	static class UWheelConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWheelConnection>();
 	}
 };
-static_assert(alignof(UWheelConnection) == 0x000008, "Wrong alignment on UWheelConnection");
-static_assert(sizeof(UWheelConnection) == 0x0000F0, "Wrong size on UWheelConnection");
+DUMPER7_ASSERTS_UWheelConnection;
 
 // Class BrickRigs.MenuButtonPanelWidget
 // 0x0030 (0x0290 - 0x0260)
@@ -2234,19 +2160,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuButtonPanelWidget">();
+		STATIC_CLASS_IMPL("MenuButtonPanelWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuButtonPanelWidget")
 	}
 	static class UMenuButtonPanelWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuButtonPanelWidget>();
 	}
 };
-static_assert(alignof(UMenuButtonPanelWidget) == 0x000008, "Wrong alignment on UMenuButtonPanelWidget");
-static_assert(sizeof(UMenuButtonPanelWidget) == 0x000290, "Wrong size on UMenuButtonPanelWidget");
-static_assert(offsetof(UMenuButtonPanelWidget, Buttons) == 0x000260, "Member 'UMenuButtonPanelWidget::Buttons' has a wrong offset!");
-static_assert(offsetof(UMenuButtonPanelWidget, ButtonPanel) == 0x000278, "Member 'UMenuButtonPanelWidget::ButtonPanel' has a wrong offset!");
-static_assert(offsetof(UMenuButtonPanelWidget, ButtonClass) == 0x000280, "Member 'UMenuButtonPanelWidget::ButtonClass' has a wrong offset!");
-static_assert(offsetof(UMenuButtonPanelWidget, NumButtonsPerRow) == 0x000288, "Member 'UMenuButtonPanelWidget::NumButtonsPerRow' has a wrong offset!");
+DUMPER7_ASSERTS_UMenuButtonPanelWidget;
 
 // Class BrickRigs.AxleBrick
 // 0x0090 (0x0178 - 0x00E8)
@@ -2274,30 +2199,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AxleBrick">();
+		STATIC_CLASS_IMPL("AxleBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AxleBrick")
 	}
 	static class UAxleBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAxleBrick>();
 	}
 };
-static_assert(alignof(UAxleBrick) == 0x000008, "Wrong alignment on UAxleBrick");
-static_assert(sizeof(UAxleBrick) == 0x000178, "Wrong size on UAxleBrick");
-static_assert(offsetof(UAxleBrick, WheelConnections) == 0x0000E8, "Member 'UAxleBrick::WheelConnections' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, BrakeInputChannel) == 0x000108, "Member 'UAxleBrick::BrakeInputChannel' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, SteeringInputChannel) == 0x000130, "Member 'UAxleBrick::SteeringInputChannel' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, SuspensionLength) == 0x000158, "Member 'UAxleBrick::SuspensionLength' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, SuspensionStiffness) == 0x00015C, "Member 'UAxleBrick::SuspensionStiffness' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, SuspensionDamping) == 0x000160, "Member 'UAxleBrick::SuspensionDamping' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, bDriven) == 0x000164, "Member 'UAxleBrick::bDriven' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, bInvertDrive) == 0x000165, "Member 'UAxleBrick::bInvertDrive' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, bHasBrake) == 0x000166, "Member 'UAxleBrick::bHasBrake' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, bHasHandBrake) == 0x000167, "Member 'UAxleBrick::bHasHandBrake' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, BrakeStrength) == 0x000168, "Member 'UAxleBrick::BrakeStrength' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, SteeringAngle) == 0x00016C, "Member 'UAxleBrick::SteeringAngle' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, SteeringSpeed) == 0x000170, "Member 'UAxleBrick::SteeringSpeed' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, bCanDisableSteering) == 0x000174, "Member 'UAxleBrick::bCanDisableSteering' has a wrong offset!");
-static_assert(offsetof(UAxleBrick, bCanInvertSteering) == 0x000175, "Member 'UAxleBrick::bCanInvertSteering' has a wrong offset!");
+DUMPER7_ASSERTS_UAxleBrick;
 
 // Class BrickRigs.BrickProjectile
 // 0x0150 (0x0400 - 0x02B0)
@@ -2345,44 +2258,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickProjectile">();
+		STATIC_CLASS_IMPL("BrickProjectile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickProjectile")
 	}
 	static class ABrickProjectile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickProjectile>();
 	}
 };
-static_assert(alignof(ABrickProjectile) == 0x000010, "Wrong alignment on ABrickProjectile");
-static_assert(sizeof(ABrickProjectile) == 0x000400, "Wrong size on ABrickProjectile");
-static_assert(offsetof(ABrickProjectile, FirearmComponent) == 0x0002F8, "Member 'ABrickProjectile::FirearmComponent' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, AmmoType) == 0x00031C, "Member 'ABrickProjectile::AmmoType' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, NumMergedProjectiles) == 0x00031E, "Member 'ABrickProjectile::NumMergedProjectiles' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, SeekingTarget) == 0x000320, "Member 'ABrickProjectile::SeekingTarget' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, SphereComponent) == 0x000350, "Member 'ABrickProjectile::SphereComponent' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, StaticMeshComponent) == 0x000358, "Member 'ABrickProjectile::StaticMeshComponent' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, ProjectileMovementComponent) == 0x000360, "Member 'ABrickProjectile::ProjectileMovementComponent' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, CollisionProfileName) == 0x000368, "Member 'ABrickProjectile::CollisionProfileName' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, StaticMesh) == 0x000370, "Member 'ABrickProjectile::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, TrailParticleSystem) == 0x000378, "Member 'ABrickProjectile::TrailParticleSystem' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, DesintegrationParticleSystem) == 0x000380, "Member 'ABrickProjectile::DesintegrationParticleSystem' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, MeshScale) == 0x000388, "Member 'ABrickProjectile::MeshScale' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, PenetrationCoefficient) == 0x00038C, "Member 'ABrickProjectile::PenetrationCoefficient' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, HomingAcceleration) == 0x000390, "Member 'ABrickProjectile::HomingAcceleration' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, MaxHomingDistance) == 0x000394, "Member 'ABrickProjectile::MaxHomingDistance' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, MaxHomingAngle) == 0x000398, "Member 'ABrickProjectile::MaxHomingAngle' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, MaxHomingLeadDistance) == 0x00039C, "Member 'ABrickProjectile::MaxHomingLeadDistance' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, FlareEffectiveness) == 0x0003A0, "Member 'ABrickProjectile::FlareEffectiveness' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, GravityScale) == 0x0003A4, "Member 'ABrickProjectile::GravityScale' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, FlybySound) == 0x0003A8, "Member 'ABrickProjectile::FlybySound' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, FlybySoundDelay) == 0x0003B0, "Member 'ABrickProjectile::FlybySoundDelay' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, FlybySoundPitch) == 0x0003B4, "Member 'ABrickProjectile::FlybySoundPitch' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, ZoomParams) == 0x0003B8, "Member 'ABrickProjectile::ZoomParams' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, DamageType) == 0x0003D0, "Member 'ABrickProjectile::DamageType' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, ExplosiveMaterial) == 0x0003D8, "Member 'ABrickProjectile::ExplosiveMaterial' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, IncendiaryMaterial) == 0x0003E0, "Member 'ABrickProjectile::IncendiaryMaterial' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, ExplosiveVolume) == 0x0003E8, "Member 'ABrickProjectile::ExplosiveVolume' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, HomingExplosiveRatio) == 0x0003EC, "Member 'ABrickProjectile::HomingExplosiveRatio' has a wrong offset!");
-static_assert(offsetof(ABrickProjectile, ExplosionDamage) == 0x0003F0, "Member 'ABrickProjectile::ExplosionDamage' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickProjectile;
 
 // Class BrickRigs.ActuatorConnection
 // 0x0010 (0x00E0 - 0x00D0)
@@ -2394,15 +2281,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActuatorConnection">();
+		STATIC_CLASS_IMPL("ActuatorConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActuatorConnection")
 	}
 	static class UActuatorConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActuatorConnection>();
 	}
 };
-static_assert(alignof(UActuatorConnection) == 0x000008, "Wrong alignment on UActuatorConnection");
-static_assert(sizeof(UActuatorConnection) == 0x0000E0, "Wrong size on UActuatorConnection");
+DUMPER7_ASSERTS_UActuatorConnection;
 
 // Class BrickRigs.BarrelAttachment
 // 0x0000 (0x0270 - 0x0270)
@@ -2411,15 +2301,18 @@ class ABarrelAttachment : public AAttachment
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BarrelAttachment">();
+		STATIC_CLASS_IMPL("BarrelAttachment")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BarrelAttachment")
 	}
 	static class ABarrelAttachment* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABarrelAttachment>();
 	}
 };
-static_assert(alignof(ABarrelAttachment) == 0x000008, "Wrong alignment on ABarrelAttachment");
-static_assert(sizeof(ABarrelAttachment) == 0x000270, "Wrong size on ABarrelAttachment");
+DUMPER7_ASSERTS_ABarrelAttachment;
 
 // Class BrickRigs.MapCrosshairWidget
 // 0x0000 (0x0260 - 0x0260)
@@ -2432,15 +2325,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MapCrosshairWidget">();
+		STATIC_CLASS_IMPL("MapCrosshairWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MapCrosshairWidget")
 	}
 	static class UMapCrosshairWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMapCrosshairWidget>();
 	}
 };
-static_assert(alignof(UMapCrosshairWidget) == 0x000008, "Wrong alignment on UMapCrosshairWidget");
-static_assert(sizeof(UMapCrosshairWidget) == 0x000260, "Wrong size on UMapCrosshairWidget");
+DUMPER7_ASSERTS_UMapCrosshairWidget;
 
 // Class BrickRigs.BarrelBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -2449,15 +2345,18 @@ class UBarrelBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BarrelBrickStaticInfo">();
+		STATIC_CLASS_IMPL("BarrelBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BarrelBrickStaticInfo")
 	}
 	static class UBarrelBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBarrelBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UBarrelBrickStaticInfo) == 0x000008, "Wrong alignment on UBarrelBrickStaticInfo");
-static_assert(sizeof(UBarrelBrickStaticInfo) == 0x000190, "Wrong size on UBarrelBrickStaticInfo");
+DUMPER7_ASSERTS_UBarrelBrickStaticInfo;
 
 // Class BrickRigs.BarrelBrick
 // 0x0000 (0x00E8 - 0x00E8)
@@ -2466,15 +2365,18 @@ class UBarrelBrick final : public UBrick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BarrelBrick">();
+		STATIC_CLASS_IMPL("BarrelBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BarrelBrick")
 	}
 	static class UBarrelBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBarrelBrick>();
 	}
 };
-static_assert(alignof(UBarrelBrick) == 0x000008, "Wrong alignment on UBarrelBrick");
-static_assert(sizeof(UBarrelBrick) == 0x0000E8, "Wrong size on UBarrelBrick");
+DUMPER7_ASSERTS_UBarrelBrick;
 
 // Class BrickRigs.InputActionCategoryWidget
 // 0x0020 (0x0280 - 0x0260)
@@ -2496,16 +2398,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputActionCategoryWidget">();
+		STATIC_CLASS_IMPL("InputActionCategoryWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputActionCategoryWidget")
 	}
 	static class UInputActionCategoryWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputActionCategoryWidget>();
 	}
 };
-static_assert(alignof(UInputActionCategoryWidget) == 0x000008, "Wrong alignment on UInputActionCategoryWidget");
-static_assert(sizeof(UInputActionCategoryWidget) == 0x000280, "Wrong size on UInputActionCategoryWidget");
-static_assert(offsetof(UInputActionCategoryWidget, InputCategory) == 0x000270, "Member 'UInputActionCategoryWidget::InputCategory' has a wrong offset!");
+DUMPER7_ASSERTS_UInputActionCategoryWidget;
 
 // Class BrickRigs.BarrelStaticInfo
 // 0x0060 (0x03F0 - 0x0390)
@@ -2521,19 +2425,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BarrelStaticInfo">();
+		STATIC_CLASS_IMPL("BarrelStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BarrelStaticInfo")
 	}
 	static class UBarrelStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBarrelStaticInfo>();
 	}
 };
-static_assert(alignof(UBarrelStaticInfo) == 0x000010, "Wrong alignment on UBarrelStaticInfo");
-static_assert(sizeof(UBarrelStaticInfo) == 0x0003F0, "Wrong size on UBarrelStaticInfo");
-static_assert(offsetof(UBarrelStaticInfo, MuzzleEffect) == 0x000390, "Member 'UBarrelStaticInfo::MuzzleEffect' has a wrong offset!");
-static_assert(offsetof(UBarrelStaticInfo, InitialSpeedScale) == 0x0003E0, "Member 'UBarrelStaticInfo::InitialSpeedScale' has a wrong offset!");
-static_assert(offsetof(UBarrelStaticInfo, RangeScale) == 0x0003E4, "Member 'UBarrelStaticInfo::RangeScale' has a wrong offset!");
-static_assert(offsetof(UBarrelStaticInfo, DamageScale) == 0x0003E8, "Member 'UBarrelStaticInfo::DamageScale' has a wrong offset!");
+DUMPER7_ASSERTS_UBarrelStaticInfo;
 
 // Class BrickRigs.BaseCharacter
 // 0x0300 (0x07C0 - 0x04C0)
@@ -2596,36 +2499,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BaseCharacter">();
+		STATIC_CLASS_IMPL("BaseCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BaseCharacter")
 	}
 	static class ABaseCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABaseCharacter>();
 	}
 };
-static_assert(alignof(ABaseCharacter) == 0x000010, "Wrong alignment on ABaseCharacter");
-static_assert(sizeof(ABaseCharacter) == 0x0007C0, "Wrong size on ABaseCharacter");
-static_assert(offsetof(ABaseCharacter, TeamID) == 0x0005A0, "Member 'ABaseCharacter::TeamID' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, RemoteViewYaw) == 0x0005A1, "Member 'ABaseCharacter::RemoteViewYaw' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, RepHealth) == 0x0005A8, "Member 'ABaseCharacter::RepHealth' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, StateOfHealth) == 0x0005A9, "Member 'ABaseCharacter::StateOfHealth' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, HealingState) == 0x0005AA, "Member 'ABaseCharacter::HealingState' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, LastHitBone) == 0x0005AC, "Member 'ABaseCharacter::LastHitBone' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, LastDamageImpulse) == 0x0005B4, "Member 'ABaseCharacter::LastDamageImpulse' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, bIsOnFire) == 0x000630, "Member 'ABaseCharacter::bIsOnFire' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, FireInstigator) == 0x000638, "Member 'ABaseCharacter::FireInstigator' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, ActiveActions) == 0x000640, "Member 'ABaseCharacter::ActiveActions' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, RestartTransform) == 0x0006A0, "Member 'ABaseCharacter::RestartTransform' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, Mid) == 0x0006C0, "Member 'ABaseCharacter::Mid' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, InventoryComponent) == 0x0006D8, "Member 'ABaseCharacter::InventoryComponent' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, FootstepACs) == 0x0006E0, "Member 'ABaseCharacter::FootstepACs' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, FoleyACs) == 0x0006F0, "Member 'ABaseCharacter::FoleyACs' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, CollisionAC) == 0x000700, "Member 'ABaseCharacter::CollisionAC' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, HUDIconComponent) == 0x000708, "Member 'ABaseCharacter::HUDIconComponent' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, InteractionComponent) == 0x000710, "Member 'ABaseCharacter::InteractionComponent' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, FirePSC) == 0x000718, "Member 'ABaseCharacter::FirePSC' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, FireAC) == 0x000720, "Member 'ABaseCharacter::FireAC' has a wrong offset!");
-static_assert(offsetof(ABaseCharacter, StaticInfoClass) == 0x0007B8, "Member 'ABaseCharacter::StaticInfoClass' has a wrong offset!");
+DUMPER7_ASSERTS_ABaseCharacter;
 
 // Class BrickRigs.BaseInputComponent
 // 0x0038 (0x0170 - 0x0138)
@@ -2659,17 +2544,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BaseInputComponent">();
+		STATIC_CLASS_IMPL("BaseInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BaseInputComponent")
 	}
 	static class UBaseInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBaseInputComponent>();
 	}
 };
-static_assert(alignof(UBaseInputComponent) == 0x000008, "Wrong alignment on UBaseInputComponent");
-static_assert(sizeof(UBaseInputComponent) == 0x000170, "Wrong size on UBaseInputComponent");
-static_assert(offsetof(UBaseInputComponent, BasePlayerController) == 0x000138, "Member 'UBaseInputComponent::BasePlayerController' has a wrong offset!");
-static_assert(offsetof(UBaseInputComponent, PlayerController) == 0x000140, "Member 'UBaseInputComponent::PlayerController' has a wrong offset!");
+DUMPER7_ASSERTS_UBaseInputComponent;
 
 // Class BrickRigs.BrickSpectatorPawn
 // 0x0288 (0x0530 - 0x02A8)
@@ -2697,28 +2583,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickSpectatorPawn">();
+		STATIC_CLASS_IMPL("BrickSpectatorPawn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickSpectatorPawn")
 	}
 	static class ABrickSpectatorPawn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickSpectatorPawn>();
 	}
 };
-static_assert(alignof(ABrickSpectatorPawn) == 0x000010, "Wrong alignment on ABrickSpectatorPawn");
-static_assert(sizeof(ABrickSpectatorPawn) == 0x000530, "Wrong size on ABrickSpectatorPawn");
-static_assert(offsetof(ABrickSpectatorPawn, FollowTarget) == 0x000448, "Member 'ABrickSpectatorPawn::FollowTarget' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, Mid) == 0x0004A8, "Member 'ABrickSpectatorPawn::Mid' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, PlacementBoundsMeshComponent) == 0x0004B8, "Member 'ABrickSpectatorPawn::PlacementBoundsMeshComponent' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, PlacementBoundsMesh) == 0x0004C0, "Member 'ABrickSpectatorPawn::PlacementBoundsMesh' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, PlacementBoundsDefaultSize) == 0x0004C8, "Member 'ABrickSpectatorPawn::PlacementBoundsDefaultSize' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, MinPlacementBoundsSize) == 0x0004D4, "Member 'ABrickSpectatorPawn::MinPlacementBoundsSize' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, PlacementBoundsSizeInterpSpeed) == 0x0004E0, "Member 'ABrickSpectatorPawn::PlacementBoundsSizeInterpSpeed' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, PlacementBoundsScreenFitInflation) == 0x0004E4, "Member 'ABrickSpectatorPawn::PlacementBoundsScreenFitInflation' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, PlacementSweepRadius) == 0x0004E8, "Member 'ABrickSpectatorPawn::PlacementSweepRadius' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, PawnRotationSpeed) == 0x0004EC, "Member 'ABrickSpectatorPawn::PawnRotationSpeed' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, CameraSpeedParams) == 0x0004F0, "Member 'ABrickSpectatorPawn::CameraSpeedParams' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, ZoomParams) == 0x000508, "Member 'ABrickSpectatorPawn::ZoomParams' has a wrong offset!");
-static_assert(offsetof(ABrickSpectatorPawn, ShiftInterpSpeed) == 0x000520, "Member 'ABrickSpectatorPawn::ShiftInterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickSpectatorPawn;
 
 // Class BrickRigs.BrickGameMode
 // 0x0140 (0x0448 - 0x0308)
@@ -2821,59 +2697,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickGameMode">();
+		STATIC_CLASS_IMPL("BrickGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickGameMode")
 	}
 	static class ABrickGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickGameMode>();
 	}
 };
-static_assert(alignof(ABrickGameMode) == 0x000008, "Wrong alignment on ABrickGameMode");
-static_assert(sizeof(ABrickGameMode) == 0x000448, "Wrong size on ABrickGameMode");
-static_assert(offsetof(ABrickGameMode, DefaultTeam) == 0x000370, "Member 'ABrickGameMode::DefaultTeam' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, ZombieTeam) == 0x000378, "Member 'ABrickGameMode::ZombieTeam' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, DummyTeam) == 0x000380, "Member 'ABrickGameMode::DummyTeam' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, Teams) == 0x000388, "Member 'ABrickGameMode::Teams' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, VehicleClass) == 0x0003D8, "Member 'ABrickGameMode::VehicleClass' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, InactiveCharacterLifeSpan) == 0x0003E0, "Member 'ABrickGameMode::InactiveCharacterLifeSpan' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, MinUnpossessDelay) == 0x0003E4, "Member 'ABrickGameMode::MinUnpossessDelay' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, AutoBalanceTeamsThreshold) == 0x0003EC, "Member 'ABrickGameMode::AutoBalanceTeamsThreshold' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, MaxSpawnPlayerRelevanceDistance) == 0x0003F0, "Member 'ABrickGameMode::MaxSpawnPlayerRelevanceDistance' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, MaxLocalChatDistance) == 0x0003F4, "Member 'ABrickGameMode::MaxLocalChatDistance' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, MaxTeamScore) == 0x0003F8, "Member 'ABrickGameMode::MaxTeamScore' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, KillTeamScore) == 0x0003FC, "Member 'ABrickGameMode::KillTeamScore' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, AddScoreMoneyRatio) == 0x000400, "Member 'ABrickGameMode::AddScoreMoneyRatio' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, KillScore) == 0x000404, "Member 'ABrickGameMode::KillScore' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, ZombieKillScore) == 0x000408, "Member 'ABrickGameMode::ZombieKillScore' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, PointCapturedScore) == 0x00040C, "Member 'ABrickGameMode::PointCapturedScore' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, PointNeutralizedScore) == 0x000410, "Member 'ABrickGameMode::PointNeutralizedScore' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, RoundWinScore) == 0x000414, "Member 'ABrickGameMode::RoundWinScore' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, IntermissionRoundWinScore) == 0x000418, "Member 'ABrickGameMode::IntermissionRoundWinScore' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, bShowMatchScore) == 0x00041C, "Member 'ABrickGameMode::bShowMatchScore' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, WarmupTime) == 0x000420, "Member 'ABrickGameMode::WarmupTime' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, RoundStartTime) == 0x000424, "Member 'ABrickGameMode::RoundStartTime' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, RoundEndTime) == 0x000428, "Member 'ABrickGameMode::RoundEndTime' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, IntermissionTime) == 0x00042C, "Member 'ABrickGameMode::IntermissionTime' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, MatchEndTime) == 0x000430, "Member 'ABrickGameMode::MatchEndTime' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, MaxRoundsPerMatch) == 0x000438, "Member 'ABrickGameMode::MaxRoundsPerMatch' has a wrong offset!");
-static_assert(offsetof(ABrickGameMode, NumRoundsToIntermission) == 0x00043C, "Member 'ABrickGameMode::NumRoundsToIntermission' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickGameMode;
 
 // Class BrickRigs.BattleGameMode
 // 0x0000 (0x0448 - 0x0448)
-class ABattleGameMode : public ABrickGameMode
+class ABattleGameMode final : public ABrickGameMode
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BattleGameMode">();
+		STATIC_CLASS_IMPL("BattleGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattleGameMode")
 	}
 	static class ABattleGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABattleGameMode>();
 	}
 };
-static_assert(alignof(ABattleGameMode) == 0x000008, "Wrong alignment on ABattleGameMode");
-static_assert(sizeof(ABattleGameMode) == 0x000448, "Wrong size on ABattleGameMode");
+DUMPER7_ASSERTS_ABattleGameMode;
 
 // Class BrickRigs.DashboardIconWidget
 // 0x0010 (0x0270 - 0x0260)
@@ -2888,15 +2743,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DashboardIconWidget">();
+		STATIC_CLASS_IMPL("DashboardIconWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DashboardIconWidget")
 	}
 	static class UDashboardIconWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDashboardIconWidget>();
 	}
 };
-static_assert(alignof(UDashboardIconWidget) == 0x000008, "Wrong alignment on UDashboardIconWidget");
-static_assert(sizeof(UDashboardIconWidget) == 0x000270, "Wrong size on UDashboardIconWidget");
+DUMPER7_ASSERTS_UDashboardIconWidget;
 
 // Class BrickRigs.BillboardImage
 // 0x0030 (0x0060 - 0x0030)
@@ -2910,17 +2768,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BillboardImage">();
+		STATIC_CLASS_IMPL("BillboardImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BillboardImage")
 	}
 	static class UBillboardImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBillboardImage>();
 	}
 };
-static_assert(alignof(UBillboardImage) == 0x000008, "Wrong alignment on UBillboardImage");
-static_assert(sizeof(UBillboardImage) == 0x000060, "Wrong size on UBillboardImage");
-static_assert(offsetof(UBillboardImage, Texture) == 0x000030, "Member 'UBillboardImage::Texture' has a wrong offset!");
-static_assert(offsetof(UBillboardImage, Probability) == 0x000058, "Member 'UBillboardImage::Probability' has a wrong offset!");
+DUMPER7_ASSERTS_UBillboardImage;
 
 // Class BrickRigs.StaticMeshProp
 // 0x0020 (0x0240 - 0x0220)
@@ -2937,20 +2796,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StaticMeshProp">();
+		STATIC_CLASS_IMPL("StaticMeshProp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StaticMeshProp")
 	}
 	static class AStaticMeshProp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AStaticMeshProp>();
 	}
 };
-static_assert(alignof(AStaticMeshProp) == 0x000008, "Wrong alignment on AStaticMeshProp");
-static_assert(sizeof(AStaticMeshProp) == 0x000240, "Wrong size on AStaticMeshProp");
-static_assert(offsetof(AStaticMeshProp, SelectedMaterial) == 0x000220, "Member 'AStaticMeshProp::SelectedMaterial' has a wrong offset!");
-static_assert(offsetof(AStaticMeshProp, StaticMeshComponent) == 0x000228, "Member 'AStaticMeshProp::StaticMeshComponent' has a wrong offset!");
-static_assert(offsetof(AStaticMeshProp, StaticMesh) == 0x000230, "Member 'AStaticMeshProp::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AStaticMeshProp, MaxDrawDistance) == 0x000238, "Member 'AStaticMeshProp::MaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(AStaticMeshProp, bIsClimbable) == 0x00023C, "Member 'AStaticMeshProp::bIsClimbable' has a wrong offset!");
+DUMPER7_ASSERTS_AStaticMeshProp;
 
 // Class BrickRigs.Billboard
 // 0x0018 (0x0258 - 0x0240)
@@ -2963,16 +2820,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Billboard">();
+		STATIC_CLASS_IMPL("Billboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Billboard")
 	}
 	static class ABillboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABillboard>();
 	}
 };
-static_assert(alignof(ABillboard) == 0x000008, "Wrong alignment on ABillboard");
-static_assert(sizeof(ABillboard) == 0x000258, "Wrong size on ABillboard");
-static_assert(offsetof(ABillboard, BillboardRandSeed) == 0x000240, "Member 'ABillboard::BillboardRandSeed' has a wrong offset!");
+DUMPER7_ASSERTS_ABillboard;
 
 // Class BrickRigs.DestructibleInstancesComponent
 // 0x0150 (0x0350 - 0x0200)
@@ -2995,19 +2854,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DestructibleInstancesComponent">();
+		STATIC_CLASS_IMPL("DestructibleInstancesComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DestructibleInstancesComponent")
 	}
 	static class UDestructibleInstancesComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDestructibleInstancesComponent>();
 	}
 };
-static_assert(alignof(UDestructibleInstancesComponent) == 0x000010, "Wrong alignment on UDestructibleInstancesComponent");
-static_assert(sizeof(UDestructibleInstancesComponent) == 0x000350, "Wrong size on UDestructibleInstancesComponent");
-static_assert(offsetof(UDestructibleInstancesComponent, InstanceArrays) == 0x0001F8, "Member 'UDestructibleInstancesComponent::InstanceArrays' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstancesComponent, ReplicatedDamage) == 0x000208, "Member 'UDestructibleInstancesComponent::ReplicatedDamage' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstancesComponent, bUseHierarchicalISM) == 0x00034C, "Member 'UDestructibleInstancesComponent::bUseHierarchicalISM' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstancesComponent, bForceFullFloatPrecision) == 0x00034D, "Member 'UDestructibleInstancesComponent::bForceFullFloatPrecision' has a wrong offset!");
+DUMPER7_ASSERTS_UDestructibleInstancesComponent;
 
 // Class BrickRigs.BindKeyPopupParams
 // 0x0138 (0x01A0 - 0x0068)
@@ -3019,15 +2877,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BindKeyPopupParams">();
+		STATIC_CLASS_IMPL("BindKeyPopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BindKeyPopupParams")
 	}
 	static class UBindKeyPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBindKeyPopupParams>();
 	}
 };
-static_assert(alignof(UBindKeyPopupParams) == 0x000008, "Wrong alignment on UBindKeyPopupParams");
-static_assert(sizeof(UBindKeyPopupParams) == 0x0001A0, "Wrong size on UBindKeyPopupParams");
+DUMPER7_ASSERTS_UBindKeyPopupParams;
 
 // Class BrickRigs.PopupWidget
 // 0x0038 (0x0298 - 0x0260)
@@ -3060,18 +2921,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupWidget">();
+		STATIC_CLASS_IMPL("PopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupWidget")
 	}
 	static class UPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupWidget>();
 	}
 };
-static_assert(alignof(UPopupWidget) == 0x000008, "Wrong alignment on UPopupWidget");
-static_assert(sizeof(UPopupWidget) == 0x000298, "Wrong size on UPopupWidget");
-static_assert(offsetof(UPopupWidget, TitleText) == 0x000270, "Member 'UPopupWidget::TitleText' has a wrong offset!");
-static_assert(offsetof(UPopupWidget, PopupSizeRule) == 0x000288, "Member 'UPopupWidget::PopupSizeRule' has a wrong offset!");
-static_assert(offsetof(UPopupWidget, CloseActionName) == 0x00028C, "Member 'UPopupWidget::CloseActionName' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupWidget;
 
 // Class BrickRigs.BrickProjectileMovementComponent
 // 0x0020 (0x01F0 - 0x01D0)
@@ -3083,15 +2944,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickProjectileMovementComponent">();
+		STATIC_CLASS_IMPL("BrickProjectileMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickProjectileMovementComponent")
 	}
 	static class UBrickProjectileMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickProjectileMovementComponent>();
 	}
 };
-static_assert(alignof(UBrickProjectileMovementComponent) == 0x000010, "Wrong alignment on UBrickProjectileMovementComponent");
-static_assert(sizeof(UBrickProjectileMovementComponent) == 0x0001F0, "Wrong size on UBrickProjectileMovementComponent");
+DUMPER7_ASSERTS_UBrickProjectileMovementComponent;
 
 // Class BrickRigs.BindKeyPopupWidget
 // 0x0090 (0x0328 - 0x0298)
@@ -3113,20 +2977,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BindKeyPopupWidget">();
+		STATIC_CLASS_IMPL("BindKeyPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BindKeyPopupWidget")
 	}
 	static class UBindKeyPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBindKeyPopupWidget>();
 	}
 };
-static_assert(alignof(UBindKeyPopupWidget) == 0x000008, "Wrong alignment on UBindKeyPopupWidget");
-static_assert(sizeof(UBindKeyPopupWidget) == 0x000328, "Wrong size on UBindKeyPopupWidget");
-static_assert(offsetof(UBindKeyPopupWidget, ClearKeyControlHint) == 0x000300, "Member 'UBindKeyPopupWidget::ClearKeyControlHint' has a wrong offset!");
-static_assert(offsetof(UBindKeyPopupWidget, InputChordWidget) == 0x000308, "Member 'UBindKeyPopupWidget::InputChordWidget' has a wrong offset!");
-static_assert(offsetof(UBindKeyPopupWidget, ConfirmButton) == 0x000310, "Member 'UBindKeyPopupWidget::ConfirmButton' has a wrong offset!");
-static_assert(offsetof(UBindKeyPopupWidget, CancelButton) == 0x000318, "Member 'UBindKeyPopupWidget::CancelButton' has a wrong offset!");
-static_assert(offsetof(UBindKeyPopupWidget, RetryButton) == 0x000320, "Member 'UBindKeyPopupWidget::RetryButton' has a wrong offset!");
+DUMPER7_ASSERTS_UBindKeyPopupWidget;
 
 // Class BrickRigs.BladeHolderBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -3135,15 +2997,18 @@ class UBladeHolderBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BladeHolderBrickStaticInfo">();
+		STATIC_CLASS_IMPL("BladeHolderBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BladeHolderBrickStaticInfo")
 	}
 	static class UBladeHolderBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBladeHolderBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UBladeHolderBrickStaticInfo) == 0x000008, "Wrong alignment on UBladeHolderBrickStaticInfo");
-static_assert(sizeof(UBladeHolderBrickStaticInfo) == 0x000190, "Wrong size on UBladeHolderBrickStaticInfo");
+DUMPER7_ASSERTS_UBladeHolderBrickStaticInfo;
 
 // Class BrickRigs.DestructibleISMComponentInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -3152,7 +3017,11 @@ class IDestructibleISMComponentInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DestructibleISMComponentInterface">();
+		STATIC_CLASS_IMPL("DestructibleISMComponentInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DestructibleISMComponentInterface")
 	}
 	static class IDestructibleISMComponentInterface* GetDefaultObj()
 	{
@@ -3168,8 +3037,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IDestructibleISMComponentInterface) == 0x000001, "Wrong alignment on IDestructibleISMComponentInterface");
-static_assert(sizeof(IDestructibleISMComponentInterface) == 0x000001, "Wrong size on IDestructibleISMComponentInterface");
+DUMPER7_ASSERTS_IDestructibleISMComponentInterface;
 
 // Class BrickRigs.BoolPropertyWidget
 // 0x0008 (0x0288 - 0x0280)
@@ -3185,16 +3053,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BoolPropertyWidget">();
+		STATIC_CLASS_IMPL("BoolPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BoolPropertyWidget")
 	}
 	static class UBoolPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBoolPropertyWidget>();
 	}
 };
-static_assert(alignof(UBoolPropertyWidget) == 0x000008, "Wrong alignment on UBoolPropertyWidget");
-static_assert(sizeof(UBoolPropertyWidget) == 0x000288, "Wrong size on UBoolPropertyWidget");
-static_assert(offsetof(UBoolPropertyWidget, ComboBox) == 0x000280, "Member 'UBoolPropertyWidget::ComboBox' has a wrong offset!");
+DUMPER7_ASSERTS_UBoolPropertyWidget;
 
 // Class BrickRigs.BrickAIController
 // 0x0008 (0x0330 - 0x0328)
@@ -3207,16 +3077,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickAIController">();
+		STATIC_CLASS_IMPL("BrickAIController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickAIController")
 	}
 	static class ABrickAIController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickAIController>();
 	}
 };
-static_assert(alignof(ABrickAIController) == 0x000008, "Wrong alignment on ABrickAIController");
-static_assert(sizeof(ABrickAIController) == 0x000330, "Wrong size on ABrickAIController");
-static_assert(offsetof(ABrickAIController, ControlRotationInterpSpeed) == 0x000328, "Member 'ABrickAIController::ControlRotationInterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickAIController;
 
 // Class BrickRigs.BrickAssetManager
 // 0x01D8 (0x0650 - 0x0478)
@@ -3252,35 +3124,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickAssetManager">();
+		STATIC_CLASS_IMPL("BrickAssetManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickAssetManager")
 	}
 	static class UBrickAssetManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickAssetManager>();
 	}
 };
-static_assert(alignof(UBrickAssetManager) == 0x000008, "Wrong alignment on UBrickAssetManager");
-static_assert(sizeof(UBrickAssetManager) == 0x000650, "Wrong size on UBrickAssetManager");
-static_assert(offsetof(UBrickAssetManager, ModHookClasses) == 0x000480, "Member 'UBrickAssetManager::ModHookClasses' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, InputDataTables) == 0x000490, "Member 'UBrickAssetManager::InputDataTables' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, InputCategories) == 0x0004A0, "Member 'UBrickAssetManager::InputCategories' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, BrickStaticInfoClasses) == 0x0004B0, "Member 'UBrickAssetManager::BrickStaticInfoClasses' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, BrickFilterClasses) == 0x0004C0, "Member 'UBrickAssetManager::BrickFilterClasses' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, BrickMaterials) == 0x0004D0, "Member 'UBrickAssetManager::BrickMaterials' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, BrickPatternClasses) == 0x0004E0, "Member 'UBrickAssetManager::BrickPatternClasses' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, BrickDecals) == 0x0004F0, "Member 'UBrickAssetManager::BrickDecals' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, BrickFonts) == 0x000500, "Member 'UBrickAssetManager::BrickFonts' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, ExhaustEffects) == 0x000510, "Member 'UBrickAssetManager::ExhaustEffects' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, SirenSequenceClasses) == 0x000520, "Member 'UBrickAssetManager::SirenSequenceClasses' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, SirenTypeClasses) == 0x000530, "Member 'UBrickAssetManager::SirenTypeClasses' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, ExplosiveMaterialClasses) == 0x000540, "Member 'UBrickAssetManager::ExplosiveMaterialClasses' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, InventoryItemClasses) == 0x000550, "Member 'UBrickAssetManager::InventoryItemClasses' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, UIStyleClasses) == 0x000560, "Member 'UBrickAssetManager::UIStyleClasses' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, WeatherConditions) == 0x000570, "Member 'UBrickAssetManager::WeatherConditions' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, LevelInfos) == 0x000580, "Member 'UBrickAssetManager::LevelInfos' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, GameModeInfos) == 0x000590, "Member 'UBrickAssetManager::GameModeInfos' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, BillboardImages) == 0x0005A0, "Member 'UBrickAssetManager::BillboardImages' has a wrong offset!");
-static_assert(offsetof(UBrickAssetManager, MenuMusicAssets) == 0x0005B0, "Member 'UBrickAssetManager::MenuMusicAssets' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickAssetManager;
 
 // Class BrickRigs.BrickCameraManager
 // 0x0080 (0x2890 - 0x2810)
@@ -3311,29 +3166,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickCameraManager">();
+		STATIC_CLASS_IMPL("BrickCameraManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickCameraManager")
 	}
 	static class ABrickCameraManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickCameraManager>();
 	}
 };
-static_assert(alignof(ABrickCameraManager) == 0x000010, "Wrong alignment on ABrickCameraManager");
-static_assert(sizeof(ABrickCameraManager) == 0x002890, "Wrong size on ABrickCameraManager");
-static_assert(offsetof(ABrickCameraManager, AirNoiseAudioComponent) == 0x002838, "Member 'ABrickCameraManager::AirNoiseAudioComponent' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, FocalDistanceRange) == 0x002840, "Member 'ABrickCameraManager::FocalDistanceRange' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, FocusInterpSpeed) == 0x002848, "Member 'ABrickCameraManager::FocusInterpSpeed' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, HitEffectLength) == 0x00284C, "Member 'ABrickCameraManager::HitEffectLength' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, HitEffectFalloff) == 0x002850, "Member 'ABrickCameraManager::HitEffectFalloff' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, HitEffectFOVScale) == 0x002854, "Member 'ABrickCameraManager::HitEffectFOVScale' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, HitEffectMaxFlinchAngle) == 0x002858, "Member 'ABrickCameraManager::HitEffectMaxFlinchAngle' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, HitEffectFilmToe) == 0x00285C, "Member 'ABrickCameraManager::HitEffectFilmToe' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, HitEffectColorScale) == 0x002860, "Member 'ABrickCameraManager::HitEffectColorScale' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, RestrictedAreaEffectInterpSpeed) == 0x002870, "Member 'ABrickCameraManager::RestrictedAreaEffectInterpSpeed' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, RestrictedAreaEffectSaturation) == 0x002874, "Member 'ABrickCameraManager::RestrictedAreaEffectSaturation' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, AirNoiseSound) == 0x002878, "Member 'ABrickCameraManager::AirNoiseSound' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, AirNoiseSpeedRange) == 0x002880, "Member 'ABrickCameraManager::AirNoiseSpeedRange' has a wrong offset!");
-static_assert(offsetof(ABrickCameraManager, AirNoiseVolumeInterpSpeed) == 0x002888, "Member 'ABrickCameraManager::AirNoiseVolumeInterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickCameraManager;
 
 // Class BrickRigs.CharacterAction
 // 0x0060 (0x0088 - 0x0028)
@@ -3352,21 +3196,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CharacterAction">();
+		STATIC_CLASS_IMPL("CharacterAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CharacterAction")
 	}
 	static class UCharacterAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCharacterAction>();
 	}
 };
-static_assert(alignof(UCharacterAction) == 0x000008, "Wrong alignment on UCharacterAction");
-static_assert(sizeof(UCharacterAction) == 0x000088, "Wrong size on UCharacterAction");
-static_assert(offsetof(UCharacterAction, ItemMontage) == 0x000060, "Member 'UCharacterAction::ItemMontage' has a wrong offset!");
-static_assert(offsetof(UCharacterAction, ActionLength) == 0x000068, "Member 'UCharacterAction::ActionLength' has a wrong offset!");
-static_assert(offsetof(UCharacterAction, PlayRate) == 0x00006C, "Member 'UCharacterAction::PlayRate' has a wrong offset!");
-static_assert(offsetof(UCharacterAction, ActionLayer) == 0x000070, "Member 'UCharacterAction::ActionLayer' has a wrong offset!");
-static_assert(offsetof(UCharacterAction, CharacterMontage) == 0x000078, "Member 'UCharacterAction::CharacterMontage' has a wrong offset!");
-static_assert(offsetof(UCharacterAction, FoleySound) == 0x000080, "Member 'UCharacterAction::FoleySound' has a wrong offset!");
+DUMPER7_ASSERTS_UCharacterAction;
 
 // Class BrickRigs.BrickCharacter
 // 0x0150 (0x0910 - 0x07C0)
@@ -3439,20 +3280,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickCharacter">();
+		STATIC_CLASS_IMPL("BrickCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickCharacter")
 	}
 	static class ABrickCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickCharacter>();
 	}
 };
-static_assert(alignof(ABrickCharacter) == 0x000010, "Wrong alignment on ABrickCharacter");
-static_assert(sizeof(ABrickCharacter) == 0x000910, "Wrong size on ABrickCharacter");
-static_assert(offsetof(ABrickCharacter, CurrentItemPrivate) == 0x0007D0, "Member 'ABrickCharacter::CurrentItemPrivate' has a wrong offset!");
-static_assert(offsetof(ABrickCharacter, RepCurrentItem) == 0x0007D8, "Member 'ABrickCharacter::RepCurrentItem' has a wrong offset!");
-static_assert(offsetof(ABrickCharacter, NextItem) == 0x0007E8, "Member 'ABrickCharacter::NextItem' has a wrong offset!");
-static_assert(offsetof(ABrickCharacter, CarriedBrick) == 0x0007F0, "Member 'ABrickCharacter::CarriedBrick' has a wrong offset!");
-static_assert(offsetof(ABrickCharacter, VehicleSeatID) == 0x000820, "Member 'ABrickCharacter::VehicleSeatID' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickCharacter;
 
 // Class BrickRigs.JoinSessionPopupParams
 // 0x0118 (0x0180 - 0x0068)
@@ -3464,15 +3303,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JoinSessionPopupParams">();
+		STATIC_CLASS_IMPL("JoinSessionPopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JoinSessionPopupParams")
 	}
 	static class UJoinSessionPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJoinSessionPopupParams>();
 	}
 };
-static_assert(alignof(UJoinSessionPopupParams) == 0x000008, "Wrong alignment on UJoinSessionPopupParams");
-static_assert(sizeof(UJoinSessionPopupParams) == 0x000180, "Wrong size on UJoinSessionPopupParams");
+DUMPER7_ASSERTS_UJoinSessionPopupParams;
 
 // Class BrickRigs.CharacterAnimInstance
 // 0x0000 (0x02C0 - 0x02C0)
@@ -3481,15 +3323,18 @@ class UCharacterAnimInstance : public UAnimInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CharacterAnimInstance">();
+		STATIC_CLASS_IMPL("CharacterAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CharacterAnimInstance")
 	}
 	static class UCharacterAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCharacterAnimInstance>();
 	}
 };
-static_assert(alignof(UCharacterAnimInstance) == 0x000010, "Wrong alignment on UCharacterAnimInstance");
-static_assert(sizeof(UCharacterAnimInstance) == 0x0002C0, "Wrong size on UCharacterAnimInstance");
+DUMPER7_ASSERTS_UCharacterAnimInstance;
 
 // Class BrickRigs.CameraBrick
 // 0x0080 (0x0168 - 0x00E8)
@@ -3504,17 +3349,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraBrick">();
+		STATIC_CLASS_IMPL("CameraBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraBrick")
 	}
 	static class UCameraBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraBrick>();
 	}
 };
-static_assert(alignof(UCameraBrick) == 0x000008, "Wrong alignment on UCameraBrick");
-static_assert(sizeof(UCameraBrick) == 0x000168, "Wrong size on UCameraBrick");
-static_assert(offsetof(UCameraBrick, CameraName) == 0x000148, "Member 'UCameraBrick::CameraName' has a wrong offset!");
-static_assert(offsetof(UCameraBrick, OwningSeat) == 0x000158, "Member 'UCameraBrick::OwningSeat' has a wrong offset!");
+DUMPER7_ASSERTS_UCameraBrick;
 
 // Class BrickRigs.BrickCharacterAnimInstance
 // 0x0A40 (0x0D00 - 0x02C0)
@@ -3526,16 +3372,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickCharacterAnimInstance">();
+		STATIC_CLASS_IMPL("BrickCharacterAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickCharacterAnimInstance")
 	}
 	static class UBrickCharacterAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickCharacterAnimInstance>();
 	}
 };
-static_assert(alignof(UBrickCharacterAnimInstance) == 0x000010, "Wrong alignment on UBrickCharacterAnimInstance");
-static_assert(sizeof(UBrickCharacterAnimInstance) == 0x000D00, "Wrong size on UBrickCharacterAnimInstance");
-static_assert(offsetof(UBrickCharacterAnimInstance, Proxy) == 0x0002C0, "Member 'UBrickCharacterAnimInstance::Proxy' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickCharacterAnimInstance;
 
 // Class BrickRigs.CouplingConnection
 // 0x0020 (0x00F0 - 0x00D0)
@@ -3547,15 +3395,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CouplingConnection">();
+		STATIC_CLASS_IMPL("CouplingConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CouplingConnection")
 	}
 	static class UCouplingConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCouplingConnection>();
 	}
 };
-static_assert(alignof(UCouplingConnection) == 0x000008, "Wrong alignment on UCouplingConnection");
-static_assert(sizeof(UCouplingConnection) == 0x0000F0, "Wrong size on UCouplingConnection");
+DUMPER7_ASSERTS_UCouplingConnection;
 
 // Class BrickRigs.InventoryComponent
 // 0x01E8 (0x0298 - 0x00B0)
@@ -3609,18 +3460,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InventoryComponent">();
+		STATIC_CLASS_IMPL("InventoryComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InventoryComponent")
 	}
 	static class UInventoryComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInventoryComponent>();
 	}
 };
-static_assert(alignof(UInventoryComponent) == 0x000008, "Wrong alignment on UInventoryComponent");
-static_assert(sizeof(UInventoryComponent) == 0x000298, "Wrong size on UInventoryComponent");
-static_assert(offsetof(UInventoryComponent, Inventory) == 0x0000C0, "Member 'UInventoryComponent::Inventory' has a wrong offset!");
-static_assert(offsetof(UInventoryComponent, AudioComponent) == 0x0001F0, "Member 'UInventoryComponent::AudioComponent' has a wrong offset!");
-static_assert(offsetof(UInventoryComponent, InventoryProperties) == 0x0001F8, "Member 'UInventoryComponent::InventoryProperties' has a wrong offset!");
+DUMPER7_ASSERTS_UInventoryComponent;
 
 // Class BrickRigs.TurbineConnection
 // 0x0000 (0x00D0 - 0x00D0)
@@ -3629,15 +3480,18 @@ class UTurbineConnection final : public UPhysicsConstraintConnection
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TurbineConnection">();
+		STATIC_CLASS_IMPL("TurbineConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TurbineConnection")
 	}
 	static class UTurbineConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTurbineConnection>();
 	}
 };
-static_assert(alignof(UTurbineConnection) == 0x000008, "Wrong alignment on UTurbineConnection");
-static_assert(sizeof(UTurbineConnection) == 0x0000D0, "Wrong size on UTurbineConnection");
+DUMPER7_ASSERTS_UTurbineConnection;
 
 // Class BrickRigs.BrickConnectorsISMComponent
 // 0x0020 (0x0600 - 0x05E0)
@@ -3658,20 +3512,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickConnectorsISMComponent">();
+		STATIC_CLASS_IMPL("BrickConnectorsISMComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickConnectorsISMComponent")
 	}
 	static class UBrickConnectorsISMComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickConnectorsISMComponent>();
 	}
 };
-static_assert(alignof(UBrickConnectorsISMComponent) == 0x000010, "Wrong alignment on UBrickConnectorsISMComponent");
-static_assert(sizeof(UBrickConnectorsISMComponent) == 0x000600, "Wrong size on UBrickConnectorsISMComponent");
-static_assert(offsetof(UBrickConnectorsISMComponent, Mid) == 0x0005E8, "Member 'UBrickConnectorsISMComponent::Mid' has a wrong offset!");
-static_assert(offsetof(UBrickConnectorsISMComponent, ColorStyle) == 0x0005F0, "Member 'UBrickConnectorsISMComponent::ColorStyle' has a wrong offset!");
-static_assert(offsetof(UBrickConnectorsISMComponent, FocusedColorStyle) == 0x0005F1, "Member 'UBrickConnectorsISMComponent::FocusedColorStyle' has a wrong offset!");
-static_assert(offsetof(UBrickConnectorsISMComponent, StyleState) == 0x0005F2, "Member 'UBrickConnectorsISMComponent::StyleState' has a wrong offset!");
-static_assert(offsetof(UBrickConnectorsISMComponent, FocusedStyleState) == 0x0005F3, "Member 'UBrickConnectorsISMComponent::FocusedStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickConnectorsISMComponent;
 
 // Class BrickRigs.HUDIconWidget
 // 0x0028 (0x0288 - 0x0260)
@@ -3698,17 +3550,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HUDIconWidget">();
+		STATIC_CLASS_IMPL("HUDIconWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDIconWidget")
 	}
 	static class UHUDIconWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUDIconWidget>();
 	}
 };
-static_assert(alignof(UHUDIconWidget) == 0x000008, "Wrong alignment on UHUDIconWidget");
-static_assert(sizeof(UHUDIconWidget) == 0x000288, "Wrong size on UHUDIconWidget");
-static_assert(offsetof(UHUDIconWidget, IconImage) == 0x000278, "Member 'UHUDIconWidget::IconImage' has a wrong offset!");
-static_assert(offsetof(UHUDIconWidget, IconSize) == 0x000280, "Member 'UHUDIconWidget::IconSize' has a wrong offset!");
+DUMPER7_ASSERTS_UHUDIconWidget;
 
 // Class BrickRigs.BrickDataSingleton
 // 0x1528 (0x1550 - 0x0028)
@@ -3740,30 +3593,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickDataSingleton">();
+		STATIC_CLASS_IMPL("BrickDataSingleton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickDataSingleton")
 	}
 	static class UBrickDataSingleton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickDataSingleton>();
 	}
 };
-static_assert(alignof(UBrickDataSingleton) == 0x000010, "Wrong alignment on UBrickDataSingleton");
-static_assert(sizeof(UBrickDataSingleton) == 0x001550, "Wrong size on UBrickDataSingleton");
-static_assert(offsetof(UBrickDataSingleton, ItemTagDisplayNames) == 0x000028, "Member 'UBrickDataSingleton::ItemTagDisplayNames' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, GrayscaleColorNames) == 0x000078, "Member 'UBrickDataSingleton::GrayscaleColorNames' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, HueColorNames) == 0x0000C8, "Member 'UBrickDataSingleton::HueColorNames' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, LegacyBrickPaints) == 0x000118, "Member 'UBrickDataSingleton::LegacyBrickPaints' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, LegacyBrickMaterials) == 0x000168, "Member 'UBrickDataSingleton::LegacyBrickMaterials' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, LegacyBrickEditorObjectClasses) == 0x0001B8, "Member 'UBrickDataSingleton::LegacyBrickEditorObjectClasses' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, SurfaceTypeEffects) == 0x0001C8, "Member 'UBrickDataSingleton::SurfaceTypeEffects' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, MainSoundClass) == 0x000F90, "Member 'UBrickDataSingleton::MainSoundClass' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, WorldSoundClass) == 0x000F98, "Member 'UBrickDataSingleton::WorldSoundClass' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, MusicSoundClass) == 0x000FA0, "Member 'UBrickDataSingleton::MusicSoundClass' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, MaterialThumbnailRenderBrick) == 0x000FA8, "Member 'UBrickDataSingleton::MaterialThumbnailRenderBrick' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, NoItemThumbnailRenderClass) == 0x000FB0, "Member 'UBrickDataSingleton::NoItemThumbnailRenderClass' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, TextureThumbnailRenderMaterial) == 0x000FD8, "Member 'UBrickDataSingleton::TextureThumbnailRenderMaterial' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, ThumbnailRenderDirection) == 0x000FE0, "Member 'UBrickDataSingleton::ThumbnailRenderDirection' has a wrong offset!");
-static_assert(offsetof(UBrickDataSingleton, ObjectThumbnailPostProcessSettings) == 0x000FF0, "Member 'UBrickDataSingleton::ObjectThumbnailPostProcessSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickDataSingleton;
 
 // Class BrickRigs.BrickDecal
 // 0x0018 (0x0048 - 0x0030)
@@ -3778,17 +3619,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickDecal">();
+		STATIC_CLASS_IMPL("BrickDecal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickDecal")
 	}
 	static class UBrickDecal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickDecal>();
 	}
 };
-static_assert(alignof(UBrickDecal) == 0x000008, "Wrong alignment on UBrickDecal");
-static_assert(sizeof(UBrickDecal) == 0x000048, "Wrong size on UBrickDecal");
-static_assert(offsetof(UBrickDecal, Texture) == 0x000038, "Member 'UBrickDecal::Texture' has a wrong offset!");
-static_assert(offsetof(UBrickDecal, Shape) == 0x000040, "Member 'UBrickDecal::Shape' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickDecal;
 
 // Class BrickRigs.BrickEditableTextBox
 // 0x0808 (0x1240 - 0x0A38)
@@ -3800,15 +3642,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditableTextBox">();
+		STATIC_CLASS_IMPL("BrickEditableTextBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditableTextBox")
 	}
 	static class UBrickEditableTextBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditableTextBox>();
 	}
 };
-static_assert(alignof(UBrickEditableTextBox) == 0x000008, "Wrong alignment on UBrickEditableTextBox");
-static_assert(sizeof(UBrickEditableTextBox) == 0x001240, "Wrong size on UBrickEditableTextBox");
+DUMPER7_ASSERTS_UBrickEditableTextBox;
 
 // Class BrickRigs.ItemAction
 // 0x0010 (0x0098 - 0x0088)
@@ -3820,15 +3665,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ItemAction">();
+		STATIC_CLASS_IMPL("ItemAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemAction")
 	}
 	static class UItemAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemAction>();
 	}
 };
-static_assert(alignof(UItemAction) == 0x000008, "Wrong alignment on UItemAction");
-static_assert(sizeof(UItemAction) == 0x000098, "Wrong size on UItemAction");
+DUMPER7_ASSERTS_UItemAction;
 
 // Class BrickRigs.CockAction
 // 0x0000 (0x0098 - 0x0098)
@@ -3837,15 +3685,18 @@ class UCockAction final : public UItemAction
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CockAction">();
+		STATIC_CLASS_IMPL("CockAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CockAction")
 	}
 	static class UCockAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCockAction>();
 	}
 };
-static_assert(alignof(UCockAction) == 0x000008, "Wrong alignment on UCockAction");
-static_assert(sizeof(UCockAction) == 0x000098, "Wrong size on UCockAction");
+DUMPER7_ASSERTS_UCockAction;
 
 // Class BrickRigs.BrickEditor
 // 0x02C0 (0x04E0 - 0x0220)
@@ -3872,26 +3723,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditor">();
+		STATIC_CLASS_IMPL("BrickEditor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditor")
 	}
 	static class ABrickEditor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickEditor>();
 	}
 };
-static_assert(alignof(ABrickEditor) == 0x000008, "Wrong alignment on ABrickEditor");
-static_assert(sizeof(ABrickEditor) == 0x0004E0, "Wrong size on ABrickEditor");
-static_assert(offsetof(ABrickEditor, PlayerController) == 0x000270, "Member 'ABrickEditor::PlayerController' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, CurrentEditorMode) == 0x0003B0, "Member 'ABrickEditor::CurrentEditorMode' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, EditorModes) == 0x0003B8, "Member 'ABrickEditor::EditorModes' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, OutlineMID) == 0x000420, "Member 'ABrickEditor::OutlineMID' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, BoundsMID) == 0x000428, "Member 'ABrickEditor::BoundsMID' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, EditorInterfaceComponent) == 0x000438, "Member 'ABrickEditor::EditorInterfaceComponent' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, BoundsMeshComponent) == 0x000440, "Member 'ABrickEditor::BoundsMeshComponent' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, GridMeshComponent) == 0x000448, "Member 'ABrickEditor::GridMeshComponent' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, GizmoMeshComponent) == 0x000450, "Member 'ABrickEditor::GizmoMeshComponent' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, CenterOfMassMeshComponent) == 0x000458, "Member 'ABrickEditor::CenterOfMassMeshComponent' has a wrong offset!");
-static_assert(offsetof(ABrickEditor, StaticInfoClass) == 0x0004D8, "Member 'ABrickEditor::StaticInfoClass' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickEditor;
 
 // Class BrickRigs.BrickEditorStaticMeshComponent
 // 0x0010 (0x0550 - 0x0540)
@@ -3903,15 +3746,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorStaticMeshComponent">();
+		STATIC_CLASS_IMPL("BrickEditorStaticMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorStaticMeshComponent")
 	}
 	static class UBrickEditorStaticMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorStaticMeshComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorStaticMeshComponent) == 0x000010, "Wrong alignment on UBrickEditorStaticMeshComponent");
-static_assert(sizeof(UBrickEditorStaticMeshComponent) == 0x000550, "Wrong size on UBrickEditorStaticMeshComponent");
+DUMPER7_ASSERTS_UBrickEditorStaticMeshComponent;
 
 // Class BrickRigs.CouplingBrickBaseStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -3920,15 +3766,18 @@ class UCouplingBrickBaseStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CouplingBrickBaseStaticInfo">();
+		STATIC_CLASS_IMPL("CouplingBrickBaseStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CouplingBrickBaseStaticInfo")
 	}
 	static class UCouplingBrickBaseStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCouplingBrickBaseStaticInfo>();
 	}
 };
-static_assert(alignof(UCouplingBrickBaseStaticInfo) == 0x000008, "Wrong alignment on UCouplingBrickBaseStaticInfo");
-static_assert(sizeof(UCouplingBrickBaseStaticInfo) == 0x000190, "Wrong size on UCouplingBrickBaseStaticInfo");
+DUMPER7_ASSERTS_UCouplingBrickBaseStaticInfo;
 
 // Class BrickRigs.CouplingBrickStaticInfo
 // 0x0010 (0x01A0 - 0x0190)
@@ -3941,16 +3790,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CouplingBrickStaticInfo">();
+		STATIC_CLASS_IMPL("CouplingBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CouplingBrickStaticInfo")
 	}
 	static class UCouplingBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCouplingBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UCouplingBrickStaticInfo) == 0x000008, "Wrong alignment on UCouplingBrickStaticInfo");
-static_assert(sizeof(UCouplingBrickStaticInfo) == 0x0001A0, "Wrong size on UCouplingBrickStaticInfo");
-static_assert(offsetof(UCouplingBrickStaticInfo, AngularLimits) == 0x000190, "Member 'UCouplingBrickStaticInfo::AngularLimits' has a wrong offset!");
+DUMPER7_ASSERTS_UCouplingBrickStaticInfo;
 
 // Class BrickRigs.BrickEditorArrowComponent
 // 0x0030 (0x0580 - 0x0550)
@@ -3978,23 +3829,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorArrowComponent">();
+		STATIC_CLASS_IMPL("BrickEditorArrowComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorArrowComponent")
 	}
 	static class UBrickEditorArrowComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorArrowComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorArrowComponent) == 0x000010, "Wrong alignment on UBrickEditorArrowComponent");
-static_assert(sizeof(UBrickEditorArrowComponent) == 0x000580, "Wrong size on UBrickEditorArrowComponent");
-static_assert(offsetof(UBrickEditorArrowComponent, Mid) == 0x000550, "Member 'UBrickEditorArrowComponent::Mid' has a wrong offset!");
-static_assert(offsetof(UBrickEditorArrowComponent, LinearArrowMesh) == 0x000558, "Member 'UBrickEditorArrowComponent::LinearArrowMesh' has a wrong offset!");
-static_assert(offsetof(UBrickEditorArrowComponent, CircularArrowMesh) == 0x000560, "Member 'UBrickEditorArrowComponent::CircularArrowMesh' has a wrong offset!");
-static_assert(offsetof(UBrickEditorArrowComponent, ArrowType) == 0x000568, "Member 'UBrickEditorArrowComponent::ArrowType' has a wrong offset!");
-static_assert(offsetof(UBrickEditorArrowComponent, LinearArrowLength) == 0x00056C, "Member 'UBrickEditorArrowComponent::LinearArrowLength' has a wrong offset!");
-static_assert(offsetof(UBrickEditorArrowComponent, CircularArrowAngle) == 0x000570, "Member 'UBrickEditorArrowComponent::CircularArrowAngle' has a wrong offset!");
-static_assert(offsetof(UBrickEditorArrowComponent, CircularArrowRadius) == 0x000574, "Member 'UBrickEditorArrowComponent::CircularArrowRadius' has a wrong offset!");
-static_assert(offsetof(UBrickEditorArrowComponent, ColorStyle) == 0x000578, "Member 'UBrickEditorArrowComponent::ColorStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickEditorArrowComponent;
 
 // Class BrickRigs.ScalableBrickBaseStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -4003,15 +3849,18 @@ class UScalableBrickBaseStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScalableBrickBaseStaticInfo">();
+		STATIC_CLASS_IMPL("ScalableBrickBaseStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScalableBrickBaseStaticInfo")
 	}
 	static class UScalableBrickBaseStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScalableBrickBaseStaticInfo>();
 	}
 };
-static_assert(alignof(UScalableBrickBaseStaticInfo) == 0x000008, "Wrong alignment on UScalableBrickBaseStaticInfo");
-static_assert(sizeof(UScalableBrickBaseStaticInfo) == 0x000190, "Wrong size on UScalableBrickBaseStaticInfo");
+DUMPER7_ASSERTS_UScalableBrickBaseStaticInfo;
 
 // Class BrickRigs.ScalableBrickStaticInfo
 // 0x0040 (0x01D0 - 0x0190)
@@ -4028,20 +3877,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScalableBrickStaticInfo">();
+		STATIC_CLASS_IMPL("ScalableBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScalableBrickStaticInfo")
 	}
 	static class UScalableBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScalableBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UScalableBrickStaticInfo) == 0x000008, "Wrong alignment on UScalableBrickStaticInfo");
-static_assert(sizeof(UScalableBrickStaticInfo) == 0x0001D0, "Wrong size on UScalableBrickStaticInfo");
-static_assert(offsetof(UScalableBrickStaticInfo, ScalableLiftSurfaceRadiiYZ) == 0x000190, "Member 'UScalableBrickStaticInfo::ScalableLiftSurfaceRadiiYZ' has a wrong offset!");
-static_assert(offsetof(UScalableBrickStaticInfo, ScalableLiftSurfaceCrossSectionAreasYZ) == 0x000198, "Member 'UScalableBrickStaticInfo::ScalableLiftSurfaceCrossSectionAreasYZ' has a wrong offset!");
-static_assert(offsetof(UScalableBrickStaticInfo, ScalableLiftSurfaceNormalsYZ) == 0x0001A0, "Member 'UScalableBrickStaticInfo::ScalableLiftSurfaceNormalsYZ' has a wrong offset!");
-static_assert(offsetof(UScalableBrickStaticInfo, ScalableShape) == 0x0001B8, "Member 'UScalableBrickStaticInfo::ScalableShape' has a wrong offset!");
-static_assert(offsetof(UScalableBrickStaticInfo, ReplacementMeshes) == 0x0001C0, "Member 'UScalableBrickStaticInfo::ReplacementMeshes' has a wrong offset!");
+DUMPER7_ASSERTS_UScalableBrickStaticInfo;
 
 // Class BrickRigs.ExhaustBrickStaticInfo
 // 0x0008 (0x01D8 - 0x01D0)
@@ -4053,16 +3900,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExhaustBrickStaticInfo">();
+		STATIC_CLASS_IMPL("ExhaustBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExhaustBrickStaticInfo")
 	}
 	static class UExhaustBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UExhaustBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UExhaustBrickStaticInfo) == 0x000008, "Wrong alignment on UExhaustBrickStaticInfo");
-static_assert(sizeof(UExhaustBrickStaticInfo) == 0x0001D8, "Wrong size on UExhaustBrickStaticInfo");
-static_assert(offsetof(UExhaustBrickStaticInfo, DefaultExhaustEffect) == 0x0001D0, "Member 'UExhaustBrickStaticInfo::DefaultExhaustEffect' has a wrong offset!");
+DUMPER7_ASSERTS_UExhaustBrickStaticInfo;
 
 // Class BrickRigs.BrickEditorAudioComponent
 // 0x0010 (0x0870 - 0x0860)
@@ -4074,15 +3923,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorAudioComponent">();
+		STATIC_CLASS_IMPL("BrickEditorAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorAudioComponent")
 	}
 	static class UBrickEditorAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorAudioComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorAudioComponent) == 0x000010, "Wrong alignment on UBrickEditorAudioComponent");
-static_assert(sizeof(UBrickEditorAudioComponent) == 0x000870, "Wrong size on UBrickEditorAudioComponent");
+DUMPER7_ASSERTS_UBrickEditorAudioComponent;
 
 // Class BrickRigs.BrickEditorCableComponent
 // 0x0000 (0x0570 - 0x0570)
@@ -4091,15 +3943,18 @@ class UBrickEditorCableComponent final : public UCableComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorCableComponent">();
+		STATIC_CLASS_IMPL("BrickEditorCableComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorCableComponent")
 	}
 	static class UBrickEditorCableComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorCableComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorCableComponent) == 0x000010, "Wrong alignment on UBrickEditorCableComponent");
-static_assert(sizeof(UBrickEditorCableComponent) == 0x000570, "Wrong size on UBrickEditorCableComponent");
+DUMPER7_ASSERTS_UBrickEditorCableComponent;
 
 // Class BrickRigs.CylinderBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -4108,15 +3963,18 @@ class UCylinderBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CylinderBrickStaticInfo">();
+		STATIC_CLASS_IMPL("CylinderBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CylinderBrickStaticInfo")
 	}
 	static class UCylinderBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCylinderBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UCylinderBrickStaticInfo) == 0x000008, "Wrong alignment on UCylinderBrickStaticInfo");
-static_assert(sizeof(UCylinderBrickStaticInfo) == 0x000190, "Wrong size on UCylinderBrickStaticInfo");
+DUMPER7_ASSERTS_UCylinderBrickStaticInfo;
 
 // Class BrickRigs.BrickEditorComponentInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -4125,7 +3983,11 @@ class IBrickEditorComponentInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorComponentInterface">();
+		STATIC_CLASS_IMPL("BrickEditorComponentInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorComponentInterface")
 	}
 	static class IBrickEditorComponentInterface* GetDefaultObj()
 	{
@@ -4141,8 +4003,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IBrickEditorComponentInterface) == 0x000001, "Wrong alignment on IBrickEditorComponentInterface");
-static_assert(sizeof(IBrickEditorComponentInterface) == 0x000001, "Wrong size on IBrickEditorComponentInterface");
+DUMPER7_ASSERTS_IBrickEditorComponentInterface;
 
 // Class BrickRigs.BrickEditorMode
 // 0x0010 (0x0038 - 0x0028)
@@ -4155,16 +4016,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorMode">();
+		STATIC_CLASS_IMPL("BrickEditorMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorMode")
 	}
 	static class UBrickEditorMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorMode>();
 	}
 };
-static_assert(alignof(UBrickEditorMode) == 0x000008, "Wrong alignment on UBrickEditorMode");
-static_assert(sizeof(UBrickEditorMode) == 0x000038, "Wrong size on UBrickEditorMode");
-static_assert(offsetof(UBrickEditorMode, BrickEditor) == 0x000030, "Member 'UBrickEditorMode::BrickEditor' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickEditorMode;
 
 // Class BrickRigs.DeathmatchGameMode
 // 0x0000 (0x0448 - 0x0448)
@@ -4173,15 +4036,18 @@ class ADeathmatchGameMode : public ABrickGameMode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeathmatchGameMode">();
+		STATIC_CLASS_IMPL("DeathmatchGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeathmatchGameMode")
 	}
 	static class ADeathmatchGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADeathmatchGameMode>();
 	}
 };
-static_assert(alignof(ADeathmatchGameMode) == 0x000008, "Wrong alignment on ADeathmatchGameMode");
-static_assert(sizeof(ADeathmatchGameMode) == 0x000448, "Wrong size on ADeathmatchGameMode");
+DUMPER7_ASSERTS_ADeathmatchGameMode;
 
 // Class BrickRigs.BrickEditorDefaultMode
 // 0x0128 (0x0160 - 0x0038)
@@ -4193,15 +4059,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorDefaultMode">();
+		STATIC_CLASS_IMPL("BrickEditorDefaultMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorDefaultMode")
 	}
 	static class UBrickEditorDefaultMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorDefaultMode>();
 	}
 };
-static_assert(alignof(UBrickEditorDefaultMode) == 0x000008, "Wrong alignment on UBrickEditorDefaultMode");
-static_assert(sizeof(UBrickEditorDefaultMode) == 0x000160, "Wrong size on UBrickEditorDefaultMode");
+DUMPER7_ASSERTS_UBrickEditorDefaultMode;
 
 // Class BrickRigs.DamageType_Explosion
 // 0x0008 (0x0048 - 0x0040)
@@ -4214,16 +4083,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageType_Explosion">();
+		STATIC_CLASS_IMPL("DamageType_Explosion")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageType_Explosion")
 	}
 	static class UDamageType_Explosion* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageType_Explosion>();
 	}
 };
-static_assert(alignof(UDamageType_Explosion) == 0x000008, "Wrong alignment on UDamageType_Explosion");
-static_assert(sizeof(UDamageType_Explosion) == 0x000048, "Wrong size on UDamageType_Explosion");
-static_assert(offsetof(UDamageType_Explosion, FireProbability) == 0x000040, "Member 'UDamageType_Explosion::FireProbability' has a wrong offset!");
+DUMPER7_ASSERTS_UDamageType_Explosion;
 
 // Class BrickRigs.BrickEditorISMComponent
 // 0x0010 (0x05F0 - 0x05E0)
@@ -4235,15 +4106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorISMComponent">();
+		STATIC_CLASS_IMPL("BrickEditorISMComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorISMComponent")
 	}
 	static class UBrickEditorISMComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorISMComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorISMComponent) == 0x000010, "Wrong alignment on UBrickEditorISMComponent");
-static_assert(sizeof(UBrickEditorISMComponent) == 0x0005F0, "Wrong size on UBrickEditorISMComponent");
+DUMPER7_ASSERTS_UBrickEditorISMComponent;
 
 // Class BrickRigs.BrickEditorMirrorAxisWidget
 // 0x0010 (0x0270 - 0x0260)
@@ -4261,15 +4135,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorMirrorAxisWidget">();
+		STATIC_CLASS_IMPL("BrickEditorMirrorAxisWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorMirrorAxisWidget")
 	}
 	static class UBrickEditorMirrorAxisWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorMirrorAxisWidget>();
 	}
 };
-static_assert(alignof(UBrickEditorMirrorAxisWidget) == 0x000008, "Wrong alignment on UBrickEditorMirrorAxisWidget");
-static_assert(sizeof(UBrickEditorMirrorAxisWidget) == 0x000270, "Wrong size on UBrickEditorMirrorAxisWidget");
+DUMPER7_ASSERTS_UBrickEditorMirrorAxisWidget;
 
 // Class BrickRigs.ChatMessageWidget
 // 0x00B0 (0x0310 - 0x0260)
@@ -4286,15 +4163,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChatMessageWidget">();
+		STATIC_CLASS_IMPL("ChatMessageWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatMessageWidget")
 	}
 	static class UChatMessageWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatMessageWidget>();
 	}
 };
-static_assert(alignof(UChatMessageWidget) == 0x000008, "Wrong alignment on UChatMessageWidget");
-static_assert(sizeof(UChatMessageWidget) == 0x000310, "Wrong size on UChatMessageWidget");
+DUMPER7_ASSERTS_UChatMessageWidget;
 
 // Class BrickRigs.BaseEditorInputComponent
 // 0x0010 (0x0180 - 0x0170)
@@ -4367,16 +4247,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BaseEditorInputComponent">();
+		STATIC_CLASS_IMPL("BaseEditorInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BaseEditorInputComponent")
 	}
 	static class UBaseEditorInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBaseEditorInputComponent>();
 	}
 };
-static_assert(alignof(UBaseEditorInputComponent) == 0x000008, "Wrong alignment on UBaseEditorInputComponent");
-static_assert(sizeof(UBaseEditorInputComponent) == 0x000180, "Wrong size on UBaseEditorInputComponent");
-static_assert(offsetof(UBaseEditorInputComponent, BrickEditor) == 0x000170, "Member 'UBaseEditorInputComponent::BrickEditor' has a wrong offset!");
+DUMPER7_ASSERTS_UBaseEditorInputComponent;
 
 // Class BrickRigs.EditorContextInputComponent
 // 0x0000 (0x0180 - 0x0180)
@@ -4385,15 +4267,18 @@ class UEditorContextInputComponent final : public UBaseEditorInputComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EditorContextInputComponent">();
+		STATIC_CLASS_IMPL("EditorContextInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditorContextInputComponent")
 	}
 	static class UEditorContextInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditorContextInputComponent>();
 	}
 };
-static_assert(alignof(UEditorContextInputComponent) == 0x000008, "Wrong alignment on UEditorContextInputComponent");
-static_assert(sizeof(UEditorContextInputComponent) == 0x000180, "Wrong size on UEditorContextInputComponent");
+DUMPER7_ASSERTS_UEditorContextInputComponent;
 
 // Class BrickRigs.FluGameUserSettings
 // 0x0058 (0x0178 - 0x0120)
@@ -4432,36 +4317,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FluGameUserSettings">();
+		STATIC_CLASS_IMPL("FluGameUserSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FluGameUserSettings")
 	}
 	static class UFluGameUserSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFluGameUserSettings>();
 	}
 };
-static_assert(alignof(UFluGameUserSettings) == 0x000008, "Wrong alignment on UFluGameUserSettings");
-static_assert(sizeof(UFluGameUserSettings) == 0x000178, "Wrong size on UFluGameUserSettings");
-static_assert(offsetof(UFluGameUserSettings, PresetQuality) == 0x000128, "Member 'UFluGameUserSettings::PresetQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, AntiAliasingMethod) == 0x000129, "Member 'UFluGameUserSettings::AntiAliasingMethod' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, bEnableDLSS) == 0x00012A, "Member 'UFluGameUserSettings::bEnableDLSS' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, DLSSMode) == 0x00012B, "Member 'UFluGameUserSettings::DLSSMode' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, DLSSGMode) == 0x00012C, "Member 'UFluGameUserSettings::DLSSGMode' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, NvidiaReflexMode) == 0x00012D, "Member 'UFluGameUserSettings::NvidiaReflexMode' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, DLSSSharpness) == 0x000130, "Member 'UFluGameUserSettings::DLSSSharpness' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, FSRMode) == 0x000134, "Member 'UFluGameUserSettings::FSRMode' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, AntiAliasingQuality) == 0x000135, "Member 'UFluGameUserSettings::AntiAliasingQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, ResolutionScaleQuality) == 0x000136, "Member 'UFluGameUserSettings::ResolutionScaleQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, ViewDistanceQuality) == 0x000137, "Member 'UFluGameUserSettings::ViewDistanceQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, PostProcessingQuality) == 0x000138, "Member 'UFluGameUserSettings::PostProcessingQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, ShadowQuality) == 0x000139, "Member 'UFluGameUserSettings::ShadowQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, TextureQuality) == 0x00013A, "Member 'UFluGameUserSettings::TextureQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, EffectsQuality) == 0x00013B, "Member 'UFluGameUserSettings::EffectsQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, FoliageQuality) == 0x00013C, "Member 'UFluGameUserSettings::FoliageQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, ShadingQuality) == 0x00013D, "Member 'UFluGameUserSettings::ShadingQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, MotionBlurQuality) == 0x00013E, "Member 'UFluGameUserSettings::MotionBlurQuality' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, MotionBlurScale) == 0x000140, "Member 'UFluGameUserSettings::MotionBlurScale' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, bUseRayTracing) == 0x000144, "Member 'UFluGameUserSettings::bUseRayTracing' has a wrong offset!");
-static_assert(offsetof(UFluGameUserSettings, bUseDepthOfField) == 0x000145, "Member 'UFluGameUserSettings::bUseDepthOfField' has a wrong offset!");
+DUMPER7_ASSERTS_UFluGameUserSettings;
 
 // Class BrickRigs.BrickEditorModeWidget
 // 0x0010 (0x0270 - 0x0260)
@@ -4473,15 +4340,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorModeWidget">();
+		STATIC_CLASS_IMPL("BrickEditorModeWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorModeWidget")
 	}
 	static class UBrickEditorModeWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorModeWidget>();
 	}
 };
-static_assert(alignof(UBrickEditorModeWidget) == 0x000008, "Wrong alignment on UBrickEditorModeWidget");
-static_assert(sizeof(UBrickEditorModeWidget) == 0x000270, "Wrong size on UBrickEditorModeWidget");
+DUMPER7_ASSERTS_UBrickEditorModeWidget;
 
 // Class BrickRigs.BrickEditorMoveMode
 // 0x00C8 (0x0100 - 0x0038)
@@ -4496,17 +4366,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorMoveMode">();
+		STATIC_CLASS_IMPL("BrickEditorMoveMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorMoveMode")
 	}
 	static class UBrickEditorMoveMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorMoveMode>();
 	}
 };
-static_assert(alignof(UBrickEditorMoveMode) == 0x000008, "Wrong alignment on UBrickEditorMoveMode");
-static_assert(sizeof(UBrickEditorMoveMode) == 0x000100, "Wrong size on UBrickEditorMoveMode");
-static_assert(offsetof(UBrickEditorMoveMode, EffectiveMoveLocation) == 0x0000D0, "Member 'UBrickEditorMoveMode::EffectiveMoveLocation' has a wrong offset!");
-static_assert(offsetof(UBrickEditorMoveMode, EffectiveMoveRotation) == 0x0000DC, "Member 'UBrickEditorMoveMode::EffectiveMoveRotation' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickEditorMoveMode;
 
 // Class BrickRigs.CrosshairWidget
 // 0x0068 (0x02C8 - 0x0260)
@@ -4539,28 +4410,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CrosshairWidget">();
+		STATIC_CLASS_IMPL("CrosshairWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CrosshairWidget")
 	}
 	static class UCrosshairWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCrosshairWidget>();
 	}
 };
-static_assert(alignof(UCrosshairWidget) == 0x000008, "Wrong alignment on UCrosshairWidget");
-static_assert(sizeof(UCrosshairWidget) == 0x0002C8, "Wrong size on UCrosshairWidget");
-static_assert(offsetof(UCrosshairWidget, Character) == 0x000260, "Member 'UCrosshairWidget::Character' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, CurrentItem) == 0x000268, "Member 'UCrosshairWidget::CurrentItem' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, CrosshairWidgets) == 0x000270, "Member 'UCrosshairWidget::CrosshairWidgets' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, CrosshairCanvas) == 0x000290, "Member 'UCrosshairWidget::CrosshairCanvas' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, HitMarkerImage) == 0x000298, "Member 'UCrosshairWidget::HitMarkerImage' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, CrosshairHUDVisibility) == 0x0002A0, "Member 'UCrosshairWidget::CrosshairHUDVisibility' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, HitMarkerHUDVisibility) == 0x0002A1, "Member 'UCrosshairWidget::HitMarkerHUDVisibility' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, CrosshairWidgetClass) == 0x0002A8, "Member 'UCrosshairWidget::CrosshairWidgetClass' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, NumCrosshairWidgets) == 0x0002B0, "Member 'UCrosshairWidget::NumCrosshairWidgets' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, CrosshairRotationOffset) == 0x0002B4, "Member 'UCrosshairWidget::CrosshairRotationOffset' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, CrosshairAngleStep) == 0x0002B8, "Member 'UCrosshairWidget::CrosshairAngleStep' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, CrosshairRadiusScale) == 0x0002BC, "Member 'UCrosshairWidget::CrosshairRadiusScale' has a wrong offset!");
-static_assert(offsetof(UCrosshairWidget, MinCrosshairRadius) == 0x0002C0, "Member 'UCrosshairWidget::MinCrosshairRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UCrosshairWidget;
 
 // Class BrickRigs.BrickEditorNiagaraComponent
 // 0x0010 (0x0670 - 0x0660)
@@ -4575,15 +4436,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorNiagaraComponent">();
+		STATIC_CLASS_IMPL("BrickEditorNiagaraComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorNiagaraComponent")
 	}
 	static class UBrickEditorNiagaraComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorNiagaraComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorNiagaraComponent) == 0x000010, "Wrong alignment on UBrickEditorNiagaraComponent");
-static_assert(sizeof(UBrickEditorNiagaraComponent) == 0x000670, "Wrong size on UBrickEditorNiagaraComponent");
+DUMPER7_ASSERTS_UBrickEditorNiagaraComponent;
 
 // Class BrickRigs.RCBrick
 // 0x0000 (0x0110 - 0x0110)
@@ -4592,15 +4456,18 @@ class URCBrick final : public UScalableBrick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RCBrick">();
+		STATIC_CLASS_IMPL("RCBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RCBrick")
 	}
 	static class URCBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URCBrick>();
 	}
 };
-static_assert(alignof(URCBrick) == 0x000008, "Wrong alignment on URCBrick");
-static_assert(sizeof(URCBrick) == 0x000110, "Wrong size on URCBrick");
+DUMPER7_ASSERTS_URCBrick;
 
 // Class BrickRigs.BrickEditorObjectFilter
 // 0x0088 (0x00B0 - 0x0028)
@@ -4615,18 +4482,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorObjectFilter">();
+		STATIC_CLASS_IMPL("BrickEditorObjectFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorObjectFilter")
 	}
 	static class UBrickEditorObjectFilter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorObjectFilter>();
 	}
 };
-static_assert(alignof(UBrickEditorObjectFilter) == 0x000008, "Wrong alignment on UBrickEditorObjectFilter");
-static_assert(sizeof(UBrickEditorObjectFilter) == 0x0000B0, "Wrong size on UBrickEditorObjectFilter");
-static_assert(offsetof(UBrickEditorObjectFilter, bIncludeUncategorizedObjects) == 0x000028, "Member 'UBrickEditorObjectFilter::bIncludeUncategorizedObjects' has a wrong offset!");
-static_assert(offsetof(UBrickEditorObjectFilter, FilterParams) == 0x000030, "Member 'UBrickEditorObjectFilter::FilterParams' has a wrong offset!");
-static_assert(offsetof(UBrickEditorObjectFilter, SubFilters) == 0x0000A0, "Member 'UBrickEditorObjectFilter::SubFilters' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickEditorObjectFilter;
 
 // Class BrickRigs.FuelTank
 // 0x0040 (0x0280 - 0x0240)
@@ -4651,21 +4518,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FuelTank">();
+		STATIC_CLASS_IMPL("FuelTank")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FuelTank")
 	}
 	static class AFuelTank* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFuelTank>();
 	}
 };
-static_assert(alignof(AFuelTank) == 0x000008, "Wrong alignment on AFuelTank");
-static_assert(sizeof(AFuelTank) == 0x000280, "Wrong size on AFuelTank");
-static_assert(offsetof(AFuelTank, bHasExploded) == 0x000254, "Member 'AFuelTank::bHasExploded' has a wrong offset!");
-static_assert(offsetof(AFuelTank, MaxDamage) == 0x000258, "Member 'AFuelTank::MaxDamage' has a wrong offset!");
-static_assert(offsetof(AFuelTank, ExplodedStaticMesh) == 0x000260, "Member 'AFuelTank::ExplodedStaticMesh' has a wrong offset!");
-static_assert(offsetof(AFuelTank, FuelType) == 0x000268, "Member 'AFuelTank::FuelType' has a wrong offset!");
-static_assert(offsetof(AFuelTank, FuelVolume) == 0x000270, "Member 'AFuelTank::FuelVolume' has a wrong offset!");
-static_assert(offsetof(AFuelTank, LeakEmitter) == 0x000278, "Member 'AFuelTank::LeakEmitter' has a wrong offset!");
+DUMPER7_ASSERTS_AFuelTank;
 
 // Class BrickRigs.BrickEditorObjectPickerMode
 // 0x0020 (0x0058 - 0x0038)
@@ -4677,15 +4541,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorObjectPickerMode">();
+		STATIC_CLASS_IMPL("BrickEditorObjectPickerMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorObjectPickerMode")
 	}
 	static class UBrickEditorObjectPickerMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorObjectPickerMode>();
 	}
 };
-static_assert(alignof(UBrickEditorObjectPickerMode) == 0x000008, "Wrong alignment on UBrickEditorObjectPickerMode");
-static_assert(sizeof(UBrickEditorObjectPickerMode) == 0x000058, "Wrong size on UBrickEditorObjectPickerMode");
+DUMPER7_ASSERTS_UBrickEditorObjectPickerMode;
 
 // Class BrickRigs.BrickEditorObjectPropertyPickerMode
 // 0x0000 (0x0058 - 0x0058)
@@ -4694,15 +4561,18 @@ class UBrickEditorObjectPropertyPickerMode final : public UBrickEditorObjectPick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorObjectPropertyPickerMode">();
+		STATIC_CLASS_IMPL("BrickEditorObjectPropertyPickerMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorObjectPropertyPickerMode")
 	}
 	static class UBrickEditorObjectPropertyPickerMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorObjectPropertyPickerMode>();
 	}
 };
-static_assert(alignof(UBrickEditorObjectPropertyPickerMode) == 0x000008, "Wrong alignment on UBrickEditorObjectPropertyPickerMode");
-static_assert(sizeof(UBrickEditorObjectPropertyPickerMode) == 0x000058, "Wrong size on UBrickEditorObjectPropertyPickerMode");
+DUMPER7_ASSERTS_UBrickEditorObjectPropertyPickerMode;
 
 // Class BrickRigs.CompressorBrickStaticInfo
 // 0x0008 (0x0198 - 0x0190)
@@ -4715,16 +4585,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CompressorBrickStaticInfo">();
+		STATIC_CLASS_IMPL("CompressorBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CompressorBrickStaticInfo")
 	}
 	static class UCompressorBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCompressorBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UCompressorBrickStaticInfo) == 0x000008, "Wrong alignment on UCompressorBrickStaticInfo");
-static_assert(sizeof(UCompressorBrickStaticInfo) == 0x000198, "Wrong size on UCompressorBrickStaticInfo");
-static_assert(offsetof(UCompressorBrickStaticInfo, BoostFactor) == 0x000190, "Member 'UCompressorBrickStaticInfo::BoostFactor' has a wrong offset!");
+DUMPER7_ASSERTS_UCompressorBrickStaticInfo;
 
 // Class BrickRigs.BrickEditorPropertyPickerMode
 // 0x0000 (0x0058 - 0x0058)
@@ -4733,15 +4605,18 @@ class UBrickEditorPropertyPickerMode final : public UBrickEditorObjectPickerMode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorPropertyPickerMode">();
+		STATIC_CLASS_IMPL("BrickEditorPropertyPickerMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorPropertyPickerMode")
 	}
 	static class UBrickEditorPropertyPickerMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorPropertyPickerMode>();
 	}
 };
-static_assert(alignof(UBrickEditorPropertyPickerMode) == 0x000008, "Wrong alignment on UBrickEditorPropertyPickerMode");
-static_assert(sizeof(UBrickEditorPropertyPickerMode) == 0x000058, "Wrong size on UBrickEditorPropertyPickerMode");
+DUMPER7_ASSERTS_UBrickEditorPropertyPickerMode;
 
 // Class BrickRigs.BrickEditorObjectPropertyWidget
 // 0x0000 (0x0280 - 0x0280)
@@ -4756,15 +4631,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorObjectPropertyWidget">();
+		STATIC_CLASS_IMPL("BrickEditorObjectPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorObjectPropertyWidget")
 	}
 	static class UBrickEditorObjectPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorObjectPropertyWidget>();
 	}
 };
-static_assert(alignof(UBrickEditorObjectPropertyWidget) == 0x000008, "Wrong alignment on UBrickEditorObjectPropertyWidget");
-static_assert(sizeof(UBrickEditorObjectPropertyWidget) == 0x000280, "Wrong size on UBrickEditorObjectPropertyWidget");
+DUMPER7_ASSERTS_UBrickEditorObjectPropertyWidget;
 
 // Class BrickRigs.BrickEditorParticleComponent
 // 0x0010 (0x0720 - 0x0710)
@@ -4779,15 +4657,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorParticleComponent">();
+		STATIC_CLASS_IMPL("BrickEditorParticleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorParticleComponent")
 	}
 	static class UBrickEditorParticleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorParticleComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorParticleComponent) == 0x000010, "Wrong alignment on UBrickEditorParticleComponent");
-static_assert(sizeof(UBrickEditorParticleComponent) == 0x000720, "Wrong size on UBrickEditorParticleComponent");
+DUMPER7_ASSERTS_UBrickEditorParticleComponent;
 
 // Class BrickRigs.DamageType_ForceKill
 // 0x0000 (0x0040 - 0x0040)
@@ -4796,15 +4677,18 @@ class UDamageType_ForceKill final : public UDamageType
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageType_ForceKill">();
+		STATIC_CLASS_IMPL("DamageType_ForceKill")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageType_ForceKill")
 	}
 	static class UDamageType_ForceKill* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageType_ForceKill>();
 	}
 };
-static_assert(alignof(UDamageType_ForceKill) == 0x000008, "Wrong alignment on UDamageType_ForceKill");
-static_assert(sizeof(UDamageType_ForceKill) == 0x000040, "Wrong size on UDamageType_ForceKill");
+DUMPER7_ASSERTS_UDamageType_ForceKill;
 
 // Class BrickRigs.BrickEditorSkeletalMeshComponent
 // 0x0010 (0x0F40 - 0x0F30)
@@ -4816,15 +4700,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorSkeletalMeshComponent">();
+		STATIC_CLASS_IMPL("BrickEditorSkeletalMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorSkeletalMeshComponent")
 	}
 	static class UBrickEditorSkeletalMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorSkeletalMeshComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorSkeletalMeshComponent) == 0x000010, "Wrong alignment on UBrickEditorSkeletalMeshComponent");
-static_assert(sizeof(UBrickEditorSkeletalMeshComponent) == 0x000F40, "Wrong size on UBrickEditorSkeletalMeshComponent");
+DUMPER7_ASSERTS_UBrickEditorSkeletalMeshComponent;
 
 // Class BrickRigs.RotorBladeBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -4833,15 +4720,18 @@ class URotorBladeBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RotorBladeBrickStaticInfo">();
+		STATIC_CLASS_IMPL("RotorBladeBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RotorBladeBrickStaticInfo")
 	}
 	static class URotorBladeBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URotorBladeBrickStaticInfo>();
 	}
 };
-static_assert(alignof(URotorBladeBrickStaticInfo) == 0x000008, "Wrong alignment on URotorBladeBrickStaticInfo");
-static_assert(sizeof(URotorBladeBrickStaticInfo) == 0x000190, "Wrong size on URotorBladeBrickStaticInfo");
+DUMPER7_ASSERTS_URotorBladeBrickStaticInfo;
 
 // Class BrickRigs.BrickEditorStaticInfo
 // 0x0150 (0x0178 - 0x0028)
@@ -4884,46 +4774,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorStaticInfo">();
+		STATIC_CLASS_IMPL("BrickEditorStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorStaticInfo")
 	}
 	static class UBrickEditorStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorStaticInfo>();
 	}
 };
-static_assert(alignof(UBrickEditorStaticInfo) == 0x000008, "Wrong alignment on UBrickEditorStaticInfo");
-static_assert(sizeof(UBrickEditorStaticInfo) == 0x000178, "Wrong size on UBrickEditorStaticInfo");
-static_assert(offsetof(UBrickEditorStaticInfo, EditorBounds) == 0x000028, "Member 'UBrickEditorStaticInfo::EditorBounds' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, BoundsFadeRange) == 0x000034, "Member 'UBrickEditorStaticInfo::BoundsFadeRange' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, BoundsMesh) == 0x000040, "Member 'UBrickEditorStaticInfo::BoundsMesh' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, CenterOfMassMesh) == 0x000048, "Member 'UBrickEditorStaticInfo::CenterOfMassMesh' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, GridMesh) == 0x000050, "Member 'UBrickEditorStaticInfo::GridMesh' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, GizmoMesh) == 0x000058, "Member 'UBrickEditorStaticInfo::GizmoMesh' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, GizmoSize) == 0x000060, "Member 'UBrickEditorStaticInfo::GizmoSize' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, GizmoCenterHitRadius) == 0x000064, "Member 'UBrickEditorStaticInfo::GizmoCenterHitRadius' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, GizmoRotationArrowHitRadius) == 0x000068, "Member 'UBrickEditorStaticInfo::GizmoRotationArrowHitRadius' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, GizmoSweepSphereRadius) == 0x00006C, "Member 'UBrickEditorStaticInfo::GizmoSweepSphereRadius' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, OutlineMaterial) == 0x000070, "Member 'UBrickEditorStaticInfo::OutlineMaterial' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, NewObjectPlacementDistance) == 0x000078, "Member 'UBrickEditorStaticInfo::NewObjectPlacementDistance' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, NewObjectPlacementSweepRadius) == 0x00007C, "Member 'UBrickEditorStaticInfo::NewObjectPlacementSweepRadius' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, InitialCameraLocation) == 0x000080, "Member 'UBrickEditorStaticInfo::InitialCameraLocation' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, CameraSpeedParams) == 0x00008C, "Member 'UBrickEditorStaticInfo::CameraSpeedParams' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, ZoomParams) == 0x0000A4, "Member 'UBrickEditorStaticInfo::ZoomParams' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, MoveSpeed) == 0x0000BC, "Member 'UBrickEditorStaticInfo::MoveSpeed' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, MoveSpeedDistanceScale) == 0x0000C0, "Member 'UBrickEditorStaticInfo::MoveSpeedDistanceScale' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, RotateSpeed) == 0x0000C4, "Member 'UBrickEditorStaticInfo::RotateSpeed' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, MouseRotateSpeed) == 0x0000C8, "Member 'UBrickEditorStaticInfo::MouseRotateSpeed' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, MaxUndoSteps) == 0x0000CC, "Member 'UBrickEditorStaticInfo::MaxUndoSteps' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, MaxUndoBufferSize) == 0x0000D0, "Member 'UBrickEditorStaticInfo::MaxUndoBufferSize' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, AutoSaveTime) == 0x0000D4, "Member 'UBrickEditorStaticInfo::AutoSaveTime' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, VisualizationArrowComponentClass) == 0x0000D8, "Member 'UBrickEditorStaticInfo::VisualizationArrowComponentClass' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, ConnectorsISMComponentClass) == 0x0000E0, "Member 'UBrickEditorStaticInfo::ConnectorsISMComponentClass' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, PointLightFrustumMesh) == 0x0000E8, "Member 'UBrickEditorStaticInfo::PointLightFrustumMesh' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, SpotLightFrustumMesh) == 0x0000F0, "Member 'UBrickEditorStaticInfo::SpotLightFrustumMesh' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, InputChannelMesh) == 0x0000F8, "Member 'UBrickEditorStaticInfo::InputChannelMesh' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, UGCBrowserPopupClass) == 0x000100, "Member 'UBrickEditorStaticInfo::UGCBrowserPopupClass' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, UGCMetaDataPopupClass) == 0x000128, "Member 'UBrickEditorStaticInfo::UGCMetaDataPopupClass' has a wrong offset!");
-static_assert(offsetof(UBrickEditorStaticInfo, ReuploadPopupClass) == 0x000150, "Member 'UBrickEditorStaticInfo::ReuploadPopupClass' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickEditorStaticInfo;
 
 // Class BrickRigs.BrickEditorTextRenderComponent
 // 0x0000 (0x0500 - 0x0500)
@@ -4932,15 +4794,18 @@ class UBrickEditorTextRenderComponent final : public UTextRenderComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorTextRenderComponent">();
+		STATIC_CLASS_IMPL("BrickEditorTextRenderComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorTextRenderComponent")
 	}
 	static class UBrickEditorTextRenderComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorTextRenderComponent>();
 	}
 };
-static_assert(alignof(UBrickEditorTextRenderComponent) == 0x000010, "Wrong alignment on UBrickEditorTextRenderComponent");
-static_assert(sizeof(UBrickEditorTextRenderComponent) == 0x000500, "Wrong size on UBrickEditorTextRenderComponent");
+DUMPER7_ASSERTS_UBrickEditorTextRenderComponent;
 
 // Class BrickRigs.ControlHintWidget
 // 0x00F8 (0x0358 - 0x0260)
@@ -4989,31 +4854,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ControlHintWidget">();
+		STATIC_CLASS_IMPL("ControlHintWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControlHintWidget")
 	}
 	static class UControlHintWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UControlHintWidget>();
 	}
 };
-static_assert(alignof(UControlHintWidget) == 0x000008, "Wrong alignment on UControlHintWidget");
-static_assert(sizeof(UControlHintWidget) == 0x000358, "Wrong size on UControlHintWidget");
-static_assert(offsetof(UControlHintWidget, InputChordScaleBox) == 0x0002E8, "Member 'UControlHintWidget::InputChordScaleBox' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, InputChordWidget) == 0x0002F0, "Member 'UControlHintWidget::InputChordWidget' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, TextBlock) == 0x0002F8, "Member 'UControlHintWidget::TextBlock' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, IconImage) == 0x000300, "Member 'UControlHintWidget::IconImage' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, ActionName) == 0x000308, "Member 'UControlHintWidget::ActionName' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, TriggerType) == 0x000310, "Member 'UControlHintWidget::TriggerType' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, bShowUnboundKey) == 0x000311, "Member 'UControlHintWidget::bShowUnboundKey' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, bShowInputChord) == 0x000312, "Member 'UControlHintWidget::bShowInputChord' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, CustomDisplayInfo) == 0x000318, "Member 'UControlHintWidget::CustomDisplayInfo' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, DisplayInfoMode) == 0x000340, "Member 'UControlHintWidget::DisplayInfoMode' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, ColorStyle) == 0x000341, "Member 'UControlHintWidget::ColorStyle' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, StyleState) == 0x000342, "Member 'UControlHintWidget::StyleState' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, TextSpacing) == 0x000344, "Member 'UControlHintWidget::TextSpacing' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, HoldProgressInterpSpeed) == 0x000348, "Member 'UControlHintWidget::HoldProgressInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, PressedKeyPadding) == 0x00034C, "Member 'UControlHintWidget::PressedKeyPadding' has a wrong offset!");
-static_assert(offsetof(UControlHintWidget, KeyPaddingInterpSpeed) == 0x000354, "Member 'UControlHintWidget::KeyPaddingInterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UControlHintWidget;
 
 // Class BrickRigs.BrickEditorWidget
 // 0x00C8 (0x0328 - 0x0260)
@@ -5051,27 +4903,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickEditorWidget">();
+		STATIC_CLASS_IMPL("BrickEditorWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickEditorWidget")
 	}
 	static class UBrickEditorWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickEditorWidget>();
 	}
 };
-static_assert(alignof(UBrickEditorWidget) == 0x000008, "Wrong alignment on UBrickEditorWidget");
-static_assert(sizeof(UBrickEditorWidget) == 0x000328, "Wrong size on UBrickEditorWidget");
-static_assert(offsetof(UBrickEditorWidget, CurrentModeWidget) == 0x000280, "Member 'UBrickEditorWidget::CurrentModeWidget' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, PlacableWidgets) == 0x000288, "Member 'UBrickEditorWidget::PlacableWidgets' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, MirrorAxisWidgets) == 0x0002A8, "Member 'UBrickEditorWidget::MirrorAxisWidgets' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, ItemHeaderWidget) == 0x0002C0, "Member 'UBrickEditorWidget::ItemHeaderWidget' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, PlacableSearchTextBox) == 0x0002C8, "Member 'UBrickEditorWidget::PlacableSearchTextBox' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, PlacablesPanel) == 0x0002D0, "Member 'UBrickEditorWidget::PlacablesPanel' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, PropertiesPanel) == 0x0002D8, "Member 'UBrickEditorWidget::PropertiesPanel' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, PlacableWidgetClass) == 0x0002E0, "Member 'UBrickEditorWidget::PlacableWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, NumPlacablesPerRow) == 0x0002E8, "Member 'UBrickEditorWidget::NumPlacablesPerRow' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, UGCTaskPopupClass) == 0x0002F0, "Member 'UBrickEditorWidget::UGCTaskPopupClass' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, MoveModeWidgetClass) == 0x000318, "Member 'UBrickEditorWidget::MoveModeWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBrickEditorWidget, MirrorModeWidgetClass) == 0x000320, "Member 'UBrickEditorWidget::MirrorModeWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickEditorWidget;
 
 // Class BrickRigs.DisplayBrickStaticInfo
 // 0x0000 (0x01D0 - 0x01D0)
@@ -5080,15 +4923,18 @@ class UDisplayBrickStaticInfo : public UScalableBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DisplayBrickStaticInfo">();
+		STATIC_CLASS_IMPL("DisplayBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DisplayBrickStaticInfo")
 	}
 	static class UDisplayBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDisplayBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UDisplayBrickStaticInfo) == 0x000008, "Wrong alignment on UDisplayBrickStaticInfo");
-static_assert(sizeof(UDisplayBrickStaticInfo) == 0x0001D0, "Wrong size on UDisplayBrickStaticInfo");
+DUMPER7_ASSERTS_UDisplayBrickStaticInfo;
 
 // Class BrickRigs.BrickExpandableArea
 // 0x0008 (0x0340 - 0x0338)
@@ -5100,15 +4946,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickExpandableArea">();
+		STATIC_CLASS_IMPL("BrickExpandableArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickExpandableArea")
 	}
 	static class UBrickExpandableArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickExpandableArea>();
 	}
 };
-static_assert(alignof(UBrickExpandableArea) == 0x000008, "Wrong alignment on UBrickExpandableArea");
-static_assert(sizeof(UBrickExpandableArea) == 0x000340, "Wrong size on UBrickExpandableArea");
+DUMPER7_ASSERTS_UBrickExpandableArea;
 
 // Class BrickRigs.BrickFont
 // 0x0030 (0x0060 - 0x0030)
@@ -5123,18 +4972,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickFont">();
+		STATIC_CLASS_IMPL("BrickFont")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickFont")
 	}
 	static class UBrickFont* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickFont>();
 	}
 };
-static_assert(alignof(UBrickFont) == 0x000008, "Wrong alignment on UBrickFont");
-static_assert(sizeof(UBrickFont) == 0x000060, "Wrong size on UBrickFont");
-static_assert(offsetof(UBrickFont, DisplayName) == 0x000038, "Member 'UBrickFont::DisplayName' has a wrong offset!");
-static_assert(offsetof(UBrickFont, Font) == 0x000050, "Member 'UBrickFont::Font' has a wrong offset!");
-static_assert(offsetof(UBrickFont, FontMaterial) == 0x000058, "Member 'UBrickFont::FontMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickFont;
 
 // Class BrickRigs.BrickGameInstance
 // 0x0460 (0x0608 - 0x01A8)
@@ -5168,22 +5017,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickGameInstance">();
+		STATIC_CLASS_IMPL("BrickGameInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickGameInstance")
 	}
 	static class UBrickGameInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickGameInstance>();
 	}
 };
-static_assert(alignof(UBrickGameInstance) == 0x000008, "Wrong alignment on UBrickGameInstance");
-static_assert(sizeof(UBrickGameInstance) == 0x000608, "Wrong size on UBrickGameInstance");
-static_assert(offsetof(UBrickGameInstance, LoadingScreenWidget) == 0x000390, "Member 'UBrickGameInstance::LoadingScreenWidget' has a wrong offset!");
-static_assert(offsetof(UBrickGameInstance, WindowManagerWidget) == 0x000398, "Member 'UBrickGameInstance::WindowManagerWidget' has a wrong offset!");
-static_assert(offsetof(UBrickGameInstance, MusicAudioComponent) == 0x0003A0, "Member 'UBrickGameInstance::MusicAudioComponent' has a wrong offset!");
-static_assert(offsetof(UBrickGameInstance, LoadingScreenWidgetClass) == 0x000540, "Member 'UBrickGameInstance::LoadingScreenWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBrickGameInstance, WindowManagerWidgetClass) == 0x000548, "Member 'UBrickGameInstance::WindowManagerWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBrickGameInstance, UGCThumbnailResolution) == 0x000550, "Member 'UBrickGameInstance::UGCThumbnailResolution' has a wrong offset!");
-static_assert(offsetof(UBrickGameInstance, MenuMusicSoundCue) == 0x000558, "Member 'UBrickGameInstance::MenuMusicSoundCue' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickGameInstance;
 
 // Class BrickRigs.BrickGameSession
 // 0x0108 (0x0340 - 0x0238)
@@ -5207,21 +5052,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickGameSession">();
+		STATIC_CLASS_IMPL("BrickGameSession")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickGameSession")
 	}
 	static class ABrickGameSession* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickGameSession>();
 	}
 };
-static_assert(alignof(ABrickGameSession) == 0x000008, "Wrong alignment on ABrickGameSession");
-static_assert(sizeof(ABrickGameSession) == 0x000340, "Wrong size on ABrickGameSession");
-static_assert(offsetof(ABrickGameSession, KickedPlayers) == 0x000250, "Member 'ABrickGameSession::KickedPlayers' has a wrong offset!");
-static_assert(offsetof(ABrickGameSession, ChatMessageLog) == 0x000270, "Member 'ABrickGameSession::ChatMessageLog' has a wrong offset!");
-static_assert(offsetof(ABrickGameSession, MaxAdminLoginAttempts) == 0x00032C, "Member 'ABrickGameSession::MaxAdminLoginAttempts' has a wrong offset!");
-static_assert(offsetof(ABrickGameSession, FailedAdminLoginKickDuration) == 0x000330, "Member 'ABrickGameSession::FailedAdminLoginKickDuration' has a wrong offset!");
-static_assert(offsetof(ABrickGameSession, MaxSessionLoginAttempts) == 0x000334, "Member 'ABrickGameSession::MaxSessionLoginAttempts' has a wrong offset!");
-static_assert(offsetof(ABrickGameSession, FailedSessionLoginKickDuration) == 0x000338, "Member 'ABrickGameSession::FailedSessionLoginKickDuration' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickGameSession;
 
 // Class BrickRigs.EnumPropertyWidget
 // 0x0018 (0x0298 - 0x0280)
@@ -5238,16 +5080,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnumPropertyWidget">();
+		STATIC_CLASS_IMPL("EnumPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnumPropertyWidget")
 	}
 	static class UEnumPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnumPropertyWidget>();
 	}
 };
-static_assert(alignof(UEnumPropertyWidget) == 0x000008, "Wrong alignment on UEnumPropertyWidget");
-static_assert(sizeof(UEnumPropertyWidget) == 0x000298, "Wrong size on UEnumPropertyWidget");
-static_assert(offsetof(UEnumPropertyWidget, ComboBox) == 0x000290, "Member 'UEnumPropertyWidget::ComboBox' has a wrong offset!");
+DUMPER7_ASSERTS_UEnumPropertyWidget;
 
 // Class BrickRigs.BrickGameState
 // 0x0358 (0x05E8 - 0x0290)
@@ -5312,28 +5156,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickGameState">();
+		STATIC_CLASS_IMPL("BrickGameState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickGameState")
 	}
 	static class ABrickGameState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickGameState>();
 	}
 };
-static_assert(alignof(ABrickGameState) == 0x000008, "Wrong alignment on ABrickGameState");
-static_assert(sizeof(ABrickGameState) == 0x0005E8, "Wrong size on ABrickGameState");
-static_assert(offsetof(ABrickGameState, MatchSettings) == 0x0002A8, "Member 'ABrickGameState::MatchSettings' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, NextMatchSettings) == 0x000370, "Member 'ABrickGameState::NextMatchSettings' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, MatchRandomSeed) == 0x000500, "Member 'ABrickGameState::MatchRandomSeed' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, bAllowAdminLogin) == 0x000501, "Member 'ABrickGameState::bAllowAdminLogin' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, Teams) == 0x000508, "Member 'ABrickGameState::Teams' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, DefaultTeam) == 0x000518, "Member 'ABrickGameState::DefaultTeam' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, ZombieTeam) == 0x000520, "Member 'ABrickGameState::ZombieTeam' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, DummyTeam) == 0x000528, "Member 'ABrickGameState::DummyTeam' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, MatchWinner) == 0x000530, "Member 'ABrickGameState::MatchWinner' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, CurrentRound) == 0x000532, "Member 'ABrickGameState::CurrentRound' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, SpawnPointArray) == 0x000538, "Member 'ABrickGameState::SpawnPointArray' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, LoadoutInventoryComponent) == 0x000560, "Member 'ABrickGameState::LoadoutInventoryComponent' has a wrong offset!");
-static_assert(offsetof(ABrickGameState, ExitMatchDelay) == 0x000568, "Member 'ABrickGameState::ExitMatchDelay' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickGameState;
 
 // Class BrickRigs.BrickGridPanel
 // 0x0018 (0x0178 - 0x0160)
@@ -5355,18 +5189,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickGridPanel">();
+		STATIC_CLASS_IMPL("BrickGridPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickGridPanel")
 	}
 	static class UBrickGridPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickGridPanel>();
 	}
 };
-static_assert(alignof(UBrickGridPanel) == 0x000008, "Wrong alignment on UBrickGridPanel");
-static_assert(sizeof(UBrickGridPanel) == 0x000178, "Wrong size on UBrickGridPanel");
-static_assert(offsetof(UBrickGridPanel, SlotSpacingStyle) == 0x000168, "Member 'UBrickGridPanel::SlotSpacingStyle' has a wrong offset!");
-static_assert(offsetof(UBrickGridPanel, DefaultColumnFill) == 0x00016C, "Member 'UBrickGridPanel::DefaultColumnFill' has a wrong offset!");
-static_assert(offsetof(UBrickGridPanel, DefaultRowFill) == 0x000170, "Member 'UBrickGridPanel::DefaultRowFill' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickGridPanel;
 
 // Class BrickRigs.ExhaustEffect
 // 0x0030 (0x0060 - 0x0030)
@@ -5381,18 +5215,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExhaustEffect">();
+		STATIC_CLASS_IMPL("ExhaustEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExhaustEffect")
 	}
 	static class UExhaustEffect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UExhaustEffect>();
 	}
 };
-static_assert(alignof(UExhaustEffect) == 0x000008, "Wrong alignment on UExhaustEffect");
-static_assert(sizeof(UExhaustEffect) == 0x000060, "Wrong size on UExhaustEffect");
-static_assert(offsetof(UExhaustEffect, DisplayName) == 0x000038, "Member 'UExhaustEffect::DisplayName' has a wrong offset!");
-static_assert(offsetof(UExhaustEffect, ExhaustSystem) == 0x000050, "Member 'UExhaustEffect::ExhaustSystem' has a wrong offset!");
-static_assert(offsetof(UExhaustEffect, BackfireEmitter) == 0x000058, "Member 'UExhaustEffect::BackfireEmitter' has a wrong offset!");
+DUMPER7_ASSERTS_UExhaustEffect;
 
 // Class BrickRigs.BrickHorizontalBox
 // 0x0010 (0x0148 - 0x0138)
@@ -5409,16 +5243,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickHorizontalBox">();
+		STATIC_CLASS_IMPL("BrickHorizontalBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickHorizontalBox")
 	}
 	static class UBrickHorizontalBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickHorizontalBox>();
 	}
 };
-static_assert(alignof(UBrickHorizontalBox) == 0x000008, "Wrong alignment on UBrickHorizontalBox");
-static_assert(sizeof(UBrickHorizontalBox) == 0x000148, "Wrong size on UBrickHorizontalBox");
-static_assert(offsetof(UBrickHorizontalBox, SlotSpacingStyle) == 0x000140, "Member 'UBrickHorizontalBox::SlotSpacingStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickHorizontalBox;
 
 // Class BrickRigs.DashboardWidget
 // 0x0058 (0x02B8 - 0x0260)
@@ -5443,21 +5279,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DashboardWidget">();
+		STATIC_CLASS_IMPL("DashboardWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DashboardWidget")
 	}
 	static class UDashboardWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDashboardWidget>();
 	}
 };
-static_assert(alignof(UDashboardWidget) == 0x000008, "Wrong alignment on UDashboardWidget");
-static_assert(sizeof(UDashboardWidget) == 0x0002B8, "Wrong size on UDashboardWidget");
-static_assert(offsetof(UDashboardWidget, Vehicle) == 0x000260, "Member 'UDashboardWidget::Vehicle' has a wrong offset!");
-static_assert(offsetof(UDashboardWidget, IconWidgets) == 0x000278, "Member 'UDashboardWidget::IconWidgets' has a wrong offset!");
-static_assert(offsetof(UDashboardWidget, SliderWidgets) == 0x000288, "Member 'UDashboardWidget::SliderWidgets' has a wrong offset!");
-static_assert(offsetof(UDashboardWidget, IconWidgetClass) == 0x0002A0, "Member 'UDashboardWidget::IconWidgetClass' has a wrong offset!");
-static_assert(offsetof(UDashboardWidget, SliderWidgetClass) == 0x0002A8, "Member 'UDashboardWidget::SliderWidgetClass' has a wrong offset!");
-static_assert(offsetof(UDashboardWidget, LowResourceWarningThreshold) == 0x0002B0, "Member 'UDashboardWidget::LowResourceWarningThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UDashboardWidget;
 
 // Class BrickRigs.BrickImage
 // 0x00D0 (0x02E0 - 0x0210)
@@ -5486,20 +5319,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickImage">();
+		STATIC_CLASS_IMPL("BrickImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickImage")
 	}
 	static class UBrickImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickImage>();
 	}
 };
-static_assert(alignof(UBrickImage) == 0x000008, "Wrong alignment on UBrickImage");
-static_assert(sizeof(UBrickImage) == 0x0002E0, "Wrong size on UBrickImage");
-static_assert(offsetof(UBrickImage, ColorStyle) == 0x0002D1, "Member 'UBrickImage::ColorStyle' has a wrong offset!");
-static_assert(offsetof(UBrickImage, StyleState) == 0x0002D2, "Member 'UBrickImage::StyleState' has a wrong offset!");
-static_assert(offsetof(UBrickImage, IconAtlas) == 0x0002D3, "Member 'UBrickImage::IconAtlas' has a wrong offset!");
-static_assert(offsetof(UBrickImage, IconSlot) == 0x0002D4, "Member 'UBrickImage::IconSlot' has a wrong offset!");
-static_assert(offsetof(UBrickImage, bIsThrobber) == 0x0002DC, "Member 'UBrickImage::bIsThrobber' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickImage;
 
 // Class BrickRigs.BrickLocalPlayer
 // 0x0000 (0x0258 - 0x0258)
@@ -5508,15 +5339,18 @@ class UBrickLocalPlayer final : public ULocalPlayer
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickLocalPlayer">();
+		STATIC_CLASS_IMPL("BrickLocalPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickLocalPlayer")
 	}
 	static class UBrickLocalPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickLocalPlayer>();
 	}
 };
-static_assert(alignof(UBrickLocalPlayer) == 0x000008, "Wrong alignment on UBrickLocalPlayer");
-static_assert(sizeof(UBrickLocalPlayer) == 0x000258, "Wrong size on UBrickLocalPlayer");
+DUMPER7_ASSERTS_UBrickLocalPlayer;
 
 // Class BrickRigs.EditorInputComponent
 // 0x0010 (0x0190 - 0x0180)
@@ -5533,15 +5367,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EditorInputComponent">();
+		STATIC_CLASS_IMPL("EditorInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditorInputComponent")
 	}
 	static class UEditorInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditorInputComponent>();
 	}
 };
-static_assert(alignof(UEditorInputComponent) == 0x000008, "Wrong alignment on UEditorInputComponent");
-static_assert(sizeof(UEditorInputComponent) == 0x000190, "Wrong size on UEditorInputComponent");
+DUMPER7_ASSERTS_UEditorInputComponent;
 
 // Class BrickRigs.BrickMaterial
 // 0x0070 (0x00A0 - 0x0030)
@@ -5569,30 +5406,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickMaterial">();
+		STATIC_CLASS_IMPL("BrickMaterial")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickMaterial")
 	}
 	static class UBrickMaterial* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickMaterial>();
 	}
 };
-static_assert(alignof(UBrickMaterial) == 0x000008, "Wrong alignment on UBrickMaterial");
-static_assert(sizeof(UBrickMaterial) == 0x0000A0, "Wrong size on UBrickMaterial");
-static_assert(offsetof(UBrickMaterial, DisplayName) == 0x000038, "Member 'UBrickMaterial::DisplayName' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, PriceFactor) == 0x000050, "Member 'UBrickMaterial::PriceFactor' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, PhysMaterial) == 0x000058, "Member 'UBrickMaterial::PhysMaterial' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, Metallic) == 0x000060, "Member 'UBrickMaterial::Metallic' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, Roughness) == 0x000064, "Member 'UBrickMaterial::Roughness' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, Opacity) == 0x000068, "Member 'UBrickMaterial::Opacity' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, Brightness) == 0x00006C, "Member 'UBrickMaterial::Brightness' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, BaseTiling) == 0x000070, "Member 'UBrickMaterial::BaseTiling' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, PaintMetallicAlpha) == 0x000074, "Member 'UBrickMaterial::PaintMetallicAlpha' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, LightBrightness) == 0x000078, "Member 'UBrickMaterial::LightBrightness' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, BrickBrightness) == 0x00007C, "Member 'UBrickMaterial::BrickBrightness' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, DiffuseTexture) == 0x000080, "Member 'UBrickMaterial::DiffuseTexture' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, NormalTexture) == 0x000088, "Member 'UBrickMaterial::NormalTexture' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, MRAOTexture) == 0x000090, "Member 'UBrickMaterial::MRAOTexture' has a wrong offset!");
-static_assert(offsetof(UBrickMaterial, EmissiveTexture) == 0x000098, "Member 'UBrickMaterial::EmissiveTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickMaterial;
 
 // Class BrickRigs.BrickMultiLineTextBox
 // 0x0A78 (0x1710 - 0x0C98)
@@ -5604,15 +5429,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickMultiLineTextBox">();
+		STATIC_CLASS_IMPL("BrickMultiLineTextBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickMultiLineTextBox")
 	}
 	static class UBrickMultiLineTextBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickMultiLineTextBox>();
 	}
 };
-static_assert(alignof(UBrickMultiLineTextBox) == 0x000008, "Wrong alignment on UBrickMultiLineTextBox");
-static_assert(sizeof(UBrickMultiLineTextBox) == 0x001710, "Wrong size on UBrickMultiLineTextBox");
+DUMPER7_ASSERTS_UBrickMultiLineTextBox;
 
 // Class BrickRigs.BrickObjectPool
 // 0x0010 (0x0040 - 0x0030)
@@ -5631,16 +5459,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickObjectPool">();
+		STATIC_CLASS_IMPL("BrickObjectPool")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickObjectPool")
 	}
 	static class UBrickObjectPool* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickObjectPool>();
 	}
 };
-static_assert(alignof(UBrickObjectPool) == 0x000008, "Wrong alignment on UBrickObjectPool");
-static_assert(sizeof(UBrickObjectPool) == 0x000040, "Wrong size on UBrickObjectPool");
-static_assert(offsetof(UBrickObjectPool, WidgetPool) == 0x000030, "Member 'UBrickObjectPool::WidgetPool' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickObjectPool;
 
 // Class BrickRigs.BrickParticleModule
 // 0x0000 (0x0030 - 0x0030)
@@ -5649,20 +5479,23 @@ class UBrickParticleModule : public UParticleModule
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickParticleModule">();
+		STATIC_CLASS_IMPL("BrickParticleModule")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickParticleModule")
 	}
 	static class UBrickParticleModule* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickParticleModule>();
 	}
 };
-static_assert(alignof(UBrickParticleModule) == 0x000008, "Wrong alignment on UBrickParticleModule");
-static_assert(sizeof(UBrickParticleModule) == 0x000030, "Wrong size on UBrickParticleModule");
+DUMPER7_ASSERTS_UBrickParticleModule;
 
 // Class BrickRigs.ExplosiveItemStaticInfo
 // 0x00F0 (0x0480 - 0x0390)
 #pragma pack(push, 0x1)
-class alignas(0x10) UExplosiveItemStaticInfo : public UItemStaticInfo
+class SDK_ALIGN(0x10) UExplosiveItemStaticInfo : public UItemStaticInfo
 {
 public:
 	TSubclassOf<class UExplosiveMaterial>         ExplosiveMaterial;                                 // 0x0390(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5675,7 +5508,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExplosiveItemStaticInfo">();
+		STATIC_CLASS_IMPL("ExplosiveItemStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExplosiveItemStaticInfo")
 	}
 	static class UExplosiveItemStaticInfo* GetDefaultObj()
 	{
@@ -5683,13 +5520,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UExplosiveItemStaticInfo) == 0x000010, "Wrong alignment on UExplosiveItemStaticInfo");
-static_assert(sizeof(UExplosiveItemStaticInfo) == 0x000480, "Wrong size on UExplosiveItemStaticInfo");
-static_assert(offsetof(UExplosiveItemStaticInfo, ExplosiveMaterial) == 0x000390, "Member 'UExplosiveItemStaticInfo::ExplosiveMaterial' has a wrong offset!");
-static_assert(offsetof(UExplosiveItemStaticInfo, ExplosiveVolume) == 0x000398, "Member 'UExplosiveItemStaticInfo::ExplosiveVolume' has a wrong offset!");
-static_assert(offsetof(UExplosiveItemStaticInfo, MinExplosionDamage) == 0x00039C, "Member 'UExplosiveItemStaticInfo::MinExplosionDamage' has a wrong offset!");
-static_assert(offsetof(UExplosiveItemStaticInfo, bCanBeDefused) == 0x0003A0, "Member 'UExplosiveItemStaticInfo::bCanBeDefused' has a wrong offset!");
-static_assert(offsetof(UExplosiveItemStaticInfo, ThrowAnimation) == 0x0003A8, "Member 'UExplosiveItemStaticInfo::ThrowAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_UExplosiveItemStaticInfo;
 
 // Class BrickRigs.ParticleModuleBrickFire
 // 0x0000 (0x0030 - 0x0030)
@@ -5698,15 +5529,18 @@ class UParticleModuleBrickFire final : public UBrickParticleModule
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ParticleModuleBrickFire">();
+		STATIC_CLASS_IMPL("ParticleModuleBrickFire")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ParticleModuleBrickFire")
 	}
 	static class UParticleModuleBrickFire* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UParticleModuleBrickFire>();
 	}
 };
-static_assert(alignof(UParticleModuleBrickFire) == 0x000008, "Wrong alignment on UParticleModuleBrickFire");
-static_assert(sizeof(UParticleModuleBrickFire) == 0x000030, "Wrong size on UParticleModuleBrickFire");
+DUMPER7_ASSERTS_UParticleModuleBrickFire;
 
 // Class BrickRigs.ParticleModuleBrickSliding
 // 0x0000 (0x0030 - 0x0030)
@@ -5715,15 +5549,18 @@ class UParticleModuleBrickSliding final : public UBrickParticleModule
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ParticleModuleBrickSliding">();
+		STATIC_CLASS_IMPL("ParticleModuleBrickSliding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ParticleModuleBrickSliding")
 	}
 	static class UParticleModuleBrickSliding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UParticleModuleBrickSliding>();
 	}
 };
-static_assert(alignof(UParticleModuleBrickSliding) == 0x000008, "Wrong alignment on UParticleModuleBrickSliding");
-static_assert(sizeof(UParticleModuleBrickSliding) == 0x000030, "Wrong size on UParticleModuleBrickSliding");
+DUMPER7_ASSERTS_UParticleModuleBrickSliding;
 
 // Class BrickRigs.ConeBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -5732,15 +5569,18 @@ class UConeBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ConeBrickStaticInfo">();
+		STATIC_CLASS_IMPL("ConeBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConeBrickStaticInfo")
 	}
 	static class UConeBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConeBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UConeBrickStaticInfo) == 0x000008, "Wrong alignment on UConeBrickStaticInfo");
-static_assert(sizeof(UConeBrickStaticInfo) == 0x000190, "Wrong size on UConeBrickStaticInfo");
+DUMPER7_ASSERTS_UConeBrickStaticInfo;
 
 // Class BrickRigs.ParticleModulePrecipitation
 // 0x0000 (0x0030 - 0x0030)
@@ -5749,15 +5589,18 @@ class UParticleModulePrecipitation final : public UBrickParticleModule
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ParticleModulePrecipitation">();
+		STATIC_CLASS_IMPL("ParticleModulePrecipitation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ParticleModulePrecipitation")
 	}
 	static class UParticleModulePrecipitation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UParticleModulePrecipitation>();
 	}
 };
-static_assert(alignof(UParticleModulePrecipitation) == 0x000008, "Wrong alignment on UParticleModulePrecipitation");
-static_assert(sizeof(UParticleModulePrecipitation) == 0x000030, "Wrong size on UParticleModulePrecipitation");
+DUMPER7_ASSERTS_UParticleModulePrecipitation;
 
 // Class BrickRigs.ParticleModuleBuildingCollapse
 // 0x0000 (0x0030 - 0x0030)
@@ -5766,15 +5609,18 @@ class UParticleModuleBuildingCollapse final : public UBrickParticleModule
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ParticleModuleBuildingCollapse">();
+		STATIC_CLASS_IMPL("ParticleModuleBuildingCollapse")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ParticleModuleBuildingCollapse")
 	}
 	static class UParticleModuleBuildingCollapse* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UParticleModuleBuildingCollapse>();
 	}
 };
-static_assert(alignof(UParticleModuleBuildingCollapse) == 0x000008, "Wrong alignment on UParticleModuleBuildingCollapse");
-static_assert(sizeof(UParticleModuleBuildingCollapse) == 0x000030, "Wrong size on UParticleModuleBuildingCollapse");
+DUMPER7_ASSERTS_UParticleModuleBuildingCollapse;
 
 // Class BrickRigs.DoorBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -5783,15 +5629,18 @@ class UDoorBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DoorBrickStaticInfo">();
+		STATIC_CLASS_IMPL("DoorBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DoorBrickStaticInfo")
 	}
 	static class UDoorBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDoorBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UDoorBrickStaticInfo) == 0x000008, "Wrong alignment on UDoorBrickStaticInfo");
-static_assert(sizeof(UDoorBrickStaticInfo) == 0x000190, "Wrong size on UDoorBrickStaticInfo");
+DUMPER7_ASSERTS_UDoorBrickStaticInfo;
 
 // Class BrickRigs.BrickPattern
 // 0x0028 (0x0050 - 0x0028)
@@ -5807,18 +5656,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickPattern">();
+		STATIC_CLASS_IMPL("BrickPattern")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickPattern")
 	}
 	static class UBrickPattern* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickPattern>();
 	}
 };
-static_assert(alignof(UBrickPattern) == 0x000008, "Wrong alignment on UBrickPattern");
-static_assert(sizeof(UBrickPattern) == 0x000050, "Wrong size on UBrickPattern");
-static_assert(offsetof(UBrickPattern, Color) == 0x000030, "Member 'UBrickPattern::Color' has a wrong offset!");
-static_assert(offsetof(UBrickPattern, Texture) == 0x000040, "Member 'UBrickPattern::Texture' has a wrong offset!");
-static_assert(offsetof(UBrickPattern, Tiling) == 0x000048, "Member 'UBrickPattern::Tiling' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickPattern;
 
 // Class BrickRigs.BrickPawnInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -5827,7 +5676,11 @@ class IBrickPawnInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickPawnInterface">();
+		STATIC_CLASS_IMPL("BrickPawnInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickPawnInterface")
 	}
 	static class IBrickPawnInterface* GetDefaultObj()
 	{
@@ -5843,8 +5696,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IBrickPawnInterface) == 0x000001, "Wrong alignment on IBrickPawnInterface");
-static_assert(sizeof(IBrickPawnInterface) == 0x000001, "Wrong size on IBrickPawnInterface");
+DUMPER7_ASSERTS_IBrickPawnInterface;
 
 // Class BrickRigs.WindowBrick
 // 0x0000 (0x00E8 - 0x00E8)
@@ -5853,15 +5705,18 @@ class UWindowBrick final : public UBrick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WindowBrick">();
+		STATIC_CLASS_IMPL("WindowBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WindowBrick")
 	}
 	static class UWindowBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWindowBrick>();
 	}
 };
-static_assert(alignof(UWindowBrick) == 0x000008, "Wrong alignment on UWindowBrick");
-static_assert(sizeof(UWindowBrick) == 0x0000E8, "Wrong size on UWindowBrick");
+DUMPER7_ASSERTS_UWindowBrick;
 
 // Class BrickRigs.BrickPhysicalMaterial
 // 0x0010 (0x0090 - 0x0080)
@@ -5876,18 +5731,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickPhysicalMaterial">();
+		STATIC_CLASS_IMPL("BrickPhysicalMaterial")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickPhysicalMaterial")
 	}
 	static class UBrickPhysicalMaterial* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickPhysicalMaterial>();
 	}
 };
-static_assert(alignof(UBrickPhysicalMaterial) == 0x000008, "Wrong alignment on UBrickPhysicalMaterial");
-static_assert(sizeof(UBrickPhysicalMaterial) == 0x000090, "Wrong size on UBrickPhysicalMaterial");
-static_assert(offsetof(UBrickPhysicalMaterial, Strength) == 0x000080, "Member 'UBrickPhysicalMaterial::Strength' has a wrong offset!");
-static_assert(offsetof(UBrickPhysicalMaterial, Hardness) == 0x000084, "Member 'UBrickPhysicalMaterial::Hardness' has a wrong offset!");
-static_assert(offsetof(UBrickPhysicalMaterial, Flammability) == 0x000088, "Member 'UBrickPhysicalMaterial::Flammability' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickPhysicalMaterial;
 
 // Class BrickRigs.BrickPlayerController
 // 0x0418 (0x0A10 - 0x05F8)
@@ -6056,27 +5911,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickPlayerController">();
+		STATIC_CLASS_IMPL("BrickPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickPlayerController")
 	}
 	static class ABrickPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickPlayerController>();
 	}
 };
-static_assert(alignof(ABrickPlayerController) == 0x000008, "Wrong alignment on ABrickPlayerController");
-static_assert(sizeof(ABrickPlayerController) == 0x000A10, "Wrong size on ABrickPlayerController");
-static_assert(offsetof(ABrickPlayerController, AtmosphereSoundMix) == 0x000648, "Member 'ABrickPlayerController::AtmosphereSoundMix' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, PlayerCharacter) == 0x0006C0, "Member 'ABrickPlayerController::PlayerCharacter' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, SpectatedCharacter) == 0x0006C8, "Member 'ABrickPlayerController::SpectatedCharacter' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, ViewedCharacter) == 0x0006D0, "Member 'ABrickPlayerController::ViewedCharacter' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, PlayerVehicle) == 0x0006D8, "Member 'ABrickPlayerController::PlayerVehicle' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, ViewedVehicle) == 0x0006E0, "Member 'ABrickPlayerController::ViewedVehicle' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, AccessedInventory) == 0x0006F0, "Member 'ABrickPlayerController::AccessedInventory' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, ReplicatedInventory) == 0x0006F8, "Member 'ABrickPlayerController::ReplicatedInventory' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, BrickEditor) == 0x000830, "Member 'ABrickPlayerController::BrickEditor' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, EditorEntryPoint) == 0x000838, "Member 'ABrickPlayerController::EditorEntryPoint' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, FreezeTime) == 0x000850, "Member 'ABrickPlayerController::FreezeTime' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerController, HurtAudioComponent) == 0x000858, "Member 'ABrickPlayerController::HurtAudioComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickPlayerController;
 
 // Class BrickRigs.WorldBounds
 // 0x0048 (0x0268 - 0x0220)
@@ -6096,24 +5942,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WorldBounds">();
+		STATIC_CLASS_IMPL("WorldBounds")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WorldBounds")
 	}
 	static class AWorldBounds* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWorldBounds>();
 	}
 };
-static_assert(alignof(AWorldBounds) == 0x000008, "Wrong alignment on AWorldBounds");
-static_assert(sizeof(AWorldBounds) == 0x000268, "Wrong size on AWorldBounds");
-static_assert(offsetof(AWorldBounds, BoundsMeshComponent) == 0x000220, "Member 'AWorldBounds::BoundsMeshComponent' has a wrong offset!");
-static_assert(offsetof(AWorldBounds, WaterMeshComponent) == 0x000228, "Member 'AWorldBounds::WaterMeshComponent' has a wrong offset!");
-static_assert(offsetof(AWorldBounds, StaticMesh) == 0x000230, "Member 'AWorldBounds::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AWorldBounds, WaterMesh) == 0x000238, "Member 'AWorldBounds::WaterMesh' has a wrong offset!");
-static_assert(offsetof(AWorldBounds, MaterialOverride) == 0x000240, "Member 'AWorldBounds::MaterialOverride' has a wrong offset!");
-static_assert(offsetof(AWorldBounds, WaterMaterialOverride) == 0x000248, "Member 'AWorldBounds::WaterMaterialOverride' has a wrong offset!");
-static_assert(offsetof(AWorldBounds, BoundsSize) == 0x000250, "Member 'AWorldBounds::BoundsSize' has a wrong offset!");
-static_assert(offsetof(AWorldBounds, LandscapeSize) == 0x00025C, "Member 'AWorldBounds::LandscapeSize' has a wrong offset!");
-static_assert(offsetof(AWorldBounds, WaterDepth) == 0x000264, "Member 'AWorldBounds::WaterDepth' has a wrong offset!");
+DUMPER7_ASSERTS_AWorldBounds;
 
 // Class BrickRigs.BrickPlayerStart
 // 0x0028 (0x0248 - 0x0220)
@@ -6125,16 +5965,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickPlayerStart">();
+		STATIC_CLASS_IMPL("BrickPlayerStart")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickPlayerStart")
 	}
 	static class ABrickPlayerStart* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickPlayerStart>();
 	}
 };
-static_assert(alignof(ABrickPlayerStart) == 0x000008, "Wrong alignment on ABrickPlayerStart");
-static_assert(sizeof(ABrickPlayerStart) == 0x000248, "Wrong size on ABrickPlayerStart");
-static_assert(offsetof(ABrickPlayerStart, SpawnArea) == 0x000220, "Member 'ABrickPlayerStart::SpawnArea' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickPlayerStart;
 
 // Class BrickRigs.BrickPlayerState
 // 0x0110 (0x0430 - 0x0320)
@@ -6182,23 +6024,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickPlayerState">();
+		STATIC_CLASS_IMPL("BrickPlayerState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickPlayerState")
 	}
 	static class ABrickPlayerState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickPlayerState>();
 	}
 };
-static_assert(alignof(ABrickPlayerState) == 0x000008, "Wrong alignment on ABrickPlayerState");
-static_assert(sizeof(ABrickPlayerState) == 0x000430, "Wrong size on ABrickPlayerState");
-static_assert(offsetof(ABrickPlayerState, InactiveCharacter) == 0x000328, "Member 'ABrickPlayerState::InactiveCharacter' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerState, AdminRole) == 0x000331, "Member 'ABrickPlayerState::AdminRole' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerState, TeamID) == 0x000332, "Member 'ABrickPlayerState::TeamID' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerState, bIsTeamLeader) == 0x000333, "Member 'ABrickPlayerState::bIsTeamLeader' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerState, Money) == 0x000334, "Member 'ABrickPlayerState::Money' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerState, Kills) == 0x000338, "Member 'ABrickPlayerState::Kills' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerState, Deaths) == 0x00033A, "Member 'ABrickPlayerState::Deaths' has a wrong offset!");
-static_assert(offsetof(ABrickPlayerState, bIsAlive) == 0x00033C, "Member 'ABrickPlayerState::bIsAlive' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickPlayerState;
 
 // Class BrickRigs.WingBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -6207,15 +6044,18 @@ class UWingBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WingBrickStaticInfo">();
+		STATIC_CLASS_IMPL("WingBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WingBrickStaticInfo")
 	}
 	static class UWingBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWingBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UWingBrickStaticInfo) == 0x000008, "Wrong alignment on UWingBrickStaticInfo");
-static_assert(sizeof(UWingBrickStaticInfo) == 0x000190, "Wrong size on UWingBrickStaticInfo");
+DUMPER7_ASSERTS_UWingBrickStaticInfo;
 
 // Class BrickRigs.ProjectileSeekingInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -6224,7 +6064,11 @@ class IProjectileSeekingInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProjectileSeekingInterface">();
+		STATIC_CLASS_IMPL("ProjectileSeekingInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProjectileSeekingInterface")
 	}
 	static class IProjectileSeekingInterface* GetDefaultObj()
 	{
@@ -6240,8 +6084,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IProjectileSeekingInterface) == 0x000001, "Wrong alignment on IProjectileSeekingInterface");
-static_assert(sizeof(IProjectileSeekingInterface) == 0x000001, "Wrong size on IProjectileSeekingInterface");
+DUMPER7_ASSERTS_IProjectileSeekingInterface;
 
 // Class BrickRigs.ProjectileInputComponent
 // 0x0000 (0x0170 - 0x0170)
@@ -6250,15 +6093,18 @@ class UProjectileInputComponent final : public UBaseInputComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProjectileInputComponent">();
+		STATIC_CLASS_IMPL("ProjectileInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProjectileInputComponent")
 	}
 	static class UProjectileInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProjectileInputComponent>();
 	}
 };
-static_assert(alignof(UProjectileInputComponent) == 0x000008, "Wrong alignment on UProjectileInputComponent");
-static_assert(sizeof(UProjectileInputComponent) == 0x000170, "Wrong size on UProjectileInputComponent");
+DUMPER7_ASSERTS_UProjectileInputComponent;
 
 // Class BrickRigs.BrickPropertyInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -6267,7 +6113,11 @@ class IBrickPropertyInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickPropertyInterface">();
+		STATIC_CLASS_IMPL("BrickPropertyInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickPropertyInterface")
 	}
 	static class IBrickPropertyInterface* GetDefaultObj()
 	{
@@ -6283,8 +6133,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IBrickPropertyInterface) == 0x000001, "Wrong alignment on IBrickPropertyInterface");
-static_assert(sizeof(IBrickPropertyInterface) == 0x000001, "Wrong size on IBrickPropertyInterface");
+DUMPER7_ASSERTS_IBrickPropertyInterface;
 
 // Class BrickRigs.BrickRetainerBox
 // 0x0000 (0x0150 - 0x0150)
@@ -6293,15 +6142,18 @@ class UBrickRetainerBox final : public URetainerBox
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickRetainerBox">();
+		STATIC_CLASS_IMPL("BrickRetainerBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickRetainerBox")
 	}
 	static class UBrickRetainerBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickRetainerBox>();
 	}
 };
-static_assert(alignof(UBrickRetainerBox) == 0x000008, "Wrong alignment on UBrickRetainerBox");
-static_assert(sizeof(UBrickRetainerBox) == 0x000150, "Wrong size on UBrickRetainerBox");
+DUMPER7_ASSERTS_UBrickRetainerBox;
 
 // Class BrickRigs.BrickRichTextBlock
 // 0x0000 (0x0678 - 0x0678)
@@ -6310,15 +6162,18 @@ class UBrickRichTextBlock final : public URichTextBlock
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickRichTextBlock">();
+		STATIC_CLASS_IMPL("BrickRichTextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickRichTextBlock")
 	}
 	static class UBrickRichTextBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickRichTextBlock>();
 	}
 };
-static_assert(alignof(UBrickRichTextBlock) == 0x000008, "Wrong alignment on UBrickRichTextBlock");
-static_assert(sizeof(UBrickRichTextBlock) == 0x000678, "Wrong size on UBrickRichTextBlock");
+DUMPER7_ASSERTS_UBrickRichTextBlock;
 
 // Class BrickRigs.BrickScrollBox
 // 0x0010 (0x0898 - 0x0888)
@@ -6335,16 +6190,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickScrollBox">();
+		STATIC_CLASS_IMPL("BrickScrollBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickScrollBox")
 	}
 	static class UBrickScrollBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickScrollBox>();
 	}
 };
-static_assert(alignof(UBrickScrollBox) == 0x000008, "Wrong alignment on UBrickScrollBox");
-static_assert(sizeof(UBrickScrollBox) == 0x000898, "Wrong size on UBrickScrollBox");
-static_assert(offsetof(UBrickScrollBox, SlotSpacingStyle) == 0x000890, "Member 'UBrickScrollBox::SlotSpacingStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickScrollBox;
 
 // Class BrickRigs.BrickSliderWidget
 // 0x0088 (0x0308 - 0x0280)
@@ -6368,7 +6225,7 @@ public:
 	bool                                          bIsReadOnly;                                       // 0x02D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bIsMarquee;                                        // 0x02D9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_2DA[0x6];                                      // 0x02DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(float Value, EValueChangedEventType EventType)> OnValueChangedDelegate; // 0x02E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Value_0, EValueChangedEventType EventType)> OnValueChangedDelegate; // 0x02E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2F0[0x18];                                     // 0x02F0(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -6390,29 +6247,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickSliderWidget">();
+		STATIC_CLASS_IMPL("BrickSliderWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickSliderWidget")
 	}
 	static class UBrickSliderWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickSliderWidget>();
 	}
 };
-static_assert(alignof(UBrickSliderWidget) == 0x000008, "Wrong alignment on UBrickSliderWidget");
-static_assert(sizeof(UBrickSliderWidget) == 0x000308, "Wrong size on UBrickSliderWidget");
-static_assert(offsetof(UBrickSliderWidget, TextBox) == 0x000290, "Member 'UBrickSliderWidget::TextBox' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, FillBorder) == 0x000298, "Member 'UBrickSliderWidget::FillBorder' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, Value) == 0x0002A0, "Member 'UBrickSliderWidget::Value' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, MinValue) == 0x0002A4, "Member 'UBrickSliderWidget::MinValue' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, MaxValue) == 0x0002A8, "Member 'UBrickSliderWidget::MaxValue' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, ValueStep) == 0x0002AC, "Member 'UBrickSliderWidget::ValueStep' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, GridSnapMode) == 0x0002B0, "Member 'UBrickSliderWidget::GridSnapMode' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, ValueType) == 0x0002B1, "Member 'UBrickSliderWidget::ValueType' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, MaxFractionalDigits) == 0x0002B4, "Member 'UBrickSliderWidget::MaxFractionalDigits' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, bZeroAsUnlimited) == 0x0002B8, "Member 'UBrickSliderWidget::bZeroAsUnlimited' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, CustomTextFormat) == 0x0002C0, "Member 'UBrickSliderWidget::CustomTextFormat' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, bIsReadOnly) == 0x0002D8, "Member 'UBrickSliderWidget::bIsReadOnly' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, bIsMarquee) == 0x0002D9, "Member 'UBrickSliderWidget::bIsMarquee' has a wrong offset!");
-static_assert(offsetof(UBrickSliderWidget, OnValueChangedDelegate) == 0x0002E0, "Member 'UBrickSliderWidget::OnValueChangedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickSliderWidget;
 
 // Class BrickRigs.BrickSpacer
 // 0x0010 (0x0220 - 0x0210)
@@ -6429,16 +6275,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickSpacer">();
+		STATIC_CLASS_IMPL("BrickSpacer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickSpacer")
 	}
 	static class UBrickSpacer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickSpacer>();
 	}
 };
-static_assert(alignof(UBrickSpacer) == 0x000008, "Wrong alignment on UBrickSpacer");
-static_assert(sizeof(UBrickSpacer) == 0x000220, "Wrong size on UBrickSpacer");
-static_assert(offsetof(UBrickSpacer, ColorStyle) == 0x000218, "Member 'UBrickSpacer::ColorStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickSpacer;
 
 // Class BrickRigs.BrickStaticMeshComponent
 // 0x0020 (0x0570 - 0x0550)
@@ -6450,15 +6298,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickStaticMeshComponent">();
+		STATIC_CLASS_IMPL("BrickStaticMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickStaticMeshComponent")
 	}
 	static class UBrickStaticMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickStaticMeshComponent>();
 	}
 };
-static_assert(alignof(UBrickStaticMeshComponent) == 0x000010, "Wrong alignment on UBrickStaticMeshComponent");
-static_assert(sizeof(UBrickStaticMeshComponent) == 0x000570, "Wrong size on UBrickStaticMeshComponent");
+DUMPER7_ASSERTS_UBrickStaticMeshComponent;
 
 // Class BrickRigs.BrickStatics
 // 0x0000 (0x0028 - 0x0028)
@@ -6483,15 +6334,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickStatics">();
+		STATIC_CLASS_IMPL("BrickStatics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickStatics")
 	}
 	static class UBrickStatics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickStatics>();
 	}
 };
-static_assert(alignof(UBrickStatics) == 0x000008, "Wrong alignment on UBrickStatics");
-static_assert(sizeof(UBrickStatics) == 0x000028, "Wrong size on UBrickStatics");
+DUMPER7_ASSERTS_UBrickStatics;
 
 // Class BrickRigs.BrickTeam
 // 0x00A0 (0x00C8 - 0x0028)
@@ -6522,21 +6376,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickTeam">();
+		STATIC_CLASS_IMPL("BrickTeam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickTeam")
 	}
 	static class UBrickTeam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickTeam>();
 	}
 };
-static_assert(alignof(UBrickTeam) == 0x000008, "Wrong alignment on UBrickTeam");
-static_assert(sizeof(UBrickTeam) == 0x0000C8, "Wrong size on UBrickTeam");
-static_assert(offsetof(UBrickTeam, Score) == 0x00002A, "Member 'UBrickTeam::Score' has a wrong offset!");
-static_assert(offsetof(UBrickTeam, MaxScore) == 0x00002C, "Member 'UBrickTeam::MaxScore' has a wrong offset!");
-static_assert(offsetof(UBrickTeam, DisplayName) == 0x000038, "Member 'UBrickTeam::DisplayName' has a wrong offset!");
-static_assert(offsetof(UBrickTeam, BadgeTexture) == 0x000050, "Member 'UBrickTeam::BadgeTexture' has a wrong offset!");
-static_assert(offsetof(UBrickTeam, TeamColor) == 0x000078, "Member 'UBrickTeam::TeamColor' has a wrong offset!");
-static_assert(offsetof(UBrickTeam, DefaultLoadout) == 0x000088, "Member 'UBrickTeam::DefaultLoadout' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickTeam;
 
 // Class BrickRigs.BrickTextBlock
 // 0x0010 (0x02B8 - 0x02A8)
@@ -6557,18 +6408,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickTextBlock">();
+		STATIC_CLASS_IMPL("BrickTextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickTextBlock")
 	}
 	static class UBrickTextBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickTextBlock>();
 	}
 };
-static_assert(alignof(UBrickTextBlock) == 0x000008, "Wrong alignment on UBrickTextBlock");
-static_assert(sizeof(UBrickTextBlock) == 0x0002B8, "Wrong size on UBrickTextBlock");
-static_assert(offsetof(UBrickTextBlock, ColorStyle) == 0x0002B0, "Member 'UBrickTextBlock::ColorStyle' has a wrong offset!");
-static_assert(offsetof(UBrickTextBlock, StyleState) == 0x0002B1, "Member 'UBrickTextBlock::StyleState' has a wrong offset!");
-static_assert(offsetof(UBrickTextBlock, TextStyle) == 0x0002B2, "Member 'UBrickTextBlock::TextStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickTextBlock;
 
 // Class BrickRigs.BrickTextBoxWidget
 // 0x0048 (0x02A8 - 0x0260)
@@ -6615,22 +6466,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickTextBoxWidget">();
+		STATIC_CLASS_IMPL("BrickTextBoxWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickTextBoxWidget")
 	}
 	static class UBrickTextBoxWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickTextBoxWidget>();
 	}
 };
-static_assert(alignof(UBrickTextBoxWidget) == 0x000008, "Wrong alignment on UBrickTextBoxWidget");
-static_assert(sizeof(UBrickTextBoxWidget) == 0x0002A8, "Wrong size on UBrickTextBoxWidget");
-static_assert(offsetof(UBrickTextBoxWidget, MultiLineTextBox) == 0x000280, "Member 'UBrickTextBoxWidget::MultiLineTextBox' has a wrong offset!");
-static_assert(offsetof(UBrickTextBoxWidget, ShowPasswordButton) == 0x000288, "Member 'UBrickTextBoxWidget::ShowPasswordButton' has a wrong offset!");
-static_assert(offsetof(UBrickTextBoxWidget, OnTextChangedDelegate) == 0x000290, "Member 'UBrickTextBoxWidget::OnTextChangedDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickTextBoxWidget, MaxTextLength) == 0x0002A0, "Member 'UBrickTextBoxWidget::MaxTextLength' has a wrong offset!");
-static_assert(offsetof(UBrickTextBoxWidget, bAllowMultiLine) == 0x0002A4, "Member 'UBrickTextBoxWidget::bAllowMultiLine' has a wrong offset!");
-static_assert(offsetof(UBrickTextBoxWidget, bIsPassword) == 0x0002A5, "Member 'UBrickTextBoxWidget::bIsPassword' has a wrong offset!");
-static_assert(offsetof(UBrickTextBoxWidget, bIsNumeric) == 0x0002A6, "Member 'UBrickTextBoxWidget::bIsNumeric' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickTextBoxWidget;
 
 // Class BrickRigs.BrickThumbnailSubsystem
 // 0x0050 (0x0090 - 0x0040)
@@ -6649,21 +6496,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickThumbnailSubsystem">();
+		STATIC_CLASS_IMPL("BrickThumbnailSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickThumbnailSubsystem")
 	}
 	static class UBrickThumbnailSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickThumbnailSubsystem>();
 	}
 };
-static_assert(alignof(UBrickThumbnailSubsystem) == 0x000008, "Wrong alignment on UBrickThumbnailSubsystem");
-static_assert(sizeof(UBrickThumbnailSubsystem) == 0x000090, "Wrong size on UBrickThumbnailSubsystem");
-static_assert(offsetof(UBrickThumbnailSubsystem, ThumbnailRenderTarget) == 0x000050, "Member 'UBrickThumbnailSubsystem::ThumbnailRenderTarget' has a wrong offset!");
-static_assert(offsetof(UBrickThumbnailSubsystem, TextureRenderMID) == 0x000058, "Member 'UBrickThumbnailSubsystem::TextureRenderMID' has a wrong offset!");
-static_assert(offsetof(UBrickThumbnailSubsystem, InventoryItemMID) == 0x000060, "Member 'UBrickThumbnailSubsystem::InventoryItemMID' has a wrong offset!");
-static_assert(offsetof(UBrickThumbnailSubsystem, CaptureComponent) == 0x000078, "Member 'UBrickThumbnailSubsystem::CaptureComponent' has a wrong offset!");
-static_assert(offsetof(UBrickThumbnailSubsystem, CaptureStaticMeshComponent) == 0x000080, "Member 'UBrickThumbnailSubsystem::CaptureStaticMeshComponent' has a wrong offset!");
-static_assert(offsetof(UBrickThumbnailSubsystem, EditorInterfaceComponent) == 0x000088, "Member 'UBrickThumbnailSubsystem::EditorInterfaceComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickThumbnailSubsystem;
 
 // Class BrickRigs.BrickUIStyle
 // 0x70C0 (0x70E8 - 0x0028)
@@ -6710,25 +6554,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickUIStyle">();
+		STATIC_CLASS_IMPL("BrickUIStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickUIStyle")
 	}
 	static class UBrickUIStyle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickUIStyle>();
 	}
 };
-static_assert(alignof(UBrickUIStyle) == 0x000008, "Wrong alignment on UBrickUIStyle");
-static_assert(sizeof(UBrickUIStyle) == 0x0070E8, "Wrong size on UBrickUIStyle");
-static_assert(offsetof(UBrickUIStyle, StyleDisplayName) == 0x000030, "Member 'UBrickUIStyle::StyleDisplayName' has a wrong offset!");
-static_assert(offsetof(UBrickUIStyle, ThrobberBrush) == 0x000048, "Member 'UBrickUIStyle::ThrobberBrush' has a wrong offset!");
-static_assert(offsetof(UBrickUIStyle, ThrobberRotationSpeed) == 0x0000D0, "Member 'UBrickUIStyle::ThrobberRotationSpeed' has a wrong offset!");
-static_assert(offsetof(UBrickUIStyle, IconAtlas) == 0x0000D8, "Member 'UBrickUIStyle::IconAtlas' has a wrong offset!");
-static_assert(offsetof(UBrickUIStyle, HyperlinkStyle) == 0x0001E8, "Member 'UBrickUIStyle::HyperlinkStyle' has a wrong offset!");
-static_assert(offsetof(UBrickUIStyle, BrushStyles) == 0x0006E8, "Member 'UBrickUIStyle::BrushStyles' has a wrong offset!");
-static_assert(offsetof(UBrickUIStyle, ColorStyles) == 0x004268, "Member 'UBrickUIStyle::ColorStyles' has a wrong offset!");
-static_assert(offsetof(UBrickUIStyle, TextStyles) == 0x004968, "Member 'UBrickUIStyle::TextStyles' has a wrong offset!");
-static_assert(offsetof(UBrickUIStyle, SpacingStyles) == 0x007068, "Member 'UBrickUIStyle::SpacingStyles' has a wrong offset!");
-static_assert(offsetof(UBrickUIStyle, PaddingStyles) == 0x007074, "Member 'UBrickUIStyle::PaddingStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickUIStyle;
 
 // Class BrickRigs.BrickUserSettings
 // 0x0358 (0x0380 - 0x0028)
@@ -6813,70 +6650,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickUserSettings">();
+		STATIC_CLASS_IMPL("BrickUserSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickUserSettings")
 	}
 	static class UBrickUserSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickUserSettings>();
 	}
 };
-static_assert(alignof(UBrickUserSettings) == 0x000008, "Wrong alignment on UBrickUserSettings");
-static_assert(sizeof(UBrickUserSettings) == 0x000380, "Wrong size on UBrickUserSettings");
-static_assert(offsetof(UBrickUserSettings, HoldKeyTime) == 0x000030, "Member 'UBrickUserSettings::HoldKeyTime' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, MouseTapTime) == 0x000034, "Member 'UBrickUserSettings::MouseTapTime' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, ConfigVersion) == 0x000038, "Member 'UBrickUserSettings::ConfigVersion' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, HostServerType) == 0x000048, "Member 'UBrickUserSettings::HostServerType' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, ServerPassword) == 0x000050, "Member 'UBrickUserSettings::ServerPassword' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, MatchSettings) == 0x000060, "Member 'UBrickUserSettings::MatchSettings' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, AdminPassword) == 0x000128, "Member 'UBrickUserSettings::AdminPassword' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bAllowAdminLogin) == 0x000138, "Member 'UBrickUserSettings::bAllowAdminLogin' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bAllowDifferentMods) == 0x000139, "Member 'UBrickUserSettings::bAllowDifferentMods' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bApplyMatchSettings) == 0x00013A, "Member 'UBrickUserSettings::bApplyMatchSettings' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bFadeMatchSettings) == 0x00013B, "Member 'UBrickUserSettings::bFadeMatchSettings' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, hudvisibility) == 0x00013C, "Member 'UBrickUserSettings::hudvisibility' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, MeasurementSystem) == 0x00013D, "Member 'UBrickUserSettings::MeasurementSystem' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, ChatContext) == 0x00013E, "Member 'UBrickUserSettings::ChatContext' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, UIStyle) == 0x000140, "Member 'UBrickUserSettings::UIStyle' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, BrickPropertySettings) == 0x000148, "Member 'UBrickUserSettings::BrickPropertySettings' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, MasterVolume) == 0x000198, "Member 'UBrickUserSettings::MasterVolume' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, MusicVolume) == 0x00019C, "Member 'UBrickUserSettings::MusicVolume' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, FieldOfView) == 0x0001A0, "Member 'UBrickUserSettings::FieldOfView' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, CameraMode) == 0x0001A4, "Member 'UBrickUserSettings::CameraMode' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, TransmissionMode) == 0x0001A5, "Member 'UBrickUserSettings::TransmissionMode' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bAutoCounterSteering) == 0x0001A6, "Member 'UBrickUserSettings::bAutoCounterSteering' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, MouseSensitivity) == 0x0001A8, "Member 'UBrickUserSettings::MouseSensitivity' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, GamepadSensitivity) == 0x0001AC, "Member 'UBrickUserSettings::GamepadSensitivity' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bInvertViewPitch) == 0x0001B0, "Member 'UBrickUserSettings::bInvertViewPitch' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bToggleAim) == 0x0001B1, "Member 'UBrickUserSettings::bToggleAim' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bToggleSprint) == 0x0001B2, "Member 'UBrickUserSettings::bToggleSprint' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bToggleCrouch) == 0x0001B3, "Member 'UBrickUserSettings::bToggleCrouch' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, InputCategory) == 0x0001B8, "Member 'UBrickUserSettings::InputCategory' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, InputMappingSearchText) == 0x0001C0, "Member 'UBrickUserSettings::InputMappingSearchText' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, VisionDeficiencyType) == 0x0001D0, "Member 'UBrickUserSettings::VisionDeficiencyType' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, VisionCorrectionSeverity) == 0x0001D4, "Member 'UBrickUserSettings::VisionCorrectionSeverity' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorMirrorAxis) == 0x0001D8, "Member 'UBrickUserSettings::EditorMirrorAxis' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorViewMode) == 0x0001D9, "Member 'UBrickUserSettings::EditorViewMode' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorWorldSetupParams) == 0x0001E0, "Member 'UBrickUserSettings::EditorWorldSetupParams' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorUIScale) == 0x000210, "Member 'UBrickUserSettings::EditorUIScale' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorMouseMoveSensitivity) == 0x000214, "Member 'UBrickUserSettings::EditorMouseMoveSensitivity' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorGridSnappingDistance) == 0x000218, "Member 'UBrickUserSettings::EditorGridSnappingDistance' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorGridSnappingAngle) == 0x00021C, "Member 'UBrickUserSettings::EditorGridSnappingAngle' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorBrickSnappingDistance) == 0x000220, "Member 'UBrickUserSettings::EditorBrickSnappingDistance' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorBrickSnappingAngle) == 0x000224, "Member 'UBrickUserSettings::EditorBrickSnappingAngle' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bEditorSnappingEnabled) == 0x000228, "Member 'UBrickUserSettings::bEditorSnappingEnabled' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, bEditorGizmoWorldSpace) == 0x000229, "Member 'UBrickUserSettings::bEditorGizmoWorldSpace' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, BrickUnitsDisplayMode) == 0x00022A, "Member 'UBrickUserSettings::BrickUnitsDisplayMode' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, ColorDisplayMode) == 0x00022B, "Member 'UBrickUserSettings::ColorDisplayMode' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorZoomRatio) == 0x00022C, "Member 'UBrickUserSettings::EditorZoomRatio' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, EditorCameraSpeedRatio) == 0x000230, "Member 'UBrickUserSettings::EditorCameraSpeedRatio' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, FreeCamSpeedRatio) == 0x000234, "Member 'UBrickUserSettings::FreeCamSpeedRatio' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, FreeCamShiftSpeedRatio) == 0x000238, "Member 'UBrickUserSettings::FreeCamShiftSpeedRatio' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, ProjectileCamZoomRatio) == 0x00023C, "Member 'UBrickUserSettings::ProjectileCamZoomRatio' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, MenuVehicleCollection) == 0x000240, "Member 'UBrickUserSettings::MenuVehicleCollection' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, FeaturedVehicleCollection) == 0x000250, "Member 'UBrickUserSettings::FeaturedVehicleCollection' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, OnHUDVisibilityChangedDelegate) == 0x000278, "Member 'UBrickUserSettings::OnHUDVisibilityChangedDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, OnMeasurementSystemChangedDelegate) == 0x000288, "Member 'UBrickUserSettings::OnMeasurementSystemChangedDelegate' has a wrong offset!");
-static_assert(offsetof(UBrickUserSettings, OnColorDisplayModeChanged) == 0x000370, "Member 'UBrickUserSettings::OnColorDisplayModeChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickUserSettings;
 
 // Class BrickRigs.BrickVehicleDownloadReplicator
 // 0x0030 (0x0250 - 0x0220)
@@ -6895,19 +6680,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickVehicleDownloadReplicator">();
+		STATIC_CLASS_IMPL("BrickVehicleDownloadReplicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickVehicleDownloadReplicator")
 	}
 	static class ABrickVehicleDownloadReplicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickVehicleDownloadReplicator>();
 	}
 };
-static_assert(alignof(ABrickVehicleDownloadReplicator) == 0x000008, "Wrong alignment on ABrickVehicleDownloadReplicator");
-static_assert(sizeof(ABrickVehicleDownloadReplicator) == 0x000250, "Wrong size on ABrickVehicleDownloadReplicator");
-static_assert(offsetof(ABrickVehicleDownloadReplicator, Vehicle) == 0x000220, "Member 'ABrickVehicleDownloadReplicator::Vehicle' has a wrong offset!");
-static_assert(offsetof(ABrickVehicleDownloadReplicator, SpawningPC) == 0x000228, "Member 'ABrickVehicleDownloadReplicator::SpawningPC' has a wrong offset!");
-static_assert(offsetof(ABrickVehicleDownloadReplicator, VehicleDisplayName) == 0x000230, "Member 'ABrickVehicleDownloadReplicator::VehicleDisplayName' has a wrong offset!");
-static_assert(offsetof(ABrickVehicleDownloadReplicator, DownloadProgress) == 0x000248, "Member 'ABrickVehicleDownloadReplicator::DownloadProgress' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickVehicleDownloadReplicator;
 
 // Class BrickRigs.BrickVehicleStaticInfo
 // 0x00F0 (0x0118 - 0x0028)
@@ -6949,45 +6733,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickVehicleStaticInfo">();
+		STATIC_CLASS_IMPL("BrickVehicleStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickVehicleStaticInfo")
 	}
 	static class UBrickVehicleStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickVehicleStaticInfo>();
 	}
 };
-static_assert(alignof(UBrickVehicleStaticInfo) == 0x000008, "Wrong alignment on UBrickVehicleStaticInfo");
-static_assert(sizeof(UBrickVehicleStaticInfo) == 0x000118, "Wrong size on UBrickVehicleStaticInfo");
-static_assert(offsetof(UBrickVehicleStaticInfo, MaxConstructionLoopFrameTime) == 0x000028, "Member 'UBrickVehicleStaticInfo::MaxConstructionLoopFrameTime' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, MaxConstructionTime) == 0x00002C, "Member 'UBrickVehicleStaticInfo::MaxConstructionTime' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, MaxCollisionEffectSpawnDist) == 0x000030, "Member 'UBrickVehicleStaticInfo::MaxCollisionEffectSpawnDist' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, MinCollisionEffectSpeed) == 0x000034, "Member 'UBrickVehicleStaticInfo::MinCollisionEffectSpeed' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, MinSlidingEffectSpeed) == 0x000038, "Member 'UBrickVehicleStaticInfo::MinSlidingEffectSpeed' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, MinCollisionSoundDelay) == 0x00003C, "Member 'UBrickVehicleStaticInfo::MinCollisionSoundDelay' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, SlidingSpeedRange) == 0x000040, "Member 'UBrickVehicleStaticInfo::SlidingSpeedRange' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, CollisionSound) == 0x000048, "Member 'UBrickVehicleStaticInfo::CollisionSound' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, FireEmitter) == 0x000050, "Member 'UBrickVehicleStaticInfo::FireEmitter' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, FireSound) == 0x000058, "Member 'UBrickVehicleStaticInfo::FireSound' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, BrickBurntPattern) == 0x000060, "Member 'UBrickVehicleStaticInfo::BrickBurntPattern' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, NumBurnIntervalsRange) == 0x000068, "Member 'UBrickVehicleStaticInfo::NumBurnIntervalsRange' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, BurnTimeRange) == 0x000070, "Member 'UBrickVehicleStaticInfo::BurnTimeRange' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, ExtinguishCooldownRange) == 0x000078, "Member 'UBrickVehicleStaticInfo::ExtinguishCooldownRange' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, FireSpreadProbability) == 0x000080, "Member 'UBrickVehicleStaticInfo::FireSpreadProbability' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, FireSpreadDistance) == 0x000084, "Member 'UBrickVehicleStaticInfo::FireSpreadDistance' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, HandlingSoundAttenuation) == 0x000088, "Member 'UBrickVehicleStaticInfo::HandlingSoundAttenuation' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, SwitchSound) == 0x000090, "Member 'UBrickVehicleStaticInfo::SwitchSound' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, ZoomParams) == 0x000098, "Member 'UBrickVehicleStaticInfo::ZoomParams' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, MinZoomVehicleBoundsRadius) == 0x0000B0, "Member 'UBrickVehicleStaticInfo::MinZoomVehicleBoundsRadius' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, DefaultZoomRatio) == 0x0000B4, "Member 'UBrickVehicleStaticInfo::DefaultZoomRatio' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, DefaultViewRotation) == 0x0000B8, "Member 'UBrickVehicleStaticInfo::DefaultViewRotation' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, ViewRotationInterpSpeed) == 0x0000C4, "Member 'UBrickVehicleStaticInfo::ViewRotationInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, VelocityCameraInputSpeedRange) == 0x0000C8, "Member 'UBrickVehicleStaticInfo::VelocityCameraInputSpeedRange' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, CameraLocationInterpSpeed) == 0x0000D0, "Member 'UBrickVehicleStaticInfo::CameraLocationInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, CameraVelocityInterpSpeed) == 0x0000D4, "Member 'UBrickVehicleStaticInfo::CameraVelocityInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, HUDIconProperties) == 0x0000D8, "Member 'UBrickVehicleStaticInfo::HUDIconProperties' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, IconOffsetZ) == 0x000108, "Member 'UBrickVehicleStaticInfo::IconOffsetZ' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, MaxFriendlyIconDrawDist) == 0x00010C, "Member 'UBrickVehicleStaticInfo::MaxFriendlyIconDrawDist' has a wrong offset!");
-static_assert(offsetof(UBrickVehicleStaticInfo, MaxHostileIconDrawDist) == 0x000110, "Member 'UBrickVehicleStaticInfo::MaxHostileIconDrawDist' has a wrong offset!");
+DUMPER7_ASSERTS_UBrickVehicleStaticInfo;
 
 // Class BrickRigs.BrickViewportClient
 // 0x0020 (0x0380 - 0x0360)
@@ -7002,15 +6759,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickViewportClient">();
+		STATIC_CLASS_IMPL("BrickViewportClient")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickViewportClient")
 	}
 	static class UBrickViewportClient* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrickViewportClient>();
 	}
 };
-static_assert(alignof(UBrickViewportClient) == 0x000008, "Wrong alignment on UBrickViewportClient");
-static_assert(sizeof(UBrickViewportClient) == 0x000380, "Wrong size on UBrickViewportClient");
+DUMPER7_ASSERTS_UBrickViewportClient;
 
 // Class BrickRigs.BrickWorldSettings
 // 0x0108 (0x04A8 - 0x03A0)
@@ -7040,25 +6800,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrickWorldSettings">();
+		STATIC_CLASS_IMPL("BrickWorldSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrickWorldSettings")
 	}
 	static class ABrickWorldSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABrickWorldSettings>();
 	}
 };
-static_assert(alignof(ABrickWorldSettings) == 0x000008, "Wrong alignment on ABrickWorldSettings");
-static_assert(sizeof(ABrickWorldSettings) == 0x0004A8, "Wrong size on ABrickWorldSettings");
-static_assert(offsetof(ABrickWorldSettings, WorldSetupActor) == 0x0003A0, "Member 'ABrickWorldSettings::WorldSetupActor' has a wrong offset!");
-static_assert(offsetof(ABrickWorldSettings, DefaultWaterPhysicsVolume) == 0x0003A8, "Member 'ABrickWorldSettings::DefaultWaterPhysicsVolume' has a wrong offset!");
-static_assert(offsetof(ABrickWorldSettings, SpawnedTrains) == 0x0003C0, "Member 'ABrickWorldSettings::SpawnedTrains' has a wrong offset!");
-static_assert(offsetof(ABrickWorldSettings, CapturePoints) == 0x000400, "Member 'ABrickWorldSettings::CapturePoints' has a wrong offset!");
-static_assert(offsetof(ABrickWorldSettings, ProjectileManager) == 0x000410, "Member 'ABrickWorldSettings::ProjectileManager' has a wrong offset!");
-static_assert(offsetof(ABrickWorldSettings, DefaultWaterPhysicsVolumeClass) == 0x000418, "Member 'ABrickWorldSettings::DefaultWaterPhysicsVolumeClass' has a wrong offset!");
-static_assert(offsetof(ABrickWorldSettings, WaterBounds) == 0x000420, "Member 'ABrickWorldSettings::WaterBounds' has a wrong offset!");
-static_assert(offsetof(ABrickWorldSettings, SeaLevel) == 0x00043C, "Member 'ABrickWorldSettings::SeaLevel' has a wrong offset!");
-static_assert(offsetof(ABrickWorldSettings, TrainTracks) == 0x000440, "Member 'ABrickWorldSettings::TrainTracks' has a wrong offset!");
-static_assert(offsetof(ABrickWorldSettings, TrainSpawnInfos) == 0x000450, "Member 'ABrickWorldSettings::TrainSpawnInfos' has a wrong offset!");
+DUMPER7_ASSERTS_ABrickWorldSettings;
 
 // Class BrickRigs.BumperBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -7067,20 +6820,23 @@ class UBumperBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BumperBrickStaticInfo">();
+		STATIC_CLASS_IMPL("BumperBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BumperBrickStaticInfo")
 	}
 	static class UBumperBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBumperBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UBumperBrickStaticInfo) == 0x000008, "Wrong alignment on UBumperBrickStaticInfo");
-static_assert(sizeof(UBumperBrickStaticInfo) == 0x000190, "Wrong size on UBumperBrickStaticInfo");
+DUMPER7_ASSERTS_UBumperBrickStaticInfo;
 
 // Class BrickRigs.CameraBrickStaticInfo
 // 0x05E0 (0x0770 - 0x0190)
 #pragma pack(push, 0x1)
-class alignas(0x10) UCameraBrickStaticInfo : public UBrickStaticInfo
+class SDK_ALIGN(0x10) UCameraBrickStaticInfo : public UBrickStaticInfo
 {
 public:
 	struct FVector                                LenseOffset;                                       // 0x0190(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7099,7 +6855,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraBrickStaticInfo">();
+		STATIC_CLASS_IMPL("CameraBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraBrickStaticInfo")
 	}
 	static class UCameraBrickStaticInfo* GetDefaultObj()
 	{
@@ -7107,18 +6867,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UCameraBrickStaticInfo) == 0x000010, "Wrong alignment on UCameraBrickStaticInfo");
-static_assert(sizeof(UCameraBrickStaticInfo) == 0x000770, "Wrong size on UCameraBrickStaticInfo");
-static_assert(offsetof(UCameraBrickStaticInfo, LenseOffset) == 0x000190, "Member 'UCameraBrickStaticInfo::LenseOffset' has a wrong offset!");
-static_assert(offsetof(UCameraBrickStaticInfo, ZoomParams) == 0x00019C, "Member 'UCameraBrickStaticInfo::ZoomParams' has a wrong offset!");
-static_assert(offsetof(UCameraBrickStaticInfo, bViewRotationInWorldSpace) == 0x0001B4, "Member 'UCameraBrickStaticInfo::bViewRotationInWorldSpace' has a wrong offset!");
-static_assert(offsetof(UCameraBrickStaticInfo, bRotateViewWhenInteracting) == 0x0001B5, "Member 'UCameraBrickStaticInfo::bRotateViewWhenInteracting' has a wrong offset!");
-static_assert(offsetof(UCameraBrickStaticInfo, PostProcessSettings) == 0x0001C0, "Member 'UCameraBrickStaticInfo::PostProcessSettings' has a wrong offset!");
-static_assert(offsetof(UCameraBrickStaticInfo, NotConnectedPostProcessMaterial) == 0x000720, "Member 'UCameraBrickStaticInfo::NotConnectedPostProcessMaterial' has a wrong offset!");
-static_assert(offsetof(UCameraBrickStaticInfo, HUDWidgetClass) == 0x000728, "Member 'UCameraBrickStaticInfo::HUDWidgetClass' has a wrong offset!");
-static_assert(offsetof(UCameraBrickStaticInfo, MaxTargetRange) == 0x000750, "Member 'UCameraBrickStaticInfo::MaxTargetRange' has a wrong offset!");
-static_assert(offsetof(UCameraBrickStaticInfo, ViewPitchRange) == 0x000754, "Member 'UCameraBrickStaticInfo::ViewPitchRange' has a wrong offset!");
-static_assert(offsetof(UCameraBrickStaticInfo, ViewYawRange) == 0x00075C, "Member 'UCameraBrickStaticInfo::ViewYawRange' has a wrong offset!");
+DUMPER7_ASSERTS_UCameraBrickStaticInfo;
 
 // Class BrickRigs.CameraBrickWidget
 // 0x0018 (0x0278 - 0x0260)
@@ -7137,17 +6886,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraBrickWidget">();
+		STATIC_CLASS_IMPL("CameraBrickWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraBrickWidget")
 	}
 	static class UCameraBrickWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraBrickWidget>();
 	}
 };
-static_assert(alignof(UCameraBrickWidget) == 0x000008, "Wrong alignment on UCameraBrickWidget");
-static_assert(sizeof(UCameraBrickWidget) == 0x000278, "Wrong size on UCameraBrickWidget");
-static_assert(offsetof(UCameraBrickWidget, bUpdateTargetRange) == 0x00026C, "Member 'UCameraBrickWidget::bUpdateTargetRange' has a wrong offset!");
-static_assert(offsetof(UCameraBrickWidget, TargetRangeUpdateInterval) == 0x000270, "Member 'UCameraBrickWidget::TargetRangeUpdateInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UCameraBrickWidget;
 
 // Class BrickRigs.SpawnArea
 // 0x0040 (0x0260 - 0x0220)
@@ -7161,17 +6911,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpawnArea">();
+		STATIC_CLASS_IMPL("SpawnArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpawnArea")
 	}
 	static class ASpawnArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASpawnArea>();
 	}
 };
-static_assert(alignof(ASpawnArea) == 0x000008, "Wrong alignment on ASpawnArea");
-static_assert(sizeof(ASpawnArea) == 0x000260, "Wrong size on ASpawnArea");
-static_assert(offsetof(ASpawnArea, HUDIconComponent) == 0x000228, "Member 'ASpawnArea::HUDIconComponent' has a wrong offset!");
-static_assert(offsetof(ASpawnArea, HUDIconProperties) == 0x000230, "Member 'ASpawnArea::HUDIconProperties' has a wrong offset!");
+DUMPER7_ASSERTS_ASpawnArea;
 
 // Class BrickRigs.CapturePoint
 // 0x0118 (0x0378 - 0x0260)
@@ -7223,34 +6974,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CapturePoint">();
+		STATIC_CLASS_IMPL("CapturePoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CapturePoint")
 	}
 	static class ACapturePoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACapturePoint>();
 	}
 };
-static_assert(alignof(ACapturePoint) == 0x000008, "Wrong alignment on ACapturePoint");
-static_assert(sizeof(ACapturePoint) == 0x000378, "Wrong size on ACapturePoint");
-static_assert(offsetof(ACapturePoint, RepCaptureRatio) == 0x000274, "Member 'ACapturePoint::RepCaptureRatio' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, bHasBeenCaptured) == 0x000275, "Member 'ACapturePoint::bHasBeenCaptured' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, CapturingTeam) == 0x000276, "Member 'ACapturePoint::CapturingTeam' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, CapturedBy) == 0x000277, "Member 'ACapturePoint::CapturedBy' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, OverlappingCharacters) == 0x000278, "Member 'ACapturePoint::OverlappingCharacters' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, FlagMID) == 0x000288, "Member 'ACapturePoint::FlagMID' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, BuildingBase) == 0x000298, "Member 'ACapturePoint::BuildingBase' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, MeshComponent) == 0x0002C0, "Member 'ACapturePoint::MeshComponent' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, ShapeComponent) == 0x0002C8, "Member 'ACapturePoint::ShapeComponent' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, StaticMesh) == 0x0002D0, "Member 'ACapturePoint::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, MaxDrawDistance) == 0x0002D8, "Member 'ACapturePoint::MaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, MaxFlagHeight) == 0x0002DC, "Member 'ACapturePoint::MaxFlagHeight' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, IconOffset) == 0x0002E0, "Member 'ACapturePoint::IconOffset' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, TimeToCapture) == 0x0002EC, "Member 'ACapturePoint::TimeToCapture' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, CapturePointId) == 0x0002F0, "Member 'ACapturePoint::CapturePointId' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, CapturePointShape) == 0x0002F1, "Member 'ACapturePoint::CapturePointShape' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, ShapeOffset) == 0x0002F4, "Member 'ACapturePoint::ShapeOffset' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, ShapeRotation) == 0x000300, "Member 'ACapturePoint::ShapeRotation' has a wrong offset!");
-static_assert(offsetof(ACapturePoint, ShapeScale) == 0x00030C, "Member 'ACapturePoint::ShapeScale' has a wrong offset!");
+DUMPER7_ASSERTS_ACapturePoint;
 
 // Class BrickRigs.CapturePointIconWidget
 // 0x0040 (0x02C8 - 0x0288)
@@ -7268,20 +7003,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CapturePointIconWidget">();
+		STATIC_CLASS_IMPL("CapturePointIconWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CapturePointIconWidget")
 	}
 	static class UCapturePointIconWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCapturePointIconWidget>();
 	}
 };
-static_assert(alignof(UCapturePointIconWidget) == 0x000008, "Wrong alignment on UCapturePointIconWidget");
-static_assert(sizeof(UCapturePointIconWidget) == 0x0002C8, "Wrong size on UCapturePointIconWidget");
-static_assert(offsetof(UCapturePointIconWidget, PlayerCharacter) == 0x000288, "Member 'UCapturePointIconWidget::PlayerCharacter' has a wrong offset!");
-static_assert(offsetof(UCapturePointIconWidget, CapturePoint) == 0x000290, "Member 'UCapturePointIconWidget::CapturePoint' has a wrong offset!");
-static_assert(offsetof(UCapturePointIconWidget, Mid) == 0x0002A8, "Member 'UCapturePointIconWidget::Mid' has a wrong offset!");
-static_assert(offsetof(UCapturePointIconWidget, CaptureProgressImage) == 0x0002B8, "Member 'UCapturePointIconWidget::CaptureProgressImage' has a wrong offset!");
-static_assert(offsetof(UCapturePointIconWidget, CharTextBlock) == 0x0002C0, "Member 'UCapturePointIconWidget::CharTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UCapturePointIconWidget;
 
 // Class BrickRigs.CarWheelBrickStaticInfo
 // 0x0020 (0x01D0 - 0x01B0)
@@ -7298,20 +7031,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CarWheelBrickStaticInfo">();
+		STATIC_CLASS_IMPL("CarWheelBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CarWheelBrickStaticInfo")
 	}
 	static class UCarWheelBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCarWheelBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UCarWheelBrickStaticInfo) == 0x000008, "Wrong alignment on UCarWheelBrickStaticInfo");
-static_assert(sizeof(UCarWheelBrickStaticInfo) == 0x0001D0, "Wrong size on UCarWheelBrickStaticInfo");
-static_assert(offsetof(UCarWheelBrickStaticInfo, RimRadius) == 0x0001B0, "Member 'UCarWheelBrickStaticInfo::RimRadius' has a wrong offset!");
-static_assert(offsetof(UCarWheelBrickStaticInfo, MinTireThickness) == 0x0001B4, "Member 'UCarWheelBrickStaticInfo::MinTireThickness' has a wrong offset!");
-static_assert(offsetof(UCarWheelBrickStaticInfo, MinTirePopDamage) == 0x0001B8, "Member 'UCarWheelBrickStaticInfo::MinTirePopDamage' has a wrong offset!");
-static_assert(offsetof(UCarWheelBrickStaticInfo, TirePopEmitter) == 0x0001C0, "Member 'UCarWheelBrickStaticInfo::TirePopEmitter' has a wrong offset!");
-static_assert(offsetof(UCarWheelBrickStaticInfo, TirePopSound) == 0x0001C8, "Member 'UCarWheelBrickStaticInfo::TirePopSound' has a wrong offset!");
+DUMPER7_ASSERTS_UCarWheelBrickStaticInfo;
 
 // Class BrickRigs.Windmill
 // 0x0028 (0x0268 - 0x0240)
@@ -7328,19 +7059,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Windmill">();
+		STATIC_CLASS_IMPL("Windmill")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Windmill")
 	}
 	static class AWindmill* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWindmill>();
 	}
 };
-static_assert(alignof(AWindmill) == 0x000008, "Wrong alignment on AWindmill");
-static_assert(sizeof(AWindmill) == 0x000268, "Wrong size on AWindmill");
-static_assert(offsetof(AWindmill, WindmillRandSeed) == 0x000248, "Member 'AWindmill::WindmillRandSeed' has a wrong offset!");
-static_assert(offsetof(AWindmill, RotorMeshComponent) == 0x000250, "Member 'AWindmill::RotorMeshComponent' has a wrong offset!");
-static_assert(offsetof(AWindmill, RotorMesh) == 0x000258, "Member 'AWindmill::RotorMesh' has a wrong offset!");
-static_assert(offsetof(AWindmill, RotationSpeedRange) == 0x000260, "Member 'AWindmill::RotationSpeedRange' has a wrong offset!");
+DUMPER7_ASSERTS_AWindmill;
 
 // Class BrickRigs.CarWheelBrick
 // 0x0020 (0x0128 - 0x0108)
@@ -7357,17 +7087,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CarWheelBrick">();
+		STATIC_CLASS_IMPL("CarWheelBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CarWheelBrick")
 	}
 	static class UCarWheelBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCarWheelBrick>();
 	}
 };
-static_assert(alignof(UCarWheelBrick) == 0x000008, "Wrong alignment on UCarWheelBrick");
-static_assert(sizeof(UCarWheelBrick) == 0x000128, "Wrong size on UCarWheelBrick");
-static_assert(offsetof(UCarWheelBrick, TireThickness) == 0x000120, "Member 'UCarWheelBrick::TireThickness' has a wrong offset!");
-static_assert(offsetof(UCarWheelBrick, TirePressureRatio) == 0x000124, "Member 'UCarWheelBrick::TirePressureRatio' has a wrong offset!");
+DUMPER7_ASSERTS_UCarWheelBrick;
 
 // Class BrickRigs.CharacterCapsuleComponent
 // 0x0030 (0x0500 - 0x04D0)
@@ -7379,15 +7110,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CharacterCapsuleComponent">();
+		STATIC_CLASS_IMPL("CharacterCapsuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CharacterCapsuleComponent")
 	}
 	static class UCharacterCapsuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCharacterCapsuleComponent>();
 	}
 };
-static_assert(alignof(UCharacterCapsuleComponent) == 0x000010, "Wrong alignment on UCharacterCapsuleComponent");
-static_assert(sizeof(UCharacterCapsuleComponent) == 0x000500, "Wrong size on UCharacterCapsuleComponent");
+DUMPER7_ASSERTS_UCharacterCapsuleComponent;
 
 // Class BrickRigs.PawnInputComponent
 // 0x0068 (0x01D8 - 0x0170)
@@ -7459,15 +7193,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PawnInputComponent">();
+		STATIC_CLASS_IMPL("PawnInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PawnInputComponent")
 	}
 	static class UPawnInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPawnInputComponent>();
 	}
 };
-static_assert(alignof(UPawnInputComponent) == 0x000008, "Wrong alignment on UPawnInputComponent");
-static_assert(sizeof(UPawnInputComponent) == 0x0001D8, "Wrong size on UPawnInputComponent");
+DUMPER7_ASSERTS_UPawnInputComponent;
 
 // Class BrickRigs.PlayerPawnInputComponent
 // 0x0038 (0x0210 - 0x01D8)
@@ -7510,18 +7247,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerPawnInputComponent">();
+		STATIC_CLASS_IMPL("PlayerPawnInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerPawnInputComponent")
 	}
 	static class UPlayerPawnInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerPawnInputComponent>();
 	}
 };
-static_assert(alignof(UPlayerPawnInputComponent) == 0x000008, "Wrong alignment on UPlayerPawnInputComponent");
-static_assert(sizeof(UPlayerPawnInputComponent) == 0x000210, "Wrong size on UPlayerPawnInputComponent");
-static_assert(offsetof(UPlayerPawnInputComponent, Character) == 0x0001F8, "Member 'UPlayerPawnInputComponent::Character' has a wrong offset!");
-static_assert(offsetof(UPlayerPawnInputComponent, BrickCharacter) == 0x000200, "Member 'UPlayerPawnInputComponent::BrickCharacter' has a wrong offset!");
-static_assert(offsetof(UPlayerPawnInputComponent, Vehicle) == 0x000208, "Member 'UPlayerPawnInputComponent::Vehicle' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerPawnInputComponent;
 
 // Class BrickRigs.WinchBrick
 // 0x0098 (0x0180 - 0x00E8)
@@ -7544,19 +7281,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WinchBrick">();
+		STATIC_CLASS_IMPL("WinchBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinchBrick")
 	}
 	static class UWinchBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinchBrick>();
 	}
 };
-static_assert(alignof(UWinchBrick) == 0x000008, "Wrong alignment on UWinchBrick");
-static_assert(sizeof(UWinchBrick) == 0x000180, "Wrong size on UWinchBrick");
-static_assert(offsetof(UWinchBrick, AttachTarget) == 0x0000E8, "Member 'UWinchBrick::AttachTarget' has a wrong offset!");
-static_assert(offsetof(UWinchBrick, RepRopeLength) == 0x000104, "Member 'UWinchBrick::RepRopeLength' has a wrong offset!");
-static_assert(offsetof(UWinchBrick, InputChannel) == 0x000150, "Member 'UWinchBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(UWinchBrick, WinchSpeed) == 0x000178, "Member 'UWinchBrick::WinchSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UWinchBrick;
 
 // Class BrickRigs.CharacterInputComponent
 // 0x0000 (0x0210 - 0x0210)
@@ -7576,15 +7312,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CharacterInputComponent">();
+		STATIC_CLASS_IMPL("CharacterInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CharacterInputComponent")
 	}
 	static class UCharacterInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCharacterInputComponent>();
 	}
 };
-static_assert(alignof(UCharacterInputComponent) == 0x000008, "Wrong alignment on UCharacterInputComponent");
-static_assert(sizeof(UCharacterInputComponent) == 0x000210, "Wrong size on UCharacterInputComponent");
+DUMPER7_ASSERTS_UCharacterInputComponent;
 
 // Class BrickRigs.CharacterInventoryComponent
 // 0x0000 (0x0298 - 0x0298)
@@ -7593,15 +7332,18 @@ class UCharacterInventoryComponent final : public UInventoryComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CharacterInventoryComponent">();
+		STATIC_CLASS_IMPL("CharacterInventoryComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CharacterInventoryComponent")
 	}
 	static class UCharacterInventoryComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCharacterInventoryComponent>();
 	}
 };
-static_assert(alignof(UCharacterInventoryComponent) == 0x000008, "Wrong alignment on UCharacterInventoryComponent");
-static_assert(sizeof(UCharacterInventoryComponent) == 0x000298, "Wrong size on UCharacterInventoryComponent");
+DUMPER7_ASSERTS_UCharacterInventoryComponent;
 
 // Class BrickRigs.CharacterStaticInfo
 // 0x02D8 (0x0300 - 0x0028)
@@ -7697,94 +7439,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CharacterStaticInfo">();
+		STATIC_CLASS_IMPL("CharacterStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CharacterStaticInfo")
 	}
 	static class UCharacterStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCharacterStaticInfo>();
 	}
 };
-static_assert(alignof(UCharacterStaticInfo) == 0x000008, "Wrong alignment on UCharacterStaticInfo");
-static_assert(sizeof(UCharacterStaticInfo) == 0x000300, "Wrong size on UCharacterStaticInfo");
-static_assert(offsetof(UCharacterStaticInfo, MaxDrawDist) == 0x000028, "Member 'UCharacterStaticInfo::MaxDrawDist' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, PhysicalMaterial) == 0x000030, "Member 'UCharacterStaticInfo::PhysicalMaterial' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, BrickPickupCapsuleInflation) == 0x000038, "Member 'UCharacterStaticInfo::BrickPickupCapsuleInflation' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MaxHealth) == 0x00003C, "Member 'UCharacterStaticInfo::MaxHealth' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MinDamage) == 0x000040, "Member 'UCharacterStaticInfo::MinDamage' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, RadialDamageScale) == 0x000044, "Member 'UCharacterStaticInfo::RadialDamageScale' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, CollisionDamageScale) == 0x000048, "Member 'UCharacterStaticInfo::CollisionDamageScale' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, AutoHealTime) == 0x00004C, "Member 'UCharacterStaticInfo::AutoHealTime' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, AutoHealDelay) == 0x000050, "Member 'UCharacterStaticInfo::AutoHealDelay' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, BoneDamageGroups) == 0x000058, "Member 'UCharacterStaticInfo::BoneDamageGroups' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FallDamageHeightRange) == 0x000068, "Member 'UCharacterStaticInfo::FallDamageHeightRange' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, RunOverSpeed) == 0x000070, "Member 'UCharacterStaticInfo::RunOverSpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FireDamage) == 0x000074, "Member 'UCharacterStaticInfo::FireDamage' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FireDamageInterval) == 0x000078, "Member 'UCharacterStaticInfo::FireDamageInterval' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, AutoExtinguishDelay) == 0x00007C, "Member 'UCharacterStaticInfo::AutoExtinguishDelay' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FireEmitter) == 0x000080, "Member 'UCharacterStaticInfo::FireEmitter' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FireSound) == 0x000088, "Member 'UCharacterStaticInfo::FireSound' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, InventoryProperties) == 0x000090, "Member 'UCharacterStaticInfo::InventoryProperties' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, BoneFlinchMap) == 0x0000F0, "Member 'UCharacterStaticInfo::BoneFlinchMap' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FlinchAnimationLength) == 0x000100, "Member 'UCharacterStaticInfo::FlinchAnimationLength' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MinRotationAnimationRate) == 0x000104, "Member 'UCharacterStaticInfo::MinRotationAnimationRate' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, LandActionClass) == 0x000108, "Member 'UCharacterStaticInfo::LandActionClass' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MeleeActionClass) == 0x000110, "Member 'UCharacterStaticInfo::MeleeActionClass' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ViewPitchRange) == 0x000118, "Member 'UCharacterStaticInfo::ViewPitchRange' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ViewYawRange) == 0x000120, "Member 'UCharacterStaticInfo::ViewYawRange' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, EyeHeightOffset) == 0x000128, "Member 'UCharacterStaticInfo::EyeHeightOffset' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, RemoteViewRotationInterpSpeed) == 0x00012C, "Member 'UCharacterStaticInfo::RemoteViewRotationInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, VehicleViewInterpSpeed) == 0x000130, "Member 'UCharacterStaticInfo::VehicleViewInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, VehicleViewBlendWeight) == 0x000134, "Member 'UCharacterStaticInfo::VehicleViewBlendWeight' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, VehicleViewDirectionChangeThreshold) == 0x000138, "Member 'UCharacterStaticInfo::VehicleViewDirectionChangeThreshold' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, LandedCameraShake) == 0x000140, "Member 'UCharacterStaticInfo::LandedCameraShake' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FootstepVolumeModulationRange) == 0x000148, "Member 'UCharacterStaticInfo::FootstepVolumeModulationRange' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FootstepPitchModulationRange) == 0x000150, "Member 'UCharacterStaticInfo::FootstepPitchModulationRange' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, WalkFootstepVolume) == 0x000158, "Member 'UCharacterStaticInfo::WalkFootstepVolume' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, WalkFoostepInterval) == 0x00015C, "Member 'UCharacterStaticInfo::WalkFoostepInterval' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, SprintFootstepVolume) == 0x000160, "Member 'UCharacterStaticInfo::SprintFootstepVolume' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, CrouchFootstepVolume) == 0x000164, "Member 'UCharacterStaticInfo::CrouchFootstepVolume' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, WalkFootstepInterval) == 0x000168, "Member 'UCharacterStaticInfo::WalkFootstepInterval' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, SprintFootstepInterval) == 0x00016C, "Member 'UCharacterStaticInfo::SprintFootstepInterval' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, CrouchFootstepInterval) == 0x000170, "Member 'UCharacterStaticInfo::CrouchFootstepInterval' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FoleyAttenuationSettings) == 0x000178, "Member 'UCharacterStaticInfo::FoleyAttenuationSettings' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, FoleySoundVolume) == 0x000180, "Member 'UCharacterStaticInfo::FoleySoundVolume' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, RagdollCollisionSound) == 0x000188, "Member 'UCharacterStaticInfo::RagdollCollisionSound' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MinCollisionSoundImpactSpeed) == 0x000190, "Member 'UCharacterStaticInfo::MinCollisionSoundImpactSpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MinCollisionSoundDelay) == 0x000194, "Member 'UCharacterStaticInfo::MinCollisionSoundDelay' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, AimInSound) == 0x000198, "Member 'UCharacterStaticInfo::AimInSound' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, AimOutSound) == 0x0001A0, "Member 'UCharacterStaticInfo::AimOutSound' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, HUDIconProperties) == 0x0001A8, "Member 'UCharacterStaticInfo::HUDIconProperties' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, IconOffsetZ) == 0x0001D8, "Member 'UCharacterStaticInfo::IconOffsetZ' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MaxFriendlyIconDrawDist) == 0x0001DC, "Member 'UCharacterStaticInfo::MaxFriendlyIconDrawDist' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MaxNeutralIconDrawDist) == 0x0001E0, "Member 'UCharacterStaticInfo::MaxNeutralIconDrawDist' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MaxHostileIconDrawDist) == 0x0001E4, "Member 'UCharacterStaticInfo::MaxHostileIconDrawDist' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, InteractionSocketName) == 0x0001E8, "Member 'UCharacterStaticInfo::InteractionSocketName' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, StartSprintTime) == 0x0001F0, "Member 'UCharacterStaticInfo::StartSprintTime' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, StopSprintTime) == 0x0001F4, "Member 'UCharacterStaticInfo::StopSprintTime' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, SprintFireThreshold) == 0x0001F8, "Member 'UCharacterStaticInfo::SprintFireThreshold' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, AimInTime) == 0x0001FC, "Member 'UCharacterStaticInfo::AimInTime' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, AimOutTime) == 0x000200, "Member 'UCharacterStaticInfo::AimOutTime' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, AimSoundTimeRatio) == 0x000204, "Member 'UCharacterStaticInfo::AimSoundTimeRatio' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, WalkSwayParams) == 0x000208, "Member 'UCharacterStaticInfo::WalkSwayParams' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemSwayMaxAngle) == 0x000288, "Member 'UCharacterStaticInfo::ItemSwayMaxAngle' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemSwaySpeed) == 0x000294, "Member 'UCharacterStaticInfo::ItemSwaySpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemSwayAimScale) == 0x0002A0, "Member 'UCharacterStaticInfo::ItemSwayAimScale' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemLagMaxAngle) == 0x0002A4, "Member 'UCharacterStaticInfo::ItemLagMaxAngle' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemLagInterpSpeed) == 0x0002B0, "Member 'UCharacterStaticInfo::ItemLagInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemLagMaxInputSpeed) == 0x0002B4, "Member 'UCharacterStaticInfo::ItemLagMaxInputSpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemLagAimScale) == 0x0002B8, "Member 'UCharacterStaticInfo::ItemLagAimScale' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, RecoilFalloff) == 0x0002BC, "Member 'UCharacterStaticInfo::RecoilFalloff' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemDropSpeed) == 0x0002C0, "Member 'UCharacterStaticInfo::ItemDropSpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemThrowSpeed) == 0x0002C4, "Member 'UCharacterStaticInfo::ItemThrowSpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ExplosiveThrowSpeed) == 0x0002C8, "Member 'UCharacterStaticInfo::ExplosiveThrowSpeed' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemThrowAngularSpeedScale) == 0x0002CC, "Member 'UCharacterStaticInfo::ItemThrowAngularSpeedScale' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemDropLocation) == 0x0002D0, "Member 'UCharacterStaticInfo::ItemDropLocation' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, ItemDropRotation) == 0x0002DC, "Member 'UCharacterStaticInfo::ItemDropRotation' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, MaxBrickCarryMass) == 0x0002E8, "Member 'UCharacterStaticInfo::MaxBrickCarryMass' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, BrickCarryDistance) == 0x0002EC, "Member 'UCharacterStaticInfo::BrickCarryDistance' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, BrickCarrySpeedCoefficient) == 0x0002F0, "Member 'UCharacterStaticInfo::BrickCarrySpeedCoefficient' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, BrickCarryAcceleration) == 0x0002F4, "Member 'UCharacterStaticInfo::BrickCarryAcceleration' has a wrong offset!");
-static_assert(offsetof(UCharacterStaticInfo, BrickThrowSpeed) == 0x0002F8, "Member 'UCharacterStaticInfo::BrickThrowSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UCharacterStaticInfo;
 
 // Class BrickRigs.ChatMessageInputComponent
 // 0x00A8 (0x0218 - 0x0170)
@@ -7802,15 +7468,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChatMessageInputComponent">();
+		STATIC_CLASS_IMPL("ChatMessageInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatMessageInputComponent")
 	}
 	static class UChatMessageInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatMessageInputComponent>();
 	}
 };
-static_assert(alignof(UChatMessageInputComponent) == 0x000008, "Wrong alignment on UChatMessageInputComponent");
-static_assert(sizeof(UChatMessageInputComponent) == 0x000218, "Wrong size on UChatMessageInputComponent");
+DUMPER7_ASSERTS_UChatMessageInputComponent;
 
 // Class BrickRigs.ChatWidget
 // 0x0050 (0x02B0 - 0x0260)
@@ -7837,21 +7506,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChatWidget">();
+		STATIC_CLASS_IMPL("ChatWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatWidget")
 	}
 	static class UChatWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatWidget>();
 	}
 };
-static_assert(alignof(UChatWidget) == 0x000008, "Wrong alignment on UChatWidget");
-static_assert(sizeof(UChatWidget) == 0x0002B0, "Wrong size on UChatWidget");
-static_assert(offsetof(UChatWidget, ChatMessageWidgets) == 0x000270, "Member 'UChatWidget::ChatMessageWidgets' has a wrong offset!");
-static_assert(offsetof(UChatWidget, ChatScrollBox) == 0x000288, "Member 'UChatWidget::ChatScrollBox' has a wrong offset!");
-static_assert(offsetof(UChatWidget, ChatContextControlHint) == 0x000290, "Member 'UChatWidget::ChatContextControlHint' has a wrong offset!");
-static_assert(offsetof(UChatWidget, TextBox) == 0x000298, "Member 'UChatWidget::TextBox' has a wrong offset!");
-static_assert(offsetof(UChatWidget, FadeOutDelay) == 0x0002A0, "Member 'UChatWidget::FadeOutDelay' has a wrong offset!");
-static_assert(offsetof(UChatWidget, ChatMessageWidgetClass) == 0x0002A8, "Member 'UChatWidget::ChatMessageWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UChatWidget;
 
 // Class BrickRigs.CheatMenuWidget
 // 0x0008 (0x02A0 - 0x0298)
@@ -7863,16 +7529,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CheatMenuWidget">();
+		STATIC_CLASS_IMPL("CheatMenuWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CheatMenuWidget")
 	}
 	static class UCheatMenuWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCheatMenuWidget>();
 	}
 };
-static_assert(alignof(UCheatMenuWidget) == 0x000008, "Wrong alignment on UCheatMenuWidget");
-static_assert(sizeof(UCheatMenuWidget) == 0x0002A0, "Wrong size on UCheatMenuWidget");
-static_assert(offsetof(UCheatMenuWidget, PropertiesPanel) == 0x000298, "Member 'UCheatMenuWidget::PropertiesPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UCheatMenuWidget;
 
 // Class BrickRigs.ColorPaletteWidget
 // 0x0048 (0x02B8 - 0x0270)
@@ -7890,21 +7558,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ColorPaletteWidget">();
+		STATIC_CLASS_IMPL("ColorPaletteWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ColorPaletteWidget")
 	}
 	static class UColorPaletteWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UColorPaletteWidget>();
 	}
 };
-static_assert(alignof(UColorPaletteWidget) == 0x000008, "Wrong alignment on UColorPaletteWidget");
-static_assert(sizeof(UColorPaletteWidget) == 0x0002B8, "Wrong size on UColorPaletteWidget");
-static_assert(offsetof(UColorPaletteWidget, ColorPaletteSamples) == 0x000270, "Member 'UColorPaletteWidget::ColorPaletteSamples' has a wrong offset!");
-static_assert(offsetof(UColorPaletteWidget, Mid) == 0x000280, "Member 'UColorPaletteWidget::Mid' has a wrong offset!");
-static_assert(offsetof(UColorPaletteWidget, ColorImage) == 0x000298, "Member 'UColorPaletteWidget::ColorImage' has a wrong offset!");
-static_assert(offsetof(UColorPaletteWidget, NumColorsX) == 0x0002A0, "Member 'UColorPaletteWidget::NumColorsX' has a wrong offset!");
-static_assert(offsetof(UColorPaletteWidget, NumColorsY) == 0x0002A4, "Member 'UColorPaletteWidget::NumColorsY' has a wrong offset!");
-static_assert(offsetof(UColorPaletteWidget, OnColorChangedDelegate) == 0x0002A8, "Member 'UColorPaletteWidget::OnColorChangedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UColorPaletteWidget;
 
 // Class BrickRigs.ColorPropertyWidget
 // 0x0000 (0x0280 - 0x0280)
@@ -7919,15 +7584,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ColorPropertyWidget">();
+		STATIC_CLASS_IMPL("ColorPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ColorPropertyWidget")
 	}
 	static class UColorPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UColorPropertyWidget>();
 	}
 };
-static_assert(alignof(UColorPropertyWidget) == 0x000008, "Wrong alignment on UColorPropertyWidget");
-static_assert(sizeof(UColorPropertyWidget) == 0x000280, "Wrong size on UColorPropertyWidget");
+DUMPER7_ASSERTS_UColorPropertyWidget;
 
 // Class BrickRigs.ColorWheelWidget
 // 0x00A8 (0x0308 - 0x0260)
@@ -7944,17 +7612,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ColorWheelWidget">();
+		STATIC_CLASS_IMPL("ColorWheelWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ColorWheelWidget")
 	}
 	static class UColorWheelWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UColorWheelWidget>();
 	}
 };
-static_assert(alignof(UColorWheelWidget) == 0x000008, "Wrong alignment on UColorWheelWidget");
-static_assert(sizeof(UColorWheelWidget) == 0x000308, "Wrong size on UColorWheelWidget");
-static_assert(offsetof(UColorWheelWidget, CursorBrush) == 0x000270, "Member 'UColorWheelWidget::CursorBrush' has a wrong offset!");
-static_assert(offsetof(UColorWheelWidget, OnColorChangedDelegate) == 0x0002F8, "Member 'UColorWheelWidget::OnColorChangedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UColorWheelWidget;
 
 // Class BrickRigs.CompressorBrick
 // 0x0000 (0x00E8 - 0x00E8)
@@ -7963,15 +7632,18 @@ class UCompressorBrick final : public UBrick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CompressorBrick">();
+		STATIC_CLASS_IMPL("CompressorBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CompressorBrick")
 	}
 	static class UCompressorBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCompressorBrick>();
 	}
 };
-static_assert(alignof(UCompressorBrick) == 0x000008, "Wrong alignment on UCompressorBrick");
-static_assert(sizeof(UCompressorBrick) == 0x0000E8, "Wrong size on UCompressorBrick");
+DUMPER7_ASSERTS_UCompressorBrick;
 
 // Class BrickRigs.ConnectorSpacingPropertyWidget
 // 0x0000 (0x0280 - 0x0280)
@@ -7984,19 +7656,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ConnectorSpacingPropertyWidget">();
+		STATIC_CLASS_IMPL("ConnectorSpacingPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConnectorSpacingPropertyWidget")
 	}
 	static class UConnectorSpacingPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConnectorSpacingPropertyWidget>();
 	}
 };
-static_assert(alignof(UConnectorSpacingPropertyWidget) == 0x000008, "Wrong alignment on UConnectorSpacingPropertyWidget");
-static_assert(sizeof(UConnectorSpacingPropertyWidget) == 0x000280, "Wrong size on UConnectorSpacingPropertyWidget");
+DUMPER7_ASSERTS_UConnectorSpacingPropertyWidget;
 
 // Class BrickRigs.ConquestGameMode
 // 0x0010 (0x0458 - 0x0448)
-class AConquestGameMode : public ADeathmatchGameMode
+class AConquestGameMode final : public ADeathmatchGameMode
 {
 public:
 	uint8                                         Pad_448[0x8];                                      // 0x0448(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8006,17 +7681,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ConquestGameMode">();
+		STATIC_CLASS_IMPL("ConquestGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConquestGameMode")
 	}
 	static class AConquestGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AConquestGameMode>();
 	}
 };
-static_assert(alignof(AConquestGameMode) == 0x000008, "Wrong alignment on AConquestGameMode");
-static_assert(sizeof(AConquestGameMode) == 0x000458, "Wrong size on AConquestGameMode");
-static_assert(offsetof(AConquestGameMode, UpdateCapturePointsInterval) == 0x000450, "Member 'AConquestGameMode::UpdateCapturePointsInterval' has a wrong offset!");
-static_assert(offsetof(AConquestGameMode, HoldCapturePointTeamScore) == 0x000454, "Member 'AConquestGameMode::HoldCapturePointTeamScore' has a wrong offset!");
+DUMPER7_ASSERTS_AConquestGameMode;
 
 // Class BrickRigs.ContactModifyInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -8025,7 +7701,11 @@ class IContactModifyInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ContactModifyInterface">();
+		STATIC_CLASS_IMPL("ContactModifyInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ContactModifyInterface")
 	}
 	static class IContactModifyInterface* GetDefaultObj()
 	{
@@ -8041,8 +7721,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IContactModifyInterface) == 0x000001, "Wrong alignment on IContactModifyInterface");
-static_assert(sizeof(IContactModifyInterface) == 0x000001, "Wrong size on IContactModifyInterface");
+DUMPER7_ASSERTS_IContactModifyInterface;
 
 // Class BrickRigs.ContextMenuWidget
 // 0x0038 (0x02A0 - 0x0268)
@@ -8059,16 +7738,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ContextMenuWidget">();
+		STATIC_CLASS_IMPL("ContextMenuWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ContextMenuWidget")
 	}
 	static class UContextMenuWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UContextMenuWidget>();
 	}
 };
-static_assert(alignof(UContextMenuWidget) == 0x000008, "Wrong alignment on UContextMenuWidget");
-static_assert(sizeof(UContextMenuWidget) == 0x0002A0, "Wrong size on UContextMenuWidget");
-static_assert(offsetof(UContextMenuWidget, ActionListWidget) == 0x000298, "Member 'UContextMenuWidget::ActionListWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UContextMenuWidget;
 
 // Class BrickRigs.CouplingBrick
 // 0x0040 (0x0128 - 0x00E8)
@@ -8087,17 +7768,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CouplingBrick">();
+		STATIC_CLASS_IMPL("CouplingBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CouplingBrick")
 	}
 	static class UCouplingBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCouplingBrick>();
 	}
 };
-static_assert(alignof(UCouplingBrick) == 0x000008, "Wrong alignment on UCouplingBrick");
-static_assert(sizeof(UCouplingBrick) == 0x000128, "Wrong size on UCouplingBrick");
-static_assert(offsetof(UCouplingBrick, InputChannel) == 0x0000F8, "Member 'UCouplingBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(UCouplingBrick, CouplingMode) == 0x000120, "Member 'UCouplingBrick::CouplingMode' has a wrong offset!");
+DUMPER7_ASSERTS_UCouplingBrick;
 
 // Class BrickRigs.CurrentItemWidget
 // 0x0008 (0x0268 - 0x0260)
@@ -8117,15 +7799,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CurrentItemWidget">();
+		STATIC_CLASS_IMPL("CurrentItemWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CurrentItemWidget")
 	}
 	static class UCurrentItemWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCurrentItemWidget>();
 	}
 };
-static_assert(alignof(UCurrentItemWidget) == 0x000008, "Wrong alignment on UCurrentItemWidget");
-static_assert(sizeof(UCurrentItemWidget) == 0x000268, "Wrong size on UCurrentItemWidget");
+DUMPER7_ASSERTS_UCurrentItemWidget;
 
 // Class BrickRigs.DamageType_BuildingCollapse
 // 0x0000 (0x0040 - 0x0040)
@@ -8134,15 +7819,18 @@ class UDamageType_BuildingCollapse final : public UDamageType
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageType_BuildingCollapse">();
+		STATIC_CLASS_IMPL("DamageType_BuildingCollapse")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageType_BuildingCollapse")
 	}
 	static class UDamageType_BuildingCollapse* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageType_BuildingCollapse>();
 	}
 };
-static_assert(alignof(UDamageType_BuildingCollapse) == 0x000008, "Wrong alignment on UDamageType_BuildingCollapse");
-static_assert(sizeof(UDamageType_BuildingCollapse) == 0x000040, "Wrong size on UDamageType_BuildingCollapse");
+DUMPER7_ASSERTS_UDamageType_BuildingCollapse;
 
 // Class BrickRigs.DamageType_Collision
 // 0x0000 (0x0040 - 0x0040)
@@ -8151,15 +7839,18 @@ class UDamageType_Collision final : public UDamageType
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageType_Collision">();
+		STATIC_CLASS_IMPL("DamageType_Collision")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageType_Collision")
 	}
 	static class UDamageType_Collision* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageType_Collision>();
 	}
 };
-static_assert(alignof(UDamageType_Collision) == 0x000008, "Wrong alignment on UDamageType_Collision");
-static_assert(sizeof(UDamageType_Collision) == 0x000040, "Wrong size on UDamageType_Collision");
+DUMPER7_ASSERTS_UDamageType_Collision;
 
 // Class BrickRigs.DamageType_Fire
 // 0x0000 (0x0040 - 0x0040)
@@ -8168,15 +7859,18 @@ class UDamageType_Fire : public UDamageType
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageType_Fire">();
+		STATIC_CLASS_IMPL("DamageType_Fire")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageType_Fire")
 	}
 	static class UDamageType_Fire* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageType_Fire>();
 	}
 };
-static_assert(alignof(UDamageType_Fire) == 0x000008, "Wrong alignment on UDamageType_Fire");
-static_assert(sizeof(UDamageType_Fire) == 0x000040, "Wrong size on UDamageType_Fire");
+DUMPER7_ASSERTS_UDamageType_Fire;
 
 // Class BrickRigs.DamageType_Melee
 // 0x0000 (0x0040 - 0x0040)
@@ -8185,15 +7879,18 @@ class UDamageType_Melee final : public UDamageType
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageType_Melee">();
+		STATIC_CLASS_IMPL("DamageType_Melee")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageType_Melee")
 	}
 	static class UDamageType_Melee* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageType_Melee>();
 	}
 };
-static_assert(alignof(UDamageType_Melee) == 0x000008, "Wrong alignment on UDamageType_Melee");
-static_assert(sizeof(UDamageType_Melee) == 0x000040, "Wrong size on UDamageType_Melee");
+DUMPER7_ASSERTS_UDamageType_Melee;
 
 // Class BrickRigs.DashboardSliderWidget
 // 0x0010 (0x0270 - 0x0260)
@@ -8210,16 +7907,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DashboardSliderWidget">();
+		STATIC_CLASS_IMPL("DashboardSliderWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DashboardSliderWidget")
 	}
 	static class UDashboardSliderWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDashboardSliderWidget>();
 	}
 };
-static_assert(alignof(UDashboardSliderWidget) == 0x000008, "Wrong alignment on UDashboardSliderWidget");
-static_assert(sizeof(UDashboardSliderWidget) == 0x000270, "Wrong size on UDashboardSliderWidget");
-static_assert(offsetof(UDashboardSliderWidget, Slider) == 0x000268, "Member 'UDashboardSliderWidget::Slider' has a wrong offset!");
+DUMPER7_ASSERTS_UDashboardSliderWidget;
 
 // Class BrickRigs.DestructibleInstanceTemplate
 // 0x0038 (0x0068 - 0x0030)
@@ -8241,25 +7940,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DestructibleInstanceTemplate">();
+		STATIC_CLASS_IMPL("DestructibleInstanceTemplate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DestructibleInstanceTemplate")
 	}
 	static class UDestructibleInstanceTemplate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDestructibleInstanceTemplate>();
 	}
 };
-static_assert(alignof(UDestructibleInstanceTemplate) == 0x000008, "Wrong alignment on UDestructibleInstanceTemplate");
-static_assert(sizeof(UDestructibleInstanceTemplate) == 0x000068, "Wrong size on UDestructibleInstanceTemplate");
-static_assert(offsetof(UDestructibleInstanceTemplate, Mesh) == 0x000030, "Member 'UDestructibleInstanceTemplate::Mesh' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstanceTemplate, BrokenMesh) == 0x000038, "Member 'UDestructibleInstanceTemplate::BrokenMesh' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstanceTemplate, bSimulateBrokenMesh) == 0x000040, "Member 'UDestructibleInstanceTemplate::bSimulateBrokenMesh' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstanceTemplate, BrokenMeshMaxLinearSpeed) == 0x000044, "Member 'UDestructibleInstanceTemplate::BrokenMeshMaxLinearSpeed' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstanceTemplate, BrokenMeshMaxAngularSpeed) == 0x000048, "Member 'UDestructibleInstanceTemplate::BrokenMeshMaxAngularSpeed' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstanceTemplate, MinDamage) == 0x00004C, "Member 'UDestructibleInstanceTemplate::MinDamage' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstanceTemplate, MaxDrawDistance) == 0x000050, "Member 'UDestructibleInstanceTemplate::MaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstanceTemplate, MaxBreakEmitterSpawnDistance) == 0x000054, "Member 'UDestructibleInstanceTemplate::MaxBreakEmitterSpawnDistance' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstanceTemplate, BreakEmitter) == 0x000058, "Member 'UDestructibleInstanceTemplate::BreakEmitter' has a wrong offset!");
-static_assert(offsetof(UDestructibleInstanceTemplate, BreakSound) == 0x000060, "Member 'UDestructibleInstanceTemplate::BreakSound' has a wrong offset!");
+DUMPER7_ASSERTS_UDestructibleInstanceTemplate;
 
 // Class BrickRigs.DestructibleISMComponent
 // 0x0020 (0x0600 - 0x05E0)
@@ -8271,15 +7963,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DestructibleISMComponent">();
+		STATIC_CLASS_IMPL("DestructibleISMComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DestructibleISMComponent")
 	}
 	static class UDestructibleISMComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDestructibleISMComponent>();
 	}
 };
-static_assert(alignof(UDestructibleISMComponent) == 0x000010, "Wrong alignment on UDestructibleISMComponent");
-static_assert(sizeof(UDestructibleISMComponent) == 0x000600, "Wrong size on UDestructibleISMComponent");
+DUMPER7_ASSERTS_UDestructibleISMComponent;
 
 // Class BrickRigs.DestructibleHierarchicalISMComponent
 // 0x0020 (0x06F0 - 0x06D0)
@@ -8291,15 +7986,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DestructibleHierarchicalISMComponent">();
+		STATIC_CLASS_IMPL("DestructibleHierarchicalISMComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DestructibleHierarchicalISMComponent")
 	}
 	static class UDestructibleHierarchicalISMComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDestructibleHierarchicalISMComponent>();
 	}
 };
-static_assert(alignof(UDestructibleHierarchicalISMComponent) == 0x000010, "Wrong alignment on UDestructibleHierarchicalISMComponent");
-static_assert(sizeof(UDestructibleHierarchicalISMComponent) == 0x0006F0, "Wrong size on UDestructibleHierarchicalISMComponent");
+DUMPER7_ASSERTS_UDestructibleHierarchicalISMComponent;
 
 // Class BrickRigs.DamageType_Detonator
 // 0x0000 (0x0040 - 0x0040)
@@ -8308,15 +8006,18 @@ class UDamageType_Detonator final : public UDamageType_Fire
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageType_Detonator">();
+		STATIC_CLASS_IMPL("DamageType_Detonator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageType_Detonator")
 	}
 	static class UDamageType_Detonator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageType_Detonator>();
 	}
 };
-static_assert(alignof(UDamageType_Detonator) == 0x000008, "Wrong alignment on UDamageType_Detonator");
-static_assert(sizeof(UDamageType_Detonator) == 0x000040, "Wrong size on UDamageType_Detonator");
+DUMPER7_ASSERTS_UDamageType_Detonator;
 
 // Class BrickRigs.DetonatorBrickStaticInfo
 // 0x0018 (0x01E8 - 0x01D0)
@@ -8332,18 +8033,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DetonatorBrickStaticInfo">();
+		STATIC_CLASS_IMPL("DetonatorBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DetonatorBrickStaticInfo")
 	}
 	static class UDetonatorBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDetonatorBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UDetonatorBrickStaticInfo) == 0x000008, "Wrong alignment on UDetonatorBrickStaticInfo");
-static_assert(sizeof(UDetonatorBrickStaticInfo) == 0x0001E8, "Wrong size on UDetonatorBrickStaticInfo");
-static_assert(offsetof(UDetonatorBrickStaticInfo, Damage) == 0x0001D0, "Member 'UDetonatorBrickStaticInfo::Damage' has a wrong offset!");
-static_assert(offsetof(UDetonatorBrickStaticInfo, TriggerEmitter) == 0x0001D8, "Member 'UDetonatorBrickStaticInfo::TriggerEmitter' has a wrong offset!");
-static_assert(offsetof(UDetonatorBrickStaticInfo, MaxTriggerEmitterDrawDistance) == 0x0001E0, "Member 'UDetonatorBrickStaticInfo::MaxTriggerEmitterDrawDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UDetonatorBrickStaticInfo;
 
 // Class BrickRigs.DetonatorBrick
 // 0x0040 (0x0150 - 0x0110)
@@ -8359,16 +8060,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DetonatorBrick">();
+		STATIC_CLASS_IMPL("DetonatorBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DetonatorBrick")
 	}
 	static class UDetonatorBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDetonatorBrick>();
 	}
 };
-static_assert(alignof(UDetonatorBrick) == 0x000008, "Wrong alignment on UDetonatorBrick");
-static_assert(sizeof(UDetonatorBrick) == 0x000150, "Wrong size on UDetonatorBrick");
-static_assert(offsetof(UDetonatorBrick, InputChannel) == 0x000128, "Member 'UDetonatorBrick::InputChannel' has a wrong offset!");
+DUMPER7_ASSERTS_UDetonatorBrick;
 
 // Class BrickRigs.DisplayBrick
 // 0x0038 (0x0148 - 0x0110)
@@ -8384,18 +8087,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DisplayBrick">();
+		STATIC_CLASS_IMPL("DisplayBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DisplayBrick")
 	}
 	static class UDisplayBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDisplayBrick>();
 	}
 };
-static_assert(alignof(UDisplayBrick) == 0x000008, "Wrong alignment on UDisplayBrick");
-static_assert(sizeof(UDisplayBrick) == 0x000148, "Wrong size on UDisplayBrick");
-static_assert(offsetof(UDisplayBrick, InputChannel) == 0x000118, "Member 'UDisplayBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(UDisplayBrick, DisplayColor) == 0x000140, "Member 'UDisplayBrick::DisplayColor' has a wrong offset!");
-static_assert(offsetof(UDisplayBrick, NumFractionalDigits) == 0x000144, "Member 'UDisplayBrick::NumFractionalDigits' has a wrong offset!");
+DUMPER7_ASSERTS_UDisplayBrick;
 
 // Class BrickRigs.DragStrip
 // 0x0090 (0x02B0 - 0x0220)
@@ -8431,27 +8134,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DragStrip">();
+		STATIC_CLASS_IMPL("DragStrip")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DragStrip")
 	}
 	static class ADragStrip* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADragStrip>();
 	}
 };
-static_assert(alignof(ADragStrip) == 0x000008, "Wrong alignment on ADragStrip");
-static_assert(sizeof(ADragStrip) == 0x0002B0, "Wrong size on ADragStrip");
-static_assert(offsetof(ADragStrip, RaceState) == 0x00022C, "Member 'ADragStrip::RaceState' has a wrong offset!");
-static_assert(offsetof(ADragStrip, LeftLaneState) == 0x000230, "Member 'ADragStrip::LeftLaneState' has a wrong offset!");
-static_assert(offsetof(ADragStrip, RightLaneState) == 0x000248, "Member 'ADragStrip::RightLaneState' has a wrong offset!");
-static_assert(offsetof(ADragStrip, TreeMID) == 0x000260, "Member 'ADragStrip::TreeMID' has a wrong offset!");
-static_assert(offsetof(ADragStrip, InteractionComponent) == 0x000270, "Member 'ADragStrip::InteractionComponent' has a wrong offset!");
-static_assert(offsetof(ADragStrip, StartLine) == 0x000278, "Member 'ADragStrip::StartLine' has a wrong offset!");
-static_assert(offsetof(ADragStrip, FinishLines) == 0x000280, "Member 'ADragStrip::FinishLines' has a wrong offset!");
-static_assert(offsetof(ADragStrip, TrackBounds) == 0x000290, "Member 'ADragStrip::TrackBounds' has a wrong offset!");
-static_assert(offsetof(ADragStrip, NumTreeLights) == 0x000298, "Member 'ADragStrip::NumTreeLights' has a wrong offset!");
-static_assert(offsetof(ADragStrip, PerLightDelay) == 0x00029C, "Member 'ADragStrip::PerLightDelay' has a wrong offset!");
-static_assert(offsetof(ADragStrip, RaceTimerRight) == 0x0002A0, "Member 'ADragStrip::RaceTimerRight' has a wrong offset!");
-static_assert(offsetof(ADragStrip, RaceTimerLeft) == 0x0002A8, "Member 'ADragStrip::RaceTimerLeft' has a wrong offset!");
+DUMPER7_ASSERTS_ADragStrip;
 
 // Class BrickRigs.VehicleInputComponent
 // 0x00A0 (0x02B0 - 0x0210)
@@ -8530,16 +8224,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VehicleInputComponent">();
+		STATIC_CLASS_IMPL("VehicleInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VehicleInputComponent")
 	}
 	static class UVehicleInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVehicleInputComponent>();
 	}
 };
-static_assert(alignof(UVehicleInputComponent) == 0x000008, "Wrong alignment on UVehicleInputComponent");
-static_assert(sizeof(UVehicleInputComponent) == 0x0002B0, "Wrong size on UVehicleInputComponent");
-static_assert(offsetof(UVehicleInputComponent, VehicleSeat) == 0x000250, "Member 'UVehicleInputComponent::VehicleSeat' has a wrong offset!");
+DUMPER7_ASSERTS_UVehicleInputComponent;
 
 // Class BrickRigs.DriverInputComponent
 // 0x0008 (0x02B8 - 0x02B0)
@@ -8558,15 +8254,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DriverInputComponent">();
+		STATIC_CLASS_IMPL("DriverInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DriverInputComponent")
 	}
 	static class UDriverInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDriverInputComponent>();
 	}
 };
-static_assert(alignof(UDriverInputComponent) == 0x000008, "Wrong alignment on UDriverInputComponent");
-static_assert(sizeof(UDriverInputComponent) == 0x0002B8, "Wrong size on UDriverInputComponent");
+DUMPER7_ASSERTS_UDriverInputComponent;
 
 // Class BrickRigs.Elevator
 // 0x0088 (0x02A8 - 0x0220)
@@ -8600,24 +8299,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Elevator">();
+		STATIC_CLASS_IMPL("Elevator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Elevator")
 	}
 	static class AElevator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AElevator>();
 	}
 };
-static_assert(alignof(AElevator) == 0x000008, "Wrong alignment on AElevator");
-static_assert(sizeof(AElevator) == 0x0002A8, "Wrong size on AElevator");
-static_assert(offsetof(AElevator, RepElevatorState) == 0x00022C, "Member 'AElevator::RepElevatorState' has a wrong offset!");
-static_assert(offsetof(AElevator, ElevatorMesh) == 0x000270, "Member 'AElevator::ElevatorMesh' has a wrong offset!");
-static_assert(offsetof(AElevator, AudioComponent) == 0x000278, "Member 'AElevator::AudioComponent' has a wrong offset!");
-static_assert(offsetof(AElevator, BaseIC) == 0x000280, "Member 'AElevator::BaseIC' has a wrong offset!");
-static_assert(offsetof(AElevator, TopIC) == 0x000288, "Member 'AElevator::TopIC' has a wrong offset!");
-static_assert(offsetof(AElevator, PlatformIC) == 0x000290, "Member 'AElevator::PlatformIC' has a wrong offset!");
-static_assert(offsetof(AElevator, MaxHeight) == 0x000298, "Member 'AElevator::MaxHeight' has a wrong offset!");
-static_assert(offsetof(AElevator, MaxSpeed) == 0x00029C, "Member 'AElevator::MaxSpeed' has a wrong offset!");
-static_assert(offsetof(AElevator, Acceleration) == 0x0002A0, "Member 'AElevator::Acceleration' has a wrong offset!");
+DUMPER7_ASSERTS_AElevator;
 
 // Class BrickRigs.EquipAction
 // 0x0000 (0x0098 - 0x0098)
@@ -8626,15 +8319,18 @@ class UEquipAction final : public UItemAction
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EquipAction">();
+		STATIC_CLASS_IMPL("EquipAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EquipAction")
 	}
 	static class UEquipAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEquipAction>();
 	}
 };
-static_assert(alignof(UEquipAction) == 0x000008, "Wrong alignment on UEquipAction");
-static_assert(sizeof(UEquipAction) == 0x000098, "Wrong size on UEquipAction");
+DUMPER7_ASSERTS_UEquipAction;
 
 // Class BrickRigs.ExhaustBrick
 // 0x0078 (0x0188 - 0x0110)
@@ -8654,21 +8350,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExhaustBrick">();
+		STATIC_CLASS_IMPL("ExhaustBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExhaustBrick")
 	}
 	static class UExhaustBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UExhaustBrick>();
 	}
 };
-static_assert(alignof(UExhaustBrick) == 0x000008, "Wrong alignment on UExhaustBrick");
-static_assert(sizeof(UExhaustBrick) == 0x000188, "Wrong size on UExhaustBrick");
-static_assert(offsetof(UExhaustBrick, ConnectedMotor) == 0x000118, "Member 'UExhaustBrick::ConnectedMotor' has a wrong offset!");
-static_assert(offsetof(UExhaustBrick, InputChannel) == 0x000148, "Member 'UExhaustBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(UExhaustBrick, SizeScale) == 0x000170, "Member 'UExhaustBrick::SizeScale' has a wrong offset!");
-static_assert(offsetof(UExhaustBrick, SpawnScale) == 0x000174, "Member 'UExhaustBrick::SpawnScale' has a wrong offset!");
-static_assert(offsetof(UExhaustBrick, SmokeColor) == 0x000178, "Member 'UExhaustBrick::SmokeColor' has a wrong offset!");
-static_assert(offsetof(UExhaustBrick, ExhaustEffect) == 0x000180, "Member 'UExhaustBrick::ExhaustEffect' has a wrong offset!");
+DUMPER7_ASSERTS_UExhaustBrick;
 
 // Class BrickRigs.Explosion
 // 0x0050 (0x0270 - 0x0220)
@@ -8690,23 +8383,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Explosion">();
+		STATIC_CLASS_IMPL("Explosion")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Explosion")
 	}
 	static class AExplosion* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AExplosion>();
 	}
 };
-static_assert(alignof(AExplosion) == 0x000008, "Wrong alignment on AExplosion");
-static_assert(sizeof(AExplosion) == 0x000270, "Wrong size on AExplosion");
-static_assert(offsetof(AExplosion, ExplosiveMaterial) == 0x000228, "Member 'AExplosion::ExplosiveMaterial' has a wrong offset!");
-static_assert(offsetof(AExplosion, ExplosiveVolume) == 0x000230, "Member 'AExplosion::ExplosiveVolume' has a wrong offset!");
-static_assert(offsetof(AExplosion, ComponentsToIgnore) == 0x000238, "Member 'AExplosion::ComponentsToIgnore' has a wrong offset!");
-static_assert(offsetof(AExplosion, DamageCauser) == 0x000248, "Member 'AExplosion::DamageCauser' has a wrong offset!");
-static_assert(offsetof(AExplosion, ParticleSystemComponent) == 0x000250, "Member 'AExplosion::ParticleSystemComponent' has a wrong offset!");
-static_assert(offsetof(AExplosion, AudioComponent) == 0x000258, "Member 'AExplosion::AudioComponent' has a wrong offset!");
-static_assert(offsetof(AExplosion, CameraShakeEffect) == 0x000260, "Member 'AExplosion::CameraShakeEffect' has a wrong offset!");
-static_assert(offsetof(AExplosion, MaxCameraShakeScaleRadius) == 0x000268, "Member 'AExplosion::MaxCameraShakeScaleRadius' has a wrong offset!");
+DUMPER7_ASSERTS_AExplosion;
 
 // Class BrickRigs.ExplosiveItem
 // 0x0008 (0x0278 - 0x0270)
@@ -8727,16 +8415,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExplosiveItem">();
+		STATIC_CLASS_IMPL("ExplosiveItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExplosiveItem")
 	}
 	static class AExplosiveItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AExplosiveItem>();
 	}
 };
-static_assert(alignof(AExplosiveItem) == 0x000008, "Wrong alignment on AExplosiveItem");
-static_assert(sizeof(AExplosiveItem) == 0x000278, "Wrong size on AExplosiveItem");
-static_assert(offsetof(AExplosiveItem, ExplosiveState) == 0x000270, "Member 'AExplosiveItem::ExplosiveState' has a wrong offset!");
+DUMPER7_ASSERTS_AExplosiveItem;
 
 // Class BrickRigs.SensorBrickBaseStaticInfo
 // 0x0000 (0x01D0 - 0x01D0)
@@ -8745,15 +8435,18 @@ class USensorBrickBaseStaticInfo : public UScalableBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SensorBrickBaseStaticInfo">();
+		STATIC_CLASS_IMPL("SensorBrickBaseStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SensorBrickBaseStaticInfo")
 	}
 	static class USensorBrickBaseStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USensorBrickBaseStaticInfo>();
 	}
 };
-static_assert(alignof(USensorBrickBaseStaticInfo) == 0x000008, "Wrong alignment on USensorBrickBaseStaticInfo");
-static_assert(sizeof(USensorBrickBaseStaticInfo) == 0x0001D0, "Wrong size on USensorBrickBaseStaticInfo");
+DUMPER7_ASSERTS_USensorBrickBaseStaticInfo;
 
 // Class BrickRigs.SensorBrickStaticInfo
 // 0x0000 (0x01D0 - 0x01D0)
@@ -8762,15 +8455,18 @@ class USensorBrickStaticInfo : public USensorBrickBaseStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SensorBrickStaticInfo">();
+		STATIC_CLASS_IMPL("SensorBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SensorBrickStaticInfo")
 	}
 	static class USensorBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USensorBrickStaticInfo>();
 	}
 };
-static_assert(alignof(USensorBrickStaticInfo) == 0x000008, "Wrong alignment on USensorBrickStaticInfo");
-static_assert(sizeof(USensorBrickStaticInfo) == 0x0001D0, "Wrong size on USensorBrickStaticInfo");
+DUMPER7_ASSERTS_USensorBrickStaticInfo;
 
 // Class BrickRigs.ExplosiveMaterial
 // 0x0060 (0x0088 - 0x0028)
@@ -8795,25 +8491,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExplosiveMaterial">();
+		STATIC_CLASS_IMPL("ExplosiveMaterial")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExplosiveMaterial")
 	}
 	static class UExplosiveMaterial* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UExplosiveMaterial>();
 	}
 };
-static_assert(alignof(UExplosiveMaterial) == 0x000008, "Wrong alignment on UExplosiveMaterial");
-static_assert(sizeof(UExplosiveMaterial) == 0x000088, "Wrong size on UExplosiveMaterial");
-static_assert(offsetof(UExplosiveMaterial, DisplayName) == 0x000030, "Member 'UExplosiveMaterial::DisplayName' has a wrong offset!");
-static_assert(offsetof(UExplosiveMaterial, Price) == 0x000048, "Member 'UExplosiveMaterial::Price' has a wrong offset!");
-static_assert(offsetof(UExplosiveMaterial, ImpactResistance) == 0x00004C, "Member 'UExplosiveMaterial::ImpactResistance' has a wrong offset!");
-static_assert(offsetof(UExplosiveMaterial, DamageResistance) == 0x000050, "Member 'UExplosiveMaterial::DamageResistance' has a wrong offset!");
-static_assert(offsetof(UExplosiveMaterial, VolumeIncrease) == 0x000054, "Member 'UExplosiveMaterial::VolumeIncrease' has a wrong offset!");
-static_assert(offsetof(UExplosiveMaterial, DamageScale) == 0x000058, "Member 'UExplosiveMaterial::DamageScale' has a wrong offset!");
-static_assert(offsetof(UExplosiveMaterial, DamageType) == 0x000060, "Member 'UExplosiveMaterial::DamageType' has a wrong offset!");
-static_assert(offsetof(UExplosiveMaterial, ExplosionClass) == 0x000070, "Member 'UExplosiveMaterial::ExplosionClass' has a wrong offset!");
-static_assert(offsetof(UExplosiveMaterial, ExplosionEmitter) == 0x000078, "Member 'UExplosiveMaterial::ExplosionEmitter' has a wrong offset!");
-static_assert(offsetof(UExplosiveMaterial, ExplosionSound) == 0x000080, "Member 'UExplosiveMaterial::ExplosionSound' has a wrong offset!");
+DUMPER7_ASSERTS_UExplosiveMaterial;
 
 // Class BrickRigs.ExtinguishAction
 // 0x0000 (0x0098 - 0x0098)
@@ -8822,15 +8511,18 @@ class UExtinguishAction final : public UItemAction
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExtinguishAction">();
+		STATIC_CLASS_IMPL("ExtinguishAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExtinguishAction")
 	}
 	static class UExtinguishAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UExtinguishAction>();
 	}
 };
-static_assert(alignof(UExtinguishAction) == 0x000008, "Wrong alignment on UExtinguishAction");
-static_assert(sizeof(UExtinguishAction) == 0x000098, "Wrong size on UExtinguishAction");
+DUMPER7_ASSERTS_UExtinguishAction;
 
 // Class BrickRigs.PagedListWidget
 // 0x00A0 (0x0300 - 0x0260)
@@ -8869,27 +8561,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PagedListWidget">();
+		STATIC_CLASS_IMPL("PagedListWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PagedListWidget")
 	}
 	static class UPagedListWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPagedListWidget>();
 	}
 };
-static_assert(alignof(UPagedListWidget) == 0x000008, "Wrong alignment on UPagedListWidget");
-static_assert(sizeof(UPagedListWidget) == 0x000300, "Wrong size on UPagedListWidget");
-static_assert(offsetof(UPagedListWidget, EntryWidgets) == 0x000268, "Member 'UPagedListWidget::EntryWidgets' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, ScrollBox) == 0x000290, "Member 'UPagedListWidget::ScrollBox' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, PageSelector) == 0x000298, "Member 'UPagedListWidget::PageSelector' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, EntriesPanel) == 0x0002A0, "Member 'UPagedListWidget::EntriesPanel' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, PropertiesPanel) == 0x0002A8, "Member 'UPagedListWidget::PropertiesPanel' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, SelectedEntryHeaderWidget) == 0x0002B0, "Member 'UPagedListWidget::SelectedEntryHeaderWidget' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, EntryWidgetClass) == 0x0002B8, "Member 'UPagedListWidget::EntryWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, NumEntriesPerRow) == 0x0002C0, "Member 'UPagedListWidget::NumEntriesPerRow' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, NumEntriesPerPage) == 0x0002C4, "Member 'UPagedListWidget::NumEntriesPerPage' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, bUseAbsoluteEntryIndices) == 0x0002C8, "Member 'UPagedListWidget::bUseAbsoluteEntryIndices' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, OnLoadPageDelegate) == 0x0002E0, "Member 'UPagedListWidget::OnLoadPageDelegate' has a wrong offset!");
-static_assert(offsetof(UPagedListWidget, OnEntrySelectedDelegate) == 0x0002F0, "Member 'UPagedListWidget::OnEntrySelectedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPagedListWidget;
 
 // Class BrickRigs.FadingPanelWidget
 // 0x0028 (0x0288 - 0x0260)
@@ -8916,18 +8599,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FadingPanelWidget">();
+		STATIC_CLASS_IMPL("FadingPanelWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FadingPanelWidget")
 	}
 	static class UFadingPanelWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFadingPanelWidget>();
 	}
 };
-static_assert(alignof(UFadingPanelWidget) == 0x000008, "Wrong alignment on UFadingPanelWidget");
-static_assert(sizeof(UFadingPanelWidget) == 0x000288, "Wrong size on UFadingPanelWidget");
-static_assert(offsetof(UFadingPanelWidget, ContentSlot) == 0x000268, "Member 'UFadingPanelWidget::ContentSlot' has a wrong offset!");
-static_assert(offsetof(UFadingPanelWidget, FadeTime) == 0x000270, "Member 'UFadingPanelWidget::FadeTime' has a wrong offset!");
-static_assert(offsetof(UFadingPanelWidget, OnFadedOutDelegate) == 0x000278, "Member 'UFadingPanelWidget::OnFadedOutDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UFadingPanelWidget;
 
 // Class BrickRigs.FenceElement
 // 0x0040 (0x0070 - 0x0030)
@@ -8947,22 +8630,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FenceElement">();
+		STATIC_CLASS_IMPL("FenceElement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FenceElement")
 	}
 	static class UFenceElement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFenceElement>();
 	}
 };
-static_assert(alignof(UFenceElement) == 0x000008, "Wrong alignment on UFenceElement");
-static_assert(sizeof(UFenceElement) == 0x000070, "Wrong size on UFenceElement");
-static_assert(offsetof(UFenceElement, Template) == 0x000030, "Member 'UFenceElement::Template' has a wrong offset!");
-static_assert(offsetof(UFenceElement, ForwardAxis) == 0x000038, "Member 'UFenceElement::ForwardAxis' has a wrong offset!");
-static_assert(offsetof(UFenceElement, Spacing) == 0x00003C, "Member 'UFenceElement::Spacing' has a wrong offset!");
-static_assert(offsetof(UFenceElement, LocationJitter) == 0x000040, "Member 'UFenceElement::LocationJitter' has a wrong offset!");
-static_assert(offsetof(UFenceElement, RotationJitter) == 0x00004C, "Member 'UFenceElement::RotationJitter' has a wrong offset!");
-static_assert(offsetof(UFenceElement, ScaleJitter) == 0x000058, "Member 'UFenceElement::ScaleJitter' has a wrong offset!");
-static_assert(offsetof(UFenceElement, StretchRange) == 0x000064, "Member 'UFenceElement::StretchRange' has a wrong offset!");
+DUMPER7_ASSERTS_UFenceElement;
 
 // Class BrickRigs.PagedListEntryWidget
 // 0x0028 (0x0288 - 0x0260)
@@ -8982,16 +8661,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PagedListEntryWidget">();
+		STATIC_CLASS_IMPL("PagedListEntryWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PagedListEntryWidget")
 	}
 	static class UPagedListEntryWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPagedListEntryWidget>();
 	}
 };
-static_assert(alignof(UPagedListEntryWidget) == 0x000008, "Wrong alignment on UPagedListEntryWidget");
-static_assert(sizeof(UPagedListEntryWidget) == 0x000288, "Wrong size on UPagedListEntryWidget");
-static_assert(offsetof(UPagedListEntryWidget, Button) == 0x000270, "Member 'UPagedListEntryWidget::Button' has a wrong offset!");
+DUMPER7_ASSERTS_UPagedListEntryWidget;
 
 // Class BrickRigs.ServerWidget
 // 0x0198 (0x0420 - 0x0288)
@@ -9012,22 +8693,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ServerWidget">();
+		STATIC_CLASS_IMPL("ServerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ServerWidget")
 	}
 	static class UServerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UServerWidget>();
 	}
 };
-static_assert(alignof(UServerWidget) == 0x000008, "Wrong alignment on UServerWidget");
-static_assert(sizeof(UServerWidget) == 0x000420, "Wrong size on UServerWidget");
-static_assert(offsetof(UServerWidget, Entry) == 0x000288, "Member 'UServerWidget::Entry' has a wrong offset!");
-static_assert(offsetof(UServerWidget, NameTextBlock) == 0x0003F0, "Member 'UServerWidget::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UServerWidget, MapTextBlock) == 0x0003F8, "Member 'UServerWidget::MapTextBlock' has a wrong offset!");
-static_assert(offsetof(UServerWidget, GameModeTextBlock) == 0x000400, "Member 'UServerWidget::GameModeTextBlock' has a wrong offset!");
-static_assert(offsetof(UServerWidget, PlayerCountTextBlock) == 0x000408, "Member 'UServerWidget::PlayerCountTextBlock' has a wrong offset!");
-static_assert(offsetof(UServerWidget, PingIndicator) == 0x000410, "Member 'UServerWidget::PingIndicator' has a wrong offset!");
-static_assert(offsetof(UServerWidget, FrameRateIndicator) == 0x000418, "Member 'UServerWidget::FrameRateIndicator' has a wrong offset!");
+DUMPER7_ASSERTS_UServerWidget;
 
 // Class BrickRigs.FenceManager
 // 0x0008 (0x0228 - 0x0220)
@@ -9039,16 +8716,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FenceManager">();
+		STATIC_CLASS_IMPL("FenceManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FenceManager")
 	}
 	static class AFenceManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFenceManager>();
 	}
 };
-static_assert(alignof(AFenceManager) == 0x000008, "Wrong alignment on AFenceManager");
-static_assert(sizeof(AFenceManager) == 0x000228, "Wrong size on AFenceManager");
-static_assert(offsetof(AFenceManager, InstancesComponent) == 0x000220, "Member 'AFenceManager::InstancesComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AFenceManager;
 
 // Class BrickRigs.Fence
 // 0x0000 (0x0220 - 0x0220)
@@ -9057,15 +8736,18 @@ class AFence final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Fence">();
+		STATIC_CLASS_IMPL("Fence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Fence")
 	}
 	static class AFence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFence>();
 	}
 };
-static_assert(alignof(AFence) == 0x000008, "Wrong alignment on AFence");
-static_assert(sizeof(AFence) == 0x000220, "Wrong size on AFence");
+DUMPER7_ASSERTS_AFence;
 
 // Class BrickRigs.SeatBrick
 // 0x0160 (0x0248 - 0x00E8)
@@ -9103,19 +8785,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SeatBrick">();
+		STATIC_CLASS_IMPL("SeatBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SeatBrick")
 	}
 	static class USeatBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USeatBrick>();
 	}
 };
-static_assert(alignof(USeatBrick) == 0x000008, "Wrong alignment on USeatBrick");
-static_assert(sizeof(USeatBrick) == 0x000248, "Wrong size on USeatBrick");
-static_assert(offsetof(USeatBrick, Character) == 0x0000F0, "Member 'USeatBrick::Character' has a wrong offset!");
-static_assert(offsetof(USeatBrick, RepVehicleInput) == 0x000118, "Member 'USeatBrick::RepVehicleInput' has a wrong offset!");
-static_assert(offsetof(USeatBrick, SeatName) == 0x0001B0, "Member 'USeatBrick::SeatName' has a wrong offset!");
-static_assert(offsetof(USeatBrick, ExitLocation) == 0x0001C0, "Member 'USeatBrick::ExitLocation' has a wrong offset!");
+DUMPER7_ASSERTS_USeatBrick;
 
 // Class BrickRigs.Firearm
 // 0x0040 (0x02B0 - 0x0270)
@@ -9156,17 +8837,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Firearm">();
+		STATIC_CLASS_IMPL("Firearm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Firearm")
 	}
 	static class AFirearm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFirearm>();
 	}
 };
-static_assert(alignof(AFirearm) == 0x000008, "Wrong alignment on AFirearm");
-static_assert(sizeof(AFirearm) == 0x0002B0, "Wrong size on AFirearm");
-static_assert(offsetof(AFirearm, FirearmComponent) == 0x000288, "Member 'AFirearm::FirearmComponent' has a wrong offset!");
-static_assert(offsetof(AFirearm, ShellPSC) == 0x000290, "Member 'AFirearm::ShellPSC' has a wrong offset!");
+DUMPER7_ASSERTS_AFirearm;
 
 // Class BrickRigs.ItemAnimInstance
 // 0x0000 (0x02C0 - 0x02C0)
@@ -9175,15 +8857,18 @@ class UItemAnimInstance : public UAnimInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ItemAnimInstance">();
+		STATIC_CLASS_IMPL("ItemAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemAnimInstance")
 	}
 	static class UItemAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemAnimInstance>();
 	}
 };
-static_assert(alignof(UItemAnimInstance) == 0x000010, "Wrong alignment on UItemAnimInstance");
-static_assert(sizeof(UItemAnimInstance) == 0x0002C0, "Wrong size on UItemAnimInstance");
+DUMPER7_ASSERTS_UItemAnimInstance;
 
 // Class BrickRigs.ObjectPropertyItemInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -9192,7 +8877,11 @@ class IObjectPropertyItemInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ObjectPropertyItemInterface">();
+		STATIC_CLASS_IMPL("ObjectPropertyItemInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ObjectPropertyItemInterface")
 	}
 	static class IObjectPropertyItemInterface* GetDefaultObj()
 	{
@@ -9208,8 +8897,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IObjectPropertyItemInterface) == 0x000001, "Wrong alignment on IObjectPropertyItemInterface");
-static_assert(sizeof(IObjectPropertyItemInterface) == 0x000001, "Wrong size on IObjectPropertyItemInterface");
+DUMPER7_ASSERTS_IObjectPropertyItemInterface;
 
 // Class BrickRigs.FirearmAnimInstance
 // 0x0000 (0x02C0 - 0x02C0)
@@ -9218,15 +8906,18 @@ class UFirearmAnimInstance final : public UItemAnimInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FirearmAnimInstance">();
+		STATIC_CLASS_IMPL("FirearmAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FirearmAnimInstance")
 	}
 	static class UFirearmAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFirearmAnimInstance>();
 	}
 };
-static_assert(alignof(UFirearmAnimInstance) == 0x000010, "Wrong alignment on UFirearmAnimInstance");
-static_assert(sizeof(UFirearmAnimInstance) == 0x0002C0, "Wrong size on UFirearmAnimInstance");
+DUMPER7_ASSERTS_UFirearmAnimInstance;
 
 // Class BrickRigs.FirearmComponent
 // 0x0230 (0x02E0 - 0x00B0)
@@ -9248,20 +8939,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FirearmComponent">();
+		STATIC_CLASS_IMPL("FirearmComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FirearmComponent")
 	}
 	static class UFirearmComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFirearmComponent>();
 	}
 };
-static_assert(alignof(UFirearmComponent) == 0x000008, "Wrong alignment on UFirearmComponent");
-static_assert(sizeof(UFirearmComponent) == 0x0002E0, "Wrong size on UFirearmComponent");
-static_assert(offsetof(UFirearmComponent, FirearmState) == 0x0000D8, "Member 'UFirearmComponent::FirearmState' has a wrong offset!");
-static_assert(offsetof(UFirearmComponent, FireAC) == 0x000150, "Member 'UFirearmComponent::FireAC' has a wrong offset!");
-static_assert(offsetof(UFirearmComponent, FirePSC) == 0x000158, "Member 'UFirearmComponent::FirePSC' has a wrong offset!");
-static_assert(offsetof(UFirearmComponent, FireEmitter) == 0x000160, "Member 'UFirearmComponent::FireEmitter' has a wrong offset!");
-static_assert(offsetof(UFirearmComponent, FireSound) == 0x000168, "Member 'UFirearmComponent::FireSound' has a wrong offset!");
+DUMPER7_ASSERTS_UFirearmComponent;
 
 // Class BrickRigs.PlacableObjectInputComponent
 // 0x0018 (0x0198 - 0x0180)
@@ -9276,15 +8965,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlacableObjectInputComponent">();
+		STATIC_CLASS_IMPL("PlacableObjectInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlacableObjectInputComponent")
 	}
 	static class UPlacableObjectInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlacableObjectInputComponent>();
 	}
 };
-static_assert(alignof(UPlacableObjectInputComponent) == 0x000008, "Wrong alignment on UPlacableObjectInputComponent");
-static_assert(sizeof(UPlacableObjectInputComponent) == 0x000198, "Wrong size on UPlacableObjectInputComponent");
+DUMPER7_ASSERTS_UPlacableObjectInputComponent;
 
 // Class BrickRigs.FirearmInventoryComponent
 // 0x0000 (0x0298 - 0x0298)
@@ -9293,15 +8985,18 @@ class UFirearmInventoryComponent final : public UInventoryComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FirearmInventoryComponent">();
+		STATIC_CLASS_IMPL("FirearmInventoryComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FirearmInventoryComponent")
 	}
 	static class UFirearmInventoryComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFirearmInventoryComponent>();
 	}
 };
-static_assert(alignof(UFirearmInventoryComponent) == 0x000008, "Wrong alignment on UFirearmInventoryComponent");
-static_assert(sizeof(UFirearmInventoryComponent) == 0x000298, "Wrong size on UFirearmInventoryComponent");
+DUMPER7_ASSERTS_UFirearmInventoryComponent;
 
 // Class BrickRigs.FirearmStaticInfo
 // 0x0480 (0x0810 - 0x0390)
@@ -9347,42 +9042,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FirearmStaticInfo">();
+		STATIC_CLASS_IMPL("FirearmStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FirearmStaticInfo")
 	}
 	static class UFirearmStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFirearmStaticInfo>();
 	}
 };
-static_assert(alignof(UFirearmStaticInfo) == 0x000010, "Wrong alignment on UFirearmStaticInfo");
-static_assert(sizeof(UFirearmStaticInfo) == 0x000810, "Wrong size on UFirearmStaticInfo");
-static_assert(offsetof(UFirearmStaticInfo, FirearmProperties) == 0x000398, "Member 'UFirearmStaticInfo::FirearmProperties' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, BulletsBoneName) == 0x000428, "Member 'UFirearmStaticInfo::BulletsBoneName' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, bCanAimWhileCocking) == 0x000430, "Member 'UFirearmStaticInfo::bCanAimWhileCocking' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, HorizontalRecoilRange) == 0x000434, "Member 'UFirearmStaticInfo::HorizontalRecoilRange' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, VerticalRecoilRange) == 0x00043C, "Member 'UFirearmStaticInfo::VerticalRecoilRange' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, RecoilOffsetDeviation) == 0x000444, "Member 'UFirearmStaticInfo::RecoilOffsetDeviation' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, RecoilRotationDeviation) == 0x000450, "Member 'UFirearmStaticInfo::RecoilRotationDeviation' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, RecoilDuration) == 0x00045C, "Member 'UFirearmStaticInfo::RecoilDuration' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, FiringCameraShake) == 0x000460, "Member 'UFirearmStaticInfo::FiringCameraShake' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, CameraShakeScale) == 0x000468, "Member 'UFirearmStaticInfo::CameraShakeScale' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, SightRailLength) == 0x000470, "Member 'UFirearmStaticInfo::SightRailLength' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, AttachmentTags) == 0x000478, "Member 'UFirearmStaticInfo::AttachmentTags' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, AttachmentAddedSound) == 0x000498, "Member 'UFirearmStaticInfo::AttachmentAddedSound' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, PaintLayerIndex) == 0x0004C0, "Member 'UFirearmStaticInfo::PaintLayerIndex' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, ShellEmitter) == 0x0004C8, "Member 'UFirearmStaticInfo::ShellEmitter' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, ShellScale) == 0x0004F0, "Member 'UFirearmStaticInfo::ShellScale' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, ShellEjectionVelocity) == 0x0004FC, "Member 'UFirearmStaticInfo::ShellEjectionVelocity' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, ShellEjectionAngularVelocity) == 0x000508, "Member 'UFirearmStaticInfo::ShellEjectionAngularVelocity' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, ManualShellEjectionSpeed) == 0x000514, "Member 'UFirearmStaticInfo::ManualShellEjectionSpeed' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, ShellEjectionSpeedDeviation) == 0x000518, "Member 'UFirearmStaticInfo::ShellEjectionSpeedDeviation' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, SwitchFireModeSound) == 0x000520, "Member 'UFirearmStaticInfo::SwitchFireModeSound' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, FireAnimation) == 0x000528, "Member 'UFirearmStaticInfo::FireAnimation' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, ReloadAnimation) == 0x000620, "Member 'UFirearmStaticInfo::ReloadAnimation' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, CockAnimation) == 0x0006F0, "Member 'UFirearmStaticInfo::CockAnimation' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, SightPoseOverrides) == 0x0007C0, "Member 'UFirearmStaticInfo::SightPoseOverrides' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, HammerCockedTransform) == 0x0007D0, "Member 'UFirearmStaticInfo::HammerCockedTransform' has a wrong offset!");
-static_assert(offsetof(UFirearmStaticInfo, BoltLockedPoseOverrides) == 0x000800, "Member 'UFirearmStaticInfo::BoltLockedPoseOverrides' has a wrong offset!");
+DUMPER7_ASSERTS_UFirearmStaticInfo;
 
 // Class BrickRigs.PaintAttachmentStaticInfo
 // 0x0000 (0x0390 - 0x0390)
@@ -9391,15 +9062,18 @@ class UPaintAttachmentStaticInfo : public UAttachmentStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaintAttachmentStaticInfo">();
+		STATIC_CLASS_IMPL("PaintAttachmentStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaintAttachmentStaticInfo")
 	}
 	static class UPaintAttachmentStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaintAttachmentStaticInfo>();
 	}
 };
-static_assert(alignof(UPaintAttachmentStaticInfo) == 0x000010, "Wrong alignment on UPaintAttachmentStaticInfo");
-static_assert(sizeof(UPaintAttachmentStaticInfo) == 0x000390, "Wrong size on UPaintAttachmentStaticInfo");
+DUMPER7_ASSERTS_UPaintAttachmentStaticInfo;
 
 // Class BrickRigs.FireExtinguisherStaticInfo
 // 0x0150 (0x04E0 - 0x0390)
@@ -9415,18 +9089,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FireExtinguisherStaticInfo">();
+		STATIC_CLASS_IMPL("FireExtinguisherStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FireExtinguisherStaticInfo")
 	}
 	static class UFireExtinguisherStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFireExtinguisherStaticInfo>();
 	}
 };
-static_assert(alignof(UFireExtinguisherStaticInfo) == 0x000010, "Wrong alignment on UFireExtinguisherStaticInfo");
-static_assert(sizeof(UFireExtinguisherStaticInfo) == 0x0004E0, "Wrong size on UFireExtinguisherStaticInfo");
-static_assert(offsetof(UFireExtinguisherStaticInfo, ExtinguisherProperties) == 0x000390, "Member 'UFireExtinguisherStaticInfo::ExtinguisherProperties' has a wrong offset!");
-static_assert(offsetof(UFireExtinguisherStaticInfo, ExtinguishStartDistance) == 0x0003F8, "Member 'UFireExtinguisherStaticInfo::ExtinguishStartDistance' has a wrong offset!");
-static_assert(offsetof(UFireExtinguisherStaticInfo, ExtinguishAnimation) == 0x000400, "Member 'UFireExtinguisherStaticInfo::ExtinguishAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_UFireExtinguisherStaticInfo;
 
 // Class BrickRigs.FireExtinguisher
 // 0x0008 (0x0278 - 0x0270)
@@ -9438,19 +9112,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FireExtinguisher">();
+		STATIC_CLASS_IMPL("FireExtinguisher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FireExtinguisher")
 	}
 	static class AFireExtinguisher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFireExtinguisher>();
 	}
 };
-static_assert(alignof(AFireExtinguisher) == 0x000008, "Wrong alignment on AFireExtinguisher");
-static_assert(sizeof(AFireExtinguisher) == 0x000278, "Wrong size on AFireExtinguisher");
+DUMPER7_ASSERTS_AFireExtinguisher;
 
 // Class BrickRigs.NewItemCountWidget
 // 0x0008 (0x0268 - 0x0260)
-class UNewItemCountWidget : public UUserWidget
+class UNewItemCountWidget final : public UUserWidget
 {
 public:
 	uint8                                         Pad_260[0x8];                                      // 0x0260(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -9462,15 +9139,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NewItemCountWidget">();
+		STATIC_CLASS_IMPL("NewItemCountWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NewItemCountWidget")
 	}
 	static class UNewItemCountWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNewItemCountWidget>();
 	}
 };
-static_assert(alignof(UNewItemCountWidget) == 0x000008, "Wrong alignment on UNewItemCountWidget");
-static_assert(sizeof(UNewItemCountWidget) == 0x000268, "Wrong size on UNewItemCountWidget");
+DUMPER7_ASSERTS_UNewItemCountWidget;
 
 // Class BrickRigs.FireExtinguisherComponent
 // 0x00C0 (0x0170 - 0x00B0)
@@ -9485,17 +9165,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FireExtinguisherComponent">();
+		STATIC_CLASS_IMPL("FireExtinguisherComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FireExtinguisherComponent")
 	}
 	static class UFireExtinguisherComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFireExtinguisherComponent>();
 	}
 };
-static_assert(alignof(UFireExtinguisherComponent) == 0x000008, "Wrong alignment on UFireExtinguisherComponent");
-static_assert(sizeof(UFireExtinguisherComponent) == 0x000170, "Wrong size on UFireExtinguisherComponent");
-static_assert(offsetof(UFireExtinguisherComponent, ParticleComp) == 0x000138, "Member 'UFireExtinguisherComponent::ParticleComp' has a wrong offset!");
-static_assert(offsetof(UFireExtinguisherComponent, AudioComp) == 0x000140, "Member 'UFireExtinguisherComponent::AudioComp' has a wrong offset!");
+DUMPER7_ASSERTS_UFireExtinguisherComponent;
 
 // Class BrickRigs.PendingLevelPlayerController
 // 0x0000 (0x05F8 - 0x05F8)
@@ -9504,15 +9185,18 @@ class APendingLevelPlayerController final : public ABasePlayerController
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PendingLevelPlayerController">();
+		STATIC_CLASS_IMPL("PendingLevelPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PendingLevelPlayerController")
 	}
 	static class APendingLevelPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APendingLevelPlayerController>();
 	}
 };
-static_assert(alignof(APendingLevelPlayerController) == 0x000008, "Wrong alignment on APendingLevelPlayerController");
-static_assert(sizeof(APendingLevelPlayerController) == 0x0005F8, "Wrong size on APendingLevelPlayerController");
+DUMPER7_ASSERTS_APendingLevelPlayerController;
 
 // Class BrickRigs.FirstAidKit
 // 0x0008 (0x0278 - 0x0270)
@@ -9524,15 +9208,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FirstAidKit">();
+		STATIC_CLASS_IMPL("FirstAidKit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FirstAidKit")
 	}
 	static class AFirstAidKit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFirstAidKit>();
 	}
 };
-static_assert(alignof(AFirstAidKit) == 0x000008, "Wrong alignment on AFirstAidKit");
-static_assert(sizeof(AFirstAidKit) == 0x000278, "Wrong size on AFirstAidKit");
+DUMPER7_ASSERTS_AFirstAidKit;
 
 // Class BrickRigs.FirstAidKitStaticInfo
 // 0x0010 (0x03A0 - 0x0390)
@@ -9547,19 +9234,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FirstAidKitStaticInfo">();
+		STATIC_CLASS_IMPL("FirstAidKitStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FirstAidKitStaticInfo")
 	}
 	static class UFirstAidKitStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFirstAidKitStaticInfo>();
 	}
 };
-static_assert(alignof(UFirstAidKitStaticInfo) == 0x000010, "Wrong alignment on UFirstAidKitStaticInfo");
-static_assert(sizeof(UFirstAidKitStaticInfo) == 0x0003A0, "Wrong size on UFirstAidKitStaticInfo");
-static_assert(offsetof(UFirstAidKitStaticInfo, NumBandages) == 0x000390, "Member 'UFirstAidKitStaticInfo::NumBandages' has a wrong offset!");
-static_assert(offsetof(UFirstAidKitStaticInfo, HealthPerBandage) == 0x000394, "Member 'UFirstAidKitStaticInfo::HealthPerBandage' has a wrong offset!");
-static_assert(offsetof(UFirstAidKitStaticInfo, HealDelay) == 0x000398, "Member 'UFirstAidKitStaticInfo::HealDelay' has a wrong offset!");
-static_assert(offsetof(UFirstAidKitStaticInfo, HealTime) == 0x00039C, "Member 'UFirstAidKitStaticInfo::HealTime' has a wrong offset!");
+DUMPER7_ASSERTS_UFirstAidKitStaticInfo;
 
 // Class BrickRigs.MessagePopupParams
 // 0x0020 (0x0088 - 0x0068)
@@ -9573,17 +9259,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MessagePopupParams">();
+		STATIC_CLASS_IMPL("MessagePopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MessagePopupParams")
 	}
 	static class UMessagePopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMessagePopupParams>();
 	}
 };
-static_assert(alignof(UMessagePopupParams) == 0x000008, "Wrong alignment on UMessagePopupParams");
-static_assert(sizeof(UMessagePopupParams) == 0x000088, "Wrong size on UMessagePopupParams");
-static_assert(offsetof(UMessagePopupParams, TitleText) == 0x000068, "Member 'UMessagePopupParams::TitleText' has a wrong offset!");
-static_assert(offsetof(UMessagePopupParams, bCanCancel) == 0x000080, "Member 'UMessagePopupParams::bCanCancel' has a wrong offset!");
+DUMPER7_ASSERTS_UMessagePopupParams;
 
 // Class BrickRigs.PlayerControllerStaticInfo
 // 0x02C0 (0x02E8 - 0x0028)
@@ -9622,43 +9309,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerControllerStaticInfo">();
+		STATIC_CLASS_IMPL("PlayerControllerStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerControllerStaticInfo")
 	}
 	static class UPlayerControllerStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerControllerStaticInfo>();
 	}
 };
-static_assert(alignof(UPlayerControllerStaticInfo) == 0x000008, "Wrong alignment on UPlayerControllerStaticInfo");
-static_assert(sizeof(UPlayerControllerStaticInfo) == 0x0002E8, "Wrong size on UPlayerControllerStaticInfo");
-static_assert(offsetof(UPlayerControllerStaticInfo, LevelTransitionFade) == 0x000028, "Member 'UPlayerControllerStaticInfo::LevelTransitionFade' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, StateTransitionFade) == 0x000044, "Member 'UPlayerControllerStaticInfo::StateTransitionFade' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, MatchEndFade) == 0x000060, "Member 'UPlayerControllerStaticInfo::MatchEndFade' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, MaxNumChatMessages) == 0x00007C, "Member 'UPlayerControllerStaticInfo::MaxNumChatMessages' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, JoinSessionPopupClass) == 0x000080, "Member 'UPlayerControllerStaticInfo::JoinSessionPopupClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, MapPopupClass) == 0x0000A8, "Member 'UPlayerControllerStaticInfo::MapPopupClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, ScoreboardPopupClass) == 0x0000D0, "Member 'UPlayerControllerStaticInfo::ScoreboardPopupClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, InventoryPopupClass) == 0x0000F8, "Member 'UPlayerControllerStaticInfo::InventoryPopupClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, VehicleBrowserPopupClass) == 0x000120, "Member 'UPlayerControllerStaticInfo::VehicleBrowserPopupClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, UnsavedChangesPopupClass) == 0x000148, "Member 'UPlayerControllerStaticInfo::UnsavedChangesPopupClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, CheatMenuPopupClass) == 0x000170, "Member 'UPlayerControllerStaticInfo::CheatMenuPopupClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, KickPlayerPopupClass) == 0x000198, "Member 'UPlayerControllerStaticInfo::KickPlayerPopupClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, PlayerHUDWidgetClass) == 0x0001C0, "Member 'UPlayerControllerStaticInfo::PlayerHUDWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, SpawnHUDWidgetClass) == 0x0001E8, "Member 'UPlayerControllerStaticInfo::SpawnHUDWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, DeathHUDWidgetClass) == 0x000210, "Member 'UPlayerControllerStaticInfo::DeathHUDWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, SpectatorHUDWidgetClass) == 0x000238, "Member 'UPlayerControllerStaticInfo::SpectatorHUDWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, EditorHUDWidgetClass) == 0x000260, "Member 'UPlayerControllerStaticInfo::EditorHUDWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, MatchEndHUDWidgetClass) == 0x000288, "Member 'UPlayerControllerStaticInfo::MatchEndHUDWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, MaxInteractionAngle) == 0x0002B0, "Member 'UPlayerControllerStaticInfo::MaxInteractionAngle' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, MaxCharacterInteractionDistance) == 0x0002B4, "Member 'UPlayerControllerStaticInfo::MaxCharacterInteractionDistance' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, VehicleHUDIconDrawDistanceScale) == 0x0002B8, "Member 'UPlayerControllerStaticInfo::VehicleHUDIconDrawDistanceScale' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, SpectatorHUDIconDrawDistanceScale) == 0x0002BC, "Member 'UPlayerControllerStaticInfo::SpectatorHUDIconDrawDistanceScale' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, DeathSoundMix) == 0x0002C0, "Member 'UPlayerControllerStaticInfo::DeathSoundMix' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, NoAtmosphereSoundMix) == 0x0002C8, "Member 'UPlayerControllerStaticInfo::NoAtmosphereSoundMix' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, HurtSound) == 0x0002D0, "Member 'UPlayerControllerStaticInfo::HurtSound' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, VehicleEditorClass) == 0x0002D8, "Member 'UPlayerControllerStaticInfo::VehicleEditorClass' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, EditorEntryGarageInflation) == 0x0002E0, "Member 'UPlayerControllerStaticInfo::EditorEntryGarageInflation' has a wrong offset!");
-static_assert(offsetof(UPlayerControllerStaticInfo, ClientVehicleDamageGracePeriod) == 0x0002E4, "Member 'UPlayerControllerStaticInfo::ClientVehicleDamageGracePeriod' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerControllerStaticInfo;
 
 // Class BrickRigs.FuelConsumerBrick
 // 0x0008 (0x00F0 - 0x00E8)
@@ -9670,15 +9332,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FuelConsumerBrick">();
+		STATIC_CLASS_IMPL("FuelConsumerBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FuelConsumerBrick")
 	}
 	static class UFuelConsumerBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFuelConsumerBrick>();
 	}
 };
-static_assert(alignof(UFuelConsumerBrick) == 0x000008, "Wrong alignment on UFuelConsumerBrick");
-static_assert(sizeof(UFuelConsumerBrick) == 0x0000F0, "Wrong size on UFuelConsumerBrick");
+DUMPER7_ASSERTS_UFuelConsumerBrick;
 
 // Class BrickRigs.FlamethrowerBrick
 // 0x0090 (0x0180 - 0x00F0)
@@ -9692,16 +9357,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FlamethrowerBrick">();
+		STATIC_CLASS_IMPL("FlamethrowerBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlamethrowerBrick")
 	}
 	static class UFlamethrowerBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlamethrowerBrick>();
 	}
 };
-static_assert(alignof(UFlamethrowerBrick) == 0x000010, "Wrong alignment on UFlamethrowerBrick");
-static_assert(sizeof(UFlamethrowerBrick) == 0x000180, "Wrong size on UFlamethrowerBrick");
-static_assert(offsetof(UFlamethrowerBrick, InputChannel) == 0x000150, "Member 'UFlamethrowerBrick::InputChannel' has a wrong offset!");
+DUMPER7_ASSERTS_UFlamethrowerBrick;
 
 // Class BrickRigs.PassengerInputComponent
 // 0x0000 (0x02B0 - 0x02B0)
@@ -9710,15 +9377,18 @@ class UPassengerInputComponent final : public UVehicleInputComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PassengerInputComponent">();
+		STATIC_CLASS_IMPL("PassengerInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PassengerInputComponent")
 	}
 	static class UPassengerInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPassengerInputComponent>();
 	}
 };
-static_assert(alignof(UPassengerInputComponent) == 0x000008, "Wrong alignment on UPassengerInputComponent");
-static_assert(sizeof(UPassengerInputComponent) == 0x0002B0, "Wrong size on UPassengerInputComponent");
+DUMPER7_ASSERTS_UPassengerInputComponent;
 
 // Class BrickRigs.FlapBrickStaticInfo
 // 0x0008 (0x01D8 - 0x01D0)
@@ -9731,16 +9401,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FlapBrickStaticInfo">();
+		STATIC_CLASS_IMPL("FlapBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlapBrickStaticInfo")
 	}
 	static class UFlapBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlapBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UFlapBrickStaticInfo) == 0x000008, "Wrong alignment on UFlapBrickStaticInfo");
-static_assert(sizeof(UFlapBrickStaticInfo) == 0x0001D8, "Wrong size on UFlapBrickStaticInfo");
-static_assert(offsetof(UFlapBrickStaticInfo, FlapInterpSpeed) == 0x0001D0, "Member 'UFlapBrickStaticInfo::FlapInterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UFlapBrickStaticInfo;
 
 // Class BrickRigs.FlapBrick
 // 0x0048 (0x0158 - 0x0110)
@@ -9758,20 +9430,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FlapBrick">();
+		STATIC_CLASS_IMPL("FlapBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlapBrick")
 	}
 	static class UFlapBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlapBrick>();
 	}
 };
-static_assert(alignof(UFlapBrick) == 0x000008, "Wrong alignment on UFlapBrick");
-static_assert(sizeof(UFlapBrick) == 0x000158, "Wrong size on UFlapBrick");
-static_assert(offsetof(UFlapBrick, InputChannel) == 0x000120, "Member 'UFlapBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(UFlapBrick, InputScale) == 0x000148, "Member 'UFlapBrick::InputScale' has a wrong offset!");
-static_assert(offsetof(UFlapBrick, MinAngle) == 0x00014C, "Member 'UFlapBrick::MinAngle' has a wrong offset!");
-static_assert(offsetof(UFlapBrick, MaxAngle) == 0x000150, "Member 'UFlapBrick::MaxAngle' has a wrong offset!");
-static_assert(offsetof(UFlapBrick, bAccumulateInput) == 0x000154, "Member 'UFlapBrick::bAccumulateInput' has a wrong offset!");
+DUMPER7_ASSERTS_UFlapBrick;
 
 // Class BrickRigs.PlayerWidget
 // 0x0210 (0x0520 - 0x0310)
@@ -9815,33 +9485,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerWidget">();
+		STATIC_CLASS_IMPL("PlayerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerWidget")
 	}
 	static class UPlayerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerWidget>();
 	}
 };
-static_assert(alignof(UPlayerWidget) == 0x000010, "Wrong alignment on UPlayerWidget");
-static_assert(sizeof(UPlayerWidget) == 0x000520, "Wrong size on UPlayerWidget");
-static_assert(offsetof(UPlayerWidget, Character) == 0x000348, "Member 'UPlayerWidget::Character' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, Vehicle) == 0x000350, "Member 'UPlayerWidget::Vehicle' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, CurrentItemWidget) == 0x000370, "Member 'UPlayerWidget::CurrentItemWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, HealthBarWidget) == 0x000378, "Member 'UPlayerWidget::HealthBarWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, CrosshairWidget) == 0x000380, "Member 'UPlayerWidget::CrosshairWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, HurtMarkers) == 0x000388, "Member 'UPlayerWidget::HurtMarkers' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, RestrictedAreaWidget) == 0x000398, "Member 'UPlayerWidget::RestrictedAreaWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, DashboardWidget) == 0x0003A0, "Member 'UPlayerWidget::DashboardWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, CameraBrickWidget) == 0x0003A8, "Member 'UPlayerWidget::CameraBrickWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, IconScaleDistanceRange) == 0x0004B4, "Member 'UPlayerWidget::IconScaleDistanceRange' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, CurrentItemWidgetClass) == 0x0004C0, "Member 'UPlayerWidget::CurrentItemWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, CurrentItemFadeOutDelay) == 0x0004C8, "Member 'UPlayerWidget::CurrentItemFadeOutDelay' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, HealthBarWidgetClass) == 0x0004D0, "Member 'UPlayerWidget::HealthBarWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, CrosshairWidgetClass) == 0x0004D8, "Member 'UPlayerWidget::CrosshairWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, HurtMarkerClass) == 0x0004E0, "Member 'UPlayerWidget::HurtMarkerClass' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, MaxNumHurtMarkers) == 0x0004E8, "Member 'UPlayerWidget::MaxNumHurtMarkers' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, RestrictedAreaWidgetClass) == 0x0004F0, "Member 'UPlayerWidget::RestrictedAreaWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPlayerWidget, DashboardWidgetClass) == 0x0004F8, "Member 'UPlayerWidget::DashboardWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerWidget;
 
 // Class BrickRigs.GunBrickStaticInfo
 // 0x0130 (0x02C0 - 0x0190)
@@ -9866,27 +9521,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GunBrickStaticInfo">();
+		STATIC_CLASS_IMPL("GunBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GunBrickStaticInfo")
 	}
 	static class UGunBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGunBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UGunBrickStaticInfo) == 0x000010, "Wrong alignment on UGunBrickStaticInfo");
-static_assert(sizeof(UGunBrickStaticInfo) == 0x0002C0, "Wrong size on UGunBrickStaticInfo");
-static_assert(offsetof(UGunBrickStaticInfo, RelativeMuzzleTransform) == 0x000190, "Member 'UGunBrickStaticInfo::RelativeMuzzleTransform' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, FirearmProperties) == 0x0001C0, "Member 'UGunBrickStaticInfo::FirearmProperties' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, InventoryAmmoSlot) == 0x000250, "Member 'UGunBrickStaticInfo::InventoryAmmoSlot' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, ReloadTime) == 0x000270, "Member 'UGunBrickStaticInfo::ReloadTime' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, RecoilImpulse) == 0x000274, "Member 'UGunBrickStaticInfo::RecoilImpulse' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, MaxBarrelLength) == 0x000278, "Member 'UGunBrickStaticInfo::MaxBarrelLength' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, MinSpreadRadiusScale) == 0x00027C, "Member 'UGunBrickStaticInfo::MinSpreadRadiusScale' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, MinMuzzleVelocityScale) == 0x000280, "Member 'UGunBrickStaticInfo::MinMuzzleVelocityScale' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, MinDamageScale) == 0x000284, "Member 'UGunBrickStaticInfo::MinDamageScale' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, ShellEmitter) == 0x000288, "Member 'UGunBrickStaticInfo::ShellEmitter' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, ShellEmitterDetailMode) == 0x0002B0, "Member 'UGunBrickStaticInfo::ShellEmitterDetailMode' has a wrong offset!");
-static_assert(offsetof(UGunBrickStaticInfo, MaxShellEmitterDrawDistance) == 0x0002B4, "Member 'UGunBrickStaticInfo::MaxShellEmitterDrawDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UGunBrickStaticInfo;
 
 // Class BrickRigs.FlareBrickStaticInfo
 // 0x0000 (0x02C0 - 0x02C0)
@@ -9895,15 +9541,18 @@ class UFlareBrickStaticInfo : public UGunBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FlareBrickStaticInfo">();
+		STATIC_CLASS_IMPL("FlareBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlareBrickStaticInfo")
 	}
 	static class UFlareBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlareBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UFlareBrickStaticInfo) == 0x000010, "Wrong alignment on UFlareBrickStaticInfo");
-static_assert(sizeof(UFlareBrickStaticInfo) == 0x0002C0, "Wrong size on UFlareBrickStaticInfo");
+DUMPER7_ASSERTS_UFlareBrickStaticInfo;
 
 // Class BrickRigs.PropertyContainerWidget
 // 0x0060 (0x02D0 - 0x0270)
@@ -9932,23 +9581,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyContainerWidget">();
+		STATIC_CLASS_IMPL("PropertyContainerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyContainerWidget")
 	}
 	static class UPropertyContainerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyContainerWidget>();
 	}
 };
-static_assert(alignof(UPropertyContainerWidget) == 0x000008, "Wrong alignment on UPropertyContainerWidget");
-static_assert(sizeof(UPropertyContainerWidget) == 0x0002D0, "Wrong size on UPropertyContainerWidget");
-static_assert(offsetof(UPropertyContainerWidget, PropertyWidget) == 0x0002A0, "Member 'UPropertyContainerWidget::PropertyWidget' has a wrong offset!");
-static_assert(offsetof(UPropertyContainerWidget, NameTextBlock) == 0x0002B8, "Member 'UPropertyContainerWidget::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UPropertyContainerWidget, IconImage) == 0x0002C0, "Member 'UPropertyContainerWidget::IconImage' has a wrong offset!");
-static_assert(offsetof(UPropertyContainerWidget, ButtonPanelWidget) == 0x0002C8, "Member 'UPropertyContainerWidget::ButtonPanelWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UPropertyContainerWidget;
 
 // Class BrickRigs.FlashSequenceItemWidget
 // 0x0010 (0x02D8 - 0x02C8)
-class UFlashSequenceItemWidget : public UBrickComboBoxItemWidget
+class UFlashSequenceItemWidget final : public UBrickComboBoxItemWidget
 {
 public:
 	TSubclassOf<class USirenSequence>             FlashSequenceClass;                                // 0x02C8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -9960,16 +9608,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FlashSequenceItemWidget">();
+		STATIC_CLASS_IMPL("FlashSequenceItemWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlashSequenceItemWidget")
 	}
 	static class UFlashSequenceItemWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlashSequenceItemWidget>();
 	}
 };
-static_assert(alignof(UFlashSequenceItemWidget) == 0x000008, "Wrong alignment on UFlashSequenceItemWidget");
-static_assert(sizeof(UFlashSequenceItemWidget) == 0x0002D8, "Wrong size on UFlashSequenceItemWidget");
-static_assert(offsetof(UFlashSequenceItemWidget, FlashSequenceClass) == 0x0002C8, "Member 'UFlashSequenceItemWidget::FlashSequenceClass' has a wrong offset!");
+DUMPER7_ASSERTS_UFlashSequenceItemWidget;
 
 // Class BrickRigs.ProjectileManagerComponent
 // 0x0150 (0x0200 - 0x00B0)
@@ -9984,32 +9634,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProjectileManagerComponent">();
+		STATIC_CLASS_IMPL("ProjectileManagerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProjectileManagerComponent")
 	}
 	static class UProjectileManagerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProjectileManagerComponent>();
 	}
 };
-static_assert(alignof(UProjectileManagerComponent) == 0x000008, "Wrong alignment on UProjectileManagerComponent");
-static_assert(sizeof(UProjectileManagerComponent) == 0x000200, "Wrong size on UProjectileManagerComponent");
+DUMPER7_ASSERTS_UProjectileManagerComponent;
 
 // Class BrickRigs.FlashSequencePropertyWidget
 // 0x0000 (0x0298 - 0x0298)
-class UFlashSequencePropertyWidget : public UObjectPropertyWidget
+class UFlashSequencePropertyWidget final : public UObjectPropertyWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FlashSequencePropertyWidget">();
+		STATIC_CLASS_IMPL("FlashSequencePropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlashSequencePropertyWidget")
 	}
 	static class UFlashSequencePropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlashSequencePropertyWidget>();
 	}
 };
-static_assert(alignof(UFlashSequencePropertyWidget) == 0x000008, "Wrong alignment on UFlashSequencePropertyWidget");
-static_assert(sizeof(UFlashSequencePropertyWidget) == 0x000298, "Wrong size on UFlashSequencePropertyWidget");
+DUMPER7_ASSERTS_UFlashSequencePropertyWidget;
 
 // Class BrickRigs.FloatBrickStaticInfo
 // 0x0000 (0x01D0 - 0x01D0)
@@ -10018,15 +9674,18 @@ class UFloatBrickStaticInfo : public UScalableBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FloatBrickStaticInfo">();
+		STATIC_CLASS_IMPL("FloatBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FloatBrickStaticInfo")
 	}
 	static class UFloatBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFloatBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UFloatBrickStaticInfo) == 0x000008, "Wrong alignment on UFloatBrickStaticInfo");
-static_assert(sizeof(UFloatBrickStaticInfo) == 0x0001D0, "Wrong size on UFloatBrickStaticInfo");
+DUMPER7_ASSERTS_UFloatBrickStaticInfo;
 
 // Class BrickRigs.PlayerInputComponent
 // 0x0098 (0x0208 - 0x0170)
@@ -10055,16 +9714,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerInputComponent">();
+		STATIC_CLASS_IMPL("PlayerInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerInputComponent")
 	}
 	static class UPlayerInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerInputComponent>();
 	}
 };
-static_assert(alignof(UPlayerInputComponent) == 0x000008, "Wrong alignment on UPlayerInputComponent");
-static_assert(sizeof(UPlayerInputComponent) == 0x000208, "Wrong size on UPlayerInputComponent");
-static_assert(offsetof(UPlayerInputComponent, FocusedBrickInteractionComponent) == 0x000200, "Member 'UPlayerInputComponent::FocusedBrickInteractionComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerInputComponent;
 
 // Class BrickRigs.FloatBrick
 // 0x0010 (0x0120 - 0x0110)
@@ -10076,15 +9737,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FloatBrick">();
+		STATIC_CLASS_IMPL("FloatBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FloatBrick")
 	}
 	static class UFloatBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFloatBrick>();
 	}
 };
-static_assert(alignof(UFloatBrick) == 0x000008, "Wrong alignment on UFloatBrick");
-static_assert(sizeof(UFloatBrick) == 0x000120, "Wrong size on UFloatBrick");
+DUMPER7_ASSERTS_UFloatBrick;
 
 // Class BrickRigs.FluMathStatics
 // 0x0000 (0x0028 - 0x0028)
@@ -10114,15 +9778,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FluMathStatics">();
+		STATIC_CLASS_IMPL("FluMathStatics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FluMathStatics")
 	}
 	static class UFluMathStatics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFluMathStatics>();
 	}
 };
-static_assert(alignof(UFluMathStatics) == 0x000008, "Wrong alignment on UFluMathStatics");
-static_assert(sizeof(UFluMathStatics) == 0x000028, "Wrong size on UFluMathStatics");
+DUMPER7_ASSERTS_UFluMathStatics;
 
 // Class BrickRigs.FluRichTextBlockLinkDecorator
 // 0x0000 (0x0028 - 0x0028)
@@ -10131,15 +9798,18 @@ class UFluRichTextBlockLinkDecorator final : public URichTextBlockDecorator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FluRichTextBlockLinkDecorator">();
+		STATIC_CLASS_IMPL("FluRichTextBlockLinkDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FluRichTextBlockLinkDecorator")
 	}
 	static class UFluRichTextBlockLinkDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFluRichTextBlockLinkDecorator>();
 	}
 };
-static_assert(alignof(UFluRichTextBlockLinkDecorator) == 0x000008, "Wrong alignment on UFluRichTextBlockLinkDecorator");
-static_assert(sizeof(UFluRichTextBlockLinkDecorator) == 0x000028, "Wrong size on UFluRichTextBlockLinkDecorator");
+DUMPER7_ASSERTS_UFluRichTextBlockLinkDecorator;
 
 // Class BrickRigs.GameModeInfo
 // 0x0070 (0x00A0 - 0x0030)
@@ -10165,27 +9835,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameModeInfo">();
+		STATIC_CLASS_IMPL("GameModeInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameModeInfo")
 	}
 	static class UGameModeInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameModeInfo>();
 	}
 };
-static_assert(alignof(UGameModeInfo) == 0x000008, "Wrong alignment on UGameModeInfo");
-static_assert(sizeof(UGameModeInfo) == 0x0000A0, "Wrong size on UGameModeInfo");
-static_assert(offsetof(UGameModeInfo, GameModeClass) == 0x000038, "Member 'UGameModeInfo::GameModeClass' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, DisplayName) == 0x000050, "Member 'UGameModeInfo::DisplayName' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, SortPriority) == 0x000068, "Member 'UGameModeInfo::SortPriority' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, DescriptionText) == 0x000070, "Member 'UGameModeInfo::DescriptionText' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, Alias) == 0x000088, "Member 'UGameModeInfo::Alias' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, bRequiresPrefixedSubLevel) == 0x000098, "Member 'UGameModeInfo::bRequiresPrefixedSubLevel' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, bUsesRoundDuration) == 0x000099, "Member 'UGameModeInfo::bUsesRoundDuration' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, bIsRoundBased) == 0x00009A, "Member 'UGameModeInfo::bIsRoundBased' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, bUsesInfiniteMoney) == 0x00009B, "Member 'UGameModeInfo::bUsesInfiniteMoney' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, bUsesSandboxSettings) == 0x00009C, "Member 'UGameModeInfo::bUsesSandboxSettings' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, bSupportsSingleplayer) == 0x00009D, "Member 'UGameModeInfo::bSupportsSingleplayer' has a wrong offset!");
-static_assert(offsetof(UGameModeInfo, bSupportsMultiplayer) == 0x00009E, "Member 'UGameModeInfo::bSupportsMultiplayer' has a wrong offset!");
+DUMPER7_ASSERTS_UGameModeInfo;
 
 // Class BrickRigs.GameOverlayWidget
 // 0x00B8 (0x0318 - 0x0260)
@@ -10247,32 +9908,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameOverlayWidget">();
+		STATIC_CLASS_IMPL("GameOverlayWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameOverlayWidget")
 	}
 	static class UGameOverlayWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameOverlayWidget>();
 	}
 };
-static_assert(alignof(UGameOverlayWidget) == 0x000008, "Wrong alignment on UGameOverlayWidget");
-static_assert(sizeof(UGameOverlayWidget) == 0x000318, "Wrong size on UGameOverlayWidget");
-static_assert(offsetof(UGameOverlayWidget, ChatWidget) == 0x000260, "Member 'UGameOverlayWidget::ChatWidget' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, InputHelpWidget) == 0x000268, "Member 'UGameOverlayWidget::InputHelpWidget' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, MatchTimerWidget) == 0x000270, "Member 'UGameOverlayWidget::MatchTimerWidget' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, MatchStateWidget) == 0x000278, "Member 'UGameOverlayWidget::MatchStateWidget' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, TeamScoreWidgets) == 0x000280, "Member 'UGameOverlayWidget::TeamScoreWidgets' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, HUDNotificationWidgets) == 0x000290, "Member 'UGameOverlayWidget::HUDNotificationWidgets' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, SpectatorPawn) == 0x0002A8, "Member 'UGameOverlayWidget::SpectatorPawn' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, ViewedCharacter) == 0x0002B0, "Member 'UGameOverlayWidget::ViewedCharacter' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, BrickEditor) == 0x0002C0, "Member 'UGameOverlayWidget::BrickEditor' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, HighPingIndicator) == 0x0002D8, "Member 'UGameOverlayWidget::HighPingIndicator' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, InputHelpClass) == 0x0002E0, "Member 'UGameOverlayWidget::InputHelpClass' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, HUDNotificationClass) == 0x0002E8, "Member 'UGameOverlayWidget::HUDNotificationClass' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, MatchTimerWidgetClass) == 0x0002F0, "Member 'UGameOverlayWidget::MatchTimerWidgetClass' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, MatchStateWidgetClass) == 0x0002F8, "Member 'UGameOverlayWidget::MatchStateWidgetClass' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, TeamScoreWidgetClass) == 0x000300, "Member 'UGameOverlayWidget::TeamScoreWidgetClass' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, ChatWidgetClass) == 0x000308, "Member 'UGameOverlayWidget::ChatWidgetClass' has a wrong offset!");
-static_assert(offsetof(UGameOverlayWidget, MinimalHUDMaxMatchTimerRemaining) == 0x000310, "Member 'UGameOverlayWidget::MinimalHUDMaxMatchTimerRemaining' has a wrong offset!");
+DUMPER7_ASSERTS_UGameOverlayWidget;
 
 // Class BrickRigs.Garage
 // 0x0080 (0x0340 - 0x02C0)
@@ -10297,23 +9944,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Garage">();
+		STATIC_CLASS_IMPL("Garage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Garage")
 	}
 	static class AGarage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGarage>();
 	}
 };
-static_assert(alignof(AGarage) == 0x000010, "Wrong alignment on AGarage");
-static_assert(sizeof(AGarage) == 0x000340, "Wrong size on AGarage");
-static_assert(offsetof(AGarage, HUDIconComponent) == 0x0002C8, "Member 'AGarage::HUDIconComponent' has a wrong offset!");
-static_assert(offsetof(AGarage, InteractionComponent) == 0x0002D0, "Member 'AGarage::InteractionComponent' has a wrong offset!");
-static_assert(offsetof(AGarage, PlayerSpawnPoint) == 0x0002D8, "Member 'AGarage::PlayerSpawnPoint' has a wrong offset!");
-static_assert(offsetof(AGarage, HUDIconProperties) == 0x0002E0, "Member 'AGarage::HUDIconProperties' has a wrong offset!");
-static_assert(offsetof(AGarage, VehicleSpawnExtent) == 0x000310, "Member 'AGarage::VehicleSpawnExtent' has a wrong offset!");
-static_assert(offsetof(AGarage, VehicleSpawnOffset) == 0x00031C, "Member 'AGarage::VehicleSpawnOffset' has a wrong offset!");
-static_assert(offsetof(AGarage, VehicleSpawnRotation) == 0x000328, "Member 'AGarage::VehicleSpawnRotation' has a wrong offset!");
-static_assert(offsetof(AGarage, PinnedVehicleSpawnOrigin) == 0x000334, "Member 'AGarage::PinnedVehicleSpawnOrigin' has a wrong offset!");
+DUMPER7_ASSERTS_AGarage;
 
 // Class BrickRigs.RadioButtonWidget
 // 0x0008 (0x0278 - 0x0270)
@@ -10329,16 +9971,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RadioButtonWidget">();
+		STATIC_CLASS_IMPL("RadioButtonWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RadioButtonWidget")
 	}
 	static class URadioButtonWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URadioButtonWidget>();
 	}
 };
-static_assert(alignof(URadioButtonWidget) == 0x000008, "Wrong alignment on URadioButtonWidget");
-static_assert(sizeof(URadioButtonWidget) == 0x000278, "Wrong size on URadioButtonWidget");
-static_assert(offsetof(URadioButtonWidget, Button) == 0x000270, "Member 'URadioButtonWidget::Button' has a wrong offset!");
+DUMPER7_ASSERTS_URadioButtonWidget;
 
 // Class BrickRigs.GenericPropertyWidget
 // 0x0008 (0x0288 - 0x0280)
@@ -10357,15 +10001,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GenericPropertyWidget">();
+		STATIC_CLASS_IMPL("GenericPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GenericPropertyWidget")
 	}
 	static class UGenericPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGenericPropertyWidget>();
 	}
 };
-static_assert(alignof(UGenericPropertyWidget) == 0x000008, "Wrong alignment on UGenericPropertyWidget");
-static_assert(sizeof(UGenericPropertyWidget) == 0x000288, "Wrong size on UGenericPropertyWidget");
+DUMPER7_ASSERTS_UGenericPropertyWidget;
 
 // Class BrickRigs.GravelSilo
 // 0x0068 (0x02A8 - 0x0240)
@@ -10394,26 +10041,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GravelSilo">();
+		STATIC_CLASS_IMPL("GravelSilo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GravelSilo")
 	}
 	static class AGravelSilo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGravelSilo>();
 	}
 };
-static_assert(alignof(AGravelSilo) == 0x000008, "Wrong alignment on AGravelSilo");
-static_assert(sizeof(AGravelSilo) == 0x0002A8, "Wrong size on AGravelSilo");
-static_assert(offsetof(AGravelSilo, bIsSiloOpen) == 0x000248, "Member 'AGravelSilo::bIsSiloOpen' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, InteractionComponent) == 0x000250, "Member 'AGravelSilo::InteractionComponent' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, OutletPSC) == 0x000258, "Member 'AGravelSilo::OutletPSC' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, ParticleComponents) == 0x000260, "Member 'AGravelSilo::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, OutletEmitter) == 0x000270, "Member 'AGravelSilo::OutletEmitter' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, ParticleMesh) == 0x000278, "Member 'AGravelSilo::ParticleMesh' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, ParticlesPerSecond) == 0x000280, "Member 'AGravelSilo::ParticlesPerSecond' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, MaxOffset) == 0x000284, "Member 'AGravelSilo::MaxOffset' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, MinVelocity) == 0x000288, "Member 'AGravelSilo::MinVelocity' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, MaxVelocity) == 0x000294, "Member 'AGravelSilo::MaxVelocity' has a wrong offset!");
-static_assert(offsetof(AGravelSilo, ParticleScale) == 0x0002A0, "Member 'AGravelSilo::ParticleScale' has a wrong offset!");
+DUMPER7_ASSERTS_AGravelSilo;
 
 // Class BrickRigs.RodBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -10422,15 +10061,18 @@ class URodBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RodBrickStaticInfo">();
+		STATIC_CLASS_IMPL("RodBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RodBrickStaticInfo")
 	}
 	static class URodBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URodBrickStaticInfo>();
 	}
 };
-static_assert(alignof(URodBrickStaticInfo) == 0x000008, "Wrong alignment on URodBrickStaticInfo");
-static_assert(sizeof(URodBrickStaticInfo) == 0x000190, "Wrong size on URodBrickStaticInfo");
+DUMPER7_ASSERTS_URodBrickStaticInfo;
 
 // Class BrickRigs.GrenadeStaticInfo
 // 0x0000 (0x0480 - 0x0480)
@@ -10443,16 +10085,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GrenadeStaticInfo">();
+		STATIC_CLASS_IMPL("GrenadeStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GrenadeStaticInfo")
 	}
 	static class UGrenadeStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGrenadeStaticInfo>();
 	}
 };
-static_assert(alignof(UGrenadeStaticInfo) == 0x000010, "Wrong alignment on UGrenadeStaticInfo");
-static_assert(sizeof(UGrenadeStaticInfo) == 0x000480, "Wrong size on UGrenadeStaticInfo");
-static_assert(offsetof(UGrenadeStaticInfo, FuseDelay) == 0x000478, "Member 'UGrenadeStaticInfo::FuseDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UGrenadeStaticInfo;
 
 // Class BrickRigs.GrenadeAnimInstance
 // 0x0000 (0x02C0 - 0x02C0)
@@ -10461,15 +10105,18 @@ class UGrenadeAnimInstance final : public UItemAnimInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GrenadeAnimInstance">();
+		STATIC_CLASS_IMPL("GrenadeAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GrenadeAnimInstance")
 	}
 	static class UGrenadeAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGrenadeAnimInstance>();
 	}
 };
-static_assert(alignof(UGrenadeAnimInstance) == 0x000010, "Wrong alignment on UGrenadeAnimInstance");
-static_assert(sizeof(UGrenadeAnimInstance) == 0x0002C0, "Wrong size on UGrenadeAnimInstance");
+DUMPER7_ASSERTS_UGrenadeAnimInstance;
 
 // Class BrickRigs.RedirectorBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -10478,15 +10125,18 @@ class URedirectorBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RedirectorBrickStaticInfo">();
+		STATIC_CLASS_IMPL("RedirectorBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RedirectorBrickStaticInfo")
 	}
 	static class URedirectorBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URedirectorBrickStaticInfo>();
 	}
 };
-static_assert(alignof(URedirectorBrickStaticInfo) == 0x000008, "Wrong alignment on URedirectorBrickStaticInfo");
-static_assert(sizeof(URedirectorBrickStaticInfo) == 0x000190, "Wrong size on URedirectorBrickStaticInfo");
+DUMPER7_ASSERTS_URedirectorBrickStaticInfo;
 
 // Class BrickRigs.Grenade
 // 0x0008 (0x0280 - 0x0278)
@@ -10498,15 +10148,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Grenade">();
+		STATIC_CLASS_IMPL("Grenade")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Grenade")
 	}
 	static class AGrenade* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGrenade>();
 	}
 };
-static_assert(alignof(AGrenade) == 0x000008, "Wrong alignment on AGrenade");
-static_assert(sizeof(AGrenade) == 0x000280, "Wrong size on AGrenade");
+DUMPER7_ASSERTS_AGrenade;
 
 // Class BrickRigs.GrilleBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -10515,15 +10168,18 @@ class UGrilleBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GrilleBrickStaticInfo">();
+		STATIC_CLASS_IMPL("GrilleBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GrilleBrickStaticInfo")
 	}
 	static class UGrilleBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGrilleBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UGrilleBrickStaticInfo) == 0x000008, "Wrong alignment on UGrilleBrickStaticInfo");
-static_assert(sizeof(UGrilleBrickStaticInfo) == 0x000190, "Wrong size on UGrilleBrickStaticInfo");
+DUMPER7_ASSERTS_UGrilleBrickStaticInfo;
 
 // Class BrickRigs.RaceTimer
 // 0x0010 (0x0230 - 0x0220)
@@ -10536,17 +10192,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RaceTimer">();
+		STATIC_CLASS_IMPL("RaceTimer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RaceTimer")
 	}
 	static class ARaceTimer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARaceTimer>();
 	}
 };
-static_assert(alignof(ARaceTimer) == 0x000008, "Wrong alignment on ARaceTimer");
-static_assert(sizeof(ARaceTimer) == 0x000230, "Wrong size on ARaceTimer");
-static_assert(offsetof(ARaceTimer, MeshComponent) == 0x000220, "Member 'ARaceTimer::MeshComponent' has a wrong offset!");
-static_assert(offsetof(ARaceTimer, TextRenderComponent) == 0x000228, "Member 'ARaceTimer::TextRenderComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ARaceTimer;
 
 // Class BrickRigs.LauncherBrickStaticInfo
 // 0x0000 (0x02C0 - 0x02C0)
@@ -10555,15 +10212,18 @@ class ULauncherBrickStaticInfo : public UGunBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LauncherBrickStaticInfo">();
+		STATIC_CLASS_IMPL("LauncherBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LauncherBrickStaticInfo")
 	}
 	static class ULauncherBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULauncherBrickStaticInfo>();
 	}
 };
-static_assert(alignof(ULauncherBrickStaticInfo) == 0x000010, "Wrong alignment on ULauncherBrickStaticInfo");
-static_assert(sizeof(ULauncherBrickStaticInfo) == 0x0002C0, "Wrong size on ULauncherBrickStaticInfo");
+DUMPER7_ASSERTS_ULauncherBrickStaticInfo;
 
 // Class BrickRigs.GunBrick
 // 0x00A8 (0x0190 - 0x00E8)
@@ -10582,19 +10242,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GunBrick">();
+		STATIC_CLASS_IMPL("GunBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GunBrick")
 	}
 	static class UGunBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGunBrick>();
 	}
 };
-static_assert(alignof(UGunBrick) == 0x000010, "Wrong alignment on UGunBrick");
-static_assert(sizeof(UGunBrick) == 0x000190, "Wrong size on UGunBrick");
-static_assert(offsetof(UGunBrick, FirearmComponent) == 0x000100, "Member 'UGunBrick::FirearmComponent' has a wrong offset!");
-static_assert(offsetof(UGunBrick, ShellEmitterPtr) == 0x000118, "Member 'UGunBrick::ShellEmitterPtr' has a wrong offset!");
-static_assert(offsetof(UGunBrick, InputChannel) == 0x000158, "Member 'UGunBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(UGunBrick, AmmoType) == 0x000180, "Member 'UGunBrick::AmmoType' has a wrong offset!");
+DUMPER7_ASSERTS_UGunBrick;
 
 // Class BrickRigs.ReuploadPopupParams
 // 0x00E8 (0x0150 - 0x0068)
@@ -10606,15 +10265,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ReuploadPopupParams">();
+		STATIC_CLASS_IMPL("ReuploadPopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReuploadPopupParams")
 	}
 	static class UReuploadPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReuploadPopupParams>();
 	}
 };
-static_assert(alignof(UReuploadPopupParams) == 0x000008, "Wrong alignment on UReuploadPopupParams");
-static_assert(sizeof(UReuploadPopupParams) == 0x000150, "Wrong size on UReuploadPopupParams");
+DUMPER7_ASSERTS_UReuploadPopupParams;
 
 // Class BrickRigs.HandleBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -10623,15 +10285,18 @@ class UHandleBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HandleBrickStaticInfo">();
+		STATIC_CLASS_IMPL("HandleBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HandleBrickStaticInfo")
 	}
 	static class UHandleBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHandleBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UHandleBrickStaticInfo) == 0x000008, "Wrong alignment on UHandleBrickStaticInfo");
-static_assert(sizeof(UHandleBrickStaticInfo) == 0x000190, "Wrong size on UHandleBrickStaticInfo");
+DUMPER7_ASSERTS_UHandleBrickStaticInfo;
 
 // Class BrickRigs.HealthBarWidget
 // 0x0018 (0x0278 - 0x0260)
@@ -10650,16 +10315,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HealthBarWidget">();
+		STATIC_CLASS_IMPL("HealthBarWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HealthBarWidget")
 	}
 	static class UHealthBarWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHealthBarWidget>();
 	}
 };
-static_assert(alignof(UHealthBarWidget) == 0x000008, "Wrong alignment on UHealthBarWidget");
-static_assert(sizeof(UHealthBarWidget) == 0x000278, "Wrong size on UHealthBarWidget");
-static_assert(offsetof(UHealthBarWidget, HealthInterpSpeed) == 0x000274, "Member 'UHealthBarWidget::HealthInterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UHealthBarWidget;
 
 // Class BrickRigs.ScoreboardPopupWidget
 // 0x0000 (0x0298 - 0x0298)
@@ -10668,15 +10335,18 @@ class UScoreboardPopupWidget : public UPopupWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScoreboardPopupWidget">();
+		STATIC_CLASS_IMPL("ScoreboardPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScoreboardPopupWidget")
 	}
 	static class UScoreboardPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScoreboardPopupWidget>();
 	}
 };
-static_assert(alignof(UScoreboardPopupWidget) == 0x000008, "Wrong alignment on UScoreboardPopupWidget");
-static_assert(sizeof(UScoreboardPopupWidget) == 0x000298, "Wrong size on UScoreboardPopupWidget");
+DUMPER7_ASSERTS_UScoreboardPopupWidget;
 
 // Class BrickRigs.MenuSettingsPageWidget
 // 0x0028 (0x0298 - 0x0270)
@@ -10692,17 +10362,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuSettingsPageWidget">();
+		STATIC_CLASS_IMPL("MenuSettingsPageWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuSettingsPageWidget")
 	}
 	static class UMenuSettingsPageWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuSettingsPageWidget>();
 	}
 };
-static_assert(alignof(UMenuSettingsPageWidget) == 0x000008, "Wrong alignment on UMenuSettingsPageWidget");
-static_assert(sizeof(UMenuSettingsPageWidget) == 0x000298, "Wrong size on UMenuSettingsPageWidget");
-static_assert(offsetof(UMenuSettingsPageWidget, PropertiesPanel) == 0x000270, "Member 'UMenuSettingsPageWidget::PropertiesPanel' has a wrong offset!");
-static_assert(offsetof(UMenuSettingsPageWidget, SettingsCategories) == 0x000278, "Member 'UMenuSettingsPageWidget::SettingsCategories' has a wrong offset!");
+DUMPER7_ASSERTS_UMenuSettingsPageWidget;
 
 // Class BrickRigs.HostGamePageWidget
 // 0x0000 (0x0298 - 0x0298)
@@ -10715,15 +10386,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HostGamePageWidget">();
+		STATIC_CLASS_IMPL("HostGamePageWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HostGamePageWidget")
 	}
 	static class UHostGamePageWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHostGamePageWidget>();
 	}
 };
-static_assert(alignof(UHostGamePageWidget) == 0x000008, "Wrong alignment on UHostGamePageWidget");
-static_assert(sizeof(UHostGamePageWidget) == 0x000298, "Wrong size on UHostGamePageWidget");
+DUMPER7_ASSERTS_UHostGamePageWidget;
 
 // Class BrickRigs.RotorBladeBrick
 // 0x0000 (0x00E8 - 0x00E8)
@@ -10732,15 +10406,18 @@ class URotorBladeBrick final : public UBrick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RotorBladeBrick">();
+		STATIC_CLASS_IMPL("RotorBladeBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RotorBladeBrick")
 	}
 	static class URotorBladeBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URotorBladeBrick>();
 	}
 };
-static_assert(alignof(URotorBladeBrick) == 0x000008, "Wrong alignment on URotorBladeBrick");
-static_assert(sizeof(URotorBladeBrick) == 0x0000E8, "Wrong size on URotorBladeBrick");
+DUMPER7_ASSERTS_URotorBladeBrick;
 
 // Class BrickRigs.MainWidgetBase
 // 0x0018 (0x0278 - 0x0260)
@@ -10761,17 +10438,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MainWidgetBase">();
+		STATIC_CLASS_IMPL("MainWidgetBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainWidgetBase")
 	}
 	static class UMainWidgetBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMainWidgetBase>();
 	}
 };
-static_assert(alignof(UMainWidgetBase) == 0x000008, "Wrong alignment on UMainWidgetBase");
-static_assert(sizeof(UMainWidgetBase) == 0x000278, "Wrong size on UMainWidgetBase");
-static_assert(offsetof(UMainWidgetBase, FadingPanel) == 0x000268, "Member 'UMainWidgetBase::FadingPanel' has a wrong offset!");
-static_assert(offsetof(UMainWidgetBase, ButtonPanel) == 0x000270, "Member 'UMainWidgetBase::ButtonPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UMainWidgetBase;
 
 // Class BrickRigs.HUDContainerWidget
 // 0x0030 (0x02A8 - 0x0278)
@@ -10791,18 +10469,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HUDContainerWidget">();
+		STATIC_CLASS_IMPL("HUDContainerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDContainerWidget")
 	}
 	static class UHUDContainerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUDContainerWidget>();
 	}
 };
-static_assert(alignof(UHUDContainerWidget) == 0x000008, "Wrong alignment on UHUDContainerWidget");
-static_assert(sizeof(UHUDContainerWidget) == 0x0002A8, "Wrong size on UHUDContainerWidget");
-static_assert(offsetof(UHUDContainerWidget, GameOverlayWidget) == 0x000288, "Member 'UHUDContainerWidget::GameOverlayWidget' has a wrong offset!");
-static_assert(offsetof(UHUDContainerWidget, ActiveHUDWidget) == 0x000290, "Member 'UHUDContainerWidget::ActiveHUDWidget' has a wrong offset!");
-static_assert(offsetof(UHUDContainerWidget, GameOverlayWidgetClass) == 0x0002A0, "Member 'UHUDContainerWidget::GameOverlayWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UHUDContainerWidget;
 
 // Class BrickRigs.RestrictedAreaVolume
 // 0x0008 (0x0260 - 0x0258)
@@ -10820,17 +10498,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RestrictedAreaVolume">();
+		STATIC_CLASS_IMPL("RestrictedAreaVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RestrictedAreaVolume")
 	}
 	static class ARestrictedAreaVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARestrictedAreaVolume>();
 	}
 };
-static_assert(alignof(ARestrictedAreaVolume) == 0x000008, "Wrong alignment on ARestrictedAreaVolume");
-static_assert(sizeof(ARestrictedAreaVolume) == 0x000260, "Wrong size on ARestrictedAreaVolume");
-static_assert(offsetof(ARestrictedAreaVolume, bInvertVolume) == 0x000258, "Member 'ARestrictedAreaVolume::bInvertVolume' has a wrong offset!");
-static_assert(offsetof(ARestrictedAreaVolume, KillDelay) == 0x00025C, "Member 'ARestrictedAreaVolume::KillDelay' has a wrong offset!");
+DUMPER7_ASSERTS_ARestrictedAreaVolume;
 
 // Class BrickRigs.SandboxGameState
 // 0x0000 (0x05E8 - 0x05E8)
@@ -10839,15 +10518,18 @@ class ASandboxGameState final : public ABrickGameState
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SandboxGameState">();
+		STATIC_CLASS_IMPL("SandboxGameState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SandboxGameState")
 	}
 	static class ASandboxGameState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASandboxGameState>();
 	}
 };
-static_assert(alignof(ASandboxGameState) == 0x000008, "Wrong alignment on ASandboxGameState");
-static_assert(sizeof(ASandboxGameState) == 0x0005E8, "Wrong size on ASandboxGameState");
+DUMPER7_ASSERTS_ASandboxGameState;
 
 // Class BrickRigs.HUDIconContainerWidget
 // 0x0070 (0x02D0 - 0x0260)
@@ -10875,20 +10557,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HUDIconContainerWidget">();
+		STATIC_CLASS_IMPL("HUDIconContainerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDIconContainerWidget")
 	}
 	static class UHUDIconContainerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUDIconContainerWidget>();
 	}
 };
-static_assert(alignof(UHUDIconContainerWidget) == 0x000008, "Wrong alignment on UHUDIconContainerWidget");
-static_assert(sizeof(UHUDIconContainerWidget) == 0x0002D0, "Wrong size on UHUDIconContainerWidget");
-static_assert(offsetof(UHUDIconContainerWidget, IconWidget) == 0x000280, "Member 'UHUDIconContainerWidget::IconWidget' has a wrong offset!");
-static_assert(offsetof(UHUDIconContainerWidget, CrosshairWidgets) == 0x000288, "Member 'UHUDIconContainerWidget::CrosshairWidgets' has a wrong offset!");
-static_assert(offsetof(UHUDIconContainerWidget, SpawnButton) == 0x0002B8, "Member 'UHUDIconContainerWidget::SpawnButton' has a wrong offset!");
-static_assert(offsetof(UHUDIconContainerWidget, NameTextBlock) == 0x0002C0, "Member 'UHUDIconContainerWidget::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UHUDIconContainerWidget, MaxNameDrawDist) == 0x0002C8, "Member 'UHUDIconContainerWidget::MaxNameDrawDist' has a wrong offset!");
+DUMPER7_ASSERTS_UHUDIconContainerWidget;
 
 // Class BrickRigs.SensorBrickBase
 // 0x0038 (0x0148 - 0x0110)
@@ -10900,16 +10580,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SensorBrickBase">();
+		STATIC_CLASS_IMPL("SensorBrickBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SensorBrickBase")
 	}
 	static class USensorBrickBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USensorBrickBase>();
 	}
 };
-static_assert(alignof(USensorBrickBase) == 0x000008, "Wrong alignment on USensorBrickBase");
-static_assert(sizeof(USensorBrickBase) == 0x000148, "Wrong size on USensorBrickBase");
-static_assert(offsetof(USensorBrickBase, OutputChannel) == 0x000110, "Member 'USensorBrickBase::OutputChannel' has a wrong offset!");
+DUMPER7_ASSERTS_USensorBrickBase;
 
 // Class BrickRigs.SensorBrick
 // 0x0068 (0x01B0 - 0x0148)
@@ -10926,19 +10608,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SensorBrick">();
+		STATIC_CLASS_IMPL("SensorBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SensorBrick")
 	}
 	static class USensorBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USensorBrick>();
 	}
 };
-static_assert(alignof(USensorBrick) == 0x000010, "Wrong alignment on USensorBrick");
-static_assert(sizeof(USensorBrick) == 0x0001B0, "Wrong size on USensorBrick");
-static_assert(offsetof(USensorBrick, EnabledInputChannel) == 0x000180, "Member 'USensorBrick::EnabledInputChannel' has a wrong offset!");
-static_assert(offsetof(USensorBrick, SensorType) == 0x0001A8, "Member 'USensorBrick::SensorType' has a wrong offset!");
-static_assert(offsetof(USensorBrick, TraceMask) == 0x0001A9, "Member 'USensorBrick::TraceMask' has a wrong offset!");
-static_assert(offsetof(USensorBrick, bReturnToZero) == 0x0001AA, "Member 'USensorBrick::bReturnToZero' has a wrong offset!");
+DUMPER7_ASSERTS_USensorBrick;
 
 // Class BrickRigs.HUDNotificationWidget
 // 0x0040 (0x02A0 - 0x0260)
@@ -10962,19 +10643,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HUDNotificationWidget">();
+		STATIC_CLASS_IMPL("HUDNotificationWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDNotificationWidget")
 	}
 	static class UHUDNotificationWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUDNotificationWidget>();
 	}
 };
-static_assert(alignof(UHUDNotificationWidget) == 0x000008, "Wrong alignment on UHUDNotificationWidget");
-static_assert(sizeof(UHUDNotificationWidget) == 0x0002A0, "Wrong size on UHUDNotificationWidget");
-static_assert(offsetof(UHUDNotificationWidget, TextBlock) == 0x000280, "Member 'UHUDNotificationWidget::TextBlock' has a wrong offset!");
-static_assert(offsetof(UHUDNotificationWidget, IconImage) == 0x000288, "Member 'UHUDNotificationWidget::IconImage' has a wrong offset!");
-static_assert(offsetof(UHUDNotificationWidget, ThumbnailImage) == 0x000290, "Member 'UHUDNotificationWidget::ThumbnailImage' has a wrong offset!");
-static_assert(offsetof(UHUDNotificationWidget, NotificationDisplayTime) == 0x000298, "Member 'UHUDNotificationWidget::NotificationDisplayTime' has a wrong offset!");
+DUMPER7_ASSERTS_UHUDNotificationWidget;
 
 // Class BrickRigs.HUDWidgetInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -10986,7 +10666,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HUDWidgetInterface">();
+		STATIC_CLASS_IMPL("HUDWidgetInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDWidgetInterface")
 	}
 	static class IHUDWidgetInterface* GetDefaultObj()
 	{
@@ -11002,8 +10686,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IHUDWidgetInterface) == 0x000001, "Wrong alignment on IHUDWidgetInterface");
-static_assert(sizeof(IHUDWidgetInterface) == 0x000001, "Wrong size on IHUDWidgetInterface");
+DUMPER7_ASSERTS_IHUDWidgetInterface;
 
 // Class BrickRigs.ScoreboardWidget
 // 0x0088 (0x02E8 - 0x0260)
@@ -11024,22 +10707,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScoreboardWidget">();
+		STATIC_CLASS_IMPL("ScoreboardWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScoreboardWidget")
 	}
 	static class UScoreboardWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScoreboardWidget>();
 	}
 };
-static_assert(alignof(UScoreboardWidget) == 0x000008, "Wrong alignment on UScoreboardWidget");
-static_assert(sizeof(UScoreboardWidget) == 0x0002E8, "Wrong size on UScoreboardWidget");
-static_assert(offsetof(UScoreboardWidget, TeamWidgets) == 0x000260, "Member 'UScoreboardWidget::TeamWidgets' has a wrong offset!");
-static_assert(offsetof(UScoreboardWidget, TeamsPanel) == 0x000280, "Member 'UScoreboardWidget::TeamsPanel' has a wrong offset!");
-static_assert(offsetof(UScoreboardWidget, TeamWidgetClass) == 0x000288, "Member 'UScoreboardWidget::TeamWidgetClass' has a wrong offset!");
-static_assert(offsetof(UScoreboardWidget, PlayerWidgetClass) == 0x000290, "Member 'UScoreboardWidget::PlayerWidgetClass' has a wrong offset!");
-static_assert(offsetof(UScoreboardWidget, NumTeamsPerRow) == 0x000298, "Member 'UScoreboardWidget::NumTeamsPerRow' has a wrong offset!");
-static_assert(offsetof(UScoreboardWidget, KickPopupClass) == 0x0002A0, "Member 'UScoreboardWidget::KickPopupClass' has a wrong offset!");
-static_assert(offsetof(UScoreboardWidget, bCanJoinTeams) == 0x0002C8, "Member 'UScoreboardWidget::bCanJoinTeams' has a wrong offset!");
+DUMPER7_ASSERTS_UScoreboardWidget;
 
 // Class BrickRigs.HurtMarkerWidget
 // 0x0010 (0x0270 - 0x0260)
@@ -11054,15 +10733,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HurtMarkerWidget">();
+		STATIC_CLASS_IMPL("HurtMarkerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HurtMarkerWidget")
 	}
 	static class UHurtMarkerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHurtMarkerWidget>();
 	}
 };
-static_assert(alignof(UHurtMarkerWidget) == 0x000008, "Wrong alignment on UHurtMarkerWidget");
-static_assert(sizeof(UHurtMarkerWidget) == 0x000270, "Wrong size on UHurtMarkerWidget");
+DUMPER7_ASSERTS_UHurtMarkerWidget;
 
 // Class BrickRigs.TrackWheelBrickStaticInfo
 // 0x0000 (0x01B0 - 0x01B0)
@@ -11071,15 +10753,18 @@ class UTrackWheelBrickStaticInfo : public UWheelBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TrackWheelBrickStaticInfo">();
+		STATIC_CLASS_IMPL("TrackWheelBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TrackWheelBrickStaticInfo")
 	}
 	static class UTrackWheelBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTrackWheelBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UTrackWheelBrickStaticInfo) == 0x000008, "Wrong alignment on UTrackWheelBrickStaticInfo");
-static_assert(sizeof(UTrackWheelBrickStaticInfo) == 0x0001B0, "Wrong size on UTrackWheelBrickStaticInfo");
+DUMPER7_ASSERTS_UTrackWheelBrickStaticInfo;
 
 // Class BrickRigs.RotorBrick
 // 0x0008 (0x00F0 - 0x00E8)
@@ -11091,15 +10776,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RotorBrick">();
+		STATIC_CLASS_IMPL("RotorBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RotorBrick")
 	}
 	static class URotorBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URotorBrick>();
 	}
 };
-static_assert(alignof(URotorBrick) == 0x000008, "Wrong alignment on URotorBrick");
-static_assert(sizeof(URotorBrick) == 0x0000F0, "Wrong size on URotorBrick");
+DUMPER7_ASSERTS_URotorBrick;
 
 // Class BrickRigs.IdlerWheelBrickStaticInfo
 // 0x0000 (0x01B0 - 0x01B0)
@@ -11108,15 +10796,18 @@ class UIdlerWheelBrickStaticInfo : public UTrackWheelBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IdlerWheelBrickStaticInfo">();
+		STATIC_CLASS_IMPL("IdlerWheelBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IdlerWheelBrickStaticInfo")
 	}
 	static class UIdlerWheelBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIdlerWheelBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UIdlerWheelBrickStaticInfo) == 0x000008, "Wrong alignment on UIdlerWheelBrickStaticInfo");
-static_assert(sizeof(UIdlerWheelBrickStaticInfo) == 0x0001B0, "Wrong size on UIdlerWheelBrickStaticInfo");
+DUMPER7_ASSERTS_UIdlerWheelBrickStaticInfo;
 
 // Class BrickRigs.TrackWheelBrick
 // 0x0000 (0x0108 - 0x0108)
@@ -11125,15 +10816,18 @@ class UTrackWheelBrick : public UWheelBrick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TrackWheelBrick">();
+		STATIC_CLASS_IMPL("TrackWheelBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TrackWheelBrick")
 	}
 	static class UTrackWheelBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTrackWheelBrick>();
 	}
 };
-static_assert(alignof(UTrackWheelBrick) == 0x000008, "Wrong alignment on UTrackWheelBrick");
-static_assert(sizeof(UTrackWheelBrick) == 0x000108, "Wrong size on UTrackWheelBrick");
+DUMPER7_ASSERTS_UTrackWheelBrick;
 
 // Class BrickRigs.UserIdPropertyWidget
 // 0x0070 (0x02F0 - 0x0280)
@@ -11152,16 +10846,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UserIdPropertyWidget">();
+		STATIC_CLASS_IMPL("UserIdPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserIdPropertyWidget")
 	}
 	static class UUserIdPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserIdPropertyWidget>();
 	}
 };
-static_assert(alignof(UUserIdPropertyWidget) == 0x000008, "Wrong alignment on UUserIdPropertyWidget");
-static_assert(sizeof(UUserIdPropertyWidget) == 0x0002F0, "Wrong size on UUserIdPropertyWidget");
-static_assert(offsetof(UUserIdPropertyWidget, UserIdTextBox) == 0x0002E8, "Member 'UUserIdPropertyWidget::UserIdTextBox' has a wrong offset!");
+DUMPER7_ASSERTS_UUserIdPropertyWidget;
 
 // Class BrickRigs.IdlerWheelBrick
 // 0x0010 (0x0118 - 0x0108)
@@ -11173,15 +10869,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IdlerWheelBrick">();
+		STATIC_CLASS_IMPL("IdlerWheelBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IdlerWheelBrick")
 	}
 	static class UIdlerWheelBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIdlerWheelBrick>();
 	}
 };
-static_assert(alignof(UIdlerWheelBrick) == 0x000008, "Wrong alignment on UIdlerWheelBrick");
-static_assert(sizeof(UIdlerWheelBrick) == 0x000118, "Wrong size on UIdlerWheelBrick");
+DUMPER7_ASSERTS_UIdlerWheelBrick;
 
 // Class BrickRigs.ImageBrickStaticInfo
 // 0x0010 (0x01E0 - 0x01D0)
@@ -11195,17 +10894,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImageBrickStaticInfo">();
+		STATIC_CLASS_IMPL("ImageBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImageBrickStaticInfo")
 	}
 	static class UImageBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImageBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UImageBrickStaticInfo) == 0x000008, "Wrong alignment on UImageBrickStaticInfo");
-static_assert(sizeof(UImageBrickStaticInfo) == 0x0001E0, "Wrong size on UImageBrickStaticInfo");
-static_assert(offsetof(UImageBrickStaticInfo, ImageMargin) == 0x0001D0, "Member 'UImageBrickStaticInfo::ImageMargin' has a wrong offset!");
-static_assert(offsetof(UImageBrickStaticInfo, ImageMesh) == 0x0001D8, "Member 'UImageBrickStaticInfo::ImageMesh' has a wrong offset!");
+DUMPER7_ASSERTS_UImageBrickStaticInfo;
 
 // Class BrickRigs.SirenType
 // 0x0038 (0x0060 - 0x0028)
@@ -11220,18 +10920,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SirenType">();
+		STATIC_CLASS_IMPL("SirenType")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SirenType")
 	}
 	static class USirenType* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USirenType>();
 	}
 };
-static_assert(alignof(USirenType) == 0x000008, "Wrong alignment on USirenType");
-static_assert(sizeof(USirenType) == 0x000060, "Wrong size on USirenType");
-static_assert(offsetof(USirenType, DisplayName) == 0x000030, "Member 'USirenType::DisplayName' has a wrong offset!");
-static_assert(offsetof(USirenType, HornSound) == 0x000048, "Member 'USirenType::HornSound' has a wrong offset!");
-static_assert(offsetof(USirenType, SirenSounds) == 0x000050, "Member 'USirenType::SirenSounds' has a wrong offset!");
+DUMPER7_ASSERTS_USirenType;
 
 // Class BrickRigs.ImageBrick
 // 0x0020 (0x0130 - 0x0110)
@@ -11246,17 +10946,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImageBrick">();
+		STATIC_CLASS_IMPL("ImageBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImageBrick")
 	}
 	static class UImageBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImageBrick>();
 	}
 };
-static_assert(alignof(UImageBrick) == 0x000008, "Wrong alignment on UImageBrick");
-static_assert(sizeof(UImageBrick) == 0x000130, "Wrong size on UImageBrick");
-static_assert(offsetof(UImageBrick, Image) == 0x000120, "Member 'UImageBrick::Image' has a wrong offset!");
-static_assert(offsetof(UImageBrick, ImageColor) == 0x000128, "Member 'UImageBrick::ImageColor' has a wrong offset!");
+DUMPER7_ASSERTS_UImageBrick;
 
 // Class BrickRigs.VideoSettingsPageWidget
 // 0x0000 (0x0298 - 0x0298)
@@ -11272,15 +10973,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VideoSettingsPageWidget">();
+		STATIC_CLASS_IMPL("VideoSettingsPageWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VideoSettingsPageWidget")
 	}
 	static class UVideoSettingsPageWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVideoSettingsPageWidget>();
 	}
 };
-static_assert(alignof(UVideoSettingsPageWidget) == 0x000008, "Wrong alignment on UVideoSettingsPageWidget");
-static_assert(sizeof(UVideoSettingsPageWidget) == 0x000298, "Wrong size on UVideoSettingsPageWidget");
+DUMPER7_ASSERTS_UVideoSettingsPageWidget;
 
 // Class BrickRigs.ImpactDecalComponent
 // 0x0010 (0x0250 - 0x0240)
@@ -11292,15 +10996,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImpactDecalComponent">();
+		STATIC_CLASS_IMPL("ImpactDecalComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImpactDecalComponent")
 	}
 	static class UImpactDecalComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImpactDecalComponent>();
 	}
 };
-static_assert(alignof(UImpactDecalComponent) == 0x000010, "Wrong alignment on UImpactDecalComponent");
-static_assert(sizeof(UImpactDecalComponent) == 0x000250, "Wrong size on UImpactDecalComponent");
+DUMPER7_ASSERTS_UImpactDecalComponent;
 
 // Class BrickRigs.UnsavedChangesPopupParams
 // 0x0000 (0x0068 - 0x0068)
@@ -11309,15 +11016,18 @@ class UUnsavedChangesPopupParams final : public UPopupParams
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnsavedChangesPopupParams">();
+		STATIC_CLASS_IMPL("UnsavedChangesPopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnsavedChangesPopupParams")
 	}
 	static class UUnsavedChangesPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnsavedChangesPopupParams>();
 	}
 };
-static_assert(alignof(UUnsavedChangesPopupParams) == 0x000008, "Wrong alignment on UUnsavedChangesPopupParams");
-static_assert(sizeof(UUnsavedChangesPopupParams) == 0x000068, "Wrong size on UUnsavedChangesPopupParams");
+DUMPER7_ASSERTS_UUnsavedChangesPopupParams;
 
 // Class BrickRigs.InputActionListWidget
 // 0x00F8 (0x0358 - 0x0260)
@@ -11349,25 +11059,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputActionListWidget">();
+		STATIC_CLASS_IMPL("InputActionListWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputActionListWidget")
 	}
 	static class UInputActionListWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputActionListWidget>();
 	}
 };
-static_assert(alignof(UInputActionListWidget) == 0x000008, "Wrong alignment on UInputActionListWidget");
-static_assert(sizeof(UInputActionListWidget) == 0x000358, "Wrong size on UInputActionListWidget");
-static_assert(offsetof(UInputActionListWidget, CategoryWidgets) == 0x000268, "Member 'UInputActionListWidget::CategoryWidgets' has a wrong offset!");
-static_assert(offsetof(UInputActionListWidget, ActionWidgets) == 0x000278, "Member 'UInputActionListWidget::ActionWidgets' has a wrong offset!");
-static_assert(offsetof(UInputActionListWidget, MainGridPanel) == 0x0002F0, "Member 'UInputActionListWidget::MainGridPanel' has a wrong offset!");
-static_assert(offsetof(UInputActionListWidget, CategoryWidgetClass) == 0x0002F8, "Member 'UInputActionListWidget::CategoryWidgetClass' has a wrong offset!");
-static_assert(offsetof(UInputActionListWidget, ActionWidgetClass) == 0x000300, "Member 'UInputActionListWidget::ActionWidgetClass' has a wrong offset!");
-static_assert(offsetof(UInputActionListWidget, BindKeyPopupClass) == 0x000308, "Member 'UInputActionListWidget::BindKeyPopupClass' has a wrong offset!");
-static_assert(offsetof(UInputActionListWidget, InputCategories) == 0x000330, "Member 'UInputActionListWidget::InputCategories' has a wrong offset!");
-static_assert(offsetof(UInputActionListWidget, InputActionListMode) == 0x000340, "Member 'UInputActionListWidget::InputActionListMode' has a wrong offset!");
-static_assert(offsetof(UInputActionListWidget, QuickAccessDisplayTime) == 0x000344, "Member 'UInputActionListWidget::QuickAccessDisplayTime' has a wrong offset!");
-static_assert(offsetof(UInputActionListWidget, OnActionTriggeredDelegate) == 0x000348, "Member 'UInputActionListWidget::OnActionTriggeredDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UInputActionListWidget;
 
 // Class BrickRigs.InputActionWidget
 // 0x00D0 (0x0340 - 0x0270)
@@ -11393,17 +11096,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputActionWidget">();
+		STATIC_CLASS_IMPL("InputActionWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputActionWidget")
 	}
 	static class UInputActionWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputActionWidget>();
 	}
 };
-static_assert(alignof(UInputActionWidget) == 0x000008, "Wrong alignment on UInputActionWidget");
-static_assert(sizeof(UInputActionWidget) == 0x000340, "Wrong size on UInputActionWidget");
-static_assert(offsetof(UInputActionWidget, Button) == 0x000330, "Member 'UInputActionWidget::Button' has a wrong offset!");
-static_assert(offsetof(UInputActionWidget, ControlHintWidget) == 0x000338, "Member 'UInputActionWidget::ControlHintWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UInputActionWidget;
 
 // Class BrickRigs.SirenBrick
 // 0x0060 (0x0148 - 0x00E8)
@@ -11419,18 +11123,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SirenBrick">();
+		STATIC_CLASS_IMPL("SirenBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SirenBrick")
 	}
 	static class USirenBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USirenBrick>();
 	}
 };
-static_assert(alignof(USirenBrick) == 0x000008, "Wrong alignment on USirenBrick");
-static_assert(sizeof(USirenBrick) == 0x000148, "Wrong size on USirenBrick");
-static_assert(offsetof(USirenBrick, SirenType) == 0x000110, "Member 'USirenBrick::SirenType' has a wrong offset!");
-static_assert(offsetof(USirenBrick, HornPitch) == 0x000118, "Member 'USirenBrick::HornPitch' has a wrong offset!");
-static_assert(offsetof(USirenBrick, InputChannel) == 0x000120, "Member 'USirenBrick::InputChannel' has a wrong offset!");
+DUMPER7_ASSERTS_USirenBrick;
 
 // Class BrickRigs.InputCategory
 // 0x0030 (0x0060 - 0x0030)
@@ -11443,16 +11147,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputCategory">();
+		STATIC_CLASS_IMPL("InputCategory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputCategory")
 	}
 	static class UInputCategory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputCategory>();
 	}
 };
-static_assert(alignof(UInputCategory) == 0x000008, "Wrong alignment on UInputCategory");
-static_assert(sizeof(UInputCategory) == 0x000060, "Wrong size on UInputCategory");
-static_assert(offsetof(UInputCategory, DisplayInfo) == 0x000038, "Member 'UInputCategory::DisplayInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UInputCategory;
 
 // Class BrickRigs.InputChordWidget
 // 0x0060 (0x02C0 - 0x0260)
@@ -11481,22 +11187,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputChordWidget">();
+		STATIC_CLASS_IMPL("InputChordWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputChordWidget")
 	}
 	static class UInputChordWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputChordWidget>();
 	}
 };
-static_assert(alignof(UInputChordWidget) == 0x000008, "Wrong alignment on UInputChordWidget");
-static_assert(sizeof(UInputChordWidget) == 0x0002C0, "Wrong size on UInputChordWidget");
-static_assert(offsetof(UInputChordWidget, KeyWidgets) == 0x000260, "Member 'UInputChordWidget::KeyWidgets' has a wrong offset!");
-static_assert(offsetof(UInputChordWidget, SpacerWidgets) == 0x000270, "Member 'UInputChordWidget::SpacerWidgets' has a wrong offset!");
-static_assert(offsetof(UInputChordWidget, KeyWidgetClass) == 0x000288, "Member 'UInputChordWidget::KeyWidgetClass' has a wrong offset!");
-static_assert(offsetof(UInputChordWidget, SpacerWidgetClass) == 0x000290, "Member 'UInputChordWidget::SpacerWidgetClass' has a wrong offset!");
-static_assert(offsetof(UInputChordWidget, InputChord) == 0x000298, "Member 'UInputChordWidget::InputChord' has a wrong offset!");
-static_assert(offsetof(UInputChordWidget, TriggerType) == 0x0002B8, "Member 'UInputChordWidget::TriggerType' has a wrong offset!");
-static_assert(offsetof(UInputChordWidget, bShowUnboundKey) == 0x0002B9, "Member 'UInputChordWidget::bShowUnboundKey' has a wrong offset!");
+DUMPER7_ASSERTS_UInputChordWidget;
 
 // Class BrickRigs.SpectatorWidget
 // 0x0008 (0x0268 - 0x0260)
@@ -11514,15 +11216,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpectatorWidget">();
+		STATIC_CLASS_IMPL("SpectatorWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpectatorWidget")
 	}
 	static class USpectatorWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpectatorWidget>();
 	}
 };
-static_assert(alignof(USpectatorWidget) == 0x000008, "Wrong alignment on USpectatorWidget");
-static_assert(sizeof(USpectatorWidget) == 0x000268, "Wrong size on USpectatorWidget");
+DUMPER7_ASSERTS_USpectatorWidget;
 
 // Class BrickRigs.InputHelpWidget
 // 0x0018 (0x0278 - 0x0260)
@@ -11539,16 +11244,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputHelpWidget">();
+		STATIC_CLASS_IMPL("InputHelpWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputHelpWidget")
 	}
 	static class UInputHelpWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputHelpWidget>();
 	}
 };
-static_assert(alignof(UInputHelpWidget) == 0x000008, "Wrong alignment on UInputHelpWidget");
-static_assert(sizeof(UInputHelpWidget) == 0x000278, "Wrong size on UInputHelpWidget");
-static_assert(offsetof(UInputHelpWidget, ActionListWidget) == 0x000270, "Member 'UInputHelpWidget::ActionListWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UInputHelpWidget;
 
 // Class BrickRigs.InputKeyWidget
 // 0x0028 (0x0288 - 0x0260)
@@ -11569,20 +11276,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputKeyWidget">();
+		STATIC_CLASS_IMPL("InputKeyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputKeyWidget")
 	}
 	static class UInputKeyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputKeyWidget>();
 	}
 };
-static_assert(alignof(UInputKeyWidget) == 0x000008, "Wrong alignment on UInputKeyWidget");
-static_assert(sizeof(UInputKeyWidget) == 0x000288, "Wrong size on UInputKeyWidget");
-static_assert(offsetof(UInputKeyWidget, KeyDisplayTable) == 0x000260, "Member 'UInputKeyWidget::KeyDisplayTable' has a wrong offset!");
-static_assert(offsetof(UInputKeyWidget, Key) == 0x000268, "Member 'UInputKeyWidget::Key' has a wrong offset!");
-static_assert(offsetof(UInputKeyWidget, TriggerType) == 0x000280, "Member 'UInputKeyWidget::TriggerType' has a wrong offset!");
-static_assert(offsetof(UInputKeyWidget, bIsUsedAsModifier) == 0x000281, "Member 'UInputKeyWidget::bIsUsedAsModifier' has a wrong offset!");
-static_assert(offsetof(UInputKeyWidget, UnboundRenderOpacity) == 0x000284, "Member 'UInputKeyWidget::UnboundRenderOpacity' has a wrong offset!");
+DUMPER7_ASSERTS_UInputKeyWidget;
 
 // Class BrickRigs.SoundNodeFirearm
 // 0x0020 (0x0068 - 0x0048)
@@ -11598,19 +11303,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundNodeFirearm">();
+		STATIC_CLASS_IMPL("SoundNodeFirearm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoundNodeFirearm")
 	}
 	static class USoundNodeFirearm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoundNodeFirearm>();
 	}
 };
-static_assert(alignof(USoundNodeFirearm) == 0x000008, "Wrong alignment on USoundNodeFirearm");
-static_assert(sizeof(USoundNodeFirearm) == 0x000068, "Wrong size on USoundNodeFirearm");
-static_assert(offsetof(USoundNodeFirearm, FireSound) == 0x000048, "Member 'USoundNodeFirearm::FireSound' has a wrong offset!");
-static_assert(offsetof(USoundNodeFirearm, PitchModulation) == 0x000050, "Member 'USoundNodeFirearm::PitchModulation' has a wrong offset!");
-static_assert(offsetof(USoundNodeFirearm, VolumeModulation) == 0x000058, "Member 'USoundNodeFirearm::VolumeModulation' has a wrong offset!");
-static_assert(offsetof(USoundNodeFirearm, ModulationPeriod) == 0x000060, "Member 'USoundNodeFirearm::ModulationPeriod' has a wrong offset!");
+DUMPER7_ASSERTS_USoundNodeFirearm;
 
 // Class BrickRigs.InputMappingKeyWidget
 // 0x0058 (0x02B8 - 0x0260)
@@ -11629,17 +11333,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputMappingKeyWidget">();
+		STATIC_CLASS_IMPL("InputMappingKeyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputMappingKeyWidget")
 	}
 	static class UInputMappingKeyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputMappingKeyWidget>();
 	}
 };
-static_assert(alignof(UInputMappingKeyWidget) == 0x000008, "Wrong alignment on UInputMappingKeyWidget");
-static_assert(sizeof(UInputMappingKeyWidget) == 0x0002B8, "Wrong size on UInputMappingKeyWidget");
-static_assert(offsetof(UInputMappingKeyWidget, Button) == 0x000298, "Member 'UInputMappingKeyWidget::Button' has a wrong offset!");
-static_assert(offsetof(UInputMappingKeyWidget, InputChordWidget) == 0x0002A0, "Member 'UInputMappingKeyWidget::InputChordWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UInputMappingKeyWidget;
 
 // Class BrickRigs.InputMappingPropertyWidget
 // 0x0050 (0x02D0 - 0x0280)
@@ -11661,19 +11366,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputMappingPropertyWidget">();
+		STATIC_CLASS_IMPL("InputMappingPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputMappingPropertyWidget")
 	}
 	static class UInputMappingPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputMappingPropertyWidget>();
 	}
 };
-static_assert(alignof(UInputMappingPropertyWidget) == 0x000008, "Wrong alignment on UInputMappingPropertyWidget");
-static_assert(sizeof(UInputMappingPropertyWidget) == 0x0002D0, "Wrong size on UInputMappingPropertyWidget");
-static_assert(offsetof(UInputMappingPropertyWidget, KeyWidgets) == 0x000288, "Member 'UInputMappingPropertyWidget::KeyWidgets' has a wrong offset!");
-static_assert(offsetof(UInputMappingPropertyWidget, KeyWidgetClass) == 0x000298, "Member 'UInputMappingPropertyWidget::KeyWidgetClass' has a wrong offset!");
-static_assert(offsetof(UInputMappingPropertyWidget, BindKeyPopupClass) == 0x0002A0, "Member 'UInputMappingPropertyWidget::BindKeyPopupClass' has a wrong offset!");
-static_assert(offsetof(UInputMappingPropertyWidget, MaxInputMappings) == 0x0002C8, "Member 'UInputMappingPropertyWidget::MaxInputMappings' has a wrong offset!");
+DUMPER7_ASSERTS_UInputMappingPropertyWidget;
 
 // Class BrickRigs.SightStaticInfo
 // 0x0070 (0x0400 - 0x0390)
@@ -11692,21 +11396,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SightStaticInfo">();
+		STATIC_CLASS_IMPL("SightStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SightStaticInfo")
 	}
 	static class USightStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USightStaticInfo>();
 	}
 };
-static_assert(alignof(USightStaticInfo) == 0x000010, "Wrong alignment on USightStaticInfo");
-static_assert(sizeof(USightStaticInfo) == 0x000400, "Wrong size on USightStaticInfo");
-static_assert(offsetof(USightStaticInfo, ReticleMaterial) == 0x000390, "Member 'USightStaticInfo::ReticleMaterial' has a wrong offset!");
-static_assert(offsetof(USightStaticInfo, LenseRadius) == 0x0003B8, "Member 'USightStaticInfo::LenseRadius' has a wrong offset!");
-static_assert(offsetof(USightStaticInfo, OcclusionMaterial) == 0x0003C0, "Member 'USightStaticInfo::OcclusionMaterial' has a wrong offset!");
-static_assert(offsetof(USightStaticInfo, RailFlangeLength) == 0x0003E8, "Member 'USightStaticInfo::RailFlangeLength' has a wrong offset!");
-static_assert(offsetof(USightStaticInfo, RearOverhang) == 0x0003EC, "Member 'USightStaticInfo::RearOverhang' has a wrong offset!");
-static_assert(offsetof(USightStaticInfo, FrontOverhang) == 0x0003F0, "Member 'USightStaticInfo::FrontOverhang' has a wrong offset!");
+DUMPER7_ASSERTS_USightStaticInfo;
 
 // Class BrickRigs.InputSettingsPageWidget
 // 0x0000 (0x0298 - 0x0298)
@@ -11718,15 +11419,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputSettingsPageWidget">();
+		STATIC_CLASS_IMPL("InputSettingsPageWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputSettingsPageWidget")
 	}
 	static class UInputSettingsPageWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputSettingsPageWidget>();
 	}
 };
-static_assert(alignof(UInputSettingsPageWidget) == 0x000008, "Wrong alignment on UInputSettingsPageWidget");
-static_assert(sizeof(UInputSettingsPageWidget) == 0x000298, "Wrong size on UInputSettingsPageWidget");
+DUMPER7_ASSERTS_UInputSettingsPageWidget;
 
 // Class BrickRigs.SpawnScreenWidget
 // 0x0018 (0x0278 - 0x0260)
@@ -11740,34 +11444,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpawnScreenWidget">();
+		STATIC_CLASS_IMPL("SpawnScreenWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpawnScreenWidget")
 	}
 	static class USpawnScreenWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpawnScreenWidget>();
 	}
 };
-static_assert(alignof(USpawnScreenWidget) == 0x000008, "Wrong alignment on USpawnScreenWidget");
-static_assert(sizeof(USpawnScreenWidget) == 0x000278, "Wrong size on USpawnScreenWidget");
-static_assert(offsetof(USpawnScreenWidget, MapWidget) == 0x000268, "Member 'USpawnScreenWidget::MapWidget' has a wrong offset!");
-static_assert(offsetof(USpawnScreenWidget, SpawnPointPanel) == 0x000270, "Member 'USpawnScreenWidget::SpawnPointPanel' has a wrong offset!");
+DUMPER7_ASSERTS_USpawnScreenWidget;
 
 // Class BrickRigs.InteractionIconWidget
 // 0x0000 (0x0288 - 0x0288)
-class UInteractionIconWidget : public UHUDIconWidget
+class UInteractionIconWidget final : public UHUDIconWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InteractionIconWidget">();
+		STATIC_CLASS_IMPL("InteractionIconWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InteractionIconWidget")
 	}
 	static class UInteractionIconWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInteractionIconWidget>();
 	}
 };
-static_assert(alignof(UInteractionIconWidget) == 0x000008, "Wrong alignment on UInteractionIconWidget");
-static_assert(sizeof(UInteractionIconWidget) == 0x000288, "Wrong size on UInteractionIconWidget");
+DUMPER7_ASSERTS_UInteractionIconWidget;
 
 // Class BrickRigs.InteractionOptionWidget
 // 0x0060 (0x02C0 - 0x0260)
@@ -11785,16 +11493,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InteractionOptionWidget">();
+		STATIC_CLASS_IMPL("InteractionOptionWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InteractionOptionWidget")
 	}
 	static class UInteractionOptionWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInteractionOptionWidget>();
 	}
 };
-static_assert(alignof(UInteractionOptionWidget) == 0x000008, "Wrong alignment on UInteractionOptionWidget");
-static_assert(sizeof(UInteractionOptionWidget) == 0x0002C0, "Wrong size on UInteractionOptionWidget");
-static_assert(offsetof(UInteractionOptionWidget, ControlHintWidget) == 0x0002B8, "Member 'UInteractionOptionWidget::ControlHintWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UInteractionOptionWidget;
 
 // Class BrickRigs.SwitchBrick
 // 0x0058 (0x01A0 - 0x0148)
@@ -11817,19 +11527,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwitchBrick">();
+		STATIC_CLASS_IMPL("SwitchBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwitchBrick")
 	}
 	static class USwitchBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USwitchBrick>();
 	}
 };
-static_assert(alignof(USwitchBrick) == 0x000008, "Wrong alignment on USwitchBrick");
-static_assert(sizeof(USwitchBrick) == 0x0001A0, "Wrong size on USwitchBrick");
-static_assert(offsetof(USwitchBrick, InteractionValue) == 0x000150, "Member 'USwitchBrick::InteractionValue' has a wrong offset!");
-static_assert(offsetof(USwitchBrick, SwitchName) == 0x000160, "Member 'USwitchBrick::SwitchName' has a wrong offset!");
-static_assert(offsetof(USwitchBrick, InputChannel) == 0x000170, "Member 'USwitchBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(USwitchBrick, bReturnToZero) == 0x000198, "Member 'USwitchBrick::bReturnToZero' has a wrong offset!");
+DUMPER7_ASSERTS_USwitchBrick;
 
 // Class BrickRigs.InteractionWidget
 // 0x0028 (0x0288 - 0x0260)
@@ -11847,17 +11556,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InteractionWidget">();
+		STATIC_CLASS_IMPL("InteractionWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InteractionWidget")
 	}
 	static class UInteractionWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInteractionWidget>();
 	}
 };
-static_assert(alignof(UInteractionWidget) == 0x000008, "Wrong alignment on UInteractionWidget");
-static_assert(sizeof(UInteractionWidget) == 0x000288, "Wrong size on UInteractionWidget");
-static_assert(offsetof(UInteractionWidget, OptionWidgets) == 0x000268, "Member 'UInteractionWidget::OptionWidgets' has a wrong offset!");
-static_assert(offsetof(UInteractionWidget, OptionWidgetClass) == 0x000280, "Member 'UInteractionWidget::OptionWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UInteractionWidget;
 
 // Class BrickRigs.SpinnerBrick
 // 0x0028 (0x0128 - 0x0100)
@@ -11876,21 +11586,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpinnerBrick">();
+		STATIC_CLASS_IMPL("SpinnerBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpinnerBrick")
 	}
 	static class USpinnerBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpinnerBrick>();
 	}
 };
-static_assert(alignof(USpinnerBrick) == 0x000008, "Wrong alignment on USpinnerBrick");
-static_assert(sizeof(USpinnerBrick) == 0x000128, "Wrong size on USpinnerBrick");
-static_assert(offsetof(USpinnerBrick, SpinnerStaticMesh) == 0x000100, "Member 'USpinnerBrick::SpinnerStaticMesh' has a wrong offset!");
-static_assert(offsetof(USpinnerBrick, SpinnerBodySetup) == 0x000108, "Member 'USpinnerBrick::SpinnerBodySetup' has a wrong offset!");
-static_assert(offsetof(USpinnerBrick, SpinnerShape) == 0x000112, "Member 'USpinnerBrick::SpinnerShape' has a wrong offset!");
-static_assert(offsetof(USpinnerBrick, SpinnerSize) == 0x000114, "Member 'USpinnerBrick::SpinnerSize' has a wrong offset!");
-static_assert(offsetof(USpinnerBrick, SpinnerRadius) == 0x00011C, "Member 'USpinnerBrick::SpinnerRadius' has a wrong offset!");
-static_assert(offsetof(USpinnerBrick, SpinnerAngle) == 0x000124, "Member 'USpinnerBrick::SpinnerAngle' has a wrong offset!");
+DUMPER7_ASSERTS_USpinnerBrick;
 
 // Class BrickRigs.InventoryPopupWidget
 // 0x0058 (0x02F0 - 0x0298)
@@ -11914,22 +11621,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InventoryPopupWidget">();
+		STATIC_CLASS_IMPL("InventoryPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InventoryPopupWidget")
 	}
 	static class UInventoryPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInventoryPopupWidget>();
 	}
 };
-static_assert(alignof(UInventoryPopupWidget) == 0x000008, "Wrong alignment on UInventoryPopupWidget");
-static_assert(sizeof(UInventoryPopupWidget) == 0x0002F0, "Wrong size on UInventoryPopupWidget");
-static_assert(offsetof(UInventoryPopupWidget, DragWidget) == 0x0002A8, "Member 'UInventoryPopupWidget::DragWidget' has a wrong offset!");
-static_assert(offsetof(UInventoryPopupWidget, DragCanvasPanel) == 0x0002C0, "Member 'UInventoryPopupWidget::DragCanvasPanel' has a wrong offset!");
-static_assert(offsetof(UInventoryPopupWidget, OwnInventoryContainerWidget) == 0x0002C8, "Member 'UInventoryPopupWidget::OwnInventoryContainerWidget' has a wrong offset!");
-static_assert(offsetof(UInventoryPopupWidget, OtherInventoryContainerWidget) == 0x0002D0, "Member 'UInventoryPopupWidget::OtherInventoryContainerWidget' has a wrong offset!");
-static_assert(offsetof(UInventoryPopupWidget, DropButton) == 0x0002D8, "Member 'UInventoryPopupWidget::DropButton' has a wrong offset!");
-static_assert(offsetof(UInventoryPopupWidget, SlotWidgetClass) == 0x0002E0, "Member 'UInventoryPopupWidget::SlotWidgetClass' has a wrong offset!");
-static_assert(offsetof(UInventoryPopupWidget, SubInvetoryContainerWidgetClass) == 0x0002E8, "Member 'UInventoryPopupWidget::SubInvetoryContainerWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UInventoryPopupWidget;
 
 // Class BrickRigs.InventorySlotWidget
 // 0x00A8 (0x0308 - 0x0260)
@@ -11953,20 +11656,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InventorySlotWidget">();
+		STATIC_CLASS_IMPL("InventorySlotWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InventorySlotWidget")
 	}
 	static class UInventorySlotWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInventorySlotWidget>();
 	}
 };
-static_assert(alignof(UInventorySlotWidget) == 0x000008, "Wrong alignment on UInventorySlotWidget");
-static_assert(sizeof(UInventorySlotWidget) == 0x000308, "Wrong size on UInventorySlotWidget");
-static_assert(offsetof(UInventorySlotWidget, SubInventoryContainerWidget) == 0x0002D0, "Member 'UInventorySlotWidget::SubInventoryContainerWidget' has a wrong offset!");
-static_assert(offsetof(UInventorySlotWidget, Button) == 0x0002E8, "Member 'UInventorySlotWidget::Button' has a wrong offset!");
-static_assert(offsetof(UInventorySlotWidget, NameTextBlock) == 0x0002F0, "Member 'UInventorySlotWidget::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UInventorySlotWidget, AmountTextBlock) == 0x0002F8, "Member 'UInventorySlotWidget::AmountTextBlock' has a wrong offset!");
-static_assert(offsetof(UInventorySlotWidget, IconImage) == 0x000300, "Member 'UInventorySlotWidget::IconImage' has a wrong offset!");
+DUMPER7_ASSERTS_UInventorySlotWidget;
 
 // Class BrickRigs.SpawnPointInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -11975,7 +11676,11 @@ class ISpawnPointInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpawnPointInterface">();
+		STATIC_CLASS_IMPL("SpawnPointInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpawnPointInterface")
 	}
 	static class ISpawnPointInterface* GetDefaultObj()
 	{
@@ -11991,8 +11696,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ISpawnPointInterface) == 0x000001, "Wrong alignment on ISpawnPointInterface");
-static_assert(sizeof(ISpawnPointInterface) == 0x000001, "Wrong size on ISpawnPointInterface");
+DUMPER7_ASSERTS_ISpawnPointInterface;
 
 // Class BrickRigs.InventoryWidget
 // 0x0038 (0x0298 - 0x0260)
@@ -12009,18 +11713,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InventoryWidget">();
+		STATIC_CLASS_IMPL("InventoryWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InventoryWidget")
 	}
 	static class UInventoryWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInventoryWidget>();
 	}
 };
-static_assert(alignof(UInventoryWidget) == 0x000008, "Wrong alignment on UInventoryWidget");
-static_assert(sizeof(UInventoryWidget) == 0x000298, "Wrong size on UInventoryWidget");
-static_assert(offsetof(UInventoryWidget, SlotWidgets) == 0x000270, "Member 'UInventoryWidget::SlotWidgets' has a wrong offset!");
-static_assert(offsetof(UInventoryWidget, SlotsPanel) == 0x000288, "Member 'UInventoryWidget::SlotsPanel' has a wrong offset!");
-static_assert(offsetof(UInventoryWidget, NumSlotsPerRow) == 0x000290, "Member 'UInventoryWidget::NumSlotsPerRow' has a wrong offset!");
+DUMPER7_ASSERTS_UInventoryWidget;
 
 // Class BrickRigs.StructPropertyWidget
 // 0x0010 (0x0290 - 0x0280)
@@ -12032,15 +11736,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StructPropertyWidget">();
+		STATIC_CLASS_IMPL("StructPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StructPropertyWidget")
 	}
 	static class UStructPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStructPropertyWidget>();
 	}
 };
-static_assert(alignof(UStructPropertyWidget) == 0x000008, "Wrong alignment on UStructPropertyWidget");
-static_assert(sizeof(UStructPropertyWidget) == 0x000290, "Wrong size on UStructPropertyWidget");
+DUMPER7_ASSERTS_UStructPropertyWidget;
 
 // Class BrickRigs.JoinSessionPopupWidget
 // 0x0040 (0x02D8 - 0x0298)
@@ -12061,18 +11768,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JoinSessionPopupWidget">();
+		STATIC_CLASS_IMPL("JoinSessionPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JoinSessionPopupWidget")
 	}
 	static class UJoinSessionPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJoinSessionPopupWidget>();
 	}
 };
-static_assert(alignof(UJoinSessionPopupWidget) == 0x000008, "Wrong alignment on UJoinSessionPopupWidget");
-static_assert(sizeof(UJoinSessionPopupWidget) == 0x0002D8, "Wrong size on UJoinSessionPopupWidget");
-static_assert(offsetof(UJoinSessionPopupWidget, PasswordTextBox) == 0x0002A0, "Member 'UJoinSessionPopupWidget::PasswordTextBox' has a wrong offset!");
-static_assert(offsetof(UJoinSessionPopupWidget, JoiningSessionText) == 0x0002A8, "Member 'UJoinSessionPopupWidget::JoiningSessionText' has a wrong offset!");
-static_assert(offsetof(UJoinSessionPopupWidget, CancellingJoinText) == 0x0002C0, "Member 'UJoinSessionPopupWidget::CancellingJoinText' has a wrong offset!");
+DUMPER7_ASSERTS_UJoinSessionPopupWidget;
 
 // Class BrickRigs.TeamBase
 // 0x0008 (0x0268 - 0x0260)
@@ -12085,16 +11792,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TeamBase">();
+		STATIC_CLASS_IMPL("TeamBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamBase")
 	}
 	static class ATeamBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATeamBase>();
 	}
 };
-static_assert(alignof(ATeamBase) == 0x000008, "Wrong alignment on ATeamBase");
-static_assert(sizeof(ATeamBase) == 0x000268, "Wrong size on ATeamBase");
-static_assert(offsetof(ATeamBase, TeamID) == 0x000260, "Member 'ATeamBase::TeamID' has a wrong offset!");
+DUMPER7_ASSERTS_ATeamBase;
 
 // Class BrickRigs.KickedPlayerWidget
 // 0x0088 (0x0310 - 0x0288)
@@ -12111,21 +11820,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KickedPlayerWidget">();
+		STATIC_CLASS_IMPL("KickedPlayerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KickedPlayerWidget")
 	}
 	static class UKickedPlayerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKickedPlayerWidget>();
 	}
 };
-static_assert(alignof(UKickedPlayerWidget) == 0x000008, "Wrong alignment on UKickedPlayerWidget");
-static_assert(sizeof(UKickedPlayerWidget) == 0x000310, "Wrong size on UKickedPlayerWidget");
-static_assert(offsetof(UKickedPlayerWidget, Entry) == 0x000288, "Member 'UKickedPlayerWidget::Entry' has a wrong offset!");
-static_assert(offsetof(UKickedPlayerWidget, NameTextBlock) == 0x0002E8, "Member 'UKickedPlayerWidget::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UKickedPlayerWidget, IdTextBlock) == 0x0002F0, "Member 'UKickedPlayerWidget::IdTextBlock' has a wrong offset!");
-static_assert(offsetof(UKickedPlayerWidget, KickTimeTextBlock) == 0x0002F8, "Member 'UKickedPlayerWidget::KickTimeTextBlock' has a wrong offset!");
-static_assert(offsetof(UKickedPlayerWidget, KickDurationTextBlock) == 0x000300, "Member 'UKickedPlayerWidget::KickDurationTextBlock' has a wrong offset!");
-static_assert(offsetof(UKickedPlayerWidget, KickTimeRemainingTextBlock) == 0x000308, "Member 'UKickedPlayerWidget::KickTimeRemainingTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UKickedPlayerWidget;
 
 // Class BrickRigs.TankBrickStaticInfo
 // 0x0010 (0x01E0 - 0x01D0)
@@ -12137,16 +11843,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TankBrickStaticInfo">();
+		STATIC_CLASS_IMPL("TankBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TankBrickStaticInfo")
 	}
 	static class UTankBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTankBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UTankBrickStaticInfo) == 0x000008, "Wrong alignment on UTankBrickStaticInfo");
-static_assert(sizeof(UTankBrickStaticInfo) == 0x0001E0, "Wrong size on UTankBrickStaticInfo");
-static_assert(offsetof(UTankBrickStaticInfo, FuelTankParams) == 0x0001D0, "Member 'UTankBrickStaticInfo::FuelTankParams' has a wrong offset!");
+DUMPER7_ASSERTS_UTankBrickStaticInfo;
 
 // Class BrickRigs.KickPlayerPopupWidget
 // 0x0010 (0x02A8 - 0x0298)
@@ -12165,16 +11873,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KickPlayerPopupWidget">();
+		STATIC_CLASS_IMPL("KickPlayerPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KickPlayerPopupWidget")
 	}
 	static class UKickPlayerPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKickPlayerPopupWidget>();
 	}
 };
-static_assert(alignof(UKickPlayerPopupWidget) == 0x000008, "Wrong alignment on UKickPlayerPopupWidget");
-static_assert(sizeof(UKickPlayerPopupWidget) == 0x0002A8, "Wrong size on UKickPlayerPopupWidget");
-static_assert(offsetof(UKickPlayerPopupWidget, PropertiesPanel) == 0x0002A0, "Member 'UKickPlayerPopupWidget::PropertiesPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UKickPlayerPopupWidget;
 
 // Class BrickRigs.LampProp
 // 0x0020 (0x0260 - 0x0240)
@@ -12190,18 +11900,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LampProp">();
+		STATIC_CLASS_IMPL("LampProp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LampProp")
 	}
 	static class ALampProp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALampProp>();
 	}
 };
-static_assert(alignof(ALampProp) == 0x000008, "Wrong alignment on ALampProp");
-static_assert(sizeof(ALampProp) == 0x000260, "Wrong size on ALampProp");
-static_assert(offsetof(ALampProp, PowerTimeRange) == 0x000244, "Member 'ALampProp::PowerTimeRange' has a wrong offset!");
-static_assert(offsetof(ALampProp, LightComponent) == 0x000250, "Member 'ALampProp::LightComponent' has a wrong offset!");
-static_assert(offsetof(ALampProp, LightComponentClass) == 0x000258, "Member 'ALampProp::LightComponentClass' has a wrong offset!");
+DUMPER7_ASSERTS_ALampProp;
 
 // Class BrickRigs.SprocketWheelBrick
 // 0x0060 (0x0168 - 0x0108)
@@ -12216,17 +11926,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SprocketWheelBrick">();
+		STATIC_CLASS_IMPL("SprocketWheelBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SprocketWheelBrick")
 	}
 	static class USprocketWheelBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USprocketWheelBrick>();
 	}
 };
-static_assert(alignof(USprocketWheelBrick) == 0x000008, "Wrong alignment on USprocketWheelBrick");
-static_assert(sizeof(USprocketWheelBrick) == 0x000168, "Wrong size on USprocketWheelBrick");
-static_assert(offsetof(USprocketWheelBrick, IdlerWheels) == 0x000150, "Member 'USprocketWheelBrick::IdlerWheels' has a wrong offset!");
-static_assert(offsetof(USprocketWheelBrick, TrackColor) == 0x000160, "Member 'USprocketWheelBrick::TrackColor' has a wrong offset!");
+DUMPER7_ASSERTS_USprocketWheelBrick;
 
 // Class BrickRigs.LedgeBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -12235,15 +11946,18 @@ class ULedgeBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LedgeBrickStaticInfo">();
+		STATIC_CLASS_IMPL("LedgeBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LedgeBrickStaticInfo")
 	}
 	static class ULedgeBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULedgeBrickStaticInfo>();
 	}
 };
-static_assert(alignof(ULedgeBrickStaticInfo) == 0x000008, "Wrong alignment on ULedgeBrickStaticInfo");
-static_assert(sizeof(ULedgeBrickStaticInfo) == 0x000190, "Wrong size on ULedgeBrickStaticInfo");
+DUMPER7_ASSERTS_ULedgeBrickStaticInfo;
 
 // Class BrickRigs.PropertyCategoryWidget
 // 0x0018 (0x0278 - 0x0260)
@@ -12258,15 +11972,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyCategoryWidget">();
+		STATIC_CLASS_IMPL("PropertyCategoryWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyCategoryWidget")
 	}
 	static class UPropertyCategoryWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyCategoryWidget>();
 	}
 };
-static_assert(alignof(UPropertyCategoryWidget) == 0x000008, "Wrong alignment on UPropertyCategoryWidget");
-static_assert(sizeof(UPropertyCategoryWidget) == 0x000278, "Wrong size on UPropertyCategoryWidget");
+DUMPER7_ASSERTS_UPropertyCategoryWidget;
 
 // Class BrickRigs.LegacyBuilding
 // 0x0050 (0x0310 - 0x02C0)
@@ -12292,21 +12009,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LegacyBuilding">();
+		STATIC_CLASS_IMPL("LegacyBuilding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyBuilding")
 	}
 	static class ALegacyBuilding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALegacyBuilding>();
 	}
 };
-static_assert(alignof(ALegacyBuilding) == 0x000010, "Wrong alignment on ALegacyBuilding");
-static_assert(sizeof(ALegacyBuilding) == 0x000310, "Wrong size on ALegacyBuilding");
-static_assert(offsetof(ALegacyBuilding, DestructibleInstancesComponent) == 0x0002D0, "Member 'ALegacyBuilding::DestructibleInstancesComponent' has a wrong offset!");
-static_assert(offsetof(ALegacyBuilding, BuildingMeshes) == 0x0002D8, "Member 'ALegacyBuilding::BuildingMeshes' has a wrong offset!");
-static_assert(offsetof(ALegacyBuilding, MaterialOverrides) == 0x0002E8, "Member 'ALegacyBuilding::MaterialOverrides' has a wrong offset!");
-static_assert(offsetof(ALegacyBuilding, NumWallsX) == 0x0002F8, "Member 'ALegacyBuilding::NumWallsX' has a wrong offset!");
-static_assert(offsetof(ALegacyBuilding, NumWallsY) == 0x0002FC, "Member 'ALegacyBuilding::NumWallsY' has a wrong offset!");
-static_assert(offsetof(ALegacyBuilding, NumFloors) == 0x000300, "Member 'ALegacyBuilding::NumFloors' has a wrong offset!");
+DUMPER7_ASSERTS_ALegacyBuilding;
 
 // Class BrickRigs.LevelInfo
 // 0x0088 (0x00B8 - 0x0030)
@@ -12327,22 +12041,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelInfo">();
+		STATIC_CLASS_IMPL("LevelInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelInfo")
 	}
 	static class ULevelInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelInfo>();
 	}
 };
-static_assert(alignof(ULevelInfo) == 0x000008, "Wrong alignment on ULevelInfo");
-static_assert(sizeof(ULevelInfo) == 0x0000B8, "Wrong size on ULevelInfo");
-static_assert(offsetof(ULevelInfo, Level) == 0x000038, "Member 'ULevelInfo::Level' has a wrong offset!");
-static_assert(offsetof(ULevelInfo, DisplayName) == 0x000070, "Member 'ULevelInfo::DisplayName' has a wrong offset!");
-static_assert(offsetof(ULevelInfo, DisplayIcon) == 0x000088, "Member 'ULevelInfo::DisplayIcon' has a wrong offset!");
-static_assert(offsetof(ULevelInfo, SortPriority) == 0x0000B0, "Member 'ULevelInfo::SortPriority' has a wrong offset!");
-static_assert(offsetof(ULevelInfo, bUsesWorldComposition) == 0x0000B4, "Member 'ULevelInfo::bUsesWorldComposition' has a wrong offset!");
-static_assert(offsetof(ULevelInfo, bNoWeather) == 0x0000B5, "Member 'ULevelInfo::bNoWeather' has a wrong offset!");
-static_assert(offsetof(ULevelInfo, bHasAITrains) == 0x0000B6, "Member 'ULevelInfo::bHasAITrains' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelInfo;
 
 // Class BrickRigs.TimespanPropertyWidget
 // 0x0000 (0x0280 - 0x0280)
@@ -12355,15 +12065,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TimespanPropertyWidget">();
+		STATIC_CLASS_IMPL("TimespanPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TimespanPropertyWidget")
 	}
 	static class UTimespanPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTimespanPropertyWidget>();
 	}
 };
-static_assert(alignof(UTimespanPropertyWidget) == 0x000008, "Wrong alignment on UTimespanPropertyWidget");
-static_assert(sizeof(UTimespanPropertyWidget) == 0x000280, "Wrong size on UTimespanPropertyWidget");
+DUMPER7_ASSERTS_UTimespanPropertyWidget;
 
 // Class BrickRigs.LightBrickStaticInfo
 // 0x0008 (0x01D8 - 0x01D0)
@@ -12377,17 +12090,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LightBrickStaticInfo">();
+		STATIC_CLASS_IMPL("LightBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LightBrickStaticInfo")
 	}
 	static class ULightBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULightBrickStaticInfo>();
 	}
 };
-static_assert(alignof(ULightBrickStaticInfo) == 0x000008, "Wrong alignment on ULightBrickStaticInfo");
-static_assert(sizeof(ULightBrickStaticInfo) == 0x0001D8, "Wrong size on ULightBrickStaticInfo");
-static_assert(offsetof(ULightBrickStaticInfo, Intensity) == 0x0001D0, "Member 'ULightBrickStaticInfo::Intensity' has a wrong offset!");
-static_assert(offsetof(ULightBrickStaticInfo, LightDirectionFlags) == 0x0001D4, "Member 'ULightBrickStaticInfo::LightDirectionFlags' has a wrong offset!");
+DUMPER7_ASSERTS_ULightBrickStaticInfo;
 
 // Class BrickRigs.PumpBrickStaticInfo
 // 0x0068 (0x01F8 - 0x0190)
@@ -12399,16 +12113,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PumpBrickStaticInfo">();
+		STATIC_CLASS_IMPL("PumpBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PumpBrickStaticInfo")
 	}
 	static class UPumpBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPumpBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UPumpBrickStaticInfo) == 0x000008, "Wrong alignment on UPumpBrickStaticInfo");
-static_assert(sizeof(UPumpBrickStaticInfo) == 0x0001F8, "Wrong size on UPumpBrickStaticInfo");
-static_assert(offsetof(UPumpBrickStaticInfo, ExtinguisherProperties) == 0x000190, "Member 'UPumpBrickStaticInfo::ExtinguisherProperties' has a wrong offset!");
+DUMPER7_ASSERTS_UPumpBrickStaticInfo;
 
 // Class BrickRigs.LoadingScreenWidget
 // 0x0000 (0x0278 - 0x0278)
@@ -12421,15 +12137,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LoadingScreenWidget">();
+		STATIC_CLASS_IMPL("LoadingScreenWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoadingScreenWidget")
 	}
 	static class ULoadingScreenWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoadingScreenWidget>();
 	}
 };
-static_assert(alignof(ULoadingScreenWidget) == 0x000008, "Wrong alignment on ULoadingScreenWidget");
-static_assert(sizeof(ULoadingScreenWidget) == 0x000278, "Wrong size on ULoadingScreenWidget");
+DUMPER7_ASSERTS_ULoadingScreenWidget;
 
 // Class BrickRigs.LoadoutContainer
 // 0x0048 (0x0288 - 0x0240)
@@ -12449,18 +12168,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LoadoutContainer">();
+		STATIC_CLASS_IMPL("LoadoutContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoadoutContainer")
 	}
 	static class ALoadoutContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALoadoutContainer>();
 	}
 };
-static_assert(alignof(ALoadoutContainer) == 0x000008, "Wrong alignment on ALoadoutContainer");
-static_assert(sizeof(ALoadoutContainer) == 0x000288, "Wrong size on ALoadoutContainer");
-static_assert(offsetof(ALoadoutContainer, HUDIconComponent) == 0x000248, "Member 'ALoadoutContainer::HUDIconComponent' has a wrong offset!");
-static_assert(offsetof(ALoadoutContainer, AnimationLength) == 0x000250, "Member 'ALoadoutContainer::AnimationLength' has a wrong offset!");
-static_assert(offsetof(ALoadoutContainer, IconProperties) == 0x000258, "Member 'ALoadoutContainer::IconProperties' has a wrong offset!");
+DUMPER7_ASSERTS_ALoadoutContainer;
 
 // Class BrickRigs.PropellerBrick
 // 0x0000 (0x00E8 - 0x00E8)
@@ -12469,15 +12188,18 @@ class UPropellerBrick final : public UBrick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropellerBrick">();
+		STATIC_CLASS_IMPL("PropellerBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropellerBrick")
 	}
 	static class UPropellerBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropellerBrick>();
 	}
 };
-static_assert(alignof(UPropellerBrick) == 0x000008, "Wrong alignment on UPropellerBrick");
-static_assert(sizeof(UPropellerBrick) == 0x0000E8, "Wrong size on UPropellerBrick");
+DUMPER7_ASSERTS_UPropellerBrick;
 
 // Class BrickRigs.LoadoutInventoryComponent
 // 0x0008 (0x02A0 - 0x0298)
@@ -12489,15 +12211,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LoadoutInventoryComponent">();
+		STATIC_CLASS_IMPL("LoadoutInventoryComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoadoutInventoryComponent")
 	}
 	static class ULoadoutInventoryComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoadoutInventoryComponent>();
 	}
 };
-static_assert(alignof(ULoadoutInventoryComponent) == 0x000008, "Wrong alignment on ULoadoutInventoryComponent");
-static_assert(sizeof(ULoadoutInventoryComponent) == 0x0002A0, "Wrong size on ULoadoutInventoryComponent");
+DUMPER7_ASSERTS_ULoadoutInventoryComponent;
 
 // Class BrickRigs.ThrusterBrickStaticInfo
 // 0x0068 (0x0238 - 0x01D0)
@@ -12522,28 +12247,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ThrusterBrickStaticInfo">();
+		STATIC_CLASS_IMPL("ThrusterBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ThrusterBrickStaticInfo")
 	}
 	static class UThrusterBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UThrusterBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UThrusterBrickStaticInfo) == 0x000008, "Wrong alignment on UThrusterBrickStaticInfo");
-static_assert(sizeof(UThrusterBrickStaticInfo) == 0x000238, "Wrong size on UThrusterBrickStaticInfo");
-static_assert(offsetof(UThrusterBrickStaticInfo, FuelTankParams) == 0x0001D0, "Member 'UThrusterBrickStaticInfo::FuelTankParams' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, FuelConsumption) == 0x0001E0, "Member 'UThrusterBrickStaticInfo::FuelConsumption' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, Thrust) == 0x0001E4, "Member 'UThrusterBrickStaticInfo::Thrust' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, MaxInputScale) == 0x0001E8, "Member 'UThrusterBrickStaticInfo::MaxInputScale' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, ThrottleInputRate) == 0x0001EC, "Member 'UThrusterBrickStaticInfo::ThrottleInputRate' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, GlowInterpSpeed) == 0x0001F0, "Member 'UThrusterBrickStaticInfo::GlowInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, AfterglowInterpSpeedUp) == 0x0001F4, "Member 'UThrusterBrickStaticInfo::AfterglowInterpSpeedUp' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, AfterglowInterpSpeedDown) == 0x0001F8, "Member 'UThrusterBrickStaticInfo::AfterglowInterpSpeedDown' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, GlowColor) == 0x0001FC, "Member 'UThrusterBrickStaticInfo::GlowColor' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, AfterglowColor) == 0x00020C, "Member 'UThrusterBrickStaticInfo::AfterglowColor' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, NozzleMesh) == 0x000220, "Member 'UThrusterBrickStaticInfo::NozzleMesh' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, ThrusterParticleSystem) == 0x000228, "Member 'UThrusterBrickStaticInfo::ThrusterParticleSystem' has a wrong offset!");
-static_assert(offsetof(UThrusterBrickStaticInfo, ThrusterSound) == 0x000230, "Member 'UThrusterBrickStaticInfo::ThrusterSound' has a wrong offset!");
+DUMPER7_ASSERTS_UThrusterBrickStaticInfo;
 
 // Class BrickRigs.MapPopupWidget
 // 0x0008 (0x02A0 - 0x0298)
@@ -12555,16 +12270,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MapPopupWidget">();
+		STATIC_CLASS_IMPL("MapPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MapPopupWidget")
 	}
 	static class UMapPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMapPopupWidget>();
 	}
 };
-static_assert(alignof(UMapPopupWidget) == 0x000008, "Wrong alignment on UMapPopupWidget");
-static_assert(sizeof(UMapPopupWidget) == 0x0002A0, "Wrong size on UMapPopupWidget");
-static_assert(offsetof(UMapPopupWidget, MapWidget) == 0x000298, "Member 'UMapPopupWidget::MapWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UMapPopupWidget;
 
 // Class BrickRigs.UGCBrowserPopupParams
 // 0x0040 (0x00A8 - 0x0068)
@@ -12576,15 +12293,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCBrowserPopupParams">();
+		STATIC_CLASS_IMPL("UGCBrowserPopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCBrowserPopupParams")
 	}
 	static class UUGCBrowserPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCBrowserPopupParams>();
 	}
 };
-static_assert(alignof(UUGCBrowserPopupParams) == 0x000008, "Wrong alignment on UUGCBrowserPopupParams");
-static_assert(sizeof(UUGCBrowserPopupParams) == 0x0000A8, "Wrong size on UUGCBrowserPopupParams");
+DUMPER7_ASSERTS_UUGCBrowserPopupParams;
 
 // Class BrickRigs.MatchEndWidget
 // 0x0008 (0x0268 - 0x0260)
@@ -12603,15 +12323,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MatchEndWidget">();
+		STATIC_CLASS_IMPL("MatchEndWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchEndWidget")
 	}
 	static class UMatchEndWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchEndWidget>();
 	}
 };
-static_assert(alignof(UMatchEndWidget) == 0x000008, "Wrong alignment on UMatchEndWidget");
-static_assert(sizeof(UMatchEndWidget) == 0x000268, "Wrong size on UMatchEndWidget");
+DUMPER7_ASSERTS_UMatchEndWidget;
 
 // Class BrickRigs.MatchMenuWidget
 // 0x0008 (0x0278 - 0x0270)
@@ -12628,16 +12351,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MatchMenuWidget">();
+		STATIC_CLASS_IMPL("MatchMenuWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchMenuWidget")
 	}
 	static class UMatchMenuWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchMenuWidget>();
 	}
 };
-static_assert(alignof(UMatchMenuWidget) == 0x000008, "Wrong alignment on UMatchMenuWidget");
-static_assert(sizeof(UMatchMenuWidget) == 0x000278, "Wrong size on UMatchMenuWidget");
-static_assert(offsetof(UMatchMenuWidget, PropertiesPanel) == 0x000270, "Member 'UMatchMenuWidget::PropertiesPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UMatchMenuWidget;
 
 // Class BrickRigs.Train
 // 0x00C0 (0x02E0 - 0x0220)
@@ -12666,28 +12391,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Train">();
+		STATIC_CLASS_IMPL("Train")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Train")
 	}
 	static class ATrain* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATrain>();
 	}
 };
-static_assert(alignof(ATrain) == 0x000008, "Wrong alignment on ATrain");
-static_assert(sizeof(ATrain) == 0x0002E0, "Wrong size on ATrain");
-static_assert(offsetof(ATrain, MeshComponent) == 0x000248, "Member 'ATrain::MeshComponent' has a wrong offset!");
-static_assert(offsetof(ATrain, WagonMeshComponents) == 0x000250, "Member 'ATrain::WagonMeshComponents' has a wrong offset!");
-static_assert(offsetof(ATrain, AudioComponent) == 0x000260, "Member 'ATrain::AudioComponent' has a wrong offset!");
-static_assert(offsetof(ATrain, HornAudioComponent) == 0x000268, "Member 'ATrain::HornAudioComponent' has a wrong offset!");
-static_assert(offsetof(ATrain, LocoSegment) == 0x000270, "Member 'ATrain::LocoSegment' has a wrong offset!");
-static_assert(offsetof(ATrain, WagonSegments) == 0x000288, "Member 'ATrain::WagonSegments' has a wrong offset!");
-static_assert(offsetof(ATrain, Speed) == 0x000298, "Member 'ATrain::Speed' has a wrong offset!");
-static_assert(offsetof(ATrain, TrainSound) == 0x0002A0, "Member 'ATrain::TrainSound' has a wrong offset!");
-static_assert(offsetof(ATrain, HornSound) == 0x0002A8, "Member 'ATrain::HornSound' has a wrong offset!");
-static_assert(offsetof(ATrain, HornSoundAttenuationRadius) == 0x0002D0, "Member 'ATrain::HornSoundAttenuationRadius' has a wrong offset!");
-static_assert(offsetof(ATrain, HornSweepInterval) == 0x0002D4, "Member 'ATrain::HornSweepInterval' has a wrong offset!");
-static_assert(offsetof(ATrain, HornSweepDist) == 0x0002D8, "Member 'ATrain::HornSweepDist' has a wrong offset!");
-static_assert(offsetof(ATrain, MinHornDelay) == 0x0002DC, "Member 'ATrain::MinHornDelay' has a wrong offset!");
+DUMPER7_ASSERTS_ATrain;
 
 // Class BrickRigs.MatchStateWidget
 // 0x0018 (0x0278 - 0x0260)
@@ -12703,15 +12418,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MatchStateWidget">();
+		STATIC_CLASS_IMPL("MatchStateWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchStateWidget")
 	}
 	static class UMatchStateWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchStateWidget>();
 	}
 };
-static_assert(alignof(UMatchStateWidget) == 0x000008, "Wrong alignment on UMatchStateWidget");
-static_assert(sizeof(UMatchStateWidget) == 0x000278, "Wrong size on UMatchStateWidget");
+DUMPER7_ASSERTS_UMatchStateWidget;
 
 // Class BrickRigs.TextBrick
 // 0x0038 (0x0148 - 0x0110)
@@ -12729,20 +12447,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TextBrick">();
+		STATIC_CLASS_IMPL("TextBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextBrick")
 	}
 	static class UTextBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextBrick>();
 	}
 };
-static_assert(alignof(UTextBrick) == 0x000008, "Wrong alignment on UTextBrick");
-static_assert(sizeof(UTextBrick) == 0x000148, "Wrong size on UTextBrick");
-static_assert(offsetof(UTextBrick, Text) == 0x000120, "Member 'UTextBrick::Text' has a wrong offset!");
-static_assert(offsetof(UTextBrick, Font) == 0x000130, "Member 'UTextBrick::Font' has a wrong offset!");
-static_assert(offsetof(UTextBrick, FontSize) == 0x000138, "Member 'UTextBrick::FontSize' has a wrong offset!");
-static_assert(offsetof(UTextBrick, TextColor) == 0x00013C, "Member 'UTextBrick::TextColor' has a wrong offset!");
-static_assert(offsetof(UTextBrick, OutlineThickness) == 0x000140, "Member 'UTextBrick::OutlineThickness' has a wrong offset!");
+DUMPER7_ASSERTS_UTextBrick;
 
 // Class BrickRigs.MathBrickStaticInfo
 // 0x0000 (0x01D0 - 0x01D0)
@@ -12751,15 +12467,18 @@ class UMathBrickStaticInfo : public UScalableBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MathBrickStaticInfo">();
+		STATIC_CLASS_IMPL("MathBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MathBrickStaticInfo")
 	}
 	static class UMathBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMathBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UMathBrickStaticInfo) == 0x000008, "Wrong alignment on UMathBrickStaticInfo");
-static_assert(sizeof(UMathBrickStaticInfo) == 0x0001D0, "Wrong size on UMathBrickStaticInfo");
+DUMPER7_ASSERTS_UMathBrickStaticInfo;
 
 // Class BrickRigs.MathBrick
 // 0x0088 (0x0198 - 0x0110)
@@ -12775,19 +12494,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MathBrick">();
+		STATIC_CLASS_IMPL("MathBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MathBrick")
 	}
 	static class UMathBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMathBrick>();
 	}
 };
-static_assert(alignof(UMathBrick) == 0x000008, "Wrong alignment on UMathBrick");
-static_assert(sizeof(UMathBrick) == 0x000198, "Wrong size on UMathBrick");
-static_assert(offsetof(UMathBrick, InputChannelA) == 0x000110, "Member 'UMathBrick::InputChannelA' has a wrong offset!");
-static_assert(offsetof(UMathBrick, InputChannelB) == 0x000138, "Member 'UMathBrick::InputChannelB' has a wrong offset!");
-static_assert(offsetof(UMathBrick, OutputChannel) == 0x000160, "Member 'UMathBrick::OutputChannel' has a wrong offset!");
-static_assert(offsetof(UMathBrick, Operation) == 0x000188, "Member 'UMathBrick::Operation' has a wrong offset!");
+DUMPER7_ASSERTS_UMathBrick;
 
 // Class BrickRigs.TurbineBrickStaticInfo
 // 0x0048 (0x01F0 - 0x01A8)
@@ -12809,26 +12527,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TurbineBrickStaticInfo">();
+		STATIC_CLASS_IMPL("TurbineBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TurbineBrickStaticInfo")
 	}
 	static class UTurbineBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTurbineBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UTurbineBrickStaticInfo) == 0x000008, "Wrong alignment on UTurbineBrickStaticInfo");
-static_assert(sizeof(UTurbineBrickStaticInfo) == 0x0001F0, "Wrong size on UTurbineBrickStaticInfo");
-static_assert(offsetof(UTurbineBrickStaticInfo, MaxRPM) == 0x0001A8, "Member 'UTurbineBrickStaticInfo::MaxRPM' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, Acceleration) == 0x0001AC, "Member 'UTurbineBrickStaticInfo::Acceleration' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, MaxVerticalSpeed) == 0x0001B0, "Member 'UTurbineBrickStaticInfo::MaxVerticalSpeed' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, VerticalAcceleration) == 0x0001B4, "Member 'UTurbineBrickStaticInfo::VerticalAcceleration' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, MaxAngularVelocity) == 0x0001B8, "Member 'UTurbineBrickStaticInfo::MaxAngularVelocity' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, AngularAcceleration) == 0x0001C4, "Member 'UTurbineBrickStaticInfo::AngularAcceleration' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, ThrottleInputInterpRate) == 0x0001D0, "Member 'UTurbineBrickStaticInfo::ThrottleInputInterpRate' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, RotationInputInterpRate) == 0x0001D4, "Member 'UTurbineBrickStaticInfo::RotationInputInterpRate' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, TurbineSoundCue) == 0x0001E0, "Member 'UTurbineBrickStaticInfo::TurbineSoundCue' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, MaxBankAngle) == 0x0001E8, "Member 'UTurbineBrickStaticInfo::MaxBankAngle' has a wrong offset!");
-static_assert(offsetof(UTurbineBrickStaticInfo, AutoHoverMaxBankAngleSpeed) == 0x0001EC, "Member 'UTurbineBrickStaticInfo::AutoHoverMaxBankAngleSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UTurbineBrickStaticInfo;
 
 // Class BrickRigs.MeleeAction
 // 0x0010 (0x0098 - 0x0088)
@@ -12843,19 +12553,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MeleeAction">();
+		STATIC_CLASS_IMPL("MeleeAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MeleeAction")
 	}
 	static class UMeleeAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMeleeAction>();
 	}
 };
-static_assert(alignof(UMeleeAction) == 0x000008, "Wrong alignment on UMeleeAction");
-static_assert(sizeof(UMeleeAction) == 0x000098, "Wrong size on UMeleeAction");
-static_assert(offsetof(UMeleeAction, ApplyDamageTime) == 0x000088, "Member 'UMeleeAction::ApplyDamageTime' has a wrong offset!");
-static_assert(offsetof(UMeleeAction, DamageSweepDistance) == 0x00008C, "Member 'UMeleeAction::DamageSweepDistance' has a wrong offset!");
-static_assert(offsetof(UMeleeAction, DamageSweepRadius) == 0x000090, "Member 'UMeleeAction::DamageSweepRadius' has a wrong offset!");
-static_assert(offsetof(UMeleeAction, MeleeDamage) == 0x000094, "Member 'UMeleeAction::MeleeDamage' has a wrong offset!");
+DUMPER7_ASSERTS_UMeleeAction;
 
 // Class BrickRigs.UGCTaskPopupParams
 // 0x0008 (0x0070 - 0x0068)
@@ -12867,15 +12576,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCTaskPopupParams">();
+		STATIC_CLASS_IMPL("UGCTaskPopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCTaskPopupParams")
 	}
 	static class UUGCTaskPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCTaskPopupParams>();
 	}
 };
-static_assert(alignof(UUGCTaskPopupParams) == 0x000008, "Wrong alignment on UUGCTaskPopupParams");
-static_assert(sizeof(UUGCTaskPopupParams) == 0x000070, "Wrong size on UUGCTaskPopupParams");
+DUMPER7_ASSERTS_UUGCTaskPopupParams;
 
 // Class BrickRigs.MenuButtonWidget
 // 0x0028 (0x0298 - 0x0270)
@@ -12897,18 +12609,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuButtonWidget">();
+		STATIC_CLASS_IMPL("MenuButtonWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuButtonWidget")
 	}
 	static class UMenuButtonWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuButtonWidget>();
 	}
 };
-static_assert(alignof(UMenuButtonWidget) == 0x000008, "Wrong alignment on UMenuButtonWidget");
-static_assert(sizeof(UMenuButtonWidget) == 0x000298, "Wrong size on UMenuButtonWidget");
-static_assert(offsetof(UMenuButtonWidget, Button) == 0x000270, "Member 'UMenuButtonWidget::Button' has a wrong offset!");
-static_assert(offsetof(UMenuButtonWidget, TextBlock) == 0x000278, "Member 'UMenuButtonWidget::TextBlock' has a wrong offset!");
-static_assert(offsetof(UMenuButtonWidget, IconImage) == 0x000280, "Member 'UMenuButtonWidget::IconImage' has a wrong offset!");
+DUMPER7_ASSERTS_UMenuButtonWidget;
 
 // Class BrickRigs.MenuGameMode
 // 0x0070 (0x0330 - 0x02C0)
@@ -12923,17 +12635,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuGameMode">();
+		STATIC_CLASS_IMPL("MenuGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuGameMode")
 	}
 	static class AMenuGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuGameMode>();
 	}
 };
-static_assert(alignof(AMenuGameMode) == 0x000008, "Wrong alignment on AMenuGameMode");
-static_assert(sizeof(AMenuGameMode) == 0x000330, "Wrong size on AMenuGameMode");
-static_assert(offsetof(AMenuGameMode, MenuSequenceClass) == 0x0002D0, "Member 'AMenuGameMode::MenuSequenceClass' has a wrong offset!");
-static_assert(offsetof(AMenuGameMode, MenuSequence) == 0x0002D8, "Member 'AMenuGameMode::MenuSequence' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuGameMode;
 
 // Class BrickRigs.UGCFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -12945,15 +12658,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCFunctionLibrary">();
+		STATIC_CLASS_IMPL("UGCFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCFunctionLibrary")
 	}
 	static class UUGCFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCFunctionLibrary>();
 	}
 };
-static_assert(alignof(UUGCFunctionLibrary) == 0x000008, "Wrong alignment on UUGCFunctionLibrary");
-static_assert(sizeof(UUGCFunctionLibrary) == 0x000028, "Wrong size on UUGCFunctionLibrary");
+DUMPER7_ASSERTS_UUGCFunctionLibrary;
 
 // Class BrickRigs.MenuMusic
 // 0x0028 (0x0058 - 0x0030)
@@ -12965,16 +12681,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuMusic">();
+		STATIC_CLASS_IMPL("MenuMusic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuMusic")
 	}
 	static class UMenuMusic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuMusic>();
 	}
 };
-static_assert(alignof(UMenuMusic) == 0x000008, "Wrong alignment on UMenuMusic");
-static_assert(sizeof(UMenuMusic) == 0x000058, "Wrong size on UMenuMusic");
-static_assert(offsetof(UMenuMusic, Sound) == 0x000030, "Member 'UMenuMusic::Sound' has a wrong offset!");
+DUMPER7_ASSERTS_UMenuMusic;
 
 // Class BrickRigs.TrainWheelBrick
 // 0x0000 (0x0108 - 0x0108)
@@ -12983,15 +12701,18 @@ class UTrainWheelBrick final : public UWheelBrick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TrainWheelBrick">();
+		STATIC_CLASS_IMPL("TrainWheelBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TrainWheelBrick")
 	}
 	static class UTrainWheelBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTrainWheelBrick>();
 	}
 };
-static_assert(alignof(UTrainWheelBrick) == 0x000008, "Wrong alignment on UTrainWheelBrick");
-static_assert(sizeof(UTrainWheelBrick) == 0x000108, "Wrong size on UTrainWheelBrick");
+DUMPER7_ASSERTS_UTrainWheelBrick;
 
 // Class BrickRigs.MenuSequence
 // 0x0030 (0x0250 - 0x0220)
@@ -13010,16 +12731,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuSequence">();
+		STATIC_CLASS_IMPL("MenuSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuSequence")
 	}
 	static class AMenuSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuSequence>();
 	}
 };
-static_assert(alignof(AMenuSequence) == 0x000008, "Wrong alignment on AMenuSequence");
-static_assert(sizeof(AMenuSequence) == 0x000250, "Wrong size on AMenuSequence");
-static_assert(offsetof(AMenuSequence, MenuSequenceProperties) == 0x000230, "Member 'AMenuSequence::MenuSequenceProperties' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuSequence;
 
 // Class BrickRigs.MenuWidget
 // 0x0078 (0x02F0 - 0x0278)
@@ -13050,18 +12773,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuWidget">();
+		STATIC_CLASS_IMPL("MenuWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuWidget")
 	}
 	static class UMenuWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuWidget>();
 	}
 };
-static_assert(alignof(UMenuWidget) == 0x000008, "Wrong alignment on UMenuWidget");
-static_assert(sizeof(UMenuWidget) == 0x0002F0, "Wrong size on UMenuWidget");
-static_assert(offsetof(UMenuWidget, CurrentMenuPage) == 0x000298, "Member 'UMenuWidget::CurrentMenuPage' has a wrong offset!");
-static_assert(offsetof(UMenuWidget, JoinSessionPopupClass) == 0x0002A0, "Member 'UMenuWidget::JoinSessionPopupClass' has a wrong offset!");
-static_assert(offsetof(UMenuWidget, NetworkErrorPopupClass) == 0x0002C8, "Member 'UMenuWidget::NetworkErrorPopupClass' has a wrong offset!");
+DUMPER7_ASSERTS_UMenuWidget;
 
 // Class BrickRigs.UGCPropertyWidget
 // 0x0030 (0x02B0 - 0x0280)
@@ -13078,16 +12801,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCPropertyWidget">();
+		STATIC_CLASS_IMPL("UGCPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCPropertyWidget")
 	}
 	static class UUGCPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCPropertyWidget>();
 	}
 };
-static_assert(alignof(UUGCPropertyWidget) == 0x000008, "Wrong alignment on UUGCPropertyWidget");
-static_assert(sizeof(UUGCPropertyWidget) == 0x0002B0, "Wrong size on UUGCPropertyWidget");
-static_assert(offsetof(UUGCPropertyWidget, UGCBrowserPopupClass) == 0x000288, "Member 'UUGCPropertyWidget::UGCBrowserPopupClass' has a wrong offset!");
+DUMPER7_ASSERTS_UUGCPropertyWidget;
 
 // Class BrickRigs.ModHook
 // 0x0000 (0x0028 - 0x0028)
@@ -13126,15 +12851,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ModHook">();
+		STATIC_CLASS_IMPL("ModHook")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ModHook")
 	}
 	static class UModHook* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UModHook>();
 	}
 };
-static_assert(alignof(UModHook) == 0x000008, "Wrong alignment on UModHook");
-static_assert(sizeof(UModHook) == 0x000028, "Wrong size on UModHook");
+DUMPER7_ASSERTS_UModHook;
 
 // Class BrickRigs.ModHookSubsystem
 // 0x0010 (0x0040 - 0x0030)
@@ -13149,16 +12877,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ModHookSubsystem">();
+		STATIC_CLASS_IMPL("ModHookSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ModHookSubsystem")
 	}
 	static class UModHookSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UModHookSubsystem>();
 	}
 };
-static_assert(alignof(UModHookSubsystem) == 0x000008, "Wrong alignment on UModHookSubsystem");
-static_assert(sizeof(UModHookSubsystem) == 0x000040, "Wrong size on UModHookSubsystem");
-static_assert(offsetof(UModHookSubsystem, ModHooks) == 0x000030, "Member 'UModHookSubsystem::ModHooks' has a wrong offset!");
+DUMPER7_ASSERTS_UModHookSubsystem;
 
 // Class BrickRigs.PawnIconWidget
 // 0x0010 (0x0298 - 0x0288)
@@ -13171,16 +12901,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PawnIconWidget">();
+		STATIC_CLASS_IMPL("PawnIconWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PawnIconWidget")
 	}
 	static class UPawnIconWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPawnIconWidget>();
 	}
 };
-static_assert(alignof(UPawnIconWidget) == 0x000008, "Wrong alignment on UPawnIconWidget");
-static_assert(sizeof(UPawnIconWidget) == 0x000298, "Wrong size on UPawnIconWidget");
-static_assert(offsetof(UPawnIconWidget, OwningPawn) == 0x000288, "Member 'UPawnIconWidget::OwningPawn' has a wrong offset!");
+DUMPER7_ASSERTS_UPawnIconWidget;
 
 // Class BrickRigs.VehicleIconWidget
 // 0x0010 (0x02A8 - 0x0298)
@@ -13196,16 +12928,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VehicleIconWidget">();
+		STATIC_CLASS_IMPL("VehicleIconWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VehicleIconWidget")
 	}
 	static class UVehicleIconWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVehicleIconWidget>();
 	}
 };
-static_assert(alignof(UVehicleIconWidget) == 0x000008, "Wrong alignment on UVehicleIconWidget");
-static_assert(sizeof(UVehicleIconWidget) == 0x0002A8, "Wrong size on UVehicleIconWidget");
-static_assert(offsetof(UVehicleIconWidget, Vehicle) == 0x000298, "Member 'UVehicleIconWidget::Vehicle' has a wrong offset!");
+DUMPER7_ASSERTS_UVehicleIconWidget;
 
 // Class BrickRigs.MotorBrickStaticInfo
 // 0x0060 (0x0208 - 0x01A8)
@@ -13234,31 +12968,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MotorBrickStaticInfo">();
+		STATIC_CLASS_IMPL("MotorBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MotorBrickStaticInfo")
 	}
 	static class UMotorBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMotorBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UMotorBrickStaticInfo) == 0x000008, "Wrong alignment on UMotorBrickStaticInfo");
-static_assert(sizeof(UMotorBrickStaticInfo) == 0x000208, "Wrong size on UMotorBrickStaticInfo");
-static_assert(offsetof(UMotorBrickStaticInfo, MotorSoundCue) == 0x0001A8, "Member 'UMotorBrickStaticInfo::MotorSoundCue' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, StartupSound) == 0x0001B0, "Member 'UMotorBrickStaticInfo::StartupSound' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, BrakeReleaseSound) == 0x0001B8, "Member 'UMotorBrickStaticInfo::BrakeReleaseSound' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, BackFireSound) == 0x0001C0, "Member 'UMotorBrickStaticInfo::BackFireSound' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, StartupTime) == 0x0001C8, "Member 'UMotorBrickStaticInfo::StartupTime' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, Acceleration) == 0x0001CC, "Member 'UMotorBrickStaticInfo::Acceleration' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, RPMRange) == 0x0001D0, "Member 'UMotorBrickStaticInfo::RPMRange' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, ClutchRPMRange) == 0x0001D8, "Member 'UMotorBrickStaticInfo::ClutchRPMRange' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, ShiftUpRPMRange) == 0x0001E0, "Member 'UMotorBrickStaticInfo::ShiftUpRPMRange' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, ShiftDownRPMRange) == 0x0001E8, "Member 'UMotorBrickStaticInfo::ShiftDownRPMRange' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, BackfireRPM) == 0x0001F0, "Member 'UMotorBrickStaticInfo::BackfireRPM' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, ShiftDelay) == 0x0001F4, "Member 'UMotorBrickStaticInfo::ShiftDelay' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, MinAutoShiftDelay) == 0x0001F8, "Member 'UMotorBrickStaticInfo::MinAutoShiftDelay' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, NumForwardGears) == 0x0001FC, "Member 'UMotorBrickStaticInfo::NumForwardGears' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, NumReverseGears) == 0x0001FD, "Member 'UMotorBrickStaticInfo::NumReverseGears' has a wrong offset!");
-static_assert(offsetof(UMotorBrickStaticInfo, LastGearSpeed) == 0x000200, "Member 'UMotorBrickStaticInfo::LastGearSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UMotorBrickStaticInfo;
 
 // Class BrickRigs.MotorBrick
 // 0x00C0 (0x01B0 - 0x00F0)
@@ -13275,19 +12996,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MotorBrick">();
+		STATIC_CLASS_IMPL("MotorBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MotorBrick")
 	}
 	static class UMotorBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMotorBrick>();
 	}
 };
-static_assert(alignof(UMotorBrick) == 0x000008, "Wrong alignment on UMotorBrick");
-static_assert(sizeof(UMotorBrick) == 0x0001B0, "Wrong size on UMotorBrick");
-static_assert(offsetof(UMotorBrick, ConnectedAxles) == 0x0000F0, "Member 'UMotorBrick::ConnectedAxles' has a wrong offset!");
-static_assert(offsetof(UMotorBrick, ThrottleInputChannel) == 0x000150, "Member 'UMotorBrick::ThrottleInputChannel' has a wrong offset!");
-static_assert(offsetof(UMotorBrick, GearRatioScale) == 0x000178, "Member 'UMotorBrick::GearRatioScale' has a wrong offset!");
-static_assert(offsetof(UMotorBrick, bTankDrive) == 0x00017C, "Member 'UMotorBrick::bTankDrive' has a wrong offset!");
+DUMPER7_ASSERTS_UMotorBrick;
 
 // Class BrickRigs.UIFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -13319,15 +13039,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UIFunctionLibrary">();
+		STATIC_CLASS_IMPL("UIFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIFunctionLibrary")
 	}
 	static class UUIFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIFunctionLibrary>();
 	}
 };
-static_assert(alignof(UUIFunctionLibrary) == 0x000008, "Wrong alignment on UUIFunctionLibrary");
-static_assert(sizeof(UUIFunctionLibrary) == 0x000028, "Wrong size on UUIFunctionLibrary");
+DUMPER7_ASSERTS_UUIFunctionLibrary;
 
 // Class BrickRigs.MudguardBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -13336,15 +13059,18 @@ class UMudguardBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MudguardBrickStaticInfo">();
+		STATIC_CLASS_IMPL("MudguardBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MudguardBrickStaticInfo")
 	}
 	static class UMudguardBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMudguardBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UMudguardBrickStaticInfo) == 0x000008, "Wrong alignment on UMudguardBrickStaticInfo");
-static_assert(sizeof(UMudguardBrickStaticInfo) == 0x000190, "Wrong size on UMudguardBrickStaticInfo");
+DUMPER7_ASSERTS_UMudguardBrickStaticInfo;
 
 // Class BrickRigs.UGCMetaDataPopupParams
 // 0x0108 (0x0170 - 0x0068)
@@ -13362,19 +13088,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCMetaDataPopupParams">();
+		STATIC_CLASS_IMPL("UGCMetaDataPopupParams")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCMetaDataPopupParams")
 	}
 	static class UUGCMetaDataPopupParams* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCMetaDataPopupParams>();
 	}
 };
-static_assert(alignof(UUGCMetaDataPopupParams) == 0x000008, "Wrong alignment on UUGCMetaDataPopupParams");
-static_assert(sizeof(UUGCMetaDataPopupParams) == 0x000170, "Wrong size on UUGCMetaDataPopupParams");
-static_assert(offsetof(UUGCMetaDataPopupParams, bUpdateTitle) == 0x000070, "Member 'UUGCMetaDataPopupParams::bUpdateTitle' has a wrong offset!");
-static_assert(offsetof(UUGCMetaDataPopupParams, bUpdateDescription) == 0x000071, "Member 'UUGCMetaDataPopupParams::bUpdateDescription' has a wrong offset!");
-static_assert(offsetof(UUGCMetaDataPopupParams, bUpdateThumbnail) == 0x000072, "Member 'UUGCMetaDataPopupParams::bUpdateThumbnail' has a wrong offset!");
-static_assert(offsetof(UUGCMetaDataPopupParams, FileInfo) == 0x000078, "Member 'UUGCMetaDataPopupParams::FileInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UUGCMetaDataPopupParams;
 
 // Class BrickRigs.NetworkErrorPopupWidget
 // 0x0008 (0x02A0 - 0x0298)
@@ -13386,16 +13111,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetworkErrorPopupWidget">();
+		STATIC_CLASS_IMPL("NetworkErrorPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetworkErrorPopupWidget")
 	}
 	static class UNetworkErrorPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetworkErrorPopupWidget>();
 	}
 };
-static_assert(alignof(UNetworkErrorPopupWidget) == 0x000008, "Wrong alignment on UNetworkErrorPopupWidget");
-static_assert(sizeof(UNetworkErrorPopupWidget) == 0x0002A0, "Wrong size on UNetworkErrorPopupWidget");
-static_assert(offsetof(UNetworkErrorPopupWidget, MessageTextBlock) == 0x000298, "Member 'UNetworkErrorPopupWidget::MessageTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UNetworkErrorPopupWidget;
 
 // Class BrickRigs.NumericPropertyWidget
 // 0x0030 (0x02B0 - 0x0280)
@@ -13417,17 +13144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NumericPropertyWidget">();
+		STATIC_CLASS_IMPL("NumericPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NumericPropertyWidget")
 	}
 	static class UNumericPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNumericPropertyWidget>();
 	}
 };
-static_assert(alignof(UNumericPropertyWidget) == 0x000008, "Wrong alignment on UNumericPropertyWidget");
-static_assert(sizeof(UNumericPropertyWidget) == 0x0002B0, "Wrong size on UNumericPropertyWidget");
-static_assert(offsetof(UNumericPropertyWidget, Sliders) == 0x000280, "Member 'UNumericPropertyWidget::Sliders' has a wrong offset!");
-static_assert(offsetof(UNumericPropertyWidget, SliderClass) == 0x0002A8, "Member 'UNumericPropertyWidget::SliderClass' has a wrong offset!");
+DUMPER7_ASSERTS_UNumericPropertyWidget;
 
 // Class BrickRigs.PagedListHeaderWidget
 // 0x0060 (0x02C0 - 0x0260)
@@ -13447,15 +13175,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PagedListHeaderWidget">();
+		STATIC_CLASS_IMPL("PagedListHeaderWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PagedListHeaderWidget")
 	}
 	static class UPagedListHeaderWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPagedListHeaderWidget>();
 	}
 };
-static_assert(alignof(UPagedListHeaderWidget) == 0x000008, "Wrong alignment on UPagedListHeaderWidget");
-static_assert(sizeof(UPagedListHeaderWidget) == 0x0002C0, "Wrong size on UPagedListHeaderWidget");
+DUMPER7_ASSERTS_UPagedListHeaderWidget;
 
 // Class BrickRigs.PageSelectorWidget
 // 0x0020 (0x0280 - 0x0260)
@@ -13479,18 +13210,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PageSelectorWidget">();
+		STATIC_CLASS_IMPL("PageSelectorWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PageSelectorWidget")
 	}
 	static class UPageSelectorWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPageSelectorWidget>();
 	}
 };
-static_assert(alignof(UPageSelectorWidget) == 0x000008, "Wrong alignment on UPageSelectorWidget");
-static_assert(sizeof(UPageSelectorWidget) == 0x000280, "Wrong size on UPageSelectorWidget");
-static_assert(offsetof(UPageSelectorWidget, NumPages) == 0x000264, "Member 'UPageSelectorWidget::NumPages' has a wrong offset!");
-static_assert(offsetof(UPageSelectorWidget, Slider) == 0x000268, "Member 'UPageSelectorWidget::Slider' has a wrong offset!");
-static_assert(offsetof(UPageSelectorWidget, OnPageChangedDelegate) == 0x000270, "Member 'UPageSelectorWidget::OnPageChangedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPageSelectorWidget;
 
 // Class BrickRigs.PaintAttachment
 // 0x0040 (0x02B0 - 0x0270)
@@ -13508,21 +13239,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaintAttachment">();
+		STATIC_CLASS_IMPL("PaintAttachment")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaintAttachment")
 	}
 	static class APaintAttachment* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APaintAttachment>();
 	}
 };
-static_assert(alignof(APaintAttachment) == 0x000008, "Wrong alignment on APaintAttachment");
-static_assert(sizeof(APaintAttachment) == 0x0002B0, "Wrong size on APaintAttachment");
-static_assert(offsetof(APaintAttachment, PaintDisplayName) == 0x000270, "Member 'APaintAttachment::PaintDisplayName' has a wrong offset!");
-static_assert(offsetof(APaintAttachment, Color) == 0x000288, "Member 'APaintAttachment::Color' has a wrong offset!");
-static_assert(offsetof(APaintAttachment, Metallic) == 0x000298, "Member 'APaintAttachment::Metallic' has a wrong offset!");
-static_assert(offsetof(APaintAttachment, Roughness) == 0x00029C, "Member 'APaintAttachment::Roughness' has a wrong offset!");
-static_assert(offsetof(APaintAttachment, Texture) == 0x0002A0, "Member 'APaintAttachment::Texture' has a wrong offset!");
-static_assert(offsetof(APaintAttachment, Tiling) == 0x0002A8, "Member 'APaintAttachment::Tiling' has a wrong offset!");
+DUMPER7_ASSERTS_APaintAttachment;
 
 // Class BrickRigs.PingIndicatorWidget
 // 0x0020 (0x0280 - 0x0260)
@@ -13548,19 +13276,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PingIndicatorWidget">();
+		STATIC_CLASS_IMPL("PingIndicatorWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PingIndicatorWidget")
 	}
 	static class UPingIndicatorWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPingIndicatorWidget>();
 	}
 };
-static_assert(alignof(UPingIndicatorWidget) == 0x000008, "Wrong alignment on UPingIndicatorWidget");
-static_assert(sizeof(UPingIndicatorWidget) == 0x000280, "Wrong size on UPingIndicatorWidget");
-static_assert(offsetof(UPingIndicatorWidget, PlayerState) == 0x000260, "Member 'UPingIndicatorWidget::PlayerState' has a wrong offset!");
-static_assert(offsetof(UPingIndicatorWidget, PingTextBlock) == 0x000270, "Member 'UPingIndicatorWidget::PingTextBlock' has a wrong offset!");
-static_assert(offsetof(UPingIndicatorWidget, MinDisplayPing) == 0x000278, "Member 'UPingIndicatorWidget::MinDisplayPing' has a wrong offset!");
-static_assert(offsetof(UPingIndicatorWidget, bDisplayFrameRate) == 0x00027C, "Member 'UPingIndicatorWidget::bDisplayFrameRate' has a wrong offset!");
+DUMPER7_ASSERTS_UPingIndicatorWidget;
 
 // Class BrickRigs.PlacableObjectWidget
 // 0x0038 (0x02A8 - 0x0270)
@@ -13580,18 +13307,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlacableObjectWidget">();
+		STATIC_CLASS_IMPL("PlacableObjectWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlacableObjectWidget")
 	}
 	static class UPlacableObjectWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlacableObjectWidget>();
 	}
 };
-static_assert(alignof(UPlacableObjectWidget) == 0x000008, "Wrong alignment on UPlacableObjectWidget");
-static_assert(sizeof(UPlacableObjectWidget) == 0x0002A8, "Wrong size on UPlacableObjectWidget");
-static_assert(offsetof(UPlacableObjectWidget, Button) == 0x000290, "Member 'UPlacableObjectWidget::Button' has a wrong offset!");
-static_assert(offsetof(UPlacableObjectWidget, ThumbnailImage) == 0x000298, "Member 'UPlacableObjectWidget::ThumbnailImage' has a wrong offset!");
-static_assert(offsetof(UPlacableObjectWidget, NameTextBlock) == 0x0002A0, "Member 'UPlacableObjectWidget::NameTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UPlacableObjectWidget;
 
 // Class BrickRigs.PlayerIconWidget
 // 0x0018 (0x02B0 - 0x0298)
@@ -13608,17 +13335,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerIconWidget">();
+		STATIC_CLASS_IMPL("PlayerIconWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerIconWidget")
 	}
 	static class UPlayerIconWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerIconWidget>();
 	}
 };
-static_assert(alignof(UPlayerIconWidget) == 0x000008, "Wrong alignment on UPlayerIconWidget");
-static_assert(sizeof(UPlayerIconWidget) == 0x0002B0, "Wrong size on UPlayerIconWidget");
-static_assert(offsetof(UPlayerIconWidget, Character) == 0x000298, "Member 'UPlayerIconWidget::Character' has a wrong offset!");
-static_assert(offsetof(UPlayerIconWidget, CharacterPlayerState) == 0x0002A0, "Member 'UPlayerIconWidget::CharacterPlayerState' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerIconWidget;
 
 // Class BrickRigs.PlayersMenuWidget
 // 0x0008 (0x0278 - 0x0270)
@@ -13636,16 +13364,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayersMenuWidget">();
+		STATIC_CLASS_IMPL("PlayersMenuWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayersMenuWidget")
 	}
 	static class UPlayersMenuWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayersMenuWidget>();
 	}
 };
-static_assert(alignof(UPlayersMenuWidget) == 0x000008, "Wrong alignment on UPlayersMenuWidget");
-static_assert(sizeof(UPlayersMenuWidget) == 0x000278, "Wrong size on UPlayersMenuWidget");
-static_assert(offsetof(UPlayersMenuWidget, Scoreboard) == 0x000270, "Member 'UPlayersMenuWidget::Scoreboard' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayersMenuWidget;
 
 // Class BrickRigs.PopupContainerWidget
 // 0x0030 (0x02A8 - 0x0278)
@@ -13673,17 +13403,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupContainerWidget">();
+		STATIC_CLASS_IMPL("PopupContainerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupContainerWidget")
 	}
 	static class UPopupContainerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupContainerWidget>();
 	}
 };
-static_assert(alignof(UPopupContainerWidget) == 0x000008, "Wrong alignment on UPopupContainerWidget");
-static_assert(sizeof(UPopupContainerWidget) == 0x0002A8, "Wrong size on UPopupContainerWidget");
-static_assert(offsetof(UPopupContainerWidget, PopupParams) == 0x000290, "Member 'UPopupContainerWidget::PopupParams' has a wrong offset!");
-static_assert(offsetof(UPopupContainerWidget, PopupWidget) == 0x000298, "Member 'UPopupContainerWidget::PopupWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupContainerWidget;
 
 // Class BrickRigs.ProjectileImpactInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -13692,7 +13423,11 @@ class IProjectileImpactInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProjectileImpactInterface">();
+		STATIC_CLASS_IMPL("ProjectileImpactInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProjectileImpactInterface")
 	}
 	static class IProjectileImpactInterface* GetDefaultObj()
 	{
@@ -13708,8 +13443,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IProjectileImpactInterface) == 0x000001, "Wrong alignment on IProjectileImpactInterface");
-static_assert(sizeof(IProjectileImpactInterface) == 0x000001, "Wrong size on IProjectileImpactInterface");
+DUMPER7_ASSERTS_IProjectileImpactInterface;
 
 // Class BrickRigs.PropellerBrickStaticInfo
 // 0x0008 (0x0198 - 0x0190)
@@ -13722,17 +13456,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropellerBrickStaticInfo">();
+		STATIC_CLASS_IMPL("PropellerBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropellerBrickStaticInfo")
 	}
 	static class UPropellerBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropellerBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UPropellerBrickStaticInfo) == 0x000008, "Wrong alignment on UPropellerBrickStaticInfo");
-static_assert(sizeof(UPropellerBrickStaticInfo) == 0x000198, "Wrong size on UPropellerBrickStaticInfo");
-static_assert(offsetof(UPropellerBrickStaticInfo, PropellerRadius) == 0x000190, "Member 'UPropellerBrickStaticInfo::PropellerRadius' has a wrong offset!");
-static_assert(offsetof(UPropellerBrickStaticInfo, Thrust) == 0x000194, "Member 'UPropellerBrickStaticInfo::Thrust' has a wrong offset!");
+DUMPER7_ASSERTS_UPropellerBrickStaticInfo;
 
 // Class BrickRigs.PropertiesPanelWidget
 // 0x0070 (0x02D0 - 0x0260)
@@ -13759,21 +13494,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertiesPanelWidget">();
+		STATIC_CLASS_IMPL("PropertiesPanelWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertiesPanelWidget")
 	}
 	static class UPropertiesPanelWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertiesPanelWidget>();
 	}
 };
-static_assert(alignof(UPropertiesPanelWidget) == 0x000008, "Wrong alignment on UPropertiesPanelWidget");
-static_assert(sizeof(UPropertiesPanelWidget) == 0x0002D0, "Wrong size on UPropertiesPanelWidget");
-static_assert(offsetof(UPropertiesPanelWidget, PropertyCategoryWidgets) == 0x000278, "Member 'UPropertiesPanelWidget::PropertyCategoryWidgets' has a wrong offset!");
-static_assert(offsetof(UPropertiesPanelWidget, PropertyContainerWidgets) == 0x000288, "Member 'UPropertiesPanelWidget::PropertyContainerWidgets' has a wrong offset!");
-static_assert(offsetof(UPropertiesPanelWidget, CategoryWidgetClass) == 0x0002B8, "Member 'UPropertiesPanelWidget::CategoryWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPropertiesPanelWidget, ContainerWidgetClass) == 0x0002C0, "Member 'UPropertiesPanelWidget::ContainerWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPropertiesPanelWidget, NumPropertiesPerRow) == 0x0002C8, "Member 'UPropertiesPanelWidget::NumPropertiesPerRow' has a wrong offset!");
-static_assert(offsetof(UPropertiesPanelWidget, Orientation) == 0x0002CC, "Member 'UPropertiesPanelWidget::Orientation' has a wrong offset!");
+DUMPER7_ASSERTS_UPropertiesPanelWidget;
 
 // Class BrickRigs.PropertyContainerInputComponent
 // 0x0010 (0x0180 - 0x0170)
@@ -13796,15 +13528,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyContainerInputComponent">();
+		STATIC_CLASS_IMPL("PropertyContainerInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyContainerInputComponent")
 	}
 	static class UPropertyContainerInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyContainerInputComponent>();
 	}
 };
-static_assert(alignof(UPropertyContainerInputComponent) == 0x000008, "Wrong alignment on UPropertyContainerInputComponent");
-static_assert(sizeof(UPropertyContainerInputComponent) == 0x000180, "Wrong size on UPropertyContainerInputComponent");
+DUMPER7_ASSERTS_UPropertyContainerInputComponent;
 
 // Class BrickRigs.PropertyListInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -13817,7 +13552,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyListInterface">();
+		STATIC_CLASS_IMPL("PropertyListInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyListInterface")
 	}
 	static class IPropertyListInterface* GetDefaultObj()
 	{
@@ -13833,8 +13572,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IPropertyListInterface) == 0x000001, "Wrong alignment on IPropertyListInterface");
-static_assert(sizeof(IPropertyListInterface) == 0x000001, "Wrong size on IPropertyListInterface");
+DUMPER7_ASSERTS_IPropertyListInterface;
 
 // Class BrickRigs.PumpBrick
 // 0x0038 (0x0120 - 0x00E8)
@@ -13847,16 +13585,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PumpBrick">();
+		STATIC_CLASS_IMPL("PumpBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PumpBrick")
 	}
 	static class UPumpBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPumpBrick>();
 	}
 };
-static_assert(alignof(UPumpBrick) == 0x000008, "Wrong alignment on UPumpBrick");
-static_assert(sizeof(UPumpBrick) == 0x000120, "Wrong size on UPumpBrick");
-static_assert(offsetof(UPumpBrick, InputChannel) == 0x0000F8, "Member 'UPumpBrick::InputChannel' has a wrong offset!");
+DUMPER7_ASSERTS_UPumpBrick;
 
 // Class BrickRigs.RadioButtonPanel
 // 0x0028 (0x0188 - 0x0160)
@@ -13880,18 +13620,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RadioButtonPanel">();
+		STATIC_CLASS_IMPL("RadioButtonPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RadioButtonPanel")
 	}
 	static class URadioButtonPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URadioButtonPanel>();
 	}
 };
-static_assert(alignof(URadioButtonPanel) == 0x000008, "Wrong alignment on URadioButtonPanel");
-static_assert(sizeof(URadioButtonPanel) == 0x000188, "Wrong size on URadioButtonPanel");
-static_assert(offsetof(URadioButtonPanel, MinSelectedButtons) == 0x000170, "Member 'URadioButtonPanel::MinSelectedButtons' has a wrong offset!");
-static_assert(offsetof(URadioButtonPanel, MaxSelectedButtons) == 0x000174, "Member 'URadioButtonPanel::MaxSelectedButtons' has a wrong offset!");
-static_assert(offsetof(URadioButtonPanel, OnButtonSelectedDelegate) == 0x000178, "Member 'URadioButtonPanel::OnButtonSelectedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_URadioButtonPanel;
 
 // Class BrickRigs.RampBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -13900,15 +13640,18 @@ class URampBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RampBrickStaticInfo">();
+		STATIC_CLASS_IMPL("RampBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RampBrickStaticInfo")
 	}
 	static class URampBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URampBrickStaticInfo>();
 	}
 };
-static_assert(alignof(URampBrickStaticInfo) == 0x000008, "Wrong alignment on URampBrickStaticInfo");
-static_assert(sizeof(URampBrickStaticInfo) == 0x000190, "Wrong size on URampBrickStaticInfo");
+DUMPER7_ASSERTS_URampBrickStaticInfo;
 
 // Class BrickRigs.RCBrickStaticInfo
 // 0x0000 (0x01D0 - 0x01D0)
@@ -13917,15 +13660,18 @@ class URCBrickStaticInfo : public UScalableBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RCBrickStaticInfo">();
+		STATIC_CLASS_IMPL("RCBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RCBrickStaticInfo")
 	}
 	static class URCBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URCBrickStaticInfo>();
 	}
 };
-static_assert(alignof(URCBrickStaticInfo) == 0x000008, "Wrong alignment on URCBrickStaticInfo");
-static_assert(sizeof(URCBrickStaticInfo) == 0x0001D0, "Wrong size on URCBrickStaticInfo");
+DUMPER7_ASSERTS_URCBrickStaticInfo;
 
 // Class BrickRigs.ReloadAction
 // 0x0008 (0x00A0 - 0x0098)
@@ -13937,15 +13683,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ReloadAction">();
+		STATIC_CLASS_IMPL("ReloadAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReloadAction")
 	}
 	static class UReloadAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReloadAction>();
 	}
 };
-static_assert(alignof(UReloadAction) == 0x000008, "Wrong alignment on UReloadAction");
-static_assert(sizeof(UReloadAction) == 0x0000A0, "Wrong size on UReloadAction");
+DUMPER7_ASSERTS_UReloadAction;
 
 // Class BrickRigs.RestrictedAreaWidget
 // 0x0018 (0x0278 - 0x0260)
@@ -13963,15 +13712,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RestrictedAreaWidget">();
+		STATIC_CLASS_IMPL("RestrictedAreaWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RestrictedAreaWidget")
 	}
 	static class URestrictedAreaWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URestrictedAreaWidget>();
 	}
 };
-static_assert(alignof(URestrictedAreaWidget) == 0x000008, "Wrong alignment on URestrictedAreaWidget");
-static_assert(sizeof(URestrictedAreaWidget) == 0x000278, "Wrong size on URestrictedAreaWidget");
+DUMPER7_ASSERTS_URestrictedAreaWidget;
 
 // Class BrickRigs.ReuploadPopupWidget
 // 0x0030 (0x02C8 - 0x0298)
@@ -13989,15 +13741,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ReuploadPopupWidget">();
+		STATIC_CLASS_IMPL("ReuploadPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReuploadPopupWidget")
 	}
 	static class UReuploadPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReuploadPopupWidget>();
 	}
 };
-static_assert(alignof(UReuploadPopupWidget) == 0x000008, "Wrong alignment on UReuploadPopupWidget");
-static_assert(sizeof(UReuploadPopupWidget) == 0x0002C8, "Wrong size on UReuploadPopupWidget");
+DUMPER7_ASSERTS_UReuploadPopupWidget;
 
 // Class BrickRigs.RotorBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -14006,15 +13761,18 @@ class URotorBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RotorBrickStaticInfo">();
+		STATIC_CLASS_IMPL("RotorBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RotorBrickStaticInfo")
 	}
 	static class URotorBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URotorBrickStaticInfo>();
 	}
 };
-static_assert(alignof(URotorBrickStaticInfo) == 0x000008, "Wrong alignment on URotorBrickStaticInfo");
-static_assert(sizeof(URotorBrickStaticInfo) == 0x000190, "Wrong size on URotorBrickStaticInfo");
+DUMPER7_ASSERTS_URotorBrickStaticInfo;
 
 // Class BrickRigs.SandboxGameMode
 // 0x0000 (0x0448 - 0x0448)
@@ -14023,15 +13781,18 @@ class ASandboxGameMode : public ABrickGameMode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SandboxGameMode">();
+		STATIC_CLASS_IMPL("SandboxGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SandboxGameMode")
 	}
 	static class ASandboxGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASandboxGameMode>();
 	}
 };
-static_assert(alignof(ASandboxGameMode) == 0x000008, "Wrong alignment on ASandboxGameMode");
-static_assert(sizeof(ASandboxGameMode) == 0x000448, "Wrong size on ASandboxGameMode");
+DUMPER7_ASSERTS_ASandboxGameMode;
 
 // Class BrickRigs.ScoreboardPlayerWidget
 // 0x0090 (0x02F0 - 0x0260)
@@ -14059,23 +13820,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScoreboardPlayerWidget">();
+		STATIC_CLASS_IMPL("ScoreboardPlayerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScoreboardPlayerWidget")
 	}
 	static class UScoreboardPlayerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScoreboardPlayerWidget>();
 	}
 };
-static_assert(alignof(UScoreboardPlayerWidget) == 0x000008, "Wrong alignment on UScoreboardPlayerWidget");
-static_assert(sizeof(UScoreboardPlayerWidget) == 0x0002F0, "Wrong size on UScoreboardPlayerWidget");
-static_assert(offsetof(UScoreboardPlayerWidget, PlayerState) == 0x000270, "Member 'UScoreboardPlayerWidget::PlayerState' has a wrong offset!");
-static_assert(offsetof(UScoreboardPlayerWidget, Button) == 0x000298, "Member 'UScoreboardPlayerWidget::Button' has a wrong offset!");
-static_assert(offsetof(UScoreboardPlayerWidget, PositionTextBlock) == 0x0002A0, "Member 'UScoreboardPlayerWidget::PositionTextBlock' has a wrong offset!");
-static_assert(offsetof(UScoreboardPlayerWidget, NameTextBlock) == 0x0002A8, "Member 'UScoreboardPlayerWidget::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UScoreboardPlayerWidget, KillsTextBlock) == 0x0002B0, "Member 'UScoreboardPlayerWidget::KillsTextBlock' has a wrong offset!");
-static_assert(offsetof(UScoreboardPlayerWidget, DeathsTextBlock) == 0x0002B8, "Member 'UScoreboardPlayerWidget::DeathsTextBlock' has a wrong offset!");
-static_assert(offsetof(UScoreboardPlayerWidget, ScoreTextBlock) == 0x0002C0, "Member 'UScoreboardPlayerWidget::ScoreTextBlock' has a wrong offset!");
-static_assert(offsetof(UScoreboardPlayerWidget, PingIndicator) == 0x0002C8, "Member 'UScoreboardPlayerWidget::PingIndicator' has a wrong offset!");
+DUMPER7_ASSERTS_UScoreboardPlayerWidget;
 
 // Class BrickRigs.ScoreboardTeamWidget
 // 0x0050 (0x02B0 - 0x0260)
@@ -14101,22 +13857,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScoreboardTeamWidget">();
+		STATIC_CLASS_IMPL("ScoreboardTeamWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScoreboardTeamWidget")
 	}
 	static class UScoreboardTeamWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScoreboardTeamWidget>();
 	}
 };
-static_assert(alignof(UScoreboardTeamWidget) == 0x000008, "Wrong alignment on UScoreboardTeamWidget");
-static_assert(sizeof(UScoreboardTeamWidget) == 0x0002B0, "Wrong size on UScoreboardTeamWidget");
-static_assert(offsetof(UScoreboardTeamWidget, BrickTeam) == 0x000268, "Member 'UScoreboardTeamWidget::BrickTeam' has a wrong offset!");
-static_assert(offsetof(UScoreboardTeamWidget, PlayerWidgets) == 0x000270, "Member 'UScoreboardTeamWidget::PlayerWidgets' has a wrong offset!");
-static_assert(offsetof(UScoreboardTeamWidget, TeamNameTextBlock) == 0x000290, "Member 'UScoreboardTeamWidget::TeamNameTextBlock' has a wrong offset!");
-static_assert(offsetof(UScoreboardTeamWidget, ScoreTextBlock) == 0x000298, "Member 'UScoreboardTeamWidget::ScoreTextBlock' has a wrong offset!");
-static_assert(offsetof(UScoreboardTeamWidget, PlayersPanel) == 0x0002A0, "Member 'UScoreboardTeamWidget::PlayersPanel' has a wrong offset!");
-static_assert(offsetof(UScoreboardTeamWidget, NumPlayersPerRow) == 0x0002A8, "Member 'UScoreboardTeamWidget::NumPlayersPerRow' has a wrong offset!");
-static_assert(offsetof(UScoreboardTeamWidget, SortPlayersDelay) == 0x0002AC, "Member 'UScoreboardTeamWidget::SortPlayersDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UScoreboardTeamWidget;
 
 // Class BrickRigs.SeatBrickStaticInfo
 // 0x0058 (0x01E8 - 0x0190)
@@ -14140,27 +13892,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SeatBrickStaticInfo">();
+		STATIC_CLASS_IMPL("SeatBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SeatBrickStaticInfo")
 	}
 	static class USeatBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USeatBrickStaticInfo>();
 	}
 };
-static_assert(alignof(USeatBrickStaticInfo) == 0x000008, "Wrong alignment on USeatBrickStaticInfo");
-static_assert(sizeof(USeatBrickStaticInfo) == 0x0001E8, "Wrong size on USeatBrickStaticInfo");
-static_assert(offsetof(USeatBrickStaticInfo, ViewPitchRange) == 0x000190, "Member 'USeatBrickStaticInfo::ViewPitchRange' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, ViewPitchRangeItem) == 0x000198, "Member 'USeatBrickStaticInfo::ViewPitchRangeItem' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, ViewYawRange) == 0x0001A0, "Member 'USeatBrickStaticInfo::ViewYawRange' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, ViewYawRangeItem) == 0x0001A8, "Member 'USeatBrickStaticInfo::ViewYawRangeItem' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, CharacterDamageScale) == 0x0001B0, "Member 'USeatBrickStaticInfo::CharacterDamageScale' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, MinCharacterDamage) == 0x0001B4, "Member 'USeatBrickStaticInfo::MinCharacterDamage' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, EditorCharacterMaterial) == 0x0001B8, "Member 'USeatBrickStaticInfo::EditorCharacterMaterial' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, CharacterIdleSequence) == 0x0001C0, "Member 'USeatBrickStaticInfo::CharacterIdleSequence' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, CharacterCapsuleHalfHeight) == 0x0001C8, "Member 'USeatBrickStaticInfo::CharacterCapsuleHalfHeight' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, CharacterIdleCameraSocketLocation) == 0x0001CC, "Member 'USeatBrickStaticInfo::CharacterIdleCameraSocketLocation' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, NumInventorySlots) == 0x0001D8, "Member 'USeatBrickStaticInfo::NumInventorySlots' has a wrong offset!");
-static_assert(offsetof(USeatBrickStaticInfo, ShiftSound) == 0x0001E0, "Member 'USeatBrickStaticInfo::ShiftSound' has a wrong offset!");
+DUMPER7_ASSERTS_USeatBrickStaticInfo;
 
 // Class BrickRigs.ServerBrowserWidget
 // 0x0038 (0x02A8 - 0x0270)
@@ -14187,21 +13930,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ServerBrowserWidget">();
+		STATIC_CLASS_IMPL("ServerBrowserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ServerBrowserWidget")
 	}
 	static class UServerBrowserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UServerBrowserWidget>();
 	}
 };
-static_assert(alignof(UServerBrowserWidget) == 0x000008, "Wrong alignment on UServerBrowserWidget");
-static_assert(sizeof(UServerBrowserWidget) == 0x0002A8, "Wrong size on UServerBrowserWidget");
-static_assert(offsetof(UServerBrowserWidget, PagedList) == 0x000288, "Member 'UServerBrowserWidget::PagedList' has a wrong offset!");
-static_assert(offsetof(UServerBrowserWidget, SearchSessionType) == 0x000290, "Member 'UServerBrowserWidget::SearchSessionType' has a wrong offset!");
-static_assert(offsetof(UServerBrowserWidget, ServerSortMethod) == 0x000291, "Member 'UServerBrowserWidget::ServerSortMethod' has a wrong offset!");
-static_assert(offsetof(UServerBrowserWidget, bSearchPrivateServers) == 0x000292, "Member 'UServerBrowserWidget::bSearchPrivateServers' has a wrong offset!");
-static_assert(offsetof(UServerBrowserWidget, bSearchServersWithDifferentMods) == 0x000293, "Member 'UServerBrowserWidget::bSearchServersWithDifferentMods' has a wrong offset!");
-static_assert(offsetof(UServerBrowserWidget, ServerSearchText) == 0x000298, "Member 'UServerBrowserWidget::ServerSearchText' has a wrong offset!");
+DUMPER7_ASSERTS_UServerBrowserWidget;
 
 // Class BrickRigs.SightAttachment
 // 0x0048 (0x02B8 - 0x0270)
@@ -14216,17 +13956,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SightAttachment">();
+		STATIC_CLASS_IMPL("SightAttachment")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SightAttachment")
 	}
 	static class ASightAttachment* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASightAttachment>();
 	}
 };
-static_assert(alignof(ASightAttachment) == 0x000008, "Wrong alignment on ASightAttachment");
-static_assert(sizeof(ASightAttachment) == 0x0002B8, "Wrong size on ASightAttachment");
-static_assert(offsetof(ASightAttachment, OcclusionMID) == 0x000290, "Member 'ASightAttachment::OcclusionMID' has a wrong offset!");
-static_assert(offsetof(ASightAttachment, ReticleMaterial) == 0x000298, "Member 'ASightAttachment::ReticleMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_ASightAttachment;
 
 // Class BrickRigs.SirenBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -14235,15 +13976,18 @@ class USirenBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SirenBrickStaticInfo">();
+		STATIC_CLASS_IMPL("SirenBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SirenBrickStaticInfo")
 	}
 	static class USirenBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USirenBrickStaticInfo>();
 	}
 };
-static_assert(alignof(USirenBrickStaticInfo) == 0x000008, "Wrong alignment on USirenBrickStaticInfo");
-static_assert(sizeof(USirenBrickStaticInfo) == 0x000190, "Wrong size on USirenBrickStaticInfo");
+DUMPER7_ASSERTS_USirenBrickStaticInfo;
 
 // Class BrickRigs.SirenSequence
 // 0x0058 (0x0080 - 0x0028)
@@ -14258,19 +14002,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SirenSequence">();
+		STATIC_CLASS_IMPL("SirenSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SirenSequence")
 	}
 	static class USirenSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USirenSequence>();
 	}
 };
-static_assert(alignof(USirenSequence) == 0x000008, "Wrong alignment on USirenSequence");
-static_assert(sizeof(USirenSequence) == 0x000080, "Wrong size on USirenSequence");
-static_assert(offsetof(USirenSequence, DisplayName) == 0x000028, "Member 'USirenSequence::DisplayName' has a wrong offset!");
-static_assert(offsetof(USirenSequence, DisplayNameAppendix) == 0x000040, "Member 'USirenSequence::DisplayNameAppendix' has a wrong offset!");
-static_assert(offsetof(USirenSequence, DisplayCategory) == 0x000058, "Member 'USirenSequence::DisplayCategory' has a wrong offset!");
-static_assert(offsetof(USirenSequence, Channels) == 0x000070, "Member 'USirenSequence::Channels' has a wrong offset!");
+DUMPER7_ASSERTS_USirenSequence;
 
 // Class BrickRigs.SoundNodeMotor
 // 0x0018 (0x0060 - 0x0048)
@@ -14284,17 +14027,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundNodeMotor">();
+		STATIC_CLASS_IMPL("SoundNodeMotor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoundNodeMotor")
 	}
 	static class USoundNodeMotor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoundNodeMotor>();
 	}
 };
-static_assert(alignof(USoundNodeMotor) == 0x000008, "Wrong alignment on USoundNodeMotor");
-static_assert(sizeof(USoundNodeMotor) == 0x000060, "Wrong size on USoundNodeMotor");
-static_assert(offsetof(USoundNodeMotor, MotorSounds) == 0x000048, "Member 'USoundNodeMotor::MotorSounds' has a wrong offset!");
-static_assert(offsetof(USoundNodeMotor, FadeInRatio) == 0x000058, "Member 'USoundNodeMotor::FadeInRatio' has a wrong offset!");
+DUMPER7_ASSERTS_USoundNodeMotor;
 
 // Class BrickRigs.SpawnPointPanelWidget
 // 0x0010 (0x0308 - 0x02F8)
@@ -14308,17 +14052,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpawnPointPanelWidget">();
+		STATIC_CLASS_IMPL("SpawnPointPanelWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpawnPointPanelWidget")
 	}
 	static class USpawnPointPanelWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpawnPointPanelWidget>();
 	}
 };
-static_assert(alignof(USpawnPointPanelWidget) == 0x000008, "Wrong alignment on USpawnPointPanelWidget");
-static_assert(sizeof(USpawnPointPanelWidget) == 0x000308, "Wrong size on USpawnPointPanelWidget");
-static_assert(offsetof(USpawnPointPanelWidget, GridPanel) == 0x0002F8, "Member 'USpawnPointPanelWidget::GridPanel' has a wrong offset!");
-static_assert(offsetof(USpawnPointPanelWidget, NumSpawnPointsPerRow) == 0x000300, "Member 'USpawnPointPanelWidget::NumSpawnPointsPerRow' has a wrong offset!");
+DUMPER7_ASSERTS_USpawnPointPanelWidget;
 
 // Class BrickRigs.SpectatorInputComponent
 // 0x0008 (0x01E0 - 0x01D8)
@@ -14343,16 +14088,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpectatorInputComponent">();
+		STATIC_CLASS_IMPL("SpectatorInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpectatorInputComponent")
 	}
 	static class USpectatorInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpectatorInputComponent>();
 	}
 };
-static_assert(alignof(USpectatorInputComponent) == 0x000008, "Wrong alignment on USpectatorInputComponent");
-static_assert(sizeof(USpectatorInputComponent) == 0x0001E0, "Wrong size on USpectatorInputComponent");
-static_assert(offsetof(USpectatorInputComponent, SpectatorPawn) == 0x0001D8, "Member 'USpectatorInputComponent::SpectatorPawn' has a wrong offset!");
+DUMPER7_ASSERTS_USpectatorInputComponent;
 
 // Class BrickRigs.SpinnerBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -14361,15 +14108,18 @@ class USpinnerBrickStaticInfo : public UScalableBrickBaseStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpinnerBrickStaticInfo">();
+		STATIC_CLASS_IMPL("SpinnerBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpinnerBrickStaticInfo")
 	}
 	static class USpinnerBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpinnerBrickStaticInfo>();
 	}
 };
-static_assert(alignof(USpinnerBrickStaticInfo) == 0x000008, "Wrong alignment on USpinnerBrickStaticInfo");
-static_assert(sizeof(USpinnerBrickStaticInfo) == 0x000190, "Wrong size on USpinnerBrickStaticInfo");
+DUMPER7_ASSERTS_USpinnerBrickStaticInfo;
 
 // Class BrickRigs.SprocketWheelBrickStaticInfo
 // 0x0038 (0x01E8 - 0x01B0)
@@ -14390,24 +14140,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SprocketWheelBrickStaticInfo">();
+		STATIC_CLASS_IMPL("SprocketWheelBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SprocketWheelBrickStaticInfo")
 	}
 	static class USprocketWheelBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USprocketWheelBrickStaticInfo>();
 	}
 };
-static_assert(alignof(USprocketWheelBrickStaticInfo) == 0x000008, "Wrong alignment on USprocketWheelBrickStaticInfo");
-static_assert(sizeof(USprocketWheelBrickStaticInfo) == 0x0001E8, "Wrong size on USprocketWheelBrickStaticInfo");
-static_assert(offsetof(USprocketWheelBrickStaticInfo, TrackMesh) == 0x0001B0, "Member 'USprocketWheelBrickStaticInfo::TrackMesh' has a wrong offset!");
-static_assert(offsetof(USprocketWheelBrickStaticInfo, TrackMeshSize) == 0x0001B8, "Member 'USprocketWheelBrickStaticInfo::TrackMeshSize' has a wrong offset!");
-static_assert(offsetof(USprocketWheelBrickStaticInfo, TrackPhysMaterial) == 0x0001C0, "Member 'USprocketWheelBrickStaticInfo::TrackPhysMaterial' has a wrong offset!");
-static_assert(offsetof(USprocketWheelBrickStaticInfo, TrackBreakSound) == 0x0001C8, "Member 'USprocketWheelBrickStaticInfo::TrackBreakSound' has a wrong offset!");
-static_assert(offsetof(USprocketWheelBrickStaticInfo, TrackSpacing) == 0x0001D0, "Member 'USprocketWheelBrickStaticInfo::TrackSpacing' has a wrong offset!");
-static_assert(offsetof(USprocketWheelBrickStaticInfo, TrackThickness) == 0x0001D4, "Member 'USprocketWheelBrickStaticInfo::TrackThickness' has a wrong offset!");
-static_assert(offsetof(USprocketWheelBrickStaticInfo, MaxNumTrackInstances) == 0x0001D8, "Member 'USprocketWheelBrickStaticInfo::MaxNumTrackInstances' has a wrong offset!");
-static_assert(offsetof(USprocketWheelBrickStaticInfo, MaxNumIdlerWheels) == 0x0001DC, "Member 'USprocketWheelBrickStaticInfo::MaxNumIdlerWheels' has a wrong offset!");
-static_assert(offsetof(USprocketWheelBrickStaticInfo, TrackBreakParticleRatio) == 0x0001E0, "Member 'USprocketWheelBrickStaticInfo::TrackBreakParticleRatio' has a wrong offset!");
+DUMPER7_ASSERTS_USprocketWheelBrickStaticInfo;
 
 // Class BrickRigs.SteeringWheelBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -14416,15 +14160,18 @@ class USteeringWheelBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SteeringWheelBrickStaticInfo">();
+		STATIC_CLASS_IMPL("SteeringWheelBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteeringWheelBrickStaticInfo")
 	}
 	static class USteeringWheelBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteeringWheelBrickStaticInfo>();
 	}
 };
-static_assert(alignof(USteeringWheelBrickStaticInfo) == 0x000008, "Wrong alignment on USteeringWheelBrickStaticInfo");
-static_assert(sizeof(USteeringWheelBrickStaticInfo) == 0x000190, "Wrong size on USteeringWheelBrickStaticInfo");
+DUMPER7_ASSERTS_USteeringWheelBrickStaticInfo;
 
 // Class BrickRigs.SwitchBrickStaticInfo
 // 0x0000 (0x01D0 - 0x01D0)
@@ -14433,15 +14180,18 @@ class USwitchBrickStaticInfo : public USensorBrickBaseStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwitchBrickStaticInfo">();
+		STATIC_CLASS_IMPL("SwitchBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwitchBrickStaticInfo")
 	}
 	static class USwitchBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USwitchBrickStaticInfo>();
 	}
 };
-static_assert(alignof(USwitchBrickStaticInfo) == 0x000008, "Wrong alignment on USwitchBrickStaticInfo");
-static_assert(sizeof(USwitchBrickStaticInfo) == 0x0001D0, "Wrong size on USwitchBrickStaticInfo");
+DUMPER7_ASSERTS_USwitchBrickStaticInfo;
 
 // Class BrickRigs.TailBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -14450,15 +14200,18 @@ class UTailBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TailBrickStaticInfo">();
+		STATIC_CLASS_IMPL("TailBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TailBrickStaticInfo")
 	}
 	static class UTailBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTailBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UTailBrickStaticInfo) == 0x000008, "Wrong alignment on UTailBrickStaticInfo");
-static_assert(sizeof(UTailBrickStaticInfo) == 0x000190, "Wrong size on UTailBrickStaticInfo");
+DUMPER7_ASSERTS_UTailBrickStaticInfo;
 
 // Class BrickRigs.TankBrick
 // 0x0010 (0x0120 - 0x0110)
@@ -14471,16 +14224,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TankBrick">();
+		STATIC_CLASS_IMPL("TankBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TankBrick")
 	}
 	static class UTankBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTankBrick>();
 	}
 };
-static_assert(alignof(UTankBrick) == 0x000008, "Wrong alignment on UTankBrick");
-static_assert(sizeof(UTankBrick) == 0x000120, "Wrong size on UTankBrick");
-static_assert(offsetof(UTankBrick, FuelType) == 0x000118, "Member 'UTankBrick::FuelType' has a wrong offset!");
+DUMPER7_ASSERTS_UTankBrick;
 
 // Class BrickRigs.TargetMarkerBrickStaticInfo
 // 0x0040 (0x07B0 - 0x0770)
@@ -14496,19 +14251,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TargetMarkerBrickStaticInfo">();
+		STATIC_CLASS_IMPL("TargetMarkerBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TargetMarkerBrickStaticInfo")
 	}
 	static class UTargetMarkerBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTargetMarkerBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UTargetMarkerBrickStaticInfo) == 0x000010, "Wrong alignment on UTargetMarkerBrickStaticInfo");
-static_assert(sizeof(UTargetMarkerBrickStaticInfo) == 0x0007B0, "Wrong size on UTargetMarkerBrickStaticInfo");
-static_assert(offsetof(UTargetMarkerBrickStaticInfo, ImpactPointIconProperties) == 0x000768, "Member 'UTargetMarkerBrickStaticInfo::ImpactPointIconProperties' has a wrong offset!");
-static_assert(offsetof(UTargetMarkerBrickStaticInfo, NumTrajectoryIterationsPerGun) == 0x000798, "Member 'UTargetMarkerBrickStaticInfo::NumTrajectoryIterationsPerGun' has a wrong offset!");
-static_assert(offsetof(UTargetMarkerBrickStaticInfo, TrajectoryDistributionExponent) == 0x00079C, "Member 'UTargetMarkerBrickStaticInfo::TrajectoryDistributionExponent' has a wrong offset!");
-static_assert(offsetof(UTargetMarkerBrickStaticInfo, MaxGunIterationsPerFrame) == 0x0007A0, "Member 'UTargetMarkerBrickStaticInfo::MaxGunIterationsPerFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UTargetMarkerBrickStaticInfo;
 
 // Class BrickRigs.TargetMarkerIconComponent
 // 0x0028 (0x0160 - 0x0138)
@@ -14520,15 +14274,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TargetMarkerIconComponent">();
+		STATIC_CLASS_IMPL("TargetMarkerIconComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TargetMarkerIconComponent")
 	}
 	static class UTargetMarkerIconComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTargetMarkerIconComponent>();
 	}
 };
-static_assert(alignof(UTargetMarkerIconComponent) == 0x000008, "Wrong alignment on UTargetMarkerIconComponent");
-static_assert(sizeof(UTargetMarkerIconComponent) == 0x000160, "Wrong size on UTargetMarkerIconComponent");
+DUMPER7_ASSERTS_UTargetMarkerIconComponent;
 
 // Class BrickRigs.TargetMarkerBrick
 // 0x0018 (0x0180 - 0x0168)
@@ -14540,15 +14297,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TargetMarkerBrick">();
+		STATIC_CLASS_IMPL("TargetMarkerBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TargetMarkerBrick")
 	}
 	static class UTargetMarkerBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTargetMarkerBrick>();
 	}
 };
-static_assert(alignof(UTargetMarkerBrick) == 0x000008, "Wrong alignment on UTargetMarkerBrick");
-static_assert(sizeof(UTargetMarkerBrick) == 0x000180, "Wrong size on UTargetMarkerBrick");
+DUMPER7_ASSERTS_UTargetMarkerBrick;
 
 // Class BrickRigs.TargetMarkerIconWidget
 // 0x0008 (0x0290 - 0x0288)
@@ -14566,15 +14326,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TargetMarkerIconWidget">();
+		STATIC_CLASS_IMPL("TargetMarkerIconWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TargetMarkerIconWidget")
 	}
 	static class UTargetMarkerIconWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTargetMarkerIconWidget>();
 	}
 };
-static_assert(alignof(UTargetMarkerIconWidget) == 0x000008, "Wrong alignment on UTargetMarkerIconWidget");
-static_assert(sizeof(UTargetMarkerIconWidget) == 0x000290, "Wrong size on UTargetMarkerIconWidget");
+DUMPER7_ASSERTS_UTargetMarkerIconWidget;
 
 // Class BrickRigs.TeamBaseIconWidget
 // 0x0008 (0x0290 - 0x0288)
@@ -14586,16 +14349,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TeamBaseIconWidget">();
+		STATIC_CLASS_IMPL("TeamBaseIconWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamBaseIconWidget")
 	}
 	static class UTeamBaseIconWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamBaseIconWidget>();
 	}
 };
-static_assert(alignof(UTeamBaseIconWidget) == 0x000008, "Wrong alignment on UTeamBaseIconWidget");
-static_assert(sizeof(UTeamBaseIconWidget) == 0x000290, "Wrong size on UTeamBaseIconWidget");
-static_assert(offsetof(UTeamBaseIconWidget, TeamBase) == 0x000288, "Member 'UTeamBaseIconWidget::TeamBase' has a wrong offset!");
+DUMPER7_ASSERTS_UTeamBaseIconWidget;
 
 // Class BrickRigs.TeamScoreWidget
 // 0x0018 (0x0278 - 0x0260)
@@ -14613,15 +14378,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TeamScoreWidget">();
+		STATIC_CLASS_IMPL("TeamScoreWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamScoreWidget")
 	}
 	static class UTeamScoreWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamScoreWidget>();
 	}
 };
-static_assert(alignof(UTeamScoreWidget) == 0x000008, "Wrong alignment on UTeamScoreWidget");
-static_assert(sizeof(UTeamScoreWidget) == 0x000278, "Wrong size on UTeamScoreWidget");
+DUMPER7_ASSERTS_UTeamScoreWidget;
 
 // Class BrickRigs.TextBrickStaticInfo
 // 0x0008 (0x01D8 - 0x01D0)
@@ -14633,16 +14401,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TextBrickStaticInfo">();
+		STATIC_CLASS_IMPL("TextBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextBrickStaticInfo")
 	}
 	static class UTextBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UTextBrickStaticInfo) == 0x000008, "Wrong alignment on UTextBrickStaticInfo");
-static_assert(sizeof(UTextBrickStaticInfo) == 0x0001D8, "Wrong size on UTextBrickStaticInfo");
-static_assert(offsetof(UTextBrickStaticInfo, DefaultFont) == 0x0001D0, "Member 'UTextBrickStaticInfo::DefaultFont' has a wrong offset!");
+DUMPER7_ASSERTS_UTextBrickStaticInfo;
 
 // Class BrickRigs.ThrowExplosiveAction
 // 0x0008 (0x00A0 - 0x0098)
@@ -14654,15 +14424,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ThrowExplosiveAction">();
+		STATIC_CLASS_IMPL("ThrowExplosiveAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ThrowExplosiveAction")
 	}
 	static class UThrowExplosiveAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UThrowExplosiveAction>();
 	}
 };
-static_assert(alignof(UThrowExplosiveAction) == 0x000008, "Wrong alignment on UThrowExplosiveAction");
-static_assert(sizeof(UThrowExplosiveAction) == 0x0000A0, "Wrong size on UThrowExplosiveAction");
+DUMPER7_ASSERTS_UThrowExplosiveAction;
 
 // Class BrickRigs.ThrusterBrick
 // 0x0080 (0x0190 - 0x0110)
@@ -14683,19 +14456,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ThrusterBrick">();
+		STATIC_CLASS_IMPL("ThrusterBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ThrusterBrick")
 	}
 	static class UThrusterBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UThrusterBrick>();
 	}
 };
-static_assert(alignof(UThrusterBrick) == 0x000008, "Wrong alignment on UThrusterBrick");
-static_assert(sizeof(UThrusterBrick) == 0x000190, "Wrong size on UThrusterBrick");
-static_assert(offsetof(UThrusterBrick, RepAccumulatedInput) == 0x000124, "Member 'UThrusterBrick::RepAccumulatedInput' has a wrong offset!");
-static_assert(offsetof(UThrusterBrick, InputChannel) == 0x000160, "Member 'UThrusterBrick::InputChannel' has a wrong offset!");
-static_assert(offsetof(UThrusterBrick, InputScale) == 0x000188, "Member 'UThrusterBrick::InputScale' has a wrong offset!");
-static_assert(offsetof(UThrusterBrick, bAccumulated) == 0x00018C, "Member 'UThrusterBrick::bAccumulated' has a wrong offset!");
+DUMPER7_ASSERTS_UThrusterBrick;
 
 // Class BrickRigs.TooltipWidget
 // 0x0040 (0x02B0 - 0x0270)
@@ -14711,15 +14483,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TooltipWidget">();
+		STATIC_CLASS_IMPL("TooltipWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TooltipWidget")
 	}
 	static class UTooltipWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltipWidget>();
 	}
 };
-static_assert(alignof(UTooltipWidget) == 0x000008, "Wrong alignment on UTooltipWidget");
-static_assert(sizeof(UTooltipWidget) == 0x0002B0, "Wrong size on UTooltipWidget");
+DUMPER7_ASSERTS_UTooltipWidget;
 
 // Class BrickRigs.TrainWheelBrickStaticInfo
 // 0x0000 (0x01B0 - 0x01B0)
@@ -14728,15 +14503,18 @@ class UTrainWheelBrickStaticInfo : public UWheelBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TrainWheelBrickStaticInfo">();
+		STATIC_CLASS_IMPL("TrainWheelBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TrainWheelBrickStaticInfo")
 	}
 	static class UTrainWheelBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTrainWheelBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UTrainWheelBrickStaticInfo) == 0x000008, "Wrong alignment on UTrainWheelBrickStaticInfo");
-static_assert(sizeof(UTrainWheelBrickStaticInfo) == 0x0001B0, "Wrong size on UTrainWheelBrickStaticInfo");
+DUMPER7_ASSERTS_UTrainWheelBrickStaticInfo;
 
 // Class BrickRigs.TrussBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -14745,15 +14523,18 @@ class UTrussBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TrussBrickStaticInfo">();
+		STATIC_CLASS_IMPL("TrussBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TrussBrickStaticInfo")
 	}
 	static class UTrussBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTrussBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UTrussBrickStaticInfo) == 0x000008, "Wrong alignment on UTrussBrickStaticInfo");
-static_assert(sizeof(UTrussBrickStaticInfo) == 0x000190, "Wrong size on UTrussBrickStaticInfo");
+DUMPER7_ASSERTS_UTrussBrickStaticInfo;
 
 // Class BrickRigs.TurbineBrick
 // 0x0130 (0x0220 - 0x00F0)
@@ -14771,21 +14552,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TurbineBrick">();
+		STATIC_CLASS_IMPL("TurbineBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TurbineBrick")
 	}
 	static class UTurbineBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTurbineBrick>();
 	}
 };
-static_assert(alignof(UTurbineBrick) == 0x000008, "Wrong alignment on UTurbineBrick");
-static_assert(sizeof(UTurbineBrick) == 0x000220, "Wrong size on UTurbineBrick");
-static_assert(offsetof(UTurbineBrick, PowerInputChannel) == 0x000130, "Member 'UTurbineBrick::PowerInputChannel' has a wrong offset!");
-static_assert(offsetof(UTurbineBrick, PitchInputChannel) == 0x000158, "Member 'UTurbineBrick::PitchInputChannel' has a wrong offset!");
-static_assert(offsetof(UTurbineBrick, RollInputChannel) == 0x000180, "Member 'UTurbineBrick::RollInputChannel' has a wrong offset!");
-static_assert(offsetof(UTurbineBrick, YawInputChannel) == 0x0001A8, "Member 'UTurbineBrick::YawInputChannel' has a wrong offset!");
-static_assert(offsetof(UTurbineBrick, ThrottleInputChannel) == 0x0001D0, "Member 'UTurbineBrick::ThrottleInputChannel' has a wrong offset!");
-static_assert(offsetof(UTurbineBrick, AutoHoverInputChannel) == 0x0001F8, "Member 'UTurbineBrick::AutoHoverInputChannel' has a wrong offset!");
+DUMPER7_ASSERTS_UTurbineBrick;
 
 // Class BrickRigs.UGCBrowserWidget
 // 0x00D0 (0x0368 - 0x0298)
@@ -14849,24 +14627,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCBrowserWidget">();
+		STATIC_CLASS_IMPL("UGCBrowserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCBrowserWidget")
 	}
 	static class UUGCBrowserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCBrowserWidget>();
 	}
 };
-static_assert(alignof(UUGCBrowserWidget) == 0x000008, "Wrong alignment on UUGCBrowserWidget");
-static_assert(sizeof(UUGCBrowserWidget) == 0x000368, "Wrong size on UUGCBrowserWidget");
-static_assert(offsetof(UUGCBrowserWidget, LastSelectedUGCQueryType) == 0x000328, "Member 'UUGCBrowserWidget::LastSelectedUGCQueryType' has a wrong offset!");
-static_assert(offsetof(UUGCBrowserWidget, LastSelectedUGCSortMethod) == 0x000329, "Member 'UUGCBrowserWidget::LastSelectedUGCSortMethod' has a wrong offset!");
-static_assert(offsetof(UUGCBrowserWidget, PagedList) == 0x000340, "Member 'UUGCBrowserWidget::PagedList' has a wrong offset!");
-static_assert(offsetof(UUGCBrowserWidget, UGCQueryType) == 0x000348, "Member 'UUGCBrowserWidget::UGCQueryType' has a wrong offset!");
-static_assert(offsetof(UUGCBrowserWidget, UGCSortMethod) == 0x000349, "Member 'UUGCBrowserWidget::UGCSortMethod' has a wrong offset!");
-static_assert(offsetof(UUGCBrowserWidget, UGCSearchText) == 0x000350, "Member 'UUGCBrowserWidget::UGCSearchText' has a wrong offset!");
-static_assert(offsetof(UUGCBrowserWidget, bShowLegacyItems) == 0x000360, "Member 'UUGCBrowserWidget::bShowLegacyItems' has a wrong offset!");
-static_assert(offsetof(UUGCBrowserWidget, UGCTags) == 0x000361, "Member 'UUGCBrowserWidget::UGCTags' has a wrong offset!");
-static_assert(offsetof(UUGCBrowserWidget, VehicleSpawnInvincibility) == 0x000364, "Member 'UUGCBrowserWidget::VehicleSpawnInvincibility' has a wrong offset!");
+DUMPER7_ASSERTS_UUGCBrowserWidget;
 
 // Class BrickRigs.UGCItemWidget
 // 0x0108 (0x0390 - 0x0288)
@@ -14886,20 +14658,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCItemWidget">();
+		STATIC_CLASS_IMPL("UGCItemWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCItemWidget")
 	}
 	static class UUGCItemWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCItemWidget>();
 	}
 };
-static_assert(alignof(UUGCItemWidget) == 0x000008, "Wrong alignment on UUGCItemWidget");
-static_assert(sizeof(UUGCItemWidget) == 0x000390, "Wrong size on UUGCItemWidget");
-static_assert(offsetof(UUGCItemWidget, Entry) == 0x000288, "Member 'UUGCItemWidget::Entry' has a wrong offset!");
-static_assert(offsetof(UUGCItemWidget, Image) == 0x000370, "Member 'UUGCItemWidget::Image' has a wrong offset!");
-static_assert(offsetof(UUGCItemWidget, NameTextBlock) == 0x000378, "Member 'UUGCItemWidget::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UUGCItemWidget, ThumbnailRoundedEdgeRadius) == 0x000380, "Member 'UUGCItemWidget::ThumbnailRoundedEdgeRadius' has a wrong offset!");
-static_assert(offsetof(UUGCItemWidget, ThumbnailShadowOffset) == 0x000384, "Member 'UUGCItemWidget::ThumbnailShadowOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UUGCItemWidget;
 
 // Class BrickRigs.UGCMetaDataPopupWidget
 // 0x0008 (0x02A0 - 0x0298)
@@ -14911,16 +14681,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCMetaDataPopupWidget">();
+		STATIC_CLASS_IMPL("UGCMetaDataPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCMetaDataPopupWidget")
 	}
 	static class UUGCMetaDataPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCMetaDataPopupWidget>();
 	}
 };
-static_assert(alignof(UUGCMetaDataPopupWidget) == 0x000008, "Wrong alignment on UUGCMetaDataPopupWidget");
-static_assert(sizeof(UUGCMetaDataPopupWidget) == 0x0002A0, "Wrong size on UUGCMetaDataPopupWidget");
-static_assert(offsetof(UUGCMetaDataPopupWidget, PropertiesPanel) == 0x000298, "Member 'UUGCMetaDataPopupWidget::PropertiesPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UUGCMetaDataPopupWidget;
 
 // Class BrickRigs.UGCTagsPropertyWidget
 // 0x0018 (0x0298 - 0x0280)
@@ -14942,18 +14714,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCTagsPropertyWidget">();
+		STATIC_CLASS_IMPL("UGCTagsPropertyWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCTagsPropertyWidget")
 	}
 	static class UUGCTagsPropertyWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCTagsPropertyWidget>();
 	}
 };
-static_assert(alignof(UUGCTagsPropertyWidget) == 0x000008, "Wrong alignment on UUGCTagsPropertyWidget");
-static_assert(sizeof(UUGCTagsPropertyWidget) == 0x000298, "Wrong size on UUGCTagsPropertyWidget");
-static_assert(offsetof(UUGCTagsPropertyWidget, TypeComboBox) == 0x000280, "Member 'UUGCTagsPropertyWidget::TypeComboBox' has a wrong offset!");
-static_assert(offsetof(UUGCTagsPropertyWidget, EraComboBox) == 0x000288, "Member 'UUGCTagsPropertyWidget::EraComboBox' has a wrong offset!");
-static_assert(offsetof(UUGCTagsPropertyWidget, DepartmentComboBox) == 0x000290, "Member 'UUGCTagsPropertyWidget::DepartmentComboBox' has a wrong offset!");
+DUMPER7_ASSERTS_UUGCTagsPropertyWidget;
 
 // Class BrickRigs.UGCTaskPopupWidget
 // 0x0030 (0x02C8 - 0x0298)
@@ -14971,16 +14743,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UGCTaskPopupWidget">();
+		STATIC_CLASS_IMPL("UGCTaskPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCTaskPopupWidget")
 	}
 	static class UUGCTaskPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUGCTaskPopupWidget>();
 	}
 };
-static_assert(alignof(UUGCTaskPopupWidget) == 0x000008, "Wrong alignment on UUGCTaskPopupWidget");
-static_assert(sizeof(UUGCTaskPopupWidget) == 0x0002C8, "Wrong size on UUGCTaskPopupWidget");
-static_assert(offsetof(UUGCTaskPopupWidget, ProgressInterpSpeed) == 0x0002C0, "Member 'UUGCTaskPopupWidget::ProgressInterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UUGCTaskPopupWidget;
 
 // Class BrickRigs.UnequipAction
 // 0x0000 (0x0098 - 0x0098)
@@ -14989,15 +14763,18 @@ class UUnequipAction final : public UItemAction
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnequipAction">();
+		STATIC_CLASS_IMPL("UnequipAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnequipAction")
 	}
 	static class UUnequipAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnequipAction>();
 	}
 };
-static_assert(alignof(UUnequipAction) == 0x000008, "Wrong alignment on UUnequipAction");
-static_assert(sizeof(UUnequipAction) == 0x000098, "Wrong size on UUnequipAction");
+DUMPER7_ASSERTS_UUnequipAction;
 
 // Class BrickRigs.UnsavedChangesPopupWidget
 // 0x0000 (0x0298 - 0x0298)
@@ -15006,15 +14783,18 @@ class UUnsavedChangesPopupWidget : public UPopupWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnsavedChangesPopupWidget">();
+		STATIC_CLASS_IMPL("UnsavedChangesPopupWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnsavedChangesPopupWidget")
 	}
 	static class UUnsavedChangesPopupWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnsavedChangesPopupWidget>();
 	}
 };
-static_assert(alignof(UUnsavedChangesPopupWidget) == 0x000008, "Wrong alignment on UUnsavedChangesPopupWidget");
-static_assert(sizeof(UUnsavedChangesPopupWidget) == 0x000298, "Wrong size on UUnsavedChangesPopupWidget");
+DUMPER7_ASSERTS_UUnsavedChangesPopupWidget;
 
 // Class BrickRigs.VehicleEditor
 // 0x0058 (0x0538 - 0x04E0)
@@ -15027,16 +14807,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VehicleEditor">();
+		STATIC_CLASS_IMPL("VehicleEditor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VehicleEditor")
 	}
 	static class AVehicleEditor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVehicleEditor>();
 	}
 };
-static_assert(alignof(AVehicleEditor) == 0x000008, "Wrong alignment on AVehicleEditor");
-static_assert(sizeof(AVehicleEditor) == 0x000538, "Wrong size on AVehicleEditor");
-static_assert(offsetof(AVehicleEditor, InputChannelISMComp) == 0x000530, "Member 'AVehicleEditor::InputChannelISMComp' has a wrong offset!");
+DUMPER7_ASSERTS_AVehicleEditor;
 
 // Class BrickRigs.VehicleResourceSubsystem
 // 0x0080 (0x00B0 - 0x0030)
@@ -15051,15 +14833,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VehicleResourceSubsystem">();
+		STATIC_CLASS_IMPL("VehicleResourceSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VehicleResourceSubsystem")
 	}
 	static class UVehicleResourceSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVehicleResourceSubsystem>();
 	}
 };
-static_assert(alignof(UVehicleResourceSubsystem) == 0x000008, "Wrong alignment on UVehicleResourceSubsystem");
-static_assert(sizeof(UVehicleResourceSubsystem) == 0x0000B0, "Wrong size on UVehicleResourceSubsystem");
+DUMPER7_ASSERTS_UVehicleResourceSubsystem;
 
 // Class BrickRigs.ViewTargetInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -15068,7 +14853,11 @@ class IViewTargetInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ViewTargetInterface">();
+		STATIC_CLASS_IMPL("ViewTargetInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ViewTargetInterface")
 	}
 	static class IViewTargetInterface* GetDefaultObj()
 	{
@@ -15084,8 +14873,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IViewTargetInterface) == 0x000001, "Wrong alignment on IViewTargetInterface");
-static_assert(sizeof(IViewTargetInterface) == 0x000001, "Wrong size on IViewTargetInterface");
+DUMPER7_ASSERTS_IViewTargetInterface;
 
 // Class BrickRigs.Wearable
 // 0x0038 (0x02A8 - 0x0270)
@@ -15101,19 +14889,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Wearable">();
+		STATIC_CLASS_IMPL("Wearable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Wearable")
 	}
 	static class AWearable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWearable>();
 	}
 };
-static_assert(alignof(AWearable) == 0x000008, "Wrong alignment on AWearable");
-static_assert(sizeof(AWearable) == 0x0002A8, "Wrong size on AWearable");
-static_assert(offsetof(AWearable, ColorDisplayName) == 0x000270, "Member 'AWearable::ColorDisplayName' has a wrong offset!");
-static_assert(offsetof(AWearable, Color) == 0x000288, "Member 'AWearable::Color' has a wrong offset!");
-static_assert(offsetof(AWearable, Texture) == 0x000298, "Member 'AWearable::Texture' has a wrong offset!");
-static_assert(offsetof(AWearable, TextureTiling) == 0x0002A0, "Member 'AWearable::TextureTiling' has a wrong offset!");
+DUMPER7_ASSERTS_AWearable;
 
 // Class BrickRigs.WearableStaticInfo
 // 0x0010 (0x03A0 - 0x0390)
@@ -15126,16 +14913,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WearableStaticInfo">();
+		STATIC_CLASS_IMPL("WearableStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WearableStaticInfo")
 	}
 	static class UWearableStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWearableStaticInfo>();
 	}
 };
-static_assert(alignof(UWearableStaticInfo) == 0x000010, "Wrong alignment on UWearableStaticInfo");
-static_assert(sizeof(UWearableStaticInfo) == 0x0003A0, "Wrong size on UWearableStaticInfo");
-static_assert(offsetof(UWearableStaticInfo, WearableType) == 0x000390, "Member 'UWearableStaticInfo::WearableType' has a wrong offset!");
+DUMPER7_ASSERTS_UWearableStaticInfo;
 
 // Class BrickRigs.WeatherCondition
 // 0x0090 (0x00C0 - 0x0030)
@@ -15149,17 +14938,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WeatherCondition">();
+		STATIC_CLASS_IMPL("WeatherCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WeatherCondition")
 	}
 	static class UWeatherCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWeatherCondition>();
 	}
 };
-static_assert(alignof(UWeatherCondition) == 0x000008, "Wrong alignment on UWeatherCondition");
-static_assert(sizeof(UWeatherCondition) == 0x0000C0, "Wrong size on UWeatherCondition");
-static_assert(offsetof(UWeatherCondition, DisplayInfo) == 0x000038, "Member 'UWeatherCondition::DisplayInfo' has a wrong offset!");
-static_assert(offsetof(UWeatherCondition, Weather) == 0x000060, "Member 'UWeatherCondition::Weather' has a wrong offset!");
+DUMPER7_ASSERTS_UWeatherCondition;
 
 // Class BrickRigs.WheelHubBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -15168,15 +14958,18 @@ class UWheelHubBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WheelHubBrickStaticInfo">();
+		STATIC_CLASS_IMPL("WheelHubBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WheelHubBrickStaticInfo")
 	}
 	static class UWheelHubBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWheelHubBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UWheelHubBrickStaticInfo) == 0x000008, "Wrong alignment on UWheelHubBrickStaticInfo");
-static_assert(sizeof(UWheelHubBrickStaticInfo) == 0x000190, "Wrong size on UWheelHubBrickStaticInfo");
+DUMPER7_ASSERTS_UWheelHubBrickStaticInfo;
 
 // Class BrickRigs.WinchBrickStaticInfo
 // 0x0050 (0x01E0 - 0x0190)
@@ -15194,21 +14987,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WinchBrickStaticInfo">();
+		STATIC_CLASS_IMPL("WinchBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinchBrickStaticInfo")
 	}
 	static class UWinchBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinchBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UWinchBrickStaticInfo) == 0x000010, "Wrong alignment on UWinchBrickStaticInfo");
-static_assert(sizeof(UWinchBrickStaticInfo) == 0x0001E0, "Wrong size on UWinchBrickStaticInfo");
-static_assert(offsetof(UWinchBrickStaticInfo, HookMesh) == 0x000190, "Member 'UWinchBrickStaticInfo::HookMesh' has a wrong offset!");
-static_assert(offsetof(UWinchBrickStaticInfo, RopeMesh) == 0x000198, "Member 'UWinchBrickStaticInfo::RopeMesh' has a wrong offset!");
-static_assert(offsetof(UWinchBrickStaticInfo, MinRopeLength) == 0x0001A0, "Member 'UWinchBrickStaticInfo::MinRopeLength' has a wrong offset!");
-static_assert(offsetof(UWinchBrickStaticInfo, MaxRopeLength) == 0x0001A4, "Member 'UWinchBrickStaticInfo::MaxRopeLength' has a wrong offset!");
-static_assert(offsetof(UWinchBrickStaticInfo, WinchSpeed) == 0x0001A8, "Member 'UWinchBrickStaticInfo::WinchSpeed' has a wrong offset!");
-static_assert(offsetof(UWinchBrickStaticInfo, HookSocketTransform) == 0x0001B0, "Member 'UWinchBrickStaticInfo::HookSocketTransform' has a wrong offset!");
+DUMPER7_ASSERTS_UWinchBrickStaticInfo;
 
 // Class BrickRigs.WinchBrickInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -15217,7 +15007,11 @@ class IWinchBrickInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WinchBrickInterface">();
+		STATIC_CLASS_IMPL("WinchBrickInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinchBrickInterface")
 	}
 	static class IWinchBrickInterface* GetDefaultObj()
 	{
@@ -15233,8 +15027,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IWinchBrickInterface) == 0x000001, "Wrong alignment on IWinchBrickInterface");
-static_assert(sizeof(IWinchBrickInterface) == 0x000001, "Wrong size on IWinchBrickInterface");
+DUMPER7_ASSERTS_IWinchBrickInterface;
 
 // Class BrickRigs.WindowBrickStaticInfo
 // 0x0000 (0x0190 - 0x0190)
@@ -15243,15 +15036,18 @@ class UWindowBrickStaticInfo : public UBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WindowBrickStaticInfo">();
+		STATIC_CLASS_IMPL("WindowBrickStaticInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WindowBrickStaticInfo")
 	}
 	static class UWindowBrickStaticInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWindowBrickStaticInfo>();
 	}
 };
-static_assert(alignof(UWindowBrickStaticInfo) == 0x000008, "Wrong alignment on UWindowBrickStaticInfo");
-static_assert(sizeof(UWindowBrickStaticInfo) == 0x000190, "Wrong size on UWindowBrickStaticInfo");
+DUMPER7_ASSERTS_UWindowBrickStaticInfo;
 
 // Class BrickRigs.WindowManagerWidget
 // 0x0150 (0x03C0 - 0x0270)
@@ -15290,28 +15086,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WindowManagerWidget">();
+		STATIC_CLASS_IMPL("WindowManagerWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WindowManagerWidget")
 	}
 	static class UWindowManagerWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWindowManagerWidget>();
 	}
 };
-static_assert(alignof(UWindowManagerWidget) == 0x000008, "Wrong alignment on UWindowManagerWidget");
-static_assert(sizeof(UWindowManagerWidget) == 0x0003C0, "Wrong size on UWindowManagerWidget");
-static_assert(offsetof(UWindowManagerWidget, ActiveWidget) == 0x000280, "Member 'UWindowManagerWidget::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, PopupContainerWidgets) == 0x0002B8, "Member 'UWindowManagerWidget::PopupContainerWidgets' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, MenuAnchorWidget) == 0x0002D0, "Member 'UWindowManagerWidget::MenuAnchorWidget' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, CurrentTooltipWidget) == 0x0002F8, "Member 'UWindowManagerWidget::CurrentTooltipWidget' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, MainCanvasPanel) == 0x000320, "Member 'UWindowManagerWidget::MainCanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, IntroSequenceWidgetClass) == 0x000328, "Member 'UWindowManagerWidget::IntroSequenceWidgetClass' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, MenuWidgetClass) == 0x000350, "Member 'UWindowManagerWidget::MenuWidgetClass' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, HUDContainerWidgetClass) == 0x000378, "Member 'UWindowManagerWidget::HUDContainerWidgetClass' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, PopupContainerClass) == 0x0003A0, "Member 'UWindowManagerWidget::PopupContainerClass' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, ContextMenuWidgetClass) == 0x0003A8, "Member 'UWindowManagerWidget::ContextMenuWidgetClass' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, TooltipWidgetClass) == 0x0003B0, "Member 'UWindowManagerWidget::TooltipWidgetClass' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, TooltipOffset) == 0x0003B8, "Member 'UWindowManagerWidget::TooltipOffset' has a wrong offset!");
-static_assert(offsetof(UWindowManagerWidget, TooltipDelay) == 0x0003BC, "Member 'UWindowManagerWidget::TooltipDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UWindowManagerWidget;
 
 // Class BrickRigs.WingBrick
 // 0x0000 (0x00E8 - 0x00E8)
@@ -15320,15 +15106,18 @@ class UWingBrick final : public UBrick
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WingBrick">();
+		STATIC_CLASS_IMPL("WingBrick")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WingBrick")
 	}
 	static class UWingBrick* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWingBrick>();
 	}
 };
-static_assert(alignof(UWingBrick) == 0x000008, "Wrong alignment on UWingBrick");
-static_assert(sizeof(UWingBrick) == 0x0000E8, "Wrong size on UWingBrick");
+DUMPER7_ASSERTS_UWingBrick;
 
 // Class BrickRigs.WorldSetupActor
 // 0x0950 (0x0B70 - 0x0220)
@@ -15407,72 +15196,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WorldSetupActor">();
+		STATIC_CLASS_IMPL("WorldSetupActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WorldSetupActor")
 	}
 	static class AWorldSetupActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWorldSetupActor>();
 	}
 };
-static_assert(alignof(AWorldSetupActor) == 0x000010, "Wrong alignment on AWorldSetupActor");
-static_assert(sizeof(AWorldSetupActor) == 0x000B70, "Wrong size on AWorldSetupActor");
-static_assert(offsetof(AWorldSetupActor, CurrentWorldSetupParams) == 0x000238, "Member 'AWorldSetupActor::CurrentWorldSetupParams' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, PrevWorldSetupParams) == 0x000268, "Member 'AWorldSetupActor::PrevWorldSetupParams' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, TargetWorldSetupParams) == 0x000298, "Member 'AWorldSetupActor::TargetWorldSetupParams' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SunLightComponent) == 0x000450, "Member 'AWorldSetupActor::SunLightComponent' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SkyLightComponent) == 0x000458, "Member 'AWorldSetupActor::SkyLightComponent' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SkyMeshComponent) == 0x000460, "Member 'AWorldSetupActor::SkyMeshComponent' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudMeshComponent) == 0x000468, "Member 'AWorldSetupActor::CloudMeshComponent' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, PrecipitationPSC) == 0x000470, "Member 'AWorldSetupActor::PrecipitationPSC' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, LightningACs) == 0x000478, "Member 'AWorldSetupActor::LightningACs' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, ExponentialHeightFogComponent) == 0x000488, "Member 'AWorldSetupActor::ExponentialHeightFogComponent' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, PostProcessComponent) == 0x000490, "Member 'AWorldSetupActor::PostProcessComponent' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, AmbientAudioComponent) == 0x000498, "Member 'AWorldSetupActor::AmbientAudioComponent' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, MapCaptureComponent) == 0x0004A0, "Member 'AWorldSetupActor::MapCaptureComponent' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SkyMesh) == 0x0004A8, "Member 'AWorldSetupActor::SkyMesh' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SkyMeshScale) == 0x0004B0, "Member 'AWorldSetupActor::SkyMeshScale' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, EnvironmentMPC) == 0x0004B8, "Member 'AWorldSetupActor::EnvironmentMPC' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SkyMaterial) == 0x0004C0, "Member 'AWorldSetupActor::SkyMaterial' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, EditorSkyMaterial) == 0x0004C8, "Member 'AWorldSetupActor::EditorSkyMaterial' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, TimeTransitionRate) == 0x0004D0, "Member 'AWorldSetupActor::TimeTransitionRate' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, WeatherTransitionTime) == 0x0004D4, "Member 'AWorldSetupActor::WeatherTransitionTime' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, GroundCoverageTransitionTime) == 0x0004D8, "Member 'AWorldSetupActor::GroundCoverageTransitionTime' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SnowHeightRange) == 0x0004DC, "Member 'AWorldSetupActor::SnowHeightRange' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, WaterHeight) == 0x0004E4, "Member 'AWorldSetupActor::WaterHeight' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, TimeOfDayUpdateInterval) == 0x0004E8, "Member 'AWorldSetupActor::TimeOfDayUpdateInterval' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, ReflectionCaptureUpdateInterval) == 0x0004EC, "Member 'AWorldSetupActor::ReflectionCaptureUpdateInterval' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SunColorCurve) == 0x0004F0, "Member 'AWorldSetupActor::SunColorCurve' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SunColorCurveNoAtmosphere) == 0x0004F8, "Member 'AWorldSetupActor::SunColorCurveNoAtmosphere' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, SkyColorCurve) == 0x000500, "Member 'AWorldSetupActor::SkyColorCurve' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, HorizonColorCurve) == 0x000508, "Member 'AWorldSetupActor::HorizonColorCurve' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudDensitySunIntensityCurve) == 0x000510, "Member 'AWorldSetupActor::CloudDensitySunIntensityCurve' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudMesh) == 0x000518, "Member 'AWorldSetupActor::CloudMesh' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, MaxCloudThickness) == 0x000520, "Member 'AWorldSetupActor::MaxCloudThickness' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudCoordinateSnappingGrid) == 0x000524, "Member 'AWorldSetupActor::CloudCoordinateSnappingGrid' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudScaleSnappingGrid) == 0x000528, "Member 'AWorldSetupActor::CloudScaleSnappingGrid' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudScaleFactor) == 0x00052C, "Member 'AWorldSetupActor::CloudScaleFactor' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudLitColorSunIntensity) == 0x000530, "Member 'AWorldSetupActor::CloudLitColorSunIntensity' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudLitColorSkyIntensity) == 0x000534, "Member 'AWorldSetupActor::CloudLitColorSkyIntensity' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudUnlitColorDesaturation) == 0x000538, "Member 'AWorldSetupActor::CloudUnlitColorDesaturation' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudUnlitColorBrightness) == 0x00053C, "Member 'AWorldSetupActor::CloudUnlitColorBrightness' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, MinCloudOpaqueMaterialDensity) == 0x000540, "Member 'AWorldSetupActor::MinCloudOpaqueMaterialDensity' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudOpaqueMaterial) == 0x000548, "Member 'AWorldSetupActor::CloudOpaqueMaterial' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, CloudPostProcessMaterial) == 0x000550, "Member 'AWorldSetupActor::CloudPostProcessMaterial' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, FogDensity) == 0x000558, "Member 'AWorldSetupActor::FogDensity' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, FogHeightFalloff) == 0x00055C, "Member 'AWorldSetupActor::FogHeightFalloff' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, FogStartDistance) == 0x000560, "Member 'AWorldSetupActor::FogStartDistance' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, FogHeightOffset) == 0x000564, "Member 'AWorldSetupActor::FogHeightOffset' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, FogBrightness) == 0x000568, "Member 'AWorldSetupActor::FogBrightness' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, LightningSounds) == 0x000570, "Member 'AWorldSetupActor::LightningSounds' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, MaxLightningLength) == 0x000580, "Member 'AWorldSetupActor::MaxLightningLength' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, PrecipitationEmitters) == 0x000588, "Member 'AWorldSetupActor::PrecipitationEmitters' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, UnderwaterSoundMix) == 0x0005A0, "Member 'AWorldSetupActor::UnderwaterSoundMix' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, UnderwaterProcessMaterial) == 0x0005A8, "Member 'AWorldSetupActor::UnderwaterProcessMaterial' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, MapRenderTarget) == 0x0005B0, "Member 'AWorldSetupActor::MapRenderTarget' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, MapCaptureSource) == 0x0005B8, "Member 'AWorldSetupActor::MapCaptureSource' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, MapCaptureShowFlags) == 0x0005C0, "Member 'AWorldSetupActor::MapCaptureShowFlags' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, MapCapturePostProcessSettings) == 0x0005D0, "Member 'AWorldSetupActor::MapCapturePostProcessSettings' has a wrong offset!");
-static_assert(offsetof(AWorldSetupActor, MapWorldBounds) == 0x000B30, "Member 'AWorldSetupActor::MapWorldBounds' has a wrong offset!");
+DUMPER7_ASSERTS_AWorldSetupActor;
 
 // Class BrickRigs.Zombie
 // 0x0000 (0x07C0 - 0x07C0)
@@ -15481,15 +15216,18 @@ class AZombie : public ABaseCharacter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Zombie">();
+		STATIC_CLASS_IMPL("Zombie")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Zombie")
 	}
 	static class AZombie* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AZombie>();
 	}
 };
-static_assert(alignof(AZombie) == 0x000010, "Wrong alignment on AZombie");
-static_assert(sizeof(AZombie) == 0x0007C0, "Wrong size on AZombie");
+DUMPER7_ASSERTS_AZombie;
 
 // Class BrickRigs.ZombieAnimInstance
 // 0x0840 (0x0B00 - 0x02C0)
@@ -15501,20 +15239,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieAnimInstance">();
+		STATIC_CLASS_IMPL("ZombieAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAnimInstance")
 	}
 	static class UZombieAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZombieAnimInstance>();
 	}
 };
-static_assert(alignof(UZombieAnimInstance) == 0x000010, "Wrong alignment on UZombieAnimInstance");
-static_assert(sizeof(UZombieAnimInstance) == 0x000B00, "Wrong size on UZombieAnimInstance");
-static_assert(offsetof(UZombieAnimInstance, Proxy) == 0x0002C0, "Member 'UZombieAnimInstance::Proxy' has a wrong offset!");
+DUMPER7_ASSERTS_UZombieAnimInstance;
 
 // Class BrickRigs.ZombieGameMode
 // 0x0040 (0x0488 - 0x0448)
-class AZombieGameMode : public ABrickGameMode
+class AZombieGameMode final : public ABrickGameMode
 {
 public:
 	uint8                                         Pad_448[0x10];                                     // 0x0448(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -15528,21 +15268,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieGameMode">();
+		STATIC_CLASS_IMPL("ZombieGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieGameMode")
 	}
 	static class AZombieGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AZombieGameMode>();
 	}
 };
-static_assert(alignof(AZombieGameMode) == 0x000008, "Wrong alignment on AZombieGameMode");
-static_assert(sizeof(AZombieGameMode) == 0x000488, "Wrong size on AZombieGameMode");
-static_assert(offsetof(AZombieGameMode, Zombies) == 0x000458, "Member 'AZombieGameMode::Zombies' has a wrong offset!");
-static_assert(offsetof(AZombieGameMode, NumStartZombies) == 0x000468, "Member 'AZombieGameMode::NumStartZombies' has a wrong offset!");
-static_assert(offsetof(AZombieGameMode, AddZombiesPerWave) == 0x00046C, "Member 'AZombieGameMode::AddZombiesPerWave' has a wrong offset!");
-static_assert(offsetof(AZombieGameMode, ZombieLifeSpanRange) == 0x000470, "Member 'AZombieGameMode::ZombieLifeSpanRange' has a wrong offset!");
-static_assert(offsetof(AZombieGameMode, ZombieClass) == 0x000478, "Member 'AZombieGameMode::ZombieClass' has a wrong offset!");
-static_assert(offsetof(AZombieGameMode, BossZombieClass) == 0x000480, "Member 'AZombieGameMode::BossZombieClass' has a wrong offset!");
+DUMPER7_ASSERTS_AZombieGameMode;
 
 // Class BrickRigs.ZombieGameState
 // 0x0000 (0x05E8 - 0x05E8)
@@ -15551,15 +15288,17 @@ class AZombieGameState final : public ABrickGameState
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieGameState">();
+		STATIC_CLASS_IMPL("ZombieGameState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieGameState")
 	}
 	static class AZombieGameState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AZombieGameState>();
 	}
 };
-static_assert(alignof(AZombieGameState) == 0x000008, "Wrong alignment on AZombieGameState");
-static_assert(sizeof(AZombieGameState) == 0x0005E8, "Wrong size on AZombieGameState");
+DUMPER7_ASSERTS_AZombieGameState;
 
-}
-
+SDK_NAMESPACE_END

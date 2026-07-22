@@ -15,108 +15,8 @@
 #include "FluUGC_structs.hpp"
 
 
-namespace SDK::Params
-{
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.GetSpawnButtonTooltipContent
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_UGCBrowser_C_GetSpawnButtonTooltipContent final
-{
-public:
-	struct FTooltipContent                        OutContent;                                        // 0x0000(0x0040)(Parm, OutParm)
-	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTooltipContent                        K2Node_MakeStruct_TooltipContent;                  // 0x0048(0x0040)()
-};
-static_assert(alignof(WBP_UGCBrowser_C_GetSpawnButtonTooltipContent) == 0x000008, "Wrong alignment on WBP_UGCBrowser_C_GetSpawnButtonTooltipContent");
-static_assert(sizeof(WBP_UGCBrowser_C_GetSpawnButtonTooltipContent) == 0x000088, "Wrong size on WBP_UGCBrowser_C_GetSpawnButtonTooltipContent");
-static_assert(offsetof(WBP_UGCBrowser_C_GetSpawnButtonTooltipContent, OutContent) == 0x000000, "Member 'WBP_UGCBrowser_C_GetSpawnButtonTooltipContent::OutContent' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_GetSpawnButtonTooltipContent, ReturnValue) == 0x000040, "Member 'WBP_UGCBrowser_C_GetSpawnButtonTooltipContent::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_GetSpawnButtonTooltipContent, K2Node_MakeStruct_TooltipContent) == 0x000048, "Member 'WBP_UGCBrowser_C_GetSpawnButtonTooltipContent::K2Node_MakeStruct_TooltipContent' has a wrong offset!");
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateClearItemsButton
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UGCBrowser_C_CreateClearItemsButton final
-{
-public:
-	bool                                          bIsArrayProperty;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_UGCBrowser_C_CreateClearItemsButton) == 0x000001, "Wrong alignment on WBP_UGCBrowser_C_CreateClearItemsButton");
-static_assert(sizeof(WBP_UGCBrowser_C_CreateClearItemsButton) == 0x000001, "Wrong size on WBP_UGCBrowser_C_CreateClearItemsButton");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateClearItemsButton, bIsArrayProperty) == 0x000000, "Member 'WBP_UGCBrowser_C_CreateClearItemsButton::bIsArrayProperty' has a wrong offset!");
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateFavoriteButton
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UGCBrowser_C_CreateFavoriteButton final
-{
-public:
-	bool                                          bIsFavorited;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_UGCBrowser_C_CreateFavoriteButton) == 0x000001, "Wrong alignment on WBP_UGCBrowser_C_CreateFavoriteButton");
-static_assert(sizeof(WBP_UGCBrowser_C_CreateFavoriteButton) == 0x000001, "Wrong size on WBP_UGCBrowser_C_CreateFavoriteButton");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateFavoriteButton, bIsFavorited) == 0x000000, "Member 'WBP_UGCBrowser_C_CreateFavoriteButton::bIsFavorited' has a wrong offset!");
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSpawnButton
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UGCBrowser_C_CreateSpawnButton final
-{
-public:
-	bool                                          bCanReplaceCurrent;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bCanSpawn;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   SpawnFailureText;                                  // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(WBP_UGCBrowser_C_CreateSpawnButton) == 0x000008, "Wrong alignment on WBP_UGCBrowser_C_CreateSpawnButton");
-static_assert(sizeof(WBP_UGCBrowser_C_CreateSpawnButton) == 0x000020, "Wrong size on WBP_UGCBrowser_C_CreateSpawnButton");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateSpawnButton, bCanReplaceCurrent) == 0x000000, "Member 'WBP_UGCBrowser_C_CreateSpawnButton::bCanReplaceCurrent' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateSpawnButton, bCanSpawn) == 0x000001, "Member 'WBP_UGCBrowser_C_CreateSpawnButton::bCanSpawn' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateSpawnButton, SpawnFailureText) == 0x000008, "Member 'WBP_UGCBrowser_C_CreateSpawnButton::SpawnFailureText' has a wrong offset!");
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSubscribeButton
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UGCBrowser_C_CreateSubscribeButton final
-{
-public:
-	bool                                          bIsSubscribed;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_UGCBrowser_C_CreateSubscribeButton) == 0x000001, "Wrong alignment on WBP_UGCBrowser_C_CreateSubscribeButton");
-static_assert(sizeof(WBP_UGCBrowser_C_CreateSubscribeButton) == 0x000001, "Wrong size on WBP_UGCBrowser_C_CreateSubscribeButton");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateSubscribeButton, bIsSubscribed) == 0x000000, "Member 'WBP_UGCBrowser_C_CreateSubscribeButton::bIsSubscribed' has a wrong offset!");
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateVoteButtons
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UGCBrowser_C_CreateVoteButtons final
-{
-public:
-	EFluUGCItemVote                               Vote;                                              // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_UGCBrowser_C_CreateVoteButtons) == 0x000001, "Wrong alignment on WBP_UGCBrowser_C_CreateVoteButtons");
-static_assert(sizeof(WBP_UGCBrowser_C_CreateVoteButtons) == 0x000001, "Wrong size on WBP_UGCBrowser_C_CreateVoteButtons");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateVoteButtons, Vote) == 0x000000, "Member 'WBP_UGCBrowser_C_CreateVoteButtons::Vote' has a wrong offset!");
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSpawnInvincibilityButton
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UGCBrowser_C_CreateSpawnInvincibilityButton final
-{
-public:
-	class FText                                   CurrentInvincibilityText;                          // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(WBP_UGCBrowser_C_CreateSpawnInvincibilityButton) == 0x000008, "Wrong alignment on WBP_UGCBrowser_C_CreateSpawnInvincibilityButton");
-static_assert(sizeof(WBP_UGCBrowser_C_CreateSpawnInvincibilityButton) == 0x000018, "Wrong size on WBP_UGCBrowser_C_CreateSpawnInvincibilityButton");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateSpawnInvincibilityButton, CurrentInvincibilityText) == 0x000000, "Member 'WBP_UGCBrowser_C_CreateSpawnInvincibilityButton::CurrentInvincibilityText' has a wrong offset!");
-
-// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateAddOrRemoveItemButton
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UGCBrowser_C_CreateAddOrRemoveItemButton final
-{
-public:
-	bool                                          bIsArrayProperty;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bIsSelected;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_UGCBrowser_C_CreateAddOrRemoveItemButton) == 0x000001, "Wrong alignment on WBP_UGCBrowser_C_CreateAddOrRemoveItemButton");
-static_assert(sizeof(WBP_UGCBrowser_C_CreateAddOrRemoveItemButton) == 0x000002, "Wrong size on WBP_UGCBrowser_C_CreateAddOrRemoveItemButton");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateAddOrRemoveItemButton, bIsArrayProperty) == 0x000000, "Member 'WBP_UGCBrowser_C_CreateAddOrRemoveItemButton::bIsArrayProperty' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_CreateAddOrRemoveItemButton, bIsSelected) == 0x000001, "Member 'WBP_UGCBrowser_C_CreateAddOrRemoveItemButton::bIsSelected' has a wrong offset!");
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UGCBrowser.WBP_UGCBrowser_C.ExecuteUbergraph_WBP_UGCBrowser
 // 0x0520 (0x0520 - 0x0000)
@@ -250,125 +150,86 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_25;           // 0x0508(0x0010)(ZeroConstructor, NoDestructor)
 	class UMenuButtonWidget*                      CallFunc_CreateButton_ReturnValue_19;              // 0x0518(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser) == 0x000008, "Wrong alignment on WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser");
-static_assert(sizeof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser) == 0x000520, "Wrong size on WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, EntryPoint) == 0x000000, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_3) == 0x000034, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_4) == 0x000044, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_5) == 0x000054, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_6) == 0x000064, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_7) == 0x000074, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_8) == 0x000084, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_9) == 0x000094, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_10) == 0x0000A4, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_11) == 0x0000B4, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_bool_Variable) == 0x0000C4, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_text_Variable) == 0x0000C8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_text_Variable_1) == 0x0000E0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_bool_Variable_1) == 0x0000F8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_bool_Variable_2) == 0x0000F9, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable) == 0x0000FA, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_1) == 0x0000FB, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_12) == 0x0000FC, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_13) == 0x00010C, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_bool_Variable_3) == 0x00011C, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_2) == 0x00011D, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_3) == 0x00011E, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_4) == 0x00011F, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_5) == 0x000120, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_6) == 0x000121, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_7) == 0x000122, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_8) == 0x000123, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_text_Variable_2) == 0x000128, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_text_Variable_3) == 0x000140, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_text_Variable_4) == 0x000158, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_9) == 0x000170, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_int_Variable) == 0x000174, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_int_Variable_1) == 0x000178, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_int_Variable_2) == 0x00017C, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, Temp_byte_Variable_10) == 0x000180, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_14) == 0x000184, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_bIsArrayProperty_1) == 0x000194, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_bIsArrayProperty_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_bIsFavorited) == 0x000195, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_bIsFavorited' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_bCanReplaceCurrent) == 0x000196, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_bCanReplaceCurrent' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_bCanSpawn) == 0x000197, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_bCanSpawn' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_SpawnFailureText) == 0x000198, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_SpawnFailureText' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_bIsSubscribed) == 0x0001B0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_bIsSubscribed' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Select_Default) == 0x0001B1, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_Vote) == 0x0001B2, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_Vote' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue) == 0x0001B8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Select_Default_1) == 0x0001C0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Select_Default_2) == 0x0001C8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Select_Default_3) == 0x0001E0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Select_Default_4) == 0x0001E4, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_1) == 0x0001F8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_15) == 0x000200, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_2) == 0x000210, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue) == 0x000218, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_16) == 0x000220, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_1) == 0x000230, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_17) == 0x000238, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_3) == 0x000248, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_18) == 0x000250, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_2) == 0x000260, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_3) == 0x000268, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_4) == 0x000270, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_5) == 0x000278, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_4) == 0x000280, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_5) == 0x000288, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_6) == 0x000290, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_6) == 0x000298, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_19) == 0x0002A0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_7) == 0x0002B0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateViewInBrowserButton_ReturnValue) == 0x0002B8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateViewInBrowserButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_7) == 0x0002C0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_8) == 0x0002C8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_9) == 0x0002D0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_8) == 0x0002D8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_9) == 0x0002E0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_10) == 0x0002E8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateExitButton_ReturnValue) == 0x0002F0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateExitButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_11) == 0x0002F8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_20) == 0x000300, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_20' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateImportButton_ReturnValue) == 0x000310, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateImportButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_12) == 0x000318, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_21) == 0x000320, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_21' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_10) == 0x000330, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_13) == 0x000338, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_14) == 0x000340, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_15) == 0x000348, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_11) == 0x000350, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_12) == 0x000358, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_16) == 0x000360, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_13) == 0x000368, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_17) == 0x000370, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_MakeLiteralText_ReturnValue) == 0x000378, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_14) == 0x000390, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_15) == 0x000398, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_18) == 0x0003A0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_22) == 0x0003A8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_22' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_CurrentInvincibilityText) == 0x0003B8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_CurrentInvincibilityText' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_16) == 0x0003D0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_MakeStruct_FormatArgumentData) == 0x0003D8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_GetButtonPanel_ReturnValue_19) == 0x000418, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_GetButtonPanel_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000420, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_23) == 0x000438, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_23' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_MakeStruct_FormatArgumentData_1) == 0x000448, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_24) == 0x000488, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_24' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_MakeArray_Array) == 0x000498, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_Format_ReturnValue) == 0x0004A8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_bIsArrayProperty) == 0x0004C0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_bIsArrayProperty' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Event_bIsSelected) == 0x0004C1, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Event_bIsSelected' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_17) == 0x0004C8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Select_Default_5) == 0x0004D0, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Select_Default_6) == 0x0004E8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_Select_Default_7) == 0x0004F8, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_18) == 0x000500, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, K2Node_CreateDelegate_OutputDelegate_25) == 0x000508, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::K2Node_CreateDelegate_OutputDelegate_25' has a wrong offset!");
-static_assert(offsetof(WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser, CallFunc_CreateButton_ReturnValue_19) == 0x000518, "Member 'WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser::CallFunc_CreateButton_ReturnValue_19' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UGCBrowser_C_ExecuteUbergraph_WBP_UGCBrowser;
 
-}
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateAddOrRemoveItemButton
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UGCBrowser_C_CreateAddOrRemoveItemButton final
+{
+public:
+	bool                                          bIsArrayProperty;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsSelected;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_UGCBrowser_C_CreateAddOrRemoveItemButton;
 
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSpawnInvincibilityButton
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UGCBrowser_C_CreateSpawnInvincibilityButton final
+{
+public:
+	class FText                                   CurrentInvincibilityText;                          // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UGCBrowser_C_CreateSpawnInvincibilityButton;
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateVoteButtons
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UGCBrowser_C_CreateVoteButtons final
+{
+public:
+	EFluUGCItemVote                               Vote;                                              // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UGCBrowser_C_CreateVoteButtons;
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSubscribeButton
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UGCBrowser_C_CreateSubscribeButton final
+{
+public:
+	bool                                          bIsSubscribed;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_UGCBrowser_C_CreateSubscribeButton;
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateSpawnButton
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UGCBrowser_C_CreateSpawnButton final
+{
+public:
+	bool                                          bCanReplaceCurrent;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bCanSpawn;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   SpawnFailureText;                                  // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UGCBrowser_C_CreateSpawnButton;
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateFavoriteButton
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UGCBrowser_C_CreateFavoriteButton final
+{
+public:
+	bool                                          bIsFavorited;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_UGCBrowser_C_CreateFavoriteButton;
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.CreateClearItemsButton
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UGCBrowser_C_CreateClearItemsButton final
+{
+public:
+	bool                                          bIsArrayProperty;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_UGCBrowser_C_CreateClearItemsButton;
+
+// Function WBP_UGCBrowser.WBP_UGCBrowser_C.GetSpawnButtonTooltipContent
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_UGCBrowser_C_GetSpawnButtonTooltipContent final
+{
+public:
+	struct FTooltipContent                        OutContent;                                        // 0x0000(0x0040)(Parm, OutParm)
+	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTooltipContent                        K2Node_MakeStruct_TooltipContent;                  // 0x0048(0x0040)()
+};
+DUMPER7_ASSERTS_WBP_UGCBrowser_C_GetSpawnButtonTooltipContent;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

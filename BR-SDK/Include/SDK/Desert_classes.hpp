@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Desert.Desert_C
 // 0x0008 (0x0230 - 0x0228)
@@ -26,16 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Desert_C">();
+		BP_STATIC_CLASS_IMPL("Desert_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Desert_C")
 	}
 	static class ADesert_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADesert_C>();
 	}
 };
-static_assert(alignof(ADesert_C) == 0x000008, "Wrong alignment on ADesert_C");
-static_assert(sizeof(ADesert_C) == 0x000230, "Wrong size on ADesert_C");
-static_assert(offsetof(ADesert_C, NewVar) == 0x000228, "Member 'ADesert_C::NewVar' has a wrong offset!");
+DUMPER7_ASSERTS_ADesert_C;
 
-}
-
+SDK_NAMESPACE_END

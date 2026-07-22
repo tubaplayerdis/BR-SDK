@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_PlayerIcon.WBP_PlayerIcon_C.ExecuteUbergraph_WBP_PlayerIcon
 // 0x0048 (0x0048 - 0x0000)
@@ -49,29 +49,7 @@ public:
 	struct FBrickUIIconSlot                       K2Node_MakeStruct_BrickUIIconSlot;                 // 0x003C(0x0008)(NoDestructor)
 	EBrickUIColorStyle                            K2Node_Select_Default_3;                           // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon) == 0x000004, "Wrong alignment on WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon");
-static_assert(sizeof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon) == 0x000048, "Wrong size on WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, EntryPoint) == 0x000000, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, K2Node_Event_bNewIsLocalPlayer) == 0x000004, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::K2Node_Event_bNewIsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, K2Node_Event_bNewIsTeamLeader) == 0x000005, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::K2Node_Event_bNewIsTeamLeader' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, K2Node_Event_NewStateOfHealth) == 0x000006, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::K2Node_Event_NewStateOfHealth' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, K2Node_Event_bNewCanBeDamaged) == 0x000007, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::K2Node_Event_bNewCanBeDamaged' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_bool_Variable) == 0x000008, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000009, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_int_Variable) == 0x00000C, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_bool_Variable_1) == 0x000010, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_int_Variable_1) == 0x000014, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_bool_Variable_2) == 0x000018, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_int_Variable_2) == 0x00001C, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_int_Variable_3) == 0x000020, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_bool_Variable_3) == 0x000024, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, K2Node_Select_Default) == 0x000028, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_byte_Variable) == 0x00002C, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, K2Node_Select_Default_1) == 0x000030, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, K2Node_Select_Default_2) == 0x000034, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, Temp_byte_Variable_1) == 0x000038, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, K2Node_MakeStruct_BrickUIIconSlot) == 0x00003C, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon, K2Node_Select_Default_3) == 0x000044, "Member 'WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon::K2Node_Select_Default_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PlayerIcon_C_ExecuteUbergraph_WBP_PlayerIcon;
 
 // Function WBP_PlayerIcon.WBP_PlayerIcon_C.UpdatePlayerIcon
 // 0x0004 (0x0004 - 0x0000)
@@ -83,12 +61,7 @@ public:
 	ECharacterStateOfHealth                       NewStateOfHealth;                                  // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bNewCanBeDamaged;                                  // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_PlayerIcon_C_UpdatePlayerIcon) == 0x000001, "Wrong alignment on WBP_PlayerIcon_C_UpdatePlayerIcon");
-static_assert(sizeof(WBP_PlayerIcon_C_UpdatePlayerIcon) == 0x000004, "Wrong size on WBP_PlayerIcon_C_UpdatePlayerIcon");
-static_assert(offsetof(WBP_PlayerIcon_C_UpdatePlayerIcon, bNewIsLocalPlayer) == 0x000000, "Member 'WBP_PlayerIcon_C_UpdatePlayerIcon::bNewIsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_UpdatePlayerIcon, bNewIsTeamLeader) == 0x000001, "Member 'WBP_PlayerIcon_C_UpdatePlayerIcon::bNewIsTeamLeader' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_UpdatePlayerIcon, NewStateOfHealth) == 0x000002, "Member 'WBP_PlayerIcon_C_UpdatePlayerIcon::NewStateOfHealth' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerIcon_C_UpdatePlayerIcon, bNewCanBeDamaged) == 0x000003, "Member 'WBP_PlayerIcon_C_UpdatePlayerIcon::bNewCanBeDamaged' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PlayerIcon_C_UpdatePlayerIcon;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

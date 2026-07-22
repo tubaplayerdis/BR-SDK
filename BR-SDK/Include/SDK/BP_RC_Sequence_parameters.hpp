@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_RC_Sequence.BP_RC_Sequence_C.ExecuteUbergraph_BP_RC_Sequence
 // 0x0100 (0x0100 - 0x0000)
@@ -38,21 +38,7 @@ public:
 	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0074(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence) == 0x000010, "Wrong alignment on BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence");
-static_assert(sizeof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence) == 0x000100, "Wrong size on BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, EntryPoint) == 0x000000, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_IsVehicleDestroyed_ReturnValue) == 0x000004, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_IsVehicleDestroyed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, K2Node_Event_DeltaSeconds) == 0x000008, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00000C, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_Add_FloatFloat_ReturnValue) == 0x000010, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_GetSplineLength_ReturnValue) == 0x000014, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_GetSplineLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_Percent_FloatFloat_ReturnValue) == 0x000018, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_GetTransformAtDistanceAlongSpline_ReturnValue) == 0x000020, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_GetTransformAtDistanceAlongSpline_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_BreakTransform_Location) == 0x000050, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_BreakTransform_Rotation) == 0x00005C, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_BreakTransform_Scale) == 0x000068, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x000074, "Member 'BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RC_Sequence_C_ExecuteUbergraph_BP_RC_Sequence;
 
 // Function BP_RC_Sequence.BP_RC_Sequence_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -61,9 +47,7 @@ struct BP_RC_Sequence_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RC_Sequence_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_RC_Sequence_C_ReceiveTick");
-static_assert(sizeof(BP_RC_Sequence_C_ReceiveTick) == 0x000004, "Wrong size on BP_RC_Sequence_C_ReceiveTick");
-static_assert(offsetof(BP_RC_Sequence_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_RC_Sequence_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RC_Sequence_C_ReceiveTick;
 
 // Function BP_RC_Sequence.BP_RC_Sequence_C.KickVehicle
 // 0x000C (0x000C - 0x0000)
@@ -72,9 +56,7 @@ struct BP_RC_Sequence_C_KickVehicle final
 public:
 	struct FVector                                Impulse;                                           // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RC_Sequence_C_KickVehicle) == 0x000004, "Wrong alignment on BP_RC_Sequence_C_KickVehicle");
-static_assert(sizeof(BP_RC_Sequence_C_KickVehicle) == 0x00000C, "Wrong size on BP_RC_Sequence_C_KickVehicle");
-static_assert(offsetof(BP_RC_Sequence_C_KickVehicle, Impulse) == 0x000000, "Member 'BP_RC_Sequence_C_KickVehicle::Impulse' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RC_Sequence_C_KickVehicle;
 
 // Function BP_RC_Sequence.BP_RC_Sequence_C.GetLookAtTarget
 // 0x0018 (0x0018 - 0x0000)
@@ -84,10 +66,7 @@ public:
 	struct FVector                                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RC_Sequence_C_GetLookAtTarget) == 0x000004, "Wrong alignment on BP_RC_Sequence_C_GetLookAtTarget");
-static_assert(sizeof(BP_RC_Sequence_C_GetLookAtTarget) == 0x000018, "Wrong size on BP_RC_Sequence_C_GetLookAtTarget");
-static_assert(offsetof(BP_RC_Sequence_C_GetLookAtTarget, ReturnValue) == 0x000000, "Member 'BP_RC_Sequence_C_GetLookAtTarget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetLookAtTarget, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00000C, "Member 'BP_RC_Sequence_C_GetLookAtTarget::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RC_Sequence_C_GetLookAtTarget;
 
 // Function BP_RC_Sequence.BP_RC_Sequence_C.GetTrailerRotation
 // 0x0048 (0x0048 - 0x0000)
@@ -108,20 +87,7 @@ public:
 	struct FRotator                               CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue; // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FRotator                               CallFunc_ComposeRotators_ReturnValue;              // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_RC_Sequence_C_GetTrailerRotation) == 0x000004, "Wrong alignment on BP_RC_Sequence_C_GetTrailerRotation");
-static_assert(sizeof(BP_RC_Sequence_C_GetTrailerRotation) == 0x000048, "Wrong size on BP_RC_Sequence_C_GetTrailerRotation");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, ReturnValue) == 0x000000, "Member 'BP_RC_Sequence_C_GetTrailerRotation::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_BreakVector_X) == 0x00000C, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_BreakVector_Y) == 0x000010, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_BreakVector_Z) == 0x000014, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000018, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_GetSplineLength_ReturnValue) == 0x00001C, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_GetSplineLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_Add_FloatFloat_ReturnValue) == 0x000020, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_Less_FloatFloat_ReturnValue) == 0x000024, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000028, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_SelectFloat_ReturnValue) == 0x00002C, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue) == 0x000030, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_GetTrailerRotation, CallFunc_ComposeRotators_ReturnValue) == 0x00003C, "Member 'BP_RC_Sequence_C_GetTrailerRotation::CallFunc_ComposeRotators_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RC_Sequence_C_GetTrailerRotation;
 
 // Function BP_RC_Sequence.BP_RC_Sequence_C.IsVehicleDestroyed
 // 0x0002 (0x0002 - 0x0000)
@@ -131,10 +97,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_RC_Sequence_C_IsVehicleDestroyed) == 0x000001, "Wrong alignment on BP_RC_Sequence_C_IsVehicleDestroyed");
-static_assert(sizeof(BP_RC_Sequence_C_IsVehicleDestroyed) == 0x000002, "Wrong size on BP_RC_Sequence_C_IsVehicleDestroyed");
-static_assert(offsetof(BP_RC_Sequence_C_IsVehicleDestroyed, ReturnValue) == 0x000000, "Member 'BP_RC_Sequence_C_IsVehicleDestroyed::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_C_IsVehicleDestroyed, CallFunc_IsSimulatingPhysics_ReturnValue) == 0x000001, "Member 'BP_RC_Sequence_C_IsVehicleDestroyed::CallFunc_IsSimulatingPhysics_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RC_Sequence_C_IsVehicleDestroyed;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

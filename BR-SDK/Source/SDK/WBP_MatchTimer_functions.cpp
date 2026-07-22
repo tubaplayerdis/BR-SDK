@@ -14,15 +14,14 @@
 #include "WBP_MatchTimer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_MatchTimer.WBP_MatchTimer_C.UpdateTimer
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   NewTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewTime_UpdateTimer                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MatchTimer_C::UpdateTimer(int32 NewTime)
+void UWBP_MatchTimer_C::UpdateTimer(int32 NewTime_UpdateTimer)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +30,7 @@ void UWBP_MatchTimer_C::UpdateTimer(int32 NewTime)
 
 	Params::WBP_MatchTimer_C_UpdateTimer Parms{};
 
-	Parms.NewTime = NewTime;
+	Parms.NewTime_UpdateTimer = NewTime_UpdateTimer;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -56,5 +55,5 @@ void UWBP_MatchTimer_C::ExecuteUbergraph_WBP_MatchTimer(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

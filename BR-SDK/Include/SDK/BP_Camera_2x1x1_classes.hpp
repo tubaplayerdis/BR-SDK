@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Camera_2x1x1.BP_Camera_2x1x1_C
 // 0x0000 (0x0770 - 0x0770)
@@ -23,15 +22,17 @@ class UBP_Camera_2x1x1_C final : public UCameraBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Camera_2x1x1_C">();
+		BP_STATIC_CLASS_IMPL("BP_Camera_2x1x1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Camera_2x1x1_C")
 	}
 	static class UBP_Camera_2x1x1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Camera_2x1x1_C>();
 	}
 };
-static_assert(alignof(UBP_Camera_2x1x1_C) == 0x000010, "Wrong alignment on UBP_Camera_2x1x1_C");
-static_assert(sizeof(UBP_Camera_2x1x1_C) == 0x000770, "Wrong size on UBP_Camera_2x1x1_C");
+DUMPER7_ASSERTS_UBP_Camera_2x1x1_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InputMappingProperty.WBP_InputMappingProperty_C
 // 0x0020 (0x02F0 - 0x02D0)
@@ -38,19 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InputMappingProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InputMappingProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InputMappingProperty_C")
 	}
 	static class UWBP_InputMappingProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InputMappingProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_InputMappingProperty_C) == 0x000008, "Wrong alignment on UWBP_InputMappingProperty_C");
-static_assert(sizeof(UWBP_InputMappingProperty_C) == 0x0002F0, "Wrong size on UWBP_InputMappingProperty_C");
-static_assert(offsetof(UWBP_InputMappingProperty_C, UberGraphFrame) == 0x0002D0, "Member 'UWBP_InputMappingProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InputMappingProperty_C, AddButton) == 0x0002D8, "Member 'UWBP_InputMappingProperty_C::AddButton' has a wrong offset!");
-static_assert(offsetof(UWBP_InputMappingProperty_C, AddImage) == 0x0002E0, "Member 'UWBP_InputMappingProperty_C::AddImage' has a wrong offset!");
-static_assert(offsetof(UWBP_InputMappingProperty_C, KeysBox) == 0x0002E8, "Member 'UWBP_InputMappingProperty_C::KeysBox' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InputMappingProperty_C;
 
-}
-
+SDK_NAMESPACE_END

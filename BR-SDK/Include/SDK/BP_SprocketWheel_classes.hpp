@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SprocketWheel.BP_SprocketWheel_C
 // 0x0000 (0x01E8 - 0x01E8)
@@ -23,15 +22,17 @@ class UBP_SprocketWheel_C final : public USprocketWheelBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SprocketWheel_C">();
+		BP_STATIC_CLASS_IMPL("BP_SprocketWheel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SprocketWheel_C")
 	}
 	static class UBP_SprocketWheel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_SprocketWheel_C>();
 	}
 };
-static_assert(alignof(UBP_SprocketWheel_C) == 0x000008, "Wrong alignment on UBP_SprocketWheel_C");
-static_assert(sizeof(UBP_SprocketWheel_C) == 0x0001E8, "Wrong size on UBP_SprocketWheel_C");
+DUMPER7_ASSERTS_UBP_SprocketWheel_C;
 
-}
-
+SDK_NAMESPACE_END

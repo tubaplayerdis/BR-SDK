@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UGCMetaDataPopup.WBP_UGCMetaDataPopup_C
 // 0x0008 (0x02A8 - 0x02A0)
@@ -33,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_UGCMetaDataPopup_C">();
+		BP_STATIC_CLASS_IMPL("WBP_UGCMetaDataPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_UGCMetaDataPopup_C")
 	}
 	static class UWBP_UGCMetaDataPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_UGCMetaDataPopup_C>();
 	}
 };
-static_assert(alignof(UWBP_UGCMetaDataPopup_C) == 0x000008, "Wrong alignment on UWBP_UGCMetaDataPopup_C");
-static_assert(sizeof(UWBP_UGCMetaDataPopup_C) == 0x0002A8, "Wrong size on UWBP_UGCMetaDataPopup_C");
-static_assert(offsetof(UWBP_UGCMetaDataPopup_C, UberGraphFrame) == 0x0002A0, "Member 'UWBP_UGCMetaDataPopup_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_UGCMetaDataPopup_C;
 
-}
-
+SDK_NAMESPACE_END

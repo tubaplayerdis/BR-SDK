@@ -14,8 +14,7 @@
 #include "BP_Shredder_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_Shredder.BP_Shredder_C.UserConstructionScript
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -34,9 +33,9 @@ void ABP_Shredder_C::UserConstructionScript()
 // Function BP_Shredder.BP_Shredder_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Shredder_C::ReceiveTick(float DeltaSeconds)
+void ABP_Shredder_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
 	static class UFunction* Func = nullptr;
 
@@ -45,7 +44,7 @@ void ABP_Shredder_C::ReceiveTick(float DeltaSeconds)
 
 	Params::BP_Shredder_C_ReceiveTick Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -70,5 +69,5 @@ void ABP_Shredder_C::ExecuteUbergraph_BP_Shredder(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

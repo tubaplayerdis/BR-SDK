@@ -13,8 +13,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_WidgetMacroLibrary.BP_WidgetMacroLibrary_C
 // 0x0000 (0x0108 - 0x0108)
@@ -23,15 +22,17 @@ class UBP_WidgetMacroLibrary_C final : public UWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_WidgetMacroLibrary_C">();
+		BP_STATIC_CLASS_IMPL("BP_WidgetMacroLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_WidgetMacroLibrary_C")
 	}
 	static class UBP_WidgetMacroLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_WidgetMacroLibrary_C>();
 	}
 };
-static_assert(alignof(UBP_WidgetMacroLibrary_C) == 0x000008, "Wrong alignment on UBP_WidgetMacroLibrary_C");
-static_assert(sizeof(UBP_WidgetMacroLibrary_C) == 0x000108, "Wrong size on UBP_WidgetMacroLibrary_C");
+DUMPER7_ASSERTS_UBP_WidgetMacroLibrary_C;
 
-}
-
+SDK_NAMESPACE_END

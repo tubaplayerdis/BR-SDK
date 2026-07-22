@@ -14,8 +14,7 @@
 #include "WBP_InventoryContainer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InventoryContainer.WBP_InventoryContainer_C.ExecuteUbergraph_WBP_InventoryContainer
 // (Final, UbergraphFunction, HasDefaults)
@@ -76,5 +75,5 @@ void UWBP_InventoryContainer_C::UpdateHasInventory(bool bHasInventory)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_DashboardSlider.WBP_DashboardSlider_C.ExecuteUbergraph_WBP_DashboardSlider
 // 0x0014 (0x0014 - 0x0000)
@@ -26,12 +26,7 @@ public:
 	struct FBrickUIIconSlot                       K2Node_MakeStruct_BrickUIIconSlot;                 // 0x0008(0x0008)(NoDestructor)
 	EBrickUIColorStyle                            K2Node_Event_NewStyle;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider) == 0x000004, "Wrong alignment on WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider");
-static_assert(sizeof(WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider) == 0x000014, "Wrong size on WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider");
-static_assert(offsetof(WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider, EntryPoint) == 0x000000, "Member 'WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider, K2Node_Event_IconIndex) == 0x000004, "Member 'WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider::K2Node_Event_IconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider, K2Node_MakeStruct_BrickUIIconSlot) == 0x000008, "Member 'WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider, K2Node_Event_NewStyle) == 0x000010, "Member 'WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider::K2Node_Event_NewStyle' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider;
 
 // Function WBP_DashboardSlider.WBP_DashboardSlider_C.UpdateColorStyle
 // 0x0001 (0x0001 - 0x0000)
@@ -40,9 +35,7 @@ struct WBP_DashboardSlider_C_UpdateColorStyle final
 public:
 	EBrickUIColorStyle                            NewStyle;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DashboardSlider_C_UpdateColorStyle) == 0x000001, "Wrong alignment on WBP_DashboardSlider_C_UpdateColorStyle");
-static_assert(sizeof(WBP_DashboardSlider_C_UpdateColorStyle) == 0x000001, "Wrong size on WBP_DashboardSlider_C_UpdateColorStyle");
-static_assert(offsetof(WBP_DashboardSlider_C_UpdateColorStyle, NewStyle) == 0x000000, "Member 'WBP_DashboardSlider_C_UpdateColorStyle::NewStyle' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DashboardSlider_C_UpdateColorStyle;
 
 // Function WBP_DashboardSlider.WBP_DashboardSlider_C.UpdateIcon
 // 0x0004 (0x0004 - 0x0000)
@@ -51,9 +44,7 @@ struct WBP_DashboardSlider_C_UpdateIcon final
 public:
 	int32                                         IconIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DashboardSlider_C_UpdateIcon) == 0x000004, "Wrong alignment on WBP_DashboardSlider_C_UpdateIcon");
-static_assert(sizeof(WBP_DashboardSlider_C_UpdateIcon) == 0x000004, "Wrong size on WBP_DashboardSlider_C_UpdateIcon");
-static_assert(offsetof(WBP_DashboardSlider_C_UpdateIcon, IconIndex) == 0x000000, "Member 'WBP_DashboardSlider_C_UpdateIcon::IconIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DashboardSlider_C_UpdateIcon;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_VehicleIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_VehicleIcon.WBP_VehicleIcon_C.ExecuteUbergraph_WBP_VehicleIcon
 // (Final, UbergraphFunction, HasDefaults)
@@ -60,5 +59,5 @@ void UWBP_VehicleIcon_C::UpdateVehicleIcon(bool bNewIsLocalPlayer, bool bNewCanB
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PlayerController_StaticInfo.BP_PlayerController_StaticInfo_C
 // 0x0000 (0x02E8 - 0x02E8)
@@ -23,15 +22,17 @@ class UBP_PlayerController_StaticInfo_C final : public UPlayerControllerStaticIn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PlayerController_StaticInfo_C">();
+		BP_STATIC_CLASS_IMPL("BP_PlayerController_StaticInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PlayerController_StaticInfo_C")
 	}
 	static class UBP_PlayerController_StaticInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_PlayerController_StaticInfo_C>();
 	}
 };
-static_assert(alignof(UBP_PlayerController_StaticInfo_C) == 0x000008, "Wrong alignment on UBP_PlayerController_StaticInfo_C");
-static_assert(sizeof(UBP_PlayerController_StaticInfo_C) == 0x0002E8, "Wrong size on UBP_PlayerController_StaticInfo_C");
+DUMPER7_ASSERTS_UBP_PlayerController_StaticInfo_C;
 
-}
-
+SDK_NAMESPACE_END

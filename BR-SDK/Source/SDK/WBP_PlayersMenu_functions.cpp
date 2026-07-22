@@ -14,8 +14,7 @@
 #include "WBP_PlayersMenu_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_PlayersMenu.WBP_PlayersMenu_C.ExecuteUbergraph_WBP_PlayersMenu
 // (Final, UbergraphFunction)
@@ -90,5 +89,5 @@ void UWBP_PlayersMenu_C::UpdateCanShowPlayerProfile(bool bCanShow)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

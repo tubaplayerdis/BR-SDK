@@ -14,8 +14,7 @@
 #include "WBP_BrickTextBox_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_BrickTextBox.WBP_BrickTextBox_C.BndEvt__ShowPasswordButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
 // (BlueprintEvent)
@@ -56,9 +55,9 @@ void UWBP_BrickTextBox_C::BndEvt__ShowPasswordButton_K2Node_ComponentBoundEvent_
 // Function WBP_BrickTextBox.WBP_BrickTextBox_C.UpdateIsPassword
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bNewIsPassword                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bNewIsPassword_UpdateIsPassword                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_BrickTextBox_C::UpdateIsPassword(bool bNewIsPassword)
+void UWBP_BrickTextBox_C::UpdateIsPassword(bool bNewIsPassword_UpdateIsPassword)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67,7 +66,7 @@ void UWBP_BrickTextBox_C::UpdateIsPassword(bool bNewIsPassword)
 
 	Params::WBP_BrickTextBox_C_UpdateIsPassword Parms{};
 
-	Parms.bNewIsPassword = bNewIsPassword;
+	Parms.bNewIsPassword_UpdateIsPassword = bNewIsPassword_UpdateIsPassword;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,9 +75,9 @@ void UWBP_BrickTextBox_C::UpdateIsPassword(bool bNewIsPassword)
 // Function WBP_BrickTextBox.WBP_BrickTextBox_C.UpdatePasswordVisible
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bNewVisible                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bNewVisible_UpdatePasswordVisible                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_BrickTextBox_C::UpdatePasswordVisible(bool bNewVisible)
+void UWBP_BrickTextBox_C::UpdatePasswordVisible(bool bNewVisible_UpdatePasswordVisible)
 {
 	static class UFunction* Func = nullptr;
 
@@ -87,7 +86,7 @@ void UWBP_BrickTextBox_C::UpdatePasswordVisible(bool bNewVisible)
 
 	Params::WBP_BrickTextBox_C_UpdatePasswordVisible Parms{};
 
-	Parms.bNewVisible = bNewVisible;
+	Parms.bNewVisible_UpdatePasswordVisible = bNewVisible_UpdatePasswordVisible;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -112,5 +111,5 @@ void UWBP_BrickTextBox_C::ExecuteUbergraph_WBP_BrickTextBox(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

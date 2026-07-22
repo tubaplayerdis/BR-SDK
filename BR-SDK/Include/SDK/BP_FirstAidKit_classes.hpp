@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FirstAidKit.BP_FirstAidKit_C
 // 0x0000 (0x0278 - 0x0278)
@@ -23,15 +22,17 @@ class ABP_FirstAidKit_C final : public AFirstAidKit
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FirstAidKit_C">();
+		BP_STATIC_CLASS_IMPL("BP_FirstAidKit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FirstAidKit_C")
 	}
 	static class ABP_FirstAidKit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_FirstAidKit_C>();
 	}
 };
-static_assert(alignof(ABP_FirstAidKit_C) == 0x000008, "Wrong alignment on ABP_FirstAidKit_C");
-static_assert(sizeof(ABP_FirstAidKit_C) == 0x000278, "Wrong size on ABP_FirstAidKit_C");
+DUMPER7_ASSERTS_ABP_FirstAidKit_C;
 
-}
-
+SDK_NAMESPACE_END

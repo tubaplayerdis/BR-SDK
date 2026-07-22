@@ -14,8 +14,7 @@
 #include "WBP_InputMappingProperty_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InputMappingProperty.WBP_InputMappingProperty_C.ExecuteUbergraph_WBP_InputMappingProperty
 // (Final, UbergraphFunction, HasDefaults)
@@ -114,5 +113,5 @@ void UWBP_InputMappingProperty_C::UpdateCanAddMapping(bool bCanAdd)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

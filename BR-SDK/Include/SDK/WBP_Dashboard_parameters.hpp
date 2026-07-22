@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_Dashboard.WBP_Dashboard_C.ExecuteUbergraph_WBP_Dashboard
 // 0x0078 (0x0078 - 0x0000)
@@ -48,31 +48,7 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard) == 0x000008, "Wrong alignment on WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard");
-static_assert(sizeof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard) == 0x000078, "Wrong size on WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, EntryPoint) == 0x000000, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, Temp_bool_Variable) == 0x000004, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, Temp_int_Variable) == 0x000008, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, Temp_int_Variable_1) == 0x00000C, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, K2Node_Event_Widget_2) == 0x000010, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::K2Node_Event_Widget_2' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, K2Node_Event_Widget_1) == 0x000018, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::K2Node_Event_Widget_1' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, K2Node_Event_Index_1) == 0x000020, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::K2Node_Event_Index_1' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_AddChild_ReturnValue) == 0x000028, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, K2Node_Event_Widget) == 0x000030, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, K2Node_Event_Index) == 0x000038, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, K2Node_Event_NumSliders) == 0x00003C, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::K2Node_Event_NumSliders' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_MakeLiteralInt_ReturnValue) == 0x000040, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_Subtract_IntInt_ReturnValue) == 0x000044, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_Percent_IntInt_ReturnValue) == 0x000048, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00004C, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_Divide_IntInt_ReturnValue) == 0x000050, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_Percent_IntInt_ReturnValue_1) == 0x000054, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_Percent_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00005C, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000060, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_BooleanAND_ReturnValue) == 0x000068, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, K2Node_Select_Default) == 0x00006C, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000070, "Member 'WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Dashboard_C_ExecuteUbergraph_WBP_Dashboard;
 
 // Function WBP_Dashboard.WBP_Dashboard_C.UpdateSliderWidgetSlot
 // 0x0010 (0x0010 - 0x0000)
@@ -83,11 +59,7 @@ public:
 	int32                                         Index_0;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumSliders;                                        // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Dashboard_C_UpdateSliderWidgetSlot) == 0x000008, "Wrong alignment on WBP_Dashboard_C_UpdateSliderWidgetSlot");
-static_assert(sizeof(WBP_Dashboard_C_UpdateSliderWidgetSlot) == 0x000010, "Wrong size on WBP_Dashboard_C_UpdateSliderWidgetSlot");
-static_assert(offsetof(WBP_Dashboard_C_UpdateSliderWidgetSlot, Widget) == 0x000000, "Member 'WBP_Dashboard_C_UpdateSliderWidgetSlot::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_UpdateSliderWidgetSlot, Index_0) == 0x000008, "Member 'WBP_Dashboard_C_UpdateSliderWidgetSlot::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_UpdateSliderWidgetSlot, NumSliders) == 0x00000C, "Member 'WBP_Dashboard_C_UpdateSliderWidgetSlot::NumSliders' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Dashboard_C_UpdateSliderWidgetSlot;
 
 // Function WBP_Dashboard.WBP_Dashboard_C.AddIconWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -97,10 +69,7 @@ public:
 	class UDashboardIconWidget*                   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Index_0;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Dashboard_C_AddIconWidget) == 0x000008, "Wrong alignment on WBP_Dashboard_C_AddIconWidget");
-static_assert(sizeof(WBP_Dashboard_C_AddIconWidget) == 0x000010, "Wrong size on WBP_Dashboard_C_AddIconWidget");
-static_assert(offsetof(WBP_Dashboard_C_AddIconWidget, Widget) == 0x000000, "Member 'WBP_Dashboard_C_AddIconWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_Dashboard_C_AddIconWidget, Index_0) == 0x000008, "Member 'WBP_Dashboard_C_AddIconWidget::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Dashboard_C_AddIconWidget;
 
 // Function WBP_Dashboard.WBP_Dashboard_C.AddSliderWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -109,9 +78,7 @@ struct WBP_Dashboard_C_AddSliderWidget final
 public:
 	class UDashboardSliderWidget*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Dashboard_C_AddSliderWidget) == 0x000008, "Wrong alignment on WBP_Dashboard_C_AddSliderWidget");
-static_assert(sizeof(WBP_Dashboard_C_AddSliderWidget) == 0x000008, "Wrong size on WBP_Dashboard_C_AddSliderWidget");
-static_assert(offsetof(WBP_Dashboard_C_AddSliderWidget, Widget) == 0x000000, "Member 'WBP_Dashboard_C_AddSliderWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Dashboard_C_AddSliderWidget;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

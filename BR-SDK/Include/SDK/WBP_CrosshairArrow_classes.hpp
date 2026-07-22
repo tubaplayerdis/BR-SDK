@@ -13,8 +13,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_CrosshairArrow.WBP_CrosshairArrow_C
 // 0x0008 (0x0268 - 0x0260)
@@ -26,16 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CrosshairArrow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CrosshairArrow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CrosshairArrow_C")
 	}
 	static class UWBP_CrosshairArrow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CrosshairArrow_C>();
 	}
 };
-static_assert(alignof(UWBP_CrosshairArrow_C) == 0x000008, "Wrong alignment on UWBP_CrosshairArrow_C");
-static_assert(sizeof(UWBP_CrosshairArrow_C) == 0x000268, "Wrong size on UWBP_CrosshairArrow_C");
-static_assert(offsetof(UWBP_CrosshairArrow_C, BrickImage_36) == 0x000260, "Member 'UWBP_CrosshairArrow_C::BrickImage_36' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CrosshairArrow_C;
 
-}
-
+SDK_NAMESPACE_END

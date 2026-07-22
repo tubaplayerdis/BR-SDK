@@ -15,8 +15,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_UIStyle_Default.BP_UIStyle_Default_C.ExecuteUbergraph_BP_UIStyle_Default
 // 0x00B4 (0x00B4 - 0x0000)
@@ -36,20 +36,7 @@ public:
 	struct FLinearColor                           CallFunc_MakeDefaultColors_Fluppisoft;             // 0x0094(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_MakeDefaultColors_FluppisoftForeground;   // 0x00A4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default) == 0x000004, "Wrong alignment on BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default");
-static_assert(sizeof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default) == 0x0000B4, "Wrong size on BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, EntryPoint) == 0x000000, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_Dark) == 0x000004, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_Dark' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_Medium) == 0x000014, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_Medium' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_Bright) == 0x000024, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_Bright' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_Negative) == 0x000034, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_Negative' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_Positive) == 0x000044, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_Positive' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_Background) == 0x000054, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_Background' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_BrightBackground) == 0x000064, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_BrightBackground' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_Border) == 0x000074, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_Border' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_BrickRigs) == 0x000084, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_BrickRigs' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_Fluppisoft) == 0x000094, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_Fluppisoft' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default, CallFunc_MakeDefaultColors_FluppisoftForeground) == 0x0000A4, "Member 'BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default::CallFunc_MakeDefaultColors_FluppisoftForeground' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIStyle_Default_C_ExecuteUbergraph_BP_UIStyle_Default;
 
 // Function BP_UIStyle_Default.BP_UIStyle_Default_C.SetColorStyle
 // 0x0170 (0x0170 - 0x0000)
@@ -93,42 +80,7 @@ public:
 	struct FLinearColor                           CallFunc_MakeDefaultColors_FluppisoftForeground;   // 0x0150(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0160(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UIStyle_Default_C_SetColorStyle) == 0x000004, "Wrong alignment on BP_UIStyle_Default_C_SetColorStyle");
-static_assert(sizeof(BP_UIStyle_Default_C_SetColorStyle) == 0x000170, "Wrong size on BP_UIStyle_Default_C_SetColorStyle");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, ColorStyle) == 0x000000, "Member 'BP_UIStyle_Default_C_SetColorStyle::ColorStyle' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, DefaultColor) == 0x000004, "Member 'BP_UIStyle_Default_C_SetColorStyle::DefaultColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, ForergoundColor) == 0x000014, "Member 'BP_UIStyle_Default_C_SetColorStyle::ForergoundColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, FocusedColor) == 0x000024, "Member 'BP_UIStyle_Default_C_SetColorStyle::FocusedColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, FocusedForegroundColor) == 0x000034, "Member 'BP_UIStyle_Default_C_SetColorStyle::FocusedForegroundColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, SelectedColor) == 0x000044, "Member 'BP_UIStyle_Default_C_SetColorStyle::SelectedColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, SelectedForegroundColor) == 0x000054, "Member 'BP_UIStyle_Default_C_SetColorStyle::SelectedForegroundColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_BreakColor_R) == 0x000064, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_BreakColor_G) == 0x000068, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_BreakColor_B) == 0x00006C, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_BreakColor_A) == 0x000070, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000074, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000078, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_FClamp_ReturnValue) == 0x00007C, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_FClamp_ReturnValue_1) == 0x000080, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000084, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_FClamp_ReturnValue_2) == 0x000088, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_FClamp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeColor_ReturnValue) == 0x00008C, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_LinearColorLerp_ReturnValue) == 0x00009C, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_LinearColorLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000AC, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, Temp_bool_Variable) == 0x0000AD, "Member 'BP_UIStyle_Default_C_SetColorStyle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_BooleanAND_ReturnValue) == 0x0000AE, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_Dark) == 0x0000B0, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_Dark' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_Medium) == 0x0000C0, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_Medium' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_Bright) == 0x0000D0, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_Bright' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_Negative) == 0x0000E0, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_Negative' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_Positive) == 0x0000F0, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_Positive' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_Background) == 0x000100, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_Background' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_BrightBackground) == 0x000110, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_BrightBackground' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_Border) == 0x000120, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_Border' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_BrickRigs) == 0x000130, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_BrickRigs' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_Fluppisoft) == 0x000140, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_Fluppisoft' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, CallFunc_MakeDefaultColors_FluppisoftForeground) == 0x000150, "Member 'BP_UIStyle_Default_C_SetColorStyle::CallFunc_MakeDefaultColors_FluppisoftForeground' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetColorStyle, K2Node_Select_Default) == 0x000160, "Member 'BP_UIStyle_Default_C_SetColorStyle::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIStyle_Default_C_SetColorStyle;
 
 // Function BP_UIStyle_Default.BP_UIStyle_Default_C.SetBrushStyle
 // 0x02B0 (0x02B0 - 0x0000)
@@ -143,14 +95,7 @@ public:
 	struct FSlateBrush                            SelectedBrush;                                     // 0x01A0(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FSlateBrush                            MarqueeBrush;                                      // 0x0228(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BP_UIStyle_Default_C_SetBrushStyle) == 0x000008, "Wrong alignment on BP_UIStyle_Default_C_SetBrushStyle");
-static_assert(sizeof(BP_UIStyle_Default_C_SetBrushStyle) == 0x0002B0, "Wrong size on BP_UIStyle_Default_C_SetBrushStyle");
-static_assert(offsetof(BP_UIStyle_Default_C_SetBrushStyle, BrushStyle) == 0x000000, "Member 'BP_UIStyle_Default_C_SetBrushStyle::BrushStyle' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetBrushStyle, Brush) == 0x000008, "Member 'BP_UIStyle_Default_C_SetBrushStyle::Brush' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetBrushStyle, FocusedBrush) == 0x000090, "Member 'BP_UIStyle_Default_C_SetBrushStyle::FocusedBrush' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetBrushStyle, PressedBrush) == 0x000118, "Member 'BP_UIStyle_Default_C_SetBrushStyle::PressedBrush' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetBrushStyle, SelectedBrush) == 0x0001A0, "Member 'BP_UIStyle_Default_C_SetBrushStyle::SelectedBrush' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_SetBrushStyle, MarqueeBrush) == 0x000228, "Member 'BP_UIStyle_Default_C_SetBrushStyle::MarqueeBrush' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIStyle_Default_C_SetBrushStyle;
 
 // Function BP_UIStyle_Default.BP_UIStyle_Default_C.BuildDefaultStyle
 // 0x4538 (0x4538 - 0x0000)
@@ -447,264 +392,7 @@ public:
 	struct FLinearColor                           CallFunc_MakeDefaultColors_Fluppisoft_4;           // 0x4518(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_MakeDefaultColors_FluppisoftForeground_4; // 0x4528(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UIStyle_Default_C_BuildDefaultStyle) == 0x000008, "Wrong alignment on BP_UIStyle_Default_C_BuildDefaultStyle");
-static_assert(sizeof(BP_UIStyle_Default_C_BuildDefaultStyle) == 0x004538, "Wrong size on BP_UIStyle_Default_C_BuildDefaultStyle");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, DefaultColor) == 0x000000, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::DefaultColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, ForegroundColor) == 0x000010, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::ForegroundColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, HighlightColor) == 0x000020, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::HighlightColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, HighlightForegroundColor) == 0x000030, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::HighlightForegroundColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, SelectedColor) == 0x000040, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::SelectedColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, SelectedForegroundColor) == 0x000050, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::SelectedForegroundColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, LogoColor) == 0x000060, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::LogoColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, LogoForegroundColor) == 0x000070, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::LogoForegroundColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, LogoForegroundContrastColor) == 0x000080, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::LogoForegroundContrastColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_LinearColor_White_ReturnValue) == 0x000090, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_LinearColor_White_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_LinearColor_White_ReturnValue_1) == 0x0000A0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_LinearColor_White_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue) == 0x0000B0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_LinearColor_White_ReturnValue_2) == 0x0000B4, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_LinearColor_White_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue) == 0x0000C4, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue) == 0x0000CC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_1) == 0x0000D0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin) == 0x0000D4, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x0000E4, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x0000E5, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_2) == 0x0000E8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x0000EC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_1) == 0x0000F0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x0000F8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_3) == 0x0000FC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_1) == 0x000100, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x000110, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_6) == 0x000111, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_4) == 0x000114, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_5) == 0x000118, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_2) == 0x00011C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_3) == 0x000124, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_6) == 0x00012C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_7) == 0x000130, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_2) == 0x000134, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_7) == 0x000144, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_8) == 0x000148, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_4) == 0x00014C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_3) == 0x000154, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_8) == 0x000164, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_SetFieldsInStruct_StructOut) == 0x000168, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_9) == 0x000178, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_9) == 0x00017C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_4) == 0x000180, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_10) == 0x000190, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_11) == 0x000191, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_10) == 0x000194, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_11) == 0x000198, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_5) == 0x00019C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_6) == 0x0001A4, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_12) == 0x0001AC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_12) == 0x0001B0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_7) == 0x0001B4, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_13) == 0x0001BC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_14) == 0x0001BD, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_13) == 0x0001C0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush) == 0x0001C8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_5) == 0x000250, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_5' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_15) == 0x000260, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_16) == 0x000261, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_1) == 0x000268, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_2) == 0x0002F0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_14) == 0x000378, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_15) == 0x00037C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_8) == 0x000380, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_9) == 0x000388, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_3) == 0x000390, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_16) == 0x000418, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_17) == 0x00041C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_10) == 0x000420, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_4) == 0x000428, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_5) == 0x0004B0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_5' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_17) == 0x000538, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_18) == 0x00053C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_11) == 0x000540, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_19) == 0x000548, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_6) == 0x000550, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_6' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_18) == 0x0005D8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_GetColor_ReturnValue) == 0x0005DC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_GetColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_6) == 0x0005EC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_6' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateColor) == 0x000600, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_19) == 0x000628, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_20) == 0x00062C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_12) == 0x000630, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_7) == 0x000638, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_7' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_21) == 0x0006C0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_20) == 0x0006C4, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_GetColor_ReturnValue_1) == 0x0006C8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_GetColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_7) == 0x0006D8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_7' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateColor_1) == 0x0006E8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_21) == 0x000710, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_22) == 0x000714, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_13) == 0x000718, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_8) == 0x000720, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_8' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_22) == 0x000730, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_23) == 0x000734, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_14) == 0x000738, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_24) == 0x000740, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_8) == 0x000748, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_8' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_15) == 0x0007D0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_25) == 0x0007D8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_25' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_23) == 0x0007DC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_16) == 0x0007E0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_26) == 0x0007E8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_26' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_GetColor_ReturnValue_2) == 0x0007EC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_GetColor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_17) == 0x0007FC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateColor_2) == 0x000808, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_24) == 0x000830, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_9) == 0x000834, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_9' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_27) == 0x000844, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_27' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_28) == 0x000848, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_28' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_29) == 0x00084C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_29' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_30) == 0x000850, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_30' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_31) == 0x000854, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_31' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_10) == 0x000858, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_10' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_Add_FloatFloat_ReturnValue) == 0x000868, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x00086C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_32) == 0x000870, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_32' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_11) == 0x000874, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_11' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x000884, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_Add_FloatFloat_ReturnValue_3) == 0x000888, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_Add_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_33) == 0x00088C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_33' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_12) == 0x000890, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_12' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_Add_FloatFloat_ReturnValue_4) == 0x0008A0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_Add_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_Add_FloatFloat_ReturnValue_5) == 0x0008A4, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_Add_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_34) == 0x0008A8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_34' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_13) == 0x0008AC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_13' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_14) == 0x0008BC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_14' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue) == 0x0008D0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_35) == 0x000B40, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_35' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_SetFieldsInStruct_StructOut_1) == 0x000B48, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_SetFieldsInStruct_StructOut_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_18) == 0x000DB8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_SetFieldsInStruct_StructOut_2) == 0x000DC0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_SetFieldsInStruct_StructOut_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_SetFieldsInStruct_StructOut_3) == 0x001030, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_SetFieldsInStruct_StructOut_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_1) == 0x0012A0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_25) == 0x001510, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_25' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_36) == 0x001514, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_36' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_9) == 0x001518, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_9' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_19) == 0x0015A0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_2) == 0x0015A8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_3) == 0x001818, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_4) == 0x001A88, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_5) == 0x001CF8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_6) == 0x001F68, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_7) == 0x0021D8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_8) == 0x002448, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_9) == 0x0026B8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_10) == 0x002928, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_11) == 0x002B98, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_37) == 0x002E08, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_37' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_15) == 0x002E0C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_15' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_16) == 0x002E1C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_16' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_17) == 0x002E2C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_17' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralColor_ReturnValue) == 0x002E3C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_38) == 0x002E4C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_38' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateColor_3) == 0x002E50, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateColor_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_20) == 0x002E78, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_10) == 0x002E80, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_10' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_11) == 0x002F08, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_11' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_ButtonStyle) == 0x002F90, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_ButtonStyle' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeTextStyle_ReturnValue_12) == 0x003208, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeTextStyle_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_HyperlinkStyle) == 0x003478, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_HyperlinkStyle' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_26) == 0x003978, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_26' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_39) == 0x00397C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_39' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_40) == 0x003980, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_40' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_18) == 0x003984, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_18' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_19) == 0x003994, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_19' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_27) == 0x0039A4, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_27' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_41) == 0x0039A8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_41' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_21) == 0x0039AC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_12) == 0x0039B8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_12' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_13) == 0x003A40, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_13' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_42) == 0x003AC8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_42' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_43) == 0x003ACC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_43' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_20) == 0x003AD0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_20' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_21) == 0x003AE0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_21' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_14) == 0x003AF0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_14' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_28) == 0x003B78, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_28' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_SetFieldsInStruct_StructOut_4) == 0x003B80, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_SetFieldsInStruct_StructOut_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_15) == 0x003C08, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_15' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_44) == 0x003C90, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_44' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_22) == 0x003C94, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_45) == 0x003C9C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_45' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_16) == 0x003CA0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_16' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_22) == 0x003D28, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_22' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_46) == 0x003D38, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_46' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_17) == 0x003D40, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_17' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_23) == 0x003DC8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_23' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralByte_ReturnValue_29) == 0x003DD8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralByte_ReturnValue_29' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_47) == 0x003DDC, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_47' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_24) == 0x003DE0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_24' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_18) == 0x003DF0, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_18' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_19) == 0x003E78, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_19' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_48) == 0x003F00, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_48' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeVector2D_ReturnValue_23) == 0x003F04, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeVector2D_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeLiteralFloat_ReturnValue_49) == 0x003F0C, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeLiteralFloat_ReturnValue_49' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_20) == 0x003F10, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_20' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_Margin_25) == 0x003F98, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_Margin_25' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_21) == 0x003FA8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_21' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_22) == 0x004030, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_22' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_23) == 0x0040B8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_23' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, K2Node_MakeStruct_SlateBrush_24) == 0x004140, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::K2Node_MakeStruct_SlateBrush_24' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Dark) == 0x0041C8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Dark' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Medium) == 0x0041D8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Medium' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Bright) == 0x0041E8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Bright' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Negative) == 0x0041F8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Negative' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Positive) == 0x004208, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Positive' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Background) == 0x004218, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Background' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrightBackground) == 0x004228, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrightBackground' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Border) == 0x004238, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Border' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrickRigs) == 0x004248, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrickRigs' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Fluppisoft) == 0x004258, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Fluppisoft' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_FluppisoftForeground) == 0x004268, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_FluppisoftForeground' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Dark_1) == 0x004278, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Dark_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Medium_1) == 0x004288, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Medium_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Bright_1) == 0x004298, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Bright_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Negative_1) == 0x0042A8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Negative_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Positive_1) == 0x0042B8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Positive_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Background_1) == 0x0042C8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Background_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrightBackground_1) == 0x0042D8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrightBackground_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Border_1) == 0x0042E8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Border_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrickRigs_1) == 0x0042F8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrickRigs_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Fluppisoft_1) == 0x004308, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Fluppisoft_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_FluppisoftForeground_1) == 0x004318, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_FluppisoftForeground_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Dark_2) == 0x004328, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Dark_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Medium_2) == 0x004338, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Medium_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Bright_2) == 0x004348, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Bright_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Negative_2) == 0x004358, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Negative_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Positive_2) == 0x004368, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Positive_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Background_2) == 0x004378, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Background_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrightBackground_2) == 0x004388, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrightBackground_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Border_2) == 0x004398, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Border_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrickRigs_2) == 0x0043A8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrickRigs_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Fluppisoft_2) == 0x0043B8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Fluppisoft_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_FluppisoftForeground_2) == 0x0043C8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_FluppisoftForeground_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Dark_3) == 0x0043D8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Dark_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Medium_3) == 0x0043E8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Medium_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Bright_3) == 0x0043F8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Bright_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Negative_3) == 0x004408, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Negative_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Positive_3) == 0x004418, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Positive_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Background_3) == 0x004428, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Background_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrightBackground_3) == 0x004438, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrightBackground_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Border_3) == 0x004448, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Border_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrickRigs_3) == 0x004458, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrickRigs_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Fluppisoft_3) == 0x004468, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Fluppisoft_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_FluppisoftForeground_3) == 0x004478, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_FluppisoftForeground_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Dark_4) == 0x004488, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Dark_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Medium_4) == 0x004498, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Medium_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Bright_4) == 0x0044A8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Bright_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Negative_4) == 0x0044B8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Negative_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Positive_4) == 0x0044C8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Positive_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Background_4) == 0x0044D8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Background_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrightBackground_4) == 0x0044E8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrightBackground_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Border_4) == 0x0044F8, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Border_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_BrickRigs_4) == 0x004508, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_BrickRigs_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_Fluppisoft_4) == 0x004518, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_Fluppisoft_4' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_BuildDefaultStyle, CallFunc_MakeDefaultColors_FluppisoftForeground_4) == 0x004528, "Member 'BP_UIStyle_Default_C_BuildDefaultStyle::CallFunc_MakeDefaultColors_FluppisoftForeground_4' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIStyle_Default_C_BuildDefaultStyle;
 
 // Function BP_UIStyle_Default.BP_UIStyle_Default_C.MakeTextStyle
 // 0x0710 (0x0710 - 0x0000)
@@ -742,32 +430,7 @@ public:
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush_1;                    // 0x0418(0x0088)()
 	struct FTextBlockStyle                        K2Node_MakeStruct_TextBlockStyle;                  // 0x04A0(0x0270)()
 };
-static_assert(alignof(BP_UIStyle_Default_C_MakeTextStyle) == 0x000008, "Wrong alignment on BP_UIStyle_Default_C_MakeTextStyle");
-static_assert(sizeof(BP_UIStyle_Default_C_MakeTextStyle) == 0x000710, "Wrong size on BP_UIStyle_Default_C_MakeTextStyle");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, Typeface) == 0x000000, "Member 'BP_UIStyle_Default_C_MakeTextStyle::Typeface' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, Scale) == 0x000008, "Member 'BP_UIStyle_Default_C_MakeTextStyle::Scale' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, Font_Material) == 0x000010, "Member 'BP_UIStyle_Default_C_MakeTextStyle::Font_Material' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, OutlineSize) == 0x000018, "Member 'BP_UIStyle_Default_C_MakeTextStyle::OutlineSize' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, bStrike) == 0x00001C, "Member 'BP_UIStyle_Default_C_MakeTextStyle::bStrike' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, bUnderline) == 0x00001D, "Member 'BP_UIStyle_Default_C_MakeTextStyle::bUnderline' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, ColorMultiplier) == 0x000020, "Member 'BP_UIStyle_Default_C_MakeTextStyle::ColorMultiplier' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, ReturnValue) == 0x000030, "Member 'BP_UIStyle_Default_C_MakeTextStyle::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, Temp_object_Variable) == 0x0002A0, "Member 'BP_UIStyle_Default_C_MakeTextStyle::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, K2Node_MakeStruct_SlateColor) == 0x0002A8, "Member 'BP_UIStyle_Default_C_MakeTextStyle::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, K2Node_MakeStruct_FontOutlineSettings) == 0x0002D0, "Member 'BP_UIStyle_Default_C_MakeTextStyle::K2Node_MakeStruct_FontOutlineSettings' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0002F0, "Member 'BP_UIStyle_Default_C_MakeTextStyle::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, Temp_object_Variable_1) == 0x0002F8, "Member 'BP_UIStyle_Default_C_MakeTextStyle::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, CallFunc_FTrunc_ReturnValue) == 0x000300, "Member 'BP_UIStyle_Default_C_MakeTextStyle::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, K2Node_MakeStruct_SlateFontInfo) == 0x000308, "Member 'BP_UIStyle_Default_C_MakeTextStyle::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, Temp_bool_Variable) == 0x000360, "Member 'BP_UIStyle_Default_C_MakeTextStyle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, Temp_object_Variable_2) == 0x000368, "Member 'BP_UIStyle_Default_C_MakeTextStyle::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, Temp_object_Variable_3) == 0x000370, "Member 'BP_UIStyle_Default_C_MakeTextStyle::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, Temp_bool_Variable_1) == 0x000378, "Member 'BP_UIStyle_Default_C_MakeTextStyle::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, K2Node_Select_Default) == 0x000380, "Member 'BP_UIStyle_Default_C_MakeTextStyle::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, K2Node_Select_Default_1) == 0x000388, "Member 'BP_UIStyle_Default_C_MakeTextStyle::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, K2Node_MakeStruct_SlateBrush) == 0x000390, "Member 'BP_UIStyle_Default_C_MakeTextStyle::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, K2Node_MakeStruct_SlateBrush_1) == 0x000418, "Member 'BP_UIStyle_Default_C_MakeTextStyle::K2Node_MakeStruct_SlateBrush_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeTextStyle, K2Node_MakeStruct_TextBlockStyle) == 0x0004A0, "Member 'BP_UIStyle_Default_C_MakeTextStyle::K2Node_MakeStruct_TextBlockStyle' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIStyle_Default_C_MakeTextStyle;
 
 // Function BP_UIStyle_Default.BP_UIStyle_Default_C.MakeLiteralColor
 // 0x0020 (0x0020 - 0x0000)
@@ -777,10 +440,7 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UIStyle_Default_C_MakeLiteralColor) == 0x000004, "Wrong alignment on BP_UIStyle_Default_C_MakeLiteralColor");
-static_assert(sizeof(BP_UIStyle_Default_C_MakeLiteralColor) == 0x000020, "Wrong size on BP_UIStyle_Default_C_MakeLiteralColor");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeLiteralColor, Color) == 0x000000, "Member 'BP_UIStyle_Default_C_MakeLiteralColor::Color' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeLiteralColor, ReturnValue) == 0x000010, "Member 'BP_UIStyle_Default_C_MakeLiteralColor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIStyle_Default_C_MakeLiteralColor;
 
 // Function BP_UIStyle_Default.BP_UIStyle_Default_C.MakeDefaultColors
 // 0x00F8 (0x00F8 - 0x0000)
@@ -811,31 +471,7 @@ public:
 	float                                         CallFunc_FClamp_ReturnValue_2;                     // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x00E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UIStyle_Default_C_MakeDefaultColors) == 0x000004, "Wrong alignment on BP_UIStyle_Default_C_MakeDefaultColors");
-static_assert(sizeof(BP_UIStyle_Default_C_MakeDefaultColors) == 0x0000F8, "Wrong size on BP_UIStyle_Default_C_MakeDefaultColors");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, Dark) == 0x000000, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::Dark' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, Medium) == 0x000010, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::Medium' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, Bright) == 0x000020, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::Bright' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, Negative) == 0x000030, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::Negative' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, Positive) == 0x000040, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::Positive' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, Background) == 0x000050, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::Background' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, BrightBackground) == 0x000060, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::BrightBackground' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, Border) == 0x000070, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::Border' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, BrickRigs) == 0x000080, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::BrickRigs' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, Fluppisoft) == 0x000090, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::Fluppisoft' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, FluppisoftForeground) == 0x0000A0, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::FluppisoftForeground' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_MakeLiteralColor_ReturnValue) == 0x0000B0, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_MakeLiteralColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_BreakColor_R) == 0x0000C0, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_BreakColor_G) == 0x0000C4, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_BreakColor_B) == 0x0000C8, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_BreakColor_A) == 0x0000CC, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000D0, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0000D4, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_FClamp_ReturnValue) == 0x0000D8, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_FClamp_ReturnValue_1) == 0x0000DC, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0000E0, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_FClamp_ReturnValue_2) == 0x0000E4, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_FClamp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UIStyle_Default_C_MakeDefaultColors, CallFunc_MakeColor_ReturnValue) == 0x0000E8, "Member 'BP_UIStyle_Default_C_MakeDefaultColors::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UIStyle_Default_C_MakeDefaultColors;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

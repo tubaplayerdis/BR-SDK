@@ -16,69 +16,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
-
-// Function WBP_PropertyContainer.WBP_PropertyContainer_C.OnMouseButtonUp
-// 0x02F0 (0x02F0 - 0x0000)
-struct WBP_PropertyContainer_C_OnMouseButtonUp final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0160(0x00B8)()
-	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0218(0x0018)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_OpenContextMenu_ReturnValue;              // 0x0231(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_232[0x6];                                      // 0x0232(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0238(0x00B8)()
-};
-static_assert(alignof(WBP_PropertyContainer_C_OnMouseButtonUp) == 0x000008, "Wrong alignment on WBP_PropertyContainer_C_OnMouseButtonUp");
-static_assert(sizeof(WBP_PropertyContainer_C_OnMouseButtonUp) == 0x0002F0, "Wrong size on WBP_PropertyContainer_C_OnMouseButtonUp");
-static_assert(offsetof(WBP_PropertyContainer_C_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'WBP_PropertyContainer_C_OnMouseButtonUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'WBP_PropertyContainer_C_OnMouseButtonUp::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_OnMouseButtonUp, ReturnValue) == 0x0000A8, "Member 'WBP_PropertyContainer_C_OnMouseButtonUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_OnMouseButtonUp, CallFunc_Unhandled_ReturnValue) == 0x000160, "Member 'WBP_PropertyContainer_C_OnMouseButtonUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_OnMouseButtonUp, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000218, "Member 'WBP_PropertyContainer_C_OnMouseButtonUp::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_OnMouseButtonUp, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000230, "Member 'WBP_PropertyContainer_C_OnMouseButtonUp::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_OnMouseButtonUp, CallFunc_OpenContextMenu_ReturnValue) == 0x000231, "Member 'WBP_PropertyContainer_C_OnMouseButtonUp::CallFunc_OpenContextMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_OnMouseButtonUp, CallFunc_Handled_ReturnValue) == 0x000238, "Member 'WBP_PropertyContainer_C_OnMouseButtonUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
-
-// Function WBP_PropertyContainer.WBP_PropertyContainer_C.AddPropertyWidget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PropertyContainer_C_AddPropertyWidget final
-{
-public:
-	class UPropertyWidget*                        Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EOrientation                                  InOrientation;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PropertyContainer_C_AddPropertyWidget) == 0x000008, "Wrong alignment on WBP_PropertyContainer_C_AddPropertyWidget");
-static_assert(sizeof(WBP_PropertyContainer_C_AddPropertyWidget) == 0x000010, "Wrong size on WBP_PropertyContainer_C_AddPropertyWidget");
-static_assert(offsetof(WBP_PropertyContainer_C_AddPropertyWidget, Widget) == 0x000000, "Member 'WBP_PropertyContainer_C_AddPropertyWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_AddPropertyWidget, InOrientation) == 0x000008, "Member 'WBP_PropertyContainer_C_AddPropertyWidget::InOrientation' has a wrong offset!");
-
-// Function WBP_PropertyContainer.WBP_PropertyContainer_C.UpdateOrientation
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PropertyContainer_C_UpdateOrientation final
-{
-public:
-	EOrientation                                  InOrientation;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PropertyContainer_C_UpdateOrientation) == 0x000001, "Wrong alignment on WBP_PropertyContainer_C_UpdateOrientation");
-static_assert(sizeof(WBP_PropertyContainer_C_UpdateOrientation) == 0x000001, "Wrong size on WBP_PropertyContainer_C_UpdateOrientation");
-static_assert(offsetof(WBP_PropertyContainer_C_UpdateOrientation, InOrientation) == 0x000000, "Member 'WBP_PropertyContainer_C_UpdateOrientation::InOrientation' has a wrong offset!");
-
-// Function WBP_PropertyContainer.WBP_PropertyContainer_C.UpdateColorStyle
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PropertyContainer_C_UpdateColorStyle final
-{
-public:
-	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PropertyContainer_C_UpdateColorStyle) == 0x000001, "Wrong alignment on WBP_PropertyContainer_C_UpdateColorStyle");
-static_assert(sizeof(WBP_PropertyContainer_C_UpdateColorStyle) == 0x000001, "Wrong size on WBP_PropertyContainer_C_UpdateColorStyle");
-static_assert(offsetof(WBP_PropertyContainer_C_UpdateColorStyle, InColorStyle) == 0x000000, "Member 'WBP_PropertyContainer_C_UpdateColorStyle::InColorStyle' has a wrong offset!");
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_PropertyContainer.WBP_PropertyContainer_C.ExecuteUbergraph_WBP_PropertyContainer
 // 0x0068 (0x0068 - 0x0000)
@@ -114,30 +53,52 @@ public:
 	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMenuButtonWidget*                      CallFunc_CreateButton_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer) == 0x000008, "Wrong alignment on WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer");
-static_assert(sizeof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer) == 0x000068, "Wrong size on WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, EntryPoint) == 0x000000, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, Temp_byte_Variable) == 0x000004, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, Temp_int_Variable) == 0x000008, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, Temp_int_Variable_1) == 0x00000C, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, Temp_byte_Variable_1) == 0x000010, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, Temp_int_Variable_2) == 0x000014, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, Temp_int_Variable_3) == 0x000018, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, Temp_byte_Variable_2) == 0x00001C, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, Temp_byte_Variable_3) == 0x00001D, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, Temp_byte_Variable_4) == 0x00001E, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, K2Node_Event_Widget) == 0x000030, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, K2Node_Event_InOrientation_1) == 0x000038, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::K2Node_Event_InOrientation_1' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, CallFunc_OpenContextMenu_ReturnValue) == 0x000039, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::CallFunc_OpenContextMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, K2Node_Select_Default) == 0x00003C, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, K2Node_Select_Default_1) == 0x000040, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, K2Node_Event_InOrientation) == 0x000044, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::K2Node_Event_InOrientation' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, CallFunc_AddChildToGrid_ReturnValue) == 0x000048, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::CallFunc_AddChildToGrid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, K2Node_Select_Default_2) == 0x000050, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, K2Node_Event_InColorStyle) == 0x000051, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::K2Node_Event_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000058, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer, CallFunc_CreateButton_ReturnValue) == 0x000060, "Member 'WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer::CallFunc_CreateButton_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PropertyContainer_C_ExecuteUbergraph_WBP_PropertyContainer;
 
-}
+// Function WBP_PropertyContainer.WBP_PropertyContainer_C.UpdateColorStyle
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PropertyContainer_C_UpdateColorStyle final
+{
+public:
+	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PropertyContainer_C_UpdateColorStyle;
 
+// Function WBP_PropertyContainer.WBP_PropertyContainer_C.UpdateOrientation
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PropertyContainer_C_UpdateOrientation final
+{
+public:
+	EOrientation                                  InOrientation;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PropertyContainer_C_UpdateOrientation;
+
+// Function WBP_PropertyContainer.WBP_PropertyContainer_C.AddPropertyWidget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PropertyContainer_C_AddPropertyWidget final
+{
+public:
+	class UPropertyWidget*                        Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EOrientation                                  InOrientation;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PropertyContainer_C_AddPropertyWidget;
+
+// Function WBP_PropertyContainer.WBP_PropertyContainer_C.OnMouseButtonUp
+// 0x02F0 (0x02F0 - 0x0000)
+struct WBP_PropertyContainer_C_OnMouseButtonUp final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0160(0x00B8)()
+	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0218(0x0018)(HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_OpenContextMenu_ReturnValue;              // 0x0231(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_232[0x6];                                      // 0x0232(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0238(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_PropertyContainer_C_OnMouseButtonUp;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

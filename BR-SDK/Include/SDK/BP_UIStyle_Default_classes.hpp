@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_UIStyle_Default.BP_UIStyle_Default_C
 // 0x0010 (0x70F8 - 0x70E8)
@@ -40,17 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_UIStyle_Default_C">();
+		BP_STATIC_CLASS_IMPL("BP_UIStyle_Default_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_UIStyle_Default_C")
 	}
 	static class UBP_UIStyle_Default_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_UIStyle_Default_C>();
 	}
 };
-static_assert(alignof(UBP_UIStyle_Default_C) == 0x000008, "Wrong alignment on UBP_UIStyle_Default_C");
-static_assert(sizeof(UBP_UIStyle_Default_C) == 0x0070F8, "Wrong size on UBP_UIStyle_Default_C");
-static_assert(offsetof(UBP_UIStyle_Default_C, UberGraphFrame) == 0x0070E8, "Member 'UBP_UIStyle_Default_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_UIStyle_Default_C, bUseBrightBackground) == 0x0070F0, "Member 'UBP_UIStyle_Default_C::bUseBrightBackground' has a wrong offset!");
+DUMPER7_ASSERTS_UBP_UIStyle_Default_C;
 
-}
-
+SDK_NAMESPACE_END

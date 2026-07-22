@@ -13,8 +13,7 @@
 #include "BP_Pants_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Pants_Snow.BP_Pants_Snow_C
 // 0x0000 (0x02A8 - 0x02A8)
@@ -23,15 +22,17 @@ class ABP_Pants_Snow_C final : public ABP_Pants_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Pants_Snow_C">();
+		BP_STATIC_CLASS_IMPL("BP_Pants_Snow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Pants_Snow_C")
 	}
 	static class ABP_Pants_Snow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Pants_Snow_C>();
 	}
 };
-static_assert(alignof(ABP_Pants_Snow_C) == 0x000008, "Wrong alignment on ABP_Pants_Snow_C");
-static_assert(sizeof(ABP_Pants_Snow_C) == 0x0002A8, "Wrong size on ABP_Pants_Snow_C");
+DUMPER7_ASSERTS_ABP_Pants_Snow_C;
 
-}
-
+SDK_NAMESPACE_END

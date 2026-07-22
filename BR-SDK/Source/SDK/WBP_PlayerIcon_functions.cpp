@@ -14,8 +14,7 @@
 #include "WBP_PlayerIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_PlayerIcon.WBP_PlayerIcon_C.ExecuteUbergraph_WBP_PlayerIcon
 // (Final, UbergraphFunction, HasDefaults)
@@ -62,5 +61,5 @@ void UWBP_PlayerIcon_C::UpdatePlayerIcon(bool bNewIsLocalPlayer, bool bNewIsTeam
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagara_UnsetDirectSet.ENiagara_UnsetDirectSet
 // NumValues: 0x0003
@@ -23,5 +22,4 @@ enum class ENiagara_UnsetDirectSet : uint8
 	ENiagara_MAX                             = 2,
 };
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_MatchMenu_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_MatchMenu.WBP_MatchMenu_C.ExecuteUbergraph_WBP_MatchMenu
 // (Final, UbergraphFunction, HasDefaults)
@@ -126,5 +125,5 @@ void UWBP_MatchMenu_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

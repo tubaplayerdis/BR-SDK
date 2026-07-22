@@ -17,8 +17,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class NavigationSystem.NavigationData
 // 0x0208 (0x0428 - 0x0220)
@@ -46,21 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationData">();
+		STATIC_CLASS_IMPL("NavigationData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationData")
 	}
 	static class ANavigationData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANavigationData>();
 	}
 };
-static_assert(alignof(ANavigationData) == 0x000008, "Wrong alignment on ANavigationData");
-static_assert(sizeof(ANavigationData) == 0x000428, "Wrong size on ANavigationData");
-static_assert(offsetof(ANavigationData, RenderingComp) == 0x000228, "Member 'ANavigationData::RenderingComp' has a wrong offset!");
-static_assert(offsetof(ANavigationData, NavDataConfig) == 0x000230, "Member 'ANavigationData::NavDataConfig' has a wrong offset!");
-static_assert(offsetof(ANavigationData, RuntimeGeneration) == 0x0002AC, "Member 'ANavigationData::RuntimeGeneration' has a wrong offset!");
-static_assert(offsetof(ANavigationData, ObservedPathsTickInterval) == 0x0002B0, "Member 'ANavigationData::ObservedPathsTickInterval' has a wrong offset!");
-static_assert(offsetof(ANavigationData, DataVersion) == 0x0002B4, "Member 'ANavigationData::DataVersion' has a wrong offset!");
-static_assert(offsetof(ANavigationData, SupportedAreas) == 0x0003C0, "Member 'ANavigationData::SupportedAreas' has a wrong offset!");
+DUMPER7_ASSERTS_ANavigationData;
 
 // Class NavigationSystem.AbstractNavData
 // 0x0000 (0x0428 - 0x0428)
@@ -69,15 +65,18 @@ class AAbstractNavData final : public ANavigationData
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbstractNavData">();
+		STATIC_CLASS_IMPL("AbstractNavData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbstractNavData")
 	}
 	static class AAbstractNavData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAbstractNavData>();
 	}
 };
-static_assert(alignof(AAbstractNavData) == 0x000008, "Wrong alignment on AAbstractNavData");
-static_assert(sizeof(AAbstractNavData) == 0x000428, "Wrong size on AAbstractNavData");
+DUMPER7_ASSERTS_AAbstractNavData;
 
 // Class NavigationSystem.CrowdManagerBase
 // 0x0000 (0x0028 - 0x0028)
@@ -86,15 +85,18 @@ class UCrowdManagerBase : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CrowdManagerBase">();
+		STATIC_CLASS_IMPL("CrowdManagerBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CrowdManagerBase")
 	}
 	static class UCrowdManagerBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCrowdManagerBase>();
 	}
 };
-static_assert(alignof(UCrowdManagerBase) == 0x000008, "Wrong alignment on UCrowdManagerBase");
-static_assert(sizeof(UCrowdManagerBase) == 0x000028, "Wrong size on UCrowdManagerBase");
+DUMPER7_ASSERTS_UCrowdManagerBase;
 
 // Class NavigationSystem.NavArea
 // 0x0018 (0x0048 - 0x0030)
@@ -126,19 +128,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavArea">();
+		STATIC_CLASS_IMPL("NavArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavArea")
 	}
 	static class UNavArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavArea>();
 	}
 };
-static_assert(alignof(UNavArea) == 0x000008, "Wrong alignment on UNavArea");
-static_assert(sizeof(UNavArea) == 0x000048, "Wrong size on UNavArea");
-static_assert(offsetof(UNavArea, DefaultCost) == 0x000030, "Member 'UNavArea::DefaultCost' has a wrong offset!");
-static_assert(offsetof(UNavArea, FixedAreaEnteringCost) == 0x000034, "Member 'UNavArea::FixedAreaEnteringCost' has a wrong offset!");
-static_assert(offsetof(UNavArea, DrawColor) == 0x000038, "Member 'UNavArea::DrawColor' has a wrong offset!");
-static_assert(offsetof(UNavArea, SupportedAgents) == 0x00003C, "Member 'UNavArea::SupportedAgents' has a wrong offset!");
+DUMPER7_ASSERTS_UNavArea;
 
 // Class NavigationSystem.NavArea_Default
 // 0x0000 (0x0048 - 0x0048)
@@ -147,15 +148,18 @@ class UNavArea_Default final : public UNavArea
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavArea_Default">();
+		STATIC_CLASS_IMPL("NavArea_Default")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavArea_Default")
 	}
 	static class UNavArea_Default* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavArea_Default>();
 	}
 };
-static_assert(alignof(UNavArea_Default) == 0x000008, "Wrong alignment on UNavArea_Default");
-static_assert(sizeof(UNavArea_Default) == 0x000048, "Wrong size on UNavArea_Default");
+DUMPER7_ASSERTS_UNavArea_Default;
 
 // Class NavigationSystem.NavArea_LowHeight
 // 0x0000 (0x0048 - 0x0048)
@@ -164,15 +168,18 @@ class UNavArea_LowHeight final : public UNavArea
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavArea_LowHeight">();
+		STATIC_CLASS_IMPL("NavArea_LowHeight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavArea_LowHeight")
 	}
 	static class UNavArea_LowHeight* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavArea_LowHeight>();
 	}
 };
-static_assert(alignof(UNavArea_LowHeight) == 0x000008, "Wrong alignment on UNavArea_LowHeight");
-static_assert(sizeof(UNavArea_LowHeight) == 0x000048, "Wrong size on UNavArea_LowHeight");
+DUMPER7_ASSERTS_UNavArea_LowHeight;
 
 // Class NavigationSystem.NavArea_Null
 // 0x0000 (0x0048 - 0x0048)
@@ -181,15 +188,18 @@ class UNavArea_Null final : public UNavArea
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavArea_Null">();
+		STATIC_CLASS_IMPL("NavArea_Null")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavArea_Null")
 	}
 	static class UNavArea_Null* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavArea_Null>();
 	}
 };
-static_assert(alignof(UNavArea_Null) == 0x000008, "Wrong alignment on UNavArea_Null");
-static_assert(sizeof(UNavArea_Null) == 0x000048, "Wrong size on UNavArea_Null");
+DUMPER7_ASSERTS_UNavArea_Null;
 
 // Class NavigationSystem.NavArea_Obstacle
 // 0x0000 (0x0048 - 0x0048)
@@ -198,15 +208,18 @@ class UNavArea_Obstacle final : public UNavArea
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavArea_Obstacle">();
+		STATIC_CLASS_IMPL("NavArea_Obstacle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavArea_Obstacle")
 	}
 	static class UNavArea_Obstacle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavArea_Obstacle>();
 	}
 };
-static_assert(alignof(UNavArea_Obstacle) == 0x000008, "Wrong alignment on UNavArea_Obstacle");
-static_assert(sizeof(UNavArea_Obstacle) == 0x000048, "Wrong size on UNavArea_Obstacle");
+DUMPER7_ASSERTS_UNavArea_Obstacle;
 
 // Class NavigationSystem.NavAreaMeta
 // 0x0000 (0x0048 - 0x0048)
@@ -215,15 +228,18 @@ class UNavAreaMeta : public UNavArea
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavAreaMeta">();
+		STATIC_CLASS_IMPL("NavAreaMeta")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavAreaMeta")
 	}
 	static class UNavAreaMeta* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavAreaMeta>();
 	}
 };
-static_assert(alignof(UNavAreaMeta) == 0x000008, "Wrong alignment on UNavAreaMeta");
-static_assert(sizeof(UNavAreaMeta) == 0x000048, "Wrong size on UNavAreaMeta");
+DUMPER7_ASSERTS_UNavAreaMeta;
 
 // Class NavigationSystem.NavAreaMeta_SwitchByAgent
 // 0x0080 (0x00C8 - 0x0048)
@@ -250,31 +266,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavAreaMeta_SwitchByAgent">();
+		STATIC_CLASS_IMPL("NavAreaMeta_SwitchByAgent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavAreaMeta_SwitchByAgent")
 	}
 	static class UNavAreaMeta_SwitchByAgent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavAreaMeta_SwitchByAgent>();
 	}
 };
-static_assert(alignof(UNavAreaMeta_SwitchByAgent) == 0x000008, "Wrong alignment on UNavAreaMeta_SwitchByAgent");
-static_assert(sizeof(UNavAreaMeta_SwitchByAgent) == 0x0000C8, "Wrong size on UNavAreaMeta_SwitchByAgent");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent0Area) == 0x000048, "Member 'UNavAreaMeta_SwitchByAgent::Agent0Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent1Area) == 0x000050, "Member 'UNavAreaMeta_SwitchByAgent::Agent1Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent2Area) == 0x000058, "Member 'UNavAreaMeta_SwitchByAgent::Agent2Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent3Area) == 0x000060, "Member 'UNavAreaMeta_SwitchByAgent::Agent3Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent4Area) == 0x000068, "Member 'UNavAreaMeta_SwitchByAgent::Agent4Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent5Area) == 0x000070, "Member 'UNavAreaMeta_SwitchByAgent::Agent5Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent6Area) == 0x000078, "Member 'UNavAreaMeta_SwitchByAgent::Agent6Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent7Area) == 0x000080, "Member 'UNavAreaMeta_SwitchByAgent::Agent7Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent8Area) == 0x000088, "Member 'UNavAreaMeta_SwitchByAgent::Agent8Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent9Area) == 0x000090, "Member 'UNavAreaMeta_SwitchByAgent::Agent9Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent10Area) == 0x000098, "Member 'UNavAreaMeta_SwitchByAgent::Agent10Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent11Area) == 0x0000A0, "Member 'UNavAreaMeta_SwitchByAgent::Agent11Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent12Area) == 0x0000A8, "Member 'UNavAreaMeta_SwitchByAgent::Agent12Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent13Area) == 0x0000B0, "Member 'UNavAreaMeta_SwitchByAgent::Agent13Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent14Area) == 0x0000B8, "Member 'UNavAreaMeta_SwitchByAgent::Agent14Area' has a wrong offset!");
-static_assert(offsetof(UNavAreaMeta_SwitchByAgent, Agent15Area) == 0x0000C0, "Member 'UNavAreaMeta_SwitchByAgent::Agent15Area' has a wrong offset!");
+DUMPER7_ASSERTS_UNavAreaMeta_SwitchByAgent;
 
 // Class NavigationSystem.NavCollision
 // 0x0068 (0x00D8 - 0x0070)
@@ -292,18 +295,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavCollision">();
+		STATIC_CLASS_IMPL("NavCollision")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavCollision")
 	}
 	static class UNavCollision* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavCollision>();
 	}
 };
-static_assert(alignof(UNavCollision) == 0x000008, "Wrong alignment on UNavCollision");
-static_assert(sizeof(UNavCollision) == 0x0000D8, "Wrong size on UNavCollision");
-static_assert(offsetof(UNavCollision, CylinderCollision) == 0x000080, "Member 'UNavCollision::CylinderCollision' has a wrong offset!");
-static_assert(offsetof(UNavCollision, BoxCollision) == 0x000090, "Member 'UNavCollision::BoxCollision' has a wrong offset!");
-static_assert(offsetof(UNavCollision, AreaClass) == 0x0000A0, "Member 'UNavCollision::AreaClass' has a wrong offset!");
+DUMPER7_ASSERTS_UNavCollision;
 
 // Class NavigationSystem.NavigationGraph
 // 0x0000 (0x0428 - 0x0428)
@@ -312,15 +315,18 @@ class ANavigationGraph final : public ANavigationData
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationGraph">();
+		STATIC_CLASS_IMPL("NavigationGraph")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationGraph")
 	}
 	static class ANavigationGraph* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANavigationGraph>();
 	}
 };
-static_assert(alignof(ANavigationGraph) == 0x000008, "Wrong alignment on ANavigationGraph");
-static_assert(sizeof(ANavigationGraph) == 0x000428, "Wrong size on ANavigationGraph");
+DUMPER7_ASSERTS_ANavigationGraph;
 
 // Class NavigationSystem.NavigationGraphNode
 // 0x0000 (0x0220 - 0x0220)
@@ -329,15 +335,18 @@ class ANavigationGraphNode final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationGraphNode">();
+		STATIC_CLASS_IMPL("NavigationGraphNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationGraphNode")
 	}
 	static class ANavigationGraphNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANavigationGraphNode>();
 	}
 };
-static_assert(alignof(ANavigationGraphNode) == 0x000008, "Wrong alignment on ANavigationGraphNode");
-static_assert(sizeof(ANavigationGraphNode) == 0x000220, "Wrong size on ANavigationGraphNode");
+DUMPER7_ASSERTS_ANavigationGraphNode;
 
 // Class NavigationSystem.NavigationGraphNodeComponent
 // 0x0020 (0x0220 - 0x0200)
@@ -351,18 +360,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationGraphNodeComponent">();
+		STATIC_CLASS_IMPL("NavigationGraphNodeComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationGraphNodeComponent")
 	}
 	static class UNavigationGraphNodeComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavigationGraphNodeComponent>();
 	}
 };
-static_assert(alignof(UNavigationGraphNodeComponent) == 0x000010, "Wrong alignment on UNavigationGraphNodeComponent");
-static_assert(sizeof(UNavigationGraphNodeComponent) == 0x000220, "Wrong size on UNavigationGraphNodeComponent");
-static_assert(offsetof(UNavigationGraphNodeComponent, Node) == 0x0001F8, "Member 'UNavigationGraphNodeComponent::Node' has a wrong offset!");
-static_assert(offsetof(UNavigationGraphNodeComponent, NextNodeComponent) == 0x000210, "Member 'UNavigationGraphNodeComponent::NextNodeComponent' has a wrong offset!");
-static_assert(offsetof(UNavigationGraphNodeComponent, PrevNodeComponent) == 0x000218, "Member 'UNavigationGraphNodeComponent::PrevNodeComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UNavigationGraphNodeComponent;
 
 // Class NavigationSystem.NavigationInvokerComponent
 // 0x0008 (0x00B8 - 0x00B0)
@@ -375,17 +384,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationInvokerComponent">();
+		STATIC_CLASS_IMPL("NavigationInvokerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationInvokerComponent")
 	}
 	static class UNavigationInvokerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavigationInvokerComponent>();
 	}
 };
-static_assert(alignof(UNavigationInvokerComponent) == 0x000008, "Wrong alignment on UNavigationInvokerComponent");
-static_assert(sizeof(UNavigationInvokerComponent) == 0x0000B8, "Wrong size on UNavigationInvokerComponent");
-static_assert(offsetof(UNavigationInvokerComponent, TileGenerationRadius) == 0x0000B0, "Member 'UNavigationInvokerComponent::TileGenerationRadius' has a wrong offset!");
-static_assert(offsetof(UNavigationInvokerComponent, TileRemovalRadius) == 0x0000B4, "Member 'UNavigationInvokerComponent::TileRemovalRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UNavigationInvokerComponent;
 
 // Class NavigationSystem.NavigationPath
 // 0x0060 (0x0088 - 0x0028)
@@ -411,18 +421,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationPath">();
+		STATIC_CLASS_IMPL("NavigationPath")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationPath")
 	}
 	static class UNavigationPath* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavigationPath>();
 	}
 };
-static_assert(alignof(UNavigationPath) == 0x000008, "Wrong alignment on UNavigationPath");
-static_assert(sizeof(UNavigationPath) == 0x000088, "Wrong size on UNavigationPath");
-static_assert(offsetof(UNavigationPath, PathUpdatedNotifier) == 0x000028, "Member 'UNavigationPath::PathUpdatedNotifier' has a wrong offset!");
-static_assert(offsetof(UNavigationPath, PathPoints) == 0x000038, "Member 'UNavigationPath::PathPoints' has a wrong offset!");
-static_assert(offsetof(UNavigationPath, RecalculateOnInvalidation) == 0x000048, "Member 'UNavigationPath::RecalculateOnInvalidation' has a wrong offset!");
+DUMPER7_ASSERTS_UNavigationPath;
 
 // Class NavigationSystem.NavigationPathGenerator
 // 0x0000 (0x0000 - 0x0000)
@@ -431,7 +441,11 @@ class INavigationPathGenerator final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationPathGenerator">();
+		STATIC_CLASS_IMPL("NavigationPathGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationPathGenerator")
 	}
 	static class INavigationPathGenerator* GetDefaultObj()
 	{
@@ -447,8 +461,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(INavigationPathGenerator) == 0x000001, "Wrong alignment on INavigationPathGenerator");
-static_assert(sizeof(INavigationPathGenerator) == 0x000001, "Wrong size on INavigationPathGenerator");
+DUMPER7_ASSERTS_INavigationPathGenerator;
 
 // Class NavigationSystem.NavigationQueryFilter
 // 0x0020 (0x0048 - 0x0028)
@@ -463,18 +476,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationQueryFilter">();
+		STATIC_CLASS_IMPL("NavigationQueryFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationQueryFilter")
 	}
 	static class UNavigationQueryFilter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavigationQueryFilter>();
 	}
 };
-static_assert(alignof(UNavigationQueryFilter) == 0x000008, "Wrong alignment on UNavigationQueryFilter");
-static_assert(sizeof(UNavigationQueryFilter) == 0x000048, "Wrong size on UNavigationQueryFilter");
-static_assert(offsetof(UNavigationQueryFilter, Areas) == 0x000028, "Member 'UNavigationQueryFilter::Areas' has a wrong offset!");
-static_assert(offsetof(UNavigationQueryFilter, IncludeFlags) == 0x000038, "Member 'UNavigationQueryFilter::IncludeFlags' has a wrong offset!");
-static_assert(offsetof(UNavigationQueryFilter, ExcludeFlags) == 0x00003C, "Member 'UNavigationQueryFilter::ExcludeFlags' has a wrong offset!");
+DUMPER7_ASSERTS_UNavigationQueryFilter;
 
 // Class NavigationSystem.NavigationSystemV1
 // 0x15B8 (0x15E0 - 0x0028)
@@ -544,30 +557,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationSystemV1">();
+		STATIC_CLASS_IMPL("NavigationSystemV1")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationSystemV1")
 	}
 	static class UNavigationSystemV1* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavigationSystemV1>();
 	}
 };
-static_assert(alignof(UNavigationSystemV1) == 0x000008, "Wrong alignment on UNavigationSystemV1");
-static_assert(sizeof(UNavigationSystemV1) == 0x0015E0, "Wrong size on UNavigationSystemV1");
-static_assert(offsetof(UNavigationSystemV1, MainNavData) == 0x000028, "Member 'UNavigationSystemV1::MainNavData' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, AbstractNavData) == 0x000030, "Member 'UNavigationSystemV1::AbstractNavData' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, DefaultAgentName) == 0x000038, "Member 'UNavigationSystemV1::DefaultAgentName' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, CrowdManagerClass) == 0x000040, "Member 'UNavigationSystemV1::CrowdManagerClass' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, ActiveTilesUpdateInterval) == 0x00006C, "Member 'UNavigationSystemV1::ActiveTilesUpdateInterval' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, DataGatheringMode) == 0x000070, "Member 'UNavigationSystemV1::DataGatheringMode' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, DirtyAreaWarningSizeThreshold) == 0x000074, "Member 'UNavigationSystemV1::DirtyAreaWarningSizeThreshold' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, SupportedAgents) == 0x000078, "Member 'UNavigationSystemV1::SupportedAgents' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, SupportedAgentsMask) == 0x000088, "Member 'UNavigationSystemV1::SupportedAgentsMask' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, NavDataSet) == 0x000090, "Member 'UNavigationSystemV1::NavDataSet' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, NavDataRegistrationQueue) == 0x0000A0, "Member 'UNavigationSystemV1::NavDataRegistrationQueue' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, OnNavDataRegisteredEvent) == 0x0000C0, "Member 'UNavigationSystemV1::OnNavDataRegisteredEvent' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, OnNavigationGenerationFinishedDelegate) == 0x0000D0, "Member 'UNavigationSystemV1::OnNavigationGenerationFinishedDelegate' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, OperationMode) == 0x0001BC, "Member 'UNavigationSystemV1::OperationMode' has a wrong offset!");
-static_assert(offsetof(UNavigationSystemV1, DirtyAreasUpdateFreq) == 0x0015BC, "Member 'UNavigationSystemV1::DirtyAreasUpdateFreq' has a wrong offset!");
+DUMPER7_ASSERTS_UNavigationSystemV1;
 
 // Class NavigationSystem.NavigationSystemModuleConfig
 // 0x0008 (0x0058 - 0x0050)
@@ -583,15 +584,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationSystemModuleConfig">();
+		STATIC_CLASS_IMPL("NavigationSystemModuleConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationSystemModuleConfig")
 	}
 	static class UNavigationSystemModuleConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavigationSystemModuleConfig>();
 	}
 };
-static_assert(alignof(UNavigationSystemModuleConfig) == 0x000008, "Wrong alignment on UNavigationSystemModuleConfig");
-static_assert(sizeof(UNavigationSystemModuleConfig) == 0x000058, "Wrong size on UNavigationSystemModuleConfig");
+DUMPER7_ASSERTS_UNavigationSystemModuleConfig;
 
 // Class NavigationSystem.NavigationTestingActor
 // 0x00F0 (0x0310 - 0x0220)
@@ -641,32 +645,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavigationTestingActor">();
+		STATIC_CLASS_IMPL("NavigationTestingActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavigationTestingActor")
 	}
 	static class ANavigationTestingActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANavigationTestingActor>();
 	}
 };
-static_assert(alignof(ANavigationTestingActor) == 0x000008, "Wrong alignment on ANavigationTestingActor");
-static_assert(sizeof(ANavigationTestingActor) == 0x000310, "Wrong size on ANavigationTestingActor");
-static_assert(offsetof(ANavigationTestingActor, CapsuleComponent) == 0x000230, "Member 'ANavigationTestingActor::CapsuleComponent' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, InvokerComponent) == 0x000238, "Member 'ANavigationTestingActor::InvokerComponent' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, NavAgentProps) == 0x000248, "Member 'ANavigationTestingActor::NavAgentProps' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, QueryingExtent) == 0x000278, "Member 'ANavigationTestingActor::QueryingExtent' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, MyNavData) == 0x000288, "Member 'ANavigationTestingActor::MyNavData' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, ProjectedLocation) == 0x000290, "Member 'ANavigationTestingActor::ProjectedLocation' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, CostLimitFactor) == 0x0002A0, "Member 'ANavigationTestingActor::CostLimitFactor' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, MinimumCostLimit) == 0x0002A4, "Member 'ANavigationTestingActor::MinimumCostLimit' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, CostDisplayMode) == 0x0002AC, "Member 'ANavigationTestingActor::CostDisplayMode' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, TextCanvasOffset) == 0x0002B0, "Member 'ANavigationTestingActor::TextCanvasOffset' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, PathfindingTime) == 0x0002BC, "Member 'ANavigationTestingActor::PathfindingTime' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, PathCost) == 0x0002C0, "Member 'ANavigationTestingActor::PathCost' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, PathfindingSteps) == 0x0002C4, "Member 'ANavigationTestingActor::PathfindingSteps' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, OtherActor) == 0x0002C8, "Member 'ANavigationTestingActor::OtherActor' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, FilterClass) == 0x0002D0, "Member 'ANavigationTestingActor::FilterClass' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, ShowStepIndex) == 0x0002D8, "Member 'ANavigationTestingActor::ShowStepIndex' has a wrong offset!");
-static_assert(offsetof(ANavigationTestingActor, OffsetFromCornersDistance) == 0x0002DC, "Member 'ANavigationTestingActor::OffsetFromCornersDistance' has a wrong offset!");
+DUMPER7_ASSERTS_ANavigationTestingActor;
 
 // Class NavigationSystem.NavLinkComponent
 // 0x0020 (0x04D0 - 0x04B0)
@@ -680,16 +670,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkComponent">();
+		STATIC_CLASS_IMPL("NavLinkComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkComponent")
 	}
 	static class UNavLinkComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavLinkComponent>();
 	}
 };
-static_assert(alignof(UNavLinkComponent) == 0x000010, "Wrong alignment on UNavLinkComponent");
-static_assert(sizeof(UNavLinkComponent) == 0x0004D0, "Wrong size on UNavLinkComponent");
-static_assert(offsetof(UNavLinkComponent, Links) == 0x0004B8, "Member 'UNavLinkComponent::Links' has a wrong offset!");
+DUMPER7_ASSERTS_UNavLinkComponent;
 
 // Class NavigationSystem.NavRelevantComponent
 // 0x0030 (0x00E0 - 0x00B0)
@@ -707,16 +699,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavRelevantComponent">();
+		STATIC_CLASS_IMPL("NavRelevantComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavRelevantComponent")
 	}
 	static class UNavRelevantComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavRelevantComponent>();
 	}
 };
-static_assert(alignof(UNavRelevantComponent) == 0x000008, "Wrong alignment on UNavRelevantComponent");
-static_assert(sizeof(UNavRelevantComponent) == 0x0000E0, "Wrong size on UNavRelevantComponent");
-static_assert(offsetof(UNavRelevantComponent, CachedNavParent) == 0x0000D8, "Member 'UNavRelevantComponent::CachedNavParent' has a wrong offset!");
+DUMPER7_ASSERTS_UNavRelevantComponent;
 
 // Class NavigationSystem.NavLinkCustomComponent
 // 0x00B0 (0x0190 - 0x00E0)
@@ -750,28 +744,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkCustomComponent">();
+		STATIC_CLASS_IMPL("NavLinkCustomComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkCustomComponent")
 	}
 	static class UNavLinkCustomComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavLinkCustomComponent>();
 	}
 };
-static_assert(alignof(UNavLinkCustomComponent) == 0x000008, "Wrong alignment on UNavLinkCustomComponent");
-static_assert(sizeof(UNavLinkCustomComponent) == 0x000190, "Wrong size on UNavLinkCustomComponent");
-static_assert(offsetof(UNavLinkCustomComponent, NavLinkUserId) == 0x0000E8, "Member 'UNavLinkCustomComponent::NavLinkUserId' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, EnabledAreaClass) == 0x0000F0, "Member 'UNavLinkCustomComponent::EnabledAreaClass' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, DisabledAreaClass) == 0x0000F8, "Member 'UNavLinkCustomComponent::DisabledAreaClass' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, SupportedAgents) == 0x000100, "Member 'UNavLinkCustomComponent::SupportedAgents' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, LinkRelativeStart) == 0x000104, "Member 'UNavLinkCustomComponent::LinkRelativeStart' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, LinkRelativeEnd) == 0x000110, "Member 'UNavLinkCustomComponent::LinkRelativeEnd' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, LinkDirection) == 0x00011C, "Member 'UNavLinkCustomComponent::LinkDirection' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, ObstacleOffset) == 0x000124, "Member 'UNavLinkCustomComponent::ObstacleOffset' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, ObstacleExtent) == 0x000130, "Member 'UNavLinkCustomComponent::ObstacleExtent' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, ObstacleAreaClass) == 0x000140, "Member 'UNavLinkCustomComponent::ObstacleAreaClass' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, BroadcastRadius) == 0x000148, "Member 'UNavLinkCustomComponent::BroadcastRadius' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, BroadcastInterval) == 0x00014C, "Member 'UNavLinkCustomComponent::BroadcastInterval' has a wrong offset!");
-static_assert(offsetof(UNavLinkCustomComponent, BroadcastChannel) == 0x000150, "Member 'UNavLinkCustomComponent::BroadcastChannel' has a wrong offset!");
+DUMPER7_ASSERTS_UNavLinkCustomComponent;
 
 // Class NavigationSystem.NavLinkCustomInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -780,7 +764,11 @@ class INavLinkCustomInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkCustomInterface">();
+		STATIC_CLASS_IMPL("NavLinkCustomInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkCustomInterface")
 	}
 	static class INavLinkCustomInterface* GetDefaultObj()
 	{
@@ -796,8 +784,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(INavLinkCustomInterface) == 0x000001, "Wrong alignment on INavLinkCustomInterface");
-static_assert(sizeof(INavLinkCustomInterface) == 0x000001, "Wrong size on INavLinkCustomInterface");
+DUMPER7_ASSERTS_INavLinkCustomInterface;
 
 // Class NavigationSystem.NavLinkHostInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -806,7 +793,11 @@ class INavLinkHostInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkHostInterface">();
+		STATIC_CLASS_IMPL("NavLinkHostInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkHostInterface")
 	}
 	static class INavLinkHostInterface* GetDefaultObj()
 	{
@@ -822,8 +813,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(INavLinkHostInterface) == 0x000001, "Wrong alignment on INavLinkHostInterface");
-static_assert(sizeof(INavLinkHostInterface) == 0x000001, "Wrong size on INavLinkHostInterface");
+DUMPER7_ASSERTS_INavLinkHostInterface;
 
 // Class NavigationSystem.NavLinkRenderingComponent
 // 0x0000 (0x04B0 - 0x04B0)
@@ -832,15 +822,18 @@ class UNavLinkRenderingComponent final : public UPrimitiveComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkRenderingComponent">();
+		STATIC_CLASS_IMPL("NavLinkRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkRenderingComponent")
 	}
 	static class UNavLinkRenderingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavLinkRenderingComponent>();
 	}
 };
-static_assert(alignof(UNavLinkRenderingComponent) == 0x000010, "Wrong alignment on UNavLinkRenderingComponent");
-static_assert(sizeof(UNavLinkRenderingComponent) == 0x0004B0, "Wrong size on UNavLinkRenderingComponent");
+DUMPER7_ASSERTS_UNavLinkRenderingComponent;
 
 // Class NavigationSystem.NavLinkTrivial
 // 0x0000 (0x0050 - 0x0050)
@@ -849,15 +842,18 @@ class UNavLinkTrivial final : public UNavLinkDefinition
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkTrivial">();
+		STATIC_CLASS_IMPL("NavLinkTrivial")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkTrivial")
 	}
 	static class UNavLinkTrivial* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavLinkTrivial>();
 	}
 };
-static_assert(alignof(UNavLinkTrivial) == 0x000008, "Wrong alignment on UNavLinkTrivial");
-static_assert(sizeof(UNavLinkTrivial) == 0x000050, "Wrong size on UNavLinkTrivial");
+DUMPER7_ASSERTS_UNavLinkTrivial;
 
 // Class NavigationSystem.NavMeshBoundsVolume
 // 0x0008 (0x0260 - 0x0258)
@@ -870,16 +866,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavMeshBoundsVolume">();
+		STATIC_CLASS_IMPL("NavMeshBoundsVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavMeshBoundsVolume")
 	}
 	static class ANavMeshBoundsVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANavMeshBoundsVolume>();
 	}
 };
-static_assert(alignof(ANavMeshBoundsVolume) == 0x000008, "Wrong alignment on ANavMeshBoundsVolume");
-static_assert(sizeof(ANavMeshBoundsVolume) == 0x000260, "Wrong size on ANavMeshBoundsVolume");
-static_assert(offsetof(ANavMeshBoundsVolume, SupportedAgents) == 0x000258, "Member 'ANavMeshBoundsVolume::SupportedAgents' has a wrong offset!");
+DUMPER7_ASSERTS_ANavMeshBoundsVolume;
 
 // Class NavigationSystem.NavMeshRenderingComponent
 // 0x0010 (0x04C0 - 0x04B0)
@@ -891,15 +889,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavMeshRenderingComponent">();
+		STATIC_CLASS_IMPL("NavMeshRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavMeshRenderingComponent")
 	}
 	static class UNavMeshRenderingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavMeshRenderingComponent>();
 	}
 };
-static_assert(alignof(UNavMeshRenderingComponent) == 0x000010, "Wrong alignment on UNavMeshRenderingComponent");
-static_assert(sizeof(UNavMeshRenderingComponent) == 0x0004C0, "Wrong size on UNavMeshRenderingComponent");
+DUMPER7_ASSERTS_UNavMeshRenderingComponent;
 
 // Class NavigationSystem.NavModifierComponent
 // 0x0060 (0x0140 - 0x00E0)
@@ -917,17 +918,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavModifierComponent">();
+		STATIC_CLASS_IMPL("NavModifierComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavModifierComponent")
 	}
 	static class UNavModifierComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavModifierComponent>();
 	}
 };
-static_assert(alignof(UNavModifierComponent) == 0x000010, "Wrong alignment on UNavModifierComponent");
-static_assert(sizeof(UNavModifierComponent) == 0x000140, "Wrong size on UNavModifierComponent");
-static_assert(offsetof(UNavModifierComponent, AreaClass) == 0x0000E0, "Member 'UNavModifierComponent::AreaClass' has a wrong offset!");
-static_assert(offsetof(UNavModifierComponent, FailsafeExtent) == 0x0000E8, "Member 'UNavModifierComponent::FailsafeExtent' has a wrong offset!");
+DUMPER7_ASSERTS_UNavModifierComponent;
 
 // Class NavigationSystem.NavModifierVolume
 // 0x0018 (0x0270 - 0x0258)
@@ -945,17 +947,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavModifierVolume">();
+		STATIC_CLASS_IMPL("NavModifierVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavModifierVolume")
 	}
 	static class ANavModifierVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANavModifierVolume>();
 	}
 };
-static_assert(alignof(ANavModifierVolume) == 0x000008, "Wrong alignment on ANavModifierVolume");
-static_assert(sizeof(ANavModifierVolume) == 0x000270, "Wrong size on ANavModifierVolume");
-static_assert(offsetof(ANavModifierVolume, AreaClass) == 0x000260, "Member 'ANavModifierVolume::AreaClass' has a wrong offset!");
-static_assert(offsetof(ANavModifierVolume, bMaskFillCollisionUnderneathForNavmesh) == 0x000268, "Member 'ANavModifierVolume::bMaskFillCollisionUnderneathForNavmesh' has a wrong offset!");
+DUMPER7_ASSERTS_ANavModifierVolume;
 
 // Class NavigationSystem.NavNodeInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -964,7 +967,11 @@ class INavNodeInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavNodeInterface">();
+		STATIC_CLASS_IMPL("NavNodeInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavNodeInterface")
 	}
 	static class INavNodeInterface* GetDefaultObj()
 	{
@@ -980,8 +987,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(INavNodeInterface) == 0x000001, "Wrong alignment on INavNodeInterface");
-static_assert(sizeof(INavNodeInterface) == 0x000001, "Wrong size on INavNodeInterface");
+DUMPER7_ASSERTS_INavNodeInterface;
 
 // Class NavigationSystem.NavSystemConfigOverride
 // 0x0010 (0x0230 - 0x0220)
@@ -996,17 +1002,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavSystemConfigOverride">();
+		STATIC_CLASS_IMPL("NavSystemConfigOverride")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavSystemConfigOverride")
 	}
 	static class ANavSystemConfigOverride* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANavSystemConfigOverride>();
 	}
 };
-static_assert(alignof(ANavSystemConfigOverride) == 0x000008, "Wrong alignment on ANavSystemConfigOverride");
-static_assert(sizeof(ANavSystemConfigOverride) == 0x000230, "Wrong size on ANavSystemConfigOverride");
-static_assert(offsetof(ANavSystemConfigOverride, NavigationSystemConfig) == 0x000220, "Member 'ANavSystemConfigOverride::NavigationSystemConfig' has a wrong offset!");
-static_assert(offsetof(ANavSystemConfigOverride, OverridePolicy) == 0x000228, "Member 'ANavSystemConfigOverride::OverridePolicy' has a wrong offset!");
+DUMPER7_ASSERTS_ANavSystemConfigOverride;
 
 // Class NavigationSystem.NavTestRenderingComponent
 // 0x0000 (0x04B0 - 0x04B0)
@@ -1015,15 +1022,18 @@ class UNavTestRenderingComponent final : public UPrimitiveComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavTestRenderingComponent">();
+		STATIC_CLASS_IMPL("NavTestRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavTestRenderingComponent")
 	}
 	static class UNavTestRenderingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavTestRenderingComponent>();
 	}
 };
-static_assert(alignof(UNavTestRenderingComponent) == 0x000010, "Wrong alignment on UNavTestRenderingComponent");
-static_assert(sizeof(UNavTestRenderingComponent) == 0x0004B0, "Wrong size on UNavTestRenderingComponent");
+DUMPER7_ASSERTS_UNavTestRenderingComponent;
 
 // Class NavigationSystem.RecastFilter_UseDefaultArea
 // 0x0000 (0x0048 - 0x0048)
@@ -1032,15 +1042,18 @@ class URecastFilter_UseDefaultArea final : public UNavigationQueryFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RecastFilter_UseDefaultArea">();
+		STATIC_CLASS_IMPL("RecastFilter_UseDefaultArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RecastFilter_UseDefaultArea")
 	}
 	static class URecastFilter_UseDefaultArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URecastFilter_UseDefaultArea>();
 	}
 };
-static_assert(alignof(URecastFilter_UseDefaultArea) == 0x000008, "Wrong alignment on URecastFilter_UseDefaultArea");
-static_assert(sizeof(URecastFilter_UseDefaultArea) == 0x000048, "Wrong size on URecastFilter_UseDefaultArea");
+DUMPER7_ASSERTS_URecastFilter_UseDefaultArea;
 
 // Class NavigationSystem.RecastNavMesh
 // 0x00B0 (0x04D8 - 0x0428)
@@ -1118,43 +1131,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RecastNavMesh">();
+		STATIC_CLASS_IMPL("RecastNavMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RecastNavMesh")
 	}
 	static class ARecastNavMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARecastNavMesh>();
 	}
 };
-static_assert(alignof(ARecastNavMesh) == 0x000008, "Wrong alignment on ARecastNavMesh");
-static_assert(sizeof(ARecastNavMesh) == 0x0004D8, "Wrong size on ARecastNavMesh");
-static_assert(offsetof(ARecastNavMesh, DrawOffset) == 0x00042C, "Member 'ARecastNavMesh::DrawOffset' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, TilePoolSize) == 0x000434, "Member 'ARecastNavMesh::TilePoolSize' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, TileSizeUU) == 0x000438, "Member 'ARecastNavMesh::TileSizeUU' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, CellSize) == 0x00043C, "Member 'ARecastNavMesh::CellSize' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, CellHeight) == 0x000440, "Member 'ARecastNavMesh::CellHeight' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, AgentRadius) == 0x000444, "Member 'ARecastNavMesh::AgentRadius' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, AgentHeight) == 0x000448, "Member 'ARecastNavMesh::AgentHeight' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, AgentMaxSlope) == 0x00044C, "Member 'ARecastNavMesh::AgentMaxSlope' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, AgentMaxStepHeight) == 0x000450, "Member 'ARecastNavMesh::AgentMaxStepHeight' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, MinRegionArea) == 0x000454, "Member 'ARecastNavMesh::MinRegionArea' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, MergeRegionSize) == 0x000458, "Member 'ARecastNavMesh::MergeRegionSize' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, MaxSimplificationError) == 0x00045C, "Member 'ARecastNavMesh::MaxSimplificationError' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, MaxSimultaneousTileGenerationJobsCount) == 0x000460, "Member 'ARecastNavMesh::MaxSimultaneousTileGenerationJobsCount' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, TileNumberHardLimit) == 0x000464, "Member 'ARecastNavMesh::TileNumberHardLimit' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, PolyRefTileBits) == 0x000468, "Member 'ARecastNavMesh::PolyRefTileBits' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, PolyRefNavPolyBits) == 0x00046C, "Member 'ARecastNavMesh::PolyRefNavPolyBits' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, PolyRefSaltBits) == 0x000470, "Member 'ARecastNavMesh::PolyRefSaltBits' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, NavMeshOriginOffset) == 0x000474, "Member 'ARecastNavMesh::NavMeshOriginOffset' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, DefaultDrawDistance) == 0x000480, "Member 'ARecastNavMesh::DefaultDrawDistance' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, DefaultMaxSearchNodes) == 0x000484, "Member 'ARecastNavMesh::DefaultMaxSearchNodes' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, DefaultMaxHierarchicalSearchNodes) == 0x000488, "Member 'ARecastNavMesh::DefaultMaxHierarchicalSearchNodes' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, RegionPartitioning) == 0x00048C, "Member 'ARecastNavMesh::RegionPartitioning' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, LayerPartitioning) == 0x00048D, "Member 'ARecastNavMesh::LayerPartitioning' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, RegionChunkSplits) == 0x000490, "Member 'ARecastNavMesh::RegionChunkSplits' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, LayerChunkSplits) == 0x000494, "Member 'ARecastNavMesh::LayerChunkSplits' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, TileSetUpdateInterval) == 0x00049C, "Member 'ARecastNavMesh::TileSetUpdateInterval' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, HeuristicScale) == 0x0004A0, "Member 'ARecastNavMesh::HeuristicScale' has a wrong offset!");
-static_assert(offsetof(ARecastNavMesh, VerticalDeviationFromGroundCompensation) == 0x0004A4, "Member 'ARecastNavMesh::VerticalDeviationFromGroundCompensation' has a wrong offset!");
+DUMPER7_ASSERTS_ARecastNavMesh;
 
 // Class NavigationSystem.RecastNavMeshDataChunk
 // 0x0010 (0x0040 - 0x0030)
@@ -1166,15 +1154,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RecastNavMeshDataChunk">();
+		STATIC_CLASS_IMPL("RecastNavMeshDataChunk")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RecastNavMeshDataChunk")
 	}
 	static class URecastNavMeshDataChunk* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URecastNavMeshDataChunk>();
 	}
 };
-static_assert(alignof(URecastNavMeshDataChunk) == 0x000008, "Wrong alignment on URecastNavMeshDataChunk");
-static_assert(sizeof(URecastNavMeshDataChunk) == 0x000040, "Wrong size on URecastNavMeshDataChunk");
+DUMPER7_ASSERTS_URecastNavMeshDataChunk;
 
-}
-
+SDK_NAMESPACE_END

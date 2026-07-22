@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_PowerPlant.BP_PowerPlant_C.UserConstructionScript
 // 0x0080 (0x0080 - 0x0000)
@@ -32,17 +32,7 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0040(0x0030)(IsPlainOldData, NoDestructor)
 	class UParticleSystemComponent*               CallFunc_AddComponent_ReturnValue;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PowerPlant_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_PowerPlant_C_UserConstructionScript");
-static_assert(sizeof(BP_PowerPlant_C_UserConstructionScript) == 0x000080, "Wrong size on BP_PowerPlant_C_UserConstructionScript");
-static_assert(offsetof(BP_PowerPlant_C_UserConstructionScript, Temp_int_Variable) == 0x000000, "Member 'BP_PowerPlant_C_UserConstructionScript::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PowerPlant_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_PowerPlant_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PowerPlant_C_UserConstructionScript, CallFunc_Conv_IntToString_ReturnValue) == 0x000008, "Member 'BP_PowerPlant_C_UserConstructionScript::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PowerPlant_C_UserConstructionScript, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'BP_PowerPlant_C_UserConstructionScript::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PowerPlant_C_UserConstructionScript, CallFunc_Conv_StringToName_ReturnValue) == 0x000028, "Member 'BP_PowerPlant_C_UserConstructionScript::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PowerPlant_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000030, "Member 'BP_PowerPlant_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PowerPlant_C_UserConstructionScript, CallFunc_FindSocket_ReturnValue) == 0x000038, "Member 'BP_PowerPlant_C_UserConstructionScript::CallFunc_FindSocket_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PowerPlant_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue) == 0x000040, "Member 'BP_PowerPlant_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PowerPlant_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000070, "Member 'BP_PowerPlant_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PowerPlant_C_UserConstructionScript;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

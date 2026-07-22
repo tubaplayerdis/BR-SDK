@@ -14,8 +14,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_Tooltip.WBP_Tooltip_C.ExecuteUbergraph_WBP_Tooltip
 // 0x0058 (0x0058 - 0x0000)
@@ -41,25 +41,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip) == 0x000008, "Wrong alignment on WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip");
-static_assert(sizeof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip) == 0x000058, "Wrong size on WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, EntryPoint) == 0x000000, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, Temp_bool_Variable) == 0x000004, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, Temp_byte_Variable) == 0x000005, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, Temp_bool_Variable_1) == 0x000007, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, Temp_byte_Variable_2) == 0x000008, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, Temp_byte_Variable_3) == 0x000009, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, Temp_bool_Variable_2) == 0x00000A, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, Temp_byte_Variable_4) == 0x00000B, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, Temp_byte_Variable_5) == 0x00000C, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, K2Node_Event_InContent) == 0x000010, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::K2Node_Event_InContent' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000050, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, CallFunc_TextIsEmpty_ReturnValue) == 0x000051, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, K2Node_Select_Default) == 0x000052, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, K2Node_Select_Default_1) == 0x000053, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, CallFunc_BooleanAND_ReturnValue) == 0x000054, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip, K2Node_Select_Default_2) == 0x000055, "Member 'WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip::K2Node_Select_Default_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tooltip_C_ExecuteUbergraph_WBP_Tooltip;
 
 // Function WBP_Tooltip.WBP_Tooltip_C.UpdateTooltipContent
 // 0x0040 (0x0040 - 0x0000)
@@ -68,9 +50,7 @@ struct WBP_Tooltip_C_UpdateTooltipContent final
 public:
 	struct FTooltipContent                        InContent;                                         // 0x0000(0x0040)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Tooltip_C_UpdateTooltipContent) == 0x000008, "Wrong alignment on WBP_Tooltip_C_UpdateTooltipContent");
-static_assert(sizeof(WBP_Tooltip_C_UpdateTooltipContent) == 0x000040, "Wrong size on WBP_Tooltip_C_UpdateTooltipContent");
-static_assert(offsetof(WBP_Tooltip_C_UpdateTooltipContent, InContent) == 0x000000, "Member 'WBP_Tooltip_C_UpdateTooltipContent::InContent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tooltip_C_UpdateTooltipContent;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

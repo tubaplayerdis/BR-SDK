@@ -17,8 +17,7 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InputAction.WBP_InputAction_C
 // 0x0018 (0x0358 - 0x0340)
@@ -42,18 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InputAction_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InputAction_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InputAction_C")
 	}
 	static class UWBP_InputAction_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InputAction_C>();
 	}
 };
-static_assert(alignof(UWBP_InputAction_C) == 0x000008, "Wrong alignment on UWBP_InputAction_C");
-static_assert(sizeof(UWBP_InputAction_C) == 0x000358, "Wrong size on UWBP_InputAction_C");
-static_assert(offsetof(UWBP_InputAction_C, UberGraphFrame) == 0x000340, "Member 'UWBP_InputAction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InputAction_C, EditButton) == 0x000348, "Member 'UWBP_InputAction_C::EditButton' has a wrong offset!");
-static_assert(offsetof(UWBP_InputAction_C, EditImage) == 0x000350, "Member 'UWBP_InputAction_C::EditImage' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InputAction_C;
 
-}
-
+SDK_NAMESPACE_END

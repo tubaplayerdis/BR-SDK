@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function FluMoveSync.FluMoveSyncKinematicActor.SetInterpolatedComponent
 // 0x0008 (0x0008 - 0x0000)
@@ -21,9 +21,7 @@ struct FluMoveSyncKinematicActor_SetInterpolatedComponent final
 public:
 	class USceneComponent*                        Comp;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FluMoveSyncKinematicActor_SetInterpolatedComponent) == 0x000008, "Wrong alignment on FluMoveSyncKinematicActor_SetInterpolatedComponent");
-static_assert(sizeof(FluMoveSyncKinematicActor_SetInterpolatedComponent) == 0x000008, "Wrong size on FluMoveSyncKinematicActor_SetInterpolatedComponent");
-static_assert(offsetof(FluMoveSyncKinematicActor_SetInterpolatedComponent, Comp) == 0x000000, "Member 'FluMoveSyncKinematicActor_SetInterpolatedComponent::Comp' has a wrong offset!");
+DUMPER7_ASSERTS_FluMoveSyncKinematicActor_SetInterpolatedComponent;
 
 // Function FluMoveSync.FluMoveSyncKinematicActor.SetMovementComponent
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct FluMoveSyncKinematicActor_SetMovementComponent final
 public:
 	class UMovementComponent*                     Comp;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FluMoveSyncKinematicActor_SetMovementComponent) == 0x000008, "Wrong alignment on FluMoveSyncKinematicActor_SetMovementComponent");
-static_assert(sizeof(FluMoveSyncKinematicActor_SetMovementComponent) == 0x000008, "Wrong size on FluMoveSyncKinematicActor_SetMovementComponent");
-static_assert(offsetof(FluMoveSyncKinematicActor_SetMovementComponent, Comp) == 0x000000, "Member 'FluMoveSyncKinematicActor_SetMovementComponent::Comp' has a wrong offset!");
+DUMPER7_ASSERTS_FluMoveSyncKinematicActor_SetMovementComponent;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

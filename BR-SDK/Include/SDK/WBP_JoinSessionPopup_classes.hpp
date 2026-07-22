@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_JoinSessionPopup.WBP_JoinSessionPopup_C
 // 0x0020 (0x02F8 - 0x02D8)
@@ -38,19 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_JoinSessionPopup_C">();
+		BP_STATIC_CLASS_IMPL("WBP_JoinSessionPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_JoinSessionPopup_C")
 	}
 	static class UWBP_JoinSessionPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_JoinSessionPopup_C>();
 	}
 };
-static_assert(alignof(UWBP_JoinSessionPopup_C) == 0x000008, "Wrong alignment on UWBP_JoinSessionPopup_C");
-static_assert(sizeof(UWBP_JoinSessionPopup_C) == 0x0002F8, "Wrong size on UWBP_JoinSessionPopup_C");
-static_assert(offsetof(UWBP_JoinSessionPopup_C, UberGraphFrame) == 0x0002D8, "Member 'UWBP_JoinSessionPopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinSessionPopup_C, Slider) == 0x0002E0, "Member 'UWBP_JoinSessionPopup_C::Slider' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinSessionPopup_C, ConfirmButton) == 0x0002E8, "Member 'UWBP_JoinSessionPopup_C::ConfirmButton' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinSessionPopup_C, CancelButton) == 0x0002F0, "Member 'UWBP_JoinSessionPopup_C::CancelButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_JoinSessionPopup_C;
 
-}
-
+SDK_NAMESPACE_END

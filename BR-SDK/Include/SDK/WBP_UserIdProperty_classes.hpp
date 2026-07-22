@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UserIdProperty.WBP_UserIdProperty_C
 // 0x0020 (0x0310 - 0x02F0)
@@ -39,19 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_UserIdProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_UserIdProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_UserIdProperty_C")
 	}
 	static class UWBP_UserIdProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_UserIdProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_UserIdProperty_C) == 0x000008, "Wrong alignment on UWBP_UserIdProperty_C");
-static_assert(sizeof(UWBP_UserIdProperty_C) == 0x000310, "Wrong size on UWBP_UserIdProperty_C");
-static_assert(offsetof(UWBP_UserIdProperty_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_UserIdProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_UserIdProperty_C, ShowProfileButton) == 0x0002F8, "Member 'UWBP_UserIdProperty_C::ShowProfileButton' has a wrong offset!");
-static_assert(offsetof(UWBP_UserIdProperty_C, ShowProfileImage) == 0x000300, "Member 'UWBP_UserIdProperty_C::ShowProfileImage' has a wrong offset!");
-static_assert(offsetof(UWBP_UserIdProperty_C, UsernameTextBlock) == 0x000308, "Member 'UWBP_UserIdProperty_C::UsernameTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_UserIdProperty_C;
 
-}
-
+SDK_NAMESPACE_END

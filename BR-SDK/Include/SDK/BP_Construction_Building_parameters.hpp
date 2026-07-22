@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Construction_Building.BP_Construction_Building_C.BuildSide
 // 0x0100 (0x0100 - 0x0000)
@@ -66,46 +66,7 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select_Default_1;                           // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Construction_Building_C_BuildSide) == 0x000010, "Wrong alignment on BP_Construction_Building_C_BuildSide");
-static_assert(sizeof(BP_Construction_Building_C_BuildSide) == 0x000100, "Wrong size on BP_Construction_Building_C_BuildSide");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, Num) == 0x000000, "Member 'BP_Construction_Building_C_BuildSide::Num' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, OtherNum) == 0x000004, "Member 'BP_Construction_Building_C_BuildSide::OtherNum' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, bIsY) == 0x000008, "Member 'BP_Construction_Building_C_BuildSide::bIsY' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_SelectRotator_ReturnValue) == 0x00000C, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_SelectRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_SelectFloat_ReturnValue) == 0x000018, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Subtract_IntInt_ReturnValue) == 0x00001C, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000020, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000024, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x000028, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x000030, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, Temp_int_Variable) == 0x000034, "Member 'BP_Construction_Building_C_BuildSide::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, Temp_bool_Variable) == 0x000038, "Member 'BP_Construction_Building_C_BuildSide::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000039, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x00003A, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_NotEqual_IntInt_ReturnValue_2) == 0x00003B, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_NotEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_BooleanAND_ReturnValue) == 0x00003C, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_NotEqual_IntInt_ReturnValue_3) == 0x00003D, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_NotEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Multiply_IntFloat_ReturnValue_2) == 0x000040, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Multiply_IntFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_BooleanAND_ReturnValue_1) == 0x000044, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000048, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, K2Node_Select_Default) == 0x00004C, "Member 'BP_Construction_Building_C_BuildSide::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000050, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_SelectFloat_ReturnValue_1) == 0x000054, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_SelectFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_SelectFloat_ReturnValue_2) == 0x000058, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_SelectFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Add_FloatFloat_ReturnValue) == 0x00005C, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_MakeVector_ReturnValue) == 0x000060, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_SelectFloat_ReturnValue_3) == 0x00006C, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_SelectFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_MakeTransform_ReturnValue) == 0x000070, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_SelectFloat_ReturnValue_4) == 0x0000A0, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_SelectFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_AddInstance_ReturnValue) == 0x0000A4, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_AddInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_MakeVector_ReturnValue_1) == 0x0000A8, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_MakeTransform_ReturnValue_1) == 0x0000C0, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000F0, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_AddInstance_ReturnValue_1) == 0x0000F4, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_AddInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, CallFunc_Add_IntInt_ReturnValue) == 0x0000F8, "Member 'BP_Construction_Building_C_BuildSide::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, Temp_bool_Variable_1) == 0x0000FC, "Member 'BP_Construction_Building_C_BuildSide::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildSide, K2Node_Select_Default_1) == 0x0000FD, "Member 'BP_Construction_Building_C_BuildSide::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Construction_Building_C_BuildSide;
 
 // Function BP_Construction_Building.BP_Construction_Building_C.BuildWall
 // 0x0008 (0x0008 - 0x0000)
@@ -115,10 +76,7 @@ public:
 	int32                                         NumX;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumY;                                              // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Construction_Building_C_BuildWall) == 0x000004, "Wrong alignment on BP_Construction_Building_C_BuildWall");
-static_assert(sizeof(BP_Construction_Building_C_BuildWall) == 0x000008, "Wrong size on BP_Construction_Building_C_BuildWall");
-static_assert(offsetof(BP_Construction_Building_C_BuildWall, NumX) == 0x000000, "Member 'BP_Construction_Building_C_BuildWall::NumX' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_BuildWall, NumY) == 0x000004, "Member 'BP_Construction_Building_C_BuildWall::NumY' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Construction_Building_C_BuildWall;
 
 // Function BP_Construction_Building.BP_Construction_Building_C.UserConstructionScript
 // 0x0008 (0x0008 - 0x0000)
@@ -128,10 +86,7 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Construction_Building_C_UserConstructionScript) == 0x000004, "Wrong alignment on BP_Construction_Building_C_UserConstructionScript");
-static_assert(sizeof(BP_Construction_Building_C_UserConstructionScript) == 0x000008, "Wrong size on BP_Construction_Building_C_UserConstructionScript");
-static_assert(offsetof(BP_Construction_Building_C_UserConstructionScript, CallFunc_Subtract_IntInt_ReturnValue) == 0x000000, "Member 'BP_Construction_Building_C_UserConstructionScript::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Construction_Building_C_UserConstructionScript, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000004, "Member 'BP_Construction_Building_C_UserConstructionScript::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Construction_Building_C_UserConstructionScript;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

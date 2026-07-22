@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagara_UnsetDirectSetRandom.ENiagara_UnsetDirectSetRandom
 // NumValues: 0x0004
@@ -24,5 +23,4 @@ enum class ENiagara_UnsetDirectSetRandom : uint8
 	ENiagara_MAX                             = 3,
 };
 
-}
-
+SDK_NAMESPACE_END

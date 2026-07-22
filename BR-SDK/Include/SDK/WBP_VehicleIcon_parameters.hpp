@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_VehicleIcon.WBP_VehicleIcon_C.ExecuteUbergraph_WBP_VehicleIcon
 // 0x0030 (0x0030 - 0x0000)
@@ -41,23 +41,7 @@ public:
 	EBrickUIColorStyle                            Temp_byte_Variable_1;                              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIColorStyle                            K2Node_Select_Default_1;                           // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon) == 0x000004, "Wrong alignment on WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon");
-static_assert(sizeof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon) == 0x000030, "Wrong size on WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, EntryPoint) == 0x000000, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, K2Node_Event_bNewIsLocalPlayer) == 0x000004, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::K2Node_Event_bNewIsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, K2Node_Event_bNewCanBeDamaged) == 0x000005, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::K2Node_Event_bNewCanBeDamaged' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, K2Node_Event_NewPinMode) == 0x000006, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::K2Node_Event_NewPinMode' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, Temp_bool_Variable) == 0x000007, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000008, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, Temp_int_Variable) == 0x00000C, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, CallFunc_BooleanAND_ReturnValue) == 0x000010, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, Temp_int_Variable_1) == 0x000014, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, Temp_bool_Variable_1) == 0x000018, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, K2Node_Select_Default) == 0x00001C, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, Temp_byte_Variable) == 0x000020, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, K2Node_MakeStruct_BrickUIIconSlot) == 0x000024, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, Temp_byte_Variable_1) == 0x00002C, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon, K2Node_Select_Default_1) == 0x00002D, "Member 'WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_VehicleIcon_C_ExecuteUbergraph_WBP_VehicleIcon;
 
 // Function WBP_VehicleIcon.WBP_VehicleIcon_C.UpdateVehicleIcon
 // 0x0003 (0x0003 - 0x0000)
@@ -68,11 +52,7 @@ public:
 	bool                                          bNewCanBeDamaged;                                  // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EVehiclePinMode                               NewPinMode;                                        // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_VehicleIcon_C_UpdateVehicleIcon) == 0x000001, "Wrong alignment on WBP_VehicleIcon_C_UpdateVehicleIcon");
-static_assert(sizeof(WBP_VehicleIcon_C_UpdateVehicleIcon) == 0x000003, "Wrong size on WBP_VehicleIcon_C_UpdateVehicleIcon");
-static_assert(offsetof(WBP_VehicleIcon_C_UpdateVehicleIcon, bNewIsLocalPlayer) == 0x000000, "Member 'WBP_VehicleIcon_C_UpdateVehicleIcon::bNewIsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_UpdateVehicleIcon, bNewCanBeDamaged) == 0x000001, "Member 'WBP_VehicleIcon_C_UpdateVehicleIcon::bNewCanBeDamaged' has a wrong offset!");
-static_assert(offsetof(WBP_VehicleIcon_C_UpdateVehicleIcon, NewPinMode) == 0x000002, "Member 'WBP_VehicleIcon_C_UpdateVehicleIcon::NewPinMode' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_VehicleIcon_C_UpdateVehicleIcon;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

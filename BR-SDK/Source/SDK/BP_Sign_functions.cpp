@@ -13,8 +13,7 @@
 #include "BP_Sign_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_Sign.BP_Sign_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
@@ -29,5 +28,5 @@ void ABP_Sign_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

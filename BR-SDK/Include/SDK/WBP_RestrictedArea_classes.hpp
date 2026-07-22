@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_RestrictedArea.WBP_RestrictedArea_C
 // 0x0030 (0x02A8 - 0x0278)
@@ -30,29 +29,25 @@ public:
 	class UBrickTextBlock*                        RestrictedAreaTextBlock;                           // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void PlayFadeInAnim();
 	void PlayFadeOutAnim();
-	void UpdateTimerRemaining(float TimeRemaining);
+	void PlayFadeInAnim();
+	void UpdateTimerRemaining(float TimeRemaining_UpdateTimerRemaining);
 	void ExecuteUbergraph_WBP_RestrictedArea(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RestrictedArea_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RestrictedArea_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RestrictedArea_C")
 	}
 	static class UWBP_RestrictedArea_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RestrictedArea_C>();
 	}
 };
-static_assert(alignof(UWBP_RestrictedArea_C) == 0x000008, "Wrong alignment on UWBP_RestrictedArea_C");
-static_assert(sizeof(UWBP_RestrictedArea_C) == 0x0002A8, "Wrong size on UWBP_RestrictedArea_C");
-static_assert(offsetof(UWBP_RestrictedArea_C, UberGraphFrame) == 0x000278, "Member 'UWBP_RestrictedArea_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_RestrictedArea_C, FadeAnimation) == 0x000280, "Member 'UWBP_RestrictedArea_C::FadeAnimation' has a wrong offset!");
-static_assert(offsetof(UWBP_RestrictedArea_C, BrickImage_258) == 0x000288, "Member 'UWBP_RestrictedArea_C::BrickImage_258' has a wrong offset!");
-static_assert(offsetof(UWBP_RestrictedArea_C, BrickImage_425) == 0x000290, "Member 'UWBP_RestrictedArea_C::BrickImage_425' has a wrong offset!");
-static_assert(offsetof(UWBP_RestrictedArea_C, RestrictedAreaBorder) == 0x000298, "Member 'UWBP_RestrictedArea_C::RestrictedAreaBorder' has a wrong offset!");
-static_assert(offsetof(UWBP_RestrictedArea_C, RestrictedAreaTextBlock) == 0x0002A0, "Member 'UWBP_RestrictedArea_C::RestrictedAreaTextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RestrictedArea_C;
 
-}
-
+SDK_NAMESPACE_END

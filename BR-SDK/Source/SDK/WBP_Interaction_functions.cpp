@@ -14,16 +14,15 @@
 #include "WBP_Interaction_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_Interaction.WBP_Interaction_C.AddOptionWidget
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UInteractionOptionWidget*         Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   OptionIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UInteractionOptionWidget*         Widget_AddOptionWidget                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OptionIndex_AddOptionWidget                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Interaction_C::AddOptionWidget(class UInteractionOptionWidget* Widget, int32 OptionIndex)
+void UWBP_Interaction_C::AddOptionWidget(class UInteractionOptionWidget* Widget_AddOptionWidget, int32 OptionIndex_AddOptionWidget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32,8 +31,8 @@ void UWBP_Interaction_C::AddOptionWidget(class UInteractionOptionWidget* Widget,
 
 	Params::WBP_Interaction_C_AddOptionWidget Parms{};
 
-	Parms.Widget = Widget;
-	Parms.OptionIndex = OptionIndex;
+	Parms.Widget_AddOptionWidget = Widget_AddOptionWidget;
+	Parms.OptionIndex_AddOptionWidget = OptionIndex_AddOptionWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -58,5 +57,5 @@ void UWBP_Interaction_C::ExecuteUbergraph_WBP_Interaction(int32 EntryPoint)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

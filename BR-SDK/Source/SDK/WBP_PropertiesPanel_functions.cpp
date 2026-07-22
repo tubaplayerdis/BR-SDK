@@ -14,8 +14,27 @@
 #include "WBP_PropertiesPanel_parameters.hpp"
 
 
-namespace SDK
+SDK_NAMESPACE_START
+
+// Function WBP_PropertiesPanel.WBP_PropertiesPanel_C.ExecuteUbergraph_WBP_PropertiesPanel
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PropertiesPanel_C::ExecuteUbergraph_WBP_PropertiesPanel(int32 EntryPoint)
 {
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PropertiesPanel_C", "ExecuteUbergraph_WBP_PropertiesPanel");
+
+	Params::WBP_PropertiesPanel_C_ExecuteUbergraph_WBP_PropertiesPanel Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function WBP_PropertiesPanel.WBP_PropertiesPanel_C.AddCategoryWidget
 // (Event, Protected, BlueprintEvent)
@@ -39,24 +58,4 @@ void UWBP_PropertiesPanel_C::AddCategoryWidget(class UPropertyCategoryWidget* Wi
 }
 
 
-// Function WBP_PropertiesPanel.WBP_PropertiesPanel_C.ExecuteUbergraph_WBP_PropertiesPanel
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PropertiesPanel_C::ExecuteUbergraph_WBP_PropertiesPanel(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PropertiesPanel_C", "ExecuteUbergraph_WBP_PropertiesPanel");
-
-	Params::WBP_PropertiesPanel_C_ExecuteUbergraph_WBP_PropertiesPanel Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Editor_Small.BP_Editor_Small_C
 // 0x0000 (0x0340 - 0x0340)
@@ -23,15 +22,17 @@ class ABP_Editor_Small_C final : public AGarage
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Editor_Small_C">();
+		BP_STATIC_CLASS_IMPL("BP_Editor_Small_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Editor_Small_C")
 	}
 	static class ABP_Editor_Small_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Editor_Small_C>();
 	}
 };
-static_assert(alignof(ABP_Editor_Small_C) == 0x000010, "Wrong alignment on ABP_Editor_Small_C");
-static_assert(sizeof(ABP_Editor_Small_C) == 0x000340, "Wrong size on ABP_Editor_Small_C");
+DUMPER7_ASSERTS_ABP_Editor_Small_C;
 
-}
-
+SDK_NAMESPACE_END

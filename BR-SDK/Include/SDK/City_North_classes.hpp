@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass City_North.City_North_C
 // 0x0000 (0x0228 - 0x0228)
@@ -23,15 +22,17 @@ class ACity_North_C final : public ALevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"City_North_C">();
+		BP_STATIC_CLASS_IMPL("City_North_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"City_North_C")
 	}
 	static class ACity_North_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACity_North_C>();
 	}
 };
-static_assert(alignof(ACity_North_C) == 0x000008, "Wrong alignment on ACity_North_C");
-static_assert(sizeof(ACity_North_C) == 0x000228, "Wrong size on ACity_North_C");
+DUMPER7_ASSERTS_ACity_North_C;
 
-}
-
+SDK_NAMESPACE_END

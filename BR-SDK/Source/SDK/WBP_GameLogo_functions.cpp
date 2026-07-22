@@ -14,8 +14,7 @@
 #include "WBP_GameLogo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_GameLogo.WBP_GameLogo_C.ExecuteUbergraph_WBP_GameLogo
 // (Final, UbergraphFunction)
@@ -144,5 +143,5 @@ bool UWBP_GameLogo_C::IsLogoReady() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

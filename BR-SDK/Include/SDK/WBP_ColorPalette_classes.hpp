@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ColorPalette.WBP_ColorPalette_C
 // 0x0000 (0x02B8 - 0x02B8)
@@ -23,15 +22,17 @@ class UWBP_ColorPalette_C final : public UColorPaletteWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ColorPalette_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ColorPalette_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ColorPalette_C")
 	}
 	static class UWBP_ColorPalette_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ColorPalette_C>();
 	}
 };
-static_assert(alignof(UWBP_ColorPalette_C) == 0x000008, "Wrong alignment on UWBP_ColorPalette_C");
-static_assert(sizeof(UWBP_ColorPalette_C) == 0x0002B8, "Wrong size on UWBP_ColorPalette_C");
+DUMPER7_ASSERTS_UWBP_ColorPalette_C;
 
-}
-
+SDK_NAMESPACE_END

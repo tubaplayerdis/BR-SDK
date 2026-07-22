@@ -14,19 +14,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
-
-// Function WBP_PingIndicator.WBP_PingIndicator_C.UpdatePing
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PingIndicator_C_UpdatePing final
-{
-public:
-	int32                                         InPing;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PingIndicator_C_UpdatePing) == 0x000004, "Wrong alignment on WBP_PingIndicator_C_UpdatePing");
-static_assert(sizeof(WBP_PingIndicator_C_UpdatePing) == 0x000004, "Wrong size on WBP_PingIndicator_C_UpdatePing");
-static_assert(offsetof(WBP_PingIndicator_C_UpdatePing, InPing) == 0x000000, "Member 'WBP_PingIndicator_C_UpdatePing::InPing' has a wrong offset!");
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_PingIndicator.WBP_PingIndicator_C.ExecuteUbergraph_WBP_PingIndicator
 // 0x00B0 (0x00B0 - 0x0000)
@@ -71,40 +60,16 @@ public:
 	struct FLinearColor                           K2Node_Select_Default_3;                           // 0x0098(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FBrickUIIconSlot                       K2Node_MakeStruct_BrickUIIconSlot;                 // 0x00A8(0x0008)(NoDestructor)
 };
-static_assert(alignof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator) == 0x000004, "Wrong alignment on WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator");
-static_assert(sizeof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator) == 0x0000B0, "Wrong size on WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, EntryPoint) == 0x000000, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, Temp_struct_Variable) == 0x000004, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, Temp_struct_Variable_1) == 0x000014, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, Temp_struct_Variable_2) == 0x000024, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, Temp_bool_Variable) == 0x000034, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, Temp_bool_Variable_1) == 0x000035, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, Temp_bool_Variable_2) == 0x000036, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, Temp_int_Variable) == 0x000038, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, Temp_struct_Variable_3) == 0x00003C, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, Temp_int_Variable_1) == 0x00004C, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, K2Node_Event_InPing) == 0x000050, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::K2Node_Event_InPing' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000054, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Less_IntInt_ReturnValue) == 0x000055, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Conv_BoolToInt_ReturnValue) == 0x000058, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Conv_BoolToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Less_IntInt_ReturnValue_1) == 0x00005C, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x00005D, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Conv_BoolToInt_ReturnValue_1) == 0x000060, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Conv_BoolToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Conv_BoolToInt_ReturnValue_2) == 0x000064, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Conv_BoolToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Greater_IntInt_ReturnValue) == 0x00006C, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Add_IntInt_ReturnValue_1) == 0x000070, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Conv_BoolToInt_ReturnValue_3) == 0x000074, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Conv_BoolToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, K2Node_Select_Default) == 0x000078, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Add_IntInt_ReturnValue_2) == 0x00007C, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000080, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Conv_BoolToInt_ReturnValue_4) == 0x000084, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Conv_BoolToInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Add_IntInt_ReturnValue_3) == 0x000088, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, K2Node_Select_Default_1) == 0x00008C, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, CallFunc_Add_IntInt_ReturnValue_4) == 0x000090, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, K2Node_Select_Default_2) == 0x000094, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, K2Node_Select_Default_3) == 0x000098, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator, K2Node_MakeStruct_BrickUIIconSlot) == 0x0000A8, "Member 'WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PingIndicator_C_ExecuteUbergraph_WBP_PingIndicator;
 
-}
+// Function WBP_PingIndicator.WBP_PingIndicator_C.UpdatePing
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PingIndicator_C_UpdatePing final
+{
+public:
+	int32                                         InPing;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PingIndicator_C_UpdatePing;
 
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

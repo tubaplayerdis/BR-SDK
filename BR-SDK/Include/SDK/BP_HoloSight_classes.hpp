@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_HoloSight.BP_HoloSight_C
 // 0x0000 (0x02B8 - 0x02B8)
@@ -23,15 +22,17 @@ class ABP_HoloSight_C final : public ASightAttachment
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_HoloSight_C">();
+		BP_STATIC_CLASS_IMPL("BP_HoloSight_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_HoloSight_C")
 	}
 	static class ABP_HoloSight_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_HoloSight_C>();
 	}
 };
-static_assert(alignof(ABP_HoloSight_C) == 0x000008, "Wrong alignment on ABP_HoloSight_C");
-static_assert(sizeof(ABP_HoloSight_C) == 0x0002B8, "Wrong size on ABP_HoloSight_C");
+DUMPER7_ASSERTS_ABP_HoloSight_C;
 
-}
-
+SDK_NAMESPACE_END

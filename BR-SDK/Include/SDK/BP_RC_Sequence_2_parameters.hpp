@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_RC_Sequence_2.BP_RC_Sequence_2_C.GetHandTargetLocation
 // 0x0050 (0x0050 - 0x0000)
@@ -26,11 +26,7 @@ public:
 	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0010(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_TransformLocation_ReturnValue;            // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RC_Sequence_2_C_GetHandTargetLocation) == 0x000010, "Wrong alignment on BP_RC_Sequence_2_C_GetHandTargetLocation");
-static_assert(sizeof(BP_RC_Sequence_2_C_GetHandTargetLocation) == 0x000050, "Wrong size on BP_RC_Sequence_2_C_GetHandTargetLocation");
-static_assert(offsetof(BP_RC_Sequence_2_C_GetHandTargetLocation, ReturnValue) == 0x000000, "Member 'BP_RC_Sequence_2_C_GetHandTargetLocation::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_2_C_GetHandTargetLocation, CallFunc_GetSocketTransform_ReturnValue) == 0x000010, "Member 'BP_RC_Sequence_2_C_GetHandTargetLocation::CallFunc_GetSocketTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RC_Sequence_2_C_GetHandTargetLocation, CallFunc_TransformLocation_ReturnValue) == 0x000040, "Member 'BP_RC_Sequence_2_C_GetHandTargetLocation::CallFunc_TransformLocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RC_Sequence_2_C_GetHandTargetLocation;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

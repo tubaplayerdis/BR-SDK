@@ -14,8 +14,7 @@
 #include "BP_UIFunctionLibrary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_UIFunctionLibrary.BP_UIFunctionLibrary_C.Get Ammo Type Display Info
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
@@ -70,5 +69,5 @@ void UBP_UIFunctionLibrary_C::UpdateHUDWidgetOpacity(class UWidget* Widget, bool
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "MeshDescription_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class StaticMeshDescription.StaticMeshDescription
 // 0x0000 (0x0390 - 0x0390)
@@ -30,15 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StaticMeshDescription">();
+		STATIC_CLASS_IMPL("StaticMeshDescription")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StaticMeshDescription")
 	}
 	static class UStaticMeshDescription* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStaticMeshDescription>();
 	}
 };
-static_assert(alignof(UStaticMeshDescription) == 0x000008, "Wrong alignment on UStaticMeshDescription");
-static_assert(sizeof(UStaticMeshDescription) == 0x000390, "Wrong size on UStaticMeshDescription");
+DUMPER7_ASSERTS_UStaticMeshDescription;
 
-}
-
+SDK_NAMESPACE_END

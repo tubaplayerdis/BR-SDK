@@ -14,8 +14,7 @@
 #include "BP_UIStyle_Default_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_UIStyle_Default.BP_UIStyle_Default_C.ExecuteUbergraph_BP_UIStyle_Default
 // (Final, UbergraphFunction)
@@ -267,5 +266,5 @@ void UBP_UIStyle_Default_C::MakeDefaultColors(struct FLinearColor* Dark, struct 
 		*FluppisoftForeground = std::move(Parms.FluppisoftForeground);
 }
 
-}
 
+SDK_NAMESPACE_END

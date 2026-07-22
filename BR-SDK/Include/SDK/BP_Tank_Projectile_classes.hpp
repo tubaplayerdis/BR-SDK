@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Tank_Projectile.BP_Tank_Projectile_C
 // 0x0000 (0x0400 - 0x0400)
@@ -23,15 +22,17 @@ class ABP_Tank_Projectile_C final : public ABrickProjectile
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Tank_Projectile_C">();
+		BP_STATIC_CLASS_IMPL("BP_Tank_Projectile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Tank_Projectile_C")
 	}
 	static class ABP_Tank_Projectile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Tank_Projectile_C>();
 	}
 };
-static_assert(alignof(ABP_Tank_Projectile_C) == 0x000010, "Wrong alignment on ABP_Tank_Projectile_C");
-static_assert(sizeof(ABP_Tank_Projectile_C) == 0x000400, "Wrong size on ABP_Tank_Projectile_C");
+DUMPER7_ASSERTS_ABP_Tank_Projectile_C;
 
-}
-
+SDK_NAMESPACE_END

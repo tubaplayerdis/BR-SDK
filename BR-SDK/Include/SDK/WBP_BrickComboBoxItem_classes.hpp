@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BrickComboBoxItem.WBP_BrickComboBoxItem_C
 // 0x0008 (0x02D0 - 0x02C8)
@@ -25,22 +24,23 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void SetNoItemBrush();
 	void ExecuteUbergraph_WBP_BrickComboBoxItem(int32 EntryPoint);
+	void SetNoItemBrush();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BrickComboBoxItem_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BrickComboBoxItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BrickComboBoxItem_C")
 	}
 	static class UWBP_BrickComboBoxItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BrickComboBoxItem_C>();
 	}
 };
-static_assert(alignof(UWBP_BrickComboBoxItem_C) == 0x000008, "Wrong alignment on UWBP_BrickComboBoxItem_C");
-static_assert(sizeof(UWBP_BrickComboBoxItem_C) == 0x0002D0, "Wrong size on UWBP_BrickComboBoxItem_C");
-static_assert(offsetof(UWBP_BrickComboBoxItem_C, UberGraphFrame) == 0x0002C8, "Member 'UWBP_BrickComboBoxItem_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BrickComboBoxItem_C;
 
-}
-
+SDK_NAMESPACE_END

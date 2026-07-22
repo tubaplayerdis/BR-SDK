@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Suppressor.BP_Suppressor_C
 // 0x0000 (0x0270 - 0x0270)
@@ -23,15 +22,17 @@ class ABP_Suppressor_C final : public ABarrelAttachment
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Suppressor_C">();
+		BP_STATIC_CLASS_IMPL("BP_Suppressor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Suppressor_C")
 	}
 	static class ABP_Suppressor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Suppressor_C>();
 	}
 };
-static_assert(alignof(ABP_Suppressor_C) == 0x000008, "Wrong alignment on ABP_Suppressor_C");
-static_assert(sizeof(ABP_Suppressor_C) == 0x000270, "Wrong size on ABP_Suppressor_C");
+DUMPER7_ASSERTS_ABP_Suppressor_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WBP_MapCrosshair_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_MapCrosshair.WBP_MapCrosshair_C.ExecuteUbergraph_WBP_MapCrosshair
 // (Final, UbergraphFunction)
@@ -76,5 +75,5 @@ void UWBP_MapCrosshair_C::SetColorStyle(EBrickUIColorStyle NewStyle)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

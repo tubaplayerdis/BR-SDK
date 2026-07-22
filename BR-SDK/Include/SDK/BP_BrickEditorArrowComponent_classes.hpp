@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BrickEditorArrowComponent.BP_BrickEditorArrowComponent_C
 // 0x0000 (0x0580 - 0x0580)
@@ -23,15 +22,17 @@ class UBP_BrickEditorArrowComponent_C final : public UBrickEditorArrowComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BrickEditorArrowComponent_C">();
+		BP_STATIC_CLASS_IMPL("BP_BrickEditorArrowComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BrickEditorArrowComponent_C")
 	}
 	static class UBP_BrickEditorArrowComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_BrickEditorArrowComponent_C>();
 	}
 };
-static_assert(alignof(UBP_BrickEditorArrowComponent_C) == 0x000010, "Wrong alignment on UBP_BrickEditorArrowComponent_C");
-static_assert(sizeof(UBP_BrickEditorArrowComponent_C) == 0x000580, "Wrong size on UBP_BrickEditorArrowComponent_C");
+DUMPER7_ASSERTS_UBP_BrickEditorArrowComponent_C;
 
-}
-
+SDK_NAMESPACE_END

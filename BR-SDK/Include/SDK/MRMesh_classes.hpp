@@ -16,8 +16,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class MRMesh.MeshReconstructorBase
 // 0x0000 (0x0028 - 0x0028)
@@ -36,22 +35,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MeshReconstructorBase">();
+		STATIC_CLASS_IMPL("MeshReconstructorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MeshReconstructorBase")
 	}
 	static class UMeshReconstructorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMeshReconstructorBase>();
 	}
 };
-static_assert(alignof(UMeshReconstructorBase) == 0x000008, "Wrong alignment on UMeshReconstructorBase");
-static_assert(sizeof(UMeshReconstructorBase) == 0x000028, "Wrong size on UMeshReconstructorBase");
+DUMPER7_ASSERTS_UMeshReconstructorBase;
 
 // Class MRMesh.MockDataMeshTrackerComponent
 // 0x0070 (0x0270 - 0x0200)
 class UMockDataMeshTrackerComponent final : public USceneComponent
 {
 public:
-	TMulticastInlineDelegate<void(int32 Index, const TArray<struct FVector>& Vertices, const TArray<int32>& Triangles, const TArray<struct FVector>& Normals, const TArray<float>& Confidence)> OnMeshTrackerUpdated; // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index_0, const TArray<struct FVector>& Vertices, const TArray<int32>& Triangles, const TArray<struct FVector>& Normals, const TArray<float>& Confidence)> OnMeshTrackerUpdated; // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	bool                                          ScanWorld;                                         // 0x0208(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          RequestNormals;                                    // 0x0209(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          RequestVertexConfidence;                           // 0x020A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -72,25 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MockDataMeshTrackerComponent">();
+		STATIC_CLASS_IMPL("MockDataMeshTrackerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MockDataMeshTrackerComponent")
 	}
 	static class UMockDataMeshTrackerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMockDataMeshTrackerComponent>();
 	}
 };
-static_assert(alignof(UMockDataMeshTrackerComponent) == 0x000010, "Wrong alignment on UMockDataMeshTrackerComponent");
-static_assert(sizeof(UMockDataMeshTrackerComponent) == 0x000270, "Wrong size on UMockDataMeshTrackerComponent");
-static_assert(offsetof(UMockDataMeshTrackerComponent, OnMeshTrackerUpdated) == 0x0001F8, "Member 'UMockDataMeshTrackerComponent::OnMeshTrackerUpdated' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, ScanWorld) == 0x000208, "Member 'UMockDataMeshTrackerComponent::ScanWorld' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, RequestNormals) == 0x000209, "Member 'UMockDataMeshTrackerComponent::RequestNormals' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, RequestVertexConfidence) == 0x00020A, "Member 'UMockDataMeshTrackerComponent::RequestVertexConfidence' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorMode) == 0x00020B, "Member 'UMockDataMeshTrackerComponent::VertexColorMode' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, BlockVertexColors) == 0x000210, "Member 'UMockDataMeshTrackerComponent::BlockVertexColors' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorFromConfidenceZero) == 0x000220, "Member 'UMockDataMeshTrackerComponent::VertexColorFromConfidenceZero' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, VertexColorFromConfidenceOne) == 0x000230, "Member 'UMockDataMeshTrackerComponent::VertexColorFromConfidenceOne' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, UpdateInterval) == 0x000240, "Member 'UMockDataMeshTrackerComponent::UpdateInterval' has a wrong offset!");
-static_assert(offsetof(UMockDataMeshTrackerComponent, MRMesh) == 0x000248, "Member 'UMockDataMeshTrackerComponent::MRMesh' has a wrong offset!");
+DUMPER7_ASSERTS_UMockDataMeshTrackerComponent;
 
 // Class MRMesh.MRMeshComponent
 // 0x00C0 (0x0570 - 0x04B0)
@@ -124,22 +119,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MRMeshComponent">();
+		STATIC_CLASS_IMPL("MRMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MRMeshComponent")
 	}
 	static class UMRMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMRMeshComponent>();
 	}
 };
-static_assert(alignof(UMRMeshComponent) == 0x000010, "Wrong alignment on UMRMeshComponent");
-static_assert(sizeof(UMRMeshComponent) == 0x000570, "Wrong size on UMRMeshComponent");
-static_assert(offsetof(UMRMeshComponent, Material) == 0x0004C0, "Member 'UMRMeshComponent::Material' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, WireframeMaterial) == 0x0004C8, "Member 'UMRMeshComponent::WireframeMaterial' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bCreateMeshProxySections) == 0x0004D0, "Member 'UMRMeshComponent::bCreateMeshProxySections' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bUpdateNavMeshOnMeshUpdate) == 0x0004D1, "Member 'UMRMeshComponent::bUpdateNavMeshOnMeshUpdate' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, bNeverCreateCollisionMesh) == 0x0004D2, "Member 'UMRMeshComponent::bNeverCreateCollisionMesh' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, CachedBodySetup) == 0x0004D8, "Member 'UMRMeshComponent::CachedBodySetup' has a wrong offset!");
-static_assert(offsetof(UMRMeshComponent, BodySetups) == 0x0004E0, "Member 'UMRMeshComponent::BodySetups' has a wrong offset!");
+DUMPER7_ASSERTS_UMRMeshComponent;
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_TeamBaseIcon.WBP_TeamBaseIcon_C.GetIconDisplayName
 // 0x0098 (0x0098 - 0x0000)
@@ -27,13 +27,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0018)()
 };
-static_assert(alignof(WBP_TeamBaseIcon_C_GetIconDisplayName) == 0x000008, "Wrong alignment on WBP_TeamBaseIcon_C_GetIconDisplayName");
-static_assert(sizeof(WBP_TeamBaseIcon_C_GetIconDisplayName) == 0x000098, "Wrong size on WBP_TeamBaseIcon_C_GetIconDisplayName");
-static_assert(offsetof(WBP_TeamBaseIcon_C_GetIconDisplayName, ReturnValue) == 0x000000, "Member 'WBP_TeamBaseIcon_C_GetIconDisplayName::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TeamBaseIcon_C_GetIconDisplayName, CallFunc_GetIconDisplayName_ReturnValue) == 0x000018, "Member 'WBP_TeamBaseIcon_C_GetIconDisplayName::CallFunc_GetIconDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TeamBaseIcon_C_GetIconDisplayName, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'WBP_TeamBaseIcon_C_GetIconDisplayName::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_TeamBaseIcon_C_GetIconDisplayName, K2Node_MakeArray_Array) == 0x000070, "Member 'WBP_TeamBaseIcon_C_GetIconDisplayName::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_TeamBaseIcon_C_GetIconDisplayName, CallFunc_Format_ReturnValue) == 0x000080, "Member 'WBP_TeamBaseIcon_C_GetIconDisplayName::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TeamBaseIcon_C_GetIconDisplayName;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

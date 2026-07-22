@@ -14,8 +14,7 @@
 #include "WBP_InventoryPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_InventoryPopup.WBP_InventoryPopup_C.ExecuteUbergraph_WBP_InventoryPopup
 // (Final, UbergraphFunction)
@@ -82,5 +81,5 @@ void UWBP_InventoryPopup_C::UpdateDropArea(bool bInIsDragging, bool bInCanDrop, 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

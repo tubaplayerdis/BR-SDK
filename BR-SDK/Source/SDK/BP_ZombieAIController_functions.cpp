@@ -14,8 +14,7 @@
 #include "BP_ZombieAIController_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_ZombieAIController.BP_ZombieAIController_C.ExecuteUbergraph_BP_ZombieAIController
 // (Final, UbergraphFunction)
@@ -50,5 +49,5 @@ void ABP_ZombieAIController_C::ReceiveBeginPlay()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

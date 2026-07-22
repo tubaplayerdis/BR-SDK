@@ -13,8 +13,7 @@
 #include "FluUGC_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class FluUGCSteam.FluUGCSubsystemSteam
 // 0x0008 (0x0068 - 0x0060)
@@ -26,15 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FluUGCSubsystemSteam">();
+		STATIC_CLASS_IMPL("FluUGCSubsystemSteam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FluUGCSubsystemSteam")
 	}
 	static class UFluUGCSubsystemSteam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFluUGCSubsystemSteam>();
 	}
 };
-static_assert(alignof(UFluUGCSubsystemSteam) == 0x000008, "Wrong alignment on UFluUGCSubsystemSteam");
-static_assert(sizeof(UFluUGCSubsystemSteam) == 0x000068, "Wrong size on UFluUGCSubsystemSteam");
+DUMPER7_ASSERTS_UFluUGCSubsystemSteam;
 
-}
-
+SDK_NAMESPACE_END

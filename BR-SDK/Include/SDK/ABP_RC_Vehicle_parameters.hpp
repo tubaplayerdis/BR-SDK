@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ABP_RC_Vehicle.ABP_RC_Vehicle_C.ExecuteUbergraph_ABP_RC_Vehicle
 // 0x0030 (0x0030 - 0x0000)
@@ -31,14 +31,7 @@ public:
 	float                                         K2Node_Event_DeltaTimeX;                           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_GetTrailerRotation_ReturnValue;           // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle) == 0x000008, "Wrong alignment on ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle");
-static_assert(sizeof(ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle) == 0x000030, "Wrong size on ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle");
-static_assert(offsetof(ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle, EntryPoint) == 0x000000, "Member 'ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle, CallFunc_GetOwningActor_ReturnValue) == 0x000008, "Member 'ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle::CallFunc_GetOwningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle, K2Node_DynamicCast_AsBP_RC_Sequence) == 0x000010, "Member 'ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle::K2Node_DynamicCast_AsBP_RC_Sequence' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle, K2Node_Event_DeltaTimeX) == 0x00001C, "Member 'ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle::K2Node_Event_DeltaTimeX' has a wrong offset!");
-static_assert(offsetof(ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle, CallFunc_GetTrailerRotation_ReturnValue) == 0x000020, "Member 'ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle::CallFunc_GetTrailerRotation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RC_Vehicle_C_ExecuteUbergraph_ABP_RC_Vehicle;
 
 // Function ABP_RC_Vehicle.ABP_RC_Vehicle_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -47,9 +40,7 @@ struct ABP_RC_Vehicle_C_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_RC_Vehicle_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on ABP_RC_Vehicle_C_BlueprintUpdateAnimation");
-static_assert(sizeof(ABP_RC_Vehicle_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on ABP_RC_Vehicle_C_BlueprintUpdateAnimation");
-static_assert(offsetof(ABP_RC_Vehicle_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'ABP_RC_Vehicle_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RC_Vehicle_C_BlueprintUpdateAnimation;
 
 // Function ABP_RC_Vehicle.ABP_RC_Vehicle_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
@@ -58,9 +49,7 @@ struct ABP_RC_Vehicle_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ABP_RC_Vehicle_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_RC_Vehicle_C_AnimGraph");
-static_assert(sizeof(ABP_RC_Vehicle_C_AnimGraph) == 0x000010, "Wrong size on ABP_RC_Vehicle_C_AnimGraph");
-static_assert(offsetof(ABP_RC_Vehicle_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABP_RC_Vehicle_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RC_Vehicle_C_AnimGraph;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

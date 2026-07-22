@@ -15,8 +15,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_BindKeyPopup.WBP_BindKeyPopup_C.ExecuteUbergraph_WBP_BindKeyPopup
 // 0x00A0 (0x00A0 - 0x0000)
@@ -50,30 +50,7 @@ public:
 	bool                                          K2Node_Event_bNewIsBinding;                        // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup) == 0x000008, "Wrong alignment on WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup");
-static_assert(sizeof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup) == 0x0000A0, "Wrong size on WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, EntryPoint) == 0x000000, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, Temp_bool_Variable) == 0x000004, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, Temp_byte_Variable) == 0x000005, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, Temp_bool_Has_Been_Initd_Variable) == 0x000007, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, Temp_bool_IsClosed_Variable) == 0x000008, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, CallFunc_GetPopupContainer_ReturnValue) == 0x000010, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::CallFunc_GetPopupContainer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, Temp_byte_Variable_2) == 0x000018, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, CallFunc_CreateCancelButton_ReturnValue) == 0x000020, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::CallFunc_CreateCancelButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, CallFunc_CreateConfirmButton_ReturnValue) == 0x000028, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::CallFunc_CreateConfirmButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, CallFunc_CreateRetryButton_ReturnValue) == 0x000040, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::CallFunc_CreateRetryButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, K2Node_Event_bIsConflicted) == 0x000048, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::K2Node_Event_bIsConflicted' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, K2Node_Event_ConflictedMappingNames) == 0x000050, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::K2Node_Event_ConflictedMappingNames' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, CallFunc_MakeLiteralText_ReturnValue) == 0x000060, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, Temp_byte_Variable_3) == 0x000078, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, CallFunc_ConflictsArrayToText_ReturnValue) == 0x000080, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::CallFunc_ConflictsArrayToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, Temp_bool_Variable_1) == 0x000098, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, K2Node_Select_Default) == 0x000099, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, K2Node_Event_IsDesignTime) == 0x00009A, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, K2Node_Event_bNewIsBinding) == 0x00009B, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::K2Node_Event_bNewIsBinding' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup, K2Node_Select_Default_1) == 0x00009C, "Member 'WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BindKeyPopup_C_ExecuteUbergraph_WBP_BindKeyPopup;
 
 // Function WBP_BindKeyPopup.WBP_BindKeyPopup_C.UpdateIsBindingKey
 // 0x0001 (0x0001 - 0x0000)
@@ -82,9 +59,7 @@ struct WBP_BindKeyPopup_C_UpdateIsBindingKey final
 public:
 	bool                                          bNewIsBinding;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_BindKeyPopup_C_UpdateIsBindingKey) == 0x000001, "Wrong alignment on WBP_BindKeyPopup_C_UpdateIsBindingKey");
-static_assert(sizeof(WBP_BindKeyPopup_C_UpdateIsBindingKey) == 0x000001, "Wrong size on WBP_BindKeyPopup_C_UpdateIsBindingKey");
-static_assert(offsetof(WBP_BindKeyPopup_C_UpdateIsBindingKey, bNewIsBinding) == 0x000000, "Member 'WBP_BindKeyPopup_C_UpdateIsBindingKey::bNewIsBinding' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BindKeyPopup_C_UpdateIsBindingKey;
 
 // Function WBP_BindKeyPopup.WBP_BindKeyPopup_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -93,9 +68,7 @@ struct WBP_BindKeyPopup_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_BindKeyPopup_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_BindKeyPopup_C_PreConstruct");
-static_assert(sizeof(WBP_BindKeyPopup_C_PreConstruct) == 0x000001, "Wrong size on WBP_BindKeyPopup_C_PreConstruct");
-static_assert(offsetof(WBP_BindKeyPopup_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_BindKeyPopup_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BindKeyPopup_C_PreConstruct;
 
 // Function WBP_BindKeyPopup.WBP_BindKeyPopup_C.UpdateConflictedMappings
 // 0x0018 (0x0018 - 0x0000)
@@ -106,10 +79,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FText>                           ConflictedMappingNames;                            // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_BindKeyPopup_C_UpdateConflictedMappings) == 0x000008, "Wrong alignment on WBP_BindKeyPopup_C_UpdateConflictedMappings");
-static_assert(sizeof(WBP_BindKeyPopup_C_UpdateConflictedMappings) == 0x000018, "Wrong size on WBP_BindKeyPopup_C_UpdateConflictedMappings");
-static_assert(offsetof(WBP_BindKeyPopup_C_UpdateConflictedMappings, bIsConflicted) == 0x000000, "Member 'WBP_BindKeyPopup_C_UpdateConflictedMappings::bIsConflicted' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_UpdateConflictedMappings, ConflictedMappingNames) == 0x000008, "Member 'WBP_BindKeyPopup_C_UpdateConflictedMappings::ConflictedMappingNames' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BindKeyPopup_C_UpdateConflictedMappings;
 
 // Function WBP_BindKeyPopup.WBP_BindKeyPopup_C.ConflictsArrayToText
 // 0x01A8 (0x01A8 - 0x0000)
@@ -138,25 +108,7 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0188(0x0018)()
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_BindKeyPopup_C_ConflictsArrayToText) == 0x000008, "Wrong alignment on WBP_BindKeyPopup_C_ConflictsArrayToText");
-static_assert(sizeof(WBP_BindKeyPopup_C_ConflictsArrayToText) == 0x0001A8, "Wrong size on WBP_BindKeyPopup_C_ConflictsArrayToText");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, InText) == 0x000000, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::InText' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, InConflictNames) == 0x000018, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::InConflictNames' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, ReturnValue) == 0x000028, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, OutText) == 0x000040, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::OutText' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, Temp_int_Array_Index_Variable) == 0x0000A0, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, K2Node_MakeArray_Array) == 0x0000A8, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, CallFunc_Format_ReturnValue) == 0x0000D0, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000E8, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, Temp_int_Loop_Counter_Variable) == 0x000128, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, K2Node_MakeStruct_FormatArgumentData_2) == 0x000130, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, K2Node_MakeArray_Array_1) == 0x000170, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, CallFunc_Less_IntInt_ReturnValue) == 0x000180, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, CallFunc_Format_ReturnValue_1) == 0x000188, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_BindKeyPopup_C_ConflictsArrayToText, CallFunc_Add_IntInt_ReturnValue) == 0x0001A0, "Member 'WBP_BindKeyPopup_C_ConflictsArrayToText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BindKeyPopup_C_ConflictsArrayToText;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

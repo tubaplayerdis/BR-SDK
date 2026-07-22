@@ -15,80 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
-
-// Function WBP_CurrentItem.WBP_CurrentItem_C.UpdateFireMode
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_CurrentItem_C_UpdateFireMode final
-{
-public:
-	EFireMode                                     NewMode;                                           // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasFirearm;                                       // 0x0001(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CurrentItem_C_UpdateFireMode) == 0x000001, "Wrong alignment on WBP_CurrentItem_C_UpdateFireMode");
-static_assert(sizeof(WBP_CurrentItem_C_UpdateFireMode) == 0x000002, "Wrong size on WBP_CurrentItem_C_UpdateFireMode");
-static_assert(offsetof(WBP_CurrentItem_C_UpdateFireMode, NewMode) == 0x000000, "Member 'WBP_CurrentItem_C_UpdateFireMode::NewMode' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_UpdateFireMode, bHasFirearm) == 0x000001, "Member 'WBP_CurrentItem_C_UpdateFireMode::bHasFirearm' has a wrong offset!");
-
-// Function WBP_CurrentItem.WBP_CurrentItem_C.UpdateAmmoType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CurrentItem_C_UpdateAmmoType final
-{
-public:
-	EAmmoType                                     NewType;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CurrentItem_C_UpdateAmmoType) == 0x000001, "Wrong alignment on WBP_CurrentItem_C_UpdateAmmoType");
-static_assert(sizeof(WBP_CurrentItem_C_UpdateAmmoType) == 0x000001, "Wrong size on WBP_CurrentItem_C_UpdateAmmoType");
-static_assert(offsetof(WBP_CurrentItem_C_UpdateAmmoType, NewType) == 0x000000, "Member 'WBP_CurrentItem_C_UpdateAmmoType::NewType' has a wrong offset!");
-
-// Function WBP_CurrentItem.WBP_CurrentItem_C.UpdateAmmo
-// 0x000C (0x000C - 0x0000)
-struct WBP_CurrentItem_C_UpdateAmmo final
-{
-public:
-	int32                                         Current;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Capacity;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Ammo;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CurrentItem_C_UpdateAmmo) == 0x000004, "Wrong alignment on WBP_CurrentItem_C_UpdateAmmo");
-static_assert(sizeof(WBP_CurrentItem_C_UpdateAmmo) == 0x00000C, "Wrong size on WBP_CurrentItem_C_UpdateAmmo");
-static_assert(offsetof(WBP_CurrentItem_C_UpdateAmmo, Current) == 0x000000, "Member 'WBP_CurrentItem_C_UpdateAmmo::Current' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_UpdateAmmo, Capacity) == 0x000004, "Member 'WBP_CurrentItem_C_UpdateAmmo::Capacity' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_UpdateAmmo, Ammo) == 0x000008, "Member 'WBP_CurrentItem_C_UpdateAmmo::Ammo' has a wrong offset!");
-
-// Function WBP_CurrentItem.WBP_CurrentItem_C.FadeOut
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CurrentItem_C_FadeOut final
-{
-public:
-	bool                                          bImmediate;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CurrentItem_C_FadeOut) == 0x000001, "Wrong alignment on WBP_CurrentItem_C_FadeOut");
-static_assert(sizeof(WBP_CurrentItem_C_FadeOut) == 0x000001, "Wrong size on WBP_CurrentItem_C_FadeOut");
-static_assert(offsetof(WBP_CurrentItem_C_FadeOut, bImmediate) == 0x000000, "Member 'WBP_CurrentItem_C_FadeOut::bImmediate' has a wrong offset!");
-
-// Function WBP_CurrentItem.WBP_CurrentItem_C.UpdateItemName
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_CurrentItem_C_UpdateItemName final
-{
-public:
-	class FText                                   NewName;                                           // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(WBP_CurrentItem_C_UpdateItemName) == 0x000008, "Wrong alignment on WBP_CurrentItem_C_UpdateItemName");
-static_assert(sizeof(WBP_CurrentItem_C_UpdateItemName) == 0x000018, "Wrong size on WBP_CurrentItem_C_UpdateItemName");
-static_assert(offsetof(WBP_CurrentItem_C_UpdateItemName, NewName) == 0x000000, "Member 'WBP_CurrentItem_C_UpdateItemName::NewName' has a wrong offset!");
-
-// Function WBP_CurrentItem.WBP_CurrentItem_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CurrentItem_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CurrentItem_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CurrentItem_C_PreConstruct");
-static_assert(sizeof(WBP_CurrentItem_C_PreConstruct) == 0x000001, "Wrong size on WBP_CurrentItem_C_PreConstruct");
-static_assert(offsetof(WBP_CurrentItem_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CurrentItem_C_PreConstruct::IsDesignTime' has a wrong offset!");
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_CurrentItem.WBP_CurrentItem_C.ExecuteUbergraph_WBP_CurrentItem
 // 0x01F0 (0x01F0 - 0x0000)
@@ -154,57 +82,64 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01D0(0x0018)()
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem) == 0x000008, "Wrong alignment on WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem");
-static_assert(sizeof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem) == 0x0001F0, "Wrong size on WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, EntryPoint) == 0x000000, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_int_Variable) == 0x000004, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_int_Variable_1) == 0x000008, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_int_Variable_2) == 0x00000C, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_int_Variable_3) == 0x000010, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_bool_Variable) == 0x000014, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_text_Variable) == 0x000018, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_bool_Variable_1) == 0x000030, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_byte_Variable) == 0x000031, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_byte_Variable_1) == 0x000032, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_bool_Variable_2) == 0x000033, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_byte_Variable_2) == 0x000034, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_byte_Variable_3) == 0x000035, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_bool_Variable_3) == 0x000036, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_byte_Variable_4) == 0x000037, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_byte_Variable_5) == 0x000038, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Event_NewMode) == 0x000039, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Event_NewMode' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Event_bHasFirearm) == 0x00003A, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Event_bHasFirearm' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Event_NewType) == 0x00003B, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Event_NewType' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00003C, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Select_Default) == 0x00003D, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_Get_Ammo_Type_Display_Info_IconSlot) == 0x000040, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_Get_Ammo_Type_Display_Info_IconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_Get_Ammo_Type_Display_Info_ColorStyle) == 0x000044, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_Get_Ammo_Type_Display_Info_ColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Select_Default_1) == 0x000045, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_MakeStruct_BrickUIIconSlot) == 0x000048, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_MakeStruct_BrickUIIconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Event_Current) == 0x000050, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Event_Current' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Event_Capacity) == 0x000054, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Event_Capacity' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Event_Ammo) == 0x000058, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Event_Ammo' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_MakeStruct_DisplayInfo) == 0x000060, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_MakeStruct_DisplayInfo' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_Conv_IntToText_ReturnValue) == 0x000088, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000A0, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0000A4, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x0000A8, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Select_Default_2) == 0x0000B0, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000C8, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_MakeStruct_FormatArgumentData) == 0x0000D0, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000110, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Event_bImmediate) == 0x000111, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Event_bImmediate' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Select_Default_3) == 0x000112, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Event_NewName) == 0x000118, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Event_NewName' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, Temp_byte_Variable_6) == 0x000130, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Select_Default_4) == 0x000134, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_MakeStruct_BrickUIIconSlot_1) == 0x000138, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_MakeStruct_BrickUIIconSlot_1' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_MakeLiteralText_ReturnValue) == 0x000140, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_MakeStruct_DisplayInfo_1) == 0x000158, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_MakeStruct_DisplayInfo_1' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_MakeStruct_FormatArgumentData_1) == 0x000180, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_MakeArray_Array) == 0x0001C0, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, CallFunc_Format_ReturnValue) == 0x0001D0, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem, K2Node_Event_IsDesignTime) == 0x0001E8, "Member 'WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CurrentItem_C_ExecuteUbergraph_WBP_CurrentItem;
 
-}
+// Function WBP_CurrentItem.WBP_CurrentItem_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CurrentItem_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_CurrentItem_C_PreConstruct;
 
+// Function WBP_CurrentItem.WBP_CurrentItem_C.UpdateItemName
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_CurrentItem_C_UpdateItemName final
+{
+public:
+	class FText                                   NewName;                                           // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_CurrentItem_C_UpdateItemName;
+
+// Function WBP_CurrentItem.WBP_CurrentItem_C.FadeOut
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CurrentItem_C_FadeOut final
+{
+public:
+	bool                                          bImmediate;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_CurrentItem_C_FadeOut;
+
+// Function WBP_CurrentItem.WBP_CurrentItem_C.UpdateAmmo
+// 0x000C (0x000C - 0x0000)
+struct WBP_CurrentItem_C_UpdateAmmo final
+{
+public:
+	int32                                         Current;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Capacity;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Ammo;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CurrentItem_C_UpdateAmmo;
+
+// Function WBP_CurrentItem.WBP_CurrentItem_C.UpdateAmmoType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CurrentItem_C_UpdateAmmoType final
+{
+public:
+	EAmmoType                                     NewType;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CurrentItem_C_UpdateAmmoType;
+
+// Function WBP_CurrentItem.WBP_CurrentItem_C.UpdateFireMode
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_CurrentItem_C_UpdateFireMode final
+{
+public:
+	EFireMode                                     NewMode;                                           // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasFirearm;                                       // 0x0001(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_CurrentItem_C_UpdateFireMode;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

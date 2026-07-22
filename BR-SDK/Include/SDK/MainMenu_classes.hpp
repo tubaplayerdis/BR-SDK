@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass MainMenu.MainMenu_C
 // 0x0000 (0x0228 - 0x0228)
@@ -23,15 +22,17 @@ class AMainMenu_C final : public ALevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainMenu_C">();
+		BP_STATIC_CLASS_IMPL("MainMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainMenu_C")
 	}
 	static class AMainMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMainMenu_C>();
 	}
 };
-static_assert(alignof(AMainMenu_C) == 0x000008, "Wrong alignment on AMainMenu_C");
-static_assert(sizeof(AMainMenu_C) == 0x000228, "Wrong size on AMainMenu_C");
+DUMPER7_ASSERTS_AMainMenu_C;
 
-}
-
+SDK_NAMESPACE_END

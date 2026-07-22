@@ -13,30 +13,26 @@
 #include "Slate_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_HUDContainer.WBP_HUDContainer_C.AddGameOverlayWidget
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_HUDContainer_C_AddGameOverlayWidget final
 {
 public:
-	class UGameOverlayWidget*                     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGameOverlayWidget*                     Widget_AddGameOverlayWidget;                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HUDContainer_C_AddGameOverlayWidget) == 0x000008, "Wrong alignment on WBP_HUDContainer_C_AddGameOverlayWidget");
-static_assert(sizeof(WBP_HUDContainer_C_AddGameOverlayWidget) == 0x000008, "Wrong size on WBP_HUDContainer_C_AddGameOverlayWidget");
-static_assert(offsetof(WBP_HUDContainer_C_AddGameOverlayWidget, Widget) == 0x000000, "Member 'WBP_HUDContainer_C_AddGameOverlayWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HUDContainer_C_AddGameOverlayWidget;
 
 // Function WBP_HUDContainer.WBP_HUDContainer_C.AddHUDWidget
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_HUDContainer_C_AddHUDWidget final
 {
 public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            Widget_AddHUDWidget;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HUDContainer_C_AddHUDWidget) == 0x000008, "Wrong alignment on WBP_HUDContainer_C_AddHUDWidget");
-static_assert(sizeof(WBP_HUDContainer_C_AddHUDWidget) == 0x000008, "Wrong size on WBP_HUDContainer_C_AddHUDWidget");
-static_assert(offsetof(WBP_HUDContainer_C_AddHUDWidget, Widget) == 0x000000, "Member 'WBP_HUDContainer_C_AddHUDWidget::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HUDContainer_C_AddHUDWidget;
 
 // Function WBP_HUDContainer.WBP_HUDContainer_C.ExecuteUbergraph_WBP_HUDContainer
 // 0x0048 (0x0048 - 0x0000)
@@ -52,15 +48,7 @@ public:
 	class UCanvasPanelSlot*                       CallFunc_AddChildToCanvas_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvasPanelSlot*                       CallFunc_AddChildToCanvas_ReturnValue_1;           // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer) == 0x000008, "Wrong alignment on WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer");
-static_assert(sizeof(WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer) == 0x000048, "Wrong size on WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer");
-static_assert(offsetof(WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer, EntryPoint) == 0x000000, "Member 'WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer, K2Node_MakeStruct_Anchors) == 0x000004, "Member 'WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer::K2Node_MakeStruct_Anchors' has a wrong offset!");
-static_assert(offsetof(WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer, K2Node_MakeStruct_Anchors_1) == 0x000014, "Member 'WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer::K2Node_MakeStruct_Anchors_1' has a wrong offset!");
-static_assert(offsetof(WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer, K2Node_Event_Widget_1) == 0x000028, "Member 'WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer::K2Node_Event_Widget_1' has a wrong offset!");
-static_assert(offsetof(WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer, K2Node_Event_Widget) == 0x000030, "Member 'WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer, CallFunc_AddChildToCanvas_ReturnValue) == 0x000038, "Member 'WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer::CallFunc_AddChildToCanvas_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer, CallFunc_AddChildToCanvas_ReturnValue_1) == 0x000040, "Member 'WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer::CallFunc_AddChildToCanvas_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HUDContainer_C_ExecuteUbergraph_WBP_HUDContainer;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

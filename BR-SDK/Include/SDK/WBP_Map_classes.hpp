@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Map.WBP_Map_C
 // 0x0018 (0x0498 - 0x0480)
@@ -33,18 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Map_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Map_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Map_C")
 	}
 	static class UWBP_Map_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Map_C>();
 	}
 };
-static_assert(alignof(UWBP_Map_C) == 0x000008, "Wrong alignment on UWBP_Map_C");
-static_assert(sizeof(UWBP_Map_C) == 0x000498, "Wrong size on UWBP_Map_C");
-static_assert(offsetof(UWBP_Map_C, BackgroundImage) == 0x000480, "Member 'UWBP_Map_C::BackgroundImage' has a wrong offset!");
-static_assert(offsetof(UWBP_Map_C, BrickImage_85) == 0x000488, "Member 'UWBP_Map_C::BrickImage_85' has a wrong offset!");
-static_assert(offsetof(UWBP_Map_C, BrickImage_140) == 0x000490, "Member 'UWBP_Map_C::BrickImage_140' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Map_C;
 
-}
-
+SDK_NAMESPACE_END

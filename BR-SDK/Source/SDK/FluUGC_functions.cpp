@@ -14,8 +14,7 @@
 #include "FluUGC_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FluUGC.FluUGCSubsystem.Get
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
@@ -44,5 +43,5 @@ class UFluUGCSubsystem* UFluUGCSubsystem::Get(const class FName& SubsystemName)
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MatchTimer.WBP_MatchTimer_C
 // 0x0018 (0x0278 - 0x0260)
@@ -28,24 +27,23 @@ public:
 	class UBrickTextBlock*                        TextBlock;                                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateTimer(int32 NewTime);
+	void UpdateTimer(int32 NewTime_UpdateTimer);
 	void ExecuteUbergraph_WBP_MatchTimer(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MatchTimer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MatchTimer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MatchTimer_C")
 	}
 	static class UWBP_MatchTimer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MatchTimer_C>();
 	}
 };
-static_assert(alignof(UWBP_MatchTimer_C) == 0x000008, "Wrong alignment on UWBP_MatchTimer_C");
-static_assert(sizeof(UWBP_MatchTimer_C) == 0x000278, "Wrong size on UWBP_MatchTimer_C");
-static_assert(offsetof(UWBP_MatchTimer_C, UberGraphFrame) == 0x000260, "Member 'UWBP_MatchTimer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MatchTimer_C, Border) == 0x000268, "Member 'UWBP_MatchTimer_C::Border' has a wrong offset!");
-static_assert(offsetof(UWBP_MatchTimer_C, TextBlock) == 0x000270, "Member 'UWBP_MatchTimer_C::TextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MatchTimer_C;
 
-}
-
+SDK_NAMESPACE_END

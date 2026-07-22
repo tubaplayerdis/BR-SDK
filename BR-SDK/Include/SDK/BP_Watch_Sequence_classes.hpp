@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Watch_Sequence.BP_Watch_Sequence_C
 // 0x0018 (0x0268 - 0x0250)
@@ -28,18 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Watch_Sequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_Watch_Sequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Watch_Sequence_C")
 	}
 	static class ABP_Watch_Sequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Watch_Sequence_C>();
 	}
 };
-static_assert(alignof(ABP_Watch_Sequence_C) == 0x000008, "Wrong alignment on ABP_Watch_Sequence_C");
-static_assert(sizeof(ABP_Watch_Sequence_C) == 0x000268, "Wrong size on ABP_Watch_Sequence_C");
-static_assert(offsetof(ABP_Watch_Sequence_C, Camera) == 0x000250, "Member 'ABP_Watch_Sequence_C::Camera' has a wrong offset!");
-static_assert(offsetof(ABP_Watch_Sequence_C, Scene) == 0x000258, "Member 'ABP_Watch_Sequence_C::Scene' has a wrong offset!");
-static_assert(offsetof(ABP_Watch_Sequence_C, SkeletalMesh) == 0x000260, "Member 'ABP_Watch_Sequence_C::SkeletalMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Watch_Sequence_C;
 
-}
-
+SDK_NAMESPACE_END

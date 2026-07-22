@@ -14,8 +14,7 @@
 #include "BP_UIStyle_Gray_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_UIStyle_Gray.BP_UIStyle_Gray_C.ExecuteUbergraph_BP_UIStyle_Gray
 // (Final, UbergraphFunction)
@@ -50,5 +49,5 @@ void UBP_UIStyle_Gray_C::BuildStyle()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

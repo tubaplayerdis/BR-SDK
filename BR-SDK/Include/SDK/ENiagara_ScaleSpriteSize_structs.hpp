@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ENiagara_ScaleSpriteSize.ENiagara_ScaleSpriteSize
 // NumValues: 0x0005
@@ -25,5 +24,4 @@ enum class ENiagara_ScaleSpriteSize : uint8
 	ENiagara_MAX                             = 4,
 };
 
-}
-
+SDK_NAMESPACE_END

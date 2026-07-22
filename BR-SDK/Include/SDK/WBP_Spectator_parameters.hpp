@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_Spectator.WBP_Spectator_C.ExecuteUbergraph_WBP_Spectator
 // 0x00D0 (0x00D0 - 0x0000)
@@ -40,21 +40,7 @@ public:
 	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x00B8(0x0018)(ConstParm)
 };
-static_assert(alignof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator) == 0x000008, "Wrong alignment on WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator");
-static_assert(sizeof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator) == 0x0000D0, "Wrong size on WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, EntryPoint) == 0x000000, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, Temp_bool_Variable) == 0x000004, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, Temp_text_Variable) == 0x000008, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, K2Node_Event_PlayerName) == 0x000020, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::K2Node_Event_PlayerName' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, K2Node_Event_bIsValidPlayer) == 0x000038, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::K2Node_Event_bIsValidPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, K2Node_MakeStruct_FormatArgumentData) == 0x000040, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, K2Node_MakeArray_Array) == 0x000080, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, K2Node_ComponentBoundEvent_InColorStyle_1) == 0x000090, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::K2Node_ComponentBoundEvent_InColorStyle_1' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, K2Node_ComponentBoundEvent_InContentStyleState_1) == 0x000091, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::K2Node_ComponentBoundEvent_InContentStyleState_1' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, CallFunc_Format_ReturnValue) == 0x000098, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, K2Node_ComponentBoundEvent_InColorStyle) == 0x0000B0, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, K2Node_ComponentBoundEvent_InContentStyleState) == 0x0000B1, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator, K2Node_Select_Default) == 0x0000B8, "Member 'WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Spectator_C_ExecuteUbergraph_WBP_Spectator;
 
 // Function WBP_Spectator.WBP_Spectator_C.BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -64,10 +50,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Spectator_C_BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Spectator_C_BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_Spectator_C_BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_Spectator_C_BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_Spectator_C_BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_Spectator_C_BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_Spectator_C_BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Spectator_C_BndEvt__NextPlayerButton_K2Node_ComponentBoundEvent_3_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_Spectator.WBP_Spectator_C.BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -77,10 +60,7 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Spectator_C_BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Spectator_C_BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_Spectator_C_BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_Spectator_C_BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_Spectator_C_BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_Spectator_C_BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_Spectator_C_BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Spectator_C_BndEvt__PrevPlayerButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_Spectator.WBP_Spectator_C.UpdateSpectatedPlayer
 // 0x0020 (0x0020 - 0x0000)
@@ -90,10 +70,7 @@ public:
 	class FText                                   PlayerName;                                        // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          bIsValidPlayer;                                    // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_Spectator_C_UpdateSpectatedPlayer) == 0x000008, "Wrong alignment on WBP_Spectator_C_UpdateSpectatedPlayer");
-static_assert(sizeof(WBP_Spectator_C_UpdateSpectatedPlayer) == 0x000020, "Wrong size on WBP_Spectator_C_UpdateSpectatedPlayer");
-static_assert(offsetof(WBP_Spectator_C_UpdateSpectatedPlayer, PlayerName) == 0x000000, "Member 'WBP_Spectator_C_UpdateSpectatedPlayer::PlayerName' has a wrong offset!");
-static_assert(offsetof(WBP_Spectator_C_UpdateSpectatedPlayer, bIsValidPlayer) == 0x000018, "Member 'WBP_Spectator_C_UpdateSpectatedPlayer::bIsValidPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Spectator_C_UpdateSpectatedPlayer;
 
 // Function WBP_Spectator.WBP_Spectator_C.GetWidgetToFocus
 // 0x0008 (0x0008 - 0x0000)
@@ -102,9 +79,7 @@ struct WBP_Spectator_C_GetWidgetToFocus final
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Spectator_C_GetWidgetToFocus) == 0x000008, "Wrong alignment on WBP_Spectator_C_GetWidgetToFocus");
-static_assert(sizeof(WBP_Spectator_C_GetWidgetToFocus) == 0x000008, "Wrong size on WBP_Spectator_C_GetWidgetToFocus");
-static_assert(offsetof(WBP_Spectator_C_GetWidgetToFocus, ReturnValue) == 0x000000, "Member 'WBP_Spectator_C_GetWidgetToFocus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Spectator_C_GetWidgetToFocus;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

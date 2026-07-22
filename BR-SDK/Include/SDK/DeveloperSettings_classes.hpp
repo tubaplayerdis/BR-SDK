@@ -13,8 +13,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class DeveloperSettings.DeveloperSettings
 // 0x0010 (0x0038 - 0x0028)
@@ -26,15 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeveloperSettings">();
+		STATIC_CLASS_IMPL("DeveloperSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeveloperSettings")
 	}
 	static class UDeveloperSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDeveloperSettings>();
 	}
 };
-static_assert(alignof(UDeveloperSettings) == 0x000008, "Wrong alignment on UDeveloperSettings");
-static_assert(sizeof(UDeveloperSettings) == 0x000038, "Wrong size on UDeveloperSettings");
+DUMPER7_ASSERTS_UDeveloperSettings;
 
-}
-
+SDK_NAMESPACE_END

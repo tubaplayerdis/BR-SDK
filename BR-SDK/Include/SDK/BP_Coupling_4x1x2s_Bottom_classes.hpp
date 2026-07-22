@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Coupling_4x1x2s_Bottom.BP_Coupling_4x1x2s_Bottom_C
 // 0x0000 (0x01A0 - 0x01A0)
@@ -23,15 +22,17 @@ class UBP_Coupling_4x1x2s_Bottom_C final : public UCouplingBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Coupling_4x1x2s_Bottom_C">();
+		BP_STATIC_CLASS_IMPL("BP_Coupling_4x1x2s_Bottom_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Coupling_4x1x2s_Bottom_C")
 	}
 	static class UBP_Coupling_4x1x2s_Bottom_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Coupling_4x1x2s_Bottom_C>();
 	}
 };
-static_assert(alignof(UBP_Coupling_4x1x2s_Bottom_C) == 0x000008, "Wrong alignment on UBP_Coupling_4x1x2s_Bottom_C");
-static_assert(sizeof(UBP_Coupling_4x1x2s_Bottom_C) == 0x0001A0, "Wrong size on UBP_Coupling_4x1x2s_Bottom_C");
+DUMPER7_ASSERTS_UBP_Coupling_4x1x2s_Bottom_C;
 
-}
-
+SDK_NAMESPACE_END

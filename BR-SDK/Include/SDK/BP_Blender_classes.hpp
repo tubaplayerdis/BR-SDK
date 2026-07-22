@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Blender.BP_Blender_C
 // 0x0028 (0x0248 - 0x0220)
@@ -37,21 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Blender_C">();
+		BP_STATIC_CLASS_IMPL("BP_Blender_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Blender_C")
 	}
 	static class ABP_Blender_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Blender_C>();
 	}
 };
-static_assert(alignof(ABP_Blender_C) == 0x000008, "Wrong alignment on ABP_Blender_C");
-static_assert(sizeof(ABP_Blender_C) == 0x000248, "Wrong size on ABP_Blender_C");
-static_assert(offsetof(ABP_Blender_C, UberGraphFrame) == 0x000220, "Member 'ABP_Blender_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Blender_C, RotatingMovement) == 0x000228, "Member 'ABP_Blender_C::RotatingMovement' has a wrong offset!");
-static_assert(offsetof(ABP_Blender_C, Rotor) == 0x000230, "Member 'ABP_Blender_C::Rotor' has a wrong offset!");
-static_assert(offsetof(ABP_Blender_C, Blender) == 0x000238, "Member 'ABP_Blender_C::Blender' has a wrong offset!");
-static_assert(offsetof(ABP_Blender_C, Speed) == 0x000240, "Member 'ABP_Blender_C::Speed' has a wrong offset!");
-static_assert(offsetof(ABP_Blender_C, bUseFoundation) == 0x000244, "Member 'ABP_Blender_C::bUseFoundation' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Blender_C;
 
-}
-
+SDK_NAMESPACE_END

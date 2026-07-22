@@ -14,8 +14,7 @@
 #include "BP_Vehicle_Sequence_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_Vehicle_Sequence.BP_Vehicle_Sequence_C.ExecuteUbergraph_BP_Vehicle_Sequence
 // (Final, UbergraphFunction, HasDefaults)
@@ -138,5 +137,5 @@ bool ABP_Vehicle_Sequence_C::IsMenuSequenceReady() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

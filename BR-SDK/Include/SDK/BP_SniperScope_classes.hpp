@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SniperScope.BP_SniperScope_C
 // 0x0000 (0x02B8 - 0x02B8)
@@ -23,15 +22,17 @@ class ABP_SniperScope_C final : public ASightAttachment
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SniperScope_C">();
+		BP_STATIC_CLASS_IMPL("BP_SniperScope_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SniperScope_C")
 	}
 	static class ABP_SniperScope_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_SniperScope_C>();
 	}
 };
-static_assert(alignof(ABP_SniperScope_C) == 0x000008, "Wrong alignment on ABP_SniperScope_C");
-static_assert(sizeof(ABP_SniperScope_C) == 0x0002B8, "Wrong size on ABP_SniperScope_C");
+DUMPER7_ASSERTS_ABP_SniperScope_C;
 
-}
-
+SDK_NAMESPACE_END

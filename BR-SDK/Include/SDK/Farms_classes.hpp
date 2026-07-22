@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Farms.Farms_C
 // 0x0000 (0x0228 - 0x0228)
@@ -23,15 +22,17 @@ class AFarms_C final : public ALevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Farms_C">();
+		BP_STATIC_CLASS_IMPL("Farms_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Farms_C")
 	}
 	static class AFarms_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFarms_C>();
 	}
 };
-static_assert(alignof(AFarms_C) == 0x000008, "Wrong alignment on AFarms_C");
-static_assert(sizeof(AFarms_C) == 0x000228, "Wrong size on AFarms_C");
+DUMPER7_ASSERTS_AFarms_C;
 
-}
-
+SDK_NAMESPACE_END

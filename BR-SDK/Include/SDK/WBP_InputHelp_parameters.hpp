@@ -14,8 +14,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_InputHelp.WBP_InputHelp_C.UpdateIsAlwaysOpen
 // 0x0001 (0x0001 - 0x0000)
@@ -24,9 +24,7 @@ struct WBP_InputHelp_C_UpdateIsAlwaysOpen final
 public:
 	bool                                          bNewAlwaysOpen;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InputHelp_C_UpdateIsAlwaysOpen) == 0x000001, "Wrong alignment on WBP_InputHelp_C_UpdateIsAlwaysOpen");
-static_assert(sizeof(WBP_InputHelp_C_UpdateIsAlwaysOpen) == 0x000001, "Wrong size on WBP_InputHelp_C_UpdateIsAlwaysOpen");
-static_assert(offsetof(WBP_InputHelp_C_UpdateIsAlwaysOpen, bNewAlwaysOpen) == 0x000000, "Member 'WBP_InputHelp_C_UpdateIsAlwaysOpen::bNewAlwaysOpen' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputHelp_C_UpdateIsAlwaysOpen;
 
 // Function WBP_InputHelp.WBP_InputHelp_C.BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
@@ -36,21 +34,16 @@ public:
 	EBrickUIColorStyle                            InColorStyle;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBrickUIStyleState                            InContentStyleState;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000001, "Wrong alignment on WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(sizeof(WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature) == 0x000002, "Wrong size on WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-static_assert(offsetof(WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InColorStyle) == 0x000000, "Member 'WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature, InContentStyleState) == 0x000001, "Member 'WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature::InContentStyleState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature;
 
 // Function WBP_InputHelp.WBP_InputHelp_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_InputHelp_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InputHelp_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_InputHelp_C_PreConstruct");
-static_assert(sizeof(WBP_InputHelp_C_PreConstruct) == 0x000001, "Wrong size on WBP_InputHelp_C_PreConstruct");
-static_assert(offsetof(WBP_InputHelp_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_InputHelp_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputHelp_C_PreConstruct;
 
 // Function WBP_InputHelp.WBP_InputHelp_C.ExecuteUbergraph_WBP_InputHelp
 // 0x0020 (0x0020 - 0x0000)
@@ -70,19 +63,7 @@ public:
 	EBrickUIStyleState                            K2Node_ComponentBoundEvent_InContentStyleState;    // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp) == 0x000008, "Wrong alignment on WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp");
-static_assert(sizeof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp) == 0x000020, "Wrong size on WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, EntryPoint) == 0x000000, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, CallFunc_GetGameOverlay_ReturnValue) == 0x000008, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::CallFunc_GetGameOverlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, Temp_bool_Variable) == 0x000010, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, CallFunc_ToggleInputHelpOpen_ReturnValue) == 0x000011, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::CallFunc_ToggleInputHelpOpen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, Temp_byte_Variable) == 0x000012, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, Temp_byte_Variable_1) == 0x000013, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, K2Node_Event_bNewAlwaysOpen) == 0x000014, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::K2Node_Event_bNewAlwaysOpen' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, K2Node_Select_Default) == 0x000015, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, K2Node_ComponentBoundEvent_InColorStyle) == 0x000016, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::K2Node_ComponentBoundEvent_InColorStyle' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, K2Node_ComponentBoundEvent_InContentStyleState) == 0x000017, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::K2Node_ComponentBoundEvent_InContentStyleState' has a wrong offset!");
-static_assert(offsetof(WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp, K2Node_Event_IsDesignTime) == 0x000018, "Member 'WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_InputHelp_C_ExecuteUbergraph_WBP_InputHelp;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

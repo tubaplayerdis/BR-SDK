@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_CarElevator.BP_CarElevator_C
 // 0x0058 (0x0300 - 0x02A8)
@@ -44,26 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CarElevator_C">();
+		BP_STATIC_CLASS_IMPL("BP_CarElevator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CarElevator_C")
 	}
 	static class ABP_CarElevator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CarElevator_C>();
 	}
 };
-static_assert(alignof(ABP_CarElevator_C) == 0x000008, "Wrong alignment on ABP_CarElevator_C");
-static_assert(sizeof(ABP_CarElevator_C) == 0x000300, "Wrong size on ABP_CarElevator_C");
-static_assert(offsetof(ABP_CarElevator_C, UberGraphFrame) == 0x0002A8, "Member 'ABP_CarElevator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, Platform) == 0x0002B0, "Member 'ABP_CarElevator_C::Platform' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, TopControlPanel) == 0x0002B8, "Member 'ABP_CarElevator_C::TopControlPanel' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, BottomControlPanel) == 0x0002C0, "Member 'ABP_CarElevator_C::BottomControlPanel' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, Cap) == 0x0002C8, "Member 'ABP_CarElevator_C::Cap' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, Rails) == 0x0002D0, "Member 'ABP_CarElevator_C::Rails' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, ElevatorControlPanel) == 0x0002D8, "Member 'ABP_CarElevator_C::ElevatorControlPanel' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, GearFast) == 0x0002E0, "Member 'ABP_CarElevator_C::GearFast' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, GearSlow) == 0x0002E8, "Member 'ABP_CarElevator_C::GearSlow' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, Base) == 0x0002F0, "Member 'ABP_CarElevator_C::Base' has a wrong offset!");
-static_assert(offsetof(ABP_CarElevator_C, NumRails) == 0x0002F8, "Member 'ABP_CarElevator_C::NumRails' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_CarElevator_C;
 
-}
-
+SDK_NAMESPACE_END

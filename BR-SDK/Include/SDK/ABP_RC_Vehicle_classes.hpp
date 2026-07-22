@@ -16,8 +16,7 @@
 #include "AnimGraphRuntime_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_RC_Vehicle.ABP_RC_Vehicle_C
 // 0x0180 (0x0440 - 0x02C0)
@@ -40,21 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_RC_Vehicle_C">();
+		BP_STATIC_CLASS_IMPL("ABP_RC_Vehicle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_RC_Vehicle_C")
 	}
 	static class UABP_RC_Vehicle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_RC_Vehicle_C>();
 	}
 };
-static_assert(alignof(UABP_RC_Vehicle_C) == 0x000010, "Wrong alignment on UABP_RC_Vehicle_C");
-static_assert(sizeof(UABP_RC_Vehicle_C) == 0x000440, "Wrong size on UABP_RC_Vehicle_C");
-static_assert(offsetof(UABP_RC_Vehicle_C, UberGraphFrame) == 0x0002C0, "Member 'UABP_RC_Vehicle_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_RC_Vehicle_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UABP_RC_Vehicle_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_RC_Vehicle_C, AnimGraphNode_ComponentToLocalSpace) == 0x0002F8, "Member 'UABP_RC_Vehicle_C::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
-static_assert(offsetof(UABP_RC_Vehicle_C, AnimGraphNode_ModifyBone) == 0x000318, "Member 'UABP_RC_Vehicle_C::AnimGraphNode_ModifyBone' has a wrong offset!");
-static_assert(offsetof(UABP_RC_Vehicle_C, AnimGraphNode_MeshRefPose) == 0x000420, "Member 'UABP_RC_Vehicle_C::AnimGraphNode_MeshRefPose' has a wrong offset!");
-static_assert(offsetof(UABP_RC_Vehicle_C, TrailerRotation) == 0x000430, "Member 'UABP_RC_Vehicle_C::TrailerRotation' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_RC_Vehicle_C;
 
-}
-
+SDK_NAMESPACE_END

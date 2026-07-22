@@ -14,8 +14,7 @@
 #include "WBP_ScoreboardPlayer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ScoreboardPlayer.WBP_ScoreboardPlayer_C.ExecuteUbergraph_WBP_ScoreboardPlayer
 // (Final, UbergraphFunction, HasDefaults)
@@ -142,5 +141,5 @@ void UWBP_ScoreboardPlayer_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpda
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

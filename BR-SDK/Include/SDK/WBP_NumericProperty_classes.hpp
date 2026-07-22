@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_NumericProperty.WBP_NumericProperty_C
 // 0x0018 (0x02C8 - 0x02B0)
@@ -28,28 +27,27 @@ public:
 	class UMenuButtonWidget*                      LockButton;                                        // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddSliderWidget(class UBrickSliderWidget* Slider);
-	void OnBrickUnitsButtonClicked();
-	void UpdateNumericProperty(const ENumericValueType ValueType, const int32 NumAxes);
-	void OnLockButtonClicked();
-	void Destruct();
 	void ExecuteUbergraph_WBP_NumericProperty(int32 EntryPoint);
+	void Destruct();
+	void OnLockButtonClicked();
+	void UpdateNumericProperty(const ENumericValueType ValueType, const int32 NumAxes);
+	void OnBrickUnitsButtonClicked();
+	void AddSliderWidget(class UBrickSliderWidget* Slider);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_NumericProperty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_NumericProperty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_NumericProperty_C")
 	}
 	static class UWBP_NumericProperty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_NumericProperty_C>();
 	}
 };
-static_assert(alignof(UWBP_NumericProperty_C) == 0x000008, "Wrong alignment on UWBP_NumericProperty_C");
-static_assert(sizeof(UWBP_NumericProperty_C) == 0x0002C8, "Wrong size on UWBP_NumericProperty_C");
-static_assert(offsetof(UWBP_NumericProperty_C, UberGraphFrame) == 0x0002B0, "Member 'UWBP_NumericProperty_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_NumericProperty_C, SlidersBox) == 0x0002B8, "Member 'UWBP_NumericProperty_C::SlidersBox' has a wrong offset!");
-static_assert(offsetof(UWBP_NumericProperty_C, LockButton) == 0x0002C0, "Member 'UWBP_NumericProperty_C::LockButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_NumericProperty_C;
 
-}
-
+SDK_NAMESPACE_END

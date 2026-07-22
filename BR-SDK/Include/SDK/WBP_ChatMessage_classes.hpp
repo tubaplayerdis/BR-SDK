@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ChatMessage.WBP_ChatMessage_C
 // 0x0020 (0x0330 - 0x0310)
@@ -29,8 +28,8 @@ public:
 	class UBrickTextBlock*                        TextBlock;                                         // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateColorStyle(EBrickUIColorStyle NewColorStyle);
-	void UpdateMessageText(const class FText& NewText);
+	void UpdateColorStyle(EBrickUIColorStyle NewColorStyle_UpdateColorStyle);
+	void UpdateMessageText(const class FText& NewText_UpdateMessageText);
 	void BndEvt__WBP_ChatMessage_Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState);
 	void BndEvt__WBP_ChatMessage_Button_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 	void ExecuteUbergraph_WBP_ChatMessage(int32 EntryPoint);
@@ -38,19 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ChatMessage_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ChatMessage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ChatMessage_C")
 	}
 	static class UWBP_ChatMessage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ChatMessage_C>();
 	}
 };
-static_assert(alignof(UWBP_ChatMessage_C) == 0x000008, "Wrong alignment on UWBP_ChatMessage_C");
-static_assert(sizeof(UWBP_ChatMessage_C) == 0x000330, "Wrong size on UWBP_ChatMessage_C");
-static_assert(offsetof(UWBP_ChatMessage_C, UberGraphFrame) == 0x000310, "Member 'UWBP_ChatMessage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessage_C, Button) == 0x000318, "Member 'UWBP_ChatMessage_C::Button' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessage_C, Icon) == 0x000320, "Member 'UWBP_ChatMessage_C::Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessage_C, TextBlock) == 0x000328, "Member 'UWBP_ChatMessage_C::TextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ChatMessage_C;
 
-}
-
+SDK_NAMESPACE_END

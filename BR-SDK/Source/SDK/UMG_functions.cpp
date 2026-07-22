@@ -14,8 +14,7 @@
 #include "UMG_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function UMG.Widget.ForceLayoutPrepass
 // (Final, Native, Public, BlueprintCallable)
@@ -18313,5 +18312,5 @@ void UWrapBoxSlot::SetVerticalAlignment(EVerticalAlignment InVerticalAlignment)
 	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

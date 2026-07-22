@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UGCTaskPopup.WBP_UGCTaskPopup_C.ExecuteUbergraph_WBP_UGCTaskPopup
 // 0x0038 (0x0038 - 0x0000)
@@ -39,22 +39,7 @@ public:
 	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPopupContainerWidget*                  CallFunc_GetPopupContainer_ReturnValue_1;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup) == 0x000008, "Wrong alignment on WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup");
-static_assert(sizeof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup) == 0x000038, "Wrong size on WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, EntryPoint) == 0x000000, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, Temp_bool_Variable) == 0x000004, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, Temp_byte_Variable) == 0x000005, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, Temp_bool_Variable_1) == 0x000006, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, Temp_byte_Variable_1) == 0x000007, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, Temp_byte_Variable_2) == 0x000008, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, K2Node_Event_NewProgress) == 0x00000C, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::K2Node_Event_NewProgress' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, CallFunc_GetPopupContainer_ReturnValue) == 0x000010, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::CallFunc_GetPopupContainer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, K2Node_Event_bNewFinished) == 0x000018, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::K2Node_Event_bNewFinished' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, K2Node_Event_bNewSuccess) == 0x000019, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::K2Node_Event_bNewSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, CallFunc_CreateConfirmButton_ReturnValue) == 0x000020, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::CallFunc_CreateConfirmButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, K2Node_Select_Default) == 0x000028, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, K2Node_Select_Default_1) == 0x000029, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup, CallFunc_GetPopupContainer_ReturnValue_1) == 0x000030, "Member 'WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup::CallFunc_GetPopupContainer_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UGCTaskPopup_C_ExecuteUbergraph_WBP_UGCTaskPopup;
 
 // Function WBP_UGCTaskPopup.WBP_UGCTaskPopup_C.UpdateIsFinished
 // 0x0002 (0x0002 - 0x0000)
@@ -64,10 +49,7 @@ public:
 	bool                                          bNewFinished;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bNewSuccess;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_UGCTaskPopup_C_UpdateIsFinished) == 0x000001, "Wrong alignment on WBP_UGCTaskPopup_C_UpdateIsFinished");
-static_assert(sizeof(WBP_UGCTaskPopup_C_UpdateIsFinished) == 0x000002, "Wrong size on WBP_UGCTaskPopup_C_UpdateIsFinished");
-static_assert(offsetof(WBP_UGCTaskPopup_C_UpdateIsFinished, bNewFinished) == 0x000000, "Member 'WBP_UGCTaskPopup_C_UpdateIsFinished::bNewFinished' has a wrong offset!");
-static_assert(offsetof(WBP_UGCTaskPopup_C_UpdateIsFinished, bNewSuccess) == 0x000001, "Member 'WBP_UGCTaskPopup_C_UpdateIsFinished::bNewSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UGCTaskPopup_C_UpdateIsFinished;
 
 // Function WBP_UGCTaskPopup.WBP_UGCTaskPopup_C.UpdateProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -76,9 +58,7 @@ struct WBP_UGCTaskPopup_C_UpdateProgress final
 public:
 	float                                         NewProgress;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UGCTaskPopup_C_UpdateProgress) == 0x000004, "Wrong alignment on WBP_UGCTaskPopup_C_UpdateProgress");
-static_assert(sizeof(WBP_UGCTaskPopup_C_UpdateProgress) == 0x000004, "Wrong size on WBP_UGCTaskPopup_C_UpdateProgress");
-static_assert(offsetof(WBP_UGCTaskPopup_C_UpdateProgress, NewProgress) == 0x000000, "Member 'WBP_UGCTaskPopup_C_UpdateProgress::NewProgress' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UGCTaskPopup_C_UpdateProgress;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

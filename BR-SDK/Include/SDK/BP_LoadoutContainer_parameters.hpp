@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_LoadoutContainer.BP_LoadoutContainer_C.ExecuteUbergraph_BP_LoadoutContainer
 // 0x000C (0x000C - 0x0000)
@@ -23,11 +23,7 @@ public:
 	float                                         K2Node_Event_InAnimRatio;                          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FInterpEaseInOut_ReturnValue;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer) == 0x000004, "Wrong alignment on BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer");
-static_assert(sizeof(BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer) == 0x00000C, "Wrong size on BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer");
-static_assert(offsetof(BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer, EntryPoint) == 0x000000, "Member 'BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer, K2Node_Event_InAnimRatio) == 0x000004, "Member 'BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer::K2Node_Event_InAnimRatio' has a wrong offset!");
-static_assert(offsetof(BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer, CallFunc_FInterpEaseInOut_ReturnValue) == 0x000008, "Member 'BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer::CallFunc_FInterpEaseInOut_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_LoadoutContainer_C_ExecuteUbergraph_BP_LoadoutContainer;
 
 // Function BP_LoadoutContainer.BP_LoadoutContainer_C.UpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -36,9 +32,7 @@ struct BP_LoadoutContainer_C_UpdateAnimation final
 public:
 	float                                         InAnimRatio;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_LoadoutContainer_C_UpdateAnimation) == 0x000004, "Wrong alignment on BP_LoadoutContainer_C_UpdateAnimation");
-static_assert(sizeof(BP_LoadoutContainer_C_UpdateAnimation) == 0x000004, "Wrong size on BP_LoadoutContainer_C_UpdateAnimation");
-static_assert(offsetof(BP_LoadoutContainer_C_UpdateAnimation, InAnimRatio) == 0x000000, "Member 'BP_LoadoutContainer_C_UpdateAnimation::InAnimRatio' has a wrong offset!");
+DUMPER7_ASSERTS_BP_LoadoutContainer_C_UpdateAnimation;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class AnimationCore.AnimationDataSourceRegistry
 // 0x0050 (0x0078 - 0x0028)
@@ -26,16 +25,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimationDataSourceRegistry">();
+		STATIC_CLASS_IMPL("AnimationDataSourceRegistry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimationDataSourceRegistry")
 	}
 	static class UAnimationDataSourceRegistry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimationDataSourceRegistry>();
 	}
 };
-static_assert(alignof(UAnimationDataSourceRegistry) == 0x000008, "Wrong alignment on UAnimationDataSourceRegistry");
-static_assert(sizeof(UAnimationDataSourceRegistry) == 0x000078, "Wrong size on UAnimationDataSourceRegistry");
-static_assert(offsetof(UAnimationDataSourceRegistry, DataSources) == 0x000028, "Member 'UAnimationDataSourceRegistry::DataSources' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimationDataSourceRegistry;
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ImageBrick.BP_ImageBrick_C
 // 0x0000 (0x01E0 - 0x01E0)
@@ -23,15 +22,17 @@ class UBP_ImageBrick_C final : public UImageBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ImageBrick_C">();
+		BP_STATIC_CLASS_IMPL("BP_ImageBrick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ImageBrick_C")
 	}
 	static class UBP_ImageBrick_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ImageBrick_C>();
 	}
 };
-static_assert(alignof(UBP_ImageBrick_C) == 0x000008, "Wrong alignment on UBP_ImageBrick_C");
-static_assert(sizeof(UBP_ImageBrick_C) == 0x0001E0, "Wrong size on UBP_ImageBrick_C");
+DUMPER7_ASSERTS_UBP_ImageBrick_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PhysicsVolume_Space.BP_PhysicsVolume_Space_C
 // 0x0000 (0x0270 - 0x0270)
@@ -23,15 +22,17 @@ class ABP_PhysicsVolume_Space_C final : public ADefaultPhysicsVolume
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PhysicsVolume_Space_C">();
+		BP_STATIC_CLASS_IMPL("BP_PhysicsVolume_Space_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PhysicsVolume_Space_C")
 	}
 	static class ABP_PhysicsVolume_Space_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PhysicsVolume_Space_C>();
 	}
 };
-static_assert(alignof(ABP_PhysicsVolume_Space_C) == 0x000008, "Wrong alignment on ABP_PhysicsVolume_Space_C");
-static_assert(sizeof(ABP_PhysicsVolume_Space_C) == 0x000270, "Wrong size on ABP_PhysicsVolume_Space_C");
+DUMPER7_ASSERTS_ABP_PhysicsVolume_Space_C;
 
-}
-
+SDK_NAMESPACE_END

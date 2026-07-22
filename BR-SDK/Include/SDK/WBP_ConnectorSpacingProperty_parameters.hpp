@@ -14,8 +14,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ConnectorSpacingProperty.WBP_ConnectorSpacingProperty_C.ExecuteUbergraph_WBP_ConnectorSpacingProperty
 // 0x0098 (0x0098 - 0x0000)
@@ -69,42 +69,7 @@ public:
 	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty) == 0x000008, "Wrong alignment on WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty");
-static_assert(sizeof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty) == 0x000098, "Wrong size on WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, EntryPoint) == 0x000000, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, Temp_int_Variable) == 0x000008, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000010, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000014, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, Temp_int_Variable_1) == 0x00001C, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_IndexToAxis_ReturnValue) == 0x000030, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_IndexToAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_MakeAxisSigned_ReturnValue) == 0x000031, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_MakeAxisSigned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000032, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Add_IntInt_ReturnValue_1) == 0x000034, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, K2Node_CustomEvent_Axis) == 0x000038, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::K2Node_CustomEvent_Axis' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, K2Node_Event_NewSpacing) == 0x00003A, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::K2Node_Event_NewSpacing' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, K2Node_Event_AxisFlags) == 0x00003C, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::K2Node_Event_AxisFlags' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000040, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_BitmaskHasFlag_ReturnValue) == 0x000044, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_BitmaskHasFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, Temp_int_Variable_2) == 0x000048, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_RecycleWidget_bOutRecycled) == 0x00004C, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_RecycleWidget_bOutRecycled' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_RecycleWidget_ReturnValue) == 0x000050, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_RecycleWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Add_IntInt_ReturnValue_2) == 0x000058, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, K2Node_DynamicCast_AsWBP_Connector_Spacing_Axis) == 0x000060, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::K2Node_DynamicCast_AsWBP_Connector_Spacing_Axis' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Percent_IntInt_ReturnValue) == 0x00006C, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_GetScalableBrickConnectorSpacingAxis_ReturnValue) == 0x000070, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_GetScalableBrickConnectorSpacingAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Divide_IntInt_ReturnValue) == 0x000074, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_AddChildToGrid_ReturnValue) == 0x000078, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_AddChildToGrid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_GetScalableBrickConnectorSpacingAxis_ReturnValue_1) == 0x000080, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_GetScalableBrickConnectorSpacingAxis_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000084, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Add_IntInt_ReturnValue_3) == 0x000088, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Percent_IntInt_ReturnValue_1) == 0x00008C, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Percent_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_Conv_IntToByte_ReturnValue) == 0x000090, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty, CallFunc_GetValidValue_ReturnValue) == 0x000091, "Member 'WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ConnectorSpacingProperty_C_ExecuteUbergraph_WBP_ConnectorSpacingProperty;
 
 // Function WBP_ConnectorSpacingProperty.WBP_ConnectorSpacingProperty_C.UpdateConnectorSpacing
 // 0x0004 (0x0004 - 0x0000)
@@ -114,10 +79,7 @@ public:
 	struct FScalableBrickConnectorSpacing         NewSpacing;                                        // 0x0000(0x0002)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	uint8                                         AxisFlags;                                         // 0x0002(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ConnectorSpacingProperty_C_UpdateConnectorSpacing) == 0x000002, "Wrong alignment on WBP_ConnectorSpacingProperty_C_UpdateConnectorSpacing");
-static_assert(sizeof(WBP_ConnectorSpacingProperty_C_UpdateConnectorSpacing) == 0x000004, "Wrong size on WBP_ConnectorSpacingProperty_C_UpdateConnectorSpacing");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_UpdateConnectorSpacing, NewSpacing) == 0x000000, "Member 'WBP_ConnectorSpacingProperty_C_UpdateConnectorSpacing::NewSpacing' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_UpdateConnectorSpacing, AxisFlags) == 0x000002, "Member 'WBP_ConnectorSpacingProperty_C_UpdateConnectorSpacing::AxisFlags' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ConnectorSpacingProperty_C_UpdateConnectorSpacing;
 
 // Function WBP_ConnectorSpacingProperty.WBP_ConnectorSpacingProperty_C.OnAxisClicked
 // 0x0001 (0x0001 - 0x0000)
@@ -126,9 +88,7 @@ struct WBP_ConnectorSpacingProperty_C_OnAxisClicked final
 public:
 	EFluAxisSigned                                Axis;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ConnectorSpacingProperty_C_OnAxisClicked) == 0x000001, "Wrong alignment on WBP_ConnectorSpacingProperty_C_OnAxisClicked");
-static_assert(sizeof(WBP_ConnectorSpacingProperty_C_OnAxisClicked) == 0x000001, "Wrong size on WBP_ConnectorSpacingProperty_C_OnAxisClicked");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_OnAxisClicked, Axis) == 0x000000, "Member 'WBP_ConnectorSpacingProperty_C_OnAxisClicked::Axis' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ConnectorSpacingProperty_C_OnAxisClicked;
 
 // Function WBP_ConnectorSpacingProperty.WBP_ConnectorSpacingProperty_C.GetFocusedSubProperty
 // 0x0030 (0x0030 - 0x0000)
@@ -143,14 +103,7 @@ public:
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty) == 0x000008, "Wrong alignment on WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty");
-static_assert(sizeof(WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty) == 0x000030, "Wrong size on WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty, WidgetPath) == 0x000000, "Member 'WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty::WidgetPath' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty, ReturnValue) == 0x000008, "Member 'WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty, CallFunc_FindFirstWidgetInWidgetPath_ReturnValue) == 0x000010, "Member 'WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty::CallFunc_FindFirstWidgetInWidgetPath_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty, K2Node_DynamicCast_AsWBP_Connector_Spacing_Axis) == 0x000018, "Member 'WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty::K2Node_DynamicCast_AsWBP_Connector_Spacing_Axis' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty, CallFunc_GetEnumeratorName_ReturnValue) == 0x000024, "Member 'WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ConnectorSpacingProperty_C_GetFocusedSubProperty;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

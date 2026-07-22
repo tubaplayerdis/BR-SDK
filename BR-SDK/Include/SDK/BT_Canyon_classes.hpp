@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BT_Canyon.BT_Canyon_C
 // 0x0000 (0x0228 - 0x0228)
@@ -23,15 +22,17 @@ class ABT_Canyon_C final : public ALevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BT_Canyon_C">();
+		BP_STATIC_CLASS_IMPL("BT_Canyon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BT_Canyon_C")
 	}
 	static class ABT_Canyon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABT_Canyon_C>();
 	}
 };
-static_assert(alignof(ABT_Canyon_C) == 0x000008, "Wrong alignment on ABT_Canyon_C");
-static_assert(sizeof(ABT_Canyon_C) == 0x000228, "Wrong size on ABT_Canyon_C");
+DUMPER7_ASSERTS_ABT_Canyon_C;
 
-}
-
+SDK_NAMESPACE_END

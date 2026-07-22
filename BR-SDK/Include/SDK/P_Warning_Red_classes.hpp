@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass P_Warning_Red.P_Warning_Red_C
 // 0x0000 (0x0050 - 0x0050)
@@ -23,15 +22,17 @@ class UP_Warning_Red_C final : public UBrickPattern
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"P_Warning_Red_C">();
+		BP_STATIC_CLASS_IMPL("P_Warning_Red_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"P_Warning_Red_C")
 	}
 	static class UP_Warning_Red_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UP_Warning_Red_C>();
 	}
 };
-static_assert(alignof(UP_Warning_Red_C) == 0x000008, "Wrong alignment on UP_Warning_Red_C");
-static_assert(sizeof(UP_Warning_Red_C) == 0x000050, "Wrong size on UP_Warning_Red_C");
+DUMPER7_ASSERTS_UP_Warning_Red_C;
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Shredder.BP_Shredder_C.UserConstructionScript
 // 0x0150 (0x0150 - 0x0000)
@@ -45,37 +45,16 @@ public:
 	int32                                         CallFunc_AddInstance_ReturnValue_1;                // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_AddInstance_ReturnValue_2;                // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Shredder_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_Shredder_C_UserConstructionScript");
-static_assert(sizeof(BP_Shredder_C_UserConstructionScript) == 0x000150, "Wrong size on BP_Shredder_C_UserConstructionScript");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_GetActorScale3D_ReturnValue) == 0x000000, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_BreakVector_X) == 0x00000C, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_BreakVector_Y) == 0x000010, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_BreakVector_Z) == 0x000014, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000050, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000058, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000060, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x000064, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue_1) == 0x000070, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue_2) == 0x0000A0, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue_3) == 0x0000D0, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue_4) == 0x000100, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue_1) == 0x000130, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue_1) == 0x000138, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_AddInstance_ReturnValue) == 0x00013C, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_AddInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_AddInstance_ReturnValue_1) == 0x000140, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_AddInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_UserConstructionScript, CallFunc_AddInstance_ReturnValue_2) == 0x000144, "Member 'BP_Shredder_C_UserConstructionScript::CallFunc_AddInstance_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Shredder_C_UserConstructionScript;
 
 // Function BP_Shredder.BP_Shredder_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
 struct BP_Shredder_C_ReceiveTick final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds_ReceiveTick;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Shredder_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_Shredder_C_ReceiveTick");
-static_assert(sizeof(BP_Shredder_C_ReceiveTick) == 0x000004, "Wrong size on BP_Shredder_C_ReceiveTick");
-static_assert(offsetof(BP_Shredder_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_Shredder_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Shredder_C_ReceiveTick;
 
 // Function BP_Shredder.BP_Shredder_C.ExecuteUbergraph_BP_Shredder
 // 0x0150 (0x0150 - 0x0000)
@@ -95,19 +74,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x003C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x00C4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder) == 0x000008, "Wrong alignment on BP_Shredder_C_ExecuteUbergraph_BP_Shredder");
-static_assert(sizeof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder) == 0x000150, "Wrong size on BP_Shredder_C_ExecuteUbergraph_BP_Shredder");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, EntryPoint) == 0x000000, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, CallFunc_GetServerWorldTimeSeconds_ReturnValue) == 0x000010, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::CallFunc_GetServerWorldTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, K2Node_Event_DeltaSeconds) == 0x000014, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000018, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00001C, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, CallFunc_NormalizeAxis_ReturnValue) == 0x000020, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::CallFunc_NormalizeAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, CallFunc_MakeRotator_ReturnValue) == 0x000024, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, CallFunc_MakeRotator_ReturnValue_1) == 0x000030, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x00003C, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_Shredder_C_ExecuteUbergraph_BP_Shredder, CallFunc_K2_SetRelativeRotation_SweepHitResult_1) == 0x0000C4, "Member 'BP_Shredder_C_ExecuteUbergraph_BP_Shredder::CallFunc_K2_SetRelativeRotation_SweepHitResult_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Shredder_C_ExecuteUbergraph_BP_Shredder;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

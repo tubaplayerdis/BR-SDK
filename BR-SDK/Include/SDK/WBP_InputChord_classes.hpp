@@ -15,8 +15,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InputChord.WBP_InputChord_C
 // 0x0010 (0x02D0 - 0x02C0)
@@ -35,17 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_InputChord_C">();
+		BP_STATIC_CLASS_IMPL("WBP_InputChord_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_InputChord_C")
 	}
 	static class UWBP_InputChord_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_InputChord_C>();
 	}
 };
-static_assert(alignof(UWBP_InputChord_C) == 0x000008, "Wrong alignment on UWBP_InputChord_C");
-static_assert(sizeof(UWBP_InputChord_C) == 0x0002D0, "Wrong size on UWBP_InputChord_C");
-static_assert(offsetof(UWBP_InputChord_C, UberGraphFrame) == 0x0002C0, "Member 'UWBP_InputChord_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_InputChord_C, KeysBox) == 0x0002C8, "Member 'UWBP_InputChord_C::KeysBox' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_InputChord_C;
 
-}
-
+SDK_NAMESPACE_END

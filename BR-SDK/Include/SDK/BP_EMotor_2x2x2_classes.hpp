@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_EMotor_2x2x2.BP_EMotor_2x2x2_C
 // 0x0000 (0x0208 - 0x0208)
@@ -23,15 +22,17 @@ class UBP_EMotor_2x2x2_C final : public UMotorBrickStaticInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_EMotor_2x2x2_C">();
+		BP_STATIC_CLASS_IMPL("BP_EMotor_2x2x2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_EMotor_2x2x2_C")
 	}
 	static class UBP_EMotor_2x2x2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_EMotor_2x2x2_C>();
 	}
 };
-static_assert(alignof(UBP_EMotor_2x2x2_C) == 0x000008, "Wrong alignment on UBP_EMotor_2x2x2_C");
-static_assert(sizeof(UBP_EMotor_2x2x2_C) == 0x000208, "Wrong size on UBP_EMotor_2x2x2_C");
+DUMPER7_ASSERTS_UBP_EMotor_2x2x2_C;
 
-}
-
+SDK_NAMESPACE_END

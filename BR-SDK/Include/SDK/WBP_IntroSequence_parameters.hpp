@@ -15,8 +15,8 @@
 #include "GameLogoEnum_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_IntroSequence.WBP_IntroSequence_C.ExecuteUbergraph_WBP_IntroSequence
 // 0x004C (0x004C - 0x0000)
@@ -31,14 +31,7 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence) == 0x000004, "Wrong alignment on WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence");
-static_assert(sizeof(WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence) == 0x00004C, "Wrong size on WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence");
-static_assert(offsetof(WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence, EntryPoint) == 0x000000, "Member 'WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence, K2Node_Event_MyGeometry) == 0x000004, "Member 'WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence, K2Node_Event_InDeltaTime) == 0x00003C, "Member 'WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence, CallFunc_IsLogoReady_ReturnValue) == 0x000040, "Member 'WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence::CallFunc_IsLogoReady_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence, CallFunc_Add_FloatFloat_ReturnValue) == 0x000044, "Member 'WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000048, "Member 'WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_IntroSequence_C_ExecuteUbergraph_WBP_IntroSequence;
 
 // Function WBP_IntroSequence.WBP_IntroSequence_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -48,10 +41,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_IntroSequence_C_Tick) == 0x000004, "Wrong alignment on WBP_IntroSequence_C_Tick");
-static_assert(sizeof(WBP_IntroSequence_C_Tick) == 0x00003C, "Wrong size on WBP_IntroSequence_C_Tick");
-static_assert(offsetof(WBP_IntroSequence_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_IntroSequence_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_IntroSequence_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_IntroSequence_C_Tick;
 
 // Function WBP_IntroSequence.WBP_IntroSequence_C.InitSequence
 // 0x0008 (0x0008 - 0x0000)
@@ -63,12 +53,7 @@ public:
 	EGameLogoEnum                                 Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameLogoEnum                                 K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_IntroSequence_C_InitSequence) == 0x000004, "Wrong alignment on WBP_IntroSequence_C_InitSequence");
-static_assert(sizeof(WBP_IntroSequence_C_InitSequence) == 0x000008, "Wrong size on WBP_IntroSequence_C_InitSequence");
-static_assert(offsetof(WBP_IntroSequence_C_InitSequence, Temp_int_Variable) == 0x000000, "Member 'WBP_IntroSequence_C_InitSequence::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_InitSequence, Temp_byte_Variable) == 0x000004, "Member 'WBP_IntroSequence_C_InitSequence::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_InitSequence, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_IntroSequence_C_InitSequence::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_InitSequence, K2Node_Select_Default) == 0x000006, "Member 'WBP_IntroSequence_C_InitSequence::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_IntroSequence_C_InitSequence;
 
 // Function WBP_IntroSequence.WBP_IntroSequence_C.UpdateFade
 // 0x0020 (0x0020 - 0x0000)
@@ -86,16 +71,7 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_IntroSequence_C_UpdateFade) == 0x000004, "Wrong alignment on WBP_IntroSequence_C_UpdateFade");
-static_assert(sizeof(WBP_IntroSequence_C_UpdateFade) == 0x000020, "Wrong size on WBP_IntroSequence_C_UpdateFade");
-static_assert(offsetof(WBP_IntroSequence_C_UpdateFade, Temp_bool_Variable) == 0x000000, "Member 'WBP_IntroSequence_C_UpdateFade::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_UpdateFade, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000004, "Member 'WBP_IntroSequence_C_UpdateFade::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_UpdateFade, CallFunc_Add_FloatFloat_ReturnValue) == 0x000008, "Member 'WBP_IntroSequence_C_UpdateFade::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_UpdateFade, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x00000C, "Member 'WBP_IntroSequence_C_UpdateFade::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_UpdateFade, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000010, "Member 'WBP_IntroSequence_C_UpdateFade::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_UpdateFade, CallFunc_MapRangeClamped_ReturnValue) == 0x000014, "Member 'WBP_IntroSequence_C_UpdateFade::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_UpdateFade, CallFunc_Less_FloatFloat_ReturnValue) == 0x000018, "Member 'WBP_IntroSequence_C_UpdateFade::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_UpdateFade, K2Node_Select_Default) == 0x00001C, "Member 'WBP_IntroSequence_C_UpdateFade::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_IntroSequence_C_UpdateFade;
 
 // Function WBP_IntroSequence.WBP_IntroSequence_C.OnKeyDown
 // 0x01E0 (0x01E0 - 0x0000)
@@ -107,12 +83,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0128(0x00B8)()
 };
-static_assert(alignof(WBP_IntroSequence_C_OnKeyDown) == 0x000008, "Wrong alignment on WBP_IntroSequence_C_OnKeyDown");
-static_assert(sizeof(WBP_IntroSequence_C_OnKeyDown) == 0x0001E0, "Wrong size on WBP_IntroSequence_C_OnKeyDown");
-static_assert(offsetof(WBP_IntroSequence_C_OnKeyDown, MyGeometry) == 0x000000, "Member 'WBP_IntroSequence_C_OnKeyDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_OnKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_IntroSequence_C_OnKeyDown::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_OnKeyDown, ReturnValue) == 0x000070, "Member 'WBP_IntroSequence_C_OnKeyDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_OnKeyDown, CallFunc_Handled_ReturnValue) == 0x000128, "Member 'WBP_IntroSequence_C_OnKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_IntroSequence_C_OnKeyDown;
 
 // Function WBP_IntroSequence.WBP_IntroSequence_C.OnMouseButtonDown
 // 0x0218 (0x0218 - 0x0000)
@@ -124,12 +95,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
 };
-static_assert(alignof(WBP_IntroSequence_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_IntroSequence_C_OnMouseButtonDown");
-static_assert(sizeof(WBP_IntroSequence_C_OnMouseButtonDown) == 0x000218, "Wrong size on WBP_IntroSequence_C_OnMouseButtonDown");
-static_assert(offsetof(WBP_IntroSequence_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_IntroSequence_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_IntroSequence_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'WBP_IntroSequence_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_OnMouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'WBP_IntroSequence_C_OnMouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_IntroSequence_C_OnMouseButtonDown;
 
 // Function WBP_IntroSequence.WBP_IntroSequence_C.OnMouseButtonDoubleClick
 // 0x0218 (0x0218 - 0x0000)
@@ -141,12 +107,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
 };
-static_assert(alignof(WBP_IntroSequence_C_OnMouseButtonDoubleClick) == 0x000008, "Wrong alignment on WBP_IntroSequence_C_OnMouseButtonDoubleClick");
-static_assert(sizeof(WBP_IntroSequence_C_OnMouseButtonDoubleClick) == 0x000218, "Wrong size on WBP_IntroSequence_C_OnMouseButtonDoubleClick");
-static_assert(offsetof(WBP_IntroSequence_C_OnMouseButtonDoubleClick, InMyGeometry) == 0x000000, "Member 'WBP_IntroSequence_C_OnMouseButtonDoubleClick::InMyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_OnMouseButtonDoubleClick, InMouseEvent) == 0x000038, "Member 'WBP_IntroSequence_C_OnMouseButtonDoubleClick::InMouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_OnMouseButtonDoubleClick, ReturnValue) == 0x0000A8, "Member 'WBP_IntroSequence_C_OnMouseButtonDoubleClick::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_OnMouseButtonDoubleClick, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'WBP_IntroSequence_C_OnMouseButtonDoubleClick::CallFunc_Handled_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_IntroSequence_C_OnMouseButtonDoubleClick;
 
 // Function WBP_IntroSequence.WBP_IntroSequence_C.NextSequence
 // 0x0018 (0x0018 - 0x0000)
@@ -159,12 +120,7 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_IntroSequence_C_NextSequence) == 0x000008, "Wrong alignment on WBP_IntroSequence_C_NextSequence");
-static_assert(sizeof(WBP_IntroSequence_C_NextSequence) == 0x000018, "Wrong size on WBP_IntroSequence_C_NextSequence");
-static_assert(offsetof(WBP_IntroSequence_C_NextSequence, CallFunc_GetWindowManager_ReturnValue) == 0x000000, "Member 'WBP_IntroSequence_C_NextSequence::CallFunc_GetWindowManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_NextSequence, Temp_int_Variable) == 0x000008, "Member 'WBP_IntroSequence_C_NextSequence::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_NextSequence, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_IntroSequence_C_NextSequence::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_IntroSequence_C_NextSequence, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_IntroSequence_C_NextSequence::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_IntroSequence_C_NextSequence;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_DamageType_Explosion.BP_DamageType_Explosion_C
 // 0x0000 (0x0048 - 0x0048)
@@ -23,15 +22,17 @@ class UBP_DamageType_Explosion_C : public UDamageType_Explosion
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DamageType_Explosion_C">();
+		BP_STATIC_CLASS_IMPL("BP_DamageType_Explosion_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DamageType_Explosion_C")
 	}
 	static class UBP_DamageType_Explosion_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_DamageType_Explosion_C>();
 	}
 };
-static_assert(alignof(UBP_DamageType_Explosion_C) == 0x000008, "Wrong alignment on UBP_DamageType_Explosion_C");
-static_assert(sizeof(UBP_DamageType_Explosion_C) == 0x000048, "Wrong size on UBP_DamageType_Explosion_C");
+DUMPER7_ASSERTS_UBP_DamageType_Explosion_C;
 
-}
-
+SDK_NAMESPACE_END

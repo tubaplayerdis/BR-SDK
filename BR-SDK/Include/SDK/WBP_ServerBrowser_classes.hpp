@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ServerBrowser.WBP_ServerBrowser_C
 // 0x0018 (0x02C0 - 0x02A8)
@@ -35,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ServerBrowser_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ServerBrowser_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ServerBrowser_C")
 	}
 	static class UWBP_ServerBrowser_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ServerBrowser_C>();
 	}
 };
-static_assert(alignof(UWBP_ServerBrowser_C) == 0x000008, "Wrong alignment on UWBP_ServerBrowser_C");
-static_assert(sizeof(UWBP_ServerBrowser_C) == 0x0002C0, "Wrong size on UWBP_ServerBrowser_C");
-static_assert(offsetof(UWBP_ServerBrowser_C, UberGraphFrame) == 0x0002A8, "Member 'UWBP_ServerBrowser_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_C, RefreshButton) == 0x0002B0, "Member 'UWBP_ServerBrowser_C::RefreshButton' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_C, JoinButton) == 0x0002B8, "Member 'UWBP_ServerBrowser_C::JoinButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ServerBrowser_C;
 
-}
-
+SDK_NAMESPACE_END

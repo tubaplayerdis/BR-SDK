@@ -14,8 +14,7 @@
 #include "DLSSBlueprint_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DLSSBlueprint.DLSSLibrary.EnableDLAA
 // (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
@@ -585,5 +584,5 @@ void UDLSSLibrary::SetDLSSSharpness(float Sharpness)
 	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

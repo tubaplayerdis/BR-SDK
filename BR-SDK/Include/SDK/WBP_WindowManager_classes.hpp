@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_WindowManager.WBP_WindowManager_C
 // 0x0008 (0x03C8 - 0x03C0)
@@ -31,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_WindowManager_C">();
+		BP_STATIC_CLASS_IMPL("WBP_WindowManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_WindowManager_C")
 	}
 	static class UWBP_WindowManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_WindowManager_C>();
 	}
 };
-static_assert(alignof(UWBP_WindowManager_C) == 0x000008, "Wrong alignment on UWBP_WindowManager_C");
-static_assert(sizeof(UWBP_WindowManager_C) == 0x0003C8, "Wrong size on UWBP_WindowManager_C");
-static_assert(offsetof(UWBP_WindowManager_C, UberGraphFrame) == 0x0003C0, "Member 'UWBP_WindowManager_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_WindowManager_C;
 
-}
-
+SDK_NAMESPACE_END

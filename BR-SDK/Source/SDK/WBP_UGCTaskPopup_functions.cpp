@@ -14,8 +14,7 @@
 #include "WBP_UGCTaskPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_UGCTaskPopup.WBP_UGCTaskPopup_C.ExecuteUbergraph_WBP_UGCTaskPopup
 // (Final, UbergraphFunction)
@@ -92,5 +91,5 @@ void UWBP_UGCTaskPopup_C::UpdateProgress(float NewProgress)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

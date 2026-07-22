@@ -14,8 +14,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ZombieAIController.BP_ZombieAIController_C
 // 0x0008 (0x0338 - 0x0330)
@@ -31,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ZombieAIController_C">();
+		BP_STATIC_CLASS_IMPL("BP_ZombieAIController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ZombieAIController_C")
 	}
 	static class ABP_ZombieAIController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ZombieAIController_C>();
 	}
 };
-static_assert(alignof(ABP_ZombieAIController_C) == 0x000008, "Wrong alignment on ABP_ZombieAIController_C");
-static_assert(sizeof(ABP_ZombieAIController_C) == 0x000338, "Wrong size on ABP_ZombieAIController_C");
-static_assert(offsetof(ABP_ZombieAIController_C, UberGraphFrame) == 0x000330, "Member 'ABP_ZombieAIController_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ZombieAIController_C;
 
-}
-
+SDK_NAMESPACE_END

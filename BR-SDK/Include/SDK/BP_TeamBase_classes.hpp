@@ -13,8 +13,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_TeamBase.BP_TeamBase_C
 // 0x0000 (0x0268 - 0x0268)
@@ -23,15 +22,17 @@ class ABP_TeamBase_C final : public ATeamBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_TeamBase_C">();
+		BP_STATIC_CLASS_IMPL("BP_TeamBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_TeamBase_C")
 	}
 	static class ABP_TeamBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_TeamBase_C>();
 	}
 };
-static_assert(alignof(ABP_TeamBase_C) == 0x000008, "Wrong alignment on ABP_TeamBase_C");
-static_assert(sizeof(ABP_TeamBase_C) == 0x000268, "Wrong size on ABP_TeamBase_C");
+DUMPER7_ASSERTS_ABP_TeamBase_C;
 
-}
-
+SDK_NAMESPACE_END

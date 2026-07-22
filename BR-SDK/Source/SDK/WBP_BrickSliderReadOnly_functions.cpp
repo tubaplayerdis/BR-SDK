@@ -14,15 +14,14 @@
 #include "WBP_BrickSliderReadOnly_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_BrickSliderReadOnly.WBP_BrickSliderReadOnly_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_BrickSliderReadOnly_C::PreConstruct(bool IsDesignTime)
+void UWBP_BrickSliderReadOnly_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +30,7 @@ void UWBP_BrickSliderReadOnly_C::PreConstruct(bool IsDesignTime)
 
 	Params::WBP_BrickSliderReadOnly_C_PreConstruct Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -56,5 +55,5 @@ void UWBP_BrickSliderReadOnly_C::ExecuteUbergraph_WBP_BrickSliderReadOnly(int32 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

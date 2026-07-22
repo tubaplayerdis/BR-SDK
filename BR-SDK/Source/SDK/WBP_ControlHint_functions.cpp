@@ -14,8 +14,7 @@
 #include "WBP_ControlHint_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_ControlHint.WBP_ControlHint_C.ExecuteUbergraph_WBP_ControlHint
 // (Final, UbergraphFunction, HasDefaults)
@@ -96,5 +95,5 @@ void UWBP_ControlHint_C::SetIconSize(float NewSize)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

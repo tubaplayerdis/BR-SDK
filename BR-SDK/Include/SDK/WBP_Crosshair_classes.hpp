@@ -16,8 +16,7 @@
 #include "BrickRigs_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Crosshair.WBP_Crosshair_C
 // 0x0018 (0x02E0 - 0x02C8)
@@ -29,26 +28,25 @@ public:
 	class UBrickImage*                            WinchIcon;                                         // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void PlayHitAnimation(const struct FClientDamageInfo& DamageInfo);
-	void UpdateIsAttachingWinch(bool bNewAttaching);
-	void UpdateWinchAttachment(bool bBlockingHit, bool bWithinRange);
 	void ExecuteUbergraph_WBP_Crosshair(int32 EntryPoint);
+	void UpdateWinchAttachment(bool bBlockingHit, bool bWithinRange);
+	void UpdateIsAttachingWinch(bool bNewAttaching);
+	void PlayHitAnimation(const struct FClientDamageInfo& DamageInfo);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Crosshair_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Crosshair_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Crosshair_C")
 	}
 	static class UWBP_Crosshair_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Crosshair_C>();
 	}
 };
-static_assert(alignof(UWBP_Crosshair_C) == 0x000008, "Wrong alignment on UWBP_Crosshair_C");
-static_assert(sizeof(UWBP_Crosshair_C) == 0x0002E0, "Wrong size on UWBP_Crosshair_C");
-static_assert(offsetof(UWBP_Crosshair_C, UberGraphFrame) == 0x0002C8, "Member 'UWBP_Crosshair_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Crosshair_C, HitMarkerAnim) == 0x0002D0, "Member 'UWBP_Crosshair_C::HitMarkerAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_Crosshair_C, WinchIcon) == 0x0002D8, "Member 'UWBP_Crosshair_C::WinchIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Crosshair_C;
 
-}
-
+SDK_NAMESPACE_END

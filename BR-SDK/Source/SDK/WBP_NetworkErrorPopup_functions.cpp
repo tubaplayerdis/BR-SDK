@@ -14,8 +14,7 @@
 #include "WBP_NetworkErrorPopup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WBP_NetworkErrorPopup.WBP_NetworkErrorPopup_C.ExecuteUbergraph_WBP_NetworkErrorPopup
 // (Final, UbergraphFunction)
@@ -50,5 +49,5 @@ void UWBP_NetworkErrorPopup_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

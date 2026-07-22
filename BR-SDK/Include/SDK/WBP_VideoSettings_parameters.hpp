@@ -13,8 +13,8 @@
 #include "BrickRigs_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_VideoSettings.WBP_VideoSettings_C.ExecuteUbergraph_WBP_VideoSettings
 // 0x0070 (0x0070 - 0x0000)
@@ -37,19 +37,7 @@ public:
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBrickPropertyReflectionFilter         K2Node_MakeStruct_BrickPropertyReflectionFilter;   // 0x0050(0x0020)()
 };
-static_assert(alignof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings) == 0x000008, "Wrong alignment on WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings");
-static_assert(sizeof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings) == 0x000070, "Wrong size on WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, EntryPoint) == 0x000000, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, CallFunc_Get_ReturnValue) == 0x000008, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::CallFunc_Get_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, CallFunc_GetMenuWidget_ReturnValue) == 0x000010, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::CallFunc_GetMenuWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, K2Node_Event_bCanApply) == 0x000028, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::K2Node_Event_bCanApply' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, CallFunc_CreateApplyButton_ReturnValue) == 0x000030, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::CallFunc_CreateApplyButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, K2Node_CustomEvent_Result) == 0x000038, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000039, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, CallFunc_GetMenuWidget_ReturnValue_1) == 0x000040, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::CallFunc_GetMenuWidget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, CallFunc_StepBack_ReturnValue) == 0x000048, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::CallFunc_StepBack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings, K2Node_MakeStruct_BrickPropertyReflectionFilter) == 0x000050, "Member 'WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings::K2Node_MakeStruct_BrickPropertyReflectionFilter' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_VideoSettings_C_ExecuteUbergraph_WBP_VideoSettings;
 
 // Function WBP_VideoSettings.WBP_VideoSettings_C.OnSaveSettingsPopupClosed
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +46,7 @@ struct WBP_VideoSettings_C_OnSaveSettingsPopupClosed final
 public:
 	EPopupResult                                  Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_VideoSettings_C_OnSaveSettingsPopupClosed) == 0x000001, "Wrong alignment on WBP_VideoSettings_C_OnSaveSettingsPopupClosed");
-static_assert(sizeof(WBP_VideoSettings_C_OnSaveSettingsPopupClosed) == 0x000001, "Wrong size on WBP_VideoSettings_C_OnSaveSettingsPopupClosed");
-static_assert(offsetof(WBP_VideoSettings_C_OnSaveSettingsPopupClosed, Result) == 0x000000, "Member 'WBP_VideoSettings_C_OnSaveSettingsPopupClosed::Result' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_VideoSettings_C_OnSaveSettingsPopupClosed;
 
 // Function WBP_VideoSettings.WBP_VideoSettings_C.UpdateApplyButton
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +55,7 @@ struct WBP_VideoSettings_C_UpdateApplyButton final
 public:
 	bool                                          bCanApply;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_VideoSettings_C_UpdateApplyButton) == 0x000001, "Wrong alignment on WBP_VideoSettings_C_UpdateApplyButton");
-static_assert(sizeof(WBP_VideoSettings_C_UpdateApplyButton) == 0x000001, "Wrong size on WBP_VideoSettings_C_UpdateApplyButton");
-static_assert(offsetof(WBP_VideoSettings_C_UpdateApplyButton, bCanApply) == 0x000000, "Member 'WBP_VideoSettings_C_UpdateApplyButton::bCanApply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_VideoSettings_C_UpdateApplyButton;
 
 // Function WBP_VideoSettings.WBP_VideoSettings_C.StepBack
 // 0x0030 (0x0030 - 0x0000)
@@ -88,16 +72,7 @@ public:
 	bool                                          CallFunc_OpenMessagePopup_ReturnValue;             // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_AreVideoSettingsDirty_ReturnValue;        // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_VideoSettings_C_StepBack) == 0x000008, "Wrong alignment on WBP_VideoSettings_C_StepBack");
-static_assert(sizeof(WBP_VideoSettings_C_StepBack) == 0x000030, "Wrong size on WBP_VideoSettings_C_StepBack");
-static_assert(offsetof(WBP_VideoSettings_C_StepBack, ReturnValue) == 0x000000, "Member 'WBP_VideoSettings_C_StepBack::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_StepBack, CallFunc_GetGameInstance_ReturnValue) == 0x000008, "Member 'WBP_VideoSettings_C_StepBack::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_StepBack, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_VideoSettings_C_StepBack::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_StepBack, K2Node_DynamicCast_AsBrick_Game_Instance) == 0x000020, "Member 'WBP_VideoSettings_C_StepBack::K2Node_DynamicCast_AsBrick_Game_Instance' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_StepBack, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_VideoSettings_C_StepBack::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_StepBack, CallFunc_StepBack_ReturnValue) == 0x000029, "Member 'WBP_VideoSettings_C_StepBack::CallFunc_StepBack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_StepBack, CallFunc_OpenMessagePopup_ReturnValue) == 0x00002A, "Member 'WBP_VideoSettings_C_StepBack::CallFunc_OpenMessagePopup_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VideoSettings_C_StepBack, CallFunc_AreVideoSettingsDirty_ReturnValue) == 0x00002B, "Member 'WBP_VideoSettings_C_StepBack::CallFunc_AreVideoSettingsDirty_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_VideoSettings_C_StepBack;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

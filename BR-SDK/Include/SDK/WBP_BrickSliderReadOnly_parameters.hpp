@@ -11,19 +11,17 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WBP_BrickSliderReadOnly.WBP_BrickSliderReadOnly_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_BrickSliderReadOnly_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_BrickSliderReadOnly_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_BrickSliderReadOnly_C_PreConstruct");
-static_assert(sizeof(WBP_BrickSliderReadOnly_C_PreConstruct) == 0x000001, "Wrong size on WBP_BrickSliderReadOnly_C_PreConstruct");
-static_assert(offsetof(WBP_BrickSliderReadOnly_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_BrickSliderReadOnly_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BrickSliderReadOnly_C_PreConstruct;
 
 // Function WBP_BrickSliderReadOnly.WBP_BrickSliderReadOnly_C.ExecuteUbergraph_WBP_BrickSliderReadOnly
 // 0x0008 (0x0008 - 0x0000)
@@ -33,10 +31,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_BrickSliderReadOnly_C_ExecuteUbergraph_WBP_BrickSliderReadOnly) == 0x000004, "Wrong alignment on WBP_BrickSliderReadOnly_C_ExecuteUbergraph_WBP_BrickSliderReadOnly");
-static_assert(sizeof(WBP_BrickSliderReadOnly_C_ExecuteUbergraph_WBP_BrickSliderReadOnly) == 0x000008, "Wrong size on WBP_BrickSliderReadOnly_C_ExecuteUbergraph_WBP_BrickSliderReadOnly");
-static_assert(offsetof(WBP_BrickSliderReadOnly_C_ExecuteUbergraph_WBP_BrickSliderReadOnly, EntryPoint) == 0x000000, "Member 'WBP_BrickSliderReadOnly_C_ExecuteUbergraph_WBP_BrickSliderReadOnly::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_BrickSliderReadOnly_C_ExecuteUbergraph_WBP_BrickSliderReadOnly, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_BrickSliderReadOnly_C_ExecuteUbergraph_WBP_BrickSliderReadOnly::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BrickSliderReadOnly_C_ExecuteUbergraph_WBP_BrickSliderReadOnly;
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END
