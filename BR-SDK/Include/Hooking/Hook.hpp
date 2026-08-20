@@ -24,32 +24,32 @@ class Hook;
 /// @tparam Ret Return type of the function to Hook.
 /// @tparam Args Arguments of the function to Hook.
 template <typename Ret, typename... Args>
-class Hook<Ret(Args...)> final
+class Hook<Ret(Args...)> final : public Function<Ret(Args...)>
 {
 public:
 
 	/// Creates a Hook object using the specified BR-SDK compatible signature.
 	/// @param signature BR-SDK compatible signature. See UsingBRSDK.MD Signature Formatting
 	/// @param hookFunc Valid trampoline function pointer matching the signature specified in the Hook objects template signature.
-	Hook(const char* signature, Ret (*hookFunc)(Args...));
+	Hook(const char* signature, Ret (*hookFunc)(Args...)) noexcept;
 
 	/// Creates a Hook object using the specified BR-SDK compatible signature.
 	/// @param signature BR-SDK Signature. See UsingBRSDK.MD Signature Formatting
 	/// @param hookFunc Valid trampoline function pointer matching the signature specified in the Hook objects template signature.
-	Hook(const Signature& signature, Ret (*hookFunc)(Args...));
+	Hook(const Signature& signature, Ret (*hookFunc)(Args...)) noexcept;
 
 	/// Creates a Hook object using the specified address and trampoline function. Does not register the Hook with MinHook. Use Create() to register with MinHook.
 	/// @param address Address of the function to hook.
 	/// @param hookFunc Valid trampoline function pointer matching the signature specified in the Hook objects template signature.
-	Hook(unsigned long long address, Ret(__fastcall* hookFunc)(Args...));
+	Hook(unsigned long long address, Ret(__fastcall* hookFunc)(Args...)) noexcept;
 
 	/// Creates a Hook object using the specified function pointer and trampoline function. Does not register the Hook with MinHook. For VTable entries use reinterpret_cast<Ret(__fastcall*)(Args...)>(vtable[index]).
 	/// @param pointer Function pointer of the specified signature in the Hook objects template signature.
 	/// @param hookFunc Valid trampoline function pointer matching the signature specified in the Hook objects template signature.
-	Hook(Ret(__fastcall* pointer)(Args...), Ret(__fastcall* hookFunc)(Args...));
+	Hook(Ret(__fastcall* pointer)(Args...), Ret(__fastcall* hookFunc)(Args...)) noexcept;
 
 	/// Explicit deconstructor for Hook. Disables then removes the Hook with MinHook. It is suggested to call Disable() or HOOK_DISABLE() instead of calling this if using the HOOK() macro to define the Hook.
-	~Hook();
+	virtual ~Hook();
 
 	Hook(const Hook&)						= delete;
 	Hook& operator=(const Hook&)			= delete;
@@ -57,10 +57,9 @@ public:
 	Hook& operator=(Hook&& other) noexcept  = delete;
 
 private:
-	bool Enabled;
-	bool Initialized;
+	std::atomic_bool Enabled;
+	std::atomic_bool Initialized;
 
-	Signature FunctionSignature;
 	using FunctionT = Ret(__fastcall*)(Args...);
 
 	/// Initializes the Hook with MinHook and Searches patterns if necessary.
@@ -92,17 +91,31 @@ public:
 	/// @return The return type defined in the Hook objects template signature
 	Ret CallOriginalFunction(Args... args);
 
+	Ret CallOriginal(Args... args)
+	{
+		return CallOriginalFunction(args...);
+	}
+
+	// Calls the hooked function variant. Should also result in the () operator calling the Call() on Hook
+	Ret Call(Args... args) override;
+
 	/// Whether the Hook has been registered with MinHook
 	/// @return Initialization state of the Hook in respect to its MinHook registration.
 	bool IsInitialized();
 
+	/// Whether the Hook has been Created.
+	/// @return Initialization state of the Hook in respect to its MinHook registration.
+	bool IsCreated() { return IsInitialized(); }
+
 	/// Whether the Hook is enabled
 	/// @return Enabled state of the Hook.
 	bool IsEnabled();
+
+	void Toggle(bool toggle);
 };
 
 template <typename Ret, typename ... Args>
-Hook<Ret(Args...)>::Hook(const char* signature, Ret(* hookFunc)(Args...)) : FunctionSignature(signature)
+Hook<Ret(Args...)>::Hook(const char* signature, Ret(* hookFunc)(Args...)) noexcept : Function<Ret(Args...)>(signature)
 {
 	Enabled = false;
 	Initialized = false;
@@ -111,7 +124,7 @@ Hook<Ret(Args...)>::Hook(const char* signature, Ret(* hookFunc)(Args...)) : Func
 }
 
 template<typename Ret, typename ...Args>
-Hook<Ret(Args...)>::Hook(const Signature& signature, Ret(__fastcall* hookFunc)(Args...)) : FunctionSignature(signature)
+Hook<Ret(Args...)>::Hook(const Signature& signature, Ret(* hookFunc)(Args...)) noexcept : Function<Ret(Args...)>(signature)
 {
 	Enabled = false;
 	Initialized = false;
@@ -120,7 +133,7 @@ Hook<Ret(Args...)>::Hook(const Signature& signature, Ret(__fastcall* hookFunc)(A
 }
 
 template<typename Ret, typename ...Args>
-Hook<Ret(Args...)>::Hook(unsigned long long addr, Ret(__fastcall* hookFunc)(Args...)) : FunctionSignature(addr)
+Hook<Ret(Args...)>::Hook(unsigned long long addr, Ret(* hookFunc)(Args...)) noexcept : Function<Ret(Args...)>(addr)
 {
 	Enabled = false;
 	Initialized = false;
@@ -129,7 +142,7 @@ Hook<Ret(Args...)>::Hook(unsigned long long addr, Ret(__fastcall* hookFunc)(Args
 }
 
 template<typename Ret, typename ...Args>
-Hook<Ret(Args...)>::Hook(Ret(__fastcall* pointer)(Args...), Ret(__fastcall* hookFunc)(Args...)) : FunctionSignature(reinterpret_cast<unsigned long long>(pointer))
+Hook<Ret(Args...)>::Hook(Ret(__fastcall* pointer)(Args...), Ret(* hookFunc)(Args...)) noexcept : Function<Ret(Args...)>(reinterpret_cast<unsigned long long>(pointer))
 {
 	Enabled = false;
 	Initialized = false;
@@ -147,9 +160,9 @@ Hook<Ret(Args...)>::~Hook()
 
 template<typename Ret, typename ...Args>
 bool Hook<Ret(Args...)>::Init() {
-	if (Initialized) return false;
-	if (FunctionSignature.GetPtr() == 0) return false;
-	MH_STATUS ret = MH_CreateHook((LPVOID)FunctionSignature.GetPtr(), HookedFunction, (void**)&OriginalFunction);
+	if (Initialized) return true;
+	if (this->GetPtr() == 0) return false;
+	MH_STATUS ret = MH_CreateHook((LPVOID)this->GetPtr(), HookedFunction, (void**)&OriginalFunction);
 	Initialized = ret == MH_OK;
 	return ret == MH_OK;
 }
@@ -166,7 +179,7 @@ void Hook<Ret(Args...)>::Enable()
 {
 	if (!Initialized) Create();
 	if (!Initialized || Enabled) return;
-	MH_QueueEnableHook((LPVOID)FunctionSignature.GetPtr());
+	MH_QueueEnableHook(this->GetPtr());
 	MH_ApplyQueued();
 	Enabled = true;
 }
@@ -175,7 +188,7 @@ template<typename Ret, typename ...Args>
 void Hook<Ret(Args...)>::Disable()
 {
 	if (!Initialized || !Enabled) return;
-	MH_QueueDisableHook((LPVOID)FunctionSignature.GetPtr());
+	MH_QueueDisableHook(this->GetPtr());
 	MH_ApplyQueued();
 	Enabled = false;
 }
@@ -185,7 +198,7 @@ void Hook<Ret(Args...)>::Destroy()
 {
 	if (!Initialized) return;
 	if (!Enabled) Disable();
-	MH_RemoveHook((LPVOID)FunctionSignature.GetPtr());
+	MH_RemoveHook(this->GetPtr());
 	Initialized = false;
 	Enabled = false;
 }
@@ -195,6 +208,13 @@ Ret Hook<Ret(Args...)>::CallOriginalFunction(Args ...args)
 {
 	assert(OriginalFunction != nullptr);
 	return OriginalFunction(std::forward<Args>(args)...);
+}
+
+template<typename Ret, typename ...Args>
+Ret Hook<Ret(Args...)>::Call(Args ...args) override
+{
+	assert(HookedFunction != nullptr);
+	return HookedFunction(std::forward<Args>(args)...);
 }
 
 template<typename Ret, typename ...Args>
@@ -208,3 +228,11 @@ bool Hook<Ret(Args...)>::IsEnabled()
 {
 	return Enabled;
 }
+
+template<typename Ret, typename ...Args>
+void Hook<Ret(Args...)>::Toggle(bool toggle)
+{
+	if (toggle) Enable();
+	else Disable();
+}
+

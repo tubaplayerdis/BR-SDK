@@ -157,6 +157,7 @@
     <ClInclude Include="Include\Hooking\MinHook\MinHook.h" />
     <ClInclude Include="Include\Hooking\MinHook\trampoline.h" />
     <ClInclude Include="Include\Hooking\Signature.hpp" />
+    <ClInclude Include="Include\Hooking\UHook.hpp" />
     <ClInclude Include="Include\SDK\ABP_Character_classes.hpp" />
     <ClInclude Include="Include\SDK\ABP_Character_Fluppism_classes.hpp" />
     <ClInclude Include="Include\SDK\ABP_Character_Fluppism_parameters.hpp" />
@@ -1399,6 +1400,7 @@
     <ClCompile Include="Source\Hooking\MinHook\hook.c" />
     <ClCompile Include="Source\Hooking\MinHook\trampoline.c" />
     <ClCompile Include="Source\Hooking\Signature.cpp" />
+    <ClCompile Include="Source\Hooking\UHook.cpp" />
     <ClCompile Include="Source\SDK\ABP_Character_Fluppism_functions.cpp" />
     <ClCompile Include="Source\SDK\ABP_Character_functions.cpp" />
     <ClCompile Include="Source\SDK\ABP_Character_RC_functions.cpp" />

@@ -369,7 +369,6 @@
 #include "SDK/BP_Trapezoid_2x1x1_classes.hpp"
 #include "SDK/BP_GameInstance_classes.hpp"
 #include "SDK/WBP_RestrictedArea_classes.hpp"
-#include "SDK/BP_CL_ModHook_classes.hpp"
 #include "SDK/BP_Nitro_classes.hpp"
 #include "SDK/P_YellowCircles_classes.hpp"
 #include "SDK/P_Warning_Red_classes.hpp"

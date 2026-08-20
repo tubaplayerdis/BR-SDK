@@ -10,6 +10,7 @@
 
 #define VC_EXTRALEAN
 #define WIN32_LEAN_AND_MEAN
+#include "../Utils/GameFunctions.hpp"
 
 
 /*
@@ -1210,6 +1211,33 @@ public:
 	uint8                                         Pad_48[0x4];                                       // 0x0048(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Offset;                                            // 0x004C(0x0004)(NOT AUTO-GENERATED PROPERTY)
 	uint8                                         Pad_50[0x28];                                      // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+	void InitializeValue(void* Value)
+	{
+		CallVTableFunction<void, void*>(0xF8, this, Value);
+	}
+
+	bool HasAnyPropertyFlags(EPropertyFlags Flags)
+	{
+		return (Flags & static_cast<EPropertyFlags>(PropertyFlags));
+	}
+
+	void CopyCompleteValue(void* Value, const void* NewValue)
+	{
+		CallVTableFunction<void, void*, const void*>(0xD0, this, Value, NewValue);
+	}
+
+	FProperty* GetPropertyLinkNext()
+	{
+		return GetMember<FProperty*>(this, 0x58);
+	}
+
+	template<typename ValueType>
+	ValueType* ContainerPtrToValuePtr(void* ContainerPtr, int32 ArrayIndex = 0) const
+	{
+		int Offset_Internal = GetMember<int>(const_cast<FProperty*>(this), 0x4C);
+		return (ValueType*)ContainerPtr + Offset_Internal + ElementSize * ArrayIndex;
+	}
 };
 DUMPER7_ASSERTS_FProperty;
 

@@ -6,13 +6,13 @@ To Install the BR-SDK, first create a new solution and project using the **Dynam
 
 ### Installing files
 
-First, go  the [BR-SDK GitHub](https://github.com/tubaplayerdis/BR-SDK) and **download** the latest release source code **ALONG WITH** `BR-SDK_Debug.lib` **AND** `BR-SDK-Release.lib`. Save the zip file somewhere for the source code that will not get deleted.
+First, go  the [BR-SDK GitHub](https://github.com/tubaplayerdis/BR-SDK) and **download** the latest release's `BR-SDK_FULL.zip`. There should be an `Include` folder and a `Lib` folder
 
 Next, go to the same folder where your **solution file** (.sln) is located for your project and **create** a folder named `Include`.
 
 add the picture
 
-Next, navigate into the Include folder and extract the `Include` folder under BR-SDK/Include in BR-SDK.zip into the `Include` **folder in your solution**. Rename the BR-SDK-main to BR-SDK
+Next, navigate into the Include folder and extract the `Include` folder from BR-SDK.zip into the `Include` **folder in your solution**. Rename the BR-SDK-main to BR-SDK
 
 Your Include directory should look like this:
 
@@ -35,9 +35,9 @@ Open up your Visual Studio project and **Right Click** the project and then open
 
 ### Linking the BR-SDK
 
-First, create a folder in your solution called Lib.
+First, create a folder in your solution directory (not a solution folder) called Lib.
 
-Next, drag and drop `BR-SDK_Debug.lib` and `BR-SDK_Release.lib` into the `Lib` folder.
+Next, extract `BR-SDK_Debug.lib` and `BR-SDK_Release.lib` from the zip file's `Lib` folder into your projects `Lib` folder.
 
 **Repeat the following steps for the x64 Release and x64 Debug build options with the appropriate suffixes on the .lib binaries**
 

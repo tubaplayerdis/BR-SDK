@@ -387,6 +387,27 @@ public:
 	FNativeFuncPtr                                ExecFunction;                                      // 0x00D8(0x0008)(NOT AUTO-GENERATED PROPERTY)
 
 public:
+
+	FProperty* GetPropertyLink()
+	{
+		return GetMember<FProperty*>(this, 0x70);
+	}
+
+	int8 GetNumParams()
+	{
+		return GetMember<int8>(this, 0xB4);
+	}
+
+	int16 GetParamSize()
+	{
+		return GetMember<int16>(this, 0xB6);
+	}
+
+	int16 GetReturnValOffset()
+	{
+		return GetMember<int16>(this, 0xB8);
+	}
+
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("Function")

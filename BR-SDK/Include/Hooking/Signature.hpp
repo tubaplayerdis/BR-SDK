@@ -11,6 +11,7 @@
 /*----------------------------------------------------------------------------*/
 
 #pragma once
+#include <iostream>
 #include <string>
 /**
     * @brief Signature class with caching functionality.
@@ -27,13 +28,13 @@ public:
      * @note THIS WILL NOT WORK IF A HOOK HAS BEEN REGISTERED FOR THIS FUNCTION BEFOREHAND. Use the CallOriginal() function on the hook.
      * @param signature Signature of the function. Uses the format: "48 89 7C 24 ?? 41 56 48 83 EC ?? 48 8B FA 4C 8B F1 E8 ?? ?? ?? ??".
      */
-    explicit Signature(const char* signature);
+    explicit Signature(const char* signature) noexcept;
 
     /**
      * @brief Creates an address only signature. For use by Hook class.
      * @param address The address of the function.
      */
-    explicit Signature(std::uintptr_t address);
+    explicit Signature(std::uintptr_t address) noexcept;
 
     /**
      * @brief Resolves the signature to a function pointer.
@@ -47,4 +48,41 @@ public:
      */
     std::string GetSig() const;
 
+};
+
+template <typename>
+class Function;
+
+template <typename Ret, typename... Args>
+class Function<Ret(Args...)> : Signature
+{
+public:
+    Function(uintptr_t ptr) noexcept : Signature(ptr)
+    {
+        if (GetPtr() == 0) std::cerr << "UNRESOLVED SIG: " << GetSig() << std::endl;
+    }
+
+    Function(const char* ptr) noexcept : Signature(ptr)
+    {
+        if (GetPtr() == 0) std::cerr << "UNRESOLVED SIG: " << GetSig() << std::endl;
+    }
+
+    Function(Signature sig) noexcept : Signature(sig)
+    {
+        if (GetPtr() == 0) std::cerr << "UNRESOLVED SIG: " << GetSig() << std::endl;
+    }
+
+    virtual Ret Call(Args... args)
+    {
+        using FunctionFn = Ret(__fastcall*)(Args...);
+        FunctionFn OnFunction = reinterpret_cast<FunctionFn>(GetPtr());
+        return OnFunction(std::forward<Args>(args)...);
+    }
+
+    Ret operator()(Args... args)
+    {
+        return Call(args...);
+    }
+
+    virtual ~Function() noexcept = default;
 };
