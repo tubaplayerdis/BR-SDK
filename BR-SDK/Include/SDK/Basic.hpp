@@ -1222,9 +1222,14 @@ public:
 		return (Flags & static_cast<EPropertyFlags>(PropertyFlags));
 	}
 
-	void CopyCompleteValue(void* Value, const void* NewValue)
+	void CopyCompleteValueToScriptVM(void* Value, const void* NewValue)
 	{
 		CallVTableFunction<void, void*, const void*>(0xD0, this, Value, NewValue);
+	}
+
+	void CopyCompleteValueFromScriptVM(void* Value, const void* NewValue)
+	{
+		CallVTableFunction<void, void*, const void*>(0xE0, this, Value, NewValue);
 	}
 
 	FProperty* GetPropertyLinkNext()

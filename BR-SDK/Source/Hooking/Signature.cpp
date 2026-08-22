@@ -203,13 +203,13 @@ namespace
 	}
 }
 
-Signature::Signature(const char* signature)
+Signature::Signature(const char* signature) noexcept
 {
 	Sig = std::string(signature);
 	ResolveSignature(signature);
 }
 
-Signature::Signature(std::uintptr_t address)
+Signature::Signature(std::uintptr_t address) noexcept
 {
 	if (!Cache)
 	{

@@ -15,6 +15,7 @@ namespace
     }
 }
 
+//TODO: Verify Signatures
 namespace
 {
     auto F_GetStackTrace =           Function<SDK::FString*(FFrame* This, SDK::FString* result)>("40 55 41 56 41 57 48 8B");
@@ -97,7 +98,12 @@ void UHook::Disable()
     if (!Set() || Disabled()) return;
     if (!HadFlag)
     {
-        //TODO: Flag operators were not defined use our own
+        UEFunction->FunctionFlags = static_cast<SDK::EFunctionFlags>(static_cast<int>(UEFunction->FunctionFlags) & ~static_cast<int>(SDK::EFunctionFlags::Native));
     }
     UEFunction->ExecFunction = Original;
+}
+
+void UHook::CallOriginal(SDK::UObject* Context, FFrame* TheStack, void* Result)
+{
+    Original(Context, TheStack, Result);
 }

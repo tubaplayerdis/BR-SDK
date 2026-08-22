@@ -1,7 +1,6 @@
 #pragma once
 #include "Basic.hpp"
 #include "CoreUObject_classes.hpp"
-#include "Signature.hpp"
 #include "../Utils/GameFunctions.hpp"
 
 enum ELogVerbosity : UC::int8
@@ -142,7 +141,7 @@ struct __declspec(align(8)) FFrame : FOutputDevice
             ++Code;
             if (ExpectedProperty)
             {
-                ExpectedProperty->CopyCompleteValue(
+                ExpectedProperty->CopyCompleteValueToScriptVM(
                     &Value,
                     ExpectedProperty->ContainerPtrToValuePtr<void>(Locals));
             }
@@ -208,7 +207,7 @@ struct __declspec(align(8)) FFrame : FOutputDevice
     void SetReturn(void* Z_Param__Result, const T& Value)
     {
         if (SDK::FProperty* RetProp = GetReturnProperty())
-            RetProp->CopyCompleteValue(Z_Param__Result, (void*)&Value);
+            RetProp->CopyCompleteValueFromScriptVM(Z_Param__Result, (void*)&Value); // was CopyCompleteValue
     }
 
     // --- Out-parameter write-back ----------------------------------------------
@@ -228,10 +227,8 @@ struct __declspec(align(8)) FFrame : FOutputDevice
     bool WriteOutParam(SDK::FProperty* Property, const T& Value)
     {
         void* Addr = FindOutParmAddress(Property);
-        if (!Addr)
-            return false;
-
-        Property->CopyCompleteValue(Addr, (void*)&Value);
+        if (!Addr) return false;
+        Property->CopyCompleteValueFromScriptVM(Addr, (void*)&Value); // was CopyCompleteValue
         return true;
     }
 };
@@ -240,7 +237,6 @@ static_assert(sizeof(FFrame) == 0x98, "FFrame size mismatch");
 class UHook
 {
 public:
-    //TODO: Make helper functions with these to get params.
 
     using ExecFunc = void (*)(SDK::UObject* Context, FFrame* TheStack, void* Result);
 
@@ -264,6 +260,8 @@ public:
     {
         bToggle ? Enable() : Disable();
     }
+
+    void CallOriginal(SDK::UObject* Context, FFrame* TheStack, void* Result);
 
     static UC::int8 GetNumParams(SDK::UFunction* Function)
     {
