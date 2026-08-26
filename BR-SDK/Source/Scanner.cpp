@@ -1,3 +1,4 @@
+#include <chrono>
 #include "Basic.hpp"
 #include "Engine_classes.hpp"
 #include "../Include/Hooking/Hook.hpp"
@@ -36,6 +37,7 @@ int32 SDK::Offsets::GObjects()
             Sleep(10);
         }
     }
+    if (O_GObjects == 0) std::cerr << "GObjects offset NOT FOUND" << std::endl;
     return O_GObjects;
 }
 
@@ -45,19 +47,44 @@ int32 SDK::Offsets::AppendString()
     {
         O_AppendString = static_cast<int32>(Signature(APPEND_STRING_SIG).GetPtr() - InSDKUtils::GetImageBase());
     }
+    if (O_AppendString == 0) std::cerr << "AppendString offset NOT FOUND" << std::endl;
     return O_AppendString;
 }
 
 int32 SDK::Offsets::GNames()
 {
-    //TODO: Implement
-    return 0x049FA580;
+    if (O_GNames == 0)
+    {
+        uintptr_t AppendStringAddr = InSDKUtils::GetImageBase() + AppendString();
+        uint8_t* Bytes = reinterpret_cast<uint8_t*>(AppendStringAddr);
+
+        constexpr int ScanRange = 0x80; // GNames lea shows up ~0x39 bytes in, plenty of headroom
+
+        for (int i = 0; i < ScanRange - 7; i++)
+        {
+            // lea rcx, [rip+X]  -> 48 8D 0D
+            // lea r8,  [rip+X]  -> 4C 8D 05
+            bool IsLeaRcx = Bytes[i] == 0x48 && Bytes[i + 1] == 0x8D && Bytes[i + 2] == 0x0D;
+            bool IsLeaR8  = Bytes[i] == 0x4C && Bytes[i + 1] == 0x8D && Bytes[i + 2] == 0x05;
+
+            if (!IsLeaRcx && !IsLeaR8)
+                continue;
+
+            int32_t RelOffset = *reinterpret_cast<int32_t*>(&Bytes[i + 3]);
+            uintptr_t InstrEnd = AppendStringAddr + i + 7; // lea reg, [rip+disp32] is always 7 bytes here
+            uintptr_t GNamesAddr = InstrEnd + RelOffset;
+
+            O_GNames = static_cast<int32>(GNamesAddr - InSDKUtils::GetImageBase());
+            break;
+        }
+    }
+    if (O_GNames == 0) std::cerr << "GNames offset NOT FOUND" << std::endl;
+    return O_GNames;
 }
 
 int32 SDK::Offsets::GWorld()
 {
     using namespace SDK;
-    return 0x04B7A1F8;
     for (int i = 0; i < UObject::GObjects->Num(); i++)
     {
         UObject* Obj = UObject::GObjects->GetByIndex(i);
@@ -105,6 +132,8 @@ int32 SDK::Offsets::GWorld()
             O_GWorld = Platform::GetOffset(Result);
         }
     }
+    if (O_GWorld == 0) std::cerr << "GWorld offset NOT FOUND" << std::endl;
+    return O_GWorld;
 }
 
 int32 SDK::Offsets::ProcessEvent()
@@ -113,10 +142,38 @@ int32 SDK::Offsets::ProcessEvent()
     {
         O_ProcessEvent = static_cast<int32>(Signature(PROCESS_EVENT_SIG).GetPtr() - InSDKUtils::GetImageBase());
     }
+    if (O_ProcessEvent == 0) std::cerr << "ProcessEvent Offset NOT FOUND" << std::endl;
     return O_ProcessEvent;
 }
 
+class Timer {
+public:
+    Timer() :
+            m_beg(clock_::now()) {
+    }
+    void reset() {
+        m_beg = clock_::now();
+    }
+
+    double elapsed() const {
+        return std::chrono::duration_cast<std::chrono::milliseconds>(
+                clock_::now() - m_beg).count();
+    }
+
+private:
+    typedef std::chrono::high_resolution_clock clock_;
+    typedef std::chrono::duration<double, std::ratio<1> > second_;
+    std::chrono::time_point<clock_> m_beg;
+};
+
 void SDK::Offsets::FindOffsets()
 {
-
+    Timer timer;
+    std::cout << "Initializing BR-SDK offsets..." << std::endl;
+    GObjects();
+    GWorld();
+    AppendString();
+    GNames();
+    ProcessEvent();
+    std::cout << "Found BR-SDK offsets in: " << timer.elapsed() << "ms" << std::endl;
 }

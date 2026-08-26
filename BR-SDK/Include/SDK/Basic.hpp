@@ -63,8 +63,6 @@ using namespace UC;
 namespace Offsets
 {
 	void FindOffsets();
-
-	//TODO: Implement sig scanning with static cashed value for all.
 	int32 GObjects();
 	int32 AppendString();
 	int32 GNames();

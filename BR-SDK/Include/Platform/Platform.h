@@ -1,3 +1,6 @@
+//Used for dynamic offsets
+//Pulled from Dumper-7
+
 #pragma once
 
 #if defined(_WIN32) || defined(_WIN64)
