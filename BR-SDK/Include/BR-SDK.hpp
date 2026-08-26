@@ -1043,3 +1043,8 @@
 #include "SDK/ENiagara_SizeScaleMode_structs.hpp"
 #include "SDK/ENiagara_SpriteRotationMode_structs.hpp"
 #include "SDK/ENiagara_UnsetDirectSet_structs.hpp"
+
+inline void BR_SDK_Init()
+{
+    SDK::Offsets::FindOffsets();
+}
