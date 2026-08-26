@@ -16,19 +16,21 @@ int32 O_ProcessEvent = 0;
 #define ALLOCATE_UOBJECT_INDEX_SIG "48 89 5C 24 10 48 89 6C 24 18 48 89 74 24 20 57 41 56 41 57 48 83 EC 40 48 8B D9 4C"
 
 
-int32 SDK::Offsets::GObjects()
+int32 SDK::Offsets::OGObjects()
 {
     if (O_GObjects == 0)
     {
+        static Hook<void(void*, void*, bool)>* AllocUObjectHookPtr = nullptr;
+
         Hook<void(void*, void*, bool)> FUObjectArray_AllocateUObjectIndexHOOK(ALLOCATE_UOBJECT_INDEX_SIG,
-        [&](void* GObjects, void* Object, bool bMergingThreads) -> void
+        [](void* GObjects, void* Object, bool bMergingThreads) -> void
         {
             O_GObjects = static_cast<int32>((uintptr_t)GObjects - SDK::InSDKUtils::GetImageBase());
-            FUObjectArray_AllocateUObjectIndexHOOK.CallOriginal(GObjects, Object, bMergingThreads);
-            FUObjectArray_AllocateUObjectIndexHOOK.Destroy();
+            AllocUObjectHookPtr->CallOriginal(GObjects, Object, bMergingThreads);
+            AllocUObjectHookPtr->Destroy();
         });
 
-
+        AllocUObjectHookPtr = &FUObjectArray_AllocateUObjectIndexHOOK;
         FUObjectArray_AllocateUObjectIndexHOOK.Create();
         FUObjectArray_AllocateUObjectIndexHOOK.Enable();
 
@@ -41,7 +43,7 @@ int32 SDK::Offsets::GObjects()
     return O_GObjects;
 }
 
-int32 SDK::Offsets::AppendString()
+int32 SDK::Offsets::OAppendString()
 {
     if (O_AppendString == 0)
     {
@@ -51,11 +53,11 @@ int32 SDK::Offsets::AppendString()
     return O_AppendString;
 }
 
-int32 SDK::Offsets::GNames()
+int32 SDK::Offsets::OGNames()
 {
     if (O_GNames == 0)
     {
-        uintptr_t AppendStringAddr = InSDKUtils::GetImageBase() + AppendString();
+        uintptr_t AppendStringAddr = InSDKUtils::GetImageBase() + OAppendString();
         uint8_t* Bytes = reinterpret_cast<uint8_t*>(AppendStringAddr);
 
         constexpr int ScanRange = 0x80; // GNames lea shows up ~0x39 bytes in, plenty of headroom
@@ -82,7 +84,7 @@ int32 SDK::Offsets::GNames()
     return O_GNames;
 }
 
-int32 SDK::Offsets::GWorld()
+int32 SDK::Offsets::OGWorld()
 {
     using namespace SDK;
     for (int i = 0; i < UObject::GObjects->Num(); i++)
@@ -136,7 +138,7 @@ int32 SDK::Offsets::GWorld()
     return O_GWorld;
 }
 
-int32 SDK::Offsets::ProcessEvent()
+int32 SDK::Offsets::OProcessEvent()
 {
     if (O_ProcessEvent == 0)
     {
@@ -170,10 +172,10 @@ void SDK::Offsets::FindOffsets()
 {
     Timer timer;
     std::cout << "Initializing BR-SDK offsets..." << std::endl;
-    GObjects();
-    GWorld();
-    AppendString();
-    GNames();
-    ProcessEvent();
+    OGObjects();
+    OGWorld();
+    OAppendString();
+    OGNames();
+    OProcessEvent();
     std::cout << "Found BR-SDK offsets in: " << timer.elapsed() << "ms" << std::endl;
 }

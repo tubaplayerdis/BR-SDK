@@ -64,7 +64,7 @@ public:
 
 	void ProcessEvent(class UFunction* Function, void* Parms) const
 	{
-		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(const UObject*, class UFunction*, void*)>(this, Offsets::ProcessEventIdx()), this, Function, Parms);
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(const UObject*, class UFunction*, void*)>(this, Offsets::ProcessEventIdx), this, Function, Parms);
 	}
 
 	static class UClass* StaticClass()
@@ -379,6 +379,12 @@ DUMPER7_ASSERTS_UClass;
 // 0x0030 (0x00E0 - 0x00B0)
 class UFunction : public UStruct
 {
+	template<typename T>
+	static T& GetMember(void* base, std::size_t offset)
+	{
+		return *reinterpret_cast<T*>(reinterpret_cast<std::uint8_t*>(base) + offset);
+	}
+
 public:
 	using FNativeFuncPtr = void (*)(void* Context, void* TheStack, void* Result);
 

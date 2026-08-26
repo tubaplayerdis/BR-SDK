@@ -10,6 +10,7 @@
 #include <algorithm>
 #include <functional>
 #include <bit>
+#include "TmpUtils.h"
 
 /*
 Interface:
@@ -86,7 +87,7 @@ namespace PlatformWindows
 	T* FindAlignedValueInSection(const SectionInfo&, T, const int32_t);
 
 	template<typename T>
-	T* FindAlignedValueInAllSections(const T Value, const int32_t Alignment = alignof(T), const uintptr_t StartAddress = 0x0, int32_t Range = 0x0, const char* const ModuleName = Settings::General::DefaultModuleName);
+	T* FindAlignedValueInAllSections(const T Value, const int32_t Alignment = alignof(T), const uintptr_t StartAddress = 0x0, int32_t Range = 0x0, const char* const ModuleName = nullptr);
 }
 
 class WindowsPrivateImplHelper

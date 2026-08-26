@@ -54,7 +54,7 @@ template <typename>
 class Function;
 
 template <typename Ret, typename... Args>
-class Function<Ret(Args...)> : Signature
+class Function<Ret(Args...)> : public Signature
 {
 public:
     Function(uintptr_t ptr) noexcept : Signature(ptr)

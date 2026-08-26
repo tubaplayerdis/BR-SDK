@@ -10,7 +10,6 @@
 
 #define VC_EXTRALEAN
 #define WIN32_LEAN_AND_MEAN
-#include "../Utils/GameFunctions.hpp"
 
 
 /*
@@ -63,12 +62,12 @@ using namespace UC;
 namespace Offsets
 {
 	void FindOffsets();
-	int32 GObjects();
-	int32 AppendString();
-	int32 GNames();
-	int32 GWorld();
-	int32 ProcessEvent();
-	constexpr int32 ProcessEventIdx = 0x44;//Very low chance of this changing
+	int32 OGObjects();
+	int32 OAppendString();
+	int32 OGNames();
+	int32 OGWorld();
+	int32 OProcessEvent();
+	constexpr int32 ProcessEventIdx   = 0x00000044;//Very low chance of this changing
 }
 
 namespace InSDKUtils
@@ -297,7 +296,7 @@ public:
 private:
 	inline void InitGObjects()
 	{
-		GObjectsAddress = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::GObjects());
+		GObjectsAddress = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::OGObjects());
 	}
 
 public:
@@ -370,7 +369,7 @@ public:
 
 	static void InitInternal()
 	{
-		AppendString = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::AppendString());
+		AppendString = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::OAppendString());
 	}
 
 	bool IsNone() const
@@ -1205,6 +1204,21 @@ DUMPER7_ASSERTS_FField;
 // 0x0040 (0x0078 - 0x0038)
 class FProperty : public FField
 {
+	template<typename TRet, typename... TArgs>
+	static TRet CallVTableFunction(int index, void* object, TArgs... args)
+	{
+		using FunctionFn = TRet(__fastcall*)(void*, TArgs...);
+		void** vtable = *reinterpret_cast<void***>(object);
+		FunctionFn FunctionFunc = reinterpret_cast<FunctionFn>(vtable[index]);
+		return FunctionFunc(object, std::forward<TArgs>(args)...);
+	}
+
+	template<typename T>
+	static T& GetMember(void* base, std::size_t offset)
+	{
+		return *reinterpret_cast<T*>(reinterpret_cast<std::uint8_t*>(base) + offset);
+	}
+
 public:
 	int32                                         ArrayDim;                                          // 0x0038(0x0004)(NOT AUTO-GENERATED PROPERTY)
 	int32                                         ElementSize;                                       // 0x003C(0x0004)(NOT AUTO-GENERATED PROPERTY)

@@ -91165,8 +91165,8 @@ class FText UKismetTextLibrary::TextTrimTrailing(const class FText& InText)
 
 class UWorld* UWorld::GetWorld()
 {
-	if (Offsets::GWorld() != 0)
-		return *reinterpret_cast<UWorld**>(InSDKUtils::GetImageBase() + Offsets::GWorld());
+	if (Offsets::OGWorld() != 0)
+		return *reinterpret_cast<UWorld**>(InSDKUtils::GetImageBase() + Offsets::OGWorld());
 
 	if (UEngine* Engine = UEngine::GetEngine())
 	{
