@@ -165,12 +165,16 @@ int32 SDK::Offsets::OGWorld()
             else
             {
                 Result = Results[1];
+#ifdef _DEBUG
                 std::cerr << std::format("Filter GActiveLogWorld at 0x{:X}\n\n", reinterpret_cast<uintptr_t>(PossibleGWorld));
+#endif
             }
         }
         else
         {
+#ifdef _DEBUG
             std::cerr << std::format("Detected {} candidates for GWorld, skipping this object\n\n", Results.size());
+#endif
             continue; // ambiguous — don't guess, try another UWorld instance instead of bailing entirely
         }
 
