@@ -64,7 +64,7 @@ public:
 
 	void ProcessEvent(class UFunction* Function, void* Parms) const
 	{
-		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(const UObject*, class UFunction*, void*)>(this, Offsets::ProcessEventIdx), this, Function, Parms);
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(const UObject*, class UFunction*, void*)>(this, Offsets::ProcessEventIdx()), this, Function, Parms);
 	}
 
 	static class UClass* StaticClass()

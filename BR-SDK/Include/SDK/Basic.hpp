@@ -62,12 +62,15 @@ using namespace UC;
 */
 namespace Offsets
 {
-	constexpr int32 GObjects          = 0x04A36A00;
-	constexpr int32 AppendString      = 0x0114AA30;
-	constexpr int32 GNames            = 0x049FA580;
-	constexpr int32 GWorld            = 0x04B7A1F8;
-	constexpr int32 ProcessEvent      = 0x01354710;
-	constexpr int32 ProcessEventIdx   = 0x00000044;
+	void FindOffsets();
+
+	//TODO: Implement sig scanning with static cashed value for all.
+	int32 GObjects();
+	int32 AppendString();
+	int32 GNames();
+	int32 GWorld();
+	int32 ProcessEvent();
+	constexpr int32 ProcessEventIdx = 0x44;//Very low chance of this changing
 }
 
 namespace InSDKUtils
@@ -296,7 +299,7 @@ public:
 private:
 	inline void InitGObjects()
 	{
-		GObjectsAddress = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::GObjects);
+		GObjectsAddress = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::GObjects());
 	}
 
 public:
@@ -369,7 +372,7 @@ public:
 
 	static void InitInternal()
 	{
-		AppendString = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::AppendString);
+		AppendString = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::AppendString());
 	}
 
 	bool IsNone() const

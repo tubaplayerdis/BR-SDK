@@ -171,6 +171,11 @@ namespace
 				Cache->insert(std::make_pair(std::string(signature), addr));
 			}
 
+			if (addr == 0)
+			{
+				std::cerr << "SIGNATURE NOT FOUND: " << std::string(signature) << std::endl;
+			}
+
 			return addr;
 		}
 

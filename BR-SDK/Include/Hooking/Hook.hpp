@@ -31,22 +31,22 @@ public:
 	/// Creates a Hook object using the specified BR-SDK compatible signature.
 	/// @param signature BR-SDK compatible signature. See UsingBRSDK.MD Signature Formatting
 	/// @param hookFunc Valid trampoline function pointer matching the signature specified in the Hook objects template signature.
-	Hook(const char* signature, Ret (*hookFunc)(Args...)) noexcept;
+	Hook(const char* signature, std::function<Ret(Args...)> hookFunc) noexcept;
 
 	/// Creates a Hook object using the specified BR-SDK compatible signature.
 	/// @param signature BR-SDK Signature. See UsingBRSDK.MD Signature Formatting
 	/// @param hookFunc Valid trampoline function pointer matching the signature specified in the Hook objects template signature.
-	Hook(const Signature& signature, Ret (*hookFunc)(Args...)) noexcept;
+	Hook(const Signature& signature, std::function<Ret(Args...)> hookFunc) noexcept;
 
 	/// Creates a Hook object using the specified address and trampoline function. Does not register the Hook with MinHook. Use Create() to register with MinHook.
 	/// @param address Address of the function to hook.
 	/// @param hookFunc Valid trampoline function pointer matching the signature specified in the Hook objects template signature.
-	Hook(unsigned long long address, Ret(__fastcall* hookFunc)(Args...)) noexcept;
+	Hook(unsigned long long address, std::function<Ret(Args...)> hookFunc) noexcept;
 
 	/// Creates a Hook object using the specified function pointer and trampoline function. Does not register the Hook with MinHook. For VTable entries use reinterpret_cast<Ret(__fastcall*)(Args...)>(vtable[index]).
 	/// @param pointer Function pointer of the specified signature in the Hook objects template signature.
 	/// @param hookFunc Valid trampoline function pointer matching the signature specified in the Hook objects template signature.
-	Hook(Ret(__fastcall* pointer)(Args...), Ret(__fastcall* hookFunc)(Args...)) noexcept;
+	Hook(Ret(__fastcall* pointer)(Args...), std::function<Ret(Args...)> hookFunc) noexcept;
 
 	/// Explicit deconstructor for Hook. Disables then removes the Hook with MinHook. It is suggested to call Disable() or HOOK_DISABLE() instead of calling this if using the HOOK() macro to define the Hook.
 	virtual ~Hook();
@@ -115,7 +115,7 @@ public:
 };
 
 template <typename Ret, typename ... Args>
-Hook<Ret(Args...)>::Hook(const char* signature, Ret(* hookFunc)(Args...)) noexcept : Function<Ret(Args...)>(signature)
+Hook<Ret(Args...)>::Hook(const char* signature, std::function<Ret(Args...)> hookFunc) noexcept : Function<Ret(Args...)>(signature)
 {
 	Enabled = false;
 	Initialized = false;
@@ -124,7 +124,7 @@ Hook<Ret(Args...)>::Hook(const char* signature, Ret(* hookFunc)(Args...)) noexce
 }
 
 template<typename Ret, typename ...Args>
-Hook<Ret(Args...)>::Hook(const Signature& signature, Ret(* hookFunc)(Args...)) noexcept : Function<Ret(Args...)>(signature)
+Hook<Ret(Args...)>::Hook(const Signature& signature, std::function<Ret(Args...)> hookFunc) noexcept : Function<Ret(Args...)>(signature)
 {
 	Enabled = false;
 	Initialized = false;
@@ -133,7 +133,7 @@ Hook<Ret(Args...)>::Hook(const Signature& signature, Ret(* hookFunc)(Args...)) n
 }
 
 template<typename Ret, typename ...Args>
-Hook<Ret(Args...)>::Hook(unsigned long long addr, Ret(* hookFunc)(Args...)) noexcept : Function<Ret(Args...)>(addr)
+Hook<Ret(Args...)>::Hook(unsigned long long addr, std::function<Ret(Args...)> hookFunc) noexcept : Function<Ret(Args...)>(addr)
 {
 	Enabled = false;
 	Initialized = false;
@@ -142,7 +142,7 @@ Hook<Ret(Args...)>::Hook(unsigned long long addr, Ret(* hookFunc)(Args...)) noex
 }
 
 template<typename Ret, typename ...Args>
-Hook<Ret(Args...)>::Hook(Ret(__fastcall* pointer)(Args...), Ret(* hookFunc)(Args...)) noexcept : Function<Ret(Args...)>(reinterpret_cast<unsigned long long>(pointer))
+Hook<Ret(Args...)>::Hook(Ret(__fastcall* pointer)(Args...), std::function<Ret(Args...)> hookFunc) noexcept : Function<Ret(Args...)>(reinterpret_cast<unsigned long long>(pointer))
 {
 	Enabled = false;
 	Initialized = false;
