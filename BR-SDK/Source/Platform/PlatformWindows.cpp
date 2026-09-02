@@ -1,7 +1,7 @@
 
-#include "../../Include/Platform/TmpUtils.h"
-#include "../../Include/Platform/PlatformWindows.h"
-#include "../../Include/Platform/Arch_x86.h"
+#include "TmpUtils.h"
+#include "PlatformWindows.h"
+#include "Arch_x86.h"
 
 // Private implementation to ensure that there is no accidental usage of platform-specific functions
 namespace

@@ -3,7 +3,7 @@
 #include "BrickRigs_classes.hpp"
 #include "Engine_classes.hpp"
 #include "../Include/Hooking/Hook.hpp"
-#include "../Platform/Platform.h"
+#include "Platform/Platform.h"
 
 using namespace UC;
 int32 O_GObjects = 0;

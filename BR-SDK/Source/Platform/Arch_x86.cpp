@@ -1,5 +1,5 @@
-#include "../../Include/Platform/Arch_x86.h"
-#include "../../Include/Platform/Platform.h"
+#include "Arch_x86.h"
+#include "Platform.h"
 
 // The processor (x86-64) only translates 52bits (or 57 bits) of a virtual address into a physical address and the unused bits need to be all 0 or all 1.
 bool Architecture_x86_64::IsValid64BitVirtualAddress(const uintptr_t Address)
