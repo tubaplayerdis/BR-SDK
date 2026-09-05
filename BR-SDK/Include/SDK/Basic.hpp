@@ -61,6 +61,7 @@ using namespace UC;
 */
 namespace Offsets
 {
+	//Does not actually refind offsets lol.
 	void FindOffsets();
 	int32 OGObjects();
 	int32 OAppendString();

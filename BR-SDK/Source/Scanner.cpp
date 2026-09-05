@@ -124,6 +124,38 @@ int32 SDK::Offsets::OGWorld()
 {
     if (O_GWorld != 0) return O_GWorld;
 
+    Signature UEngine_GetWorldFromContextObjectSig("48 89 5C 24 18 56 48 83 EC 40 41 8B D8 48 8B F2 48 85 D2");
+
+    uintptr_t FuncAddr = UEngine_GetWorldFromContextObjectSig.GetPtr();
+
+    if (FuncAddr == 0)
+    {
+        std::cerr << "GWorld offset NOT FOUND (GetWorldFromContextObject signature missed)\n";
+        return 0;
+    }
+
+    uint8_t* Bytes = reinterpret_cast<uint8_t*>(FuncAddr);
+
+    constexpr int ScanRange = 0x140; // GWorld ref sits at +0xF4, give headroom
+
+    for (int i = 0; i < ScanRange - 7; i++)
+    {
+        // mov rdi, [rip+disp32] -> 48 8B 3D
+        bool IsMovRdi = Bytes[i] == 0x48 && Bytes[i + 1] == 0x8B && Bytes[i + 2] == 0x3D;
+
+        if (!IsMovRdi)
+            continue;
+
+        int32_t RelOffset = *reinterpret_cast<int32_t*>(&Bytes[i + 3]);
+        uintptr_t InstrEnd = FuncAddr + i + 7;
+        uintptr_t GWorldAddr = InstrEnd + RelOffset; // address of UWorldProxy (== &GWorld.World)
+
+        O_GWorld = static_cast<int32>(GWorldAddr - SDK::InSDKUtils::GetImageBase());
+        break;
+    }
+
+    if (O_GWorld != 0) return O_GWorld;
+
     using namespace SDK;
     for (int i = 0; i < UObject::GObjects->Num(); i++)
     {
