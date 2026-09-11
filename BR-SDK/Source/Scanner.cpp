@@ -6,39 +6,57 @@
 #include "Platform/Platform.h"
 
 using namespace UC;
-int32 O_GObjects = 0;
-int32 O_AppendString = 0;
-int32 O_GNames = 0;
-int32 O_GWorld = 0;
-int32 O_ProcessEvent = 0;
+uintptr_t O_GObjects = 0;
+uintptr_t O_AppendString = 0;
+uintptr_t O_GNames = 0;
+uintptr_t O_GWorld = 0;
+uintptr_t O_ProcessEvent = 0;
+const bool B_InEditor = GetModuleHandle(L"BrickRigsModKitSteam.exe") != nullptr;
 
 #define PROCESS_EVENT_SIG "40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC F0 00 00 00 48 8D"
 #define APPEND_STRING_SIG "48 89 5C 24 18 48 89 74 24 20 57 48 83 EC 20 8B 01 48"
 #define UOBJECTBASE_ADD_OBJECT_SIG "48 89 5C 24 08 48 89 74 24 10 57 48 83 EC 20 48 89 51 18"
 
+//Editor Sigs
+#define EDITOR_PROCESS_EVENT_MODULE "BrickRigsModKitSteam-CoreUObject.dll"
+#define EDITOR_PROCESS_EVENT_SYB "?ProcessEvent@UObject@@UEAAXPEAVUFunction@@PEAX@Z"
+
+#define EDITOR_GOBJECTS_MODULE "BrickRigsModKitSteam-CoreUObject.dll"
+#define EDITOR_GOBJECTS_SYB "?GUObjectArray@@3VFUObjectArray@@A"
+
+#define EDITOR_APPEND_STRING_MODULE "BrickRigsModKitSteam-Core.dll"
+#define EDITOR_APPEND_STRING_SYB "?AppendString@FName@@QEBAXAEAVFString@@@Z"
+
+#define EDITOR_GNAMES_MODULE "BrickRigsModKitSteam-Core.dll"
+#define EDITOR_GNAMES_SYB "" //Currently not exported
+
+#define EDITOR_GWORLD_MODULE "BrickRigsModKitSteam-Engine.dll"
+#define EDITOR_GWORLD_SYB "?GWorld@@3VUWorldProxy@@A"
+
 namespace
 {
-    DWORD_PTR GetStaticAddressFromVA(PVOID va) {
-        HMODULE hModule = NULL;
-
-        if (!GetModuleHandleEx(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS, (LPCTSTR)va, &hModule)) {
-            return 0;
-        }
-
-        DWORD_PTR rva = (DWORD_PTR)va - (DWORD_PTR)hModule;
-
-        // IDA's displayed address = its loaded ImageBase + RVA
-        return rva;
+    uintptr_t GetSymbolAddress(const char* Module, const char* Symbol)
+    {
+        HMODULE hModuleKit = GetModuleHandleA(Module); // or whatever the module's actually called
+        return (uintptr_t)GetProcAddress(hModuleKit, Symbol);
     }
+
+
 }
 
 //Offset from the object array pointer where GObjects is
 #define GOBJECTS_OFFSET 0x10
 
-int32 SDK::Offsets::OGObjects()
+uintptr_t SDK::Offsets::OGObjects()
 {
     if (O_GObjects == 0)
     {
+        if (B_InEditor)
+        {
+            O_GObjects = GetSymbolAddress(EDITOR_GOBJECTS_MODULE, EDITOR_GOBJECTS_SYB) + GOBJECTS_OFFSET;
+            return O_GObjects;
+        }
+
         Signature UObjectBase_AddObjectSig(UOBJECTBASE_ADD_OBJECT_SIG);
 
         uintptr_t AddObjectAddr = UObjectBase_AddObjectSig.GetPtr();
@@ -68,7 +86,7 @@ int32 SDK::Offsets::OGObjects()
             // GUObjectArrayAddr is the OUTER FUObjectArray - apply the same
             // +0x10 (GOBJECTS_OFFSET) adjustment used previously, if your
             // ByIndex/Num logic expects the ObjObjects sub-struct convention.
-            O_GObjects = static_cast<int32>((GUObjectArrayAddr + GOBJECTS_OFFSET) - SDK::InSDKUtils::GetImageBase());
+            O_GObjects = GUObjectArrayAddr + GOBJECTS_OFFSET;
             break;
         }
     }
@@ -79,21 +97,33 @@ int32 SDK::Offsets::OGObjects()
     return O_GObjects;
 }
 
-int32 SDK::Offsets::OAppendString()
+uintptr_t SDK::Offsets::OAppendString()
 {
     if (O_AppendString == 0)
     {
-        O_AppendString = static_cast<int32>(GetStaticAddressFromVA((void*)Signature(APPEND_STRING_SIG).GetPtr()));
+        if (B_InEditor)
+        {
+            O_AppendString = GetSymbolAddress(EDITOR_APPEND_STRING_MODULE, EDITOR_APPEND_STRING_SYB);
+            return O_AppendString;
+        }
+
+        O_AppendString = Signature(APPEND_STRING_SIG).GetPtr();
     }
     if (O_AppendString == 0) std::cerr << "AppendString offset NOT FOUND" << std::endl;
     return O_AppendString;
 }
 
-int32 SDK::Offsets::OGNames()
+uintptr_t SDK::Offsets::OGNames()
 {
     if (O_GNames == 0)
     {
-        uintptr_t AppendStringAddr = SDK::InSDKUtils::GetImageBase() + OAppendString();
+        if (B_InEditor)
+        {
+            O_GNames = 0;//GetSymbolAddress(EDITOR_GNAMES_MODULE, EDITOR_GNAMES_SYB);
+            return O_GNames;
+        }
+
+        uintptr_t AppendStringAddr = OAppendString();
         uint8_t* Bytes = reinterpret_cast<uint8_t*>(AppendStringAddr);
 
         constexpr int ScanRange = 0x80; // GNames lea shows up ~0x39 bytes in, plenty of headroom
@@ -112,7 +142,7 @@ int32 SDK::Offsets::OGNames()
             uintptr_t InstrEnd = AppendStringAddr + i + 7; // lea reg, [rip+disp32] is always 7 bytes here
             uintptr_t GNamesAddr = InstrEnd + RelOffset;
 
-            O_GNames = static_cast<int32>(GetStaticAddressFromVA((void*)GNamesAddr));
+            O_GNames = GNamesAddr;
             break;
         }
     }
@@ -120,9 +150,15 @@ int32 SDK::Offsets::OGNames()
     return O_GNames;
 }
 
-int32 SDK::Offsets::OGWorld()
+uintptr_t SDK::Offsets::OGWorld()
 {
     if (O_GWorld != 0) return O_GWorld;
+
+    if (B_InEditor)
+    {
+        O_GWorld = GetSymbolAddress(EDITOR_GWORLD_MODULE, EDITOR_GWORLD_SYB);
+        return O_GWorld;
+    }
 
     using namespace SDK;
     for (int i = 0; i < UObject::GObjects->Num(); i++)
@@ -180,7 +216,7 @@ int32 SDK::Offsets::OGWorld()
 
         if (Result)
         {
-            O_GWorld = static_cast<int32>(GetStaticAddressFromVA(Result));
+            O_GWorld = reinterpret_cast<uintptr_t>(Result);
             break; // found it — stop scanning immediately
         }
     }
@@ -191,11 +227,16 @@ int32 SDK::Offsets::OGWorld()
     return O_GWorld;
 }
 
-int32 SDK::Offsets::OProcessEvent()
+uintptr_t SDK::Offsets::OProcessEvent()
 {
     if (O_ProcessEvent == 0)
     {
-        O_ProcessEvent = static_cast<int32>(GetStaticAddressFromVA((void*)Signature(PROCESS_EVENT_SIG).GetPtr()));
+        if (B_InEditor)
+        {
+            O_ProcessEvent = GetSymbolAddress(EDITOR_PROCESS_EVENT_MODULE, EDITOR_PROCESS_EVENT_SYB);
+            return O_ProcessEvent;
+        }
+        O_ProcessEvent = Signature(PROCESS_EVENT_SIG).GetPtr();
     }
     if (O_ProcessEvent == 0) std::cerr << "ProcessEvent Offset NOT FOUND" << std::endl;
     return O_ProcessEvent;
@@ -221,27 +262,34 @@ private:
     std::chrono::time_point<clock_> m_beg;
 };
 
+#define PREFIX "[BR-SDK]: "
+
 void SDK::Offsets::FindOffsets()
 {
 #ifdef _DEBUG
+    if (B_InEditor) std::cout << PREFIX << "Editor Detected! Switching signatures..." << std::endl;
+
     Timer timer;
-    std::cout << "Initializing BR-SDK offsets..." << std::endl;
+    std::cout << PREFIX << "Initializing BR-SDK offsets..." << std::endl;
     OGObjects();
-    std::cout << "Found GObjects at: " << timer.elapsed() << "ms" << std::endl;
+    std::cout << PREFIX << "Found GObjects at: " << timer.elapsed() << "ms" << std::endl;
     OGWorld();
-    std::cout << "Found GWorld at: " << timer.elapsed() << "ms" << std::endl;
+    std::cout << PREFIX << "Found GWorld at: " << timer.elapsed() << "ms" << std::endl;
     OAppendString();
-    std::cout << "Found AppendString at: " << timer.elapsed() << "ms" << std::endl;
-    OGNames();
-    std::cout << "Found GNames at: " << timer.elapsed() << "ms" << std::endl;
+    std::cout << PREFIX << "Found AppendString at: " << timer.elapsed() << "ms" << std::endl;
+    if (!B_InEditor)
+    {
+        OGNames();
+        std::cout << PREFIX << "Found GNames at: " << timer.elapsed() << "ms" << std::endl;
+    }
     OProcessEvent();
-    std::cout << "Found ProcessEvent at: " << timer.elapsed() << std::endl;
-    std::cout << "Found BR-SDK offsets in: " << timer.elapsed() << "ms" << std::endl;
+    std::cout << PREFIX << "Found ProcessEvent at: " << timer.elapsed() << std::endl;
+    std::cout << PREFIX << "Found BR-SDK offsets in: " << timer.elapsed() << "ms" << std::endl;
 #else
     OGObjects();
     OGWorld();
     OAppendString();
-    OGNames();
+    if (!B_InEditor) OGNames();
     OProcessEvent();
 #endif
 }

@@ -11,7 +11,7 @@
 #include <vector>
 #include <sstream>
 #include <memory>
-
+#pragma comment(lib, "Psapi.lib")
 
 namespace
 {
@@ -73,6 +73,40 @@ namespace
 
 			if (found)
 				return base + i;
+		}
+
+		return 0;
+	}
+
+	static unsigned long long FindPatternInModules(const char* pattern, const char* mask, const wchar_t* moduleNameFilter = nullptr)
+	{
+		HMODULE hMods[1024];
+		DWORD cbNeeded;
+		HANDLE hProcess = GetCurrentProcess();
+
+		if (!EnumProcessModules(hProcess, hMods, sizeof(hMods), &cbNeeded))
+			return 0;
+
+		DWORD moduleCount = cbNeeded / sizeof(HMODULE);
+
+		for (DWORD i = 0; i < moduleCount; i++) {
+			wchar_t modName[MAX_PATH];
+			if (!GetModuleBaseNameW(hProcess, hMods[i], modName, MAX_PATH))
+				continue;
+
+			if (moduleNameFilter && _wcsicmp(modName, moduleNameFilter) != 0)
+				continue;
+
+			MODULEINFO modInfo{};
+			if (!GetModuleInformation(hProcess, hMods[i], &modInfo, sizeof(modInfo)))
+				continue;
+
+			unsigned long long base = reinterpret_cast<unsigned long long>(modInfo.lpBaseOfDll);
+			std::uint64_t size = modInfo.SizeOfImage;
+
+			unsigned long long found = FindPatternS(pattern, mask, base, size);
+			if (found)
+				return found;
 		}
 
 		return 0;
@@ -164,6 +198,10 @@ namespace
 			unsigned long long addr = FindPatternF(pattern, mask, base, size);
 			if (addr == 0) {
 				addr = FindPatternS(pattern, mask, base, size);
+			}
+
+			if (addr == 0) {
+				addr = FindPatternInModules(pattern, mask, nullptr);
 			}
 
 			if (addr != 0)
