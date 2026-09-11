@@ -1609,9 +1609,6 @@
     <ClCompile Include="Source\SDK\WBP_VideoSettings_functions.cpp" />
     <ClCompile Include="Source\SDK\WBP_WindowManager_functions.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Include\Platform\" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
