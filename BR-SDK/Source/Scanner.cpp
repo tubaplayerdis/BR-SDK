@@ -11,28 +11,10 @@ uintptr_t O_AppendString = 0;
 uintptr_t O_GNames = 0;
 uintptr_t O_GWorld = 0;
 uintptr_t O_ProcessEvent = 0;
-//Testing
-const bool B_InEditor = GetModuleHandle(L"BrickRigsModKitSteam.exe") != nullptr;
 
 #define PROCESS_EVENT_SIG "40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC F0 00 00 00 48 8D"
 #define APPEND_STRING_SIG "48 89 5C 24 18 48 89 74 24 20 57 48 83 EC 20 8B 01 48"
 #define UOBJECTBASE_ADD_OBJECT_SIG "48 89 5C 24 08 48 89 74 24 10 57 48 83 EC 20 48 89 51 18"
-
-//Editor Sigs
-#define EDITOR_PROCESS_EVENT_MODULE "BrickRigsModKitSteam-CoreUObject.dll"
-#define EDITOR_PROCESS_EVENT_SYB "?ProcessEvent@UObject@@UEAAXPEAVUFunction@@PEAX@Z"
-
-#define EDITOR_GOBJECTS_MODULE "BrickRigsModKitSteam-CoreUObject.dll"
-#define EDITOR_GOBJECTS_SYB "?GUObjectArray@@3VFUObjectArray@@A"
-
-#define EDITOR_APPEND_STRING_MODULE "BrickRigsModKitSteam-Core.dll"
-#define EDITOR_APPEND_STRING_SYB "?AppendString@FName@@QEBAXAEAVFString@@@Z"
-
-#define EDITOR_GNAMES_MODULE "BrickRigsModKitSteam-Core.dll"
-#define EDITOR_GNAMES_SYB "" //Currently not exported
-
-#define EDITOR_GWORLD_MODULE "BrickRigsModKitSteam-Engine.dll"
-#define EDITOR_GWORLD_SYB "?GWorld@@3VUWorldProxy@@A"
 
 namespace
 {
@@ -52,12 +34,6 @@ uintptr_t SDK::Offsets::OGObjects()
 {
     if (O_GObjects == 0)
     {
-        if (B_InEditor)
-        {
-            O_GObjects = GetSymbolAddress(EDITOR_GOBJECTS_MODULE, EDITOR_GOBJECTS_SYB) + GOBJECTS_OFFSET;
-            return O_GObjects;
-        }
-
         Signature UObjectBase_AddObjectSig(UOBJECTBASE_ADD_OBJECT_SIG);
 
         uintptr_t AddObjectAddr = UObjectBase_AddObjectSig.GetPtr();
@@ -102,12 +78,6 @@ uintptr_t SDK::Offsets::OAppendString()
 {
     if (O_AppendString == 0)
     {
-        if (B_InEditor)
-        {
-            O_AppendString = GetSymbolAddress(EDITOR_APPEND_STRING_MODULE, EDITOR_APPEND_STRING_SYB);
-            return O_AppendString;
-        }
-
         O_AppendString = Signature(APPEND_STRING_SIG).GetPtr();
     }
     if (O_AppendString == 0) std::cerr << "AppendString offset NOT FOUND" << std::endl;
@@ -118,12 +88,6 @@ uintptr_t SDK::Offsets::OGNames()
 {
     if (O_GNames == 0)
     {
-        if (B_InEditor)
-        {
-            O_GNames = 0;//GetSymbolAddress(EDITOR_GNAMES_MODULE, EDITOR_GNAMES_SYB);
-            return O_GNames;
-        }
-
         uintptr_t AppendStringAddr = OAppendString();
         uint8_t* Bytes = reinterpret_cast<uint8_t*>(AppendStringAddr);
 
@@ -154,12 +118,6 @@ uintptr_t SDK::Offsets::OGNames()
 uintptr_t SDK::Offsets::OGWorld()
 {
     if (O_GWorld != 0) return O_GWorld;
-
-    if (B_InEditor)
-    {
-        O_GWorld = GetSymbolAddress(EDITOR_GWORLD_MODULE, EDITOR_GWORLD_SYB);
-        return O_GWorld;
-    }
 
     using namespace SDK;
     for (int i = 0; i < UObject::GObjects->Num(); i++)
@@ -232,11 +190,6 @@ uintptr_t SDK::Offsets::OProcessEvent()
 {
     if (O_ProcessEvent == 0)
     {
-        if (B_InEditor)
-        {
-            O_ProcessEvent = GetSymbolAddress(EDITOR_PROCESS_EVENT_MODULE, EDITOR_PROCESS_EVENT_SYB);
-            return O_ProcessEvent;
-        }
         O_ProcessEvent = Signature(PROCESS_EVENT_SIG).GetPtr();
     }
     if (O_ProcessEvent == 0) std::cerr << "ProcessEvent Offset NOT FOUND" << std::endl;
@@ -268,7 +221,6 @@ private:
 void SDK::Offsets::FindOffsets()
 {
 #ifdef _DEBUG
-    if (B_InEditor) std::cout << PREFIX << "Editor Detected! Switching signatures..." << std::endl;
 
     Timer timer;
     std::cout << PREFIX << "Initializing BR-SDK offsets..." << std::endl;
@@ -278,11 +230,8 @@ void SDK::Offsets::FindOffsets()
     std::cout << PREFIX << "Found GWorld at: " << timer.elapsed() << "ms" << std::endl;
     OAppendString();
     std::cout << PREFIX << "Found AppendString at: " << timer.elapsed() << "ms" << std::endl;
-    if (!B_InEditor)
-    {
-        OGNames();
-        std::cout << PREFIX << "Found GNames at: " << timer.elapsed() << "ms" << std::endl;
-    }
+    OGNames();
+    std::cout << PREFIX << "Found GNames at: " << timer.elapsed() << "ms" << std::endl;
     OProcessEvent();
     std::cout << PREFIX << "Found ProcessEvent at: " << timer.elapsed() << std::endl;
     std::cout << PREFIX << "Found BR-SDK offsets in: " << timer.elapsed() << "ms" << std::endl;
@@ -290,7 +239,7 @@ void SDK::Offsets::FindOffsets()
     OGObjects();
     OGWorld();
     OAppendString();
-    if (!B_InEditor) OGNames();
+    OGNames();
     OProcessEvent();
 #endif
 }
