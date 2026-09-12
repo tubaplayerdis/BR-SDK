@@ -358,7 +358,9 @@ public:
 	uint8                                         Pad_120[0x110];                                    // 0x0120(0x0110)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UFunction* GetFunction(const char* ClassName, const char* FuncName) const;
+	enum class EClassCastFlags	GetCastFlags() const;
+	class UObject*				GetClassDefaultObject() const;
+	class UFunction*			GetFunction(const char* ClassName, const char* FuncName) const;
 
 public:
 	static class UClass* StaticClass()

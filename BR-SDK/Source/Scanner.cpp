@@ -11,6 +11,7 @@ uintptr_t O_AppendString = 0;
 uintptr_t O_GNames = 0;
 uintptr_t O_GWorld = 0;
 uintptr_t O_ProcessEvent = 0;
+//Testing
 const bool B_InEditor = GetModuleHandle(L"BrickRigsModKitSteam.exe") != nullptr;
 
 #define PROCESS_EVENT_SIG "40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC F0 00 00 00 48 8D"

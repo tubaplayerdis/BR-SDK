@@ -75,7 +75,7 @@ FName BasicFilesImplUtils::StringToName(const wchar_t* Name)
 UObject* BasicFilesImplUtils::GetDefaultObjectImpl(UClass* Class)
 {
 	if (Class)
-		return Class->ClassDefaultObject;
+		return Class->GetClassDefaultObject();
 
 	return nullptr;
 }

@@ -69,11 +69,12 @@ namespace
 	{
 		return *reinterpret_cast<T*>(reinterpret_cast<std::uint8_t*>(base) + offset);
 	}
+
+	static const bool IsInEditorBinary = GetModuleHandle(L"BrickRigsModKitSteam.exe") != nullptr;
 }
 
 class UObject* UObject::Outer() const
 {
-	static const bool IsInEditorBinary = GetModuleHandle(L"BrickRigsModKitSteam.exe") != nullptr;
 	return IsInEditorBinary ? GetMember<UObject*>((void*)this, 0x28) : GetMember<UObject*>((void*)this, 0x20);
 }
 
@@ -114,7 +115,7 @@ std::string UObject::GetName() const
 
 bool UObject::HasTypeFlag(EClassCastFlags TypeFlags) const
 {
-	return (Class->CastFlags & TypeFlags);
+	return (Class->GetCastFlags() & TypeFlags);
 }
 
 
@@ -123,7 +124,7 @@ bool UObject::HasTypeFlag(EClassCastFlags TypeFlags) const
 
 bool UObject::IsA(EClassCastFlags TypeFlags) const
 {
-	return (Class->CastFlags & TypeFlags);
+	return (Class->GetCastFlags() & TypeFlags);
 }
 
 
@@ -202,6 +203,21 @@ bool UStruct::IsSubclassOf(const FName& BaseClassName) const
 	}
 
 	return false;
+}
+
+class UObject* UClass::GetClassDefaultObject() const
+{
+	return IsInEditorBinary ? GetMember<UObject*>((void*)this, 0x138) : ClassDefaultObject;
+}
+
+enum EClassCastFlags UClass::GetCastFlags() const
+{
+	if (!this)
+	{
+		return EClassCastFlags::None;
+	}
+
+	return IsInEditorBinary ? GetMember<EClassCastFlags>((void*)this, 0xE0) : CastFlags;
 }
 
 
