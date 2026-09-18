@@ -16,6 +16,46 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_HUDIconContainer.WBP_HUDIconContainer_C.AddInteractionWidget
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UInteractionWidget*               Widget_AddInteractionWidget                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HUDIconContainer_C::AddInteractionWidget(class UInteractionWidget* Widget_AddInteractionWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUDIconContainer_C", "AddInteractionWidget");
+
+	Params::WBP_HUDIconContainer_C_AddInteractionWidget Parms{};
+
+	Parms.Widget_AddInteractionWidget = Widget_AddInteractionWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_HUDIconContainer.WBP_HUDIconContainer_C.AddCrosshairWidgets
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const TArray<class UMapCrosshairWidget*>&Widgets_AddCrosshairWidgets                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+
+void UWBP_HUDIconContainer_C::AddCrosshairWidgets(const TArray<class UMapCrosshairWidget*>& Widgets_AddCrosshairWidgets)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUDIconContainer_C", "AddCrosshairWidgets");
+
+	Params::WBP_HUDIconContainer_C_AddCrosshairWidgets Parms{};
+
+	Parms.Widgets_AddCrosshairWidgets = std::move(Widgets_AddCrosshairWidgets);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_HUDIconContainer.WBP_HUDIconContainer_C.ExecuteUbergraph_WBP_HUDIconContainer
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,46 +71,6 @@ void UWBP_HUDIconContainer_C::ExecuteUbergraph_WBP_HUDIconContainer(int32 EntryP
 	Params::WBP_HUDIconContainer_C_ExecuteUbergraph_WBP_HUDIconContainer Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HUDIconContainer.WBP_HUDIconContainer_C.AddCrosshairWidgets
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const TArray<class UMapCrosshairWidget*>&Widgets                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-
-void UWBP_HUDIconContainer_C::AddCrosshairWidgets(const TArray<class UMapCrosshairWidget*>& Widgets)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUDIconContainer_C", "AddCrosshairWidgets");
-
-	Params::WBP_HUDIconContainer_C_AddCrosshairWidgets Parms{};
-
-	Parms.Widgets = std::move(Widgets);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HUDIconContainer.WBP_HUDIconContainer_C.AddInteractionWidget
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UInteractionWidget*               Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_HUDIconContainer_C::AddInteractionWidget(class UInteractionWidget* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUDIconContainer_C", "AddInteractionWidget");
-
-	Params::WBP_HUDIconContainer_C_AddInteractionWidget Parms{};
-
-	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

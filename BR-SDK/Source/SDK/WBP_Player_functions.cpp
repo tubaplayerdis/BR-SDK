@@ -16,6 +16,106 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Player.WBP_Player_C.AddRestrictedAreaWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class URestrictedAreaWidget*            InWidget_AddRestrictedAreaWidget                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Player_C::AddRestrictedAreaWidget(class URestrictedAreaWidget* InWidget_AddRestrictedAreaWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Player_C", "AddRestrictedAreaWidget");
+
+	Params::WBP_Player_C_AddRestrictedAreaWidget Parms{};
+
+	Parms.InWidget_AddRestrictedAreaWidget = InWidget_AddRestrictedAreaWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Player.WBP_Player_C.AddCrosshairWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UCrosshairWidget*                 InWidget_AddCrosshairWidget                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Player_C::AddCrosshairWidget(class UCrosshairWidget* InWidget_AddCrosshairWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Player_C", "AddCrosshairWidget");
+
+	Params::WBP_Player_C_AddCrosshairWidget Parms{};
+
+	Parms.InWidget_AddCrosshairWidget = InWidget_AddCrosshairWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Player.WBP_Player_C.AddCameraBrickWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UCameraBrickWidget*               InWidget_AddCameraBrickWidget                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Player_C::AddCameraBrickWidget(class UCameraBrickWidget* InWidget_AddCameraBrickWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Player_C", "AddCameraBrickWidget");
+
+	Params::WBP_Player_C_AddCameraBrickWidget Parms{};
+
+	Parms.InWidget_AddCameraBrickWidget = InWidget_AddCameraBrickWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Player.WBP_Player_C.AddCharacterDashboardWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      InWidget_AddCharacterDashboardWidget                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Player_C::AddCharacterDashboardWidget(class UUserWidget* InWidget_AddCharacterDashboardWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Player_C", "AddCharacterDashboardWidget");
+
+	Params::WBP_Player_C_AddCharacterDashboardWidget Parms{};
+
+	Parms.InWidget_AddCharacterDashboardWidget = InWidget_AddCharacterDashboardWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Player.WBP_Player_C.AddVehicleDashboardWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      InWidget_AddVehicleDashboardWidget                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Player_C::AddVehicleDashboardWidget(class UUserWidget* InWidget_AddVehicleDashboardWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Player_C", "AddVehicleDashboardWidget");
+
+	Params::WBP_Player_C_AddVehicleDashboardWidget Parms{};
+
+	Parms.InWidget_AddVehicleDashboardWidget = InWidget_AddVehicleDashboardWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Player.WBP_Player_C.ExecuteUbergraph_WBP_Player
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,126 +131,6 @@ void UWBP_Player_C::ExecuteUbergraph_WBP_Player(int32 EntryPoint)
 	Params::WBP_Player_C_ExecuteUbergraph_WBP_Player Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Player.WBP_Player_C.AddCameraBrickWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UCameraBrickWidget*               InWidget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Player_C::AddCameraBrickWidget(class UCameraBrickWidget* InWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Player_C", "AddCameraBrickWidget");
-
-	Params::WBP_Player_C_AddCameraBrickWidget Parms{};
-
-	Parms.InWidget = InWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Player.WBP_Player_C.AddHealthBarWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UHealthBarWidget*                 InWidget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Player_C::AddHealthBarWidget(class UHealthBarWidget* InWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Player_C", "AddHealthBarWidget");
-
-	Params::WBP_Player_C_AddHealthBarWidget Parms{};
-
-	Parms.InWidget = InWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Player.WBP_Player_C.AddCurrentItemWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UCurrentItemWidget*               InWidget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Player_C::AddCurrentItemWidget(class UCurrentItemWidget* InWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Player_C", "AddCurrentItemWidget");
-
-	Params::WBP_Player_C_AddCurrentItemWidget Parms{};
-
-	Parms.InWidget = InWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Player.WBP_Player_C.AddCrosshairWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UCrosshairWidget*                 InWidget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Player_C::AddCrosshairWidget(class UCrosshairWidget* InWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Player_C", "AddCrosshairWidget");
-
-	Params::WBP_Player_C_AddCrosshairWidget Parms{};
-
-	Parms.InWidget = InWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Player.WBP_Player_C.AddDashboardWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UDashboardWidget*                 InWidget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Player_C::AddDashboardWidget(class UDashboardWidget* InWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Player_C", "AddDashboardWidget");
-
-	Params::WBP_Player_C_AddDashboardWidget Parms{};
-
-	Parms.InWidget = InWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Player.WBP_Player_C.AddRestrictedAreaWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class URestrictedAreaWidget*            InWidget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Player_C::AddRestrictedAreaWidget(class URestrictedAreaWidget* InWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Player_C", "AddRestrictedAreaWidget");
-
-	Params::WBP_Player_C_AddRestrictedAreaWidget Parms{};
-
-	Parms.InWidget = InWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

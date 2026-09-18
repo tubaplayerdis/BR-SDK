@@ -16,6 +16,258 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Dashboard.WBP_Dashboard_C.AddInputHelpCategory
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UInputCategory*                   InCategory                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Dashboard_C::AddInputHelpCategory(class UInputCategory* InCategory)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "AddInputHelpCategory");
+
+	Params::WBP_Dashboard_C_AddInputHelpCategory Parms{};
+
+	Parms.InCategory = InCategory;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.AddSpacerIfNeeded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Dashboard_C::AddSpacerIfNeeded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "AddSpacerIfNeeded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.AddSpacer
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Dashboard_C::AddSpacer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "AddSpacer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.StartNextRow
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bAddSpacer                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_Dashboard_C::StartNextRow(bool bAddSpacer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "StartNextRow");
+
+	Params::WBP_Dashboard_C_StartNextRow Parms{};
+
+	Parms.bAddSpacer = bAddSpacer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.AddContentWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ColumnSpan                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TotalColumnSpan                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Dashboard_C::AddContentWidget(class UWidget* Widget, int32 ColumnSpan, int32 TotalColumnSpan)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "AddContentWidget");
+
+	Params::WBP_Dashboard_C_AddContentWidget Parms{};
+
+	Parms.Widget = Widget;
+	Parms.ColumnSpan = ColumnSpan;
+	Parms.TotalColumnSpan = TotalColumnSpan;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.AddBorder
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    bInputHelpVisible                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bNonInputHelpVisible                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   ColumnSpan                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EHorizontalAlignment                    HorizontalAlignment                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsTitle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_Dashboard_C::AddBorder(const class FText& Text, bool bInputHelpVisible, bool bNonInputHelpVisible, int32 ColumnSpan, EHorizontalAlignment HorizontalAlignment, bool bIsTitle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "AddBorder");
+
+	Params::WBP_Dashboard_C_AddBorder Parms{};
+
+	Parms.Text = std::move(Text);
+	Parms.bInputHelpVisible = bInputHelpVisible;
+	Parms.bNonInputHelpVisible = bNonInputHelpVisible;
+	Parms.ColumnSpan = ColumnSpan;
+	Parms.HorizontalAlignment = HorizontalAlignment;
+	Parms.bIsTitle = bIsTitle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.AddSlider
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   MinValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   MaxValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ENumericValueType                       ValueType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TSoftObjectPtr<class UTexture2D>        IconTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// int32                                   ColumnSpan                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_DashboardSlider_C*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWBP_DashboardSlider_C* UWBP_Dashboard_C::AddSlider(float MinValue, float MaxValue, ENumericValueType ValueType, TSoftObjectPtr<class UTexture2D> IconTexture, int32 ColumnSpan)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "AddSlider");
+
+	Params::WBP_Dashboard_C_AddSlider Parms{};
+
+	Parms.MinValue = MinValue;
+	Parms.MaxValue = MaxValue;
+	Parms.ValueType = ValueType;
+	Parms.IconTexture = IconTexture;
+	Parms.ColumnSpan = ColumnSpan;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.AddAction
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const bool                              bIsSecondaryAction                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bFlipHorizontally                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   ColumnSpan                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TotalColumnSpan                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FDisplayInfo&              DisplayInfoOverride                                    (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    bShowText                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bShowInputChord                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UWBP_InputAction_C*               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWBP_InputAction_C* UWBP_Dashboard_C::AddAction(class FName ActionName, const bool bIsSecondaryAction, bool bFlipHorizontally, int32 ColumnSpan, int32 TotalColumnSpan, const struct FDisplayInfo& DisplayInfoOverride, bool bShowText, bool bShowInputChord)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "AddAction");
+
+	Params::WBP_Dashboard_C_AddAction Parms{};
+
+	Parms.ActionName = ActionName;
+	Parms.bIsSecondaryAction = bIsSecondaryAction;
+	Parms.bFlipHorizontally = bFlipHorizontally;
+	Parms.ColumnSpan = ColumnSpan;
+	Parms.TotalColumnSpan = TotalColumnSpan;
+	Parms.DisplayInfoOverride = std::move(DisplayInfoOverride);
+	Parms.bShowText = bShowText;
+	Parms.bShowInputChord = bShowInputChord;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Dashboard_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_Dashboard_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "PreConstruct");
+
+	Params::WBP_Dashboard_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.PreUpdateDashboard
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Dashboard_C::PreUpdateDashboard()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "PreUpdateDashboard");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Dashboard.WBP_Dashboard_C.PostUpdateDashboard
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Dashboard_C::PostUpdateDashboard()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Dashboard_C", "PostUpdateDashboard");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Dashboard.WBP_Dashboard_C.ExecuteUbergraph_WBP_Dashboard
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,69 +288,53 @@ void UWBP_Dashboard_C::ExecuteUbergraph_WBP_Dashboard(int32 EntryPoint)
 }
 
 
-// Function WBP_Dashboard.WBP_Dashboard_C.UpdateSliderWidgetSlot
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Dashboard.WBP_Dashboard_C.ExpandColumnsForInputChord
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class UDashboardSliderWidget*           Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NumSliders                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Columns                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bShowInputChord                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Dashboard_C::UpdateSliderWidgetSlot(class UDashboardSliderWidget* Widget, int32 Index_0, int32 NumSliders)
+int32 UWBP_Dashboard_C::ExpandColumnsForInputChord(int32 Columns, bool bShowInputChord) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Dashboard_C", "UpdateSliderWidgetSlot");
+		Func = Class->GetFunction("WBP_Dashboard_C", "ExpandColumnsForInputChord");
 
-	Params::WBP_Dashboard_C_UpdateSliderWidgetSlot Parms{};
+	Params::WBP_Dashboard_C_ExpandColumnsForInputChord Parms{};
 
-	Parms.Widget = Widget;
-	Parms.Index_0 = Index_0;
-	Parms.NumSliders = NumSliders;
+	Parms.Columns = Columns;
+	Parms.bShowInputChord = bShowInputChord;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_Dashboard.WBP_Dashboard_C.AddIconWidget
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Dashboard.WBP_Dashboard_C.ShouldShowElement
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class UDashboardIconWidget*             Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInputHelpVisible                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bNonInputHelpVisible                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
-void UWBP_Dashboard_C::AddIconWidget(class UDashboardIconWidget* Widget, int32 Index_0)
+bool UWBP_Dashboard_C::ShouldShowElement(bool bInputHelpVisible, bool bNonInputHelpVisible) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Dashboard_C", "AddIconWidget");
+		Func = Class->GetFunction("WBP_Dashboard_C", "ShouldShowElement");
 
-	Params::WBP_Dashboard_C_AddIconWidget Parms{};
+	Params::WBP_Dashboard_C_ShouldShowElement Parms{};
 
-	Parms.Widget = Widget;
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Dashboard.WBP_Dashboard_C.AddSliderWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UDashboardSliderWidget*           Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Dashboard_C::AddSliderWidget(class UDashboardSliderWidget* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Dashboard_C", "AddSliderWidget");
-
-	Params::WBP_Dashboard_C_AddSliderWidget Parms{};
-
-	Parms.Widget = Widget;
+	Parms.bInputHelpVisible = bInputHelpVisible;
+	Parms.bNonInputHelpVisible = bNonInputHelpVisible;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

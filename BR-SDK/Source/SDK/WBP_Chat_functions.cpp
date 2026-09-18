@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Chat.WBP_Chat_C.UpdateIsFocused
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bNewFocused_UpdateIsFocused                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Chat_C::UpdateIsFocused(bool bNewFocused_UpdateIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Chat_C", "UpdateIsFocused");
-
-	Params::WBP_Chat_C_UpdateIsFocused Parms{};
-
-	Parms.bNewFocused_UpdateIsFocused = bNewFocused_UpdateIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Chat.WBP_Chat_C.UpdateIsTyping
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -51,6 +31,26 @@ void UWBP_Chat_C::UpdateIsTyping(bool bNewTyping_UpdateIsTyping)
 	Params::WBP_Chat_C_UpdateIsTyping Parms{};
 
 	Parms.bNewTyping_UpdateIsTyping = bNewTyping_UpdateIsTyping;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Chat.WBP_Chat_C.UpdateScrollBoxVisibility
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bNewVisible_UpdateScrollBoxVisibility                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_Chat_C::UpdateScrollBoxVisibility(bool bNewVisible_UpdateScrollBoxVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Chat_C", "UpdateScrollBoxVisibility");
+
+	Params::WBP_Chat_C_UpdateScrollBoxVisibility Parms{};
+
+	Parms.bNewVisible_UpdateScrollBoxVisibility = bNewVisible_UpdateScrollBoxVisibility;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

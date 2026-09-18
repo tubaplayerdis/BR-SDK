@@ -38,34 +38,6 @@ void UWBP_GameOverlay_C::AddHUDNotification(class UHUDNotificationWidget* Widget
 }
 
 
-// Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateSlomoNotification
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UHUDNotificationWidget*           Widget_UpdateSlomoNotification                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   SlomoSpeed_UpdateSlomoNotification                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInvertSpeed_UpdateSlomoNotification                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bSlomoEnabled_UpdateSlomoNotification                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bIsPaused_UpdateSlomoNotification                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_GameOverlay_C::UpdateSlomoNotification(class UHUDNotificationWidget* Widget_UpdateSlomoNotification, float SlomoSpeed_UpdateSlomoNotification, bool bInvertSpeed_UpdateSlomoNotification, bool bSlomoEnabled_UpdateSlomoNotification, bool bIsPaused_UpdateSlomoNotification)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOverlay_C", "UpdateSlomoNotification");
-
-	Params::WBP_GameOverlay_C_UpdateSlomoNotification Parms{};
-
-	Parms.Widget_UpdateSlomoNotification = Widget_UpdateSlomoNotification;
-	Parms.SlomoSpeed_UpdateSlomoNotification = SlomoSpeed_UpdateSlomoNotification;
-	Parms.bInvertSpeed_UpdateSlomoNotification = bInvertSpeed_UpdateSlomoNotification;
-	Parms.bSlomoEnabled_UpdateSlomoNotification = bSlomoEnabled_UpdateSlomoNotification;
-	Parms.bIsPaused_UpdateSlomoNotification = bIsPaused_UpdateSlomoNotification;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateMoneyNotification
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -85,32 +57,6 @@ void UWBP_GameOverlay_C::UpdateMoneyNotification(class UHUDNotificationWidget* W
 	Parms.Widget_UpdateMoneyNotification = Widget_UpdateMoneyNotification;
 	Parms.NewAmount_UpdateMoneyNotification = NewAmount_UpdateMoneyNotification;
 	Parms.AmountAdded_UpdateMoneyNotification = AmountAdded_UpdateMoneyNotification;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateFreeCamNotification
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UHUDNotificationWidget*           Widget_UpdateFreeCamNotification                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInFreeCam_UpdateFreeCamNotification                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// EFreeCamMode                            InFreeCamMode_UpdateFreeCamNotification                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFixedCam_UpdateFreeCamNotification                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_GameOverlay_C::UpdateFreeCamNotification(class UHUDNotificationWidget* Widget_UpdateFreeCamNotification, bool bIsInFreeCam_UpdateFreeCamNotification, EFreeCamMode InFreeCamMode_UpdateFreeCamNotification, bool bIsFixedCam_UpdateFreeCamNotification)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOverlay_C", "UpdateFreeCamNotification");
-
-	Params::WBP_GameOverlay_C_UpdateFreeCamNotification Parms{};
-
-	Parms.Widget_UpdateFreeCamNotification = Widget_UpdateFreeCamNotification;
-	Parms.bIsInFreeCam_UpdateFreeCamNotification = bIsInFreeCam_UpdateFreeCamNotification;
-	Parms.InFreeCamMode_UpdateFreeCamNotification = InFreeCamMode_UpdateFreeCamNotification;
-	Parms.bIsFixedCam_UpdateFreeCamNotification = bIsFixedCam_UpdateFreeCamNotification;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -156,28 +102,6 @@ void UWBP_GameOverlay_C::AddMatchTimerWidget(class UMatchTimerWidget* Widget_Add
 }
 
 
-// Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateVehicleCameraNotification
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// class UHUDNotificationWidget*           Widget_UpdateVehicleCameraNotification                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FText&                      CameraDisplayName_UpdateVehicleCameraNotification      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_GameOverlay_C::UpdateVehicleCameraNotification(class UHUDNotificationWidget* Widget_UpdateVehicleCameraNotification, const class FText& CameraDisplayName_UpdateVehicleCameraNotification)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOverlay_C", "UpdateVehicleCameraNotification");
-
-	Params::WBP_GameOverlay_C_UpdateVehicleCameraNotification Parms{};
-
-	Parms.Widget_UpdateVehicleCameraNotification = Widget_UpdateVehicleCameraNotification;
-	Parms.CameraDisplayName_UpdateVehicleCameraNotification = std::move(CameraDisplayName_UpdateVehicleCameraNotification);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateVehicleDownloadNotification
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -206,8 +130,9 @@ void UWBP_GameOverlay_C::UpdateVehicleDownloadNotification(class UHUDNotificatio
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // class UInputHelpWidget*                 Widget_AddInputHelpWidget                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 InPosition_AddInputHelpWidget                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GameOverlay_C::AddInputHelpWidget(class UInputHelpWidget* Widget_AddInputHelpWidget)
+void UWBP_GameOverlay_C::AddInputHelpWidget(class UInputHelpWidget* Widget_AddInputHelpWidget, const struct FVector2D& InPosition_AddInputHelpWidget)
 {
 	static class UFunction* Func = nullptr;
 
@@ -217,6 +142,7 @@ void UWBP_GameOverlay_C::AddInputHelpWidget(class UInputHelpWidget* Widget_AddIn
 	Params::WBP_GameOverlay_C_AddInputHelpWidget Parms{};
 
 	Parms.Widget_AddInputHelpWidget = Widget_AddInputHelpWidget;
+	Parms.InPosition_AddInputHelpWidget = std::move(InPosition_AddInputHelpWidget);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -398,28 +324,6 @@ void UWBP_GameOverlay_C::UpdateCameraModeNotification(class UHUDNotificationWidg
 }
 
 
-// Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateProjectileCameraNotification
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UHUDNotificationWidget*           Widget_UpdateProjectileCameraNotification              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bNewEnabled_UpdateProjectileCameraNotification         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_GameOverlay_C::UpdateProjectileCameraNotification(class UHUDNotificationWidget* Widget_UpdateProjectileCameraNotification, bool bNewEnabled_UpdateProjectileCameraNotification)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOverlay_C", "UpdateProjectileCameraNotification");
-
-	Params::WBP_GameOverlay_C_UpdateProjectileCameraNotification Parms{};
-
-	Parms.Widget_UpdateProjectileCameraNotification = Widget_UpdateProjectileCameraNotification;
-	Parms.bNewEnabled_UpdateProjectileCameraNotification = bNewEnabled_UpdateProjectileCameraNotification;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateRestartFailedNotification
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -505,6 +409,144 @@ void UWBP_GameOverlay_C::UpdateVehicleConstructionNotification(class UHUDNotific
 	Parms.Widget_UpdateVehicleConstructionNotification = Widget_UpdateVehicleConstructionNotification;
 	Parms.VehicleDisplayName_UpdateVehicleConstructionNotification = std::move(VehicleDisplayName_UpdateVehicleConstructionNotification);
 	Parms.Progress_UpdateVehicleConstructionNotification = Progress_UpdateVehicleConstructionNotification;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateInputTipsVisibility
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOverlay_C::UpdateInputTipsVisibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOverlay_C", "UpdateInputTipsVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOverlay.WBP_GameOverlay_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_GameOverlay_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOverlay_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOverlay.WBP_GameOverlay_C.OnHUDVisibilityChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const EHUDVisibility                    NewVisibility_OnHUDVisibilityChanged                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GameOverlay_C::OnHUDVisibilityChanged(const EHUDVisibility NewVisibility_OnHUDVisibilityChanged)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOverlay_C", "OnHUDVisibilityChanged");
+
+	Params::WBP_GameOverlay_C_OnHUDVisibilityChanged Parms{};
+
+	Parms.NewVisibility_OnHUDVisibilityChanged = NewVisibility_OnHUDVisibilityChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GameOverlay.WBP_GameOverlay_C.RemoveInputTips
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOverlay_C::RemoveInputTips()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOverlay_C", "RemoveInputTips");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOverlay.WBP_GameOverlay_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_GameOverlay_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOverlay_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOverlay.WBP_GameOverlay_C.AddCameraDashboardWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      InWidget_AddCameraDashboardWidget                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GameOverlay_C::AddCameraDashboardWidget(class UUserWidget* InWidget_AddCameraDashboardWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOverlay_C", "AddCameraDashboardWidget");
+
+	Params::WBP_GameOverlay_C_AddCameraDashboardWidget Parms{};
+
+	Parms.InWidget_AddCameraDashboardWidget = InWidget_AddCameraDashboardWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GameOverlay.WBP_GameOverlay_C.AddEditorDashboardWidget
+// (BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      InWidget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GameOverlay_C::AddEditorDashboardWidget(class UUserWidget* InWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOverlay_C", "AddEditorDashboardWidget");
+
+	Params::WBP_GameOverlay_C_AddEditorDashboardWidget Parms{};
+
+	Parms.InWidget = InWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GameOverlay.WBP_GameOverlay_C.UpdateVehicleCameraNotification
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// class UHUDNotificationWidget*           Widget_UpdateVehicleCameraNotification                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      CameraDisplayName_UpdateVehicleCameraNotification      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_GameOverlay_C::UpdateVehicleCameraNotification(class UHUDNotificationWidget* Widget_UpdateVehicleCameraNotification, const class FText& CameraDisplayName_UpdateVehicleCameraNotification)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOverlay_C", "UpdateVehicleCameraNotification");
+
+	Params::WBP_GameOverlay_C_UpdateVehicleCameraNotification Parms{};
+
+	Parms.Widget_UpdateVehicleCameraNotification = Widget_UpdateVehicleCameraNotification;
+	Parms.CameraDisplayName_UpdateVehicleCameraNotification = std::move(CameraDisplayName_UpdateVehicleCameraNotification);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_RestrictedArea.WBP_RestrictedArea_C.PlayFadeOutAnim
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_RestrictedArea_C::PlayFadeOutAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RestrictedArea_C", "PlayFadeOutAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_RestrictedArea.WBP_RestrictedArea_C.PlayFadeInAnim
 // (Event, Protected, BlueprintEvent)
 
@@ -39,6 +25,20 @@ void UWBP_RestrictedArea_C::PlayFadeInAnim()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_RestrictedArea_C", "PlayFadeInAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RestrictedArea.WBP_RestrictedArea_C.PlayFadeOutAnim
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_RestrictedArea_C::PlayFadeOutAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RestrictedArea_C", "PlayFadeOutAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

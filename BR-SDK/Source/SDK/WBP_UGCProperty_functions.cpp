@@ -36,28 +36,6 @@ void UWBP_UGCProperty_C::ExecuteUbergraph_WBP_UGCProperty(int32 EntryPoint)
 }
 
 
-// Function WBP_UGCProperty.WBP_UGCProperty_C.BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UGCProperty_C::BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UGCProperty_C", "BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-
-	Params::WBP_UGCProperty_C_BndEvt__WBP_UGCProperty_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature Parms{};
-
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UGCProperty.WBP_UGCProperty_C.UpdateItemsText
 // (Event, Protected, BlueprintEvent)
 // Parameters:

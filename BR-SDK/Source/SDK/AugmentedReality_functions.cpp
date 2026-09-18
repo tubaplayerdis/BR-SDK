@@ -16,248 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function AugmentedReality.ARComponent.GetMRMesh
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UMRMeshComponent*                 ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMRMeshComponent* UARComponent::GetMRMesh()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARComponent", "GetMRMesh");
-
-	Params::ARComponent_GetMRMesh Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.ARComponent.OnRep_Payload
-// (Native, Protected)
-
-void UARComponent::OnRep_Payload()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARComponent", "OnRep_Payload");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARComponent.ReceiveRemove
-// (Event, Public, BlueprintEvent)
-
-void UARComponent::ReceiveRemove()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARComponent", "ReceiveRemove");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AugmentedReality.ARComponent.SetNativeID
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FGuid&                     NativeID_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UARComponent::SetNativeID(const struct FGuid& NativeID_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARComponent", "SetNativeID");
-
-	Params::ARComponent_SetNativeID Parms{};
-
-	Parms.NativeID_0 = std::move(NativeID_0);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARComponent.UpdateVisualization
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UARComponent::UpdateVisualization()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARComponent", "UpdateVisualization");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARPlaneComponent.GetObjectClassificationDebugColors
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const TMap<EARObjectClassification, struct FLinearColor>ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-const TMap<EARObjectClassification, struct FLinearColor> UARPlaneComponent::GetObjectClassificationDebugColors()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARPlaneComponent", "GetObjectClassificationDebugColors");
-
-	Params::ARPlaneComponent_GetObjectClassificationDebugColors Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.ARPlaneComponent.SetObjectClassificationDebugColors
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TMap<EARObjectClassification, struct FLinearColor>&InColors                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UARPlaneComponent::SetObjectClassificationDebugColors(const TMap<EARObjectClassification, struct FLinearColor>& InColors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARPlaneComponent", "SetObjectClassificationDebugColors");
-
-	Params::ARPlaneComponent_SetObjectClassificationDebugColors Parms{};
-
-	Parms.InColors = std::move(InColors);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARPlaneComponent.SetPlaneComponentDebugMode
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// EPlaneComponentDebugMode                NewDebugMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UARPlaneComponent::SetPlaneComponentDebugMode(EPlaneComponentDebugMode NewDebugMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARPlaneComponent", "SetPlaneComponentDebugMode");
-
-	Params::ARPlaneComponent_SetPlaneComponentDebugMode Parms{};
-
-	Parms.NewDebugMode = NewDebugMode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARPlaneComponent.ReceiveAdd
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FARPlaneUpdatePayload&     Payload                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UARPlaneComponent::ReceiveAdd(const struct FARPlaneUpdatePayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPlaneComponent", "ReceiveAdd");
-
-	Params::ARPlaneComponent_ReceiveAdd Parms{};
-
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AugmentedReality.ARPlaneComponent.ReceiveUpdate
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FARPlaneUpdatePayload&     Payload                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UARPlaneComponent::ReceiveUpdate(const struct FARPlaneUpdatePayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPlaneComponent", "ReceiveUpdate");
-
-	Params::ARPlaneComponent_ReceiveUpdate Parms{};
-
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AugmentedReality.ARPlaneComponent.ServerUpdatePayload
-// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
-// Parameters:
-// const struct FARPlaneUpdatePayload&     NewPayload                                             (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UARPlaneComponent::ServerUpdatePayload(const struct FARPlaneUpdatePayload& NewPayload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPlaneComponent", "ServerUpdatePayload");
-
-	Params::ARPlaneComponent_ServerUpdatePayload Parms{};
-
-	Parms.NewPayload = std::move(NewPayload);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -536,19 +294,44 @@ bool UARTrackedGeometry::IsTracked() const
 }
 
 
-// Function AugmentedReality.ARTrackedPose.GetTrackedPoseData
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const struct FARPose3D                  ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class UAREnvironmentCaptureProbeTexture*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-const struct FARPose3D UARTrackedPose::GetTrackedPoseData() const
+class UAREnvironmentCaptureProbeTexture* UAREnvironmentCaptureProbe::GetEnvironmentCaptureTexture()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedPose", "GetTrackedPoseData");
+		Func = Class->GetFunction("AREnvironmentCaptureProbe", "GetEnvironmentCaptureTexture");
 
-	Params::ARTrackedPose_GetTrackedPoseData Parms{};
+	Params::AREnvironmentCaptureProbe_GetEnvironmentCaptureTexture Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector UAREnvironmentCaptureProbe::GetExtent() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AREnvironmentCaptureProbe", "GetExtent");
+
+	Params::AREnvironmentCaptureProbe_GetExtent Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -588,6 +371,198 @@ class UARComponent* AARActor::AddARComponent(TSubclassOf<class UARComponent> InC
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARComponent.GetMRMesh
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UMRMeshComponent*                 ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMRMeshComponent* UARComponent::GetMRMesh()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARComponent", "GetMRMesh");
+
+	Params::ARComponent_GetMRMesh Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARComponent.OnRep_Payload
+// (Native, Protected)
+
+void UARComponent::OnRep_Payload()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARComponent", "OnRep_Payload");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARComponent.ReceiveRemove
+// (Event, Public, BlueprintEvent)
+
+void UARComponent::ReceiveRemove()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARComponent", "ReceiveRemove");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AugmentedReality.ARComponent.SetNativeID
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FGuid&                     NativeID_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UARComponent::SetNativeID(const struct FGuid& NativeID_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARComponent", "SetNativeID");
+
+	Params::ARComponent_SetNativeID Parms{};
+
+	Parms.NativeID_0 = std::move(NativeID_0);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARComponent.UpdateVisualization
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UARComponent::UpdateVisualization()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARComponent", "UpdateVisualization");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARPoseComponent.SetPoseComponentDebugMode
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// EPoseComponentDebugMode                 NewDebugMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UARPoseComponent::SetPoseComponentDebugMode(EPoseComponentDebugMode NewDebugMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ARPoseComponent", "SetPoseComponentDebugMode");
+
+	Params::ARPoseComponent_SetPoseComponentDebugMode Parms{};
+
+	Parms.NewDebugMode = NewDebugMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARPoseComponent.ReceiveAdd
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FARPoseUpdatePayload&      Payload                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UARPoseComponent::ReceiveAdd(const struct FARPoseUpdatePayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARPoseComponent", "ReceiveAdd");
+
+	Params::ARPoseComponent_ReceiveAdd Parms{};
+
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AugmentedReality.ARPoseComponent.ReceiveUpdate
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FARPoseUpdatePayload&      Payload                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UARPoseComponent::ReceiveUpdate(const struct FARPoseUpdatePayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARPoseComponent", "ReceiveUpdate");
+
+	Params::ARPoseComponent_ReceiveUpdate Parms{};
+
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AugmentedReality.ARPoseComponent.ServerUpdatePayload
+// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
+// Parameters:
+// const struct FARPoseUpdatePayload&      NewPayload                                             (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UARPoseComponent::ServerUpdatePayload(const struct FARPoseUpdatePayload& NewPayload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARPoseComponent", "ServerUpdatePayload");
+
+	Params::ARPoseComponent_ServerUpdatePayload Parms{};
+
+	Parms.NewPayload = std::move(NewPayload);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -2253,26 +2228,22 @@ void UARBlueprintLibrary::UnpinComponent(class USceneComponent* ComponentToUnpin
 }
 
 
-// Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailability
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Location                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Extent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UARGetCandidateObjectAsyncTaskBlueprintProxy*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UARGetCandidateObjectAsyncTaskBlueprintProxy* UARGetCandidateObjectAsyncTaskBlueprintProxy::ARGetCandidateObject(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent)
+class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::CheckGeoTrackingAvailability(class UObject* WorldContextObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARGetCandidateObjectAsyncTaskBlueprintProxy", "ARGetCandidateObject");
+		Func = StaticClass()->GetFunction("CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy", "CheckGeoTrackingAvailability");
 
-	Params::ARGetCandidateObjectAsyncTaskBlueprintProxy_ARGetCandidateObject Parms{};
+	Params::CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy_CheckGeoTrackingAvailability Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
-	Parms.Location = std::move(Location);
-	Parms.Extent = std::move(Extent);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2285,55 +2256,35 @@ class UARGetCandidateObjectAsyncTaskBlueprintProxy* UARGetCandidateObjectAsyncTa
 }
 
 
-// Function AugmentedReality.ARLifeCycleComponent.ServerDestroyARActor
-// (Final, Net, NetReliable, Native, Event, Private, NetServer, NetValidate)
+// Function AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailabilityAtLocation
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class AARActor*                         Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Longitude                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Latitude                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UARLifeCycleComponent::ServerDestroyARActor(class AARActor* Actor)
+class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::CheckGeoTrackingAvailabilityAtLocation(class UObject* WorldContextObject, float Longitude, float Latitude)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ARLifeCycleComponent", "ServerDestroyARActor");
+		Func = StaticClass()->GetFunction("CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy", "CheckGeoTrackingAvailabilityAtLocation");
 
-	Params::ARLifeCycleComponent_ServerDestroyARActor Parms{};
+	Params::CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy_CheckGeoTrackingAvailabilityAtLocation Parms{};
 
-	Parms.Actor = Actor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARLifeCycleComponent.ServerSpawnARActor
-// (Final, Net, NetReliable, Native, Event, Private, NetServer, HasDefaults, NetValidate)
-// Parameters:
-// class UClass*                           ComponentClass                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGuid&                     NativeID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UARLifeCycleComponent::ServerSpawnARActor(class UClass* ComponentClass, const struct FGuid& NativeID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARLifeCycleComponent", "ServerSpawnARActor");
-
-	Params::ARLifeCycleComponent_ServerSpawnARActor Parms{};
-
-	Parms.ComponentClass = ComponentClass;
-	Parms.NativeID = std::move(NativeID);
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.Longitude = Longitude;
+	Parms.Latitude = Latitude;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -2505,209 +2456,6 @@ class UARTrackedGeometry* UARTraceResultLibrary::GetTrackedGeometry(const struct
 }
 
 
-// Function AugmentedReality.ARFaceGeometry.GetBlendShapes
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const TMap<EARFaceBlendShape, float>    ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-const TMap<EARFaceBlendShape, float> UARFaceGeometry::GetBlendShapes() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARFaceGeometry", "GetBlendShapes");
-
-	Params::ARFaceGeometry_GetBlendShapes Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.ARFaceGeometry.GetBlendShapeValue
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EARFaceBlendShape                       BlendShape                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UARFaceGeometry::GetBlendShapeValue(EARFaceBlendShape BlendShape) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARFaceGeometry", "GetBlendShapeValue");
-
-	Params::ARFaceGeometry_GetBlendShapeValue Parms{};
-
-	Parms.BlendShape = BlendShape;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EAREye                                  Eye                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FTransform                 ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
-const struct FTransform UARFaceGeometry::GetLocalSpaceEyeTransform(EAREye Eye) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARFaceGeometry", "GetLocalSpaceEyeTransform");
-
-	Params::ARFaceGeometry_GetLocalSpaceEyeTransform Parms{};
-
-	Parms.Eye = Eye;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EAREye                                  Eye                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
-struct FTransform UARFaceGeometry::GetWorldSpaceEyeTransform(EAREye Eye) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARFaceGeometry", "GetWorldSpaceEyeTransform");
-
-	Params::ARFaceGeometry_GetWorldSpaceEyeTransform Parms{};
-
-	Parms.Eye = Eye;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
-// Parameters:
-// class AARSharedWorldGameState*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AARSharedWorldGameState* AARSharedWorldGameMode::GetARSharedWorldGameState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "GetARSharedWorldGameState");
-
-	Params::ARSharedWorldGameMode_GetARSharedWorldGameState Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
-// Parameters:
-// const TArray<uint8>&                    ARWorldData                                            (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void AARSharedWorldGameMode::SetARSharedWorldData(const TArray<uint8>& ARWorldData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARSharedWorldData");
-
-	Params::ARSharedWorldGameMode_SetARSharedWorldData Parms{};
-
-	Parms.ARWorldData = std::move(ARWorldData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARSharedWorldGameMode.SetARWorldSharingIsReady
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
-
-void AARSharedWorldGameMode::SetARWorldSharingIsReady()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARWorldSharingIsReady");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
-// Parameters:
-// const TArray<uint8>&                    ImageData                                              (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void AARSharedWorldGameMode::SetPreviewImageData(const TArray<uint8>& ImageData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "SetPreviewImageData");
-
-	Params::ARSharedWorldGameMode_SetPreviewImageData Parms{};
-
-	Parms.ImageData = std::move(ImageData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -2733,6 +2481,203 @@ class UARSaveWorldAsyncTaskBlueprintProxy* UARSaveWorldAsyncTaskBlueprintProxy::
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Location                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Extent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UARGetCandidateObjectAsyncTaskBlueprintProxy*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UARGetCandidateObjectAsyncTaskBlueprintProxy* UARGetCandidateObjectAsyncTaskBlueprintProxy::ARGetCandidateObject(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ARGetCandidateObjectAsyncTaskBlueprintProxy", "ARGetCandidateObject");
+
+	Params::ARGetCandidateObjectAsyncTaskBlueprintProxy_ARGetCandidateObject Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.Location = std::move(Location);
+	Parms.Extent = std::move(Extent);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARTrackedPose.GetTrackedPoseData
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FARPose3D                  ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+const struct FARPose3D UARTrackedPose::GetTrackedPoseData() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARTrackedPose", "GetTrackedPoseData");
+
+	Params::ARTrackedPose_GetTrackedPoseData Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARPlaneComponent.GetObjectClassificationDebugColors
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const TMap<EARObjectClassification, struct FLinearColor>ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+const TMap<EARObjectClassification, struct FLinearColor> UARPlaneComponent::GetObjectClassificationDebugColors()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ARPlaneComponent", "GetObjectClassificationDebugColors");
+
+	Params::ARPlaneComponent_GetObjectClassificationDebugColors Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARPlaneComponent.SetObjectClassificationDebugColors
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const TMap<EARObjectClassification, struct FLinearColor>&InColors                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UARPlaneComponent::SetObjectClassificationDebugColors(const TMap<EARObjectClassification, struct FLinearColor>& InColors)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ARPlaneComponent", "SetObjectClassificationDebugColors");
+
+	Params::ARPlaneComponent_SetObjectClassificationDebugColors Parms{};
+
+	Parms.InColors = std::move(InColors);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARPlaneComponent.SetPlaneComponentDebugMode
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// EPlaneComponentDebugMode                NewDebugMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UARPlaneComponent::SetPlaneComponentDebugMode(EPlaneComponentDebugMode NewDebugMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ARPlaneComponent", "SetPlaneComponentDebugMode");
+
+	Params::ARPlaneComponent_SetPlaneComponentDebugMode Parms{};
+
+	Parms.NewDebugMode = NewDebugMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARPlaneComponent.ReceiveAdd
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FARPlaneUpdatePayload&     Payload                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UARPlaneComponent::ReceiveAdd(const struct FARPlaneUpdatePayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARPlaneComponent", "ReceiveAdd");
+
+	Params::ARPlaneComponent_ReceiveAdd Parms{};
+
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AugmentedReality.ARPlaneComponent.ReceiveUpdate
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FARPlaneUpdatePayload&     Payload                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UARPlaneComponent::ReceiveUpdate(const struct FARPlaneUpdatePayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARPlaneComponent", "ReceiveUpdate");
+
+	Params::ARPlaneComponent_ReceiveUpdate Parms{};
+
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AugmentedReality.ARPlaneComponent.ServerUpdatePayload
+// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
+// Parameters:
+// const struct FARPlaneUpdatePayload&     NewPayload                                             (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UARPlaneComponent::ServerUpdatePayload(const struct FARPlaneUpdatePayload& NewPayload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARPlaneComponent", "ServerUpdatePayload");
+
+	Params::ARPlaneComponent_ServerUpdatePayload Parms{};
+
+	Parms.NewPayload = std::move(NewPayload);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -3059,96 +3004,6 @@ void UARQRCodeComponent::ServerUpdatePayload(const struct FARQRCodeUpdatePayload
 		Func = Class->GetFunction("ARQRCodeComponent", "ServerUpdatePayload");
 
 	Params::ARQRCodeComponent_ServerUpdatePayload Parms{};
-
-	Parms.NewPayload = std::move(NewPayload);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARPoseComponent.SetPoseComponentDebugMode
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// EPoseComponentDebugMode                 NewDebugMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UARPoseComponent::SetPoseComponentDebugMode(EPoseComponentDebugMode NewDebugMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARPoseComponent", "SetPoseComponentDebugMode");
-
-	Params::ARPoseComponent_SetPoseComponentDebugMode Parms{};
-
-	Parms.NewDebugMode = NewDebugMode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARPoseComponent.ReceiveAdd
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FARPoseUpdatePayload&      Payload                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UARPoseComponent::ReceiveAdd(const struct FARPoseUpdatePayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPoseComponent", "ReceiveAdd");
-
-	Params::ARPoseComponent_ReceiveAdd Parms{};
-
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AugmentedReality.ARPoseComponent.ReceiveUpdate
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FARPoseUpdatePayload&      Payload                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UARPoseComponent::ReceiveUpdate(const struct FARPoseUpdatePayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPoseComponent", "ReceiveUpdate");
-
-	Params::ARPoseComponent_ReceiveUpdate Parms{};
-
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AugmentedReality.ARPoseComponent.ServerUpdatePayload
-// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
-// Parameters:
-// const struct FARPoseUpdatePayload&      NewPayload                                             (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UARPoseComponent::ServerUpdatePayload(const struct FARPoseUpdatePayload& NewPayload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPoseComponent", "ServerUpdatePayload");
-
-	Params::ARPoseComponent_ServerUpdatePayload Parms{};
 
 	Parms.NewPayload = std::move(NewPayload);
 
@@ -3761,66 +3616,6 @@ EARGeoTrackingStateReason UARGeoTrackingSupport::GetGeoTrackingStateReason() con
 }
 
 
-// Function AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailability
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::CheckGeoTrackingAvailability(class UObject* WorldContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy", "CheckGeoTrackingAvailability");
-
-	Params::CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy_CheckGeoTrackingAvailability Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy.CheckGeoTrackingAvailabilityAtLocation
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Longitude                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Latitude                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::CheckGeoTrackingAvailabilityAtLocation(class UObject* WorldContextObject, float Longitude, float Latitude)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy", "CheckGeoTrackingAvailabilityAtLocation");
-
-	Params::CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy_CheckGeoTrackingAvailabilityAtLocation Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.Longitude = Longitude;
-	Parms.Latitude = Latitude;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationAtWorldPosition
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -3848,6 +3643,58 @@ class UGetGeoLocationAsyncTaskBlueprintProxy* UGetGeoLocationAsyncTaskBlueprintP
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARLifeCycleComponent.ServerDestroyARActor
+// (Final, Net, NetReliable, Native, Event, Private, NetServer, NetValidate)
+// Parameters:
+// class AARActor*                         Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UARLifeCycleComponent::ServerDestroyARActor(class AARActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARLifeCycleComponent", "ServerDestroyARActor");
+
+	Params::ARLifeCycleComponent_ServerDestroyARActor Parms{};
+
+	Parms.Actor = Actor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARLifeCycleComponent.ServerSpawnARActor
+// (Final, Net, NetReliable, Native, Event, Private, NetServer, HasDefaults, NetValidate)
+// Parameters:
+// class UClass*                           ComponentClass                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGuid&                     NativeID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UARLifeCycleComponent::ServerSpawnARActor(class UClass* ComponentClass, const struct FGuid& NativeID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARLifeCycleComponent", "ServerSpawnARActor");
+
+	Params::ARLifeCycleComponent_ServerSpawnARActor Parms{};
+
+	Parms.ComponentClass = ComponentClass;
+	Parms.NativeID = std::move(NativeID);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -4907,6 +4754,100 @@ bool UARSessionConfig::ShouldResetTrackedObjects() const
 }
 
 
+// Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState
+// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Parameters:
+// class AARSharedWorldGameState*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AARSharedWorldGameState* AARSharedWorldGameMode::GetARSharedWorldGameState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameMode", "GetARSharedWorldGameState");
+
+	Params::ARSharedWorldGameMode_GetARSharedWorldGameState Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData
+// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Parameters:
+// const TArray<uint8>&                    ARWorldData                                            (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void AARSharedWorldGameMode::SetARSharedWorldData(const TArray<uint8>& ARWorldData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARSharedWorldData");
+
+	Params::ARSharedWorldGameMode_SetARSharedWorldData Parms{};
+
+	Parms.ARWorldData = std::move(ARWorldData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARSharedWorldGameMode.SetARWorldSharingIsReady
+// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+
+void AARSharedWorldGameMode::SetARWorldSharingIsReady()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARWorldSharingIsReady");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData
+// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Parameters:
+// const TArray<uint8>&                    ImageData                                              (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void AARSharedWorldGameMode::SetPreviewImageData(const TArray<uint8>& ImageData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameMode", "SetPreviewImageData");
+
+	Params::ARSharedWorldGameMode_SetPreviewImageData Parms{};
+
+	Parms.ImageData = std::move(ImageData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady
 // (Event, Public, BlueprintEvent)
 
@@ -5221,19 +5162,19 @@ class UARCandidateImage* UARTrackedImage::GetDetectedImage() const
 }
 
 
-// Function AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Function AugmentedReality.ARFaceGeometry.GetBlendShapes
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UAREnvironmentCaptureProbeTexture*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TMap<EARFaceBlendShape, float>    ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 
-class UAREnvironmentCaptureProbeTexture* UAREnvironmentCaptureProbe::GetEnvironmentCaptureTexture()
+const TMap<EARFaceBlendShape, float> UARFaceGeometry::GetBlendShapes() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AREnvironmentCaptureProbe", "GetEnvironmentCaptureTexture");
+		Func = Class->GetFunction("ARFaceGeometry", "GetBlendShapes");
 
-	Params::AREnvironmentCaptureProbe_GetEnvironmentCaptureTexture Parms{};
+	Params::ARFaceGeometry_GetBlendShapes Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5246,19 +5187,78 @@ class UAREnvironmentCaptureProbeTexture* UAREnvironmentCaptureProbe::GetEnvironm
 }
 
 
-// Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function AugmentedReality.ARFaceGeometry.GetBlendShapeValue
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EARFaceBlendShape                       BlendShape                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-struct FVector UAREnvironmentCaptureProbe::GetExtent() const
+float UARFaceGeometry::GetBlendShapeValue(EARFaceBlendShape BlendShape) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AREnvironmentCaptureProbe", "GetExtent");
+		Func = Class->GetFunction("ARFaceGeometry", "GetBlendShapeValue");
 
-	Params::AREnvironmentCaptureProbe_GetExtent Parms{};
+	Params::ARFaceGeometry_GetBlendShapeValue Parms{};
+
+	Parms.BlendShape = BlendShape;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EAREye                                  Eye                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FTransform                 ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+const struct FTransform UARFaceGeometry::GetLocalSpaceEyeTransform(EAREye Eye) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARFaceGeometry", "GetLocalSpaceEyeTransform");
+
+	Params::ARFaceGeometry_GetLocalSpaceEyeTransform Parms{};
+
+	Parms.Eye = Eye;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EAREye                                  Eye                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FTransform UARFaceGeometry::GetWorldSpaceEyeTransform(EAREye Eye) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARFaceGeometry", "GetWorldSpaceEyeTransform");
+
+	Params::ARFaceGeometry_GetWorldSpaceEyeTransform Parms{};
+
+	Parms.Eye = Eye;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

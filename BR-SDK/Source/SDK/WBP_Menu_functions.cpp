@@ -36,15 +36,15 @@ void UWBP_Menu_C::ExecuteUbergraph_WBP_Menu(int32 EntryPoint)
 }
 
 
-// Function WBP_Menu.WBP_Menu_C.Construct
+// Function WBP_Menu.WBP_Menu_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Menu_C::Construct()
+void UWBP_Menu_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_C", "Construct");
+		Func = Class->GetFunction("WBP_Menu_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,6 +59,20 @@ void UWBP_Menu_C::OnInitialized()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Menu_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Menu.WBP_Menu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Menu_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -397,6 +411,34 @@ void UWBP_Menu_C::CreateAdminMenuButton()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Menu_C", "CreateAdminMenuButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Menu.WBP_Menu_C.RemoveNewsWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Menu_C::RemoveNewsWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_C", "RemoveNewsWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Menu.WBP_Menu_C.AddNewsWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Menu_C::AddNewsWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_C", "AddNewsWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

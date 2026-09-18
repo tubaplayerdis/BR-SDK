@@ -78,42 +78,6 @@ void UWBP_UserIdProperty_C::UpdateUserId(const class FText& InUserId, const bool
 }
 
 
-// Function WBP_UserIdProperty.WBP_UserIdProperty_C.BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UserIdProperty_C::BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UserIdProperty_C", "BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-
-	Params::WBP_UserIdProperty_C_BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature Parms{};
-
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UserIdProperty.WBP_UserIdProperty_C.BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UserIdProperty_C::BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UserIdProperty_C", "BndEvt__ShowProfileButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UserIdProperty.WBP_UserIdProperty_C.UpdateUsername
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:

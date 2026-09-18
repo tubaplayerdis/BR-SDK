@@ -16,28 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_BrickTextBox.WBP_BrickTextBox_C.BndEvt__ShowPasswordButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BrickTextBox_C::BndEvt__ShowPasswordButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickTextBox_C", "BndEvt__ShowPasswordButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-
-	Params::WBP_BrickTextBox_C_BndEvt__ShowPasswordButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature Parms{};
-
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_BrickTextBox.WBP_BrickTextBox_C.BndEvt__ShowPasswordButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
 // (BlueprintEvent)
 

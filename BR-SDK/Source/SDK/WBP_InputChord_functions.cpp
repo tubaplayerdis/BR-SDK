@@ -36,30 +36,6 @@ void UWBP_InputChord_C::ExecuteUbergraph_WBP_InputChord(int32 EntryPoint)
 }
 
 
-// Function WBP_InputChord.WBP_InputChord_C.UpdateSpacerColorStyleAndStyleState
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIColorStyle                      NewColorStyle                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      NewStyleState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InputChord_C::UpdateSpacerColorStyleAndStyleState(class UUserWidget* Widget, EBrickUIColorStyle NewColorStyle, EBrickUIStyleState NewStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputChord_C", "UpdateSpacerColorStyleAndStyleState");
-
-	Params::WBP_InputChord_C_UpdateSpacerColorStyleAndStyleState Parms{};
-
-	Parms.Widget = Widget;
-	Parms.NewColorStyle = NewColorStyle;
-	Parms.NewStyleState = NewStyleState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_InputChord.WBP_InputChord_C.AddSpacerWidget
 // (Event, Protected, BlueprintEvent)
 // Parameters:

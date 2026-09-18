@@ -82,52 +82,12 @@ void UWBP_BrickSlider_C::CreateModifierHintWidget(class UInputKeyWidget*& Widget
 }
 
 
-// Function WBP_BrickSlider.WBP_BrickSlider_C.UpdateSliderPosition
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BrickSlider_C::UpdateSliderPosition(float NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickSlider_C", "UpdateSliderPosition");
-
-	Params::WBP_BrickSlider_C_UpdateSliderPosition Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BrickSlider.WBP_BrickSlider_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_BrickSlider_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickSlider_C", "PreConstruct");
-
-	Params::WBP_BrickSlider_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_BrickSlider.WBP_BrickSlider_C.UpdateIsDragging
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// const bool                              bIsDragging                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              bIsDragging_UpdateIsDragging                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_BrickSlider_C::UpdateIsDragging(const bool bIsDragging)
+void UWBP_BrickSlider_C::UpdateIsDragging(const bool bIsDragging_UpdateIsDragging)
 {
 	static class UFunction* Func = nullptr;
 
@@ -136,7 +96,7 @@ void UWBP_BrickSlider_C::UpdateIsDragging(const bool bIsDragging)
 
 	Params::WBP_BrickSlider_C_UpdateIsDragging Parms{};
 
-	Parms.bIsDragging = bIsDragging;
+	Parms.bIsDragging_UpdateIsDragging = bIsDragging_UpdateIsDragging;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -153,6 +113,88 @@ void UWBP_BrickSlider_C::Destruct()
 		Func = Class->GetFunction("WBP_BrickSlider_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BrickSlider.WBP_BrickSlider_C.UpdateIsReadOnly
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const bool                              bNewReadOnly_UpdateIsReadOnly                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_BrickSlider_C::UpdateIsReadOnly(const bool bNewReadOnly_UpdateIsReadOnly)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickSlider_C", "UpdateIsReadOnly");
+
+	Params::WBP_BrickSlider_C_UpdateIsReadOnly Parms{};
+
+	Parms.bNewReadOnly_UpdateIsReadOnly = bNewReadOnly_UpdateIsReadOnly;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickSlider.WBP_BrickSlider_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_BrickSlider_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickSlider_C", "PreConstruct");
+
+	Params::WBP_BrickSlider_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickSlider.WBP_BrickSlider_C.UpdateSliderPosition
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   NewValue_UpdateSliderPosition                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BrickSlider_C::UpdateSliderPosition(float NewValue_UpdateSliderPosition)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickSlider_C", "UpdateSliderPosition");
+
+	Params::WBP_BrickSlider_C_UpdateSliderPosition Parms{};
+
+	Parms.NewValue_UpdateSliderPosition = NewValue_UpdateSliderPosition;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickSlider.WBP_BrickSlider_C.UpdateButtonStyle
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const EBrickUIColorStyle                NewColorStyle_UpdateButtonStyle                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const EBrickUIBrushState                NewBrushState_UpdateButtonStyle                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BrickSlider_C::UpdateButtonStyle(const EBrickUIColorStyle NewColorStyle_UpdateButtonStyle, const EBrickUIBrushState NewBrushState_UpdateButtonStyle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickSlider_C", "UpdateButtonStyle");
+
+	Params::WBP_BrickSlider_C_UpdateButtonStyle Parms{};
+
+	Parms.NewColorStyle_UpdateButtonStyle = NewColorStyle_UpdateButtonStyle;
+	Parms.NewBrushState_UpdateButtonStyle = NewBrushState_UpdateButtonStyle;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

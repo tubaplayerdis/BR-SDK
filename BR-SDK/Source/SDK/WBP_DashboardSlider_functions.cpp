@@ -16,6 +16,110 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_DashboardSlider.WBP_DashboardSlider_C.SetIconTexture
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TSoftObjectPtr<class UTexture2D>& IconTexture                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
+
+void UWBP_DashboardSlider_C::SetIconTexture(const TSoftObjectPtr<class UTexture2D>& IconTexture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DashboardSlider_C", "SetIconTexture");
+
+	Params::WBP_DashboardSlider_C_SetIconTexture Parms{};
+
+	Parms.IconTexture = IconTexture;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DashboardSlider.WBP_DashboardSlider_C.SetColorStyle
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EBrickUIColorStyle                      NewStyle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DashboardSlider_C::SetColorStyle(EBrickUIColorStyle NewStyle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DashboardSlider_C", "SetColorStyle");
+
+	Params::WBP_DashboardSlider_C_SetColorStyle Parms{};
+
+	Parms.NewStyle = NewStyle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DashboardSlider.WBP_DashboardSlider_C.InitializeSlider
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   MinValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   MaxValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ENumericValueType                       ValueType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DashboardSlider_C::InitializeSlider(float MinValue, float MaxValue, ENumericValueType ValueType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DashboardSlider_C", "InitializeSlider");
+
+	Params::WBP_DashboardSlider_C_InitializeSlider Parms{};
+
+	Parms.MinValue = MinValue;
+	Parms.MaxValue = MaxValue;
+	Parms.ValueType = ValueType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DashboardSlider.WBP_DashboardSlider_C.UpdateSlider
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DashboardSlider_C::UpdateSlider(float Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DashboardSlider_C", "UpdateSlider");
+
+	Params::WBP_DashboardSlider_C_UpdateSlider Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DashboardSlider.WBP_DashboardSlider_C.SetCustomTextFormat
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InFormat                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_DashboardSlider_C::SetCustomTextFormat(const class FText& InFormat)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DashboardSlider_C", "SetCustomTextFormat");
+
+	Params::WBP_DashboardSlider_C_SetCustomTextFormat Parms{};
+
+	Parms.InFormat = std::move(InFormat);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_DashboardSlider.WBP_DashboardSlider_C.ExecuteUbergraph_WBP_DashboardSlider
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,46 +135,6 @@ void UWBP_DashboardSlider_C::ExecuteUbergraph_WBP_DashboardSlider(int32 EntryPoi
 	Params::WBP_DashboardSlider_C_ExecuteUbergraph_WBP_DashboardSlider Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DashboardSlider.WBP_DashboardSlider_C.UpdateColorStyle
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      NewStyle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DashboardSlider_C::UpdateColorStyle(EBrickUIColorStyle NewStyle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DashboardSlider_C", "UpdateColorStyle");
-
-	Params::WBP_DashboardSlider_C_UpdateColorStyle Parms{};
-
-	Parms.NewStyle = NewStyle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DashboardSlider.WBP_DashboardSlider_C.UpdateIcon
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   IconIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DashboardSlider_C::UpdateIcon(int32 IconIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DashboardSlider_C", "UpdateIcon");
-
-	Params::WBP_DashboardSlider_C_UpdateIcon Parms{};
-
-	Parms.IconIndex = IconIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

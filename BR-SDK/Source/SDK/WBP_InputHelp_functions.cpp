@@ -16,6 +16,136 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_InputHelp.WBP_InputHelp_C.AddCategoriesAndActions
+// (Event, Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<class UInputCategory*>&    Categories_AddCategoriesAndActions                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<struct FInputActionInfo>&  Actions_AddCategoriesAndActions                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+
+void UWBP_InputHelp_C::AddCategoriesAndActions(const TArray<class UInputCategory*>& Categories_AddCategoriesAndActions, const TArray<struct FInputActionInfo>& Actions_AddCategoriesAndActions)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputHelp_C", "AddCategoriesAndActions");
+
+	Params::WBP_InputHelp_C_AddCategoriesAndActions Parms{};
+
+	Parms.Categories_AddCategoriesAndActions = std::move(Categories_AddCategoriesAndActions);
+	Parms.Actions_AddCategoriesAndActions = std::move(Actions_AddCategoriesAndActions);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InputHelp.WBP_InputHelp_C.GetFocusedChild
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   bHasFocusedChild                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FName*                            ActionName                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bSecondaryAction                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UInputCategory**                  InputCategory                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InputHelp_C::GetFocusedChild(bool* bHasFocusedChild, class FName* ActionName, bool* bSecondaryAction, class UInputCategory** InputCategory)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputHelp_C", "GetFocusedChild");
+
+	Params::WBP_InputHelp_C_GetFocusedChild Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bHasFocusedChild != nullptr)
+		*bHasFocusedChild = Parms.bHasFocusedChild;
+
+	if (ActionName != nullptr)
+		*ActionName = Parms.ActionName;
+
+	if (bSecondaryAction != nullptr)
+		*bSecondaryAction = Parms.bSecondaryAction;
+
+	if (InputCategory != nullptr)
+		*InputCategory = Parms.InputCategory;
+}
+
+
+// Function WBP_InputHelp.WBP_InputHelp_C.OnMouseButtonDoubleClick
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 InMyGeometry_OnMouseButtonDoubleClick                  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             InMouseEvent_OnMouseButtonDoubleClick                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue_OnMouseButtonDoubleClick                   (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_InputHelp_C::OnMouseButtonDoubleClick(const struct FGeometry& InMyGeometry_OnMouseButtonDoubleClick, const struct FPointerEvent& InMouseEvent_OnMouseButtonDoubleClick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputHelp_C", "OnMouseButtonDoubleClick");
+
+	Params::WBP_InputHelp_C_OnMouseButtonDoubleClick Parms{};
+
+	Parms.InMyGeometry_OnMouseButtonDoubleClick = std::move(InMyGeometry_OnMouseButtonDoubleClick);
+	Parms.InMouseEvent_OnMouseButtonDoubleClick = std::move(InMouseEvent_OnMouseButtonDoubleClick);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.CallFunc_Handled_ReturnValue;
+}
+
+
+// Function WBP_InputHelp.WBP_InputHelp_C.OnMouseButtonUp
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry_OnMouseButtonUp                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent_OnMouseButtonUp                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue_OnMouseButtonUp                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_InputHelp_C::OnMouseButtonUp(const struct FGeometry& MyGeometry_OnMouseButtonUp, const struct FPointerEvent& MouseEvent_OnMouseButtonUp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputHelp_C", "OnMouseButtonUp");
+
+	Params::WBP_InputHelp_C_OnMouseButtonUp Parms{};
+
+	Parms.MyGeometry_OnMouseButtonUp = std::move(MyGeometry_OnMouseButtonUp);
+	Parms.MouseEvent_OnMouseButtonUp = std::move(MouseEvent_OnMouseButtonUp);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.CallFunc_Handled_ReturnValue;
+}
+
+
+// Function WBP_InputHelp.WBP_InputHelp_C.OnMouseButtonDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry_OnMouseButtonDown                           (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent_OnMouseButtonDown                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue_OnMouseButtonDown                          (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_InputHelp_C::OnMouseButtonDown(const struct FGeometry& MyGeometry_OnMouseButtonDown, const struct FPointerEvent& MouseEvent_OnMouseButtonDown)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputHelp_C", "OnMouseButtonDown");
+
+	Params::WBP_InputHelp_C_OnMouseButtonDown Parms{};
+
+	Parms.MyGeometry_OnMouseButtonDown = std::move(MyGeometry_OnMouseButtonDown);
+	Parms.MouseEvent_OnMouseButtonDown = std::move(MouseEvent_OnMouseButtonDown);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.CallFunc_Handled_ReturnValue;
+}
+
+
 // Function WBP_InputHelp.WBP_InputHelp_C.UpdateIsAlwaysOpen
 // (BlueprintEvent)
 // Parameters:
@@ -31,42 +161,6 @@ void UWBP_InputHelp_C::UpdateIsAlwaysOpen(bool bNewAlwaysOpen)
 	Params::WBP_InputHelp_C_UpdateIsAlwaysOpen Parms{};
 
 	Parms.bNewAlwaysOpen = bNewAlwaysOpen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InputHelp.WBP_InputHelp_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_InputHelp_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputHelp_C", "BndEvt__Button_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InputHelp.WBP_InputHelp_C.BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InputHelp_C::BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputHelp_C", "BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature");
-
-	Params::WBP_InputHelp_C_BndEvt__WBP_InputHelp_Button_K2Node_ComponentBoundEvent_1_OnUpdateContentStyle__DelegateSignature Parms{};
-
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -92,6 +186,48 @@ void UWBP_InputHelp_C::PreConstruct(bool IsDesignTime_PreConstruct)
 }
 
 
+// Function WBP_InputHelp.WBP_InputHelp_C.BndEvt__WBP_InputHelp_BackButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_InputHelp_C::BndEvt__WBP_InputHelp_BackButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputHelp_C", "BndEvt__WBP_InputHelp_BackButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InputHelp.WBP_InputHelp_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_InputHelp_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputHelp_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InputHelp.WBP_InputHelp_C.DoNothing
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_InputHelp_C::DoNothing()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputHelp_C", "DoNothing");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_InputHelp.WBP_InputHelp_C.ExecuteUbergraph_WBP_InputHelp
 // (Final, UbergraphFunction)
 // Parameters:
@@ -109,6 +245,26 @@ void UWBP_InputHelp_C::ExecuteUbergraph_WBP_InputHelp(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InputHelp.WBP_InputHelp_C.GetWidgetToFocus
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// class UWidget*                          ReturnValue_GetWidgetToFocus                           (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_InputHelp_C::GetWidgetToFocus() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputHelp_C", "GetWidgetToFocus");
+
+	Params::WBP_InputHelp_C_GetWidgetToFocus Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.CallFunc_GetWidgetToFocus_ReturnValue;
 }
 
 

@@ -50,49 +50,16 @@ void UBP_UIStyle_Default_C::BuildStyle()
 }
 
 
-// Function BP_UIStyle_Default.BP_UIStyle_Default_C.SetColorStyle
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      ColorStyle                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              DefaultColor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              ForergoundColor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              FocusedColor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              FocusedForegroundColor                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              SelectedColor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              SelectedForegroundColor                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_UIStyle_Default_C::SetColorStyle(EBrickUIColorStyle ColorStyle, const struct FLinearColor& DefaultColor, const struct FLinearColor& ForergoundColor, const struct FLinearColor& FocusedColor, const struct FLinearColor& FocusedForegroundColor, const struct FLinearColor& SelectedColor, const struct FLinearColor& SelectedForegroundColor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UIStyle_Default_C", "SetColorStyle");
-
-	Params::BP_UIStyle_Default_C_SetColorStyle Parms{};
-
-	Parms.ColorStyle = ColorStyle;
-	Parms.DefaultColor = std::move(DefaultColor);
-	Parms.ForergoundColor = std::move(ForergoundColor);
-	Parms.FocusedColor = std::move(FocusedColor);
-	Parms.FocusedForegroundColor = std::move(FocusedForegroundColor);
-	Parms.SelectedColor = std::move(SelectedColor);
-	Parms.SelectedForegroundColor = std::move(SelectedForegroundColor);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_UIStyle_Default.BP_UIStyle_Default_C.SetBrushStyle
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EBrickUIBrushStyle                      BrushStyle                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FSlateBrush&               Brush                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
 // const struct FSlateBrush&               FocusedBrush                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 // const struct FSlateBrush&               PressedBrush                                           (BlueprintVisible, BlueprintReadOnly, Parm)
-// const struct FSlateBrush&               SelectedBrush                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 // const struct FSlateBrush&               MarqueeBrush                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UBP_UIStyle_Default_C::SetBrushStyle(EBrickUIBrushStyle BrushStyle, const struct FSlateBrush& Brush, const struct FSlateBrush& FocusedBrush, const struct FSlateBrush& PressedBrush, const struct FSlateBrush& SelectedBrush, const struct FSlateBrush& MarqueeBrush)
+void UBP_UIStyle_Default_C::SetBrushStyle(EBrickUIBrushStyle BrushStyle, const struct FSlateBrush& Brush, const struct FSlateBrush& FocusedBrush, const struct FSlateBrush& PressedBrush, const struct FSlateBrush& MarqueeBrush)
 {
 	static class UFunction* Func = nullptr;
 
@@ -105,7 +72,6 @@ void UBP_UIStyle_Default_C::SetBrushStyle(EBrickUIBrushStyle BrushStyle, const s
 	Parms.Brush = std::move(Brush);
 	Parms.FocusedBrush = std::move(FocusedBrush);
 	Parms.PressedBrush = std::move(PressedBrush);
-	Parms.SelectedBrush = std::move(SelectedBrush);
 	Parms.MarqueeBrush = std::move(MarqueeBrush);
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -118,14 +84,9 @@ void UBP_UIStyle_Default_C::SetBrushStyle(EBrickUIBrushStyle BrushStyle, const s
 // const struct FLinearColor&              DefaultColor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FLinearColor&              ForegroundColor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FLinearColor&              HighlightColor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              HighlightForegroundColor                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              SelectedColor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              SelectedForegroundColor                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              LogoColor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              LogoForegroundColor                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              LogoForegroundContrastColor                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              SelectedColor                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_UIStyle_Default_C::BuildDefaultStyle(const struct FLinearColor& DefaultColor, const struct FLinearColor& ForegroundColor, const struct FLinearColor& HighlightColor, const struct FLinearColor& HighlightForegroundColor, const struct FLinearColor& SelectedColor, const struct FLinearColor& SelectedForegroundColor, const struct FLinearColor& LogoColor, const struct FLinearColor& LogoForegroundColor, const struct FLinearColor& LogoForegroundContrastColor)
+void UBP_UIStyle_Default_C::BuildDefaultStyle(const struct FLinearColor& DefaultColor, const struct FLinearColor& ForegroundColor, const struct FLinearColor& HighlightColor, const struct FLinearColor& SelectedColor)
 {
 	static class UFunction* Func = nullptr;
 
@@ -137,12 +98,29 @@ void UBP_UIStyle_Default_C::BuildDefaultStyle(const struct FLinearColor& Default
 	Parms.DefaultColor = std::move(DefaultColor);
 	Parms.ForegroundColor = std::move(ForegroundColor);
 	Parms.HighlightColor = std::move(HighlightColor);
-	Parms.HighlightForegroundColor = std::move(HighlightForegroundColor);
 	Parms.SelectedColor = std::move(SelectedColor);
-	Parms.SelectedForegroundColor = std::move(SelectedForegroundColor);
-	Parms.LogoColor = std::move(LogoColor);
-	Parms.LogoForegroundColor = std::move(LogoForegroundColor);
-	Parms.LogoForegroundContrastColor = std::move(LogoForegroundContrastColor);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UIStyle_Default.BP_UIStyle_Default_C.SetSimpleBrushStyle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EBrickUIBrushStyle                      BrushStyle                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSlateBrush&               Brush                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UBP_UIStyle_Default_C::SetSimpleBrushStyle(EBrickUIBrushStyle BrushStyle, const struct FSlateBrush& Brush)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UIStyle_Default_C", "SetSimpleBrushStyle");
+
+	Params::BP_UIStyle_Default_C_SetSimpleBrushStyle Parms{};
+
+	Parms.BrushStyle = BrushStyle;
+	Parms.Brush = std::move(Brush);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -158,9 +136,10 @@ void UBP_UIStyle_Default_C::BuildDefaultStyle(const struct FLinearColor& Default
 // bool                                    bStrike                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    bUnderline                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // const struct FLinearColor&              ColorMultiplier                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Shadow_Color_and_Opacity                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTextBlockStyle                  ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-struct FTextBlockStyle UBP_UIStyle_Default_C::MakeTextStyle(class FName Typeface, float Scale, class UObject* Font_Material, int32 OutlineSize, bool bStrike, bool bUnderline, const struct FLinearColor& ColorMultiplier) const
+struct FTextBlockStyle UBP_UIStyle_Default_C::MakeTextStyle(class FName Typeface, float Scale, class UObject* Font_Material, int32 OutlineSize, bool bStrike, bool bUnderline, const struct FLinearColor& ColorMultiplier, const struct FLinearColor& Shadow_Color_and_Opacity) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -176,6 +155,7 @@ struct FTextBlockStyle UBP_UIStyle_Default_C::MakeTextStyle(class FName Typeface
 	Parms.bStrike = bStrike;
 	Parms.bUnderline = bUnderline;
 	Parms.ColorMultiplier = std::move(ColorMultiplier);
+	Parms.Shadow_Color_and_Opacity = std::move(Shadow_Color_and_Opacity);
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -264,6 +244,32 @@ void UBP_UIStyle_Default_C::MakeDefaultColors(struct FLinearColor* Dark, struct 
 
 	if (FluppisoftForeground != nullptr)
 		*FluppisoftForeground = std::move(Parms.FluppisoftForeground);
+}
+
+
+// Function BP_UIStyle_Default.BP_UIStyle_Default_C.MultiplyBrushTint
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const struct FSlateBrush&               Brush                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateBrush*                     StructOut                                              (Parm, OutParm)
+
+void UBP_UIStyle_Default_C::MultiplyBrushTint(const struct FSlateBrush& Brush, float Value, struct FSlateBrush* StructOut) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UIStyle_Default_C", "MultiplyBrushTint");
+
+	Params::BP_UIStyle_Default_C_MultiplyBrushTint Parms{};
+
+	Parms.Brush = std::move(Brush);
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (StructOut != nullptr)
+		*StructOut = std::move(Parms.StructOut);
 }
 
 

@@ -16,60 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function AudioMixer.SubmixEffectReverbPreset.SetSettings
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FSubmixEffectReverbSettings&InSettings                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void USubmixEffectReverbPreset::SetSettings(const struct FSubmixEffectReverbSettings& InSettings)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectReverbPreset", "SetSettings");
-
-	Params::SubmixEffectReverbPreset_SetSettings Parms{};
-
-	Parms.InSettings = std::move(InSettings);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class UReverbEffect*              InReverbEffect                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float                             WetLevel                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float                             DryLevel                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(const class UReverbEffect* InReverbEffect, const float WetLevel, const float DryLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectReverbPreset", "SetSettingsWithReverbEffect");
-
-	Params::SubmixEffectReverbPreset_SetSettingsWithReverbEffect Parms{};
-
-	Parms.InReverbEffect = InReverbEffect;
-	Parms.WetLevel = WetLevel;
-	Parms.DryLevel = DryLevel;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function AudioMixer.SynthComponent.SetLowPassFilterEnabled
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -2693,6 +2639,60 @@ void USubmixEffectSubmixEQPreset::SetSettings(const struct FSubmixEffectSubmixEQ
 	Params::SubmixEffectSubmixEQPreset_SetSettings Parms{};
 
 	Parms.InSettings = std::move(InSettings);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AudioMixer.SubmixEffectReverbPreset.SetSettings
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FSubmixEffectReverbSettings&InSettings                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void USubmixEffectReverbPreset::SetSettings(const struct FSubmixEffectReverbSettings& InSettings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SubmixEffectReverbPreset", "SetSettings");
+
+	Params::SubmixEffectReverbPreset_SetSettings Parms{};
+
+	Parms.InSettings = std::move(InSettings);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class UReverbEffect*              InReverbEffect                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float                             WetLevel                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float                             DryLevel                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(const class UReverbEffect* InReverbEffect, const float WetLevel, const float DryLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SubmixEffectReverbPreset", "SetSettingsWithReverbEffect");
+
+	Params::SubmixEffectReverbPreset_SetSettingsWithReverbEffect Parms{};
+
+	Parms.InReverbEffect = InReverbEffect;
+	Parms.WetLevel = WetLevel;
+	Parms.DryLevel = DryLevel;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

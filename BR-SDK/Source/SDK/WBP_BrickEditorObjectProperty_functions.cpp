@@ -70,28 +70,6 @@ void UWBP_BrickEditorObjectProperty_C::BndEvt__WBP_BrickEditorObjectProperty_Sel
 }
 
 
-// Function WBP_BrickEditorObjectProperty.WBP_BrickEditorObjectProperty_C.BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BrickEditorObjectProperty_C::BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BrickEditorObjectProperty_C", "BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature");
-
-	Params::WBP_BrickEditorObjectProperty_C_BndEvt__WBP_BrickEditorObjectProperty_SelectButton_K2Node_ComponentBoundEvent_2_OnUpdateContentStyle__DelegateSignature Parms{};
-
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_BrickEditorObjectProperty.WBP_BrickEditorObjectProperty_C.BndEvt__WBP_BrickButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
 // (BlueprintEvent)
 
@@ -141,6 +119,26 @@ void UWBP_BrickEditorObjectProperty_C::UpdateSelectedObjects(const class FText& 
 	Parms.bDefaultObjects = bDefaultObjects;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BrickEditorObjectProperty.WBP_BrickEditorObjectProperty_C.GetPropertyHorizontalAlignment
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// EHorizontalAlignment                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+EHorizontalAlignment UWBP_BrickEditorObjectProperty_C::GetPropertyHorizontalAlignment() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BrickEditorObjectProperty_C", "GetPropertyHorizontalAlignment");
+
+	Params::WBP_BrickEditorObjectProperty_C_GetPropertyHorizontalAlignment Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

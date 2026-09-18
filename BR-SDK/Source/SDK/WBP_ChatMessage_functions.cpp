@@ -16,65 +16,53 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ChatMessage.WBP_ChatMessage_C.UpdateColorStyle
-// (Event, Public, BlueprintEvent)
+// Function WBP_ChatMessage.WBP_ChatMessage_C.OnMouseButtonDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EBrickUIColorStyle                      NewColorStyle_UpdateColorStyle                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry_OnMouseButtonDown                           (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent_OnMouseButtonDown                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue_OnMouseButtonDown                          (Parm, OutParm, ReturnParm)
 
-void UWBP_ChatMessage_C::UpdateColorStyle(EBrickUIColorStyle NewColorStyle_UpdateColorStyle)
+struct FEventReply UWBP_ChatMessage_C::OnMouseButtonDown(const struct FGeometry& MyGeometry_OnMouseButtonDown, const struct FPointerEvent& MouseEvent_OnMouseButtonDown)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ChatMessage_C", "UpdateColorStyle");
+		Func = Class->GetFunction("WBP_ChatMessage_C", "OnMouseButtonDown");
 
-	Params::WBP_ChatMessage_C_UpdateColorStyle Parms{};
+	Params::WBP_ChatMessage_C_OnMouseButtonDown Parms{};
 
-	Parms.NewColorStyle_UpdateColorStyle = NewColorStyle_UpdateColorStyle;
+	Parms.MyGeometry_OnMouseButtonDown = std::move(MyGeometry_OnMouseButtonDown);
+	Parms.MouseEvent_OnMouseButtonDown = std::move(MouseEvent_OnMouseButtonDown);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.CallFunc_Handled_ReturnValue;
 }
 
 
-// Function WBP_ChatMessage.WBP_ChatMessage_C.UpdateMessageText
-// (Event, Public, HasOutParams, BlueprintEvent)
+// Function WBP_ChatMessage.WBP_ChatMessage_C.OnMouseButtonUp
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      NewText_UpdateMessageText                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry_OnMouseButtonUp                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent_OnMouseButtonUp                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue_OnMouseButtonUp                            (Parm, OutParm, ReturnParm)
 
-void UWBP_ChatMessage_C::UpdateMessageText(const class FText& NewText_UpdateMessageText)
+struct FEventReply UWBP_ChatMessage_C::OnMouseButtonUp(const struct FGeometry& MyGeometry_OnMouseButtonUp, const struct FPointerEvent& MouseEvent_OnMouseButtonUp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ChatMessage_C", "UpdateMessageText");
+		Func = Class->GetFunction("WBP_ChatMessage_C", "OnMouseButtonUp");
 
-	Params::WBP_ChatMessage_C_UpdateMessageText Parms{};
+	Params::WBP_ChatMessage_C_OnMouseButtonUp Parms{};
 
-	Parms.NewText_UpdateMessageText = std::move(NewText_UpdateMessageText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ChatMessage.WBP_ChatMessage_C.BndEvt__WBP_ChatMessage_Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ChatMessage_C::BndEvt__WBP_ChatMessage_Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ChatMessage_C", "BndEvt__WBP_ChatMessage_Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-
-	Params::WBP_ChatMessage_C_BndEvt__WBP_ChatMessage_Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature Parms{};
-
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
+	Parms.MyGeometry_OnMouseButtonUp = std::move(MyGeometry_OnMouseButtonUp);
+	Parms.MouseEvent_OnMouseButtonUp = std::move(MouseEvent_OnMouseButtonUp);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.CallFunc_Handled_ReturnValue;
 }
 
 
@@ -89,6 +77,94 @@ void UWBP_ChatMessage_C::BndEvt__WBP_ChatMessage_Button_K2Node_ComponentBoundEve
 		Func = Class->GetFunction("WBP_ChatMessage_C", "BndEvt__WBP_ChatMessage_Button_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ChatMessage.WBP_ChatMessage_C.InitializeChatMessage
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      NewText_InitializeChatMessage                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const EBrickUIColorStyle                NewColorStyle_InitializeChatMessage                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const bool                              bInIsChatFocused_InitializeChatMessage                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              bWasJustReceived_InitializeChatMessage                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_ChatMessage_C::InitializeChatMessage(const class FText& NewText_InitializeChatMessage, const EBrickUIColorStyle NewColorStyle_InitializeChatMessage, const bool bInIsChatFocused_InitializeChatMessage, const bool bWasJustReceived_InitializeChatMessage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ChatMessage_C", "InitializeChatMessage");
+
+	Params::WBP_ChatMessage_C_InitializeChatMessage Parms{};
+
+	Parms.NewText_InitializeChatMessage = std::move(NewText_InitializeChatMessage);
+	Parms.NewColorStyle_InitializeChatMessage = NewColorStyle_InitializeChatMessage;
+	Parms.bInIsChatFocused_InitializeChatMessage = bInIsChatFocused_InitializeChatMessage;
+	Parms.bWasJustReceived_InitializeChatMessage = bWasJustReceived_InitializeChatMessage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ChatMessage.WBP_ChatMessage_C.SetFocusedState
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNewFocused                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_ChatMessage_C::SetFocusedState(bool bNewFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ChatMessage_C", "SetFocusedState");
+
+	Params::WBP_ChatMessage_C_SetFocusedState Parms{};
+
+	Parms.bNewFocused = bNewFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ChatMessage.WBP_ChatMessage_C.UpdateChatFocused
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// const bool                              bInIsChatFocused_UpdateChatFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_ChatMessage_C::UpdateChatFocused(const bool bInIsChatFocused_UpdateChatFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ChatMessage_C", "UpdateChatFocused");
+
+	Params::WBP_ChatMessage_C_UpdateChatFocused Parms{};
+
+	Parms.bInIsChatFocused_UpdateChatFocused = bInIsChatFocused_UpdateChatFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ChatMessage.WBP_ChatMessage_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry_Tick                                        (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime_Tick                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ChatMessage_C::Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ChatMessage_C", "Tick");
+
+	Params::WBP_ChatMessage_C_Tick Parms{};
+
+	Parms.MyGeometry_Tick = std::move(MyGeometry_Tick);
+	Parms.InDeltaTime_Tick = InDeltaTime_Tick;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

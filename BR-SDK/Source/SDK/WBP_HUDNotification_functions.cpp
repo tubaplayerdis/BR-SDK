@@ -65,13 +65,12 @@ void UWBP_HUDNotification_C::UpdateIsThumbnailNotification(bool bNewIsThumbnail_
 
 
 // Function WBP_HUDNotification.WBP_HUDNotification_C.InitializeNotification
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FBrickUIIconSlot&          InIconSlot_InitializeNotification                      (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// const class FText&                      InText_InitializeNotification                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// EBrickUIColorStyle                      InColorStyle_InitializeNotification                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FDisplayInfo&              InDisplayInfo_InitializeNotification                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+// const EBrickUIColorStyle                InColorStyle_InitializeNotification                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_HUDNotification_C::InitializeNotification(const struct FBrickUIIconSlot& InIconSlot_InitializeNotification, const class FText& InText_InitializeNotification, EBrickUIColorStyle InColorStyle_InitializeNotification)
+void UWBP_HUDNotification_C::InitializeNotification(const struct FDisplayInfo& InDisplayInfo_InitializeNotification, const EBrickUIColorStyle InColorStyle_InitializeNotification)
 {
 	static class UFunction* Func = nullptr;
 
@@ -80,8 +79,7 @@ void UWBP_HUDNotification_C::InitializeNotification(const struct FBrickUIIconSlo
 
 	Params::WBP_HUDNotification_C_InitializeNotification Parms{};
 
-	Parms.InIconSlot_InitializeNotification = std::move(InIconSlot_InitializeNotification);
-	Parms.InText_InitializeNotification = std::move(InText_InitializeNotification);
+	Parms.InDisplayInfo_InitializeNotification = std::move(InDisplayInfo_InitializeNotification);
 	Parms.InColorStyle_InitializeNotification = InColorStyle_InitializeNotification;
 
 	UObject::ProcessEvent(Func, &Parms);

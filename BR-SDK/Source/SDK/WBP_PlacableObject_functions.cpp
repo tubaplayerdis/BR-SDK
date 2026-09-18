@@ -16,6 +16,51 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_PlacableObject.WBP_PlacableObject_C.OnMouseButtonUp
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry_OnMouseButtonUp                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent_OnMouseButtonUp                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue_OnMouseButtonUp                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_PlacableObject_C::OnMouseButtonUp(const struct FGeometry& MyGeometry_OnMouseButtonUp, const struct FPointerEvent& MouseEvent_OnMouseButtonUp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlacableObject_C", "OnMouseButtonUp");
+
+	Params::WBP_PlacableObject_C_OnMouseButtonUp Parms{};
+
+	Parms.MyGeometry_OnMouseButtonUp = std::move(MyGeometry_OnMouseButtonUp);
+	Parms.MouseEvent_OnMouseButtonUp = std::move(MouseEvent_OnMouseButtonUp);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.CallFunc_Handled_ReturnValue;
+}
+
+
+// Function WBP_PlacableObject.WBP_PlacableObject_C.UpdateIsFilterWidget
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bNewIsFilter_UpdateIsFilterWidget                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_PlacableObject_C::UpdateIsFilterWidget(bool bNewIsFilter_UpdateIsFilterWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlacableObject_C", "UpdateIsFilterWidget");
+
+	Params::WBP_PlacableObject_C_UpdateIsFilterWidget Parms{};
+
+	Parms.bNewIsFilter_UpdateIsFilterWidget = bNewIsFilter_UpdateIsFilterWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_PlacableObject.WBP_PlacableObject_C.ExecuteUbergraph_WBP_PlacableObject
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,73 +78,6 @@ void UWBP_PlacableObject_C::ExecuteUbergraph_WBP_PlacableObject(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlacableObject.WBP_PlacableObject_C.UpdateIsFilterWidget
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bNewIsFilter                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_PlacableObject_C::UpdateIsFilterWidget(bool bNewIsFilter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlacableObject_C", "UpdateIsFilterWidget");
-
-	Params::WBP_PlacableObject_C_UpdateIsFilterWidget Parms{};
-
-	Parms.bNewIsFilter = bNewIsFilter;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlacableObject.WBP_PlacableObject_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlacableObject_C::BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlacableObject_C", "BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-
-	Params::WBP_PlacableObject_C_BndEvt__Button_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature Parms{};
-
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlacableObject.WBP_PlacableObject_C.OnMouseButtonUp
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UWBP_PlacableObject_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlacableObject_C", "OnMouseButtonUp");
-
-	Params::WBP_PlacableObject_C_OnMouseButtonUp Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 

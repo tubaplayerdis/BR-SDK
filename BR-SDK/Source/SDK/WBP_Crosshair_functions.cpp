@@ -16,6 +16,68 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Crosshair.WBP_Crosshair_C.PlayHitAnimation
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FClientDamageInfo&         DamageInfo_PlayHitAnimation                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void UWBP_Crosshair_C::PlayHitAnimation(const struct FClientDamageInfo& DamageInfo_PlayHitAnimation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Crosshair_C", "PlayHitAnimation");
+
+	Params::WBP_Crosshair_C_PlayHitAnimation Parms{};
+
+	Parms.DamageInfo_PlayHitAnimation = std::move(DamageInfo_PlayHitAnimation);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Crosshair.WBP_Crosshair_C.UpdateIsAttachingWinch
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bNewAttaching_UpdateIsAttachingWinch                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_Crosshair_C::UpdateIsAttachingWinch(bool bNewAttaching_UpdateIsAttachingWinch)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Crosshair_C", "UpdateIsAttachingWinch");
+
+	Params::WBP_Crosshair_C_UpdateIsAttachingWinch Parms{};
+
+	Parms.bNewAttaching_UpdateIsAttachingWinch = bNewAttaching_UpdateIsAttachingWinch;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Crosshair.WBP_Crosshair_C.UpdateWinchAttachment
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bBlockingHit_UpdateWinchAttachment                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bWithinRange_UpdateWinchAttachment                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_Crosshair_C::UpdateWinchAttachment(bool bBlockingHit_UpdateWinchAttachment, bool bWithinRange_UpdateWinchAttachment)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Crosshair_C", "UpdateWinchAttachment");
+
+	Params::WBP_Crosshair_C_UpdateWinchAttachment Parms{};
+
+	Parms.bBlockingHit_UpdateWinchAttachment = bBlockingHit_UpdateWinchAttachment;
+	Parms.bWithinRange_UpdateWinchAttachment = bWithinRange_UpdateWinchAttachment;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Crosshair.WBP_Crosshair_C.ExecuteUbergraph_WBP_Crosshair
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,68 +93,6 @@ void UWBP_Crosshair_C::ExecuteUbergraph_WBP_Crosshair(int32 EntryPoint)
 	Params::WBP_Crosshair_C_ExecuteUbergraph_WBP_Crosshair Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Crosshair.WBP_Crosshair_C.UpdateWinchAttachment
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bBlockingHit                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bWithinRange                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Crosshair_C::UpdateWinchAttachment(bool bBlockingHit, bool bWithinRange)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crosshair_C", "UpdateWinchAttachment");
-
-	Params::WBP_Crosshair_C_UpdateWinchAttachment Parms{};
-
-	Parms.bBlockingHit = bBlockingHit;
-	Parms.bWithinRange = bWithinRange;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Crosshair.WBP_Crosshair_C.UpdateIsAttachingWinch
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bNewAttaching                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Crosshair_C::UpdateIsAttachingWinch(bool bNewAttaching)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crosshair_C", "UpdateIsAttachingWinch");
-
-	Params::WBP_Crosshair_C_UpdateIsAttachingWinch Parms{};
-
-	Parms.bNewAttaching = bNewAttaching;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Crosshair.WBP_Crosshair_C.PlayHitAnimation
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FClientDamageInfo&         DamageInfo                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-
-void UWBP_Crosshair_C::PlayHitAnimation(const struct FClientDamageInfo& DamageInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crosshair_C", "PlayHitAnimation");
-
-	Params::WBP_Crosshair_C_PlayHitAnimation Parms{};
-
-	Parms.DamageInfo = std::move(DamageInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

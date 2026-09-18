@@ -72,26 +72,4 @@ void UWBP_ConnectorSpacingAxis_C::BndEvt__WBP_ConnectorSpacingAxis_Button_K2Node
 }
 
 
-// Function WBP_ConnectorSpacingAxis.WBP_ConnectorSpacingAxis_C.BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EBrickUIColorStyle                      InColorStyle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBrickUIStyleState                      InContentStyleState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ConnectorSpacingAxis_C::BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature(EBrickUIColorStyle InColorStyle, EBrickUIStyleState InContentStyleState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectorSpacingAxis_C", "BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature");
-
-	Params::WBP_ConnectorSpacingAxis_C_BndEvt__WBP_ConnectorSpacingAxis_WBP_BrickButton_K2Node_ComponentBoundEvent_0_OnUpdateContentStyle__DelegateSignature Parms{};
-
-	Parms.InColorStyle = InColorStyle;
-	Parms.InContentStyleState = InContentStyleState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 SDK_NAMESPACE_END
