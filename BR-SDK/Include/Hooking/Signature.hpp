@@ -52,10 +52,11 @@ public:
 
     enum SearchContext
     {
-        TEXT  = 0,
-        DATA  = 1 << 0,
-        RDATA = 1 << 1,
-        BSS   = 1 << 2,
+        NONE  = 0,
+        TEXT  = 0 << 0,
+        DATA  = 1 << 1,
+        RDATA = 1 << 2,
+        BSS   = 1 << 3,
     };
 
     static uintptr_t InternalResolveSignature(const std::string& signature, SearchContext context, const char* Module = nullptr, bool call_target = false) noexcept;
