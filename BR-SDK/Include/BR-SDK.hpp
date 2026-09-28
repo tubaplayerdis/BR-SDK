@@ -381,7 +381,6 @@ constexpr bool EditorSDK = false;
 #include "SDK/BP_ExhaustCylinder_classes.hpp"
 #include "SDK/BP_DetonatorCylinder_classes.hpp"
 #include "SDK/BP_BrickDataSingleton_classes.hpp"
-#include "SDK/BP_CL_ModHook_classes.hpp"
 #include "SDK/WBP_Player_classes.hpp"
 #include "SDK/BP_RampN_2x1x4_classes.hpp"
 #include "SDK/BP_Nitro_classes.hpp"
