@@ -53,7 +53,7 @@ public:
     enum SearchContext
     {
         NONE  = 0,
-        TEXT  = 0 << 0,
+        TEXT  = 1 << 0,
         DATA  = 1 << 1,
         RDATA = 1 << 2,
         BSS   = 1 << 3,

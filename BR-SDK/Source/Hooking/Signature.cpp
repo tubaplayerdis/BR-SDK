@@ -93,10 +93,10 @@ namespace
 
 		uintptr_t moduleBase = (uintptr_t)hModule;
 		auto dos = (PIMAGE_DOS_HEADER)moduleBase;
-		//if (dos->e_magic != IMAGE_DOS_SIGNATURE) return false;
+		if (dos->e_magic != IMAGE_DOS_SIGNATURE) return false;
 
 		auto nt = (PIMAGE_NT_HEADERS)(moduleBase + dos->e_lfanew);
-		//if (nt->Signature != IMAGE_NT_SIGNATURE) return false;
+		if (nt->Signature != IMAGE_NT_SIGNATURE) return false;
 
 		auto section = IMAGE_FIRST_SECTION(nt);
 		for (unsigned i = 0; i < nt->FileHeader.NumberOfSections; ++i, ++section)
@@ -251,12 +251,12 @@ uintptr_t Signature::InternalResolveSignature(const std::string& signature, Sear
 		addr = ResolveCallTarget(addr);
 	}
 
-	if (addr != 0)
+	if (addr)
 	{
 		Cache->insert(std::make_pair(std::string(signature), addr));
 	}
 
-	if (addr == 0)
+	if (!addr)
 	{
 		std::cout << "SIGNATURE NOT FOUND: " << std::string(signature) << std::endl;
 	}
